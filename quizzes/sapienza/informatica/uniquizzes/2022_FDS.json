@@ -1,0 +1,3044 @@
+[
+  {
+    "question": "What class does the Naive Bayes classifier predict for a given observation?",
+    "options": [
+      {
+        "text": "The class maximizing the joint predictors probability",
+        "image": ""
+      },
+      {
+        "text": "The class minimizing the joint predictors probability",
+        "image": ""
+      },
+      {
+        "text": "The class maximizing the joint predictors/labels probability",
+        "image": ""
+      },
+      {
+        "text": "The class minimizing the joint predictors/labels probability",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "If your dataset has two variables 𝒙, 𝒙′ such that 𝒙 = 𝒂 ⋅ 𝒙′ for some constant a > 0, then you have:",
+    "options": [
+      {
+        "text": "overfitting",
+        "image": ""
+      },
+      {
+        "text": "underfitting",
+        "image": ""
+      },
+      {
+        "text": "multicollinearity",
+        "image": ""
+      },
+      {
+        "text": "supercollinearity",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A naïve Bayes classifier can deal with previously unseen feature-label combination through:",
+    "options": [
+      {
+        "text": "Laplacian smoothing",
+        "image": ""
+      },
+      {
+        "text": "Bootstrapping",
+        "image": ""
+      },
+      {
+        "text": "Stratified cross-validation",
+        "image": ""
+      },
+      {
+        "text": "Repeated sampling",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "For a linear regression model, the expected squared error can be decomposed in:",
+    "options": [
+      {
+        "text": "Variance and covariance",
+        "image": ""
+      },
+      {
+        "text": "SSE and SST",
+        "image": ""
+      },
+      {
+        "text": "Underfit and overfit",
+        "image": ""
+      },
+      {
+        "text": "Bias and variance noise",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": " What is the key assumption of the Naïve Bayes Classifier?",
+    "options": [
+      {
+        "text": "The predictors and labels are independent",
+        "image": ""
+      },
+      {
+        "text": "Each predictor follows a Gaussian distribution",
+        "image": ""
+      },
+      {
+        "text": "The predictors are independent conditionally on the label",
+        "image": ""
+      },
+      {
+        "text": "The number of predictors is at most poly(n)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Which one of the following performance indicates the best model for prediction?",
+    "options": [
+      {
+        "text": "𝑅' = 0.2 on training, 𝑅' = 0.1 on test",
+        "image": ""
+      },
+      {
+        "text": "𝑅' = 0.7 on training, 𝑅' = 0.7 on test",
+        "image": ""
+      },
+      {
+        "text": "𝑅' = 0.8 on training, 𝑅' = 0.1 on test",
+        "image": ""
+      },
+      {
+        "text": "𝑅' = 0.9 on training, 𝑅' = −0.9 on test",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "You want to predict the market price of a team’s merchandising (t-shirts, hats..), according to the team’s seasonal performance. You suggest using:",
+    "options": [
+      {
+        "text": "Linear regression",
+        "image": ""
+      },
+      {
+        "text": "Logistic regression",
+        "image": ""
+      },
+      {
+        "text": "Linear programming",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "When is the accuracy a misleading classifier performance measure?",
+    "options": [
+      {
+        "text": "When the population label proportions are unbalanced",
+        "image": ""
+      },
+      {
+        "text": "When the population label proportions are balanced",
+        "image": ""
+      },
+      {
+        "text": "When the sensitivity is high",
+        "image": ""
+      },
+      {
+        "text": "When the specificity is low",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The goal of linear regression is to?",
+    "options": [
+      {
+        "text": "Make America great again",
+        "image": ""
+      },
+      {
+        "text": "Group similar observations together",
+        "image": ""
+      },
+      {
+        "text": "Learn a linear function from data",
+        "image": ""
+      },
+      {
+        "text": "Evaluate the amount of noise in the data",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In the bias-variance decomposition of the expected squared error, what does high bias suggest?",
+    "options": [
+      {
+        "text": "Noisy data",
+        "image": ""
+      },
+      {
+        "text": "Overfitting",
+        "image": ""
+      },
+      {
+        "text": "Underfitting",
+        "image": ""
+      },
+      {
+        "text": "Crossfitting",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Social network users often form communities according to their tastes. If you had access to their personal data, you may verify this intuition by:",
+    "options": [
+      {
+        "text": "Linear Regression",
+        "image": ""
+      },
+      {
+        "text": "Logistic Regression",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      },
+      {
+        "text": "Linear programming",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "R^2 is a measure of:",
+    "options": [
+      {
+        "text": "Reliability of predictions",
+        "image": ""
+      },
+      {
+        "text": "Goodness of fit",
+        "image": ""
+      },
+      {
+        "text": "Significance of estimates",
+        "image": ""
+      },
+      {
+        "text": "Model complexity",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A company wants to relate the monthly revenue to productivity parameters such as total number of working hours, etc. They could use:",
+    "options": [
+      {
+        "text": "Linear regression",
+        "image": ""
+      },
+      {
+        "text": "Logistic regression",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      },
+      {
+        "text": "Linear programming",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "How do you perform a linear regression in R?",
+    "options": [
+      {
+        "text": "lm(y ~ x, data)",
+        "image": ""
+      },
+      {
+        "text": "lm(y ~ x, data, family = “binomial”)",
+        "image": ""
+      },
+      {
+        "text": "predict(y ~ x, data)",
+        "image": ""
+      },
+      {
+        "text": "predict(y ~ x, data, binomial)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Your friend proposes to cluster 300 observations by trying all possible clustering and taking the one that minimizes intra cluster variance. You observe that:",
+    "options": [
+      {
+        "text": "This is the only possible approach",
+        "image": ""
+      },
+      {
+        "text": "This does not produce a good clustering",
+        "image": ""
+      },
+      {
+        "text": "This does require a few seconds",
+        "image": ""
+      },
+      {
+        "text": "This does require a centuries",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Single-linkage clustering works by",
+    "options": [
+      {
+        "text": "Repeatedly recomputing the centroids of clusters",
+        "image": ""
+      },
+      {
+        "text": "Repeatedly merging smaller clusters into larger ones",
+        "image": ""
+      },
+      {
+        "text": "Enumerating all possible clustering of the given points",
+        "image": ""
+      },
+      {
+        "text": "Enumerating all possible points in a cluster",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In linear regression, a high value of 𝑹𝟐 on the training set suggests:",
+    "options": [
+      {
+        "text": "A small error of the model on the fitted data",
+        "image": ""
+      },
+      {
+        "text": "A small error of the model on future predictions",
+        "image": ""
+      },
+      {
+        "text": "A large error of the model on the fitted data",
+        "image": ""
+      },
+      {
+        "text": "A large error of the model on future predictions",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A logistic regression gives the following scores, preceded by the actual label: (Y, 0.85), (Y, 0.75), (N,0.6), (Y,0.5), (N, 0.4), (N, 0.2). For a sensitivity of at least 2/3, the best choice is to predict Y when the score is at least:",
+    "options": [
+      {
+        "text": "0.9",
+        "image": ""
+      },
+      {
+        "text": "0.75",
+        "image": ""
+      },
+      {
+        "text": "0.6",
+        "image": ""
+      },
+      {
+        "text": "0.45",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Look at the confusion matrix below. What we can say?",
+    "options": [
+      {
+        "text": "The sensitivity is < 0.80%",
+        "image": ""
+      },
+      {
+        "text": "There are less positives than negatives",
+        "image": ""
+      },
+      {
+        "text": "The accuracy is > 90%",
+        "image": ""
+      },
+      {
+        "text": "The classifier predicts 1 on 60% of the times",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/FDS/matrixwhatcanwesay.png.png",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A set of observations (𝒙𝟏, 𝒚𝟏), (𝒙𝟐,𝒚𝟐)…(𝒙𝒏, 𝒚𝒏) obeys the law 𝒚𝒊 ≔ 𝒂𝒙𝒊 + 𝒃 + 𝜺𝒊, where 𝜺𝒊 is some random noise. The task of estimating a and b from the dataset is called:",
+    "options": [
+      {
+        "text": "Logistic regression",
+        "image": ""
+      },
+      {
+        "text": "Linear regression",
+        "image": ""
+      },
+      {
+        "text": "Linear programming",
+        "image": ""
+      },
+      {
+        "text": "Logistic programming",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Laplacian smoothing aims at:",
+    "options": [
+      {
+        "text": "Producing readable plots by using an average window",
+        "image": ""
+      },
+      {
+        "text": "Reducing the model’s dependence on the noise",
+        "image": ""
+      },
+      {
+        "text": "Improving the feature quality by removing outliers",
+        "image": ""
+      },
+      {
+        "text": "Avoid penalizing previously unseen observations",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A dataset of points (𝒙𝟏, 𝒚𝟏), (𝒙𝟐,𝒚𝟐)…(𝒙𝒏, 𝒚𝒏) has been generated by the model 𝒚𝒊 ≔ 𝒂𝒙𝒊 + 𝒃 + 𝜺𝒊, where 𝜺𝒊 is gaussian noise. Linear regression aims at estimating:",
+    "options": [
+      {
+        "text": "a and b",
+        "image": ""
+      },
+      {
+        "text": "a and 𝜀",
+        "image": ""
+      },
+      {
+        "text": "x and b",
+        "image": ""
+      },
+      {
+        "text": "x and y",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Which one of the following R commands selects only the rows of data where X equals 0?",
+    "options": [
+      {
+        "text": "select(data, X == 0)",
+        "image": ""
+      },
+      {
+        "text": "filter(data, X==0)",
+        "image": ""
+      },
+      {
+        "text": "summarize(data, X==0)",
+        "image": ""
+      },
+      {
+        "text": "table(data, X == 0)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "If an algorithm has exponential complexity, then we can assume that:",
+    "options": [
+      {
+        "text": "In practice it is still fast enough to be useful",
+        "image": ""
+      },
+      {
+        "text": "It admits a polynomial-time algorithm",
+        "image": ""
+      },
+      {
+        "text": "It can be solved by finding an optimal clustering",
+        "image": ""
+      },
+      {
+        "text": "No technological progress will ever make it practical",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "If you have n points, what is the number of clusters that minimizes the within-cluster sum of square?",
+    "options": [
+      {
+        "text": "1",
+        "image": ""
+      },
+      {
+        "text": "k",
+        "image": ""
+      },
+      {
+        "text": "n",
+        "image": ""
+      },
+      {
+        "text": "We cannot say",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Which regression model has smaller squared error in fitting a real function 𝒇(𝒙)?",
+    "options": [
+      {
+        "text": "A simple linear regression",
+        "image": ""
+      },
+      {
+        "text": "A logistic regression",
+        "image": ""
+      },
+      {
+        "text": "A polynomial regression of degree 2",
+        "image": ""
+      },
+      {
+        "text": "A polynomial regression of degree 10",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A doping screening is tested on a pool of 800 athletes of which 796 are clean. The test is correct in 99% of the cases. What can we say about it?",
+    "options": [
+      {
+        "text": "It may have missed all of the doped athletes",
+        "image": ""
+      },
+      {
+        "text": "It may have missed all of the clean athletes",
+        "image": ""
+      },
+      {
+        "text": "It identified all of the doped athletes",
+        "image": ""
+      },
+      {
+        "text": "It identified all of the clean atheletes",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In linear programming, the space of feasible solution is:",
+    "options": [
+      {
+        "text": "An arbitrary set",
+        "image": ""
+      },
+      {
+        "text": "A subset of 𝑅'",
+        "image": ""
+      },
+      {
+        "text": "A convex polytope",
+        "image": ""
+      },
+      {
+        "text": "None of the above",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The explained variance of a clustering equals:",
+    "options": [
+      {
+        "text": "Within-cluster SSE divided by total sum of squares",
+        "image": ""
+      },
+      {
+        "text": "Total sum of squares divided by within-cluster SSE",
+        "image": ""
+      },
+      {
+        "text": "Within-cluster SSE divided by between-cluster SSE",
+        "image": ""
+      },
+      {
+        "text": "Total sum of squares divided by between-cluster SSE",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Gradient descent is a technique we have used to:",
+    "options": [
+      {
+        "text": "Compute the optimal number of clusters",
+        "image": ""
+      },
+      {
+        "text": "Reduce the noise in the training set",
+        "image": ""
+      },
+      {
+        "text": "Find the local minima of a function",
+        "image": ""
+      },
+      {
+        "text": "Estimate the probability of false positive",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Which of these models is probably overfitting?",
+    "options": [
+      {
+        "text": "𝑅' = 0.1 on training, 𝑅' = 0.1 on test",
+        "image": ""
+      },
+      {
+        "text": "𝑅' = 0.8 on training, 𝑅' = 0.7 on test",
+        "image": ""
+      },
+      {
+        "text": "𝑅' = 0.7 on training, 𝑅' = 0.7 on test",
+        "image": ""
+      },
+      {
+        "text": "𝑅' = 0.8 on training, 𝑅' = 0.1 on test",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Laplacian smoothing aims at:",
+    "options": [
+      {
+        "text": "Improving the feature quality by removing outliers",
+        "image": ""
+      },
+      {
+        "text": "Producing readable plots",
+        "image": ""
+      },
+      {
+        "text": "Reducing the model’s dependence on the noise",
+        "image": ""
+      },
+      {
+        "text": "Avoid penalizing previously unseen observations",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "To visualize a hierarchical clustering one can use:",
+    "options": [
+      {
+        "text": "a dendrogram ",
+        "image": ""
+      },
+      {
+        "text": "a ROC curve",
+        "image": ""
+      },
+      {
+        "text": "a boxplot",
+        "image": ""
+      },
+      {
+        "text": "a histogram",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The goal of linear regression is to:",
+    "options": [
+      {
+        "text": "bring peace to the world",
+        "image": ""
+      },
+      {
+        "text": "group similar observations together",
+        "image": ""
+      },
+      {
+        "text": "learn a linear function from data ",
+        "image": ""
+      },
+      {
+        "text": "evaluate the amount of noise in the data",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Naive Bayes classiers work well for:",
+    "options": [
+      {
+        "text": "linear programming",
+        "image": ""
+      },
+      {
+        "text": "spam filtering ",
+        "image": ""
+      },
+      {
+        "text": "k-center clustering",
+        "image": ""
+      },
+      {
+        "text": "speech recognition",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The explained variance of a clustering equals:",
+    "options": [
+      {
+        "text": "(total variance)/(within-cluster variance)",
+        "image": ""
+      },
+      {
+        "text": "(within-cluster variance)/(between-cluster variance)",
+        "image": ""
+      },
+      {
+        "text": "(between-cluster variance)/(total variance) ",
+        "image": ""
+      },
+      {
+        "text": "(within-cluster variance)/(total variance)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A binary classifier on 6 points gives the probabilities: 0.9, 0.85, 0.75, 0.5, 0.4, 0.3; the correct labels are 1,1,0,1,0,0. What is the best probability threshold, if we need FPR <= 1/3?",
+    "options": [
+      {
+        "text": "0.45 ",
+        "image": ""
+      },
+      {
+        "text": "1.0",
+        "image": ""
+      },
+      {
+        "text": "0.95",
+        "image": ""
+      },
+      {
+        "text": "0.25",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Mark the wrong statement about gradient descent:",
+    "options": [
+      {
+        "text": "batch gradient descent approximates ▽f using a mini-batch",
+        "image": ""
+      },
+      {
+        "text": "stochastic gradient descent approximates ▽f with a single example",
+        "image": ""
+      },
+      {
+        "text": "there is no guarantee to nd the global minimum",
+        "image": ""
+      },
+      {
+        "text": "increasing the learning rate damps oscillations ",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Which task does not require to learn a model?",
+    "options": [
+      {
+        "text": "Clustering ",
+        "image": ""
+      },
+      {
+        "text": "Linear Regression",
+        "image": ""
+      },
+      {
+        "text": "Classication",
+        "image": ""
+      },
+      {
+        "text": "Logistic Regression",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "For two sets A, B the probability that the first element in a random permutation of A U B is in A ∩ B:",
+    "options": [
+      {
+        "text": "is J(A,B) / |A ∩ B|",
+        "image": ""
+      },
+      {
+        "text": "is J(A,B) ",
+        "image": ""
+      },
+      {
+        "text": "is 1/|A|+1/|B|",
+        "image": ""
+      },
+      {
+        "text": "is 1/(|A||B|)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The R^2 and the p-values of a regression:",
+    "options": [
+      {
+        "text": "are always equivalent",
+        "image": ""
+      },
+      {
+        "text": "cannot be both positive",
+        "image": ""
+      },
+      {
+        "text": "measure different aspects ",
+        "image": ""
+      },
+      {
+        "text": "are negatively correlated",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "xXmini=1k||x-ci||22 is the objective function of:",
+    "options": [
+      {
+        "text": "k-squares",
+        "image": ""
+      },
+      {
+        "text": "k-medians",
+        "image": ""
+      },
+      {
+        "text": "k-centers",
+        "image": ""
+      },
+      {
+        "text": "k-means",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Classification accuracy is misleading when:",
+    "options": [
+      {
+        "text": "the label proportions are unbalanced ",
+        "image": ""
+      },
+      {
+        "text": "the label proportions are balanced",
+        "image": ""
+      },
+      {
+        "text": "the dataset is too small",
+        "image": ""
+      },
+      {
+        "text": "the dataset is too large",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A binary classifier on 6 points gives the probabilities: 0.85, 0.75, 0.65, 0.5, 0.4, 0.2; the correct labels are 1,1,1,0,0,0. What is the best probability threshold?",
+    "options": [
+      {
+        "text": "0.3",
+        "image": ""
+      },
+      {
+        "text": "0.6 ",
+        "image": ""
+      },
+      {
+        "text": "0.7",
+        "image": ""
+      },
+      {
+        "text": "0.9",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "An algorithm is considered practical if its running time, as a function of the input size, is:",
+    "options": [
+      {
+        "text": "exponential",
+        "image": ""
+      },
+      {
+        "text": "polynomial ",
+        "image": ""
+      },
+      {
+        "text": "linear",
+        "image": ""
+      },
+      {
+        "text": "logarithmic",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The naive Bayes classier learns:",
+    "options": [
+      {
+        "text": "the marginal distribution of predictors",
+        "image": ""
+      },
+      {
+        "text": "the joint distribution of predictors",
+        "image": ""
+      },
+      {
+        "text": "the joint distribution of predictors and labels ",
+        "image": ""
+      },
+      {
+        "text": "the marginal distribution of labels",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "k-PCA differs from k-means in that xi is:",
+    "options": [
+      {
+        "text": "any PCA component",
+        "image": ""
+      },
+      {
+        "text": "any linear combination of PCA components ",
+        "image": ""
+      },
+      {
+        "text": "orthogonal to all PCA components",
+        "image": ""
+      },
+      {
+        "text": "any a convex combination of PCA components",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In logistic regression, the estimated probability of xi being a positive is:",
+    "options": [
+      {
+        "text": "1/(1+e-Tx) ",
+        "image": ""
+      },
+      {
+        "text": "1/(1+|x|2)",
+        "image": ""
+      },
+      {
+        "text": "log(Tx/(1-Tx))",
+        "image": ""
+      },
+      {
+        "text": "log(xi)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A sports betting agency wants to predict whether the Italian national football team will or not qualify for the World Cup championship. They should use:",
+    "options": [
+      {
+        "text": "Clustering",
+        "image": ""
+      },
+      {
+        "text": "Logistic regression ",
+        "image": ""
+      },
+      {
+        "text": "Linear programming",
+        "image": ""
+      },
+      {
+        "text": "Linear regression",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A problem X  NP is said to be NP-complete if:",
+    "options": [
+      {
+        "text": "X can be reduced to every Y  NP in polytime",
+        "image": ""
+      },
+      {
+        "text": "every Y  NP can be reduced to X in polytime",
+        "image": ""
+      },
+      {
+        "text": "no Y  NP can be reduced to X in polytime",
+        "image": ""
+      },
+      {
+        "text": "none of the others",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The quadratic loss of linear regression is:",
+    "options": [
+      {
+        "text": "i=1m(yi-yi)2",
+        "image": ""
+      },
+      {
+        "text": "i=1m(xi-xi)2",
+        "image": ""
+      },
+      {
+        "text": "i=1m(xi-yi)2",
+        "image": ""
+      },
+      {
+        "text": "i=1m(yi2-yi2)2",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "What is the best threshold value for turning probability scores into binary predictions?",
+    "options": [
+      {
+        "text": "the one that maximizes sensitivity",
+        "image": ""
+      },
+      {
+        "text": "it depends on the problem ",
+        "image": ""
+      },
+      {
+        "text": "the one that maximizes accuracy",
+        "image": ""
+      },
+      {
+        "text": "the one that maximizes specificity",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In Human coding, the encoder:",
+    "options": [
+      {
+        "text": "processes whole runs of identical input symbols",
+        "image": ""
+      },
+      {
+        "text": "works by solving a clustering problem",
+        "image": ""
+      },
+      {
+        "text": "works by solving a regression problem",
+        "image": ""
+      },
+      {
+        "text": "processes each input symbol individually ",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The Maximum Likelihood Estimator for the parameters of a linear model with independent Gaussian noise is:",
+    "options": [
+      {
+        "text": "the OLS solution vector *  ",
+        "image": ""
+      },
+      {
+        "text": "the square root of the OLS solution *",
+        "image": ""
+      },
+      {
+        "text": "it depends on the dataset",
+        "image": ""
+      },
+      {
+        "text": "the vector  of the generating process",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Consider the LP: min f(x,y)=x+y; x+y2; x,y0. The corresponding polytope is:",
+    "options": [
+      {
+        "text": "degenerate",
+        "image": ""
+      },
+      {
+        "text": "bounded",
+        "image": ""
+      },
+      {
+        "text": "unbounded",
+        "image": ""
+      },
+      {
+        "text": "empty ",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Min-hashing maps each document to:",
+    "options": [
+      {
+        "text": "one hash signature ",
+        "image": ""
+      },
+      {
+        "text": "a distance matrix",
+        "image": ""
+      },
+      {
+        "text": "the set of most frequent terms",
+        "image": ""
+      },
+      {
+        "text": "a real vector",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "How do you do a linear regression in R?",
+    "options": [
+      {
+        "text": "predict(y  x, data)",
+        "image": ""
+      },
+      {
+        "text": "lm(y  x, data) ",
+        "image": ""
+      },
+      {
+        "text": "predict(y  x, data, family=\"binomial\")",
+        "image": ""
+      },
+      {
+        "text": "lm(y  x, data, family=\"binomial\")",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "How do you measure the significance of an estimate?",
+    "options": [
+      {
+        "text": "with its magnitude",
+        "image": ""
+      },
+      {
+        "text": "with R^2",
+        "image": ""
+      },
+      {
+        "text": "with its p-value",
+        "image": ""
+      },
+      {
+        "text": "with its sign",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A manufacturing company wants to nd out the relationship between the budget spent in advertising and the total sales of the next semester. They could use:",
+    "options": [
+      {
+        "text": "Linear Regression",
+        "image": ""
+      },
+      {
+        "text": "Logistic Regression",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      },
+      {
+        "text": "Linear Programming",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The company wants to predict if a machine will have a technical failure in the next 10 days. This could be done with:",
+    "options": [
+      {
+        "text": "Linear Regression",
+        "image": ""
+      },
+      {
+        "text": "Logistic Regression",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      },
+      {
+        "text": "Linear Programming",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Moreover, items from the same production line are similar while those from different lines are radically different. You suggest to check by using:",
+    "options": [
+      {
+        "text": "Linear Regression",
+        "image": ""
+      },
+      {
+        "text": "Logistic Regression",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      },
+      {
+        "text": "Linear Programming",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "What is the true positive rate aka sensitivity?",
+    "options": [
+      {
+        "text": "the fraction of negatives that are incorrectly classified",
+        "image": ""
+      },
+      {
+        "text": "the fraction of negatives that are correctly classified",
+        "image": ""
+      },
+      {
+        "text": "the fraction of positives that are incorrectly classified",
+        "image": ""
+      },
+      {
+        "text": "the fraction of positives that are correctly classified",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Single-linkage clustering works by:",
+    "options": [
+      {
+        "text": "repeatedly recomputing the centroids of clusters",
+        "image": ""
+      },
+      {
+        "text": "repeatedly merging smaller clusters into larger ones",
+        "image": ""
+      },
+      {
+        "text": "enumerating all possible clustering of the given points",
+        "image": ""
+      },
+      {
+        "text": "enumerating all possible points in a cluster",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "You have a set of observations (x; y) with x; y 2 R. Which one of the following gives the highest R2?",
+    "options": [
+      {
+        "text": "Simple linear regression",
+        "image": ""
+      },
+      {
+        "text": "Polynomial regression of degree 2",
+        "image": ""
+      },
+      {
+        "text": "Polynomial regression of degree 10",
+        "image": ""
+      },
+      {
+        "text": "Logistic regression\t",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Which one of the following performances indicates the best model for prediction?",
+    "options": [
+      {
+        "text": "R2 = 0:2 on training, R2 = 0:1 on test",
+        "image": ""
+      },
+      {
+        "text": "R2 = 0:7 on training, R2 = 0:7 on test",
+        "image": ""
+      },
+      {
+        "text": "R2 = 0:8 on training, R2 = 0:1 on test",
+        "image": ""
+      },
+      {
+        "text": "R2 = 0:9 on training, R2 = 􀀀0:9 on test",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Which task does not require a training set (i.e. a dataset used for learning a model)?",
+    "options": [
+      {
+        "text": "Linear Regression",
+        "image": ""
+      },
+      {
+        "text": "Logistic Regression",
+        "image": ""
+      },
+      {
+        "text": "Classification",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "If you have n points, what is the number of clusters that minimizes the within-cluster sum of squares?",
+    "options": [
+      {
+        "text": "1",
+        "image": ""
+      },
+      {
+        "text": "k",
+        "image": ""
+      },
+      {
+        "text": "n",
+        "image": ""
+      },
+      {
+        "text": "we cannot say",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In the bias-variance decomposition of the expected squared error, what does a high bias suggest?",
+    "options": [
+      {
+        "text": "noisy data",
+        "image": ""
+      },
+      {
+        "text": "overtting",
+        "image": ""
+      },
+      {
+        "text": "undertting",
+        "image": ""
+      },
+      {
+        "text": "crosstting",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A set of observations (x1; y1), (x2; y2), …,(xn; yn) obeys the law yi := axi + b + i where  i is some random noise. The task of estimating a and b from the dataset is called:",
+    "options": [
+      {
+        "text": "logistic regression",
+        "image": ""
+      },
+      {
+        "text": "linear regression",
+        "image": ""
+      },
+      {
+        "text": "linear programming",
+        "image": ""
+      },
+      {
+        "text": "logistic programming",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A regression model (M1) on a training set gives R^2 = 0.5 while a second model (M2) gives R^2 = 0.9. What can we say about predictions on a test set?",
+    "options": [
+      {
+        "text": "M2 will have error smaller than M1",
+        "image": ""
+      },
+      {
+        "text": "M2 will have error larger than M1",
+        "image": ""
+      },
+      {
+        "text": "M2 will have the same error as M1",
+        "image": ""
+      },
+      {
+        "text": "we cannot say",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "You developed a clinical test to distinguish sick patients from healthy patients. In the population, on average 998 out of 1000 people are healthy, and the test gives an incorrect prediction in 0.5% of the cases. This means the test:",
+    "options": [
+      {
+        "text": "identifies all the healthy patients",
+        "image": ""
+      },
+      {
+        "text": "identifies all the sick patients",
+        "image": ""
+      },
+      {
+        "text": "could miss all the healthy patients",
+        "image": ""
+      },
+      {
+        "text": "could miss all the sick patients",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "How would you describe overfitting?",
+    "options": [
+      {
+        "text": "the model is too complex and follows the noise",
+        "image": ""
+      },
+      {
+        "text": "the model is too complex and discards the noise",
+        "image": ""
+      },
+      {
+        "text": "the model is too simple and follows the noise",
+        "image": ""
+      },
+      {
+        "text": "the model is too simple and discards the noise",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "You have to convert the scores given by a logistic regression model into binary predictions. What is the best threshold?",
+    "options": [
+      {
+        "text": "the one that maximizes accuracy",
+        "image": ""
+      },
+      {
+        "text": "the one that maximizes TPR",
+        "image": ""
+      },
+      {
+        "text": "the one that maximizes FPR",
+        "image": ""
+      },
+      {
+        "text": "it depends on the requirements",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Given a linear regression model, the expected squared error can be usefully decomposed in:",
+    "options": [
+      {
+        "text": "SSE and SST",
+        "image": ""
+      },
+      {
+        "text": "underfit, overfit and noise",
+        "image": ""
+      },
+      {
+        "text": "bias, variance, and error",
+        "image": ""
+      },
+      {
+        "text": "variance and covariance",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Look at the confusion matrix below (1=positive=true,0=negative=false). What can we say?",
+    "options": [
+      {
+        "text": "the specificity is 2/3",
+        "image": ""
+      },
+      {
+        "text": "the sensitivity is 2/3",
+        "image": ""
+      },
+      {
+        "text": "the accuracy is 2/3",
+        "image": ""
+      },
+      {
+        "text": "none of the above",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/FDS/1positive0negative.png.png",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "You are using k-means, and notice that different executions give different results. This happens since:",
+    "options": [
+      {
+        "text": "k-means is randomized",
+        "image": ""
+      },
+      {
+        "text": "clustering can take exponential time",
+        "image": ""
+      },
+      {
+        "text": "this is unsupervised learning",
+        "image": ""
+      },
+      {
+        "text": "you are using the wrong value for k",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "You have 6 observations; their class (Positive or Negative) and the score given by a logistic regression are as follows: (P,0.9), (P,0.85), (N,0.75), (P,0.5), (N,0.4), (N,0.3). If you do not want the false positive rate of your classier to exceed 1/3, the best choice is to predict “Y\" whenever the score is at least:",
+    "options": [
+      {
+        "text": "1.2",
+        "image": ""
+      },
+      {
+        "text": "1.0",
+        "image": ""
+      },
+      {
+        "text": "0.45",
+        "image": ""
+      },
+      {
+        "text": "0.25",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Logistic regression finds the parameters that maximize: ",
+    "options": [
+      {
+        "text": "the mean square error of the input data",
+        "image": ""
+      },
+      {
+        "text": "the skewness of the input data",
+        "image": ""
+      },
+      {
+        "text": "the inter-cluster distance of the input data",
+        "image": ""
+      },
+      {
+        "text": "the log-likelihood of the input data",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "What does the Bayesian Optimal Classier need to know in order to work?",
+    "options": [
+      {
+        "text": "the marginal distribution of each variable",
+        "image": ""
+      },
+      {
+        "text": "the marginal distribution of the label",
+        "image": ""
+      },
+      {
+        "text": "the joint distribution of variables and label",
+        "image": ""
+      },
+      {
+        "text": "the joint distribution of the variables",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Which one of the following classifiers has the best performance?",
+    "options": [
+      {
+        "text": "TPR=0.2, FPR=0.2",
+        "image": ""
+      },
+      {
+        "text": "TPR=0.2, FPR=0.8",
+        "image": ""
+      },
+      {
+        "text": "TPR=0.8, FPR=0.2",
+        "image": ""
+      },
+      {
+        "text": "TPR=0.8, FPR=0.8",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Your boss calls you to tell your new regression model seems completely useless for prediction, in spite of the high R^2 of the t. You realize that probably there is:",
+    "options": [
+      {
+        "text": "underfitting",
+        "image": ""
+      },
+      {
+        "text": "overfitting",
+        "image": ""
+      },
+      {
+        "text": "correlation",
+        "image": ""
+      },
+      {
+        "text": "no tomorrow",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "From the confusion matrix below, what can we say?",
+    "options": [
+      {
+        "text": "R^2 = 0:67",
+        "image": ""
+      },
+      {
+        "text": "accuracy = 80%",
+        "image": ""
+      },
+      {
+        "text": "all good things must come to an end",
+        "image": ""
+      },
+      {
+        "text": "sensitivity < 80%",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/FDS/accuracy80.png.png",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Consider the LP: max f(x,y)=x+3y; x10; y3. The value of the optimal solution is:",
+    "options": [
+      {
+        "text": "19",
+        "image": ""
+      },
+      {
+        "text": "23",
+        "image": ""
+      },
+      {
+        "text": "12",
+        "image": ""
+      },
+      {
+        "text": "40",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Your friend proposes a novel clustering algorithm that tries all possible clusterings of the data. This algorithm:",
+    "options": [
+      {
+        "text": "has exponential complexity",
+        "image": ""
+      },
+      {
+        "text": "is efficient but gives poor clusterings",
+        "image": ""
+      },
+      {
+        "text": "has polynomial complexity",
+        "image": ""
+      },
+      {
+        "text": "is efficient and gives good clusterings",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In a binary classier build by thresholding the scores of a logistic regression model, the positive observations:",
+    "options": [
+      {
+        "text": "have a score strictly higher than all the negatives",
+        "image": ""
+      },
+      {
+        "text": "have higher density than the negatives",
+        "image": ""
+      },
+      {
+        "text": "are at least as many as the negatives",
+        "image": ""
+      },
+      {
+        "text": "are separated from the negatives by a hyperplane",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The class NP contains all problems whose solution:",
+    "options": [
+      {
+        "text": "can be verified in polytime",
+        "image": ""
+      },
+      {
+        "text": "requires exponential time",
+        "image": ""
+      },
+      {
+        "text": "none of the others",
+        "image": ""
+      },
+      {
+        "text": "can be computed in polytime",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Lloyd's algorithm for k-means works by:",
+    "options": [
+      {
+        "text": "evaluating all possible points in a cluster",
+        "image": ""
+      },
+      {
+        "text": "evaluating all possible clustering of the points",
+        "image": ""
+      },
+      {
+        "text": "repeatedly merging clusters",
+        "image": ""
+      },
+      {
+        "text": "repeatedly adjusting the centroids of clusters",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "You want to learn how your revenue depends on parameters such as number of working hours, etc. You could use:",
+    "options": [
+      {
+        "text": "Linear Regression",
+        "image": ""
+      },
+      {
+        "text": "Linear Programming",
+        "image": ""
+      },
+      {
+        "text": "Logistic Regression",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In least squares, R^2 can be seen as:",
+    "options": [
+      {
+        "text": "the norm of the parameter vector",
+        "image": ""
+      },
+      {
+        "text": "none of the others",
+        "image": ""
+      },
+      {
+        "text": "the gain over a baseline model",
+        "image": ""
+      },
+      {
+        "text": "the inverse of the SSE",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The ROC curve shows:",
+    "options": [
+      {
+        "text": "specificity versus sensitivity",
+        "image": ""
+      },
+      {
+        "text": "specificity versus FPR",
+        "image": ""
+      },
+      {
+        "text": "TPR versus sensitivity",
+        "image": ""
+      },
+      {
+        "text": "TPR versus FPR",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Can feature scaling improve the model fitted via least squares?",
+    "options": [
+      {
+        "text": "yes, in terms of p-values",
+        "image": ""
+      },
+      {
+        "text": "no",
+        "image": ""
+      },
+      {
+        "text": "yes, in terms of interpretability",
+        "image": ""
+      },
+      {
+        "text": "yes, in terms of R2",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Can a clustering on n points achieve 0 within-cluster sum of squares?",
+    "options": [
+      {
+        "text": "yes, with 1 cluster",
+        "image": ""
+      },
+      {
+        "text": "yes, with k clusters",
+        "image": ""
+      },
+      {
+        "text": "yes, with n clusters",
+        "image": ""
+      },
+      {
+        "text": "no, never",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In linear regression, if the p-value for the estimate i is small enough, then we:",
+    "options": [
+      {
+        "text": "accept the null hypothesis i = 0",
+        "image": ""
+      },
+      {
+        "text": "reject the null hypothesis i = 0",
+        "image": ""
+      },
+      {
+        "text": "use a model with more features",
+        "image": ""
+      },
+      {
+        "text": "use a model with more parameters",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Texts written in the same language have a similar letter frequency distribution. You can check this fact by:",
+    "options": [
+      {
+        "text": "Logistic Regression",
+        "image": ""
+      },
+      {
+        "text": "Linear Programming",
+        "image": ""
+      },
+      {
+        "text": "Linear Regression",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Texts written in the same language have a similar letter frequency distribution. You can check this fact by:",
+    "options": [
+      {
+        "text": "Logistic Regression",
+        "image": ""
+      },
+      {
+        "text": "Linear Programming",
+        "image": ""
+      },
+      {
+        "text": "Linear Regression",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Two classifiers, C1 and C2, have accuracy respectively 98\\\\% \\\\and 95%. Which one is the best?",
+    "options": [
+      {
+        "text": "C1",
+        "image": ""
+      },
+      {
+        "text": "They are equivalent",
+        "image": ""
+      },
+      {
+        "text": "We cannot say",
+        "image": ""
+      },
+      {
+        "text": "C2",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Correlation clustering asks to minimize:",
+    "options": [
+      {
+        "text": "The root mean squared error",
+        "image": ""
+      },
+      {
+        "text": "The number of disagreements",
+        "image": ""
+      },
+      {
+        "text": "The intra-cluster variance",
+        "image": ""
+      },
+      {
+        "text": "The running time",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "If you increase the complexity of your linear regression model, eventually the SSE on the test set will:",
+    "options": [
+      {
+        "text": "Approach zero",
+        "image": ""
+      },
+      {
+        "text": "Cancel the training error",
+        "image": ""
+      },
+      {
+        "text": "Exceed the training error",
+        "image": ""
+      },
+      {
+        "text": "Become negative",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Classification accuracy is misleading when:",
+    "options": [
+      {
+        "text": "The label proportions are unbalanced",
+        "image": ""
+      },
+      {
+        "text": "The dataset is too small",
+        "image": ""
+      },
+      {
+        "text": "The label proprtions are balanced",
+        "image": ""
+      },
+      {
+        "text": "The dataset is too large",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The worst-case running time of the k-means algorithm on the n points is:",
+    "options": [
+      {
+        "text": "Polynomial in n",
+        "image": ""
+      },
+      {
+        "text": "Superpolynomial in n",
+        "image": ""
+      },
+      {
+        "text": "Linear in n",
+        "image": ""
+      },
+      {
+        "text": "Unbounded in n",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In linear regression, the expected squared error s the sum of:",
+    "options": [
+      {
+        "text": "The good the bad and the ugly",
+        "image": ""
+      },
+      {
+        "text": "Squared bias and variance and noise",
+        "image": ""
+      },
+      {
+        "text": "Underfit and overfit the noise",
+        "image": ""
+      },
+      {
+        "text": "Variance and covariance and noise",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Your friend proposes an innovative clustering algorithm that enumerates all possible clusterings of the points. This algorithm:",
+    "options": [
+      {
+        "text": "Has exponential complexity",
+        "image": ""
+      },
+      {
+        "text": "Has polynomial complexity",
+        "image": ""
+      },
+      {
+        "text": "Is efficient but gives poor clustering",
+        "image": ""
+      },
+      {
+        "text": "Is efficient and gives good clusterings",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A high R^2 on a given dataset means:",
+    "options": [
+      {
+        "text": "A large error on new data",
+        "image": ""
+      },
+      {
+        "text": "A large error on that data",
+        "image": ""
+      },
+      {
+        "text": "A small error on that data",
+        "image": ""
+      },
+      {
+        "text": "A small error on new data",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Multicollinearity arises if the features vectors are:",
+    "options": [
+      {
+        "text": "absolutely orthonogal",
+        "image": ""
+      },
+      {
+        "text": "linearly dependent",
+        "image": ""
+      },
+      {
+        "text": "linearly independent",
+        "image": ""
+      },
+      {
+        "text": "positive semidefinite",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A logistic regression model learns:",
+    "options": [
+      {
+        "text": "The conditional distribution of predictors",
+        "image": ""
+      },
+      {
+        "text": "The conditional distribution of labels",
+        "image": ""
+      },
+      {
+        "text": "The marginal distribution of predictors",
+        "image": ""
+      },
+      {
+        "text": "The marginal distribution of labels",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Consider the LP: min f(x,y) = x + y; x+y >= 2; x, y <= 0. The corresponding polytope is:",
+    "options": [
+      {
+        "text": "Bounded",
+        "image": ""
+      },
+      {
+        "text": "empty",
+        "image": ""
+      },
+      {
+        "text": "Degenerate",
+        "image": ""
+      },
+      {
+        "text": "Unbounded",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "To measure the efficiency of algorithms we use:",
+    "options": [
+      {
+        "text": "convex analysis",
+        "image": ""
+      },
+      {
+        "text": "asymptotic analysis",
+        "image": ""
+      },
+      {
+        "text": "squared analysis",
+        "image": ""
+      },
+      {
+        "text": "clinical analysis",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Everything else being equal, what does suggest a good clustering?",
+    "options": [
+      {
+        "text": "a high p-value",
+        "image": ""
+      },
+      {
+        "text": "a low within-cluster sum of squares",
+        "image": ""
+      },
+      {
+        "text": "a large number of observations",
+        "image": ""
+      },
+      {
+        "text": "a small number of clusters",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The set cover problem:",
+    "options": [
+      {
+        "text": "Can be solved in constant time",
+        "image": ""
+      },
+      {
+        "text": "is part of linear programming",
+        "image": ""
+      },
+      {
+        "text": "is NP-Complete",
+        "image": ""
+      },
+      {
+        "text": "is P-Complete",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A company must allocate 5M€ so that each department receives a minimum amount. You can use:",
+    "options": [
+      {
+        "text": "Linear regression",
+        "image": ""
+      },
+      {
+        "text": "Logistic Regression",
+        "image": ""
+      },
+      {
+        "text": "Clustering",
+        "image": ""
+      },
+      {
+        "text": "Linear Programming",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "With hierarchical clustering on n points you can get:",
+    "options": [
+      {
+        "text": "Between 1 and n clusters",
+        "image": ""
+      },
+      {
+        "text": "No satisfaction",
+        "image": ""
+      },
+      {
+        "text": "Up to 2^n clusters",
+        "image": ""
+      },
+      {
+        "text": "At most log(n) clusters",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The standard assumption of linear regression is that the noise across the observations:",
+    "options": [
+      {
+        "text": "is fast and furios",
+        "image": ""
+      },
+      {
+        "text": "is always bounded",
+        "image": ""
+      },
+      {
+        "text": "is Gaussian and correlated",
+        "image": ""
+      },
+      {
+        "text": "is Gaussian and independent",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "The ROC curve is used to measure:",
+    "options": [
+      {
+        "text": "The amount of overfitting and underfitting",
+        "image": ""
+      },
+      {
+        "text": "The noise in the training dataset",
+        "image": ""
+      },
+      {
+        "text": "The performance of binary classifiers",
+        "image": ""
+      },
+      {
+        "text": "The MSE obtained by a linear regression\"",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Geometrically, each constraint of a linear program corresponds to:",
+    "options": [
+      {
+        "text": "a vector",
+        "image": ""
+      },
+      {
+        "text": "A double-space",
+        "image": ""
+      },
+      {
+        "text": "a cone",
+        "image": ""
+      },
+      {
+        "text": "a half-space",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Many well-known clustering problems are:",
+    "options": [
+      {
+        "text": "impossible to solve",
+        "image": ""
+      },
+      {
+        "text": "NP-hard",
+        "image": ""
+      },
+      {
+        "text": "easy to solve",
+        "image": ""
+      },
+      {
+        "text": "infeasible\"",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A polytope is:",
+    "options": [
+      {
+        "text": "The difference of half-spaces",
+        "image": ""
+      },
+      {
+        "text": "the greatest gift of all",
+        "image": ""
+      },
+      {
+        "text": "the union of half-spaces",
+        "image": ""
+      },
+      {
+        "text": "The intersection of half spaces",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Everything else being equal. What does suggest good clustering?",
+    "options": [
+      {
+        "text": "Few clusters",
+        "image": ""
+      },
+      {
+        "text": "low within-cluster sum of squares",
+        "image": ""
+      },
+      {
+        "text": "high p-value",
+        "image": ""
+      },
+      {
+        "text": "large number of points",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  }
+]

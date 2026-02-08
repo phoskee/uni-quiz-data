@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Uni-Quiz Standard",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "question": {
+        "type": "string",
+        "description": "Il testo della domanda."
+      },
+      "options": {
+        "type": "array",
+        "minItems": 2,
+        "items": {
+          "type": "object",
+          "properties": {
+            "text": { "type": "string", "description": "Testo della risposta." },
+            "image": { "type": "string", "description": "URL opzionale di un'immagine per la risposta." }
+          },
+          "required": ["text", "image"]
+        }
+      },
+      "correctIndex": {
+        "type": "integer",
+        "description": "L'indice (0-based) della risposta corretta."
+      },
+      "image": {
+        "type": "string",
+        "description": "URL opzionale di un'immagine a corredo della domanda."
+      },
+      "code": {
+        "type": "string",
+        "description": "Eventuale snippet di codice o testo formattato."
+      },
+      "explanation": {
+        "type": "string",
+        "description": "Spiegazione del perché la risposta è corretta."
+      },
+      "hint": {
+        "type": "string",
+        "description": "Suggerimento per lo studente."
+      }
+    },
+    "required": ["question", "options", "correctIndex", "image", "code", "explanation", "hint"]
+  }
+}

@@ -1,0 +1,782 @@
+[
+  {
+    "question": "Identificare uno svantaggio della modularizzazione",
+    "options": [
+      {
+        "text": "nessuno di questi",
+        "image": ""
+      },
+      {
+        "text": "livello di astrazione desiderato può essere inserito nei programmi",
+        "image": ""
+      },
+      {
+        "text": "manutenzione più facile con componenti più piccole",
+        "image": ""
+      },
+      {
+        "text": "programmi divisi in base ad aspetti funzionali",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti è un tipo di Modello Architetturale?",
+    "options": [
+      {
+        "text": "Static structural model",
+        "image": ""
+      },
+      {
+        "text": "tutti quelli menzionati",
+        "image": ""
+      },
+      {
+        "text": "Distribution model",
+        "image": ""
+      },
+      {
+        "text": "Dynamic process model",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale di queste view mostra che il sistema è composto da processi interagenti a run time",
+    "options": [
+      {
+        "text": "physical",
+        "image": ""
+      },
+      {
+        "text": "development",
+        "image": ""
+      },
+      {
+        "text": "logical",
+        "image": ""
+      },
+      {
+        "text": "process",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale/i dei seguenti è un conflitto Architetturale",
+    "options": [
+      {
+        "text": "tutti quelli menzionati",
+        "image": ""
+      },
+      {
+        "text": "localizzare caratteristiche di safety in genere richiedo maggiori comunicazioni conridotta efficienza",
+        "image": ""
+      },
+      {
+        "text": "componenti a grana grossa migliorano l'efficienza e riducono la manutenibilità",
+        "image": ""
+      },
+      {
+        "text": "nessuna",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale documento viene creato dal system analyst dopo che i requisiti sono stati raccolti dai vari stakeholders",
+    "options": [
+      {
+        "text": "feasibility study",
+        "image": ""
+      },
+      {
+        "text": "software requirement validation",
+        "image": ""
+      },
+      {
+        "text": "requirement gathering",
+        "image": ""
+      },
+      {
+        "text": "software requirement specification",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Coupling è una indicazione qualitativa del fatto che un modulo",
+    "options": [
+      {
+        "text": "si focalizza su una cosa solamente",
+        "image": ""
+      },
+      {
+        "text": "è in grado di completare le sue funzioni tempestivamente",
+        "image": ""
+      },
+      {
+        "text": "può essere scritto in maniera più compatta",
+        "image": ""
+      },
+      {
+        "text": "è connesso ad altri moduli ed l mondo esterno",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il primo passo nel Software Development Life Cycle è",
+    "options": [
+      {
+        "text": "analisi",
+        "image": ""
+      },
+      {
+        "text": "Identificazione del problema e delle opportunità",
+        "image": ""
+      },
+      {
+        "text": "progettazione",
+        "image": ""
+      },
+      {
+        "text": "sviluppo e documentazione",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "L'importanza del software design si può riassumere in una sola parola che è",
+    "options": [
+      {
+        "text": "Qualità",
+        "image": ""
+      },
+      {
+        "text": "Complessità",
+        "image": ""
+      },
+      {
+        "text": "Precisione",
+        "image": ""
+      },
+      {
+        "text": "Efficienza",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti non influenza la qualità del software ed il rendimento dell'organizzazione?",
+    "options": [
+      {
+        "text": "prodotto",
+        "image": ""
+      },
+      {
+        "text": "mercato",
+        "image": ""
+      },
+      {
+        "text": "tecnologia",
+        "image": ""
+      },
+      {
+        "text": "persone",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Cohesion (coesione) è una indicazione qualitativa del fatto che un modulo",
+    "options": [
+      {
+        "text": "si focalizza su una cosa solamente",
+        "image": ""
+      },
+      {
+        "text": "può essere scritto in maniera più compatta",
+        "image": ""
+      },
+      {
+        "text": "è in grado di completare le sue funzioni tempestivamente",
+        "image": ""
+      },
+      {
+        "text": "è connesso ad altri moduli ed l mondo esterno",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale tecnica è applicabile quando altri progetti nello stesso dominio di applicazione sono stati completati?",
+    "options": [
+      {
+        "text": "Legge di Parkinson (Il lavoro si espande fino ad occupare tutto il tempo disponibile)",
+        "image": ""
+      },
+      {
+        "text": "giudizio di esperti",
+        "image": ""
+      },
+      {
+        "text": "modellazione algoritmica dei costi",
+        "image": ""
+      },
+      {
+        "text": "stima per analogia",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Un ................ si sviluppa usando informazioni storiche sui costi che collegano netriche di software al costo del progetto",
+    "options": [
+      {
+        "text": "stime per analogia",
+        "image": ""
+      },
+      {
+        "text": "modello algoritmico dei costi",
+        "image": ""
+      },
+      {
+        "text": "legga di Pakinson (Il lavoro si espande fino ad occupare tutto il tempo disponibile)",
+        "image": ""
+      },
+      {
+        "text": "giudizio di un esperto",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti non si può ottenere con strumenti automatici di stima?",
+    "options": [
+      {
+        "text": "predirre costi del software",
+        "image": ""
+      },
+      {
+        "text": "predirre le richieste del cliente",
+        "image": ""
+      },
+      {
+        "text": "predirre livelli di personale",
+        "image": ""
+      },
+      {
+        "text": "predirre la schedulazione del software",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sul Model Checking è sbagliata ?",
+    "options": [
+      {
+        "text": "non è computazionalmente oneroso",
+        "image": ""
+      },
+      {
+        "text": "esplora tutti i possibili percorsi nel modello",
+        "image": ""
+      },
+      {
+        "text": "tutte e tre le menzionate",
+        "image": ""
+      },
+      {
+        "text": "è particolarmente utile per verificare sistemi concorrenti",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale modello assume che i sistemi siano creati da componenti riusabili, scripting a programmazione di basi di dati?",
+    "options": [
+      {
+        "text": "post-architecture model",
+        "image": ""
+      },
+      {
+        "text": "application-composition model",
+        "image": ""
+      },
+      {
+        "text": "reuse model",
+        "image": ""
+      },
+      {
+        "text": "early design model",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quake dei seguenti non è una misura diretta di processo di IngSw?",
+    "options": [
+      {
+        "text": "tutti i menzionati",
+        "image": ""
+      },
+      {
+        "text": "costo",
+        "image": ""
+      },
+      {
+        "text": "efficienza",
+        "image": ""
+      },
+      {
+        "text": "sforzo impiegato",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti non è considerato un rischio in project management?",
+    "options": [
+      {
+        "text": "testing",
+        "image": ""
+      },
+      {
+        "text": "ritardi nelle specifiche",
+        "image": ""
+      },
+      {
+        "text": "avvicendamento del personale",
+        "image": ""
+      },
+      {
+        "text": "prodotti in competizione",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale/i di questi parametri principali dovresti usare per calcolare i costi di un progetto di sviluppo software?",
+    "options": [
+      {
+        "text": "costi di hardware e software",
+        "image": ""
+      },
+      {
+        "text": "costi di viaggio ed addestramento",
+        "image": ""
+      },
+      {
+        "text": "remunerazioni di software engineers e managers",
+        "image": ""
+      },
+      {
+        "text": "tutti questi",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Lo studio di fattibilità è un'attività volta a",
+    "options": [
+      {
+        "text": "a proporre alcune strategie per la sua realizzazione",
+        "image": ""
+      },
+      {
+        "text": "stabilire se un prodotto è tecnicamente realizzabile",
+        "image": ""
+      },
+      {
+        "text": "tutti e tre",
+        "image": ""
+      },
+      {
+        "text": "stabilire se un prodotto è economicamente conveniente",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Che relazione c'è tra la modularità di un progetto e l'organizzazione della modalità di sviluppo?",
+    "options": [
+      {
+        "text": "La modularità permette la ripartizione del lavoro fra diversi gruppi di sviluppo.",
+        "image": ""
+      },
+      {
+        "text": "la prima permette una modalità distribuita della seconda",
+        "image": ""
+      },
+      {
+        "text": "sono la stessa cosa",
+        "image": ""
+      },
+      {
+        "text": "nessuna delle tre",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quali delle seguenti strategie è diretta ad una riduzione dell'impatto del rischio?",
+    "options": [
+      {
+        "text": "tutte e tre",
+        "image": ""
+      },
+      {
+        "text": "Minimization strategies",
+        "image": ""
+      },
+      {
+        "text": "Avoidance strategies",
+        "image": ""
+      },
+      {
+        "text": "Contingency plans",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti non è considerato un rischio in Project management?",
+    "options": [
+      {
+        "text": "Testing",
+        "image": ""
+      },
+      {
+        "text": "avvicendamento del personale",
+        "image": ""
+      },
+      {
+        "text": "ritardi nelle specifiche",
+        "image": ""
+      },
+      {
+        "text": "Product competition",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quali rischi sono associati ai vincoli imposti dal management o dal mercato?",
+    "options": [
+      {
+        "text": "Product size risks",
+        "image": ""
+      },
+      {
+        "text": "Process definition risks",
+        "image": ""
+      },
+      {
+        "text": "Business impact risks",
+        "image": ""
+      },
+      {
+        "text": "Development environment risks",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Una risorsa di sistema che ha valore e deve essere protetta si chiama",
+    "options": [
+      {
+        "text": "nessuno di questi",
+        "image": ""
+      },
+      {
+        "text": "control",
+        "image": ""
+      },
+      {
+        "text": "asset",
+        "image": ""
+      },
+      {
+        "text": "vulnerabilità",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Le circostanze che hanno il potenziale di causare perdite o danno si chiamano",
+    "options": [
+      {
+        "text": "attacco",
+        "image": ""
+      },
+      {
+        "text": "minaccia",
+        "image": ""
+      },
+      {
+        "text": "control",
+        "image": ""
+      },
+      {
+        "text": "vulnerabilità",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Interaction Diagram è un termine composto per",
+    "options": [
+      {
+        "text": "Activity Diagram + State Chart Diagram",
+        "image": ""
+      },
+      {
+        "text": "nessuno di questi",
+        "image": ""
+      },
+      {
+        "text": "Deployment Diagram + Collaboration Diagram",
+        "image": ""
+      },
+      {
+        "text": "Sequence Diagram + Collaboration Diagram",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale/i di questi diagrammi è time-oriented ?",
+    "options": [
+      {
+        "text": "Collaboration",
+        "image": ""
+      },
+      {
+        "text": "nessuno di questi",
+        "image": ""
+      },
+      {
+        "text": "Sequence",
+        "image": ""
+      },
+      {
+        "text": "Activity",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale di questi diagrammi ha una view (visione) statica ?",
+    "options": [
+      {
+        "text": "Activity",
+        "image": ""
+      },
+      {
+        "text": "Collaboration",
+        "image": ""
+      },
+      {
+        "text": "Use case",
+        "image": ""
+      },
+      {
+        "text": "State chart",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale/i delle seguenti relazioni è/sono valida/e nei Use Case Diagrams ?",
+    "options": [
+      {
+        "text": "Generalization",
+        "image": ""
+      },
+      {
+        "text": "Extend",
+        "image": ""
+      },
+      {
+        "text": "tutte quelle menzionate",
+        "image": ""
+      },
+      {
+        "text": "nessuna",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Identificare la/le affermazione/i vere per gli activity diagrams.",
+    "options": [
+      {
+        "text": "Tutte quelle menzionate",
+        "image": ""
+      },
+      {
+        "text": "Sono usati per descrivere il workflow di una particolare attività di business",
+        "image": ""
+      },
+      {
+        "text": "Non ci dicono chi fa cosa e non sono riconducibili agli object models",
+        "image": ""
+      },
+      {
+        "text": "Possono essere usati per scoprire attività parallele",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  }
+]

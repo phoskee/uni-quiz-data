@@ -1,0 +1,4676 @@
+[
+  {
+    "question": "A quanti gruppi può appartenere un utente nel SO Linux?",
+    "options": [
+      {
+        "text": "Ad almeno un gruppo",
+        "image": ""
+      },
+      {
+        "text": "Ad un solo gruppo",
+        "image": ""
+      },
+      {
+        "text": "A zero o più gruppi",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga che nel sistema esiste un gruppo \"studente\" ed anche l'utente \"utente1\". Si supponga quindi di eseguire il comando seguente. Quale delle seguenti affermazioni è sbagliata?",
+    "options": [
+      {
+        "text": "Il comando genera un errore perchè per aggiungere un utente ad un gruppo si puo' utilizzare solo il comando addgroup",
+        "image": ""
+      },
+      {
+        "text": "Se \"utente1\" non appartiene al gruppo \"studente\" lo aggiunge a tale gruppo altrimenti non lo aggiunge",
+        "image": ""
+      },
+      {
+        "text": "Aggiunge utente1 al gruppo studente oppure genera un messaggio del tipo L'utente «utente1» fa già parte del gruppo «studente»",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "adduser utente1 studente",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga che nel sistema esiste un gruppo \"studente\" e non esista ancora l'utente \"utente1\". Si supponga quindi di eseguire il seguente comando. Quale sarà il risultato?",
+    "options": [
+      {
+        "text": "Da errore perchè utente1 non esiste",
+        "image": ""
+      },
+      {
+        "text": "Crea utente1 e, oltre a creare il gruppo utente1 lo aggiunge al gruppo studente",
+        "image": ""
+      },
+      {
+        "text": "Crea utente1, lo aggiunge al gruppo studente e non crea il gruppo utente1",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "sudo adduser utente1 studente",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponga di eseguire, come utente sudoer, i seguenti comandi. Quale affermazione è corretta?",
+    "options": [
+      {
+        "text": "C2 da errore \"comando non trovato\"",
+        "image": ""
+      },
+      {
+        "text": "C1 e C2 sono equivalenti ",
+        "image": ""
+      },
+      {
+        "text": "C2 esegue una setUID mentre C1 no",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "C1) sudo ls  /home\r\nC2) sudo su --command='ls /home'",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale  e' la differenza tra i comandi sudo e su",
+    "options": [
+      {
+        "text": "sudo e'  un comando che permette di  eseguire altri comandi come root; su e' una scorciatoia per invocare  il comando sudo",
+        "image": ""
+      },
+      {
+        "text": "su è un comando che permette di cambiare utente. sudo è un comando che permette di eseguire altri comandi come super-utente (root).",
+        "image": ""
+      },
+      {
+        "text": "sudo si riferisce  ad  un gruppo  di utenti. su e' invece  un  comando che permette di cambiare utente",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Di quante sezioni e' composto il man di Linux?",
+    "options": [
+      {
+        "text": "5",
+        "image": ""
+      },
+      {
+        "text": "7",
+        "image": ""
+      },
+      {
+        "text": "9",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponga di voler creare un file vuoto e di voler settare il tempo di ultimo  accesso  al  \"2  giugno 2020 ore 12:00\". Quale dei  seguenti comandi e' corretto?",
+    "options": [
+      {
+        "text": "touch -at202006021200  filename",
+        "image": ""
+      },
+      {
+        "text": "touch -cat202006021200 filename",
+        "image": ""
+      },
+      {
+        "text": "touch -ct202006021200  filename",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere un file nomefile memorizzato nel nostro filesystem. Quale e' il risultato del comando touch nomefile?",
+    "options": [
+      {
+        "text": "Crea un file vuoto con nome nomefile in sostituzione dell'esistente",
+        "image": ""
+      },
+      {
+        "text": "Aggiorna, al tempo corrente, gli atttributi atime e mtime di nomefile",
+        "image": ""
+      },
+      {
+        "text": "Crea un file vuoto con nome nomefile in sostituzione dell'esistente e valore del ctime aggiornato al tempo corrente",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "I premessi di accesso della  directory /tmp  sono 1777/drwxrwxrwt.Cosa significa",
+    "options": [
+      {
+        "text": "Il bit SetGid e' settato",
+        "image": ""
+      },
+      {
+        "text": "Lo sticky bit non e' settato",
+        "image": ""
+      },
+      {
+        "text": "Lo sticky bit e' settato",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponga di voler mostrare l'albero delle directory con radice dir1 e con profondità 3. Quale tra i seguenti comandi e' il piu' appropriato usare?",
+    "options": [
+      {
+        "text": "tree -d 3 dir1",
+        "image": ""
+      },
+      {
+        "text": "tree -L 3 dir1",
+        "image": ""
+      },
+      {
+        "text": "tree --max-depth=3 dir1",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo vogliate visualizzare l'albero delle directory con radice nella vostra home. In particolare volete visualizzare solo le directory e non i file in esse contenuti. Quali tra i seguenti comandi e' il piu' appropriato?",
+    "options": [
+      {
+        "text": "tree -d ~",
+        "image": ""
+      },
+      {
+        "text": "tree -d -L 3 /home/myhomedir",
+        "image": ""
+      },
+      {
+        "text": "tree -a ~",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di avere un file di testo (filein) e di voler copiare in un altro file (fileout) i primi 100 caratteri.  Quale di questi comandi e' corretto?",
+    "options": [
+      {
+        "text": "dd if=filein of=fileout bs=100 count=1",
+        "image": ""
+      },
+      {
+        "text": "dd if=filein of=fileout bs=1 skip=1 count=100",
+        "image": ""
+      },
+      {
+        "text": "dd if=filein of=fileout bs=10 skip=10 count=10",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di avere un file di testo (filein) contenente 1000 caratteri e di voler copiare in un altro file (fileout) 100 caratteri a partire dal decimo. Quale di questi comandi non produce il risultato atteso?",
+    "options": [
+      {
+        "text": "dd if=filein of=fileout bs=1 skip=10 count=100",
+        "image": ""
+      },
+      {
+        "text": "dd if=filein of=fileout bs=100 seek=10 count=1",
+        "image": ""
+      },
+      {
+        "text": "dd if=filein of=fileout bs=10 skip=1 count=10",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quanti job in background crea il comando seguente?",
+    "options": [
+      {
+        "text": "1",
+        "image": ""
+      },
+      {
+        "text": "Nessuno, da errore",
+        "image": ""
+      },
+      {
+        "text": "3",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "sleep 30 | sleep 15 | sleep 10 &",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quanti file system principali ha linux?",
+    "options": [
+      {
+        "text": "dipende dal numero di filesystem montati al boot",
+        "image": ""
+      },
+      {
+        "text": "1",
+        "image": ""
+      },
+      {
+        "text": "dipende dal numero di dischi installati",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In che file e' contenuta la lista dei filesystem che verranno montati al boot?",
+    "options": [
+      {
+        "text": "/etc/mdev",
+        "image": ""
+      },
+      {
+        "text": "/etc/mtab",
+        "image": ""
+      },
+      {
+        "text": "/etc/fstab",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Perche' il comando passwd (ovvero il file eseguibile /usr/bin/passwd) ha il SetUID bit settato?",
+    "options": [
+      {
+        "text": "Per consentire a qualsiasi utente di modificare la propria password",
+        "image": ""
+      },
+      {
+        "text": "Per evitare che un utente possa cancellare il file eseguibile passwd",
+        "image": ""
+      },
+      {
+        "text": "Per evitare che un utente possa modificare le password degli altri utenti",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere il seguente makefile (memorizzato in un file di nome \"makefile\"). Supponendo che non esistono entrambi i file \"merge_sorted_lists\" e \"sort_file_int\" e lanciando il comando \"make\", quale target viene eseguito?",
+    "options": [
+      {
+        "text": "merge_sorted_list",
+        "image": ""
+      },
+      {
+        "text": "entrambi",
+        "image": ""
+      },
+      {
+        "text": "nessuno dei due. Va specificato quale vogliamo eseguire con il comando make <nome_target>",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "merge_sorted_lists: merge_sorted_lists.c\r\n    gcc -Wall -Wextra -O3 merge_sorted_lists.c -o merge_sorted_lists\r\nsort_file_int: sort_file_int.c\r\n    gcc -Wall -Wextra -O3 sort_file_int.c-o sort_file_int\r\n.PHONY: clean\r\nclean:\r\n    rm -f *.o merge_sorted_lists",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Assumiamo di compilare un file .c nei seguenti modi. Perche' le dimensioni di file1.o e file2.o sono diverse?",
+    "options": [
+      {
+        "text": "perche' file2.o e' stato ottimizzato, per occupare meno spazio in memoria, rispetto a file1.o",
+        "image": ""
+      },
+      {
+        "text": "perche' file2.o contiene informazioni aggiuntive rispetto a file1.o utili per il debug",
+        "image": ""
+      },
+      {
+        "text": "non e' vero che i due comandi di compilazione producono file di dimensioni diverse",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "gcc file.c -o file1.o\r\ngcc -g file.c -o file2.o",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Assumiamo di avere due shell aperte, etichettate come shell_1 e shell_2 e supponiamo di eseguire la sequenza di comandi che segue (shell_i: cmd indica che cmd e’ eseguitto nella shell_i, i=1,2). Quale e’ il loro effetto sul processo xterm?",
+    "options": [
+      {
+        "text": "Il processo xterm viene prima mandato in esecuzione in background e poi riportato in foreground",
+        "image": ""
+      },
+      {
+        "text": "Il processo xterm viene mandato in esecuzione in background",
+        "image": ""
+      },
+      {
+        "text": "Il processo xterm viene prima portato nello stato stopped (T) e poi mandato nuovamente in esecuzione (esecuzione in foreground)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "shell_1: xterm\r\nshell_2: ps -C xterm\r\n#restituisce xtermPID\r\nshell_2: kill -s SIGSTOP xtermPID\r\nshell_2: kill -s SIGCONT xtermPID",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si assuma  di avere due shell aperte, etichettate come \"shell_1\" e \"shell_2\", e si consideri la seguente sequenza di comandi (\"shell_i\":cmd indica che cmd e' eseguitto nella  shell i, i=1,2). Quale e' il loro effetto?",
+    "options": [
+      {
+        "text": "Il processo xterm viene terminato con segnale SIGSTOP",
+        "image": ""
+      },
+      {
+        "text": "Il processo xterm viene mandato  in esecuzione in background",
+        "image": ""
+      },
+      {
+        "text": "Il processo xterm viene messo in stato stopped (T)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "shell_1: xterm\r\nshell_2: ps -C xterm\r\n#restituisce xtermPID\r\nshell_2: kill -s SIGSTOP xtermPID",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponga di avere 2 file hw1.c e hw2.c contenenti il seguente codice. Quale dei seguenti comandi di compilazione genera errore?",
+    "options": [
+      {
+        "text": "gcc -Wall hw1.c -o hw.out",
+        "image": ""
+      },
+      {
+        "text": "gcc -Wall hw1.c hw2.c -o hw.out",
+        "image": ""
+      },
+      {
+        "text": "gcc hw1.c",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "hw1.c:\r\n#include <stdio.h>\r\n#include \"hw2.c\"\r\nint f(int argc, char *args[])  {\r\n  printf(\"Hello World!\");\r\n  return 256;\r\n}\r\nhw2.c:\r\nint f(int argc, char *args[]);\r\nint main(int argc, char *args[]){\r\n  return f(argc, args);\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponga di avere 2 file hw1.c e hw2.c contenenti il seguente codice. Quale dei seguenti comandi di compilazione non genera errore?",
+    "options": [
+      {
+        "text": "gcc -Wall hw1.c hw2.c -o hw.out",
+        "image": ""
+      },
+      {
+        "text": "gcc -Wall hw1.c -o hw.out",
+        "image": ""
+      },
+      {
+        "text": "gcc -Wall hw2.c -o h2.out",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "hw1.c:\r\n#include <stdio.h>\r\n#include \"hw2.c\"\r\nint f(int argc, char *args[])  {\r\n  printf(\"Hello World!\");\r\n  return 256;\r\n}\r\nhw2.c:\r\nint f(int argc, char *args[]);\r\nint main(int argc, char *args[]){\r\n  return f(argc, args);\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere il file eseguibile (ottenuto dalla compilazione di una programma C) \"mioprogramma\". Questi due modi di invocare il programma sono equivalenti?",
+    "options": [
+      {
+        "text": "no, nel primo caso A B C vengono caricati in argv, nel secondo caso vengono inviati sullo stdin",
+        "image": ""
+      },
+      {
+        "text": "dipende dalla logica del codice",
+        "image": ""
+      },
+      {
+        "text": "si sono equivalenti",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "$ ./mioprogramma A B C\r\n$ ./mioprogramma < input.txt\r\n# dove input.txt contiene A B C",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale e' la differenza tra thread posix e processo linux?",
+    "options": [
+      {
+        "text": "Thread concorrenti condividono codice, segmento dati e file; i processi concorrenti pure",
+        "image": ""
+      },
+      {
+        "text": "Thread concorrenti condividono lo stack; i processi concorrenti anche",
+        "image": ""
+      },
+      {
+        "text": "Thread concorrenti condividono codice, segmento dati e file; i processi concorrenti no",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Per mostrare il pid dei job in esecuzione in background quali di questi comandi e' corretto?",
+    "options": [
+      {
+        "text": "jobs -p",
+        "image": ""
+      },
+      {
+        "text": "ps -p -u",
+        "image": ""
+      },
+      {
+        "text": "jobs",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale di queste stringhe non e' valida come identificatore in C?",
+    "options": [
+      {
+        "text": "_voltage",
+        "image": ""
+      },
+      {
+        "text": "rerun",
+        "image": ""
+      },
+      {
+        "text": "x-axis",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale di queste stringe e' valida come identificatore in C?",
+    "options": [
+      {
+        "text": "_voltage",
+        "image": ""
+      },
+      {
+        "text": "x-ray",
+        "image": ""
+      },
+      {
+        "text": "return",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri la seguente funzione f. Cosa produce come risultato quando eseguita?",
+    "options": [
+      {
+        "text": "Copia esattamente n caratteri della stringa b nella stringa a e restituisce a",
+        "image": ""
+      },
+      {
+        "text": "Concatena al piu' n caratteri della   stringa  b alla stringa a  e restituisce a",
+        "image": ""
+      },
+      {
+        "text": "Copia al piu' n caratteri della stringa b nella stringa a e restituisce a",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "char *f(char *a, const char *b, size_t n) {\r\n        size_t i;\r\n        for (i = 0; i < n && b[i] != '\\0'; i++)\r\n                a[i] = b[i];\r\n        for ( ; i < n; i++)\r\n        a[i] = '\\0';\r\n        return a;\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri la seguente funzione f. Cosa produce come risultato quando eseguita?",
+    "options": [
+      {
+        "text": "Copia al piu' n caratteri della stringa b in a e restituisce a",
+        "image": ""
+      },
+      {
+        "text": "Copia esattamente n caratteri della stringa b nella stringa a e restituisce a",
+        "image": ""
+      },
+      {
+        "text": "Concatena i primi n caratteri della stringa b alla stringa  a  e restituisce a",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "char *f(char *a, const char *b, size_t n) {\r\n        size_t l = strlen(a);\r\n        size_t i;\r\n             for (i = 0 ; i < n && b[i] != '\\0' ; i++)\r\n                     a[l + i] = b[i];\r\n      a[l + i] = '\\0';\r\nreturn a;\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri la seguente dichiarazione di struttura. Quale delle seguenti assegnazioni e' corretta?",
+    "options": [
+      {
+        "text": "*pA = *pB;\r\npA -> y = pB -> y;",
+        "image": ""
+      },
+      {
+        "text": "pA = &pB",
+        "image": ""
+      },
+      {
+        "text": "pA = pB;",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "struct point2D {\r\n      double x; // coordinata x\r\n     double y; // coordinata y\r\n}  pA={0, 0}, pB={1, 5};",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente ciclo for. Cosa produrebbe come risultato, se eseguito?",
+    "options": [
+      {
+        "text": "Legge una sola volta da stdin e poi termina",
+        "image": ""
+      },
+      {
+        "text": "Legge da stdin senza mai terminare",
+        "image": ""
+      },
+      {
+        "text": "Legge ripetutamente numeri interi da stdin",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "int scoreCount, a;\r\nfor(scoreCount=0; scanf(\"%d\",&a)==1; scoreCount++);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Consideri  il seguentte frammento  di codice; assumendo la malloc assegni a ptr la locazione di memoria 0x55c2b1268420, cosa contiene ptr dopo l'incremento?",
+    "options": [
+      {
+        "text": "0x55c2b1268421",
+        "image": ""
+      },
+      {
+        "text": "l'incremento della variabile prt genera un errore di segmentazione in fase di esecuzione",
+        "image": ""
+      },
+      {
+        "text": "0x55c2b1268424",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "int *ptr = malloc(sizeof(int));\r\nptr = ptr+1;",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Cosa  stampa su stdout la seguente chiamata a printf?",
+    "options": [
+      {
+        "text": "aaaaa\r\nbbbbb\r\nccccc\r\neeeee",
+        "image": ""
+      },
+      {
+        "text": "aaaaa\r\nbbbbb\r\nccccc\r\nddddd",
+        "image": ""
+      },
+      {
+        "text": "aaaaa\r\nbbbbb\r\nccccc\r\nddddd\r\neeeee",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "printf(\"aaaaa\\nbbbbb\\f\\rccccc\\r\\fddddd\\reeeee\\r\\n\");",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Per de-allocare tutta la memoria allocata, quale delle seguenti opzioni e' coretta?",
+    "options": [
+      {
+        "text": "for(i=0;i<10;i++) free(mptr1[i]);",
+        "image": ""
+      },
+      {
+        "text": "for(i=0;i<10;i++)  free(mptr1[i]); free(mptr1);",
+        "image": ""
+      },
+      {
+        "text": "free(mptr1);",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "char **mptr, **mptr1, *ptr1;\r\nint i;\r\nmptr = calloc(10,sizeof(char *));\r\nmptr1 = mptr;\r\nfor(i=0;i<10;i++){\r\n   mptr[i]=(char *)malloc(10);\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Quale delle seguenti strategie di de-allocazione crea un memory leakage?",
+    "options": [
+      {
+        "text": "free(mptr);",
+        "image": ""
+      },
+      {
+        "text": "for(i=0;i<10;i++) free(mptr[i]);",
+        "image": ""
+      },
+      {
+        "text": "entrambe, ovvero sia (a) che (b)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "char **mptr, *ptr1;\r\nint i;\r\nmptr = calloc(10,sizeof(char *));\r\nfor(i=0;i<10;i++){\r\n   mptr[i]=(char *)malloc(10);\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri un file contenente un programma in linguaggio C. Si assuma che e' stata inserita la direttiva #include \"stdio.h\" . Perche' la compilazione potrebbe generare errori?",
+    "options": [
+      {
+        "text": "Perche' cerca il file \"stdio.h\" nella directory corrente",
+        "image": ""
+      },
+      {
+        "text": "La compilazione non genera errori a meno che il file non esista nel filesystem",
+        "image": ""
+      },
+      {
+        "text": "Perche' il file stdio.h potrebbe non esistere",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti dichiarazioni di variabile inizializza una stringa?",
+    "options": [
+      {
+        "text": "char r[10] = {`L´,`9´,` ´,`4´,`a´,`p`,`r´};",
+        "image": ""
+      },
+      {
+        "text": "char r[] = ``L9 4apr´´;",
+        "image": ""
+      },
+      {
+        "text": "char r[] = {`L´,`9´,` ´,`4´,`a´,`p`,`r´}; ",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti dichiarazioni di variabile e' non valida, generando quindi un errore di compilazione?",
+    "options": [
+      {
+        "text": "float g_shock=9.89;",
+        "image": ""
+      },
+      {
+        "text": "float g__shock=9.89;",
+        "image": ""
+      },
+      {
+        "text": "float g-shock=9.89;",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale e' il modo corretto per controllare che due stringhe str1 e str2 sono uguali?",
+    "options": [
+      {
+        "text": "if strcmp(s1,s2)==0 {printf(\"stringhe uguali\")}",
+        "image": ""
+      },
+      {
+        "text": "if (s1==s2) {printf(\"stringhe uguali\")}",
+        "image": ""
+      },
+      {
+        "text": "if strcmp(s1,s2) {printf(\"stringhe uguali\")} ",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Assumendo che myfile.txt non esiste, quale delle seguenti affermazioni e' vera?",
+    "options": [
+      {
+        "text": "Il programma genera un errore in fase di esecuzione",
+        "image": ""
+      },
+      {
+        "text": "Il programma genera errore in fase di compilazione",
+        "image": ""
+      },
+      {
+        "text": "Il programma scrive sul file myfile.txt la stringa 3.1416 PI",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "FILE * pFile;\r\npFile = open(\"myfile.txt\",\"rw+\");\r\nfprintf(pFile, \"%f %s\", 3.1416, \"PI\");",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Cosa fa il seguente segmento di codice se eseguito?",
+    "options": [
+      {
+        "text": "Stampa il valore di num almeno una  volta",
+        "image": ""
+      },
+      {
+        "text": "Cicla infinitamente se num e' diverso da 0",
+        "image": ""
+      },
+      {
+        "text": "Genera errore in fase di compilazione",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "int num;\r\nscanf(\"%d\",&num); \r\ndo; {\r\nprintf(\"%d\\n\",num);\r\nscanf(\"%d\",&num);\r\n}  while(num!=0);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il frammento di codice; che valore conterra' p al termine dell'esecuzione del frammento di codice?",
+    "options": [
+      {
+        "text": "0",
+        "image": ""
+      },
+      {
+        "text": "-10",
+        "image": ""
+      },
+      {
+        "text": "-9",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "i=0; c=0; p=1;\r\nwhile (i++ < 10)\r\nc=c+1;\r\np--;",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di eseguire  separatamente i seguenti frammenti di codice. Quale delle seguenti affermazioni e' falsa?",
+    "options": [
+      {
+        "text": "Il frammento_1 non produce alcun output sul terminale",
+        "image": ""
+      },
+      {
+        "text": "La loro esecuzione produce sul terminale due stringhe identiche",
+        "image": ""
+      },
+      {
+        "text": "Il frammento_2 produce un output sullo stdout",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "Frammento_1\r\nclose(2);\r\nif (fopen(\".\",\"r\")) {\r\n    perror(\"main\");\r\n}\r\n\r\nFrammento_2\r\nclose(2);\r\nif (fopen(\".\",\"r\")) {\r\n    printf(\"main:%s\\n\", strerror(errno));\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Consideriamo queste due line di codice. Quali delle seguenti affermazioni e' corretta?",
+    "options": [
+      {
+        "text": "Producono stringhe diverse e la prima la invia su stdout mentre la seconda su stderr",
+        "image": ""
+      },
+      {
+        "text": "Inviano la stessa stringa su stdout",
+        "image": ""
+      },
+      {
+        "text": "producono la stessa stringa ma la 1 la invia su stdout, mentre la 2 su stderr",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "1. printf(\"main:%s\\n\",strerror(errno));\r\n2. perror(\"main\");",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti funzioni di libreria non alloca nell’heap?",
+    "options": [
+      {
+        "text": "void *calloc( size_t nmemb, size_t size );",
+        "image": ""
+      },
+      {
+        "text": "void *alloca( size_t size );",
+        "image": ""
+      },
+      {
+        "text": "void *malloc( size_t size );",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Un processo puo' allocare memoria nello stack?",
+    "options": [
+      {
+        "text": "no un processo puo' allocare memoria sono nell'heap",
+        "image": ""
+      },
+      {
+        "text": "si mediante la funziona di libreria malloc(3)",
+        "image": ""
+      },
+      {
+        "text": "si mediante la funzione di libreria alloca(3)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale e' la differenza  tra  la system call _exit(2)  e la funzione di libreria exit(3)?",
+    "options": [
+      {
+        "text": "_exit(2) chiude tutti i file descriptor mentre exit(3) no",
+        "image": ""
+      },
+      {
+        "text": "_exit(2) non invoca gli handler registrati con  atexit e on_exit mentre exit(3) li invoca",
+        "image": ""
+      },
+      {
+        "text": "_exit(2) invoca gli handler registrati con  atexit e on_exit mentre exit(3) non li invoca",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale attributi di un processo sono ereditati dal processo figlio?",
+    "options": [
+      {
+        "text": "parent pid, timer, contatori risorse",
+        "image": ""
+      },
+      {
+        "text": "working directory, descrittori dei file, memoria condivisa",
+        "image": ""
+      },
+      {
+        "text": "timer, lock, coda dei segnali",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Quale blocco di codice (tra Bloccco_1,  Blocco_2 e  Blocco_3) verra' eseguito dal processo figlio?",
+    "options": [
+      {
+        "text": "Blocco_3",
+        "image": ""
+      },
+      {
+        "text": "Blocco_1",
+        "image": ""
+      },
+      {
+        "text": "Blocco_2",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "pid_t pID = fork();\r\nif (pID == 0) { Blocco_1;\r\n} else if (pID < 0) { Blocco_2;\r\n} else { Blocco_3; }",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Quale blocco di codice (tra Bloccco_1,  Blocco_2 e  Blocco_3) verra' eseguito dal processo padre?",
+    "options": [
+      {
+        "text": "Blocco_3",
+        "image": ""
+      },
+      {
+        "text": "Blocco_1",
+        "image": ""
+      },
+      {
+        "text": "Blocco_2",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "pid_t pID = fork();\r\nif (pID == 0) { Blocco_1;\r\n} else if (pID < 0) { Blocco_2;\r\n} else { Blocco_3; }",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo che la seguente system call sia invocata con valore di pid uguale a 0. Quale e' il suo comportamento?",
+    "options": [
+      {
+        "text": "attende la terminazione di qualunque processo figlio il cui gruppo ID del processo sia diverso da quello del processo chiamante",
+        "image": ""
+      },
+      {
+        "text": "attende la terminazione di qualunque processo figlio il cui gruppo ID  sia uguale a quello del processo chiamante (ovvero il processo padre)",
+        "image": ""
+      },
+      {
+        "text": "attende la terminazione di qualunque processo figlio",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "pid_t waitpid(pid_t pid, int *status, int options);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice  (i numeri a lato sono i numeri di riga delle istruzioni); quale delle seguenti affermazioni e' falsa?",
+    "options": [
+      {
+        "text": "La stringa \"joined\" e' inviata su stdout solo quando  il thread creato a riga 3. e' terminato",
+        "image": ""
+      },
+      {
+        "text": "La stringa \"joined\" e' inviata su stdout quando entrambi i thread sono terminati",
+        "image": ""
+      },
+      {
+        "text": "La stringa “joined” e’ inviata su stdout quando uno dei due thread (non importa quale) e’ terminato",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "1. Pthread_t tid;\r\n2. pthread_create(&tid, ... )\r\n3. pthread_create(&tid, ...)\r\n4. pthread_join(tid, ...);\r\n5. printf(\"joined\");",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri  il seguente frammento  di codice  (i numeri a lato sono i numeri di riga delle istruzioni); quale  delle seguenti affermazioni e' vera?",
+    "options": [
+      {
+        "text": "la stringa \"joined\"  e' inviata su stdout solo quando  il thread creato a riga 3.  e' terminato",
+        "image": ""
+      },
+      {
+        "text": "la stringa \"joined\"  e' inviata su stdout quando entrambi i thread sono terminati",
+        "image": ""
+      },
+      {
+        "text": "la stringa \"joined\" è inviata su stdout quando uno dei due thread (non importa quale) è terminato",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "1. Pthread_t tid;\r\n2. pthread_create(&tid, ... )\r\n3. pthread_create(&tid, ...)\r\n4. pthread_join(tid, ...);\r\n5. printf(\"joined\");",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si considerino i seguenti frammenti di codice  (R1 e R2). Quale di queste affermazioni è vera?",
+    "options": [
+      {
+        "text": "R1 e  R2 producono lo stesso risultato",
+        "image": ""
+      },
+      {
+        "text": "R2 dopo aver allocato la memoria la inizializza, mentre R1 no",
+        "image": ""
+      },
+      {
+        "text": "R1 alloca nell'heap, e quindi dopo e' consigliabile \"pulire\" la memoria; mentre R2 alloca nello stack e  quindi non c'e' bisogno di \"pulire\" la memoria.",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "R1: strPtr=(char *) calloc(SIZE_OF_ARRAY, sizeof(char) );\r\nR2: strPtr=(char *) malloc(SIZE_OF_ARRAY); memset(strPtr, ´\\0´, SIZE_OF_ARRAY);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Consideriamo la seguente invocazione della funzione realloc; strptr1 puo' essere diverso da strptr?",
+    "options": [
+      {
+        "text": "si, la realloc modifica sempre l'indirizzo di partenza dell'area di memoria ridimensionata",
+        "image": ""
+      },
+      {
+        "text": "no, strptr1 e' sempre uguale a strptr",
+        "image": ""
+      },
+      {
+        "text": "si se a seguito del ridimensionamento della memoria allocata non e' possibile trovare un numero sufficiente di locazioni contigue a partire dal strptr",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "strptr1=(char *) realloc(strptr,10*SIZE_OF_ARRAY);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di voler modificare il comportamento di default di un processo quando esso riceve un segnale. Ovvero  vogliamo modificare il gestore (handler) di un segnale. Quale, tra  le system call, o combinazione di system call di seguito riportate e' possibile utilizzare?",
+    "options": [
+      {
+        "text": "sigaction(2)",
+        "image": ""
+      },
+      {
+        "text": "sigaction(2) seguita da una fork(2) che esegue l'handler del segnale",
+        "image": ""
+      },
+      {
+        "text": "signal(2) seguita da una fork(2) che esegue l'handler del segnale",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Assumiamo di voler settare i permessi di accesso 0600 al file \"filename\" mediante  l'uso  della system call open(2). Quale delle seguenti chiamate e' corretta?",
+    "options": [
+      {
+        "text": "open(\"filename\", O_RDWR | O_CREAT | S_IRUSR | S_IWUSR);",
+        "image": ""
+      },
+      {
+        "text": "open(\"filename\", O_RDWR | O_CREAT, S_IRUSR & S_IWUSR);",
+        "image": ""
+      },
+      {
+        "text": "open(\"filename\", O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri la system call seguente; nel caso venga invocata con il flag impostato a \"O_CREAT | O_EXCL | O_RDONLY\" quale e' il comportamento atteso?",
+    "options": [
+      {
+        "text": "Se il file non esiste viene creato ed aperto in lettura, se invece esiste ritorna errore",
+        "image": ""
+      },
+      {
+        "text": "Se il file non esiste lo crea e lo apre in lettura, altrimenti lo apre in lettura",
+        "image": ""
+      },
+      {
+        "text": "Se il file non esiste viene creato con i permessi di esecuzione (x) ed aperto in lettura. Se esiste vengono aggiunti i permessi di esecuzione se gia' non settati ed il file e' aperto in lettura",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "int open(const char *pathname, int flags);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Quale e' il suo comportamento?",
+    "options": [
+      {
+        "text": "mette un lock mandatory in scrittura sul file file",
+        "image": ""
+      },
+      {
+        "text": "mette un lock advisory in scrittura sul file file",
+        "image": ""
+      },
+      {
+        "text": "mette un lock bloccante in scrittura sul file file",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "char* file = argv[1];\r\nint fd;\r\nstruct flock lock;\r\nfd = open (file, O_WRONLY);\r\nmemset (&lock, 0, sizeof(lock));\r\nlock.l_type = F_WRLCK;\r\nfcntl (fd, F_SETLKW, &lock);\r\n....",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale e'  la  differenza tra i seguenti frammenti di codice?",
+    "options": [
+      {
+        "text": "Dopo l'esecuzione di C1 e C2  fd1  contiene lo stesso valore",
+        "image": ""
+      },
+      {
+        "text": "Dopo  l'esecuzione di C1  i due  file descriptor puntano allo stesso file, mentre dopo l'esecuzione di  C2 il file filename viene duplicato",
+        "image": ""
+      },
+      {
+        "text": "Dopo l'esecuzione di C1 fd1 contiene lo stesso valore di  fd; mentre  dopo l'esecuzione di  C2  fd1 contiene il valore del piu' piccolo file descriptor disponibile",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "C1:\nint fd, fd1;\nfd = open(\"filename\", O_RDWR);\nfd1 = fd;\n\nC2:\nint fd, fd1;\nfd = open(\"filename\", O_RDWR);\nfd1 = dup(fd);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri  il  seguente frammento di codice. Quale tra le seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "buf.st_ino e' uguale a buf1.st_ino",
+        "image": ""
+      },
+      {
+        "text": "buf.st_ino e' diverso da buf1.st_ino",
+        "image": ""
+      },
+      {
+        "text": "st_ino non e' membro della struttura stat",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "int fd,fd1;\r\nstruct stat buf, buf1;\r\nfd=open(\"filename\", O_RDWR);\r\nfd1=dup(fd); \r\nfstat(fd,&buf);\r\nfstat(fd1,&buf1);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere il seguente  frammento di codice. Quale delle seguenti istruzioni deve  essere  posta all'interno  del  ciclo while per  memorizzare in filename  il nome dei file  contenuti all'interno della directory mydir ?",
+    "options": [
+      {
+        "text": "filename = dentry --> dname;",
+        "image": ""
+      },
+      {
+        "text": "filename = dentry.filename;",
+        "image": ""
+      },
+      {
+        "text": "filename = dentry --> filename;",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "struct dirent *dentry; //directory stream\r\nchar *filename;\r\nDIR *dstr=opendir(\"mydir\");\r\nwhile ((dentry=readdir(dstr)) != NULL) {\r\n/* Memorizza i nome file nella  directory  in filename  */\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti attributi di processo è preservato dalla system call execve(2)?",
+    "options": [
+      {
+        "text": "Memory locks",
+        "image": ""
+      },
+      {
+        "text": "Timer",
+        "image": ""
+      },
+      {
+        "text": "Umask",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri la system call execve(2). Quale delle seguenti affermazioni e' corretta?",
+    "options": [
+      {
+        "text": "la execve(2) permette di generare un proccesso figlio del processo chiamante senza utilizzare una fork ma semplicemente eseguendo un immagine contenuta in un file (execve esegue implicitamente la fork)",
+        "image": ""
+      },
+      {
+        "text": "la execve(2) permette di sostituire l'immagine di un processo con quella di un file eseguibile o di uno script di shell eseguibile",
+        "image": ""
+      },
+      {
+        "text": "la execve(2) e' una estensione della funzione system(3). Infatti, execve(2) puo' eseguire un qualsiasi programma, incluso uno script di shell",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Cosa produce come  risultato una volta eseguito?",
+    "options": [
+      {
+        "text": "Prepara una sezione critica (ovvero dopo la sigprocmask puo' inizare la sezione critica)",
+        "image": ""
+      },
+      {
+        "text": "Termina una sezione critica precedentemente iniziata",
+        "image": ""
+      },
+      {
+        "text": "Disabilita tutti i segnali tranne SIGINT e SIGUSR1",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "sigset_t set, oset, pset;\r\n...\r\nsigemptyset( &set ); \r\nsigaddset( &set, SIGINT ); \r\nsigaddset( &set, SIGUSR1 );\r\nsigprocmask( SIG_BLOCK, &set, &oset );\r\n…",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Cosa produce come  risultato una volta eseguito?",
+    "options": [
+      {
+        "text": "Disabilita tutti i segnali tranne SIGINT e SIGUSR1",
+        "image": ""
+      },
+      {
+        "text": "Disabilita i segnali SIGINT e SIGUSR1",
+        "image": ""
+      },
+      {
+        "text": "Termina una sezione critica precedentemente iniziata",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "sigset_t set, oset, pset;\r\n...\r\nsigemptyset( &set ); \r\nsigaddset( &set, SIGINT ); \r\nsigaddset( &set, SIGUSR1 );\r\nsigprocmask( SIG_BLOCK, &set, &oset );\r\n…",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di aver mappato un file in memoria con la system call mmap(2). A cosa serve invocare la msync(2)?",
+    "options": [
+      {
+        "text": "Impostando il tipo di mapping a MAP_SHARED la msync(2) permette di scrivere le modifiche su disco prima dell' invocazione di una unmap(2) o prima della chiusura del file descriptor",
+        "image": ""
+      },
+      {
+        "text": "E' necessario invocare sempre la msync(2) se non si vogliono perdere le modifiche fatte in memoria",
+        "image": ""
+      },
+      {
+        "text": "non serve invocare la mysinc perche' quando si chiude il file descriptor tutte le modifiche fatte in memoria vengono scritte su disco",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è falsa?",
+    "options": [
+      {
+        "text": "In un determinato istante, non possono esserci 2 processi distinti con lo stesso PID",
+        "image": ""
+      },
+      {
+        "text": "Per creare i PID dei processi si usano dei numeri interi che crescono sempre",
+        "image": ""
+      },
+      {
+        "text": "In istanti diversi, possono esserci 2 processi distinti con lo stesso PID",
+        "image": ""
+      },
+      {
+        "text": "Ogni processo può conoscere il suo PID",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
+    "options": [
+      {
+        "text": "Normalmente, il processo figlio, una volta terminata la sua computazione, attende, con una chiamata alla syscall wait, che il padre termini e gli restituisca il suo exit status",
+        "image": ""
+      },
+      {
+        "text": "Un processo diventa zombie se termina prima di almeno uno dei processi che abbia eventualmente creato",
+        "image": ""
+      },
+      {
+        "text": "Ogni processo può conoscere il proprio PID, ma non quello del processo che l'ha creato",
+        "image": ""
+      },
+      {
+        "text": "Con l'eccezione del primo processo, tutti i processi sono creati con una fork",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è falsa?",
+    "options": [
+      {
+        "text": "Digitare un comando sulla shell genera sempre un nuovo processo",
+        "image": ""
+      },
+      {
+        "text": "Esistono file che non possono essere eseguiti per diventare processi",
+        "image": ""
+      },
+      {
+        "text": "Affinché un file possa diventare un processo è necessario che abbia i permessi di esecuzione",
+        "image": ""
+      },
+      {
+        "text": "Qualsiasi computazione eseguita dal sistema operativo è contenuta dentro un qualche processo",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
+    "options": [
+      {
+        "text": "Eseguendo k volte un file eseguibile, si generano k diversi processi",
+        "image": ""
+      },
+      {
+        "text": "Per poter lanciare un file eseguibile, è prima necessario aspettare che il comando precedente sia terminato",
+        "image": ""
+      },
+      {
+        "text": "Tutti i processi sono sempre in stato di RUNNING",
+        "image": ""
+      },
+      {
+        "text": "Un processo è sempre un'istanza di uno script bash",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Un programma scritto in linguaggio C:",
+    "options": [
+      {
+        "text": "Rappresenta le stringhe ESCLUSIVAMENTE come array di caratteri terminate dal carattere ‘\r\n'",
+        "image": ""
+      },
+      {
+        "text": "Rappresenta le stringhe ESCLUSIVAMENTE come array di caratteri terminate dal carattere ‘^M'",
+        "image": ""
+      },
+      {
+        "text": "Rappresenta le stringhe ESCLUSIVAMENTE come array di caratteri terminate dal carattere ‘0'",
+        "image": ""
+      },
+      {
+        "text": "Rappresenta le stringhe come array di caratteri terminate dal carattere ‘\\0'",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "Linus Torvalds ha riscritto i pacchetti di Unix, creando i pacchetti GNU",
+        "image": ""
+      },
+      {
+        "text": "Tutte le opzioni sono false",
+        "image": ""
+      },
+      {
+        "text": "Linus Torvalds ha scritto il primo kernel di Linux all'inizio degli anni '80",
+        "image": ""
+      },
+      {
+        "text": "Richard Stallman ha descritto per primo la licenza GPL",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quali delle seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "Nessuna delle opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "È possibile montare un filesystem solo se è dichiarato nel file /etc/fstab",
+        "image": ""
+      },
+      {
+        "text": "È possibile montare un filesystem solo se è dichiarato nel file /etc/mtab",
+        "image": ""
+      },
+      {
+        "text": "Ad ogni filesystem corrisponde un disco fisico o parte di esso (partizione)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di avere il seguente frammento di codice. Quale dei seguenti frammenti di codice ha lo stesso effetto?",
+    "options": [
+      {
+        "text": "int fd = open(NOMEFILE, O_WRONLY | O_CREAT, 0666);",
+        "image": ""
+      },
+      {
+        "text": "int fd = open(NOMEFILE, O_WRONLY | O_TRUNC);",
+        "image": ""
+      },
+      {
+        "text": "int fd = open(NOMEFILE, O_WRONLY);",
+        "image": ""
+      },
+      {
+        "text": "int fd = open(NOMEFILE, O_WRONLY | O_CREAT | O_TRUNC, 0666);",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "FILE *stream = fopen(NOMEFILE, \"w\");",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files è falsa?",
+    "options": [
+      {
+        "text": "Chiamando la syscall select, è possibile monitorare un insieme di file descriptor, ed essere notificati non appena ce n'è uno che è diventato disponibile per un'operazione di lettura o scrittura",
+        "image": ""
+      },
+      {
+        "text": "Per richiedere un lock su un file (o su una porzione di esso), occorre chiamare la syscall ioctl",
+        "image": ""
+      },
+      {
+        "text": "È possibile usare la syscall select sia in modo bloccante che in modo non bloccante",
+        "image": ""
+      },
+      {
+        "text": "Le syscall ioctl e fcntl ammettono 2 o 3 argomenti, a seconda dell'operazione",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui segnali Linux è vera?",
+    "options": [
+      {
+        "text": "Tutti i segnali, se non opportunamente catturati, provocano la terminazione del processo, con l'eccezione del segnale STOP",
+        "image": ""
+      },
+      {
+        "text": "Per un processo è sempre possibile ridefinire il comportamento di un qualsiasi segnale",
+        "image": ""
+      },
+      {
+        "text": "È possibile per un qualunque processo inviare un segnale ad un qualsiasi altro processo dello stesso utente",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle altre affermazioni è vera",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sugli errori delle syscall di Linux è vera?",
+    "options": [
+      {
+        "text": "Per stampare su stderr la spiegazione di un errore verificatosi in una syscall, il cui nome sia contenuto nella variabile syscall_name (di tipo char *), si può effettuare la seguente chiamata: perror(\"Si e' verificato il seguente errore nella chiamata a %s\", syscall_name);",
+        "image": ""
+      },
+      {
+        "text": "Per stampare su stdout la spiegazione di un errore verificatosi in una syscall si può effettuare la seguente chiamata: printf(\"%s\\n\", strerror(errno));",
+        "image": ""
+      },
+      {
+        "text": "Per stampare su stdout la spiegazione di un errore verificatosi in una syscall è sufficiente chiamare perror",
+        "image": ""
+      },
+      {
+        "text": "Per stampare su stdout la spiegazione di un errore verificatosi in una syscall è necessario scrivere uno switch sulla variabile globale errno",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di avere il seguente frammento di codice. Quale dei seguenti frammenti di codice ha lo stesso effetto? (2 giuste)",
+    "options": [
+      {
+        "text": "int fd = open(\"file_esistente.txt\", O_RDONLY)\r\nlseek(fd, -100, SEEK_END);\r\nlong pos = lseek(fd, 0, SEEK_END);",
+        "image": ""
+      },
+      {
+        "text": "int fd = open(\"file_esistente.txt\", O_RDONLY);\r\nlseek(fd, -100, SEEK_END);\r\nlong pos = lseek(fd, 0, SEEK_CUR);",
+        "image": ""
+      },
+      {
+        "text": "int fd = open(\"file_esistente.txt\", O_RDONLY);\r\nlseek(fd, -100, SEEK_END);\r\nlong pos = lseek(fd, -100, SEEK_END);",
+        "image": ""
+      },
+      {
+        "text": "int fd = open(\"file_esistente.txt\", O_RDONLY);\r\nlseek(fd, -100, SEEK_END);\r\nlong pos = ltell(fd);",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "FILE *stream = fopen(\"file_esistente.txt\", \"r\");\r\nfseek(stream, -100, SEEK_END);\r\nlong pos = ftell(stream);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui comandi della bash è vera?",
+    "options": [
+      {
+        "text": "Il comando cat stringa può essere usato per scrivere stringa su stdout",
+        "image": ""
+      },
+      {
+        "text": "Eseguendo il comando echo `date` viene stampata la data e l'ora corrente (secondo l'orologio di sistema)",
+        "image": ""
+      },
+      {
+        "text": "Il comando man cmd restituisce in sequenza tutte le pagine di manuale per il comando cmd contenute nelle varie sezioni del manuale",
+        "image": ""
+      },
+      {
+        "text": "Il comando clear può essere usato per pulire completamente lo schermo: dopo l'esecuzione, il terminale non conterrà alcuna scritta",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il linguaggio C:",
+    "options": [
+      {
+        "text": "Richiede che i programmi siano sempre scritti in file con estensione .c",
+        "image": ""
+      },
+      {
+        "text": "Nasce per risolvere le ambiguità e i problemi di portabilità su architetture diverse di cui soffrono gli altri linguaggi di programmazione finora noti",
+        "image": ""
+      },
+      {
+        "text": "È stato definito come linguaggio Open Source da Dennis Ritchie",
+        "image": ""
+      },
+      {
+        "text": "È stato definito presso i laboratori di ricerca di una compagnia telefonica americana",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle funzioni malloc, calloc, realloc e free è falsa?",
+    "options": [
+      {
+        "text": "Le due chiamate calloc(N, sizeof(int)) e realloc(NULL, N*sizeof(int)) hanno sempre lo stesso effetto",
+        "image": ""
+      },
+      {
+        "text": "Le due chiamate malloc(N*sizeof(int)) e realloc(NULL, N*sizeof(int)) hanno sempre lo stesso effetto",
+        "image": ""
+      },
+      {
+        "text": "Il primo argomento di realloc, quando non NULL, deve contenere il risultato di una precedente chiamata a malloc, calloc o realloc",
+        "image": ""
+      },
+      {
+        "text": "I risultati di malloc, calloc e realloc possono essere passati alla funzione free per poter essere riallocati da future malloc, calloc e/o realloc. Calloc oltre ad allocare memoria la inizializza a 0, realloc(NULL,size) ha l'effetto di una malloc ma non inizializza.",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti sistemi operativi non è un antenato di Linux?",
+    "options": [
+      {
+        "text": "Unix",
+        "image": ""
+      },
+      {
+        "text": "Le altre risposte contengono tutte degli antenati di Linux",
+        "image": ""
+      },
+      {
+        "text": "MacOSX",
+        "image": ""
+      },
+      {
+        "text": "MULTICS",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il comando. Quale delle seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "Nessuna delle altre opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "L'azione non è specificata correttamente, quindi la bash restituirà un messaggio d'errore",
+        "image": ""
+      },
+      {
+        "text": "Il comando stampa su schermo tutte le directory il cui nome comincia con Doc e che siano state modificate più recentemente della directory Documenti",
+        "image": ""
+      },
+      {
+        "text": "Il comando modifica tutti i tempi (atime, mtime e ctime) di tutte le directory il cui nome comincia con Doc e che siano state modificate più recentemente della directory Documenti",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "find Doc* \\( -name 'Doc*' -a -type d \\) -o -newer Documenti -exec touch '{}' \\;",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulla syscall fork è falsa?",
+    "options": [
+      {
+        "text": "Ritorna 2 valori diversi a seconda che si tratti del processo padre o del processo figlio",
+        "image": ""
+      },
+      {
+        "text": "Genera una copia esatta del processo chiamante, con alcune eccezioni; tra queste ultime vi è lo stack delle chiamate",
+        "image": ""
+      },
+      {
+        "text": "Genera una copia esatta del processo chiamante, con alcune eccezioni; tra queste ultime vi è il PID",
+        "image": ""
+      },
+      {
+        "text": "Genera una copia esatta del processo chiamante, con alcune eccezioni; tra queste ultime vi è il PPID",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui comandi cmp, diff e patch è vera?",
+    "options": [
+      {
+        "text": "L'opzione -b ha lo stesso significato sia per diff che per cmp",
+        "image": ""
+      },
+      {
+        "text": "È possibile usare il comando patch solo se si ha l'output del comando diff",
+        "image": ""
+      },
+      {
+        "text": "È possibile usare il comando patch solo se si ha, indifferentemente, l'output del comando diff o del comando cmp",
+        "image": ""
+      },
+      {
+        "text": "L'opzione -i di cmp permette di considerare come uguali le differenze sul solo minuscolo/maiuscolo",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files è falsa?",
+    "options": [
+      {
+        "text": "La syscall link(oldpath, newpath) ha lo stesso effetto del comando bash \"ln oldpath newpath\"",
+        "image": ""
+      },
+      {
+        "text": "La syscall unlink(nomefile) ha lo stesso effetto del comando bash \"rm nomefile\"",
+        "image": ""
+      },
+      {
+        "text": "La syscall unlink(nomefile) rimuove sempre il contenuto di nomefile dal disco, se nomefile è un file regolare",
+        "image": ""
+      },
+      {
+        "text": "La syscall symlink(oldpath, newpath) ha lo stesso effetto del comando bash ln -s oldpath newpath",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
+    "options": [
+      {
+        "text": "Nessuna delle altre opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "Ciascun job è composto al massimo da un processo",
+        "image": ""
+      },
+      {
+        "text": "Per vedere i jobs in foreground, è sufficiente usare il comando jobs",
+        "image": ""
+      },
+      {
+        "text": "Quando un processo in foreground termina, la bash stampa il job id del processo e la ragione della terminazione",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulla syscall sigaction è vera?",
+    "options": [
+      {
+        "text": "Nessuna delle altre opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "Permette di definire una funzione che viene eseguita qualsiasi segnale arrivi al processo",
+        "image": ""
+      },
+      {
+        "text": "Chiamandola ripetutamente, e passandole al primo argomento via via tutti i segnali disponibili, è possibile definire una funzione che viene eseguita qualsiasi segnale arrivi al processo",
+        "image": ""
+      },
+      {
+        "text": "Permette di definire quali segnali vanno ignorati finché l'handler del segnale è in esecuzione",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulla syscall sigaction è vera?",
+    "options": [
+      {
+        "text": "Nessuna delle altre opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "Permette di definire una funzione che viene eseguita qualsiasi segnale arrivi al processo",
+        "image": ""
+      },
+      {
+        "text": "Permette, tramite il campo sa_mask della struttura struct sigaction, di definire quali segnali vanno ignorati finché l'handler del segnale è in esecuzione",
+        "image": ""
+      },
+      {
+        "text": "Chiamandola ripetutamente, e passandole al primo argomento via via tutti i segnali disponibili, è possibile definire una funzione che viene eseguita qualsiasi segnale arrivi al processo",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di voler lanciare in background i comandi cmd1 e cmd2. Quale dei seguenti modi è corretto?",
+    "options": [
+      {
+        "text": "Nessuna delle altre opzioni è corretta",
+        "image": ""
+      },
+      {
+        "text": "cmd1 & cmd2;",
+        "image": ""
+      },
+      {
+        "text": "( cmd1; cmd2 ) &",
+        "image": ""
+      },
+      {
+        "text": "cmd1; cmd2 &",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di voler lanciare in background i comandi cmd1 e cmd2. Quale dei seguenti modi è corretto?",
+    "options": [
+      {
+        "text": "cmd1 & cmd2 &",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle altre opzioni è corretta",
+        "image": ""
+      },
+      {
+        "text": "cmd1 & cmd2;",
+        "image": ""
+      },
+      {
+        "text": "( cmd1; cmd2 ) &",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sul comando \"time\" è falsa?",
+    "options": [
+      {
+        "text": "Il comando /usr/bin/time cmd ha anche l'effetto di eseguire il comando cmd",
+        "image": ""
+      },
+      {
+        "text": "Il comando /usr/bin/time cmd può solo mostrare il tempo (di CPU, di sistema, e reale)",
+        "image": ""
+      },
+      {
+        "text": "Esistono 2 comandi time: uno è una keyword della bash e l'altro corrisponde ad un file eseguibile (solitamente /usr/bin/time)",
+        "image": ""
+      },
+      {
+        "text": "Il comando time cmd, eseguito dalla bash, può solo mostrare il tempo (di CPU, disistema, e reale)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle syscall wait e waitpid è falsa?",
+    "options": [
+      {
+        "text": "Se una chiamata wait(&status); ha successo, il valore di status coincide con l'exit status del processo figlio appena terminato",
+        "image": ""
+      },
+      {
+        "text": "Ogni chiamata wait(&status); è equivalente alla chiamata waitpid(-1, &status, 0)",
+        "image": ""
+      },
+      {
+        "text": "Le chiamate alla wait sono sempre bloccanti",
+        "image": ""
+      },
+      {
+        "text": "Le chiamate alla waitpid possono non essere bloccanti",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Sia mylink un hard link al file myfile (ln myfile mylink). Quale di queste affermazioni è vera?",
+    "options": [
+      {
+        "text": "myfile e mylink hanno dimensione diversa",
+        "image": ""
+      },
+      {
+        "text": "myfile e mylink hanno lo stesso numero inode",
+        "image": ""
+      },
+      {
+        "text": "myfile e mylink hanno un diverso numero di inode",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponendo di essere \"loggato\" in una shell come utente1. Quali dei seguenti e' un path assoluto? (2 giuste)",
+    "options": [
+      {
+        "text": "dir1/dir11/dir112/filename",
+        "image": ""
+      },
+      {
+        "text": "~/utente1/dir1/dir11/dir112/filename",
+        "image": ""
+      },
+      {
+        "text": "~/dir1/dir11/dir112/filename",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga che nel sistema esiste un gruppo \"studente\". Si supponga di voler creare \"utente1\", e di volerlo aggiungere al gruppo \"studente\". Quale dei seguenti comandi è corretto?",
+    "options": [
+      {
+        "text": "adduser utente1; adduser utente1 studente",
+        "image": ""
+      },
+      {
+        "text": "adduser utente1 utente1 studente",
+        "image": ""
+      },
+      {
+        "text": "adduser utente1 studente",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si considerino le seguenti dichiarazioni di variabili. Quale delle seguenti assegnazioni è corretta per far si che \"ptr\" contenga il puntatore al vettore \"vect\"?",
+    "options": [
+      {
+        "text": "ptr = vect",
+        "image": ""
+      },
+      {
+        "text": "ptr = &vect",
+        "image": ""
+      },
+      {
+        "text": "ptr = vect[1]",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "int vect[10];\r\nint *ptr = NULL",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Quale blocco di codice (tra Bloccco_1,  Blocco_2 e  Blocco_3) verra' eseguito nel caso in cui la fork non vada a buon fine?",
+    "options": [
+      {
+        "text": "Blocco_1",
+        "image": ""
+      },
+      {
+        "text": "Blocco_3",
+        "image": ""
+      },
+      {
+        "text": "Blocco_2",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "pid_t pID = fork();\r\nif (pID == 0) { Blocco_1;\r\n} else if (pID < 0) { Blocco_2;\r\n} else { Blocco_3; }",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice; quando termina il ciclo for?",
+    "options": [
+      {
+        "text": "Termina solo se n1 è uguale a n2",
+        "image": ""
+      },
+      {
+        "text": "Quando i raggiunge il più grande tra n1 e n2",
+        "image": ""
+      },
+      {
+        "text": "Quando i raggiunge il più piccolo tra n1 e n2",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "for (i=0;((i<n1)&&(i<n2));i++)\r\n       m2[i]=m1[i];",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "A seguito di una chiamata a fork(2), quale dei seguenti attributi del processo padre non è ereditato dal processo figlio?",
+    "options": [
+      {
+        "text": "groups id",
+        "image": ""
+      },
+      {
+        "text": "coda dei segnali",
+        "image": ""
+      },
+      {
+        "text": "descrittori dei file",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice; per visualizzare su stdout i permessi di accesso a \"filename\", quale tra le seguenti opzioni è la più appropriata?",
+    "options": [
+      {
+        "text": "printf(\"New File mode %x\\n\",s.st_mode);",
+        "image": ""
+      },
+      {
+        "text": "printf(\"New File mode %o\\n\",s.st_mode);",
+        "image": ""
+      },
+      {
+        "text": "printf(\"New File mode %s\\n\",s.st_mode);",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "strct stat *s;\r\nfd=open(\"filename\");\r\nfchmod(fd,00744);\r\nfstat(fd,s);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice; quali valori assumeranno le variabili r ed r1 dopo l'esecuzione?",
+    "options": [
+      {
+        "text": "r = r1 = 4",
+        "image": ""
+      },
+      {
+        "text": "r = 6 e r1 = 4",
+        "image": ""
+      },
+      {
+        "text": "r = 4 e r1 = 6",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "int n=2;\r\nint r=2 * (n++);\r\nn=2;\r\nint r1=2 * (++n);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere le seguenti variabili; quale delle seguenti espressioni è falsa?",
+    "options": [
+      {
+        "text": "x & y == 7",
+        "image": ""
+      },
+      {
+        "text": "x | y == 7",
+        "image": ""
+      },
+      {
+        "text": "x || y == x & y",
+        "image": ""
+      },
+      {
+        "text": "nessuna delle precedenti",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "int x = 1, y = 7;",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Per visualizzare l'atime di un file, quale dei seguenti comandi è corretto?",
+    "options": [
+      {
+        "text": "ls -lc nomefile",
+        "image": ""
+      },
+      {
+        "text": "ls -lu nomefile",
+        "image": ""
+      },
+      {
+        "text": "ls -la nomefile",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "I premessi di accesso del file eseguibile /usr/bin/passwd sono 4755/-rwsr-xr-x. Cosa significa?",
+    "options": [
+      {
+        "text": "Il bit SetUid non e' settato",
+        "image": ""
+      },
+      {
+        "text": "Lo sticky bit e' settato",
+        "image": ""
+      },
+      {
+        "text": "Il bit SetUid e' settato",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si assuma di avere due shell aperte, etichettate come \"shell_1\" e \"shell_2\", e supponga di eseguire la sequenza di comandi che segue (\"shell_i\": cmd indica che cmd e' eseguitto nella shell_i, i=1,2). Quale e' il loro effetto?",
+    "options": [
+      {
+        "text": "Il processo xterm viene messo nello stato stopped (T)",
+        "image": ""
+      },
+      {
+        "text": "Il processo xterm viene terminato con segnale SIGINT",
+        "image": ""
+      },
+      {
+        "text": "Il processo xterm viene messo in background",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "shell_1: xterm\r\nshell_2: ps -C xterm\r\n#restituisce xtermPID\r\nshell_2: kill -s SIGINT xtermPID",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di avere un file di testo (filein) contenente 1000 caratteri e di voler copiare in un altro file (fileout) 100 caratteri a partire dal decimo. Quale di questi comandi è corretto?",
+    "options": [
+      {
+        "text": "cp -n10 -i100 filein fileout",
+        "image": ""
+      },
+      {
+        "text": "dd if=filein of=fileout bs=1 skip=10 count=100",
+        "image": ""
+      },
+      {
+        "text": "dd if=filein of=fileout bs=100 skip=10 count=1",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Sia mylink un soft link al file myfile (ln -s myfile mylink). Quale di queste affermazioni è vera?",
+    "options": [
+      {
+        "text": "myfile e mylink hanno un diverso numero di inode",
+        "image": ""
+      },
+      {
+        "text": "myfile e mylink hanno lo stesso numero inode",
+        "image": ""
+      },
+      {
+        "text": "myfile e mylink hanno la stessa dimensione",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente codice. Come faccio a sapere se il file \"filename\" è un link?",
+    "options": [
+      {
+        "text": "S_ISLINK(s) == 1",
+        "image": ""
+      },
+      {
+        "text": "s.st_size == 0",
+        "image": ""
+      },
+      {
+        "text": "s.st_nlink == 1",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "struct stat *s;\r\nfd=open(\"filename\");\r\nfstat(fd, s);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale tra i seguenti comandi è il modo più corretto di verificare a quali gruppi appartiene un utente?",
+    "options": [
+      {
+        "text": "nessuno dei due",
+        "image": ""
+      },
+      {
+        "text": "C2",
+        "image": ""
+      },
+      {
+        "text": "C1",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "C1) groups nomeutente\r\nC2) cat /etc/groups | grep nomeutente",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "[C?] Dato il codice seguente, qual è l'output?",
+    "options": [
+      {
+        "text": "BazingaBazingaBazingaBazingaBazingaBazingaBazingaBazinga",
+        "image": ""
+      },
+      {
+        "text": "BazingaBazingaBazingaBazingaBazingaBazinga",
+        "image": ""
+      },
+      {
+        "text": "BazingaBazingaBazingaBazingaBazinga",
+        "image": ""
+      },
+      {
+        "text": "BazingaBazingaBazingaBazingaBazingaBazingaBazinga",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "#include<stdio.h>\r\n\r\nvoid knock_knock(char* s) {\r\n       while (*s++ != '\\0')\r\n               printf(\"Bazinga\");\r\n}\r\n\r\nint main() {\r\n    int data[5] = { -1, -3, 256, -4, 0 };\r\n    knock_knock((char *) data);\r\n    return 0;\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri la seguente funzione f. Cosa produce come risultato quando eseguita?",
+    "options": [
+      {
+        "text": "Genera sempre errore in fase di esecuzione perché non c'è alcun controllo sulla dimensione delle stringhe",
+        "image": ""
+      },
+      {
+        "text": "Concatena la stringa src a dest e restituisce dest",
+        "image": ""
+      },
+      {
+        "text": "Copia la stringa src in dest e restituisce dest",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "char *f(char* dest, const char* src, size_t n) {\r\n    size_t i;\r\n    for (i = 0; i < n && src[i] != '\\0'; i++) dest[i] = src[i];\r\n    for (; i < n; i++) dest[i] = '\\0';\r\n    return dest;\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri la seguente funzione f. Cosa produce come risultato quando eseguita?",
+    "options": [
+      {
+        "text": "Genera sempre errore in fase di esecuzione perché non c'è alcun controllo sulla dimensione delle stringhe",
+        "image": ""
+      },
+      {
+        "text": "Concatena la stringa src a dest e restituisce dest",
+        "image": ""
+      },
+      {
+        "text": "Copia la stringa src in dest e restituisce dest",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "char *f(char* dest, const char* src, size_t n) {\r\n    size_t i; size_t dest_len = strlen(dest);\r\n    for (i = 0; i < n && src[i] != '\\0'; i++) dest[dest_len + i] = src[i];\r\n    for (; i < n; i++) dest[dest_len + i] = '\\0';\r\n    return dest;\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti comandi permette di visualizzare contemporaneamente l’access time e lo status change time di un file?",
+    "options": [
+      {
+        "text": "stat nomefile",
+        "image": ""
+      },
+      {
+        "text": "ls -la nomefile",
+        "image": ""
+      },
+      {
+        "text": "ls -lac nomefile",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Cosa produce il seguente comando come risultato?",
+    "options": [
+      {
+        "text": "Visualizza su stdout tutti i gruppi a cui appartiene l'utente \"nomeutente\", incluso il gruppo \"nomeutente\" (se esiste)",
+        "image": ""
+      },
+      {
+        "text": "Visualizza su stdout la lista dei gruppi a cui appartiene il gruppo \"nomeutente\" (se esiste)",
+        "image": ""
+      },
+      {
+        "text": "Genera un errore in quanto il file /etc/group non esiste",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "cat /etc/group | grep nomeutente",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Se una directory ha i permessi di accesso settati come 0222, quali operazioni e' possibile fare su di essa?",
+    "options": [
+      {
+        "text": "nessuna operazione",
+        "image": ""
+      },
+      {
+        "text": "operazioni di scrittura, ed è possibile visualizzarne il contenuto senza vederne gli attributi dei file",
+        "image": ""
+      },
+      {
+        "text": "operazioni di scrittura",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulla comunicazione tra processi in Linux è vera?",
+    "options": [
+      {
+        "text": "Per far comunicare qualunque coppia di processi è necessario metterli in pipeling da shell",
+        "image": ""
+      },
+      {
+        "text": "Usando la syscall pipe, è possibile far comunicare qualunque coppia di processi",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "Usando le named pipes, è possibile far comunicare solo processi parenti (ad es., padre con figlio)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si vuole scrivere un programma equivalente al seguente script. Quale dei seguenti frammenti di codice realizza quanto mostrato?",
+    "options": [
+      {
+        "text": "Nessuna delle altre opzioni è corretta",
+        "image": ""
+      },
+      {
+        "text": "printf(\"Esecuzione in corso...\");\r\nexecl(\"/bin/ls\", \"/bin/ls\", \"-la\", \"/\", NULL);\r\nprintf(\"fatto\\n\");\r\nchar **argv = {\"-la\", \"/\", 0};",
+        "image": ""
+      },
+      {
+        "text": "printf(\"Esecuzione in corso...\");\r\nexecv(\"/bin/ls\", \"-la\", \"/\", NULL);\r\nprintf(\"fatto\\n\");",
+        "image": ""
+      },
+      {
+        "text": "printf(\"Esecuzione in corso...\");\r\nexecl(\"/bin/ls\", \"/bin/ls\", \"-la\", \"/\");\r\nprintf(\"fatto\\n\")",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "echo -n \"Esecuzione in corso...\"\r\n/bin/ls -la /\r\necho \"fatto\"",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui comandi less e more è falsa?",
+    "options": [
+      {
+        "text": "Sono specialmente utili quando si vuole visualizzare un output molto lungo (che non è possibile visualizzare in un'intera schermata di terminale)",
+        "image": ""
+      },
+      {
+        "text": "Entrambi permettono di ricercare espressioni regolari",
+        "image": ""
+      },
+      {
+        "text": "Per terminarli occorre premere CTRL+C",
+        "image": ""
+      },
+      {
+        "text": "Sono entrambi interattivi",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Una directory di un filesystem:",
+    "options": [
+      {
+        "text": "Può contenere solo file regolari e altre directory",
+        "image": ""
+      },
+      {
+        "text": "Non può mai contenere degli hard link",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "Ha sempre una directory padre, eventualmente corrisponde a se stessa ",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files e che si trovano nella sezione 2 del manuale è falsa?",
+    "options": [
+      {
+        "text": "Mentre le funzioni della libreria standard possono solo agire solo su file regolari, le syscall di Linux possono agire su tutti i tipi di file (regolari, directory, pipe, ...)",
+        "image": ""
+      },
+      {
+        "text": "Le funzioni della libreria standard agiscono su una struttura di tipo FILE *, mentre le syscall agiscono su un file descriptor intero",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle syscall di Linux accetta come argomento input o output formattato stile printf",
+        "image": ""
+      },
+      {
+        "text": "Le syscall Linux permettono solamente le seguenti operazioni: apertura, chiusura, scrittura, lettura, posizionamento",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano le directory è falsa?",
+    "options": [
+      {
+        "text": "La syscall readdir, con argomento uguale a quanto ritornato da una precedente opendir avvenuta con successo, ritorna un puntatore ad una struttura struct dirent, che contiene il nome di un file o di una directory contenuta nella directory passata a opendir",
+        "image": ""
+      },
+      {
+        "text": "Chiamare la syscall open su una directory può avere successo",
+        "image": ""
+      },
+      {
+        "text": "Per poter cambiare il contenuto di una directory occorre aprirla con la syscall opendir",
+        "image": ""
+      },
+      {
+        "text": "Per poter leggere il contenuto di una directory occorre aprirla con la syscall opendir",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sul comando kill è falsa?",
+    "options": [
+      {
+        "text": "Per mandare il segnale 9 al processo in background con job id 3, è sufficiente scrivere il comando kill -KILL %3",
+        "image": ""
+      },
+      {
+        "text": "Per mandare il segnale SIGTERM al processo con PID 19330, è sufficiente scrivere il comando kill -SIGTERM 19330",
+        "image": ""
+      },
+      {
+        "text": "Per mandare il segnale SIGINT al processo in background con job id 3, è sufficiente scrivere il comando kill -`kill -l SIGINT` %3",
+        "image": ""
+      },
+      {
+        "text": "Per mandare il segnale 9 al processo con PID 10, è sufficiente scrivere il comando kill -KILL %10",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Per eliminare tutte le linee duplicate in un file di testo (senza preoccuparsi dell'ordinamento delle righe) occorre:",
+    "options": [
+      {
+        "text": "utilizzare congiuntamente i comandi sort e uniq",
+        "image": ""
+      },
+      {
+        "text": "utilizzare congiuntamente i comandi cat e grep",
+        "image": ""
+      },
+      {
+        "text": "utilizzare il comando uniq con opzione -u",
+        "image": ""
+      },
+      {
+        "text": "utilizzare il comando uniq",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle pipe di Linux è vera?",
+    "options": [
+      {
+        "text": "Usando la syscall pipe, vengono automaticamente aperti 2 file descriptor",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle altre opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "Per usare le named pipes, è sempre necessario chiamare la syscall mkfifo",
+        "image": ""
+      },
+      {
+        "text": "usando la syscall mkfifo, viene aperto un solo file descriptor",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files è falsa?",
+    "options": [
+      {
+        "text": "La syscall chown(nomefile, -1, gid) ha lo stesso effetto del comando bash chgrp gid nomefile",
+        "image": ""
+      },
+      {
+        "text": "La syscall mkdir(nomedir, mode) ha lo stesso effetto del comando bash mkdir -m mode nomedir",
+        "image": ""
+      },
+      {
+        "text": "La syscall dup2(2, 1) ha l'effetto di ridirigere lo stdout nello stderr",
+        "image": ""
+      },
+      {
+        "text": "La syscall stat(nomefile, buf) ha lo stesso effetto del comando bash stat nomefile",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Relativamente alla programmazione bash, quale delle seguenti affermazioni sul carattere # è vera?",
+    "options": [
+      {
+        "text": "Rappresenta sempre l'inizio di un commento, con un'unica eccezione: quando è preceduto dal carattere $",
+        "image": ""
+      },
+      {
+        "text": "Se è seguito dal carattere !, non rappresenta mai l'inizio di un commento",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "Se presente in uno script, tutto quello che lo segue è sempre considerato commento.",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle syscall dei processi in Linux è falsa?",
+    "options": [
+      {
+        "text": "La syscall setuid() permette a qualsiasi processo di cambiare il suo real user ID",
+        "image": ""
+      },
+      {
+        "text": "La syscall getuid() permette a qualsiasi processo di conoscere il suo real user ID",
+        "image": ""
+      },
+      {
+        "text": "La syscall getppid() ritorna il PID del processo che ha generato quello chiamante (o che lo ha adottato)",
+        "image": ""
+      },
+      {
+        "text": "La syscall getpid() ritorna il PID del processo chiamante",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sul comando ps è vera?",
+    "options": [
+      {
+        "text": "Senza nessun argomento, mostra tutti i processi lanciati dall'utente attuale nel terminale attuale",
+        "image": ""
+      },
+      {
+        "text": "Per ogni processo, mostra sempre il suo PID, indipendentemente dagli argomenti con cui viene lanciato",
+        "image": ""
+      },
+      {
+        "text": "Non è possibile usarlo per vedere i processi lanciati dall'utente root",
+        "image": ""
+      },
+      {
+        "text": "È possibile usarlo per vedere solo i processi che superano un certo uso della RAM",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
+    "options": [
+      {
+        "text": "Nessuna delle altre opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "Per ogni terminale aperto, ci può essere al massimo un job in background",
+        "image": ""
+      },
+      {
+        "text": "Per lanciare un processo in modo tale che non scriva su stdout, lasciando così modo di scrivere altri comandi sulla bash, è sufficiente lanciarlo in background",
+        "image": ""
+      },
+      {
+        "text": "Se si vuole dare input da stdin senza redirezioni ad un processo, è necessario lanciarlo in foreground",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
+    "options": [
+      {
+        "text": "Nessuna delle altre opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "Il text segment contiene le istruzioni da eseguire, e non può essere condiviso con altri processi",
+        "image": ""
+      },
+      {
+        "text": "Lo stack contiene i dati statici inizializzati ed alcune costanti d'ambiente",
+        "image": ""
+      },
+      {
+        "text": "Il process control block (PCB) mantiene le informazioni essenziali di ogni processo, e uno stesso PCB può essere condiviso tra processi diversi",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è falsa?",
+    "options": [
+      {
+        "text": "I comandi builtin della bash generano sempre nuovi processi",
+        "image": ""
+      },
+      {
+        "text": "Per capire se un comando della bash è o no builtin, è sufficiente usare il comando type",
+        "image": ""
+      },
+      {
+        "text": "Il comando cd è builtin della bash",
+        "image": ""
+      },
+      {
+        "text": "Un comando builtin della bash non corrisponde ad alcun file eseguibile dedicato",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti campi non è presente nel process control block?",
+    "options": [
+      {
+        "text": "Change time",
+        "image": ""
+      },
+      {
+        "text": "GID reale ed effettivo",
+        "image": ""
+      },
+      {
+        "text": "Nice",
+        "image": ""
+      },
+      {
+        "text": "Current working directory",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui comandi della bash è falsa?",
+    "options": [
+      {
+        "text": "Il comando type file mostra il tipo del file file (regolare, directory, etc)",
+        "image": ""
+      },
+      {
+        "text": "Il comando whoami mostra lo username dell'utente attualmente loggato nel terminale in cui viene digitato il comando (potrebbe non coincidere con l'utente che ha effettuato il login grafico)",
+        "image": ""
+      },
+      {
+        "text": "Il comando id può essere usato per visualizzare i gruppi cui un utente appartiene",
+        "image": ""
+      },
+      {
+        "text": "Il comando which cmd mostra qual è il file eseguibile che viene eseguito quando si lancia il comando cmd, ma solo per i comandi che non sono builtin",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle syscall dei processi in Linux è vera?",
+    "options": [
+      {
+        "text": "Se un processo viene lanciato nel seguente modo: var=valore ./a.out, allora esso può ottenere var con la chiamata a getenv(\"valore\");",
+        "image": ""
+      },
+      {
+        "text": "Per qualsiasi processo è possibile conoscere il suo ambiente di esecuzione senza effettuare alcuna syscall",
+        "image": ""
+      },
+      {
+        "text": "Se un processo viene lanciato nel seguente modo: var=valore ./a.out, allora esso può ottenere valore con la chiamata a setenv(\"var\", \"valore\", 1);",
+        "image": ""
+      },
+      {
+        "text": "Se un processo viene lanciato nel seguente modo: var=valore ./a.out, allora esso può ottenere valore con la chiamata a putenv(\"var=valore\");",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "Linux è multiutente, perché definisce più utenti, di cui però uno solo può essere loggato su una data macchina",
+        "image": ""
+      },
+      {
+        "text": "Linux è multiutente, perché permette a più utenti contemporaneamente di essere loggati sulla stessa macchina",
+        "image": ""
+      },
+      {
+        "text": "Linux è multiprocesso, perché permette a più utenti contemporaneamente di essere loggati sulla stessa macchina",
+        "image": ""
+      },
+      {
+        "text": "Linux è multiprocesso, perché può essere usato su una macchina con più processori",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il linguaggio C:",
+    "options": [
+      {
+        "text": "È incompatibile con i Sistemi Operativi della famiglia Windows",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle altre opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "È un linguaggio strutturato e compilato",
+        "image": ""
+      },
+      {
+        "text": "È un linguaggio non strutturato e compilato",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti non è un possibile stato di un processo Linux?",
+    "options": [
+      {
+        "text": "Uninterruptible sleep",
+        "image": ""
+      },
+      {
+        "text": "Stopped",
+        "image": ""
+      },
+      {
+        "text": "Running",
+        "image": ""
+      },
+      {
+        "text": "Continued",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti non è un possibile stato di un processo Linux?",
+    "options": [
+      {
+        "text": "Uninterruptible sleep",
+        "image": ""
+      },
+      {
+        "text": "Stopped",
+        "image": ""
+      },
+      {
+        "text": "Running",
+        "image": ""
+      },
+      {
+        "text": "Orphaned",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sul comando top è vera?",
+    "options": [
+      {
+        "text": "Se lanciato con il comando top, per terminarlo è necessario premere CTRL+C",
+        "image": ""
+      },
+      {
+        "text": "Il suo output è uguale a quello di ps, ma le opzioni sono diverse",
+        "image": ""
+      },
+      {
+        "text": "Se lanciato con il comando top -b, per terminarlo è sufficiente premere il tasto Q",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle altre affermazioni è vera",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
+    "options": [
+      {
+        "text": "Per visualizzare i processi attualmente in esecuzione su una determinata bash, è sufficiente usare il comando jobs",
+        "image": ""
+      },
+      {
+        "text": "Tutti i processi in background sono in stato Stopped",
+        "image": ""
+      },
+      {
+        "text": "Per riportare in foreground un determinato job in background, è sufficiente dare il comando fg sulla bash dove il job è in background, ma solo se tale job è l'attuale \"current job\" in background",
+        "image": ""
+      },
+      {
+        "text": "Per stoppare un processo in foreground, si può sia mandare un segnale SIGTSTP che premere CTRL+Z in una qualsiasi shell",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di voler vedere, per tutti i processi dell'utente utente, il suo PID, il suo PPID, il comando usato per lanciare il processo (con tutti gli argomenti), la usa occupazione totale di memoria in kB e la sua attuale occupazione di memoria in RAM (senza considerare quindi la parte eventualmente swappata su disco), sempre in kB. Quale dei seguenti comandi è quello corretto?",
+    "options": [
+      {
+        "text": "ps -uutente -o pid,ppid,cmd,rss,vsz",
+        "image": ""
+      },
+      {
+        "text": "ps -uutente -o pid,ppid,cmd,rss,sz",
+        "image": ""
+      },
+      {
+        "text": "ps -e -o pid,ppid,cmd,vsz,rss",
+        "image": ""
+      },
+      {
+        "text": "ps -uutente -o pid,ppid,cmd,vsz,rss",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "Ogni risorsa di un sistema Unix, ad eccezione dei processi e periferiche hardware, è rappresentato da un file",
+        "image": ""
+      },
+      {
+        "text": "Ogni risorsa di un sistema Unix, ad eccezione delle connessioni di rete (socket), è rappresentato da un file",
+        "image": ""
+      },
+      {
+        "text": "Ogni risorsa di un sistema Unix, ad eccezione dei processi, è rappresentato da un file",
+        "image": ""
+      },
+      {
+        "text": "In un sistema Unix tutte le risorse sono rappresentati da un file",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sul comando kill è vera?",
+    "options": [
+      {
+        "text": "È obbligatorio specificare il segnale da inviare, come numero intero",
+        "image": ""
+      },
+      {
+        "text": "Lanciato senza nessun argomento, manda SIGKILL all'ultimo processo lanciato",
+        "image": ""
+      },
+      {
+        "text": "Può essere usato per ottenere lo stesso risultato tanto del CTRL+C quanto del CTRL+Z",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle altre affermazioni è vera",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
+    "options": [
+      {
+        "text": "Ogni processo è identificato da un PID e da un job id, che devono coincidere",
+        "image": ""
+      },
+      {
+        "text": "Un job è un comando della bash che prende sempre il controllo dello stdin",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle altre opzioni è vera",
+        "image": ""
+      },
+      {
+        "text": "Fissato un istante nell'esecuzione del sistema operativo, ci sarà sempre al massimo un job in foreground, mentre quelli in background possono essere più d'uno",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga che sia appena stata eseguita la seguente riga di codice di un processo. Quale delle seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "Nel processo padre, la variabile pid vale assume 1 solo valore, corrispondente al suo stesso PID",
+        "image": ""
+      },
+      {
+        "text": "Nel processo figlio, la variabile pid vale assume 1 solo valore, corrispondente al PID del padre",
+        "image": ""
+      },
+      {
+        "text": "C'è un nuovo processo pronto per andare in esecuzione, a meno che la variabile pid non valga -1",
+        "image": ""
+      },
+      {
+        "text": "Nel processo padre, la variabile pid assume 2 diversi valori",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "int pid = fork();",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
+    "options": [
+      {
+        "text": "Il process control block mantiene le informazioni essenziali di ogni processo, è mantenuto su disco e viene swappato in RAM quando il processo va in esecuzione",
+        "image": ""
+      },
+      {
+        "text": "Lo heap contiene i dati statici inizializzati ed alcune costanti d'ambiente",
+        "image": ""
+      },
+      {
+        "text": "Il text segment contiene le istruzioni da eseguire, e viene sempre mantenuto interamente in RAM",
+        "image": ""
+      },
+      {
+        "text": "Nessuna delle altre opzioni è vera",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti linguaggi non è mai stato usato per implementare Unix? (DUBBIO)",
+    "options": [
+      {
+        "text": "L'assembler del PDP7",
+        "image": ""
+      },
+      {
+        "text": "Il B",
+        "image": ""
+      },
+      {
+        "text": "Il C",
+        "image": ""
+      },
+      {
+        "text": "Le altre risposte contengono tutte dei linguaggi usati per implementare Unix",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "Il file system di Linux è una foresta, ovvero un albero con più radici (una per ogni dispositivo fisico di memoria di massa collegato alla macchina, per esempio hard disk, chiave USB, CD, DVD, ...)",
+        "image": ""
+      },
+      {
+        "text": "Nel file system di Linux, ogni nodo interno è un file o una directory, mentre le foglie sono sempre directory",
+        "image": ""
+      },
+      {
+        "text": "Nel file system di Linux esistono anche directory (denominate virtuali) che non si trovano su nessun dispositivo fisico di memoria di massa",
+        "image": ""
+      },
+      {
+        "text": "Il file system di Linux è gerarchico, perchè per accedere ad un file occorre effettuare una chiamata di sistema al kernel",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il linguaggio C:",
+    "options": [
+      {
+        "text": "Viene definito per la creazione del primo Sistema Operativo Unix",
+        "image": ""
+      },
+      {
+        "text": "Nasce negli anni 70 per sviluppare programmi portabili su diverse architetture hardware",
+        "image": ""
+      },
+      {
+        "text": "Nasce come linguaggio di programmazione proprietario per l'implementazione dei programmi sui sistemi DEC PDP-11",
+        "image": ""
+      },
+      {
+        "text": "Nasce negli anni 70 come evoluzione del linguaggio B",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quali tra le seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "cat -N -6 filename stampa le ultime 6 righe del file filename",
+        "image": ""
+      },
+      {
+        "text": "tail -c n filename stampa le ultime n righe del file filename",
+        "image": ""
+      },
+      {
+        "text": "cut consente di tagliare un file in gruppi di righe contigue in base a un carattere di spaziatura",
+        "image": ""
+      },
+      {
+        "text": "nessuna delle altre risposte è vera",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle applicazioni client-server realizzate tramite socket è vera?",
+    "options": [
+      {
+        "text": "Il client deve sempre chiamare la syscall bind",
+        "image": ""
+      },
+      {
+        "text": "Il server deve chiamare la syscall connect",
+        "image": ""
+      },
+      {
+        "text": "Il client deve sempre chiamare la syscall listen",
+        "image": ""
+      },
+      {
+        "text": "Sia il server che il client devono sempre chiamare la syscall socket",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di voler scrivere un programma immune al CTRL+C. Quali dei seguenti frammenti di codice realizza quanto detto sopra?",
+    "options": [
+      {
+        "text": "signal( SIGTERM, SIG_DFL);",
+        "image": ""
+      },
+      {
+        "text": "signal( SIGINT, SIG_DFL);",
+        "image": ""
+      },
+      {
+        "text": "signal( SIGINT, SIG_IGN);",
+        "image": ""
+      },
+      {
+        "text": "Non è possibile essere immuni al CTRL+C",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale dei seguenti frammenti di codice è corretto?",
+    "options": [
+      {
+        "text": "int pid = fork();\r\nif (pid == 0) { /* fai qualcosa, sei il figlio */}\r\nelse if (pid > 0) { /* fai qualcosa, sei il padre */}\r\nelse {\r\nperror(\"fork failed\");\r\n}",
+        "image": ""
+      },
+      {
+        "text": "int pid = fork();\r\nif (pid == 0) { /* fai qualcosa, sei il padre */}\r\nelse if (pid > 0) { /* fai qualcosa, sei il figlio */}\r\nelse {\r\nperror(\"fork failed\");\r\n}",
+        "image": ""
+      },
+      {
+        "text": "int pid = fork();\r\nif (pid < 0) { /* fai qualcosa, sei il figlio */}\r\nelse if (pid > 0) { /* fai qualcosa, sei il padre */}\r\nelse {\r\nperror(\"fork failed\");\r\n}",
+        "image": ""
+      },
+      {
+        "text": "Tutte le altre opzioni sono sbagliate",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di voler avere in esecuzione in background i comandi cmd1 e cmd2. Quale dei seguenti modi è corretto?",
+    "options": [
+      {
+        "text": "cmd1\r\n#premere Ctrl+Z\r\nbg\r\ncmd2\r\n#premere Ctrl+Z\r\nbg",
+        "image": ""
+      },
+      {
+        "text": "cmd1\r\n#premere Ctrl+Z\r\nfg\r\ncmd2\r\n#premere Ctrl+Z\r\nfg",
+        "image": ""
+      },
+      {
+        "text": "cmd1\r\n#premere Ctrl+Z\r\nbg\r\ncmd2\r\n#premere Ctrl+Z",
+        "image": ""
+      },
+      {
+        "text": "cmd1\r\n#premere Ctrl+Z\r\ncmd2\r\n#premere Ctrl+Z\r\nfg",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Ignorando eventuali memory leaks, quale dei seguenti frammenti di codice può portare ad un segmentation fault?",
+    "options": [
+      {
+        "text": "char *p = malloc(10*sizeof(char));\r\np[1] = 'a';\r\nfree(p);",
+        "image": ""
+      },
+      {
+        "text": "char *p = malloc(10*sizeof(char));\r\np[9] = 'a';\r\np = NULL;\r\np = realloc(p, 10*sizeof(char));\r\nfree(p);",
+        "image": ""
+      },
+      {
+        "text": "char *p = calloc(10, sizeof(char));\r\np[9] = 'a';\r\np = realloc(p, 10*sizeof(char));\r\nfree(p);",
+        "image": ""
+      },
+      {
+        "text": "char *p = calloc(10, sizeof(char));\r\np[9] = 'a';\r\nfree(p);\r\np = realloc(p, 10*sizeof(char));\r\nfree(p);",
+        "image": ""
+      }
+    ],
+    "correctIndex": 3,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di avere il seguente frammento di codice ed il seguente file. Quale dei seguenti frammenti di codice ha lo stesso effetto? (immagina fare questa domanda in 45 secondi)",
+    "options": [
+      {
+        "text": "int fd = open(\"file_esistente.txt\", O_RDONLY);\r\nint var;\r\ndouble var2;\r\nchar *buf = calloc(sizeof(var2) > sizeof(var)? sizeof(var2) : sizeof(var),\r\nsizeof(char));\r\nread(fd, buf, sizeof(var));\r\nvar = atoi(buf);\r\nread(fd, buf, sizeof(var2));\r\nvar2 = atof(buf);",
+        "image": ""
+      },
+      {
+        "text": "int fd = open(\"file_esistente.txt\", O_RDONLY);\r\nint var;\r\ndouble var2;\r\nread(fd, &var, sizeof(var));\r\nread(fd, &var2, sizeof(var2));",
+        "image": ""
+      },
+      {
+        "text": "int fd = open(\"file_esistente.txt\", O_RDONLY);\r\nint var;\r\ndouble var2;\r\nchar buf[4];\r\nread(fd, buf, sizeof(var));\r\nvar = atoi(buf);\r\nread(fd, buf, sizeof(var2));\r\nvar2 = atof(buf);",
+        "image": ""
+      },
+      {
+        "text": "int fd = open(\"file_esistente.txt\", O_RDONLY);\r\nint var;\r\ndouble var2;\r\nfscanf(fd, \"%d\\n%lf\\n\", &var, &var2);",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "frammento:\r\nFILE *stream = fopen(\"file_esistente.txt\", \"r\");\r\nint var;\r\ndouble var2;\r\nfscanf(stream, \"%d\\n%lf\\n\", &var, &var2);\r\n\r\nfile_esistente.txt:\r\n4567\r\n34.56",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di avere il seguente frammento di codice. Quale dei seguenti frammenti di codice ha lo stesso effetto? (immagina fare questa domanda in 45 secondi)",
+    "options": [
+      {
+        "text": "int var = somefunction1();\r\ndouble var2 = somefunction2();\r\nwrite(1, (char *)&var, sizeof(var));\r\nwrite(1, (char *)&var2, sizeof(var2));",
+        "image": ""
+      },
+      {
+        "text": "int var = somefunction1();\r\ndouble var2 = somefunction2();\r\nchar *buf = calloc(sizeof(var2) > sizeof(var) ? sizeof(var2) : sizeof(var), sizeof(char));\r\nsprintf(buf, \"%d\\n\", var);\r\nwrite(1, buf, sizeof(var) + 1);\r\nsprintf(buf, \"%lf\\n\", var2);\r\nwrite(1, buf, sizeof(var2) + 1);",
+        "image": ""
+      },
+      {
+        "text": "int var = somefunction1();\r\ndouble var2 = somefunction2();\r\nchar *buf = calloc(sizeof(var2) > sizeof(var)? sizeof(var2) : sizeof(var), sizeof(char));\r\nsprintf(buf, \"%d\", var);\r\nwrite(1, buf, sizeof(var));\r\nwrite(1, \"\\n\", 1);\r\nsprintf(buf, \"%lf\", var2);\r\nwrite(1, buf, sizeof(var2));\r\nwrite(1, \"\\n\", 1);",
+        "image": ""
+      },
+      {
+        "text": "int var = somefunction1();\r\ndouble var2 = somefunction2();\r\nchar buf[4];\r\nsprintf(buf, \"%d\", var);\r\nwrite(1, buf, sizeof(var));\r\nwrite(1, \"\\n\", 1);\r\nsprintf(buf, \"%lf\", var2);\r\nwrite(1, buf, sizeof(var2));\r\nwrite(1, \"\\n\", 1);",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "int var = somefunction1();\r\ndouble var2 = somefunction2();\r\nfprintf(stdout, \"%d\\n%lf\\n\", var, var2);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files è falsa?",
+    "options": [
+      {
+        "text": "La syscall chdir ha l'effetto di cambiare l'esecuzione delle sole chiamate ad open che usano path relativi come primo argomento",
+        "image": ""
+      },
+      {
+        "text": "La syscall chdir(path) ha lo stesso effetto del comando bash cd path lanciato in una sottoshell",
+        "image": ""
+      },
+      {
+        "text": "La syscall rename(oldpath, newpath) ha lo stesso effetto del comando bash cp oldpath newpath",
+        "image": ""
+      },
+      {
+        "text": "La syscall chroot ha l'effetto di cambiare l'esecuzione delle sole chiamate ad open che usano path assoluti come primo argomento",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sul comando find è falsa?",
+    "options": [
+      {
+        "text": "È possibile restringere la ricerca ai soli file che sono link simbolici",
+        "image": ""
+      },
+      {
+        "text": "È obbligatorio che gli starting point siano delle directory",
+        "image": ""
+      },
+      {
+        "text": "È possibile cercare nomi di file che rispettino un dato pattern o una data regular expression",
+        "image": ""
+      },
+      {
+        "text": "È possibile cercare anche directory, e non solo file",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di avere il seguente frammento di codice, dove somefunction ritorna un intero. Quale dei seguenti frammenti di codice scrive gli stessi caratteri sullo stdout, senza errori? (immagina fare questa domanda in 45 secondi)",
+    "options": [
+      {
+        "text": "int var = somefunction()%100;\r\nchar *buf = (char *)calloc(sizeof(int), sizeof(char));\r\nsprintf(buf, \"%d\", var);\r\nwrite(1, buf, strlen(buf));\r\nwrite(1, \"\\n\", 1);\r\nsprintf(buf, \"%.2lf\", (double)var);\r\nwrite(1, buf, strlen(buf));\r\nwrite(1, \"\\n\", 1);\r\nfree(buf);",
+        "image": ""
+      },
+      {
+        "text": "int var = somefunction()%100;\r\ndouble var2 = (double)var;\r\nwrite(1, (char *)&var, sizeof(var));\r\nwrite(1, (char *)&var2, sizeof(var2));",
+        "image": ""
+      },
+      {
+        "text": "int var = somefunction()%100;\r\nchar buf[7];\r\nsprintf(buf, \"%d\", var);\r\nwrite(1, buf, strlen(buf));\r\nwrite(1, \"\\n\", 1);\r\nsprintf(buf, \"%.2lf\", (double)var);\r\nwrite(1, buf, strlen(buf));\r\nwrite(1, \"\\n\", 1);",
+        "image": ""
+      },
+      {
+        "text": "int var = somefunction()%100;\r\nchar *buf;\r\nsprintf(buf, \"%d\", var);\r\nwrite(1, buf, strlen(buf));\r\nwrite(1, \"\\n\", 1);\r\nsprintf(buf, \"%.2lf\", (double)var);\r\nwrite(1, buf, strlen(buf));\r\nwrite(1, \"\\n\", 1);",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "int var = somefunction()%100;\r\nprintf(\"%d\\n%.2lf\\n\", var, (double)var);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quali sono i permessi MINIMI che devono essere assegnati ad una directory affinché sia possibile: 1) leggere il contenuto della directory inclusi gli attributi dei file; 2) impostare la directory come cwd; 3) attraversare la directory?",
+    "options": [
+      {
+        "text": "r w x",
+        "image": ""
+      },
+      {
+        "text": "r - x",
+        "image": ""
+      },
+      {
+        "text": "r w -",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Assumete di voler visualizzare il numero di inode di un file, quale dei seguenti comandi non produce l'output desiderato?",
+    "options": [
+      {
+        "text": "ls -l -i nomefile",
+        "image": ""
+      },
+      {
+        "text": "stat -f nomefile",
+        "image": ""
+      },
+      {
+        "text": "stat nomefile",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di eseguire il comando seguente; quali permessi di accesso vengono impostati al file \"nomefile\"?",
+    "options": [
+      {
+        "text": "da errore e non nmodifica i permessi di accesso di \"nomefile\"",
+        "image": ""
+      },
+      {
+        "text": "- r w S r w S r - -",
+        "image": ""
+      },
+      {
+        "text": "- r w s r w s r - -",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "chmod 6774 nomefile",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice; quando termina il ciclo for?",
+    "options": [
+      {
+        "text": "quando il valore di i è uguale ad n2",
+        "image": ""
+      },
+      {
+        "text": "quando il valore di i è uguale ad n1",
+        "image": ""
+      },
+      {
+        "text": "non termina perche n1 è diverso da n2",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "int i, n1=10,n2=100;\r\n\r\nfor (i=0;((i<n1)&&(i<n2));i++)\r\n    m2[i]=m1[i];",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quale delle seguenti dichiarazioni di variabile è non valida, generando quindi un errore di compilazione?",
+    "options": [
+      {
+        "text": "int goto=1;",
+        "image": ""
+      },
+      {
+        "text": "int goTo=1;",
+        "image": ""
+      },
+      {
+        "text": "int go_to=1;",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Dopo aver eseguito il comando seguente, cosa conterrà il file \"hw\"?",
+    "options": [
+      {
+        "text": "L'input per il debugger relativo al file helloworld.c",
+        "image": ""
+      },
+      {
+        "text": "Il precompilato di helloworld.c",
+        "image": ""
+      },
+      {
+        "text": "Un file identico ad helloworld.c",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "cpp helloworld.c > hw",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di aver dichiarato ed inizializzato le seguenti variabili; quali delle seguenti espressioni è vera?",
+    "options": [
+      {
+        "text": "x & y == x && y",
+        "image": ""
+      },
+      {
+        "text": "x && y == 7",
+        "image": ""
+      },
+      {
+        "text": "!(x & y == x | y)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "int x = 1, y = 7;",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Che cosa si intende per sudoer, nel gergo Linux?",
+    "options": [
+      {
+        "text": "Un comando per essere aggiunti al gruppo sudo",
+        "image": ""
+      },
+      {
+        "text": "Un gruppo che permette ai suoi membri di eseguire comandi come super-utente",
+        "image": ""
+      },
+      {
+        "text": "Un utente che appartiene al gruppo di utenti sudo",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Assumiamo che quando viene creata una directory i suoi permessi di accesso sono 0644. Quale sara la umask?",
+    "options": [
+      {
+        "text": "0644",
+        "image": ""
+      },
+      {
+        "text": "0022",
+        "image": ""
+      },
+      {
+        "text": "0133",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quando si esegue il comando ls -l viene mostrato, come prima informazione, il totale. Quale è il significato di questo campo?",
+    "options": [
+      {
+        "text": "Dimensione della directory espressa in numero di blocchi su disco",
+        "image": ""
+      },
+      {
+        "text": "Dimensione della directory espressa in numero di file contenuti in essa e in tutte le sotto-directory",
+        "image": ""
+      },
+      {
+        "text": "Numero totale di sotto directory",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Dopo la sua esecuzione, quale sarà il valore contenuto in num?",
+    "options": [
+      {
+        "text": "5",
+        "image": ""
+      },
+      {
+        "text": "10",
+        "image": ""
+      },
+      {
+        "text": "0x123AF345 (indirizzo di memoria)",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "int num = 5;\r\nint *numPtr;\r\nnumPtr = &num;\r\n*numPtr = 10;",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Quale delle seguenti espressioni sarà vera una volta eseguito il codice?",
+    "options": [
+      {
+        "text": "r < r1",
+        "image": ""
+      },
+      {
+        "text": "r > r1",
+        "image": ""
+      },
+      {
+        "text": "r == r1",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "int n= 2;\r\nint r= 2 * (n++);\r\nint r1 = 2 * (++n)",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il comando seguente. Quali delle seguenti affermazioni è falsa?",
+    "options": [
+      {
+        "text": "Il comando produce un file oggetto a partire da un file precompilato",
+        "image": ""
+      },
+      {
+        "text": "Il comando produce un file oggetto",
+        "image": ""
+      },
+      {
+        "text": "Il comando produce un file eseguibile",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "gcc -c file.c -o file.o",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Cosa produce il seguente comando?",
+    "options": [
+      {
+        "text": "Un file eseguibile a.out",
+        "image": ""
+      },
+      {
+        "text": "Nulla, la sintassi è sbagliata",
+        "image": ""
+      },
+      {
+        "text": "Fa il linking dei file oggetto ma non produce nessun risultato finché non si specifica l'output",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "gcc file1.o file2.o file3.o",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Cosa fa una volta eseguito?",
+    "options": [
+      {
+        "text": "stampa il valore di num almeno una volta",
+        "image": ""
+      },
+      {
+        "text": "cicla infinitamente se num != 0",
+        "image": ""
+      },
+      {
+        "text": "stampa il valore di num se num != 0",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "scanf(\"%d\", &num);\r\nwhile(num != 0){\r\n printf(\"%d\\n\", num);\r\nscanf(\"%d\", &num);\r\n}",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Nel caso in cui la seguente system call sia invocata con valore di pid uguale a -1, qual è il suo comportamento?",
+    "options": [
+      {
+        "text": "Attende la terminazione di qualunque processo figlio il cui gruppo ID del processo sia diverso da quello del processo chiamante",
+        "image": ""
+      },
+      {
+        "text": "Attende la terminazione di un qualunque processo figlio",
+        "image": ""
+      },
+      {
+        "text": "Attende la terminazione di qualunque processo figlio il cui gruppo ID del processo sia uguale a quello del processo chiamante",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "pid_t waitpid(pid_t pid, int *status, int options);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quali dei seguenti comandi permette di creare un intero path di directory?",
+    "options": [
+      {
+        "text": "mkdir /dir1/dir2/dir3",
+        "image": ""
+      },
+      {
+        "text": "mkdir -p /dir1/dir2/dir3",
+        "image": ""
+      },
+      {
+        "text": "mkdir -m /dir1/dir2/dir3",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere un file di nome filenmae, e di creare un link a filename con il comando seguente. Quale delle seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "filename e link1 hanno lo stesso inode",
+        "image": ""
+      },
+      {
+        "text": "link1 occupa zero blocchi su disco anche se filename ne occupa un numero diverso da 0",
+        "image": ""
+      },
+      {
+        "text": "filename e link1 hanno inode diverso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "ln filename link1",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quali dei seguenti comandi change dir usa un path assoluto?",
+    "options": [
+      {
+        "text": "cd ../studente/download",
+        "image": ""
+      },
+      {
+        "text": "cd Immagini/../Immagini/faces",
+        "image": ""
+      },
+      {
+        "text": "cd ~/Lezione1/esempi/filesystem",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere il seguente makefile (memorizzato in un file di nome makefile). In quali condizioni viene eseguito il target sort_file_int?",
+    "options": [
+      {
+        "text": "Sempre, se invochiamo il comando \"make sort_file_int\"",
+        "image": ""
+      },
+      {
+        "text": "Se invochiamo il comando \"make sort_file_int\". e se sort_file_int.c perché stato modificato dopo la data di creazione di sort_file_int.o",
+        "image": ""
+      },
+      {
+        "text": "Il target sort_file_int non verrà mai eseguito",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "merge_sorted_lists: merge_sorted_lists.c\r\n    gcc -Wall -Wextra -O3 merge_sorted_lists.c -o merge_sorted_lists\r\nsort_file_int: sort_file_int.c\r\n    gcc -Wall -Wextra -O3 sort_file_int.c -o sort_file_int\r\n.PHONY: clean\r\nclean:\r\n    rm -f *.o merge_sorted_lists",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Assumiamo che, in fase di esecuzione, la prima scanf legge su stdin la sequenza \"1 w\". Quale sarà il valore di nread, dopo l'esecuzione della seconda scanf?",
+    "options": [
+      {
+        "text": "0",
+        "image": ""
+      },
+      {
+        "text": "2",
+        "image": ""
+      },
+      {
+        "text": "dipende dall'input letto su stdin dalla seconda scanf",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "int x, y, nread;\r\nfloat xx, yy;\r\nnread=scanf(\"%d %d\",&x, &y);\r\nprintf(\"x=%d, y=%d, nread=%d \\n\",x,y,nread);\r\nprintf(\"xx=%f, yy=%f, nread=%d \\n\",xx,yy,nread);\r\nnread=scanf(\"%f %f\",&xx, &yy);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Le chiamate di funzione a riga 10, 11, 12 e 13 vengono eseguite tutte?",
+    "options": [
+      {
+        "text": "Si",
+        "image": ""
+      },
+      {
+        "text": "Viene eseguita solo la riga 10, poi genera errore ed il programma termina",
+        "image": ""
+      },
+      {
+        "text": "No, nessuna",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "1: #include <stdio.h>\r\n2:  ....\r\n3: \r\n4:  char str [80];\r\n5:  float f;\r\n6:  FILE * pFile;\r\n7:\r\n8:  pFile = fopen (\"myfile.txt\",\"w+\");\r\n9:  fprintf (pFile, \"%f %s\\n\", 3.1416, \"PI\");\r\n10: close(pFile);\r\n11: rewind (pFile);\r\n12: fscanf (pFile, \"%f\", &f);\r\n13: fscanf (pFile, \"%s\", str);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Cosa fa il seguente segmento di codice?",
+    "options": [
+      {
+        "text": "stampa il valore di num se num è diverso da 0",
+        "image": ""
+      },
+      {
+        "text": "Il ciclo do-while entra in un loop infinito",
+        "image": ""
+      },
+      {
+        "text": "stampa il valore di num almeno una volta",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "scanf(\"%d\",&num);\r\ndo {\r\nprintf(\"%d\\n\",num);\r\nscanf(\"%d\",&num);\r\n} while(num!=0);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di aver inizializzato un puntatore ad una variabile intera in questo modo. Come possiamo assegnare 10 al valore indiretto di ptrnum dopo l'inizializzazione?",
+    "options": [
+      {
+        "text": "ptrnum = (int *) 10;",
+        "image": ""
+      },
+      {
+        "text": "ptrnum = 10;",
+        "image": ""
+      },
+      {
+        "text": "*ptrnum = 10;",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "int num=5, *ptrnum;\r\nptrnum=&num;",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente frammento di codice. Se la sequenza letta in input dalla scanf è \"1 3 7 2 12 w\" Quale valore assumerà scoreCount al termine del ciclo?",
+    "options": [
+      {
+        "text": "Il ciclo non termina. La scanf va in errore quando viene letta la w",
+        "image": ""
+      },
+      {
+        "text": "5",
+        "image": ""
+      },
+      {
+        "text": "6",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "int scoreCount, a;\r\nfor(scoreCount=0; scanf(\"%d\",&a)==1; scoreCount++);",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il frammento di codice. Che valore conterrà la variabile K al termine dell'esecuzione del frammento di codice?",
+    "options": [
+      {
+        "text": "11",
+        "image": ""
+      },
+      {
+        "text": "L'esecuziuone del frammento di codice non termina perché Il ciclo entra in un loop infinito",
+        "image": ""
+      },
+      {
+        "text": "10",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "int K=10, c=0, p=1;\r\nwhile (++K > 10)\r\nc=c+1;\r\np--;",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In quale situazione le system call dup(2) e dup2(2) hanno lo stesso comportamento?",
+    "options": [
+      {
+        "text": "Nel caso in cui gli passiamo gli stessi parametri",
+        "image": ""
+      },
+      {
+        "text": "Nel caso in cui invochiamo la dup2(2) settando a NULL il valore del nuovo file descriptor",
+        "image": ""
+      },
+      {
+        "text": "Nel caso in cui la dup2(2) venga invocata specificando che il nuovo file descriptor deve essere il file descriptor disponibile con il numero più piccolo",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quali attributi di un processo non sono ereditati dal processo figlio?",
+    "options": [
+      {
+        "text": "Descrittori dei file; terminale di controllo; memoria condivisa",
+        "image": ""
+      },
+      {
+        "text": "I timer, i record lock e i memory lock; i contatori delle risorse",
+        "image": ""
+      },
+      {
+        "text": "Real ed effective user e group ID; working directory; ambiente del processo",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Quali dei seguenti attributi di un processo non è preservato a seguito di una chiamata alla funzione di libreria execve()?",
+    "options": [
+      {
+        "text": "Groups id",
+        "image": ""
+      },
+      {
+        "text": "Memory mappings",
+        "image": ""
+      },
+      {
+        "text": "File locks",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di aver utilizzato, nella nostra funzione C, la funzione di libreria alloca(3) per allocare un'area di memoria. È necessario liberare tale area di memoria mediante una free(3) prima della terminazione della funzione?",
+    "options": [
+      {
+        "text": "No. l'area di memoria allocata nello stack viene liberata automaticamente",
+        "image": ""
+      },
+      {
+        "text": "No, deve essere invocata la funzione dealloca(3)",
+        "image": ""
+      },
+      {
+        "text": "Sì, bisogna sempre liberare la memoria per evitare dei memory leak",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri la variabile globale errno. Se una system call termina con successo, e immediatamente dopo la sua terminazione ispezioniamo il contenuto di errno, cosa otteniamo?",
+    "options": [
+      {
+        "text": "Il valore zero essendo la system call terminata con successo",
+        "image": ""
+      },
+      {
+        "text": "Il codice di terminazione (con successo) in quanto non c'è una effettiva differenza tra codice di errore o di terminazione con successo",
+        "image": ""
+      },
+      {
+        "text": "Il codice di errore generato dall'ultima system call o funzione di libreria la cui esecuzione è terminata con errore",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il seguente grammento di codice. Assumendo che myfile.txt non esista, quale delle seguenti affermazioni è vera?",
+    "options": [
+      {
+        "text": "Il programma genera un errore in fase di compilazione.",
+        "image": ""
+      },
+      {
+        "text": "Il programma genera errore di segmentazione",
+        "image": ""
+      },
+      {
+        "text": "Il programma scrive sul file myfile.txt la stringa \"3.1416 PI\".",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "FILE * pFile;\r\npFile = fopen(\"myfile.txt\", \"rw+\");\r\nfprintf(pFile, \"%f %s\", 3.1416, \"PI\")",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Assumiamo di avere un file eseguibile il cui proprietario è l'utente root, ad esempio il seguente. Affinché l'effective UID del processo cambi quando eseguito da un utente senza privilegi di root, cosa bisogna fare?",
+    "options": [
+      {
+        "text": "Impostare il permesso speciale sticky bit",
+        "image": ""
+      },
+      {
+        "text": "Non occorre fare nulla perché quello descritto è il comportamento standard, ovvero l'effective UID cambia sempre in uqello dell'utente che segue il file.",
+        "image": ""
+      },
+      {
+        "text": "Impostare il permesso speciale Setuid bit",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "-rwxr-xr-x 1 root root 60296 feb 22 2017 /bin/chmod",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "In cosa differisce il contenuto dei file /etc/mtab e /etc/fstab?",
+    "options": [
+      {
+        "text": "/etc/mtab contiene i filesystem disponibili; /etc/fstab contiene i filesystem che vengono montati al boot",
+        "image": ""
+      },
+      {
+        "text": "/etc/fstab contiene i filesystem montati attualmente; /etc/mtab invece contiene i filesystem che vengono montati al boot",
+        "image": ""
+      },
+      {
+        "text": "/etc/mtab contiene i filesystem montati attualmente; /etc/fstab contiene i filesystem che vengono montati al boot",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere una directory /home/dir creata da root con diritti 1777/drwxrwxrwt ed al suo interno il file filename, creato da root, con diritti di accesso 0770/-rwxrwx---. Supponiamo quindi di eseguire il comando rm /home/dir/filename eseguito come utente normale (non root). Quale delle seguenti affermazioni è corretta?",
+    "options": [
+      {
+        "text": "Il file verrà cancellato perché lo sticky bit non è settato",
+        "image": ""
+      },
+      {
+        "text": "Il file non verrà cancellato perché il proprietario del file è root ed i diritti per il gruppo others sono tutti resettati",
+        "image": ""
+      },
+      {
+        "text": "Il file non verrà cancellato perché lo sticky bit è settato",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di esguire la sequenza di comandi. Quale sarà il risultato?",
+    "options": [
+      {
+        "text": "Il primo comando crea l'utente utente1, ed il gruppo utente1; il secondo comando da errore",
+        "image": ""
+      },
+      {
+        "text": "Il primo comando crea l'utente ed il gruppo utente1; il secondo comando aggiunge l'utente utente1 al gruppo studente. Se il gruppo studente non esiste lo crea",
+        "image": ""
+      },
+      {
+        "text": "Il primo comando crea l'utente ed il gruppo utente1; il secondo comando aggiunge l'utente utente1 al gruppo studente solo se il gruppo studente già esiste",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "sudo adduser utente1\r\nsudo adduser utente1 studente",
+    "explanation": "",
+    "hint": ""
+  }
+]

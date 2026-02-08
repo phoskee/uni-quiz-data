@@ -1,0 +1,790 @@
+[
+  {
+    "question": "Il seguente comando copia da filein a fileout 100 byte intervallati di 10 byte, ovvero byte_1, byte_11, byte_21, etc... Scegli un'alternativa:",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "dd if=filein of=fileout bs=1 seek=10 count=100",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere una directory '/home/dir' creata da root con permessi di accesso '0777/drwxrwxrwx (owner root)' ed al suo interno il file filename, creato da root, con permessi di accesso '0770/-rwxrwx--- (owner root)' Un qualsiasi utente puo' rimovere il file filename eseguendo, in user mode, il comando rm /home/dir/filename",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il comando 'ln -s myfile mylink'.Dopo la sua esecuzione, l'output dei comandi \"du myfile\" e \"du mylink\" sara' diverso",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il comando 'ls -r mydir' lista il contenuto di tutte le directory con radice \"mydir\".",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Nel comando '# cd ~/Lezione1/esempi/filesystem' e' stato utilizzato un path relativo",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Per visualizzare l'atime di un file quale dei seguenti comandi e' corretto?",
+    "options": [
+      {
+        "text": "ls -lu nomefile",
+        "image": ""
+      },
+      {
+        "text": "Is -Ic nomefile",
+        "image": ""
+      },
+      {
+        "text": "ls -la nomefile",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Per visualizzare la lista dei file presenti nella CWD ordinati per modified time si utilizza il comando:",
+    "options": [
+      {
+        "text": "ls -lt",
+        "image": ""
+      },
+      {
+        "text": "Is -lut",
+        "image": ""
+      },
+      {
+        "text": "ls -la",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si supponga di avere un file di testo filein contenente 'abcdefghilmnopqrstuvwxyzABCDEFGHILMNOPQRSTUVWXYZ' dopo l'esecuzione del comando 'dd if=filein of=fileout bs=2 skip=3 count=10' cosa conterrà fileout?",
+    "options": [
+      {
+        "text": "ghilmnopqrstuvwxyzAB",
+        "image": ""
+      },
+      {
+        "text": "ghilmnopqrstuvwxyzABCDEFGHILMN",
+        "image": ""
+      },
+      {
+        "text": "GHILMNOPQRSTUVWXYZ",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il comando 'ls -ltc' restituisce la lista dei file nella CWD ordinati per atime",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Sia nomefile un file memorizzato nella CWD, il comando 'touch nomefile' crea un file vuoto che sostituisce il file esistente",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il valore \"totale 1512\" del seguente codice rappresenta la dimensione della directory in numero di blocchi su disco",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "studente@debian9 :~ $ ls -l apache-tomcat-8.0.27/ \ntotale 1512 \ndrwxr-xr-x 2 studente studente",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Un utente che appartiene al gruppo sudo puo' direttamente accedere, in scrittura, al file /etc/passwd",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Entrambi i path che seguono sono path assoluti per l'utente studente",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "studente@debian9:~$ /home/studente/dir1/dir2 \nstudente@debian9:~$ ~/dir1/dir2/",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Consideriamo il file eseguibile myProgram con proprietario utente1 e con permessi di accesso -rwxr-xr-x, Se utente2 esegue myProgramma si osserva che il RUID = EUID",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Consideriamo il file eseguibile myProgram con proprietario utente1 e con permessi di accesso -rwsr-xr-x, Se utente2 esegue myProgramma si osserva che il RUID = EUID",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere una directory '/home/dir' creata da root con permessi di accesso '1777/drwxrwxrwt (owner root)' ed al suo interno il file filename, creato da root, con permessi di accesso '0770/-rwxrwx --- (owner root)'. Un qualsiasi utente puo' rimovere il file filename eseguendo, in user mode, il comando 'rm /home/dir/filename'",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "I permessi di accesso del file eseguibile '/usr/bin/passwd' sono impostati a '4755/-rwsr-xr-x'. per impedire che un qualsiasi utente, operante in usermode, possa eseguire il comando passwd e quindi modificare il file '/etc/passwd'",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "I permessi di accesso del file eseguibile '/usr/bin/passwd' sono impostati a '1755/-rwxr-xr-t' per consentire ad un qualsiasi utente, operante in usermode, di eseguire il comando passwd e quindi modificare il file '/etc/passwd'",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il comando 'chmod 6774 nomefile' imposta i seguenti permessi per il file nomefile '- r w S r w S r - -'",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il comando 'sudo adduser utente1 studente' genera un errore se il gruppo \"studente\" esiste ma l'utente \"utente1\" non esiste.",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il comando 'touch -cat202006021200 filename' imposta l'atime ed il ctime di filename al '2 giugno 2020 ore 12:00'.",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il comando 'ls -R mydir' lista il contenuto di tutte le directory con radice \"mydir\".",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si assuma di avere due shell aperte, etichettate come shell_1 e shell_2 e si consideri la seguente sequenza di comandi (shell_i:cmd indica che cmd e' eseguitto nella shell i, i=1,2) eseguiti in usermode. Quale e' il loro effetto?",
+    "options": [
+      {
+        "text": "Il processo xterm viene portato nello stato Interrupted (I)",
+        "image": ""
+      },
+      {
+        "text": "Nulla. Un segnale di SIGINT inviato in usermode non viene considerato dal processo che lo riceve.",
+        "image": ""
+      },
+      {
+        "text": "Il processo xterm viene terminato con segnale SIGINT",
+        "image": ""
+      }
+    ],
+    "correctIndex": 2,
+    "image": "",
+    "code": "shell_1: xterm\nshell_2: ps -C xterm\n#restituisce xtermPID\nshell 2: kill -s SIGINT xtermPID",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si assuma di avere due shell aperte, etichettate come shell_1 e shell_2 e si consideri la seguente sequenza di comandi (shell_i:cmd indica che cmd e' eseguitto nella shell i, i=1,2) eseguiti in usermode. Quale e' il loro effetto?",
+    "options": [
+      {
+        "text": "Il processo xterm viene messo nello stato T",
+        "image": ""
+      },
+      {
+        "text": "Nulla. In usermode l'invio di un segnale di SIGSTOP ad un processo non ha effetto",
+        "image": ""
+      },
+      {
+        "text": "Il processo xterm viene mandato in esecuzione in background",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "shell_1: xterm\nshell_2: ps -C xterm\n#restituisce xtermPID\nshell 2: kill -s SIGSTOP xtermPID",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Per conoscere lo stato di un job in esecuzione si deve utilizzare il comando",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "~$ jobs -p",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il comando",
+    "options": [
+      {
+        "text": "Crea l'utente usertest ma genera dati inconsistenti nel file /etc/passwd",
+        "image": ""
+      },
+      {
+        "text": "Genera un errore",
+        "image": ""
+      },
+      {
+        "text": "Crea l'utente usertest e la directory /home/usertest assegnandola come home directory all'utente",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "sudo adduser --home=/home/testdir --no-create-home usertest",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "I seguenti segnali possono essere catturati e gestiti da un programma c eseguito in usermode",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "SIGINT\nSIGABRT\nSIGTERM",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "I seguenti segnali non possono essere catturati e gestiti da un programma c eseguito in usermode",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "SIGKILL\nSIGINT\nSIGABRT",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "I comandi '~$ sudo -u usertest' e '~$ su -l usertest' sono equivalenti",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "I seguenti comandi producono lo stesso risultato",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "dd if=filein of=fileout bs=100 count=1\ndd if=filein of=fileout bs=1 count=100",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere un file di nome filename e di eseguire il comando 'ln filename link1' i file filename e link1 hanno inode diversi",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Si consideri il comando 'ln -s myfile mylink'. Dopo la sua esecuzione, myfile e mylink avranno un diverso inode.",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il comando 'chmod 6774 nomefile' imposta i seguenti permessi per il file nomefile '- r w s r w s r - -'",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Assuma di avere due shell aperte, etichettate come shell_1 e shell_2 e supponga di eseguire, in usemode, la sequenza di comandi che segue (shell_i: cmd indica che cmd e' eseguitto nella shell_i, i=1,2). Quale e' il loro effetto sul processo xterm?",
+    "options": [
+      {
+        "text": "Il processo sleep viene prima portato nello stato T e poi mandato nuovamente in esecuzione in foreground",
+        "image": ""
+      },
+      {
+        "text": "Il processo sleep viene mandato in esecuzione in background",
+        "image": ""
+      },
+      {
+        "text": "Nessuno. In usermode i processi ignorano il segnale di SIGSTOP. L'invio del segnale SIGCONT quindi non modifica lo stato del processo",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "shell_1: sleep 300\nshell_2: ps -C sleep\n#restituisce sleepPID\nshell_2: kill -s SIGSTOP sleepPID\nshell_2: kill -s SIGCONT sleepPID",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il comando ~$ sleep 30 | sleep 15 | sleep 10 & crea 1 job in background",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "La directory /tmp ha i permessi di accesso impostati a 1777/drwxrwxrwt per consentire a tutti gli utenti di leggere, creare e rimuovere file anche se non hanno permessi di scrittura su di essi.",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Consideriamo il file eseguibile myProgram con proprietario utente1 e con permessi di accesso -rwxr-xr-x. Se utente2 esegue myProgram si osserva che il RUID è diverso dal EUID",
+    "options": [
+      {
+        "text": "Falso",
+        "image": ""
+      },
+      {
+        "text": "Vero",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Supponiamo di avere una directory '/home/dir' creata da root con permessi di accesso '1777/drwxrwxrwt (owner root)' ed al suo interno il file filename, creato da root, con permessi di accesso '0770/-rwxrwx--- (owner root)' Un qualsiasi utente puo' rimovere il file filename eseguendo, in user mode, il comando rm /home/dir/filename",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Per eseguire con successo il comando studente@hostname~$ sudo -u usertest stat file_di_usertest quale password deve essere fornita?",
+    "options": [
+      {
+        "text": "La password dell'utente usertest",
+        "image": ""
+      },
+      {
+        "text": "La password dell'utente studente",
+        "image": ""
+      },
+      {
+        "text": "La password di root",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Il comando adduser utente1; adduser utente1 studente , dopo aver creato l'utente utente1, genera errore nell'esecuzione del secondo comando in quanto utente1 esiste già.",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Dopo l'esecuzione del comando ln filename link1, il comando \"stat filename\" e \"stat link1\" avranno output uguale a meno del campo \"File\".",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 0,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  },
+  {
+    "question": "Una directory con i permessi di accesso settati a rw- --- --- permette all'utente proprietario della directory di: leggere il contenuto della directory inclusi gli attributi del file; impostare la directory come cwd; attraversare la directory;",
+    "options": [
+      {
+        "text": "Vero",
+        "image": ""
+      },
+      {
+        "text": "Falso",
+        "image": ""
+      }
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "",
+    "hint": ""
+  }
+]
