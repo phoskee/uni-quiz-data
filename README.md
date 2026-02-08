@@ -42,9 +42,11 @@ Che si utilizzi NotebookLM o un'altra LLM (come ChatGPT o Claude), si può usare
 
 ## ✅ Verifica della correttezza
 
-Per garantire che i quiz siano leggibili dalle applicazioni, ogni file deve essere validato. È stato incluso uno script Python che controlla automaticamente la struttura del file e segnala eventuali errori di formattazione o indici errati.
+Ogni file deve rispettare lo standard del progetto per essere utilizzato correttamente. 
 
-Per eseguire la verifica, basta lanciare il seguente comando dal terminale:
+È disponibile uno script Python che controlla automaticamente la struttura e segnala eventuali errori. Questo controllo viene eseguito **automaticamente** da GitHub Actions su ogni Pull Request: se i file non sono validi, la PR non potrà essere unita.
+
+Per eseguire la verifica localmente prima di caricare le modifiche:
 ```bash
 python3 scripts/validate.py
 ```
