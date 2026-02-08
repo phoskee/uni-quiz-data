@@ -20,19 +20,15 @@ if not API_KEY or API_KEY == "tua_chiave_qui":
 client = genai.Client(api_key=API_KEY)
 
 def get_available_models():
-    """Recupera la lista dei modelli disponibili interrogando le API."""
-    print("🔍 Recupero modelli disponibili...")
+    """Recupera la lista dei modelli disponibili."""
     try:
         models = []
         for m in client.models.list():
-            # Filtriamo i modelli Gemini che supportano la generazione di contenuti
             if "generateContent" in m.supported_actions and "gemini" in m.name:
-                # Puliamo il nome per lo script (es. models/gemini-1.5-flash -> gemini-1.5-flash)
                 models.append(m.name.split("/")[-1])
         return sorted(list(set(models)), reverse=True)
-    except Exception as e:
-        print(f"⚠️ Errore nel caricamento modelli: {e}")
-        return ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-pro"]
+    except:
+        return ["gemini-2.0-flash", "gemini-1.5-flash"]
 
 def int_to_hex(color_int):
     if color_int is None: return "#000000"
@@ -46,7 +42,7 @@ def extract_text_with_colors(pdf_path):
     annotated_text = ""
     print(f"📖 Estrazione testo e colori da '{pdf_path.name}'...")
     
-    for page in doc:
+    for page_num, page in enumerate(doc):
         blocks = page.get_text("dict")["blocks"]
         for b in blocks:
             if "lines" in b:
@@ -60,25 +56,36 @@ def extract_text_with_colors(pdf_path):
                         else:
                             annotated_text += f"{text} "
                     annotated_text += "\n"
-        annotated_text += "\n--- PAGINA ---\n"
+        annotated_text += f"\n--- FINE PAGINA {page_num + 1} ---\n"
     return annotated_text
 
 def generate_quiz(text_content, model_name):
-    print(f"🤖 Generazione quiz in corso con {model_name}...")
-    prompt = f"""
-    Analizza il testo seguente estratto da un PDF di quiz universitari.
-    Il testo include tag di colore <#RRGGBB>Testo</#RRGGBB>.
+    print(f"🤖 Generazione quiz con {model_name}...")
     
-    REGOLE:
-    1. Trova le domande e le opzioni.
-    2. La risposta corretta è evidenziata da un colore (spesso VERDE o BLU).
-    3. Restituisci SOLO un array JSON di oggetti con: question, options (text, image), correctIndex, explanation, hint.
+    prompt = f"""
+    Analizza il testo estratto da un PDF di quiz universitari. 
+    Il tuo compito è convertire ogni domanda in un oggetto JSON.
+    
+    REGOLE PER IDENTIFICARE LA RISPOSTA CORRETTA (Priorità decrescente):
+    1. **Etichette Esplicite**: Cerca righe come "Answer: A", "Risposta corretta: B", "Soluzione: C" che appaiono dopo le opzioni.
+    2. **Tag di Colore**: Se non ci sono etichette, cerca il testo racchiuso in tag di colore (es. <#008000>Testo</#008000>). Solitamente il VERDE o il BLU indicano la risposta esatta.
+    3. **Pattern a fine documento**: Se non trovi nulla vicino alla domanda, controlla se c'è una lista finale di soluzioni.
+    
+    REQUISITI OUTPUT:
+    - Restituisci un array JSON di oggetti.
+    - Ogni oggetto deve avere:
+      "question": "Testo della domanda",
+      "options": [{"text": "Testo opzione", "image": ""}],
+      "correctIndex": numero (0-based, mappa A=0, B=1, C=2, D=3),
+      "explanation": "Spiegazione o riferimento al pattern trovato",
+      "hint": ""
     
     TESTO:
-    {text_content[:50000]}  # Limite di sicurezza per il prompt
+    {text_content[:60000]}
     
-    JSON:
+    RESTITUISCI SOLO IL JSON (Array di oggetti):
     """
+    
     try:
         response = client.models.generate_content(model=model_name, contents=prompt)
         text = response.text.strip()
@@ -117,10 +124,6 @@ def main():
     except: model_name = "gemini-2.0-flash"
 
     text_content = extract_text_with_colors(selected_file)
-    if not text_content.strip():
-        print("❌ Testo non trovato. Il PDF potrebbe essere una scansione.")
-        return
-
     quiz_data = generate_quiz(text_content, model_name)
     
     if quiz_data:

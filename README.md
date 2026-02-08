@@ -59,6 +59,12 @@ Il controllo della struttura JSON è **automatico** su ogni Pull Request tramite
 python3 scripts/validate.py
 ```
 
+## 📜 Policy sul Copyright e Responsabilità
+
+1. **Origine dei dati**: I quiz devono essere generati esclusivamente a partire da appunti personali, rielaborazioni originali di concetti generali o da materiale di cui si detengono i diritti di distribuzione. È severamente vietato caricare materiale protetto da copyright (scansioni di libri, slide protette, test ufficiali) nella cartella `_docs`.
+2. **Responsabilità**: Ogni contributore è l'unico responsabile del materiale che carica. I manutentori del repository si riservano il diritto di rimuovere immediatamente qualsiasi contenuto segnalato per violazione della proprietà intellettuale.
+3. **DMCA / Takedown**: Questo progetto ha scopi puramente didattici. Se sei il titolare di un diritto d'autore e ritieni che un contenuto violi il copyright, contattaci inviando una segnalazione: provvederemo alla rimozione immediata del materiale indicato.
+
 ## 🚀 Come contribuire
 
 1. Carica il materiale in `_docs/`.

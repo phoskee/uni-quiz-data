@@ -1,0 +1,28 @@
+# Licenze Uni-Quiz-Data
+
+Questo progetto utilizza due licenze diverse per proteggere separatamente il software e i contenuti.
+
+## 1. Contenuti (Quiz e Documenti)
+Tutti i dati contenuti nelle cartelle `quizzes/` e `_docs/` sono rilasciati sotto licenza:
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
+
+Questo significa che sei libero di:
+- **Condividere**: copiare e ridistribuire il materiale in qualsiasi formato.
+- **Modificare**: rielaborare e trasformare il materiale.
+
+Alle seguenti condizioni:
+- **Attribuzione**: devi citare la fonte (questo repository).
+- **Non Commerciale**: non puoi usare questo materiale per scopi commerciali o di lucro.
+- **Stessa Licenza**: se modifichi il materiale, devi ridistribuirlo con la stessa licenza dell'originale.
+
+Per il testo completo: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+
+## 2. Software (Script di validazione e strumenti)
+Il codice sorgente contenuto in questo repository (es. `validate.ts`) è rilasciato sotto licenza:
+**MIT License**
+
+Copyright (c) 2024 Uni-Quiz-Data Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files... (etc.)
