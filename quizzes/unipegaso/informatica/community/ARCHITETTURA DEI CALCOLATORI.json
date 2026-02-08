@@ -1,0 +1,2474 @@
+[
+  {
+    "question": "La Macchina di Turing e la Macchina di Von Neuman sono:",
+    "options": [
+      {
+        "text": "Computer che non vengono più venduti",
+        "image": null
+      },
+      {
+        "text": "Modelli di computer che risolvono specifici problemi matematici",
+        "image": null
+      },
+      {
+        "text": "Computer di marca diversa",
+        "image": null
+      },
+      {
+        "text": "Modelli teorici di computazione algoritmica",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Computazione algoritmica",
+    "hint": ""
+  },
+  {
+    "question": "I problemi che possono essere risolti con un algoritmo sono:",
+    "options": [
+      {
+        "text": "Tutti i problemi",
+        "image": null
+      },
+      {
+        "text": "Solo i problemi con meno di un miliardo di dati",
+        "image": null
+      },
+      {
+        "text": "Solo i problemi con soluzione numerica",
+        "image": null
+      },
+      {
+        "text": "Un sottoinsieme di tutti i problemi",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Risultati teorici fondamentali",
+    "hint": ""
+  },
+  {
+    "question": "Rispetto alla Macchina di Turing la Macchina di Von Neuman risolve:",
+    "options": [
+      {
+        "text": "Un numero di problemi minore",
+        "image": null
+      },
+      {
+        "text": "Gli stessi problemi",
+        "image": null
+      },
+      {
+        "text": "Un numero di problemi maggiore",
+        "image": null
+      },
+      {
+        "text": "Solo i problemi con soluzione numerica",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Risultati teorici fondamentali",
+    "hint": ""
+  },
+  {
+    "question": "In ogni transizioni di stato della Macchina di Turing lo stato successivo dipende:",
+    "options": [
+      {
+        "text": "Dalla lunghezza della sequenza scritta sul nastro",
+        "image": null
+      },
+      {
+        "text": "Dallo stato attuale e dal simbolo letto sul nasto",
+        "image": null
+      },
+      {
+        "text": "Dal primo stato assunto dalla macchina",
+        "image": null
+      },
+      {
+        "text": "Dal numero totale degli stati",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Computazione algoritmica",
+    "hint": ""
+  },
+  {
+    "question": "Il Sistema Operativo è un programma che:",
+    "options": [
+      {
+        "text": "Traduce un programma scritto in un Linguaggio ad Alto Livello in un programma in Linguaggio Macchina",
+        "image": null
+      },
+      {
+        "text": "Esegue le operazioni aritmetiche e logiche",
+        "image": null
+      },
+      {
+        "text": "Gestisce le risorse Hardware del computer assegnandole ai programmi da eseguire e l'interazione con l'utente",
+        "image": null
+      },
+      {
+        "text": "Valuta le prestazioni dell'Unità Aritmetico-Logica",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Software",
+    "hint": ""
+  },
+  {
+    "question": "Le componenti Hardware del computer comunicano tra loro utilizzando:",
+    "options": [
+      {
+        "text": "La Memoria",
+        "image": null
+      },
+      {
+        "text": "Canali di comunicazione detti bus",
+        "image": null
+      },
+      {
+        "text": "Il Clock in fissati intervalli di tempo",
+        "image": null
+      },
+      {
+        "text": "Il Compilatore",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Hardware",
+    "hint": ""
+  },
+  {
+    "question": "La valutazione delle prestazioni di un computer misura:",
+    "options": [
+      {
+        "text": "I costi del Software",
+        "image": null
+      },
+      {
+        "text": "I costi dell'Hardware",
+        "image": null
+      },
+      {
+        "text": "La correttezza della soluzione fornita da un programma",
+        "image": null
+      },
+      {
+        "text": "L'efficienza della esecuzione di un programma su un computer",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Software",
+    "hint": ""
+  },
+  {
+    "question": "Un algoritmo è:",
+    "options": [
+      {
+        "text": "Una lista anche infinita di azioni comprensibili ed eseguibili da una macchina",
+        "image": null
+      },
+      {
+        "text": "Una lista finita di azioni comprensibili ed eseguibili da una macchina",
+        "image": null
+      },
+      {
+        "text": "Un insieme di azioni comprensibili ed eseguibili da una macchina",
+        "image": null
+      },
+      {
+        "text": "Una lista di azioni senza particolari vincoli",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Computazione algoritmica",
+    "hint": ""
+  },
+  {
+    "question": "I progressi della tecnologia hanno:",
+    "options": [
+      {
+        "text": "Migliorato le prestazioni ed aumentatol'insieme dei problemi algoritmicamente risolubili",
+        "image": null
+      },
+      {
+        "text": "Ridotto i costi ed aumentato l'insieme dei problemi algoritmicamente risolubili",
+        "image": null
+      },
+      {
+        "text": "Cambiato i risultati teorici relativi alla computazione algoritmica",
+        "image": null
+      },
+      {
+        "text": "Migliorato le prestazioni del computer ma non hanno cambiato l'insieme dei problemi algoritmicamente risolubili",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Idee e Tecnologia",
+    "hint": ""
+  },
+  {
+    "question": "Nella Macchina di Turing gli stati, le trasizioni di stato, i simboli dell'alfabeto, i caratteri della sequenza scritta sul nastro sono:",
+    "options": [
+      {
+        "text": "Insiemi infiniti nel caso di algoritmi risolutivi di problemi complessi",
+        "image": null
+      },
+      {
+        "text": "Insiemi sia finiti che infiniti",
+        "image": null
+      },
+      {
+        "text": "Insiemi comunque grandi, ma sempre finiti",
+        "image": null
+      },
+      {
+        "text": "Sempre insiemi infiniti",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Computazione algoritmica",
+    "hint": ""
+  },
+  {
+    "question": "Una Architettura RISC è caratterizzata da:",
+    "options": [
+      {
+        "text": "Istruzioni in Linguaggio Macchina più semplici ed un Hardware meno complesso",
+        "image": null
+      },
+      {
+        "text": "Istruzioni in Linguaggio Macchina che si possono eseguire su un qualunque computer",
+        "image": null
+      },
+      {
+        "text": "Istruzioni in Linguaggio Macchina più numerose ed un Hardware più complesso",
+        "image": null
+      },
+      {
+        "text": "Istruzioni in Linguaggio Macchina più lente ed un Hardware più complesso",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: Linguaggio Macchina",
+    "hint": ""
+  },
+  {
+    "question": "Una istruzione in Linguaggio Macchina del MIPS è rappresentata da:",
+    "options": [
+      {
+        "text": "Una sequenza di 32 simboli dell'alfabero inglese",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di almeno 32 cifre binarie",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 32 cifre binarie",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di cifre binarie di lunghezza variabile",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Linguaggio Macchina",
+    "hint": ""
+  },
+  {
+    "question": "L'Assembler è:",
+    "options": [
+      {
+        "text": "Un programma che traduce un programma scritto in Assembly in un programma scritto in Linguaggio Macchina",
+        "image": null
+      },
+      {
+        "text": "Un linguaggio di programmazione",
+        "image": null
+      },
+      {
+        "text": "Un programma che traduce un programma scritto in un Linguaggio ad Alto Livello in un programma scritto in Linguaggio Macchina",
+        "image": null
+      },
+      {
+        "text": "Un programma che traduce un programma scritto in Linguaggio Macchina in un programma scritto in Assembly",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: Linguaggio Assembly",
+    "hint": ""
+  },
+  {
+    "question": "Per accedere al contenuto di un particolare registro è necessario conoscere:",
+    "options": [
+      {
+        "text": "La lunghezza di tale registro",
+        "image": null
+      },
+      {
+        "text": "Il tipo di dato scritto in tale registro",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo scritto in tale registro",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo di tale registro",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: I Registri",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Assembly del MIPS il simbolo $ seguito da caratteri alfanumerici rappresenta:",
+    "options": [
+      {
+        "text": "Il contenuto di un registro del processore",
+        "image": null
+      },
+      {
+        "text": "Il valore dell'operando di una istruzione",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo di un registro del processore",
+        "image": null
+      },
+      {
+        "text": "La sequenza di 32 bit che fornisce l'operando di una istruzione",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: I Registri del Processore MIPS",
+    "hint": ""
+  },
+  {
+    "question": "In un registro del Processore MIPS si può memorizzare:",
+    "options": [
+      {
+        "text": "Una sequenza di più di 32 cifre binarie",
+        "image": null
+      },
+      {
+        "text": "Una sequenzadi 32 simboli dell'alfabero inglese",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di cifre binarie di lunghezza variabile",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 32 cifre binarie",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: I Registri del Processore MIPS",
+    "hint": ""
+  },
+  {
+    "question": "Un programma scritto in un Linguaggio ad Alto Livello ed uno scritto in Assembly possono essere eseguiti:",
+    "options": [
+      {
+        "text": "Il primo solo su un computer con l'Architettura corrispondente al Linguaggio ad Alto Livello il secondo su un qualunque computer",
+        "image": null
+      },
+      {
+        "text": "Entrambi solo su un computer con Architettura corrispondente all'Assembly",
+        "image": null
+      },
+      {
+        "text": "Il primo su un qualunque computer il secondo solo su un computer con Architettura corrispondente all'Assembly",
+        "image": null
+      },
+      {
+        "text": "Entrambi su un qualunque computer",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Linguaggio ad Alto Livello",
+    "hint": ""
+  },
+  {
+    "question": "Una istruzione Assembly corrisponde sempre a:",
+    "options": [
+      {
+        "text": "Più istruzioni in Linguaggio Macchina",
+        "image": null
+      },
+      {
+        "text": "Una sola istruzione in Linguaggio Macchina",
+        "image": null
+      },
+      {
+        "text": "Una sola istruzione in Linguaggio ad Alto Livello",
+        "image": null
+      },
+      {
+        "text": "Più istruzioni in Linguaggio ad Alto Livello",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Linguaggio Assembly",
+    "hint": ""
+  },
+  {
+    "question": "I registri del Processore MIPS con indirizzi da $t0 a $t9 e da $s0 a $s7 sono utilizzati per:",
+    "options": [
+      {
+        "text": "Memorizzare sequenze di 32 bit che rappresentano gli indirizzi degli operandi delle istruzioni",
+        "image": null
+      },
+      {
+        "text": "Gestire la chiamata di procedura",
+        "image": null
+      },
+      {
+        "text": "Gestire le funzioni svolte dal Software di Sistema",
+        "image": null
+      },
+      {
+        "text": "Memorizzare sequenze di 32 bit che rappresentano il valore degli operandi delle istruzioni",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: I Registri del Processore MIPS",
+    "hint": ""
+  },
+  {
+    "question": "Gli indirizzi dei registri del Processore MIPS sono:",
+    "options": [
+      {
+        "text": "Sequenze binarie contenute nei registri del processore",
+        "image": null
+      },
+      {
+        "text": "I 32 numeri numeri da 1 a 32",
+        "image": null
+      },
+      {
+        "text": "I 32 numeri da 0 a 31",
+        "image": null
+      },
+      {
+        "text": "Sequenze binarie fornite da dispositivi esterni",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: I Registri del Processore MIPS",
+    "hint": ""
+  },
+  {
+    "question": "La Sintassi di un Linguaggio Formale stabilisce:",
+    "options": [
+      {
+        "text": "Il significato dell'istruzione",
+        "image": null
+      },
+      {
+        "text": "Le regole per rappresentare i numeri con segno",
+        "image": null
+      },
+      {
+        "text": "Le regole per scrivere ogni istruzione del Linguaggio Formale in modo corretto",
+        "image": null
+      },
+      {
+        "text": "Le regole per eseguire l'istruzione",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Sintassi dell'Assembly MIPS",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione max=200; con l'associazione max--> $s5 è:",
+    "options": [
+      {
+        "text": "addi $s5, $s5, 200",
+        "image": null
+      },
+      {
+        "text": "add $s5, $zero, 200",
+        "image": null
+      },
+      {
+        "text": "sub $s5, $zero, 200",
+        "image": null
+      },
+      {
+        "text": "addi $s5, $zero, 200",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: ADDIZIONE: istruzione addi",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione a=a*2; con l'associazione a--> $s0 è:",
+    "options": [
+      {
+        "text": "addi $s0, $s0, 2",
+        "image": null
+      },
+      {
+        "text": "add $s0, $s0, $s0",
+        "image": null
+      },
+      {
+        "text": "addi $s0, $s0, $s0",
+        "image": null
+      },
+      {
+        "text": "add $s0, $s0, 2",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: ADDIZIONE: istruzione add",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione h=b+c; con l'associazione b-->$s5 c-->$s2 h--> $t0 è:",
+    "options": [
+      {
+        "text": "add $s5, $s2, $t0",
+        "image": null
+      },
+      {
+        "text": "add $t0, $s5, $s2",
+        "image": null
+      },
+      {
+        "text": "add $s2, $s5, $t0",
+        "image": null
+      },
+      {
+        "text": "add $t0, $s5, $s0",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: ADDIZIONE: istruzione add",
+    "hint": ""
+  },
+  {
+    "question": "Il registro destinazione nell'istruzione add $s2, $t0, $t1 è:",
+    "options": [
+      {
+        "text": "$s2",
+        "image": null
+      },
+      {
+        "text": "$t1",
+        "image": null
+      },
+      {
+        "text": "$t0",
+        "image": null
+      },
+      {
+        "text": "$t2",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: ADDIZIONE: istruzione add",
+    "hint": ""
+  },
+  {
+    "question": "Il Codice Operativo di una istruzione aritmetica dell'Assembly stabilisce:",
+    "options": [
+      {
+        "text": "Solo l'operazione aritmetica da eseguire",
+        "image": null
+      },
+      {
+        "text": "L'operazione aritmetica da eseguire e come reperire gli operandi",
+        "image": null
+      },
+      {
+        "text": "Solo gli operandi dell'operazione aritmetica da eseguire",
+        "image": null
+      },
+      {
+        "text": "Solo dove scrivere il risultato dell'operazione dopo l'esecuzione",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Introduzione alla sintassi dell'Assembly MIPS",
+    "hint": ""
+  },
+  {
+    "question": "Nell'istruzione addi dell'Assembly MIPS l'operando costante è contenuto:",
+    "options": [
+      {
+        "text": "Nel registro destinazione",
+        "image": null
+      },
+      {
+        "text": "Nel registro del primo operando",
+        "image": null
+      },
+      {
+        "text": "Nell'istruzione",
+        "image": null
+      },
+      {
+        "text": "Nel registro del secondo operando",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: ADDIZIONE: istruzione addi",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione n=0; con l'associazione n--> $s3 è:",
+    "options": [
+      {
+        "text": "addi $s3, $zero, $zero",
+        "image": null
+      },
+      {
+        "text": "addi $zero, $s3, 0",
+        "image": null
+      },
+      {
+        "text": "add $zero, $s3, 0",
+        "image": null
+      },
+      {
+        "text": "addi $s3, $zero, 0",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: ADDIZIONE: istruzione addi",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione val=i-k; con l'associazione val--> $s1 i--> $s3 k--> $s2 è:",
+    "options": [
+      {
+        "text": "sub $s1, $s2, $s3",
+        "image": null
+      },
+      {
+        "text": "sub $s2, $s3, $s1",
+        "image": null
+      },
+      {
+        "text": "sub $s3, $s2, $s1",
+        "image": null
+      },
+      {
+        "text": "sub $s1, $s3, $s2",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: SOTTRAZIONE: istruzione sub",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione m=m+k; con l'associazione k--> $s3 m--> $s0 è:",
+    "options": [
+      {
+        "text": "add $s3, $s0, $s0",
+        "image": null
+      },
+      {
+        "text": "add $s0, $s0, $s0",
+        "image": null
+      },
+      {
+        "text": "addi $s3, $s0, 2",
+        "image": null
+      },
+      {
+        "text": "add $s0, $s0, $s3",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: ADDIZIONE: istruzione add",
+    "hint": ""
+  },
+  {
+    "question": "Il numero di sequenze binarie diverse di lunghezza K è:",
+    "options": [
+      {
+        "text": "Il numero 2K-1",
+        "image": null
+      },
+      {
+        "text": "Il numero 2K-1-1",
+        "image": null
+      },
+      {
+        "text": "Il numero 2K-1",
+        "image": null
+      },
+      {
+        "text": "Il numero 2K",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Rappresentazione in base 2",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione posizionale pesata il massimo valore rappresentabile con una sequenza binaria di lunghezza M è:",
+    "options": [
+      {
+        "text": "Non limitato",
+        "image": null
+      },
+      {
+        "text": "Il valore 2M",
+        "image": null
+      },
+      {
+        "text": "Il valore 2M-1",
+        "image": null
+      },
+      {
+        "text": "Il valore 2M-1",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Rappresentazione in base 2",
+    "hint": ""
+  },
+  {
+    "question": "La scelta dell'alfabeto binario consente di:",
+    "options": [
+      {
+        "text": "Minimizzare l'errore dovuto ad oscillazioni del valore dei segnali elettrici",
+        "image": null
+      },
+      {
+        "text": "Minimizzare le connessioni tra le componenti interne del computer",
+        "image": null
+      },
+      {
+        "text": "Effettuare calcoli più semplici",
+        "image": null
+      },
+      {
+        "text": "Aumentare il numero di valori che si possono memorizzare nei registri",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: Sequenze binarie",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione posizionale pesata la cifra più significativa di una sequenza è:",
+    "options": [
+      {
+        "text": "La cifra più frequente all'interno della sequenza",
+        "image": null
+      },
+      {
+        "text": "La cifra che occupa la posizione più a sinistra",
+        "image": null
+      },
+      {
+        "text": "La cifra associata al peso di valore minore",
+        "image": null
+      },
+      {
+        "text": "La cifra che occupa la posizione più a destra",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Notazione posizionale pesata: regole di rappresentazione",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione posizionale pesata una sequenza binaria con cifra meno significativa uguale a 0 rappresenta:",
+    "options": [
+      {
+        "text": "Un numero pari",
+        "image": null
+      },
+      {
+        "text": "Un numero divisibile per 5",
+        "image": null
+      },
+      {
+        "text": "Un numero dispari",
+        "image": null
+      },
+      {
+        "text": "Un numero multiplo di 4",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: Rappresentazione in base 2",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione posizionale pesata la cifra più significativa di una sequenza di lunghezza K è associata al peso:",
+    "options": [
+      {
+        "text": "Dato dal valore 2K",
+        "image": null
+      },
+      {
+        "text": "Dato dal valore 20",
+        "image": null
+      },
+      {
+        "text": "Dato dal valore 2K-1",
+        "image": null
+      },
+      {
+        "text": "Dato dal valore 2K-1",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Notazione posizionale pesata: regole di rappresentazione",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione posizionale pesata il massimo valore che si può rappresentare nel contenuto di un registro del processore è:",
+    "options": [
+      {
+        "text": "Il valore 232",
+        "image": null
+      },
+      {
+        "text": "Il valore 32",
+        "image": null
+      },
+      {
+        "text": "Il valore 232-1",
+        "image": null
+      },
+      {
+        "text": "Il valore 232-1",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Contenuto ed indirizzi dei registri nell’Architettura MIPS",
+    "hint": ""
+  },
+  {
+    "question": "Per specificare l'indirizzo di un registro del processore MIPS occorre:",
+    "options": [
+      {
+        "text": "Una sequenza di 32 bit",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 16 bit",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 8 bit",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 5 bit",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Contenuto ed indirizzi dei registri nell’Architettura MIPS",
+    "hint": ""
+  },
+  {
+    "question": "Il risultato di un calcolo determina un overflow quando:",
+    "options": [
+      {
+        "text": "Il calcolo è troppo complesso",
+        "image": null
+      },
+      {
+        "text": "La cifra più significativa della sequenza che rappresenta il risultato ha il valore 1",
+        "image": null
+      },
+      {
+        "text": "Per rappresentare il risultato è necessario un numero di bit maggiore della lunghezza dei registri del processore",
+        "image": null
+      },
+      {
+        "text": "Il risultato è uguale a 0",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Contenuto ed indirizzi dei registri nell’Architettura MIPS",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione posizionale pesata la sequenza binaria 11011 rappresenta il valore:",
+    "options": [
+      {
+        "text": "Del numero 19 in base 10",
+        "image": null
+      },
+      {
+        "text": "Del numero 54 in base 10",
+        "image": null
+      },
+      {
+        "text": "Del numero 27 in base 10",
+        "image": null
+      },
+      {
+        "text": "Del numero 25 in base 10",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Metodi di conversione di base",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione posizionale pesata, l'addizione di due interi positivi si effettua:",
+    "options": [
+      {
+        "text": "Ponendo a 0 il riporto trial cifra meno significativa e sommando in sequenza su ogni posizione i bit degli operandi e del riporto a partire da sinistra",
+        "image": null
+      },
+      {
+        "text": "Ponendo a 0 il riporto sulla cifra meno significativa e sommando in sequenza su ogni posizione i bit degli operandi e del riporto a partire da destra",
+        "image": null
+      },
+      {
+        "text": "Sommando in sequenza su ogni posizione i bit degli operandi e del riporto a partire da sinistra",
+        "image": null
+      },
+      {
+        "text": "Ponendo a 1 il riporto sulla cifra meno significativa e sommando in sequenza su ogni posizione i bit degli operandi e del riporto a partire da destra",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Addizione di interi positivi",
+    "hint": ""
+  },
+  {
+    "question": "Nella notazione in modulo e segno, il segno del risultato dell'addizione è:",
+    "options": [
+      {
+        "text": "Sempre positivo",
+        "image": null
+      },
+      {
+        "text": "Quello del primo numero",
+        "image": null
+      },
+      {
+        "text": "Quello del numero con modulo maggiore",
+        "image": null
+      },
+      {
+        "text": "Quello del numero con modulo minore",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Notazione in modulo e segno",
+    "hint": ""
+  },
+  {
+    "question": "Nella Notazione in complemento a 2, il peso del bit più a sinistra in una sequenza di lunghezza K è:",
+    "options": [
+      {
+        "text": "Il valore -2K -1",
+        "image": null
+      },
+      {
+        "text": "Il valore -2K-1",
+        "image": null
+      },
+      {
+        "text": "Il valore -2K",
+        "image": null
+      },
+      {
+        "text": "Il valore +2K -1",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Notazione in complemento a 2: regole di rappresentazione",
+    "hint": ""
+  },
+  {
+    "question": "Nella Notazione in complemento a 2, il segno del numero è determinato da:",
+    "options": [
+      {
+        "text": "Il bit più a destra con il relativo peso negativo",
+        "image": null
+      },
+      {
+        "text": "Il bit più a sinistra con il relativo peso negativo",
+        "image": null
+      },
+      {
+        "text": "Il bit della cifra meno significativa con il relativo peso negativo",
+        "image": null
+      },
+      {
+        "text": "Il bit più a sinistra non associato ad un peso",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Notazione in complemento a 2: regole di rappresentazione",
+    "hint": ""
+  },
+  {
+    "question": "Nella Notazione in complemento a 2, la somma di due interi con segni opposti viene eseguita:",
+    "options": [
+      {
+        "text": "Sottraendo il numero di modulo minore dal numero di modulo maggiore",
+        "image": null
+      },
+      {
+        "text": "Addizionando al primo l'opposto del secondo",
+        "image": null
+      },
+      {
+        "text": "Sottraendo dal primo l'opposto del secondo",
+        "image": null
+      },
+      {
+        "text": "Addizionando i due numeri",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Addizione di interi in complemento a 2",
+    "hint": ""
+  },
+  {
+    "question": "Nella Notazione in complemento a 2, il massimo numero rappresentabile con sequenze di lunghezza M è:",
+    "options": [
+      {
+        "text": "Il valore 2M",
+        "image": null
+      },
+      {
+        "text": "Il valore 2M -1 -1",
+        "image": null
+      },
+      {
+        "text": "Il valore 2M -1",
+        "image": null
+      },
+      {
+        "text": "Il valore 2M -1",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Intervallo dei valori rappresentabili in complemento a 2",
+    "hint": ""
+  },
+  {
+    "question": "Nella Notazione in complemento a 2, il minimo numero rappresentabile con sequenze di lunghezza M è:",
+    "options": [
+      {
+        "text": "Il valore -2M -1",
+        "image": null
+      },
+      {
+        "text": "Il valore -2M",
+        "image": null
+      },
+      {
+        "text": "Il valore -2M -1",
+        "image": null
+      },
+      {
+        "text": "Il valore -2M -1 -1",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Intervallo dei valori rappresentabili in complemento a 2",
+    "hint": ""
+  },
+  {
+    "question": "Nella Notazione in complemento a 2, la sequenza binaria 0101 rappresenta:",
+    "options": [
+      {
+        "text": "Il valore +5",
+        "image": null
+      },
+      {
+        "text": "Il valore +3",
+        "image": null
+      },
+      {
+        "text": "Il valore -5",
+        "image": null
+      },
+      {
+        "text": "Il valore -3",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: Notazione in complemento a 2: regole di rappresentazione",
+    "hint": ""
+  },
+  {
+    "question": "Nella Notazione in complemento a 2, la sequenza binaria 1001 rappresenta:",
+    "options": [
+      {
+        "text": "Il valore +7",
+        "image": null
+      },
+      {
+        "text": "Il valore -5",
+        "image": null
+      },
+      {
+        "text": "Il valore -7",
+        "image": null
+      },
+      {
+        "text": "Il valore +5",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Notazione in complemento a 2: regole di rappresentazione",
+    "hint": ""
+  },
+  {
+    "question": "Nella Notazione in complemento a 2, la sequenza binaria 1111 rappresenta:",
+    "options": [
+      {
+        "text": "Il valore +15",
+        "image": null
+      },
+      {
+        "text": "Il valore -1",
+        "image": null
+      },
+      {
+        "text": "Il valore -7",
+        "image": null
+      },
+      {
+        "text": "Il valore +7",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Notazione in complemento a 2: regole di rappresentazione",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione in complemento a 2, la rappresentazione dell'opposto del valore rappresentato da una sequenza di N bit si ottiene:",
+    "options": [
+      {
+        "text": "Complementando la sequenza bit a bit ed aggiungendo il valore -2N",
+        "image": null
+      },
+      {
+        "text": "Complementando la sequenza bit a bit ed aggiungendo il valore 1",
+        "image": null
+      },
+      {
+        "text": "Cambiando il bit più significativo da 0 in 1 e da 1 in 0",
+        "image": null
+      },
+      {
+        "text": "Aggiungendo il valore 1 alla sequenza",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Regola per la rappresentazione dell'opposto di un numero",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione in complemento a 2, la sottrazione di due operandi si esegue:",
+    "options": [
+      {
+        "text": "Addizionando al primo operando il secondo complementato bit a bit",
+        "image": null
+      },
+      {
+        "text": "Sottraendo dal primo operando il secondo",
+        "image": null
+      },
+      {
+        "text": "Addizionando al primo operando il secondo complementato bit a bit e sommato con il valore 1",
+        "image": null
+      },
+      {
+        "text": "Sottraendo l'operando con modulo minore da quello con modulo maggiore",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Sottrazione come somma con l'opposto",
+    "hint": ""
+  },
+  {
+    "question": "La dichiarazione di tipo intero per una variabile in un Linguaggio ad Alto Livello indica al Compilatore che:",
+    "options": [
+      {
+        "text": "Per la variabile si deve utilizzare la Notazione posizionale pesata",
+        "image": null
+      },
+      {
+        "text": "Per la variabile si deve utilizzare la Notazione con segno separato dal modulo",
+        "image": null
+      },
+      {
+        "text": "Per la variabile si deve utilizzare la Notazione in complemento a 2",
+        "image": null
+      },
+      {
+        "text": "La variabile ha segno positivo",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Sottrazione come somma con l'opposto",
+    "hint": ""
+  },
+  {
+    "question": "L'overflow può verificarsi:",
+    "options": [
+      {
+        "text": "Addizionando numeri con lo stesso segno",
+        "image": null
+      },
+      {
+        "text": "Addizionando numeri con segni diversi",
+        "image": null
+      },
+      {
+        "text": "Mai con numeri negativi",
+        "image": null
+      },
+      {
+        "text": "Mai addizionando numeri con lo stesso segno",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: Regola per riconoscere l'overflow",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione in complemento a 2, l'overflow viene segnalato quando gli ultimi due riporti cN e cN-1:",
+    "options": [
+      {
+        "text": "Sono uguali",
+        "image": null
+      },
+      {
+        "text": "Hanno entrambi valore 0",
+        "image": null
+      },
+      {
+        "text": "Sono diversi",
+        "image": null
+      },
+      {
+        "text": "Hanno entrambi valore 1",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Regola per riconoscere l'overflow",
+    "hint": ""
+  },
+  {
+    "question": "In Notazione in complemento a 2, l'estensione del segno:",
+    "options": [
+      {
+        "text": "Trasforma un numero positivo in negativo e viceversa",
+        "image": null
+      },
+      {
+        "text": "Aumenta la lunghezza di una sequenza aggiungendo cifre uguali a 0 a sinistra della cifra più significativa",
+        "image": null
+      },
+      {
+        "text": "Aumenta la lunghezza di una sequenza aggiungendo cifre uguali a 1 a sinistra della cifra più significativa",
+        "image": null
+      },
+      {
+        "text": "Aumenta la lunghezza di una sequenza senza modificarne il valore rappresentato",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Regola per l'estensione del segno",
+    "hint": ""
+  },
+  {
+    "question": "L'estensione del segno di una sequenza con bit più significativo uguale a 1 si effettua:",
+    "options": [
+      {
+        "text": "Ponendo a sinistra di tale bit tutte cifre uguali a 1",
+        "image": null
+      },
+      {
+        "text": "Cambiando in 0 il valore di tale bit",
+        "image": null
+      },
+      {
+        "text": "Ponendo a sinistra di tale bit tutte cifre uguali a 0",
+        "image": null
+      },
+      {
+        "text": "Complementando la sequenza bit a bit ed aggiungendo 1",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: Regola per l'estensione del segno",
+    "hint": ""
+  },
+  {
+    "question": "Eseguendo un'addizione in Notazione in complemento a 2, se cN ha valore 0 e cN-1 ha valore 1:",
+    "options": [
+      {
+        "text": "Il risultato è corretto",
+        "image": null
+      },
+      {
+        "text": "Il risultato è sbagliato",
+        "image": null
+      },
+      {
+        "text": "Il risultato ha solo il segno corretto",
+        "image": null
+      },
+      {
+        "text": "Il risultato ha solo il modulo corretto",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Regola per riconoscere l'overflow",
+    "hint": ""
+  },
+  {
+    "question": "Eseguendo un'addizione in Notazione in complemento a 2, se cN ha valore 1 e cN-1 ha valore 1:",
+    "options": [
+      {
+        "text": "Il risultato è sbagliato",
+        "image": null
+      },
+      {
+        "text": "Il risultato ha solo il segno corretto",
+        "image": null
+      },
+      {
+        "text": "Il risultato ha solo il modulo corretto",
+        "image": null
+      },
+      {
+        "text": "Il risultato è corretto",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Regola per riconoscere l'overflow",
+    "hint": ""
+  },
+  {
+    "question": "Eseguendo un'addizione in Notazione in complemento a 2, i riporti cN e cN-1 che segnalano l'Overflow nell'Architettura MIPS sono:",
+    "options": [
+      {
+        "text": "I riporti con indici c2 e c1",
+        "image": null
+      },
+      {
+        "text": "I riporti con indici c31 e c30",
+        "image": null
+      },
+      {
+        "text": "I riporti con indici c33 e c32",
+        "image": null
+      },
+      {
+        "text": "I riporti con indici c32 e c31",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Regola per riconoscere l'overflow",
+    "hint": ""
+  },
+  {
+    "question": "L'estensione del segno di una sequenza con bit più significativo uguale a 0 si effettua:",
+    "options": [
+      {
+        "text": "Cambiando in 1 il valore di tale bit",
+        "image": null
+      },
+      {
+        "text": "Ponendo a sinistra di tale bit tutte cifre uguali a 1",
+        "image": null
+      },
+      {
+        "text": "Complementando la sequenza bit a bit ed aggiungendo 1",
+        "image": null
+      },
+      {
+        "text": "Ponendo a sinistra di tale bit tutte cifre uguali a 0",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Regola per l'estensione del segno",
+    "hint": ""
+  },
+  {
+    "question": "Il Formato di una istruzione in Linguaggio Macchina è definito da:",
+    "options": [
+      {
+        "text": "Una regola per il calcolo degli indirizzi degli operandi dell'istruzione",
+        "image": null
+      },
+      {
+        "text": "Una suddivisione fisica della sequenza binaria che rappresenta l'istruzione in sottosequenze di lunghezza e posizione fissata",
+        "image": null
+      },
+      {
+        "text": "Una suddivisione concettuale della sequenza binaria che rappresenta l'istruzione in sottosequenze di lunghezza e posizione fissata",
+        "image": null
+      },
+      {
+        "text": "Una regola che stabilisce la Notazione degli operandi dell'istruzione",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Formati e Modalità di Indirizzamento",
+    "hint": ""
+  },
+  {
+    "question": "La Modalità di Indirizzamento di una istruzione in Linguaggio Macchina stabilisce:",
+    "options": [
+      {
+        "text": "La regola per suddividere in campi la sequenza binaria che rappresenta l'istruzione",
+        "image": null
+      },
+      {
+        "text": "La regola per determinare gli indirizzi degli operandi utilizzando il contenuto dei campi stabiliti dal Formato",
+        "image": null
+      },
+      {
+        "text": "La Notazione da utilizzare per la rappresentazione degli operandi dell'istruzione",
+        "image": null
+      },
+      {
+        "text": "La modalità di accesso in Memoria in lettura o in scrittura",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Formati e Modalità di Indirizzamento",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Macchina MIPS, i campi del Formato di Tipo R sono:",
+    "options": [
+      {
+        "text": "Sottosequenze della sequenza binaria che rappresenta l'istruzione di lunghezze 8, 6, 6, 6, 6, 6",
+        "image": null
+      },
+      {
+        "text": "Sottosequenze della sequenza binaria che rappresenta l'istruzione di lunghezze 6, 5, 5, 16",
+        "image": null
+      },
+      {
+        "text": "Sottosequenze della sequenza binaria che rappresenta l'istruzione di lunghezze 5, 5, 5, 5, 6, 6",
+        "image": null
+      },
+      {
+        "text": "Sottosequenze della sequenza binaria che rappresenta l'istruzione di lunghezze 6, 5, 5, 5, 5, 6",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Il Formato di Tipo R",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Macchina MIPS, il campo Codice Operativo di una istruzione stabilisce:",
+    "options": [
+      {
+        "text": "La Notazione da adottare per gli operandi",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo dove memorizzare il risultato dell'esecuzione dell'istruzione",
+        "image": null
+      },
+      {
+        "text": "L'operazione da eseguire ed il Formato dell'istruzione",
+        "image": null
+      },
+      {
+        "text": "Se l'istruzione è una addizione oppure una sottrazione",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Formati e Modalità di Indirizzamento",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Macchina MIPS, il campo funct è:",
+    "options": [
+      {
+        "text": "Un campo di 5 bit del Formato di Tipo R che indica l'indirizzo del registro che contiene il primo operando",
+        "image": null
+      },
+      {
+        "text": "Un campo di 6 bit del Formato di Tipo R che indica l'operazione Aritmetico-Logica da eseguire",
+        "image": null
+      },
+      {
+        "text": "Un campo di 6 bit del Formato di Tipo R che indica la modalità di indirizzamento dell'istruzione",
+        "image": null
+      },
+      {
+        "text": "Un campo di 5 bit del Formato di Tipo R che indica l'indirizzo del risultato della funzione eseguita dall'istruzione",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Il Formato di Tipo R",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Macchina MIPS, con l'Indirizzamento tramite registro gli indirizzi degli operandi sono contenuti:",
+    "options": [
+      {
+        "text": "Nei campi rt e shamt del Formato di Tipo R",
+        "image": null
+      },
+      {
+        "text": "Nei campi rd e funct del Formato di Tipo R",
+        "image": null
+      },
+      {
+        "text": "Nei campi rs e rt del Formato di Tipo I",
+        "image": null
+      },
+      {
+        "text": "Nei campi rs e rt del Formato di Tipo R",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: L'Indirizzamento tramite registro",
+    "hint": ""
+  },
+  {
+    "question": "Le lunghezze dei campi dell'istruzione in Linguaggio Macchina MIPS che traduce l'istruzione Assembly add $t0, $s0, $s1 sono:",
+    "options": [
+      {
+        "text": "I valori 6, 5, 5, 16",
+        "image": null
+      },
+      {
+        "text": "I valori 6, 5, 5, 5, 5, 6",
+        "image": null
+      },
+      {
+        "text": "I valori 7, 5, 5, 5, 5, 5",
+        "image": null
+      },
+      {
+        "text": "I valori 5, 5, 5, 5, 6, 6",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Formato di Tipo R per add e sub",
+    "hint": ""
+  },
+  {
+    "question": "Le istruzioni del Linguaggio Macchina MIPS con Codice operativo 0 hanno:",
+    "options": [
+      {
+        "text": "Il Formato di Tipo I",
+        "image": null
+      },
+      {
+        "text": "Il Formato di Tipo S",
+        "image": null
+      },
+      {
+        "text": "Il Formato di Tipo R",
+        "image": null
+      },
+      {
+        "text": "Il Formato di Tipo J",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Formato di Tipo R per add e sub",
+    "hint": ""
+  },
+  {
+    "question": "La suddivisione in campi dell'istruzione in Linguaggio Macchina MIPS 00000010000100010100000000100000 in base al suo Formato è data:",
+    "options": [
+      {
+        "text": "Dalle sottosequenze 0000001, 000010001, 010000000, 0100000",
+        "image": null
+      },
+      {
+        "text": "Dalle sottosequenze 0000001, 00001, 00010, 10000, 00001, 00000",
+        "image": null
+      },
+      {
+        "text": "Dalle sottosequenze 000000, 10000, 10001, 01000, 00000, 100000",
+        "image": null
+      },
+      {
+        "text": "Dalle sottosequenze 000000, 10000, 10001, 0100000000100000",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Formato di Tipo R per add e sub",
+    "hint": ""
+  },
+  {
+    "question": "Nell'istruzione in Linguaggio Macchina MIPS con valori dei campi del Formato dati da 000000, 01000, 01001, 10000, 00000, 100010 l'indirizzo del registro che contiene il risultato è:",
+    "options": [
+      {
+        "text": "Il campo 01000",
+        "image": null
+      },
+      {
+        "text": "Il campo 01001",
+        "image": null
+      },
+      {
+        "text": "Il campo 100010",
+        "image": null
+      },
+      {
+        "text": "Il campo 10000",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Formato di Tipo R per add e sub",
+    "hint": ""
+  },
+  {
+    "question": "L'operatore AND ha valore 1 quando:",
+    "options": [
+      {
+        "text": "Un solo operando ha valore 1",
+        "image": null
+      },
+      {
+        "text": "Sempre",
+        "image": null
+      },
+      {
+        "text": "Gli operandi hanno entrambi valore 1",
+        "image": null
+      },
+      {
+        "text": "Almeno un operando ha valore 1",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Operatori Logici AND, OR e di Shift",
+    "hint": ""
+  },
+  {
+    "question": "L'operatore OR ha valore 0 quando:",
+    "options": [
+      {
+        "text": "Gli operandi hanno entrambi valore 0",
+        "image": null
+      },
+      {
+        "text": "Mai",
+        "image": null
+      },
+      {
+        "text": "Un solo operando ha valore 0",
+        "image": null
+      },
+      {
+        "text": "Almeno un operando ha valore 0",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: Operatori Logici AND, OR e di Shift",
+    "hint": ""
+  },
+  {
+    "question": "Per le istruzioni Aritmetico-Logiche del Linguaggio Macchina MIPS il campo Codice Operativo contiene:",
+    "options": [
+      {
+        "text": "La sequenza di 5 bit 00000",
+        "image": null
+      },
+      {
+        "text": "La sequenza di 6 bit 100000",
+        "image": null
+      },
+      {
+        "text": "La sequenza di 6 bit 000000",
+        "image": null
+      },
+      {
+        "text": "La sequenza di 5 bit 00001",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Formato Tipo R e Indirizzamento per le istruzioni logiche e di shift",
+    "hint": ""
+  },
+  {
+    "question": "Il Formato dell'istruzione in Linguaggio Macchina MIPS 00000010000100010100000000100101 è:",
+    "options": [
+      {
+        "text": "Di Tipo I",
+        "image": null
+      },
+      {
+        "text": "Di Tipo K",
+        "image": null
+      },
+      {
+        "text": "Di Tipo J",
+        "image": null
+      },
+      {
+        "text": "Di Tipo R",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Formato Tipo R e Indirizzamento per le istruzioni logiche e di shift",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Macchina MIPS, il campo shamt del Formato di Tipo R contiene:",
+    "options": [
+      {
+        "text": "L'indicazione di shift a sinistra o shift a destra",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo del registro dell'operando",
+        "image": null
+      },
+      {
+        "text": "Il codice della funzione shift",
+        "image": null
+      },
+      {
+        "text": "Il numero di posizioni da scorrere nelle istruzioni di shift, altrimenti 0",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Formato Tipo R e Indirizzamento per le istruzioni logiche e di shift",
+    "hint": ""
+  },
+  {
+    "question": "Nell'istruzione in Linguaggio Macchina MIPS con campi del Formato dati da 000000, 01000, 01001, 11110, 00000, 100101 gli indirizzi degli operandi sono:",
+    "options": [
+      {
+        "text": "I valori binari 000000, 01000",
+        "image": null
+      },
+      {
+        "text": "I valori binari 01001, 11110",
+        "image": null
+      },
+      {
+        "text": "I valori binari 01000, 01001",
+        "image": null
+      },
+      {
+        "text": "I valori binari 10000, 100101",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Formato Tipo R e Indirizzamento per le istruzioni logiche e di shift",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Macchina MIPS, la Modalità di Indirizzamento delle istruzioni and ed or è:",
+    "options": [
+      {
+        "text": "Immediato per entrambe",
+        "image": null
+      },
+      {
+        "text": "Tramite registro per entrambe",
+        "image": null
+      },
+      {
+        "text": "Di Tipo R per entrambe",
+        "image": null
+      },
+      {
+        "text": "Di Tipo I per entrambe",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Formato Tipo R e Indirizzamento per le istruzioni logiche e di shift",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione in Assembly MIPS dell'OR bit a bit con operandi nei registri $s1 e $s2 e risultato nel registro $t0 è:",
+    "options": [
+      {
+        "text": "L'istruzione or $s1, $s2, $t0",
+        "image": null
+      },
+      {
+        "text": "L'istruzione or t0, s1, s2",
+        "image": null
+      },
+      {
+        "text": "L'istruzione or $t0, $s1, $s2",
+        "image": null
+      },
+      {
+        "text": "L'istruzione or $s1, $t0, $s2",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Assembly MIPS: le istruzioni AND, OR, SLL, SRL",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione in Assembly MIPS dello Shift a sinistra di 4 posizioni con registro operando $s3 e registro destinazione $t0 è:",
+    "options": [
+      {
+        "text": "L'istruzione sll $s3, $t0, 4",
+        "image": null
+      },
+      {
+        "text": "L'istruzione shift $t0 , $s3, 4",
+        "image": null
+      },
+      {
+        "text": "L'istruzione sll $t0, $s3, 4",
+        "image": null
+      },
+      {
+        "text": "L'istruzione shift $s3, $t0, 4",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Assembly MIPS: le istruzioni AND, OR, SLL, SRL",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione in Assembly MIPS dell'AND bit a bit con operandi nei registri $s1 e $s2 e risultato nel registro $s5 è:",
+    "options": [
+      {
+        "text": "L'istruzione and $s1, $s5, $s2",
+        "image": null
+      },
+      {
+        "text": "L'istruzione and $s1, $s2, $s5",
+        "image": null
+      },
+      {
+        "text": "L'istruzione and $s2, $s5, $s1",
+        "image": null
+      },
+      {
+        "text": "L'istruzione and $s5, $s1, $s2",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Assembly MIPS: le istruzioni AND, OR, SLL, SRL",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Macchina MIPS, i campi del Formato di Tipo I contengono:",
+    "options": [
+      {
+        "text": "Sequenze di lunghezza 6, 5, 5, 5, 5, 6",
+        "image": null
+      },
+      {
+        "text": "Sequenze di lunghezza 6, 5, 5, 16",
+        "image": null
+      },
+      {
+        "text": "Sequenze di lunghezza 6, 16, 5, 5",
+        "image": null
+      },
+      {
+        "text": "Sequenze di lunghezza 6, 26",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Il Formato di Tipo I e le relative Modalit&#224 di Indirizzamento",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Macchina MIPS, la suddivisione in campi dell'istruzione 00100001000010011000000000100101 con Formato di Tipo I è data:",
+    "options": [
+      {
+        "text": "Dalle sequenze 0010000100001001, 10000, 00000, 100101",
+        "image": null
+      },
+      {
+        "text": "Dalle sequenze 001000, 01000, 01001, 10000, 00000, 100101",
+        "image": null
+      },
+      {
+        "text": "Dalle sequenze 001000, 01000, 010011000000000, 100101",
+        "image": null
+      },
+      {
+        "text": "Dalle sequenze 001000, 01000, 01001, 1000000000100101",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Il Formato di Tipo I e le relative Modalit&#224 di Indirizzamento",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Macchina MIPS, il Formato e la Modalità di Indirizzamento dell'istruzione addi sono:",
+    "options": [
+      {
+        "text": "Formato di Tipo R con Indirizzamento immediato",
+        "image": null
+      },
+      {
+        "text": "Formato di Tipo I con Indirizzamento immediato",
+        "image": null
+      },
+      {
+        "text": "Formato di Tipo I con Indirizzamento tramite registro",
+        "image": null
+      },
+      {
+        "text": "Formato di Tipo I sia con Indirizzamento tramite registro sia con Indirizzamento immediato",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Formato di Tipo I e Indirizzamento immediato per l'istruzione addi",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione in Assembly MIPS dell'assegnamento val = b - 300 con l'associazione tra variabi e indirizzi di registri b-->$s1 e val-->$t0 è:",
+    "options": [
+      {
+        "text": "L'istruzione sub $t0, $s1, 300",
+        "image": null
+      },
+      {
+        "text": "L'istruzione addi $t0, $s1, -300",
+        "image": null
+      },
+      {
+        "text": "L'istruzione addi $s1, $t0, -300",
+        "image": null
+      },
+      {
+        "text": "L'istruzione sub $s1, $t0, 300",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Formato di Tipo I e Indirizzamento immediato per l'istruzione addi",
+    "hint": ""
+  },
+  {
+    "question": "Nel Formato di Tipo I, i valori del campo immediato sono compresi tra:",
+    "options": [
+      {
+        "text": "Il minimo -216 ed il massimo 216",
+        "image": null
+      },
+      {
+        "text": "Il minimo -215 ed il massimo 215",
+        "image": null
+      },
+      {
+        "text": "Il minimo 0 ed il massimo 216-1",
+        "image": null
+      },
+      {
+        "text": "Il minimo -215 ed il massimo 215-1",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Il Formato di Tipo I e le relative Modalit&#224 di Indirizzamento",
+    "hint": ""
+  },
+  {
+    "question": "L'operando immediato dell'istruzione Assembly MIPS addi $t0, $s1, 30 è rappresentato in Linguaggio Macchina mediante:",
+    "options": [
+      {
+        "text": "Una sequenza di 16 bit in Notazione posizionale pesata",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 16 bit in Notazione modulo e segno",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 16 bit in Notazione in complemento a 2",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 16 bit in Notazione posizionale pesata senza segno",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Il Formato di Tipo I e le relative Modalit&#224 di Indirizzamento",
+    "hint": ""
+  },
+  {
+    "question": "Prima della esecuzione di una istruzione con Formato di Tipo I il valore del campo immediato viene:",
+    "options": [
+      {
+        "text": "Inviato all'ALU aggiungendo 16 bit uguali a 0 a sinistra della sequenza contenuta nel campo",
+        "image": null
+      },
+      {
+        "text": "Inviato all'ALU aggiungendo 16 bit uguali a 0 a destra della sequenza contenuta nel campo",
+        "image": null
+      },
+      {
+        "text": "Inviato all'ALU aggiungendo 16 bit mediante estensione del segno alla sequenza contenuta nel campo",
+        "image": null
+      },
+      {
+        "text": "Copiato in un registro di 32 bit",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Il Formato di Tipo I e le relative Modalit&#224 di Indirizzamento",
+    "hint": ""
+  },
+  {
+    "question": "La Modalità di Indirizzamento immediato è utilizzata con:",
+    "options": [
+      {
+        "text": "Il formato di Tipo R e il Formato di Tipo I",
+        "image": null
+      },
+      {
+        "text": "Solo il Formato di Tipo I",
+        "image": null
+      },
+      {
+        "text": "Solo il Formato di Tipo R",
+        "image": null
+      },
+      {
+        "text": "Il formato di Tipo J",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: L'Indirizzamento immediato",
+    "hint": ""
+  },
+  {
+    "question": "Nel Linguaggio Macchina MIPS, la Modalità di Indirizzamento immediato fornisce due operandi mediante due campi del Formato di Tipo I che contengono:",
+    "options": [
+      {
+        "text": "Gli indirizzi dei registri che contengono i due operandi",
+        "image": null
+      },
+      {
+        "text": "Due numeri interi in Notazione in complemento a 2 che costituiscono i due operandi",
+        "image": null
+      },
+      {
+        "text": "I valori Codice Operativo e funzione",
+        "image": null
+      },
+      {
+        "text": "Un numero intero in Notazione in complemento a 2 che costituisce un operando e l'indirizzo di un registro che contiene l'altro operando",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: L'Indirizzamento immediato",
+    "hint": ""
+  },
+  {
+    "question": "L'esecuzione dell'istruzione Assembly MIPS addi $s7, $t0, -35 ha l'effetto di:",
+    "options": [
+      {
+        "text": "Addizionare -35 al contenuto del registro di indirizzo $s7 e scrivere il risultato come contenuto del registro di indirizzo $t0",
+        "image": null
+      },
+      {
+        "text": "Addizionare i contenuti dei registri di indirizzi $s7 e $t0 a -35 e scrivere il risultato come contenuto del registro di indirizzo $s7",
+        "image": null
+      },
+      {
+        "text": "Addizionare -35 al contenuto del registro di indirizzo $t0 e scrivere il risultato come contenuto del registro di indirizzo $s7",
+        "image": null
+      },
+      {
+        "text": "Copiare -35 nel registro di indirizzo $t0 e addizionare al contenuto del registro di indirizzo $s7",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Formato di Tipo I e Indirizzamento immediato per l'istruzione addi",
+    "hint": ""
+  },
+  {
+    "question": "Gli indirizzi della Memoria principale MIPS sono dati da:",
+    "options": [
+      {
+        "text": "Sequenze di 32 bit",
+        "image": null
+      },
+      {
+        "text": "Sequenze di 5 bit",
+        "image": null
+      },
+      {
+        "text": "Sequenze di 8 bit",
+        "image": null
+      },
+      {
+        "text": "Sequenze di 64 bit",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: La Memoria principale dell'Architettura MIPS",
+    "hint": ""
+  },
+  {
+    "question": "Le dimensioni di 1 Kappa, 1 Mega, 1 Giga corrisponsono:",
+    "options": [
+      {
+        "text": "Ai valori 1 Kappa = circa un Milione, 1 Mega = circa un Miliardo, 1 Giga = circa Mille Miliardi",
+        "image": null
+      },
+      {
+        "text": "Ai valori 1 Kappa = circa Cento, 1 Mega = circa Mille, 1 Giga = circa un Milione",
+        "image": null
+      },
+      {
+        "text": "Ai valori 1 Kappa = circa Mille, 1 Mega = circa un Milione, 1 Giga = circa un Miliardo",
+        "image": null
+      },
+      {
+        "text": "Ai valori 1 Kappa = circa Mille, 1 Mega = circa 10 Milioni, 1 Giga = circa 10 Miliardi",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: La Memoria principale dell'Architettura MIPS",
+    "hint": ""
+  },
+  {
+    "question": "Il numero di locazioni della Memoria principale MIPS è dato dal:",
+    "options": [
+      {
+        "text": "Valore 25",
+        "image": null
+      },
+      {
+        "text": "Valore 232-1",
+        "image": null
+      },
+      {
+        "text": "Valore 232",
+        "image": null
+      },
+      {
+        "text": "Valore 231-1",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: La Memoria principale dell'Architettura MIPS",
+    "hint": ""
+  },
+  {
+    "question": "Il contenuto di una locazioni della Memoria principale MIPS è dato da:",
+    "options": [
+      {
+        "text": "Una sequenza di 64 bit",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 32 bit",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 5 bit",
+        "image": null
+      },
+      {
+        "text": "Una sequenza di 8 bit",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: La Memoria principale dell'Architettura MIPS",
+    "hint": ""
+  },
+  {
+    "question": "In Assembly MIPS, l'operazione di leggere la parola che inizia all'indirizzo di Memoria calcolato tramite il registro Base di indirizzo $t1 e l'Offset 9 e scriverla nel registro di indirizzo $s2 è eseguita dalla:",
+    "options": [
+      {
+        "text": "Istruzione sw $t1, 9 ($s2)",
+        "image": null
+      },
+      {
+        "text": "Istruzione lw $t1, 9 ($s2)",
+        "image": null
+      },
+      {
+        "text": "Istruzione sw $s2, 9 ($t1)",
+        "image": null
+      },
+      {
+        "text": "Istruzione lw $s2, 9 ($t1)",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Istruzione Assembly MIPS Load Word",
+    "hint": ""
+  },
+  {
+    "question": "L'istruzone Assembly MIPS lw $t5, 4($s0):",
+    "options": [
+      {
+        "text": "Legge la parola di Memoria che inizia dall'indirizzo dato dalla somma del contenuto del registro Base di indirizzo $t5 più l'Offset 4, e la scrive come contenuto del registro di indirizzo $s0",
+        "image": null
+      },
+      {
+        "text": "Legge la parola di Memoria che inizia dall'indirizzo dato dalla somma del contenuto del registro Base di indirizzo $s0 più l'Offset 4, e la scrive come contenuto del registro di indirizzo $t5",
+        "image": null
+      },
+      {
+        "text": "Scrive il contenuto del registro di indirizzo $t5 nella parola di Memoria che inizia dall'indirizzo dato dalla somma del contenuto del registro base di indirizzo $s0 più l'Offset 4",
+        "image": null
+      },
+      {
+        "text": "Scrive il contenuto del registro di indirizzo $s0 nella parola di Memoria che inizia dall'indirizzo dato dalla somma del contenuto del registro base di indirizzo $t5 più l'Offset 4",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Istruzione Assembly MIPS Load Word",
+    "hint": ""
+  },
+  {
+    "question": "In Assembly MIPS, l'operazione di scrittura del contenuto del registro di indirizzo $s3 nella parola che inizia all'indirizzo di Memoria calcolato tramite il registro Base di indirizzo $t0 e l'Offset 8 è eseguita dalla:",
+    "options": [
+      {
+        "text": "Istruzione lw $s3, 8 ($t0)",
+        "image": null
+      },
+      {
+        "text": "Istruzione sw $t0, 8 ($s3)",
+        "image": null
+      },
+      {
+        "text": "Istruzione sw $s3, 8 ($t0)",
+        "image": null
+      },
+      {
+        "text": "Istruzione lw $t0, 8 ($s3)",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Istruzione Assembly MIPS Store Word",
+    "hint": ""
+  },
+  {
+    "question": "L'istruzone Assembly MIPS sw $t1, 4($s5):",
+    "options": [
+      {
+        "text": "Legge la parola di Memoria che inizia dall'indirizzo dato dal contenuto del registro Base di indirizzo $s5 più l'Offset 4 e la scrive come contenuto del registro di indirizzo $t1",
+        "image": null
+      },
+      {
+        "text": "Scrive il contenuto del registro di indirizzo $s5 nella parola di Memoria che inizia dall'indirizzo dato dal contenuto del registro Base di indirizzo $t1 più l'Offset 4",
+        "image": null
+      },
+      {
+        "text": "Scrive il contenuto del registro di indirizzo $t1 nella parola di Memoria che inizia dall'indirizzo dato dal contenuto del registro Base di indirizzo $s5 più l'Offset 4",
+        "image": null
+      },
+      {
+        "text": "Legge la parola di Memoria che inizia dall'indirizzo dato dal contenuto del registro Base di indirizzo $t1 più l'Offset 4 e la scrive come contenuto del registro di indirizzo $s5",
+        "image": null
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Section: Istruzione Assembly MIPS Store Word",
+    "hint": ""
+  },
+  {
+    "question": "Per l'istruzione load word la modalità di indirizzamento tramite Base e Offset calcola:",
+    "options": [
+      {
+        "text": "L'indirizzo di una parola di Memoria da cui leggere un dato",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo di un registro del processore da cui leggere un dato",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo di una locazione di Memoria in cui scrivere un dato",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo di un registro del processore in cui scrivere un dato",
+        "image": null
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "Section: Indirizzamento tramite Base e Offset per lw",
+    "hint": ""
+  },
+  {
+    "question": "Per l'istruzione store word la modalità di indirizzamento tramite Base e Offset calcola:",
+    "options": [
+      {
+        "text": "L'indirizzo di un registro del processore in cui scrivere un dato",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo di un registro del processore da cui leggere un dato",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo di una locazione di Memoria da cui leggere un dato",
+        "image": null
+      },
+      {
+        "text": "L'indirizzo di una parola di Memoria in cui scrivere un dato",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Indirizzamento tramite Base e Offset per sw",
+    "hint": ""
+  },
+  {
+    "question": "La traduzione in Assembly MIPS dell'assegnamento val = A[3], associando a val il registro di indirizzo $t0, ed assumendo che l'indirizzo del registro Base dell'Array di numeri interi è $s1, è data da:",
+    "options": [
+      {
+        "text": "L'istruzione sw $s1, 12 ($t0)",
+        "image": null
+      },
+      {
+        "text": "L'istruzione sw $t0, 12 ($s1)",
+        "image": null
+      },
+      {
+        "text": "L'istruzione lw $s1, 12 ($t0)",
+        "image": null
+      },
+      {
+        "text": "L'istruzione lw $t0, 12 ($s1)",
+        "image": null
+      }
+    ],
+    "correctIndex": 3,
+    "explanation": "Section: Gestione del Tipo di dato Array",
+    "hint": ""
+  },
+  {
+    "question": "Il valore dell'Offset nell'istruzione Assembly MIPS lw $t0, 5($s3) è rappresentato nel Formato corrispondente in Linguaggio Macchina mediante:",
+    "options": [
+      {
+        "text": "I 5 bit del campo rt del Formato di Tipo R",
+        "image": null
+      },
+      {
+        "text": "I 16 bit del campo immediato del Formato di Tipo I",
+        "image": null
+      },
+      {
+        "text": "I 6 bit del campo Funzione del Formato di Tipo R",
+        "image": null
+      },
+      {
+        "text": "I 5 bit del campo rs del Formato",
+        "image": null
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Section: Gestione del Tipo di dato Array",
+    "hint": ""
+  }
+]
