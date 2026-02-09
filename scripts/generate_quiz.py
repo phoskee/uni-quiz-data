@@ -129,7 +129,9 @@ def main():
     if quiz_data:
         dest_dir = selected_file.parent.parent / "community"
         dest_dir.mkdir(exist_ok=True)
-        out_path = dest_dir / (selected_file.stem + ".json")
+        # Normalizziamo il nome del file sostituendo gli spazi con _
+        file_name = selected_file.stem.replace(" ", "_") + ".json"
+        out_path = dest_dir / file_name
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(quiz_data, f, indent=2, ensure_ascii=False)
         print(f"\n✅ Salvato in: {out_path}")
