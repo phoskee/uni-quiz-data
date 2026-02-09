@@ -61,30 +61,56 @@ def extract_text_with_colors(pdf_path):
 
 def generate_quiz(text_content, model_name):
     print(f"🤖 Generazione quiz con {model_name}...")
-    
-    prompt = f"""
-    Analizza il testo estratto da un PDF di quiz universitari. 
-    Il tuo compito è convertire ogni domanda in un oggetto JSON.
-    
-    REGOLE PER IDENTIFICARE LA RISPOSTA CORRETTA (Priorità decrescente):
-    1. **Etichette Esplicite**: Cerca righe come "Answer: A", "Risposta corretta: B", "Soluzione: C" che appaiono dopo le opzioni.
-    2. **Tag di Colore**: Se non ci sono etichette, cerca il testo racchiuso in tag di colore (es. <#008000>Testo</#008000>). Solitamente il VERDE o il BLU indicano la risposta esatta.
-    3. **Pattern a fine documento**: Se non trovi nulla vicino alla domanda, controlla se c'è una lista finale di soluzioni.
-    
-    REQUISITI OUTPUT:
-    - Restituisci un array JSON di oggetti.
-    - Ogni oggetto deve avere:
-      "question": "Testo della domanda",
-      "options": [{"text": "Testo opzione", "image": ""}],
-      "correctIndex": numero (0-based, mappa A=0, B=1, C=2, D=3),
-      "explanation": "Spiegazione o riferimento al pattern trovato",
-      "hint": ""
-    
-    TESTO:
-    {text_content[:60000]}
-    
-    RESTITUISCI SOLO IL JSON (Array di oggetti):
-    """
+
+    prompt = f"""Sei un assistente specializzato nella conversione di quiz universitari da PDF a formato JSON strutturato.
+
+COMPITO:
+Analizza il testo estratto da un PDF e converti OGNI domanda trovata in un oggetto JSON.
+Preserva fedelmente il contenuto originale: non inventare, modificare o omettere domande e risposte presenti nel documento.
+
+REGOLE PER IDENTIFICARE LA RISPOSTA CORRETTA (in ordine di priorità):
+1. Etichette esplicite: righe come "Answer: A", "Risposta corretta: B", "Soluzione: C" vicino alla domanda.
+2. Tag di colore: testo racchiuso in tag come <#008000>Testo</#008000>. Il VERDE (#008000, #00ff00) o il BLU (#0000ff, #0055ff) indicano solitamente la risposta corretta.
+3. Soluzioni a fine documento: una lista di risposte corrette raggruppata alla fine del PDF.
+4. Se nessun metodo funziona, usa la tua conoscenza della materia. Se non sei sicuro, imposta correctIndex sulla risposta più plausibile.
+
+STRUTTURA JSON - Ogni oggetto DEVE avere TUTTI questi campi:
+- "question": il testo esatto della domanda, ripulito da numerazione (es. "1.", "Q1:") e artefatti di formattazione.
+- "options": array di oggetti con "text" e "image". Mantieni l'ordine originale. Rimuovi i prefissi di lettera (A., B., ecc.) dal testo. Il campo "image" è sempre stringa vuota "".
+- "correctIndex": intero 0-based che indica la posizione della risposta corretta (A=0, B=1, C=2, D=3).
+- "image": stringa vuota "".
+- "code": se la domanda contiene snippet di codice, pseudocodice o output di terminale, inseriscilo qui preservando indentazione e formattazione. Altrimenti stringa vuota "".
+- "explanation": una spiegazione chiara e concisa del PERCHÉ la risposta è corretta, facendo riferimento al concetto teorico sottostante. NON scrivere frasi generiche come "La risposta A è corretta" — spiega il ragionamento. Compila questo campo SOLO se sei sicuro della correttezza della risposta e del ragionamento. Se hai dubbi, lascia stringa vuota "".
+- "hint": un indizio breve che guidi lo studente verso la risposta corretta senza rivelarla (es. "Pensa alla differenza tra stack e heap"). Compila questo campo SOLO se sei sicuro che l'indizio sia accurato e realmente utile per ragionare. Se hai dubbi, lascia stringa vuota "".
+
+REGOLE IMPORTANTI su "explanation" e "hint":
+- È MEGLIO lasciare il campo vuoto che fornire informazioni errate o inventate.
+- Se la risposta corretta è stata identificata solo tramite colore o etichetta (e non conosci la materia), lascia entrambi i campi vuoti.
+- "explanation" deve spiegare il concetto in modo che lo studente impari qualcosa.
+- "hint" non deve MAI contenere la risposta diretta, ma solo uno spunto di riflessione.
+
+ESEMPIO DI OUTPUT:
+[
+  {{
+    "question": "Qual è la complessità temporale della ricerca binaria?",
+    "options": [
+      {{"text": "O(n)", "image": ""}},
+      {{"text": "O(log n)", "image": ""}},
+      {{"text": "O(n log n)", "image": ""}},
+      {{"text": "O(1)", "image": ""}}
+    ],
+    "correctIndex": 1,
+    "image": "",
+    "code": "",
+    "explanation": "La ricerca binaria dimezza lo spazio di ricerca ad ogni iterazione, quindi il numero massimo di confronti è log₂(n), da cui la complessità O(log n).",
+    "hint": "Quante volte puoi dimezzare n elementi prima di arrivare a 1?"
+  }}
+]
+
+TESTO ESTRATTO DAL PDF:
+{text_content[:60000]}
+
+Restituisci ESCLUSIVAMENTE un array JSON valido, senza testo aggiuntivo, commenti o blocchi markdown:"""
     
     try:
         response = client.models.generate_content(model=model_name, contents=prompt)

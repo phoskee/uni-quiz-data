@@ -40,17 +40,8 @@ python scripts/generate_quiz.py
 ### 3. Uso di NotebookLM
 Se preferisci usare [NotebookLM](https://notebooklm.google.com/):
 1. Carica i file nel notebook.
-2. Usa il prompt sotto per generare il JSON.
+2. Usa il prompt che trovi nella cartella [`prompt/`](prompt/) per generare il JSON.
 3. Salva il risultato nella cartella `community/` del corso.
-
-**Prompt consigliato:**
-> "Analizza il documento e genera un set di domande a scelta multipla. Il risultato deve essere esclusivamente un array JSON di oggetti:
-> {
->   \"question\": \"Testo della domanda\",
->   \"options\": [{\"text\": \"Opzione 1\", \"image\": \"\"}, ...],
->   \"correctIndex\": 0,
->   \"image\": \"\", \"code\": \"\", \"explanation\": \"...\", \"hint\": \"...\"
-> }"
 
 ## ✅ Verifica della correttezza
 
