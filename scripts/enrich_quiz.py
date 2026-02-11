@@ -11,6 +11,7 @@ import json
 import sys
 import time
 import argparse
+import threading
 from pathlib import Path
 
 try:
@@ -21,6 +22,55 @@ except ImportError:
 
 DEFAULT_BASE_URL = "http://localhost:11434"
 DEFAULT_BATCH_SIZE = 5
+
+DIM = "\033[2;37m"   # grigio chiaro/dim
+RESET = "\033[0m"
+CLEAR_LINE = "\r\033[2K"
+
+
+# ── Spinner ──────────────────────────────────────────────────────────────────
+
+class Spinner:
+    _FRAMES = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
+
+    def __init__(self):
+        self._stop_event = threading.Event()
+        self._thread: threading.Thread | None = None
+        self._lines: list[str] = []
+
+    def start(self, header: str, lines: list[str]) -> None:
+        self._stop_event.clear()
+        self._lines = lines
+        self._thread = threading.Thread(target=self._run, args=(header,), daemon=True)
+        self._thread.start()
+
+    def _run(self, header: str) -> None:
+        frame_idx = 0
+        while not self._stop_event.is_set():
+            frame = self._FRAMES[frame_idx % len(self._FRAMES)]
+            block = f"{DIM}{frame} {header}{RESET}\n"
+            for line in self._lines:
+                block += f"{DIM}  {line}{RESET}\n"
+            # Scrivi il blocco
+            sys.stdout.write(block)
+            sys.stdout.flush()
+            time.sleep(0.12)
+            # Torna su di (1 + len(lines)) righe per sovrascrivere
+            rows = 1 + len(self._lines)
+            sys.stdout.write(f"\033[{rows}A")
+            sys.stdout.flush()
+            frame_idx += 1
+
+    def stop(self) -> None:
+        self._stop_event.set()
+        if self._thread:
+            self._thread.join()
+        # Cancella tutte le righe occupate dallo spinner
+        rows = 1 + len(self._lines)
+        for _ in range(rows):
+            sys.stdout.write(CLEAR_LINE + "\n")
+        sys.stdout.write(f"\033[{rows}A")
+        sys.stdout.flush()
 
 
 # ── Ollama helpers ──────────────────────────────────────────────────────────
@@ -205,6 +255,7 @@ def main():
     batch_size = args.batch_size
     enriched = 0
     failed_batches = 0
+    spinner = Spinner()
 
     for batch_start in range(0, len(to_enrich), batch_size):
         batch_indices = to_enrich[batch_start : batch_start + batch_size]
@@ -212,7 +263,13 @@ def main():
 
         batch_num = batch_start // batch_size + 1
         total_batches = (len(to_enrich) + batch_size - 1) // batch_size
-        print(f"⏳ Batch {batch_num}/{total_batches} ({len(batch_questions)} domande)...", end=" ", flush=True)
+
+        preview = [q["question"][:70] + ("…" if len(q["question"]) > 70 else "")
+                   for q in batch_questions]
+        spinner.start(
+            f"Batch {batch_num}/{total_batches} — elaborazione {len(batch_questions)} domande…",
+            preview,
+        )
 
         prompt = build_prompt(batch_questions)
 
@@ -220,13 +277,16 @@ def main():
             raw = chat(args.base_url, args.api_key, model, prompt)
             results = parse_response(raw)
         except Exception as e:
-            print(f"❌ Errore: {e}")
+            spinner.stop()
+            print(f"❌ Batch {batch_num}/{total_batches}: errore — {e}")
             failed_batches += 1
             time.sleep(2)
             continue
 
+        spinner.stop()
+
         if not results:
-            print(f"⚠️  Risposta non parsabile, batch saltato.")
+            print(f"⚠️  Batch {batch_num}/{total_batches}: risposta non parsabile, saltato.")
             failed_batches += 1
             continue
 
@@ -244,7 +304,7 @@ def main():
             applied += 1
 
         enriched += applied
-        print(f"✅ {applied}/{len(batch_questions)} aggiornate")
+        print(f"✅ Batch {batch_num}/{total_batches}: {applied}/{len(batch_questions)} aggiornate")
 
         # Salvataggio incrementale dopo ogni batch
         with open(quiz_path, "w", encoding="utf-8") as f:

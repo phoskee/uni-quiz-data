@@ -20,8 +20,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Computazione algoritmica",
-    "hint": ""
+    "explanation": "Entrambe sono modelli astratti e teorici piuttosto che macchine fisiche. La Macchina di Turing definisce formalmente i limiti della computabilità, mentre l'architettura di Von Neumann descrive il modello stored-program dei computer moderni.",
+    "hint": "Considera la differenza tra un modello concettuale matematico e un prodotto commerciale."
   },
   {
     "question": "I problemi che possono essere risolti con un algoritmo sono:",
@@ -44,8 +44,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Risultati teorici fondamentali",
-    "hint": ""
+    "explanation": "La teoria della calcolabilità dimostra che esistono problemi indecidibili (come l'Halting Problem) per i quali non esiste alcun algoritmo risolutivo. I problemi algoritmicamente risolvibili costituiscono quindi un sottoinsieme proprio di tutti i problemi matematici.",
+    "hint": "Pensa ai limiti teorici della computazione dimostrati da Turing e Church."
   },
   {
     "question": "Rispetto alla Macchina di Turing la Macchina di Von Neuman risolve:",
@@ -68,8 +68,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Risultati teorici fondamentali",
-    "hint": ""
+    "explanation": "L'architettura di Von Neumann è una realizzazione pratica della macchina universale di Turing; entrambi i modelli sono Turing-completi e possono calcolare esattamente le stesse funzioni, ovvero quelle calcolabili effettivamente.",
+    "hint": "Rifletti sul concetto di equivalenza computazionale e Turing-completezza."
   },
   {
     "question": "In ogni transizioni di stato della Macchina di Turing lo stato successivo dipende:",
@@ -92,8 +92,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Computazione algoritmica",
-    "hint": ""
+    "explanation": "La funzione di transizione δ di una MdT è definita formalmente come δ: Q × Γ → Q × Γ × {L,R}, dove Q è l'insieme degli stati e Γ l'alfabeto del nastro. La transizione dipende quindi solo dalla coppia (stato corrente, simbolo letto).",
+    "hint": "Ricorda la definizione matematica della funzione di transizione in una macchina a stati finiti con nastro."
   },
   {
     "question": "Il Sistema Operativo è un programma che:",
@@ -116,8 +116,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Software",
-    "hint": ""
+    "explanation": "Il Sistema Operativo funge da intermediario tra hardware e software applicativo, gestendo l'allocazione delle risorse (CPU, memoria, dispositivi I/O), la multiprogrammazione e fornendo le system call per l'interazione con l'utente.",
+    "hint": "Distingui il ruolo del SO da quello del compilatore o dell'unità aritmetica."
   },
   {
     "question": "Le componenti Hardware del computer comunicano tra loro utilizzando:",
@@ -140,8 +140,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Hardware",
-    "hint": ""
+    "explanation": "I bus sono canali fisici (fili o tracce sul circuito) che permettono il trasferimento di dati, indirizzi e segnali di controllo tra CPU, memoria e periferiche. Rappresentano l'infrastruttura di interconnessione dell'architettura hardware.",
+    "hint": "Pensa ai 'collegamenti fisici' sul motherboard che trasportano dati e segnali."
   },
   {
     "question": "La valutazione delle prestazioni di un computer misura:",
@@ -164,8 +164,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Software",
-    "hint": ""
+    "explanation": "La valutazione delle prestazioni (performance) si concentra su metriche temporali e di throughput, come il tempo di esecuzione o le istruzioni per secondo, misurando quanto efficientemente un programma viene eseguito su una specifica architettura.",
+    "hint": "Considera cosa misurano termini come 'velocità di esecuzione' o 'throughput'."
   },
   {
     "question": "Un algoritmo è:",
@@ -188,8 +188,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Computazione algoritmica",
-    "hint": ""
+    "explanation": "Per definizione formale, un algoritmo deve essere composto da un numero finito di passi elementari, eseguibili e non ambigui, che portano a una soluzione in tempo finito. La finitezza è essenziale per garantire la terminazione.",
+    "hint": "Ricorda che un algoritmo deve sempre terminare dopo un numero finito di passi."
   },
   {
     "question": "I progressi della tecnologia hanno:",
@@ -212,8 +212,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Idee e Tecnologia",
-    "hint": ""
+    "explanation": "I progressi tecnologici migliorano la velocità di calcolo e la capacità di memoria, ma non alterano i confini teorici della calcolabilità stabiliti dalla Tesi di Church-Turing. I problemi indecidibili restano tali indipendentemente dall'hardware.",
+    "hint": "Distingui tra miglioramenti pratici (velocità) e limiti teorici della computabilità."
   },
   {
     "question": "Nella Macchina di Turing gli stati, le trasizioni di stato, i simboli dell'alfabeto, i caratteri della sequenza scritta sul nastro sono:",
@@ -236,8 +236,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Computazione algoritmica",
-    "hint": ""
+    "explanation": "Nella definizione formale di Macchina di Turing, l'insieme degli stati, l'alfabeto di input e l'insieme delle transizioni sono definiti come insiemi finiti, anche se potenzialmente molto grandi. Solo il nastro è potenzialmente infinito.",
+    "hint": "Rifletti su quali elementi sono definiti 'a priori' nella specifica della macchina rispetto al nastro."
   },
   {
     "question": "Una Architettura RISC è caratterizzata da:",
@@ -260,8 +260,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: Linguaggio Macchina",
-    "hint": ""
+    "explanation": "L'architettura RISC (Reduced Instruction Set Computer) è progettata per eseguire un numero ridotto di istruzioni semplici e veloci, permettendo un'implementazione hardware più semplice con unità di controllo cablate piuttosto che microprogrammate, a differenza delle architetture CISC.",
+    "hint": "Rifletti sul significato dell'acronimo 'Reduced' e confronta la complessità hardware con le architetture CISC."
   },
   {
     "question": "Una istruzione in Linguaggio Macchina del MIPS è rappresentata da:",
@@ -284,8 +284,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Linguaggio Macchina",
-    "hint": ""
+    "explanation": "Il MIPS adotta un formato a lunghezza fissa dove ogni istruzione occupa esattamente 32 bit (4 byte), semplificando il fetch e la decodifica delle istruzioni nella pipeline, coerentemente con la filosofia RISC della regolarità.",
+    "hint": "Ricorda che l'architettura MIPS è a 32 bit e utilizza istruzioni di lunghezza costante."
   },
   {
     "question": "L'Assembler è:",
@@ -308,8 +308,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: Linguaggio Assembly",
-    "hint": ""
+    "explanation": "L'Assembler è un traduttore specifico che converte il linguaggio Assembly (mnemonici testuali leggibili) nel corrispondente linguaggio macchina (codice binario eseguibile dalla CPU), distinguendosi dal compilatore che traduce linguaggi ad alto livello.",
+    "hint": "Distingui tra il traduttore specifico per il linguaggio simbolico dei processori e quello per linguaggi di programmazione ad alto livello."
   },
   {
     "question": "Per accedere al contenuto di un particolare registro è necessario conoscere:",
@@ -332,8 +332,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: I Registri",
-    "hint": ""
+    "explanation": "I registri del processore sono organizzati in un banco di registri (register file) accessibile tramite indirizzi numerici specifici; per leggere o modificare il contenuto di un registro, il processore deve prima selezionarlo tramite il suo indirizzo univoco.",
+    "hint": "Considera come il processore selezioni uno specifico registro tra i 32 disponibili nel MIPS."
   },
   {
     "question": "Nel Linguaggio Assembly del MIPS il simbolo $ seguito da caratteri alfanumerici rappresenta:",
@@ -356,8 +356,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: I Registri del Processore MIPS",
-    "hint": ""
+    "explanation": "In MIPS Assembly, la notazione con il simbolo $ (es. $t0, $s0) rappresenta l'indirizzo o il numero identificativo del registro nel banco registri, che l'assemblatore traduce nel corrispondente campo di 5 bit nell'istruzione macchina.",
+    "hint": "Pensa alla differenza tra l'identificativo del registro (il suo 'indirizzo' nel register file) e il valore contenuto al suo interno."
   },
   {
     "question": "In un registro del Processore MIPS si può memorizzare:",
@@ -380,8 +380,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: I Registri del Processore MIPS",
-    "hint": ""
+    "explanation": "L'architettura MIPS è a 32 bit, quindi ogni registro contiene esattamente 32 bit (cifre binarie). La dimensione è fissa e non può contenere simboli testuali direttamente come entità atomiche.",
+    "hint": "Ricorda che il MIPS è un'architettura a 32 bit e i registri hanno dimensione fissa."
   },
   {
     "question": "Un programma scritto in un Linguaggio ad Alto Livello ed uno scritto in Assembly possono essere eseguiti:",
@@ -404,8 +404,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Linguaggio ad Alto Livello",
-    "hint": ""
+    "explanation": "I linguaggi ad alto livello sono portabili grazie ai compilatori/interpreteri che li adattano a diverse architetture, mentre l'Assembly è specifico dell'ISA (Instruction Set Architecture) del processore e usa mnemoniche che corrispondono direttamente alle istruzioni macchina di quella specifica CPU.",
+    "hint": "Considera la differenza tra portabilità del software e dipendenza dall'hardware specifico."
   },
   {
     "question": "Una istruzione Assembly corrisponde sempre a:",
@@ -428,8 +428,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Linguaggio Assembly",
-    "hint": ""
+    "explanation": "L'Assembly è un linguaggio simbolico che rappresenta direttamente le istruzioni macchina in formato leggibile, mantenendo una corrispondenza biunivoca (1:1) con il codice binario eseguito dal processore.",
+    "hint": "L'Assembly è essenzialmente una rappresentazione testuale delle istruzioni binarie."
   },
   {
     "question": "I registri del Processore MIPS con indirizzi da $t0 a $t9 e da $s0 a $s7 sono utilizzati per:",
@@ -452,8 +452,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: I Registri del Processore MIPS",
-    "hint": ""
+    "explanation": "I registri $t (temporanei) e $s (salvati) sono registri general purpose a 32 bit utilizzati per memorizzare operandi e risultati intermedi durante l'esecuzione dei programmi utente, non per gestire lo stack o le chiamate a funzione (compito di altri registri come $sp e $ra).",
+    "hint": "Pensa a quali registri usa un programma normale per fare calcoli con variabili."
   },
   {
     "question": "Gli indirizzi dei registri del Processore MIPS sono:",
@@ -476,8 +476,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: I Registri del Processore MIPS",
-    "hint": ""
+    "explanation": "Il MIPS possiede 32 registri general purpose, identificati numericamente da 0 a 31 (codificabili con 5 bit), ai quali corrispondono nomi simbolici come $zero, $t0, $s0, ecc.",
+    "hint": "Quanti registri general purpose ha il MIPS e qual è il primo numero di indice in informatica?"
   },
   {
     "question": "La Sintassi di un Linguaggio Formale stabilisce:",
@@ -500,8 +500,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Sintassi dell'Assembly MIPS",
-    "hint": ""
+    "explanation": "La sintassi definisce le regole grammaticali e strutturali che determinano quali sequenze di simboli costituiscono programmi ben formati, distinguendosi dalla semantica che invece riguarda il significato (opzione A) e dalla semantica operazionale che riguarda l'esecuzione (opzione D).",
+    "hint": "Pensa alla differenza tra la forma corretta di una frase e il suo significato."
   },
   {
     "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione max=200; con l'associazione max--> $s5 è:",
@@ -524,8 +524,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: ADDIZIONE: istruzione addi",
-    "hint": ""
+    "explanation": "Per caricare un valore immediato in un registro si utilizza l'istruzione addi (add immediate) con il registro $zero (che contiene sempre 0) come registro sorgente, sommando effettivamente 200 a 0 e memorizzando il risultato in $s5.",
+    "hint": "Considera quale registro MIPS contiene permanentemente il valore zero e quale istruzione permette di usare costanti numeriche direttamente."
   },
   {
     "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione a=a*2; con l'associazione a--> $s0 è:",
@@ -548,8 +548,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: ADDIZIONE: istruzione add",
-    "hint": ""
+    "explanation": "La moltiplicazione per 2 equivale all'addizione di un numero con se stesso. Poiché il valore di a si trova in $s0, sommiamo $s0 con $s0 e memorizziamo il risultato in $s0 usando l'istruzione add (non addi, poiché non usiamo un immediato).",
+    "hint": "Ricorda che moltiplicare per due è equivalente a sommare una variabile a se stessa."
   },
   {
     "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione h=b+c; con l'associazione b-->$s5 c-->$s2 h--> $t0 è:",
@@ -572,8 +572,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: ADDIZIONE: istruzione add",
-    "hint": ""
+    "explanation": "In assembly MIPS, il formato dell'istruzione add è `add destinazione, sorgente1, sorgente2`. Qui $t0 è la destinazione (h), mentre $s5 (b) e $s2 (c) sono i registri sorgente da sommare.",
+    "hint": "Ricorda l'ordine degli operandi nelle istruzioni aritmetiche MIPS: prima la destinazione, poi le due sorgenti."
   },
   {
     "question": "Il registro destinazione nell'istruzione add $s2, $t0, $t1 è:",
@@ -596,8 +596,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: ADDIZIONE: istruzione add",
-    "hint": ""
+    "explanation": "Nella sintassi MIPS per istruzioni di tipo R come add, il primo registro specificato è sempre la destinazione dove viene memorizzato il risultato, mentre il secondo e il terzo sono gli operandi sorgente.",
+    "hint": "Nelle istruzioni aritmetiche MIPS, il primo operando dopo il nome dell'istruzione indica dove viene salvato il risultato."
   },
   {
     "question": "Il Codice Operativo di una istruzione aritmetica dell'Assembly stabilisce:",
@@ -620,8 +620,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Introduzione alla sintassi dell'Assembly MIPS",
-    "hint": ""
+    "explanation": "Il codice operativo (opcode) definisce non solo l'operazione da eseguire (es. somma o sottrazione), ma anche il formato dell'istruzione (R-type, I-type, etc.), determinando quindi come reperire gli operandi (da registri, immediati o memoria).",
+    "hint": "Considera che l'opcode distingue tra istruzioni che usano solo registri e quelle che usano un valore immediato."
   },
   {
     "question": "Nell'istruzione addi dell'Assembly MIPS l'operando costante è contenuto:",
@@ -644,8 +644,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: ADDIZIONE: istruzione addi",
-    "hint": ""
+    "explanation": "L'istruzione addi è di tipo I (immediate) e codifica una costante numerica direttamente all'interno dei 16 bit del campo immediate dell'istruzione, non in un registro.",
+    "hint": "Ricorda che il 'i' in addi sta per immediate e pensa al formato delle istruzioni di tipo I in MIPS."
   },
   {
     "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione n=0; con l'associazione n--> $s3 è:",
@@ -668,8 +668,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: ADDIZIONE: istruzione addi",
-    "hint": ""
+    "explanation": "Per inizializzare un registro a zero si usa addi con $zero (registro costante 0) come sorgente. La sintassi corretta è: addi destinazione, sorgente, immediato, quindi addi $s3, $zero, 0.",
+    "hint": "Verifica l'ordine corretto degli operandi in addi: destinazione prima, poi sorgente, poi il valore immediato."
   },
   {
     "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione val=i-k; con l'associazione val--> $s1 i--> $s3 k--> $s2 è:",
@@ -692,8 +692,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: SOTTRAZIONE: istruzione sub",
-    "hint": ""
+    "explanation": "L'istruzione sub in MIPS segue la sintassi: sub destinazione, sorgente1, sorgente2, calcolando sorgente1 - sorgente2. Quindi val=i-k richiede $s1 = $s3 - $s2.",
+    "hint": "Ricorda che in sub il primo registro dopo l'opcode è la destinazione, seguito dal minuendo e poi dal sottraendo."
   },
   {
     "question": "La traduzione dal Linguaggio C in Assembly MIPS dell'istruzione m=m+k; con l'associazione k--> $s3 m--> $s0 è:",
@@ -716,8 +716,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: ADDIZIONE: istruzione add",
-    "hint": ""
+    "explanation": "L'istruzione add somma due registri con sintassi: add destinazione, sorgente1, sorgente2. Per m=m+k, la destinazione è $s0 (m) che riceve la somma di $s0 (m) e $s3 (k).",
+    "hint": "Il primo operando è il registro destinazione che riceverà il risultato della somma dei due operandi seguenti."
   },
   {
     "question": "Il numero di sequenze binarie diverse di lunghezza K è:",
@@ -740,8 +740,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Rappresentazione in base 2",
-    "hint": ""
+    "explanation": "Ogni posizione della sequenza di lunghezza K può assumere 2 valori (0 o 1). Per il principio di moltiplicazione, il numero totale di sequenze distinte è 2^K, poiché le scelte sono indipendenti per ogni posizione.",
+    "hint": "Considera quante scelte binarie hai per ciascuna delle K posizioni."
   },
   {
     "question": "In Notazione posizionale pesata il massimo valore rappresentabile con una sequenza binaria di lunghezza M è:",
@@ -764,8 +764,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Rappresentazione in base 2",
-    "hint": ""
+    "explanation": "Con M bit, il valore massimo si ottiene quando tutti i bit valgono 1, corrispondente alla somma della serie geometrica 2^0 + 2^1 + ... + 2^(M-1) = 2^M - 1.",
+    "hint": "Calcola il valore di una sequenza composta solo da cifre 1."
   },
   {
     "question": "La scelta dell'alfabeto binario consente di:",
@@ -788,8 +788,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: Sequenze binarie",
-    "hint": ""
+    "explanation": "L'alfabeto binario utilizza due livelli di tensione distinti per rappresentare 0 e 1, creando un margine di rumore ampio che rende il sistema robusto contro oscillazioni e interferenze elettriche.",
+    "hint": "Pensa alla distinzione tra livelli logici in presenza di disturbi fisici."
   },
   {
     "question": "In Notazione posizionale pesata la cifra più significativa di una sequenza è:",
@@ -812,8 +812,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Notazione posizionale pesata: regole di rappresentazione",
-    "hint": ""
+    "explanation": "Nella notazione posizionale, la cifra più a sinistra ha il peso maggiore (base^(n-1)) e contribuisce maggiormente al valore totale del numero rispetto alle altre cifre.",
+    "hint": "Ricorda quale posizione ha il peso associato più elevato."
   },
   {
     "question": "In Notazione posizionale pesata una sequenza binaria con cifra meno significativa uguale a 0 rappresenta:",
@@ -836,8 +836,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: Rappresentazione in base 2",
-    "hint": ""
+    "explanation": "La cifra meno significativa (LSB) ha peso 2^0 = 1. Se è 0, il numero è divisibile per 2 (pari); se è 1, il numero è dispari.",
+    "hint": "Considera il peso della cifra meno significativa e la divisibilità per 2."
   },
   {
     "question": "In Notazione posizionale pesata la cifra più significativa di una sequenza di lunghezza K è associata al peso:",
@@ -860,8 +860,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Notazione posizionale pesata: regole di rappresentazione",
-    "hint": ""
+    "explanation": "In notazione posizionale pesata binaria, la cifra più significativa (MSB) occupa la posizione K-1 (contando da 0 da destra verso sinistra), quindi il suo peso è 2^(K-1). Questo perché ogni posizione rappresenta una potenza crescente di 2.",
+    "hint": "Considera che la posizione più a sinistra in una sequenza di K bit corrisponde all'esponente K-1 nella base 2."
   },
   {
     "question": "In Notazione posizionale pesata il massimo valore che si può rappresentare nel contenuto di un registro del processore è:",
@@ -884,8 +884,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Contenuto ed indirizzi dei registri nell’Architettura MIPS",
-    "hint": ""
+    "explanation": "Con n bit si possono rappresentare 2^n valori distinti nell'intervallo [0, 2^n-1]. Pertanto, il massimo valore rappresentabile in un registro a 32 bit è 2^32-1.",
+    "hint": "Ricorda che con n bit contiamo da 0, quindi il valore massimo è uno meno del numero totale di combinazioni possibili."
   },
   {
     "question": "Per specificare l'indirizzo di un registro del processore MIPS occorre:",
@@ -908,8 +908,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Contenuto ed indirizzi dei registri nell’Architettura MIPS",
-    "hint": ""
+    "explanation": "L'architettura MIPS dispone di 32 registri general purpose, quindi per indirizzarli tutti univocamente sono necessari log₂(32) = 5 bit.",
+    "hint": "Quanti registri general purpose ha l'architettura MIPS e quanti bit servono per distinguerli tutti?"
   },
   {
     "question": "Il risultato di un calcolo determina un overflow quando:",
@@ -932,8 +932,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Contenuto ed indirizzi dei registri nell’Architettura MIPS",
-    "hint": ""
+    "explanation": "L'overflow si verifica quando il risultato di un'operazione eccede la capacità di rappresentazione del formato numerico, richiedendo più bit di quelli fisicamente disponibili nel registro destinazione.",
+    "hint": "Cosa succede quando una somma supera il massimo valore esprimibile con i bit a disposizione del processore?"
   },
   {
     "question": "In Notazione posizionale pesata la sequenza binaria 11011 rappresenta il valore:",
@@ -956,8 +956,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Metodi di conversione di base",
-    "hint": ""
+    "explanation": "La conversione si ottiene sommando le potenze di 2 corrispondenti alle posizioni degli 1: 1×2⁴ + 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 16 + 8 + 0 + 2 + 1 = 27.",
+    "hint": "Calcola il valore posizionale di ogni bit 1 moltiplicandolo per la potenza di 2 corrispondente alla sua posizione (partendo da 0 da destra)."
   },
   {
     "question": "In Notazione posizionale pesata, l'addizione di due interi positivi si effettua:",
@@ -980,8 +980,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Addizione di interi positivi",
-    "hint": ""
+    "explanation": "Nell'addizione posizionale, l'algoritmo richiede di iniziare dalla cifra meno significativa (destra) con riporto iniziale 0, propagando eventuali riporti verso sinistra. Questo permette di gestire correttamente il carry tra le posizioni.",
+    "hint": "L'addizione procede come fai normalmente con i numeri decimali: inizi dalle unità, non dalle cifre più a sinistra."
   },
   {
     "question": "Nella notazione in modulo e segno, il segno del risultato dell'addizione è:",
@@ -1004,8 +1004,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Notazione in modulo e segno",
-    "hint": ""
+    "explanation": "In modulo e segno, quando si addizionano numeri con segni opposti si sottrae il modulo minore dal maggiore, e il risultato assume il segno del numero con modulo maggiore. Se i segni sono uguali, si sommano i moduli mantenendo il segno comune.",
+    "hint": "Il risultato 'segue' il numero più grande in valore assoluto quando i segni sono discordi."
   },
   {
     "question": "Nella Notazione in complemento a 2, il peso del bit più a sinistra in una sequenza di lunghezza K è:",
@@ -1028,8 +1028,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Notazione in complemento a 2: regole di rappresentazione",
-    "hint": ""
+    "explanation": "In complemento a 2 con K bit, il bit più significativo ha peso -2^(K-1), consentendo la rappresentazione di numeri negativi. Gli altri K-1 bit mantengono pesi positivi standard.",
+    "hint": "Il bit più a sinistra vale meno 2 elevato alla (lunghezza meno 1)."
   },
   {
     "question": "Nella Notazione in complemento a 2, il segno del numero è determinato da:",
@@ -1052,8 +1052,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Notazione in complemento a 2: regole di rappresentazione",
-    "hint": ""
+    "explanation": "In complemento a 2, il bit più significativo (sinistra) determina il segno: se è 1 il numero è negativo (grazie al suo peso negativo -2^(K-1)), se è 0 è positivo. Questo bit funge quindi da indicatore di segno implicito.",
+    "hint": "Il primo bit a sinistra vale negativo, quindi se è 1 il totale diventa negativo."
   },
   {
     "question": "Nella Notazione in complemento a 2, la somma di due interi con segni opposti viene eseguita:",
@@ -1076,8 +1076,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Addizione di interi in complemento a 2",
-    "hint": ""
+    "explanation": "Il vantaggio principale del complemento a 2 è che l'addizione è identica per tutti i casi: si sommano direttamente i due numeri bit a bit, indipendentemente dai segni, senza necessità di sottrazioni o controlli preliminari. L'hardware si semplifica notevolmente.",
+    "hint": "Il complemento a 2 unifica l'operazione di addizione per tutti i casi, eliminando la necessità di circuiti diversi per segni uguali o opposti."
   },
   {
     "question": "Nella Notazione in complemento a 2, il massimo numero rappresentabile con sequenze di lunghezza M è:",
@@ -1100,8 +1100,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Intervallo dei valori rappresentabili in complemento a 2",
-    "hint": ""
+    "explanation": "In complemento a 2 con M bit, il bit più significativo è riservato al segno, lasciando M-1 bit per la rappresentazione del valore. Il massimo numero positivo si ottiene con il bit di segno a 0 e tutti gli altri a 1, corrispondente a 2^{M-1} - 1.",
+    "hint": "Considera che con M bit, solo M-1 sono disponibili per il valore assoluto quando il numero è positivo."
   },
   {
     "question": "Nella Notazione in complemento a 2, il minimo numero rappresentabile con sequenze di lunghezza M è:",
@@ -1124,8 +1124,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Intervallo dei valori rappresentabili in complemento a 2",
-    "hint": ""
+    "explanation": "Il range del complemento a 2 è asimmetrico: lo zero occupa una codifica (tutti 0), lasciando una rappresentazione in più per i negativi. Il minimo si ottiene con il bit di segno 1 e tutti gli altri 0, corrispondente a -2^{M-1}.",
+    "hint": "Ricorda che lo zero non ha doppia rappresentazione come in modulo e segno, riducendo di uno i numeri positivi disponibili."
   },
   {
     "question": "Nella Notazione in complemento a 2, la sequenza binaria 0101 rappresenta:",
@@ -1148,8 +1148,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: Notazione in complemento a 2: regole di rappresentazione",
-    "hint": ""
+    "explanation": "Il bit più significativo è 0, indicando un numero positivo che si legge direttamente come binario naturale. La sequenza 101 in base 2 vale 4 + 1 = 5.",
+    "hint": "Se il primo bit è 0, il numero è positivo e la conversione è immediata come binario puro."
   },
   {
     "question": "Nella Notazione in complemento a 2, la sequenza binaria 1001 rappresenta:",
@@ -1172,8 +1172,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Notazione in complemento a 2: regole di rappresentazione",
-    "hint": ""
+    "explanation": "Il bit più significativo è 1, quindi il numero è negativo. Calcolando il complemento a 2 (inversione bit 0110 + 1 = 0111 = 7) o usando i pesi (-8 + 1 = -7), si ottiene il valore -7.",
+    "hint": "Per trovare il valore di un numero negativo, inverti tutti i bit, somma 1, e applica il segno meno al risultato."
   },
   {
     "question": "Nella Notazione in complemento a 2, la sequenza binaria 1111 rappresenta:",
@@ -1196,8 +1196,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Notazione in complemento a 2: regole di rappresentazione",
-    "hint": ""
+    "explanation": "In complemento a 2, la sequenza con tutti bit a 1 rappresenta sempre -1, indipendentemente dalla lunghezza. Infatti, sommando 1 a 1111 si ottiene 10000 (overflow a 0 con riporto fuori).",
+    "hint": "Prova a sommare 1 a questa sequenza binaria e osserva il risultato con overflow: che numero deve essere per tornare a zero?"
   },
   {
     "question": "In Notazione in complemento a 2, la rappresentazione dell'opposto del valore rappresentato da una sequenza di N bit si ottiene:",
@@ -1220,8 +1220,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Regola per la rappresentazione dell'opposto di un numero",
-    "hint": ""
+    "explanation": "Nel complemento a 2, l'operazione di negazione richiede di calcolare il complemento a 1 (inversione bit a bit) e successivamente sommare 1 al risultato per ottenere il valore opposto. Questo metodo permette di rappresentare numeri negativi in modo univoco e di semplificare le operazioni aritmetiche.",
+    "hint": "Ricorda che per ottenere l'inverso additivo in complemento a 2 devi applicare due operazioni successive alla sequenza di bit."
   },
   {
     "question": "In Notazione in complemento a 2, la sottrazione di due operandi si esegue:",
@@ -1244,8 +1244,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Sottrazione come somma con l'opposto",
-    "hint": ""
+    "explanation": "La sottrazione A-B viene trasformata nell'addizione A+(-B), dove -B è rappresentato dal complemento a 2 di B, ottenuto appunto complementando i bit e sommando 1. Questo meccanismo consente di usare lo stesso circuito addizionatore per somme e sottrazioni.",
+    "hint": "Pensa a come trasformare una sottrazione in un'addizione utilizzando la rappresentazione dell'opposto."
   },
   {
     "question": "La dichiarazione di tipo intero per una variabile in un Linguaggio ad Alto Livello indica al Compilatore che:",
@@ -1268,8 +1268,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Sottrazione come somma con l'opposto",
-    "hint": ""
+    "explanation": "I linguaggi ad alto livello utilizzano tipicamente la notazione in complemento a 2 per le variabili intere con segno, poiché è lo standard nelle architetture moderne per gestire efficientemente operazioni aritmetiche e rappresentazione dello zero. La dichiarazione di tipo guida il compilatore nell'allocazione e nella gestione dei bit.",
+    "hint": "Considera quale rappresentazione binaria è universalmente adottata dai processori moderni per i numeri interi relativi."
   },
   {
     "question": "L'overflow può verificarsi:",
@@ -1292,8 +1292,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: Regola per riconoscere l'overflow",
-    "hint": ""
+    "explanation": "L'overflow si verifica quando il risultato di un'operazione eccede l'intervallo rappresentabile, cosa che può accadere sommando due numeri positivi (risultato troppo grande) o due negativi (risultato troppo piccolo). Al contrario, sommando numeri con segno opposto il risultato ha modulo inferiore e non può mai superare i limiti di rappresentazione.",
+    "hint": "Refletti su quando il modulo del risultato può superare la capacità massima dei bit disponibili."
   },
   {
     "question": "In Notazione in complemento a 2, l'overflow viene segnalato quando gli ultimi due riporti cN e cN-1:",
@@ -1316,8 +1316,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Regola per riconoscere l'overflow",
-    "hint": ""
+    "explanation": "Nel controllo degli overflow per l'addizione in complemento a 2, si confrontano i riporti: quello entrante nel bit di segno (cN-1) e quello uscente (cN). Se questi due riporti differiscono, significa che il segno del risultato è errato rispetto agli operandi, segnalando così una condizione di overflow.",
+    "hint": "Concentrati sui riporti che attraversano il bit più significativo durante l'addizione."
   },
   {
     "question": "In Notazione in complemento a 2, l'estensione del segno:",
@@ -1340,8 +1340,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Regola per l'estensione del segno",
-    "hint": ""
+    "explanation": "L'estensione del segno in complemento a 2 consiste nel replicare il bit più significativo verso sinistra per aumentare la lunghezza della rappresentazione mantenendo invariato il valore numerico, sia per numeri positivi che negativi.",
+    "hint": "Pensa a cosa succede quando aggiungi zeri a sinistra di un positivo o uni a sinistra di un negativo."
   },
   {
     "question": "L'estensione del segno di una sequenza con bit più significativo uguale a 1 si effettua:",
@@ -1364,8 +1364,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: Regola per l'estensione del segno",
-    "hint": ""
+    "explanation": "Quando il bit più significativo è 1 (numero negativo), l'estensione del segno richiede di aggiungere bit 1 a sinistra per preservare il valore negativo e mantenere la corretta rappresentazione in complemento a 2.",
+    "hint": "Il bit di segno deve essere replicato per mantenere il segno originale durante l'estensione."
   },
   {
     "question": "Eseguendo un'addizione in Notazione in complemento a 2, se cN ha valore 0 e cN-1 ha valore 1:",
@@ -1388,8 +1388,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Regola per riconoscere l'overflow",
-    "hint": ""
+    "explanation": "In complemento a 2, l'overflow si verifica quando i riporti in ingresso (cN-1) e in uscita (cN) dal bit di segno differiscono. Se cN=0 e cN-1=1, c'è overflow e il risultato è errato.",
+    "hint": "L'overflow si manifesta quando c'è un riporto nel bit di segno ma non fuori da esso."
   },
   {
     "question": "Eseguendo un'addizione in Notazione in complemento a 2, se cN ha valore 1 e cN-1 ha valore 1:",
@@ -1412,8 +1412,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Regola per riconoscere l'overflow",
-    "hint": ""
+    "explanation": "Quando cN = cN-1 = 1, i riporti nel bit di segno e fuori dal bit di segno sono uguali, quindi non si verifica overflow. Questo accade tipicamente nella somma di due numeri negativi che generano un riporto finale corretto.",
+    "hint": "Se i riporti sono identici (entrambi 0 o entrambi 1), non c'è overflow indipendentemente dal loro valore."
   },
   {
     "question": "Eseguendo un'addizione in Notazione in complemento a 2, i riporti cN e cN-1 che segnalano l'Overflow nell'Architettura MIPS sono:",
@@ -1436,8 +1436,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Regola per riconoscere l'overflow",
-    "hint": ""
+    "explanation": "Nell'architettura MIPS i registri sono a 32 bit, quindi il bit di segno è il bit 31. c31 rappresenta il riporto in ingresso al bit di segno, mentre c32 è il riporto in uscita. L'overflow si verifica quando c31 ≠ c32.",
+    "hint": "Ricorda che in MIPS si parla di parole a 32 bit, quindi il bit più significativo è il 31."
   },
   {
     "question": "L'estensione del segno di una sequenza con bit più significativo uguale a 0 si effettua:",
@@ -1460,8 +1460,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Regola per l'estensione del segno",
-    "hint": ""
+    "explanation": "L'estensione del segno in complemento a due replica il bit più significativo (MSB) verso sinistra per preservare il valore numerico quando si aumenta la lunghezza in bit. Se il MSB è 0 (numero positivo), si aggiungono zeri a sinistra; se fosse 1, si aggiungerebbero uni.",
+    "hint": "Pensa a come si preserva il valore di un numero positivo quando lo si rappresenta con più bit."
   },
   {
     "question": "Il Formato di una istruzione in Linguaggio Macchina è definito da:",
@@ -1484,8 +1484,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Formati e Modalità di Indirizzamento",
-    "hint": ""
+    "explanation": "Il formato di istruzione definisce una suddivisione logica e concettuale della parola binaria in campi specifici (opcode, operandi, ecc.), ciascuno con una posizione e lunghezza prefissata. Non si tratta di una suddivisione fisica dei circuiti, ma di una convenzione di interpretazione dei bit.",
+    "hint": "Considera che i bit rimangono fisicamente in sequenza, ma logicamente appartengono a campi diversi."
   },
   {
     "question": "La Modalità di Indirizzamento di una istruzione in Linguaggio Macchina stabilisce:",
@@ -1508,8 +1508,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Formati e Modalità di Indirizzamento",
-    "hint": ""
+    "explanation": "La modalità di indirizzamento stabilisce la regola per calcolare l'indirizzo effettivo degli operandi a partire dai valori contenuti nei campi dell'istruzione, come registri base, offset o indirizzi immediati. Determina quindi come localizzare i dati necessari all'esecuzione.",
+    "hint": "Distingui tra la struttura dell'istruzione (formato) e il metodo per trovare gli operandi (indirizzamento)."
   },
   {
     "question": "Nel Linguaggio Macchina MIPS, i campi del Formato di Tipo R sono:",
@@ -1532,8 +1532,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Il Formato di Tipo R",
-    "hint": ""
+    "explanation": "Il formato R (Register) in MIPS è strutturato in 6 campi: opcode (6 bit), rs (5 bit), rt (5 bit), rd (5 bit), shamt (5 bit) e funct (6 bit), per un totale di 32 bit. Questo formato è utilizzato per le operazioni aritmetico-logiche tra registri.",
+    "hint": "Ricorda che nel formato R ci sono tre registri (due sorgenti e uno destinazione) più i campi per opcode e funzione."
   },
   {
     "question": "Nel Linguaggio Macchina MIPS, il campo Codice Operativo di una istruzione stabilisce:",
@@ -1556,8 +1556,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Formati e Modalità di Indirizzamento",
-    "hint": ""
+    "explanation": "In MIPS, il campo opcode (6 bit) identifica l'operazione da eseguire e, conseguentemente, determina il formato dell'istruzione (R, I o J). Per le istruzioni di tipo R l'opcode è zero e il campo funct specifica l'operazione precisa, mentre per I e J l'opcode definisce direttamente l'istruzione.",
+    "hint": "L'opcode influenza sia l'operazione che il modo in cui vengono interpretati i bit rimanenti dell'istruzione."
   },
   {
     "question": "Nel Linguaggio Macchina MIPS, il campo funct è:",
@@ -1580,8 +1580,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Il Formato di Tipo R",
-    "hint": ""
+    "explanation": "Nel formato R di MIPS, il campo opcode è sempre 0 per le istruzioni aritmetico-logiche, mentre il campo funct di 6 bit specifica l'operazione esatta da eseguire (es. add, sub, and, or).",
+    "hint": "Ricorda che nel formato R l'opcode vale 0 e l'operazione specifica è codificata negli ultimi 6 bit dell'istruzione."
   },
   {
     "question": "Nel Linguaggio Macchina MIPS, con l'Indirizzamento tramite registro gli indirizzi degli operandi sono contenuti:",
@@ -1604,8 +1604,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: L'Indirizzamento tramite registro",
-    "hint": ""
+    "explanation": "Nell'indirizzamento tramite registro, gli operandi sorgente sono specificati dai campi rs e rt del formato R, che contengono gli indirizzi (numeri) dei registri dove sono memorizzati i dati da elaborare.",
+    "hint": "Nel formato R, i campi da 5 bit subito dopo l'opcode indicano i registri sorgente, non il destinatario o lo spostamento."
   },
   {
     "question": "Le lunghezze dei campi dell'istruzione in Linguaggio Macchina MIPS che traduce l'istruzione Assembly add $t0, $s0, $s1 sono:",
@@ -1628,8 +1628,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Formato di Tipo R per add e sub",
-    "hint": ""
+    "explanation": "L'istruzione `add` è di tipo R, il cui formato prevede 6 campi: opcode (6 bit), rs (5 bit), rt (5 bit), rd (5 bit), shamt (5 bit) e funct (6 bit), per un totale di 32 bit.",
+    "hint": "Conta i bit dell'istruzione add: l'opcode è sempre 6 bit, poi ci sono tre registri e uno spostamento da 5 bit ciascuno, più il funct finale."
   },
   {
     "question": "Le istruzioni del Linguaggio Macchina MIPS con Codice operativo 0 hanno:",
@@ -1652,8 +1652,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Formato di Tipo R per add e sub",
-    "hint": ""
+    "explanation": "In MIPS, il codice operativo 000000 (valore 0) identifica univocamente le istruzioni di tipo R, dove l'operazione specifica viene determinata dal campo funct anziché dall'opcode.",
+    "hint": "Quando l'opcode è tutti zeri, l'istruzione appartiene al formato che usa il campo funct per distinguere le operazioni ALU."
   },
   {
     "question": "La suddivisione in campi dell'istruzione in Linguaggio Macchina MIPS 00000010000100010100000000100000 in base al suo Formato è data:",
@@ -1676,8 +1676,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Formato di Tipo R per add e sub",
-    "hint": ""
+    "explanation": "La stringa binaria rappresenta un'istruzione di tipo R che si suddivide in: opcode (6 bit: 000000), rs (5 bit: 10000), rt (5 bit: 10001), rd (5 bit: 01000), shamt (5 bit: 00000) e funct (6 bit: 100000).",
+    "hint": "Dividi la sequenza di 32 bit in blocchi di 6-5-5-5-5-6, verificando che i primi 6 bit siano zeri (indicano formato R)."
   },
   {
     "question": "Nell'istruzione in Linguaggio Macchina MIPS con valori dei campi del Formato dati da 000000, 01000, 01001, 10000, 00000, 100010 l'indirizzo del registro che contiene il risultato è:",
@@ -1700,8 +1700,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Formato di Tipo R per add e sub",
-    "hint": ""
+    "explanation": "Nelle istruzioni MIPS di tipo R, il risultato dell'operazione viene memorizzato nel registro destinazione rd, che corrisponde al quarto campo (bit 15-11) della codifica. I campi seguono l'ordine: opcode (6 bit), rs (5 bit), rt (5 bit), rd (5 bit), shamt (5 bit), funct (6 bit).",
+    "hint": "Identifica quale campo nell'istruzione di tipo R rappresenta il registro destinazione."
   },
   {
     "question": "L'operatore AND ha valore 1 quando:",
@@ -1724,8 +1724,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Operatori Logici AND, OR e di Shift",
-    "hint": ""
+    "explanation": "L'operatore AND realizza la congiunzione logica, che produce output 1 solo quando entrambi gli ingressi sono 1, secondo la tabella di verità della moltiplicazione logica. In tutti gli altri casi il risultato è 0.",
+    "hint": "Pensa alla tabella di verità dell'operatore di congiunzione logica."
   },
   {
     "question": "L'operatore OR ha valore 0 quando:",
@@ -1748,8 +1748,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: Operatori Logici AND, OR e di Shift",
-    "hint": ""
+    "explanation": "L'operatore OR realizza la disgiunzione logica inclusiva, che produce output 0 solo quando entrambi gli operandi sono 0. Se almeno uno degli operandi è 1, il risultato è 1.",
+    "hint": "Considera quando l'output di una porta OR è sicuramente falso."
   },
   {
     "question": "Per le istruzioni Aritmetico-Logiche del Linguaggio Macchina MIPS il campo Codice Operativo contiene:",
@@ -1772,8 +1772,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Formato Tipo R e Indirizzamento per le istruzioni logiche e di shift",
-    "hint": ""
+    "explanation": "Le istruzioni aritmetico-logiche in MIPS utilizzano il formato R, dove il campo opcode è sempre 000000 (6 bit zero) per indicare un'istruzione di tipo registro. L'operazione specifica è determinata dal campo funct.",
+    "hint": "Ricorda quale pattern di bit identifica le istruzioni di tipo R in MIPS."
   },
   {
     "question": "Il Formato dell'istruzione in Linguaggio Macchina MIPS 00000010000100010100000000100101 è:",
@@ -1796,8 +1796,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Formato Tipo R e Indirizzamento per le istruzioni logiche e di shift",
-    "hint": ""
+    "explanation": "I primi 6 bit dell'istruzione rappresentano il campo opcode: 000000 indica il formato R (Register), dove l'operazione è specificata dal campo funct negli ultimi 6 bit. Gli altri formati (I e J) hanno opcode diversi da zero.",
+    "hint": "Analizza i primi 6 bit dell'istruzione per determinare il formato."
   },
   {
     "question": "Nel Linguaggio Macchina MIPS, il campo shamt del Formato di Tipo R contiene:",
@@ -1820,8 +1820,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Formato Tipo R e Indirizzamento per le istruzioni logiche e di shift",
-    "hint": ""
+    "explanation": "Il campo shamt (shift amount) nel formato R a 32 bit contiene il numero di posizioni di shift per istruzioni come sll, srl e sra (5 bit permettono valori 0-31). Per tutte le altre istruzioni aritmetico-logiche questo campo vale 0.",
+    "hint": "Il nome 'shamt' deriva da 'shift amount' e specifica di quante posizioni spostare i bit."
   },
   {
     "question": "Nell'istruzione in Linguaggio Macchina MIPS con campi del Formato dati da 000000, 01000, 01001, 11110, 00000, 100101 gli indirizzi degli operandi sono:",
@@ -1844,8 +1844,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Formato Tipo R e Indirizzamento per le istruzioni logiche e di shift",
-    "hint": ""
+    "explanation": "Nel formato R, i campi rs (5 bit) e rt (5 bit) codificano i registri sorgente degli operandi, mentre rd (5 bit) è il registro destinazione. I valori 01000 (8) e 01001 (9) corrispondono ai campi rs e rt, cioè i registri $t0 e $t1.",
+    "hint": "Nel formato R, i due operandi sorgente sono nei campi rs e rt, mentre rd è il risultato."
   },
   {
     "question": "Nel Linguaggio Macchina MIPS, la Modalità di Indirizzamento delle istruzioni and ed or è:",
@@ -1868,8 +1868,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Formato Tipo R e Indirizzamento per le istruzioni logiche e di shift",
-    "hint": ""
+    "explanation": "Le istruzioni and e or standard in MIPS sono di tipo R e utilizzano l'indirizzamento a registro, operando su tre registri: due per gli operandi sorgente e uno per il risultato. Le versioni immediate (andi, ori) usano invece il formato I.",
+    "hint": "Pensa alla differenza tra istruzioni che usano solo registri e quelle che usano un valore immediato."
   },
   {
     "question": "La traduzione in Assembly MIPS dell'OR bit a bit con operandi nei registri $s1 e $s2 e risultato nel registro $t0 è:",
@@ -1892,8 +1892,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Assembly MIPS: le istruzioni AND, OR, SLL, SRL",
-    "hint": ""
+    "explanation": "In MIPS, la sintassi delle istruzioni tipo R segue l'ordine: destinazione, sorgente1, sorgente2. Pertanto per memorizzare in $t0 il risultato di $s1 OR $s2 si usa or $t0, $s1, $s2.",
+    "hint": "Ricorda che il primo registro dopo il mnemonico è sempre quello dove si salva il risultato."
   },
   {
     "question": "La traduzione in Assembly MIPS dello Shift a sinistra di 4 posizioni con registro operando $s3 e registro destinazione $t0 è:",
@@ -1916,8 +1916,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Assembly MIPS: le istruzioni AND, OR, SLL, SRL",
-    "hint": ""
+    "explanation": "L'istruzione sll (shift left logical) richiede la sintassi: registro destinazione, registro sorgente, numero di posizioni. Per shiftare $s3 di 4 bit verso sinistra e mettere il risultato in $t0 si scrive sll $t0, $s3, 4.",
+    "hint": "L'istruzione MIPS per lo shift logico a sinistra è sll, non shift, e il primo operando è la destinazione."
   },
   {
     "question": "La traduzione in Assembly MIPS dell'AND bit a bit con operandi nei registri $s1 e $s2 e risultato nel registro $s5 è:",
@@ -1940,8 +1940,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Assembly MIPS: le istruzioni AND, OR, SLL, SRL",
-    "hint": ""
+    "explanation": "In MIPS, la sintassi dell'istruzione and segue il formato Rd, Rs, Rt, dove Rd è il registro destinazione. Pertanto, per memorizzare il risultato in $s5 utilizzando $s1 e $s2 come operandi, la sintassi corretta è and $s5, $s1, $s2.",
+    "hint": "Ricorda che in MIPS il primo registro specificato dopo l'opcode è il destinatario del risultato."
   },
   {
     "question": "Nel Linguaggio Macchina MIPS, i campi del Formato di Tipo I contengono:",
@@ -1964,8 +1964,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Il Formato di Tipo I e le relative Modalit&#224 di Indirizzamento",
-    "hint": ""
+    "explanation": "Il formato di Tipo I (Immediate) in MIPS è strutturato in 4 campi: 6 bit per l'opcode, 5 bit per il registro sorgente (rs), 5 bit per il registro destinazione (rt) e 16 bit per il valore immediato.",
+    "hint": "Le istruzioni di tipo I necessitano di un campo ampio per l'immediato a 16 bit."
   },
   {
     "question": "Nel Linguaggio Macchina MIPS, la suddivisione in campi dell'istruzione 00100001000010011000000000100101 con Formato di Tipo I è data:",
@@ -1988,8 +1988,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Il Formato di Tipo I e le relative Modalit&#224 di Indirizzamento",
-    "hint": ""
+    "explanation": "L'istruzione binaria deve essere suddivisa secondo la struttura del formato I: 6 bit per l'opcode (001000), seguiti da 5 bit per rs (01000), 5 bit per rt (01001) e infine 16 bit per l'immediato (1000000000100101).",
+    "hint": "Suddividi la sequenza binaria in gruppi di 6, 5, 5 e 16 bit partendo da sinistra."
   },
   {
     "question": "Nel Linguaggio Macchina MIPS, il Formato e la Modalità di Indirizzamento dell'istruzione addi sono:",
@@ -2012,8 +2012,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Formato di Tipo I e Indirizzamento immediato per l'istruzione addi",
-    "hint": ""
+    "explanation": "L'istruzione addi (add immediate) appartiene al formato di Tipo I perché include un valore immediato di 16 bit nel campo dedicato, utilizzando la modalità di indirizzamento immediato per operare con costanti.",
+    "hint": "Il suffisso 'i' indica l'uso di un valore immediato tipico del formato I."
   },
   {
     "question": "La traduzione in Assembly MIPS dell'assegnamento val = b - 300 con l'associazione tra variabi e indirizzi di registri b-->$s1 e val-->$t0 è:",
@@ -2036,8 +2036,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Formato di Tipo I e Indirizzamento immediato per l'istruzione addi",
-    "hint": ""
+    "explanation": "Poiché MIPS non dispone dell'istruzione subi, per sottrarre una costante si utilizza addi con un immediato negativo. La sintassi addi $t0, $s1, -300 somma -300 al valore di $s1 e memorizza il risultato in $t0.",
+    "hint": "Non esiste l'istruzione subi in MIPS; pensa a come trasformare una sottrazione in un'addizione."
   },
   {
     "question": "Nel Formato di Tipo I, i valori del campo immediato sono compresi tra:",
@@ -2060,8 +2060,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Il Formato di Tipo I e le relative Modalit&#224 di Indirizzamento",
-    "hint": ""
+    "explanation": "Nel formato di tipo I, il campo immediato è composto da 16 bit. Utilizzando la rappresentazione in complemento a 2, il range di valori rappresentabili con n bit è [-2^(n-1), 2^(n-1)-1]. Con 16 bit si ottiene quindi [-2^15, 2^15-1].",
+    "hint": "Ricorda che con 16 bit in complemento a 2, il bit più significativo è il segno e il range è asimmetrico."
   },
   {
     "question": "L'operando immediato dell'istruzione Assembly MIPS addi $t0, $s1, 30 è rappresentato in Linguaggio Macchina mediante:",
@@ -2084,8 +2084,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Il Formato di Tipo I e le relative Modalit&#224 di Indirizzamento",
-    "hint": ""
+    "explanation": "Le istruzioni di tipo I utilizzano un campo immediato di 16 bit codificato in complemento a 2 per rappresentare valori interi con segno, necessari per operazioni come l'addizione con costante (addi).",
+    "hint": "Pensa a come vengono rappresentati i numeri negativi nell'immediato di istruzioni come addi."
   },
   {
     "question": "Prima della esecuzione di una istruzione con Formato di Tipo I il valore del campo immediato viene:",
@@ -2108,8 +2108,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Il Formato di Tipo I e le relative Modalit&#224 di Indirizzamento",
-    "hint": ""
+    "explanation": "Poiché l'ALU MIPS opera su operandi a 32 bit mentre il campo immediato è di soli 16 bit, è necessario estendere il segno (replicando il bit più significativo) per preservare il valore numerico corretto durante le operazioni aritmetiche.",
+    "hint": "Considera cosa succederebbe a un numero negativo se aggiungessi semplicemente zeri a sinistra."
   },
   {
     "question": "La Modalità di Indirizzamento immediato è utilizzata con:",
@@ -2132,8 +2132,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: L'Indirizzamento immediato",
-    "hint": ""
+    "explanation": "La modalità di indirizzamento immediato richiede un campo dedicato all'interno del formato istruzione per contenere la costante. Solo il formato di tipo I possiede questo campo da 16 bit, mentre il tipo R opera solo su registri e il tipo J su indirizzi di salto.",
+    "hint": "Quale formato istruzione contiene un campo 'immediate' nella sua struttura binaria?"
   },
   {
     "question": "Nel Linguaggio Macchina MIPS, la Modalità di Indirizzamento immediato fornisce due operandi mediante due campi del Formato di Tipo I che contengono:",
@@ -2156,8 +2156,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: L'Indirizzamento immediato",
-    "hint": ""
+    "explanation": "Nel formato di tipo I, il campo rs (5 bit) specifica il registro sorgente contenente il primo operando, mentre il campo immediate (16 bit) fornisce il secondo operando come costante intera codificata in complemento a 2.",
+    "hint": "Analizza la struttura del formato I: quali campi identificano i due operandi per l'ALU?"
   },
   {
     "question": "L'esecuzione dell'istruzione Assembly MIPS addi $s7, $t0, -35 ha l'effetto di:",
@@ -2180,8 +2180,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Formato di Tipo I e Indirizzamento immediato per l'istruzione addi",
-    "hint": ""
+    "explanation": "L'istruzione addi (add immediate) in MIPS segue la sintassi addi rt, rs, immediate, dove rs è il registro sorgente, immediate è la costante e rt è il registro destinazione. Quindi addi $s7, $t0, -35 calcola $t0 + (-35) e memorizza il risultato in $s7.",
+    "hint": "Ricorda l'ordine degli operandi in addi: destinazione, sorgente, immediato."
   },
   {
     "question": "Gli indirizzi della Memoria principale MIPS sono dati da:",
@@ -2204,8 +2204,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: La Memoria principale dell'Architettura MIPS",
-    "hint": ""
+    "explanation": "L'architettura MIPS32 utilizza un bus indirizzi a 32 bit, permettendo di indirizzare 2^32 locazioni di memoria distinte. Questo è lo standard per la versione a 32 bit del processore MIPS.",
+    "hint": "Considera la dimensione del registro PC e del bus indirizzi nell'architettura MIPS32."
   },
   {
     "question": "Le dimensioni di 1 Kappa, 1 Mega, 1 Giga corrisponsono:",
@@ -2228,8 +2228,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: La Memoria principale dell'Architettura MIPS",
-    "hint": ""
+    "explanation": "I prefissi del Sistema Internazionale (SI) definiscono: kilo (K) = 10^3 (mille), mega (M) = 10^6 (milione), giga (G) = 10^9 (miliardo). Questi vengono usati per indicare multipli decimali nelle specifiche di memoria e storage.",
+    "hint": "Pensa alle potenze di 10: 10^3, 10^6 e 10^9."
   },
   {
     "question": "Il numero di locazioni della Memoria principale MIPS è dato dal:",
@@ -2252,8 +2252,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: La Memoria principale dell'Architettura MIPS",
-    "hint": ""
+    "explanation": "Con indirizzi a 32 bit, il numero massimo di locazioni indirizzabili è 2^32, poiché ogni bit può assumere 2 valori e ci sono 32 bit. Questo corrisponde a circa 4 miliardi di locazioni di memoria.",
+    "hint": "Se hai n bit per gli indirizzi, quante combinazioni uniche puoi rappresentare?"
   },
   {
     "question": "Il contenuto di una locazioni della Memoria principale MIPS è dato da:",
@@ -2276,8 +2276,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: La Memoria principale dell'Architettura MIPS",
-    "hint": ""
+    "explanation": "MIPS utilizza l'indirizzamento a byte (byte-addressable memory), dove ogni locazione di memoria corrisponde esattamente a un byte, ovvero una sequenza di 8 bit. Le word da 32 bit occupano 4 locazioni consecutive.",
+    "hint": "Ricorda che 1 byte corrisponde a 8 bit e MIPS indirizza la memoria al livello del byte."
   },
   {
     "question": "In Assembly MIPS, l'operazione di leggere la parola che inizia all'indirizzo di Memoria calcolato tramite il registro Base di indirizzo $t1 e l'Offset 9 e scriverla nel registro di indirizzo $s2 è eseguita dalla:",
@@ -2300,8 +2300,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Istruzione Assembly MIPS Load Word",
-    "hint": ""
+    "explanation": "L'istruzione lw (load word) carica una parola dalla memoria in un registro. La sintassi è lw destinazione, offset(base), dove l'indirizzo effettivo si ottiene sommando l'offset al contenuto del registro base. Qui $s2 è la destinazione, $t1 è il base e 9 è l'offset.",
+    "hint": "Ricorda che in lw il primo registro è la destinazione mentre il registro tra parentesi fornisce l'indirizzo base."
   },
   {
     "question": "L'istruzone Assembly MIPS lw $t5, 4($s0):",
@@ -2324,8 +2324,8 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Istruzione Assembly MIPS Load Word",
-    "hint": ""
+    "explanation": "L'istruzione lw utilizza la notazione lw registro_destinazione, offset(registro_base). L'indirizzo di memoria si calcola sommando l'offset 4 al contenuto di $s0, e il dato letto viene scritto in $t5. Non confondere il registro base con quello destinazione.",
+    "hint": "Il registro prima della virgola riceve il dato, mentre quello tra parentesi specifica l'indirizzo base in memoria."
   },
   {
     "question": "In Assembly MIPS, l'operazione di scrittura del contenuto del registro di indirizzo $s3 nella parola che inizia all'indirizzo di Memoria calcolato tramite il registro Base di indirizzo $t0 e l'Offset 8 è eseguita dalla:",
@@ -2348,8 +2348,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Istruzione Assembly MIPS Store Word",
-    "hint": ""
+    "explanation": "L'istruzione sw (store word) scrive il contenuto di un registro in memoria. La sintassi è sw sorgente, offset(base), dove l'indirizzo di memoria è dato da base + offset. Qui $s3 è la sorgente, $t0 è il registro base e 8 è l'offset.",
+    "hint": "Le istruzioni di store trasferiscono dati dal registro alla memoria, usando la stessa sintassi base+offset delle load."
   },
   {
     "question": "L'istruzone Assembly MIPS sw $t1, 4($s5):",
@@ -2372,8 +2372,8 @@
       }
     ],
     "correctIndex": 2,
-    "explanation": "Section: Istruzione Assembly MIPS Store Word",
-    "hint": ""
+    "explanation": "L'istruzione sw memorizza il contenuto del primo registro ($t1) nella locazione di memoria il cui indirizzo è calcolato sommando l'offset (4) al contenuto del registro base ($s5). Questa operazione scrive in memoria, opposta alla lettura di lw.",
+    "hint": "Con sw il flusso dati va dal registro verso la memoria, calcolando l'indirizzo con base più offset."
   },
   {
     "question": "Per l'istruzione load word la modalità di indirizzamento tramite Base e Offset calcola:",
@@ -2396,8 +2396,8 @@
       }
     ],
     "correctIndex": 0,
-    "explanation": "Section: Indirizzamento tramite Base e Offset per lw",
-    "hint": ""
+    "explanation": "Nell'indirizzamento base-plus-offset, il processore calcola l'indirizzo effettivo sommando l'offset al contenuto del registro base. Per l'istruzione lw, questo indirizzo punta a una locazione di memoria da cui leggere la parola da caricare nel registro destinazione.",
+    "hint": "La modalità base+offset serve sempre a puntare a locazioni di memoria, non a registri del processore."
   },
   {
     "question": "Per l'istruzione store word la modalità di indirizzamento tramite Base e Offset calcola:",
@@ -2420,8 +2420,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Indirizzamento tramite Base e Offset per sw",
-    "hint": ""
+    "explanation": "L'istruzione store word (sw) trasferisce dati dalla CPU alla memoria principale. La modalità base+offset calcola l'indirizzo effettivo sommando il contenuto del registro base all'offset, determinando la locazione di memoria destinataria del dato, non un registro.",
+    "hint": "Rifletti sulla direzione del trasferimento dati quando si 'memorizza' qualcosa e su dove risiede fisicamente il dato destinazione."
   },
   {
     "question": "La traduzione in Assembly MIPS dell'assegnamento val = A[3], associando a val il registro di indirizzo $t0, ed assumendo che l'indirizzo del registro Base dell'Array di numeri interi è $s1, è data da:",
@@ -2444,8 +2444,8 @@
       }
     ],
     "correctIndex": 3,
-    "explanation": "Section: Gestione del Tipo di dato Array",
-    "hint": ""
+    "explanation": "Per leggere un valore dalla memoria (accesso ad array) si utilizza l'istruzione lw (load word). La sintassi richiede il registro destinazione ($t0), l'offset calcolato come indice×4 (12 per A[3]) e il registro base ($s1), seguendo il formato lw rt, offset(base).",
+    "hint": "Considera che tipo di operazione richiede leggere da memoria versus scrivere, e come si calcola lo spiazzamento per un array di interi."
   },
   {
     "question": "Il valore dell'Offset nell'istruzione Assembly MIPS lw $t0, 5($s3) è rappresentato nel Formato corrispondente in Linguaggio Macchina mediante:",
@@ -2468,7 +2468,7 @@
       }
     ],
     "correctIndex": 1,
-    "explanation": "Section: Gestione del Tipo di dato Array",
-    "hint": ""
+    "explanation": "L'istruzione lw utilizza il formato di tipo I (Immediate), caratterizzato da un campo immediate di 16 bit che contiene proprio l'offset. Questo valore viene esteso in segno e sommato al registro base per calcolare l'indirizzo effettivo.",
+    "hint": "Ricorda che le istruzioni di accesso alla memoria usano il formato I, non R, e individua quale campo ospita la costante numerica."
   }
 ]
