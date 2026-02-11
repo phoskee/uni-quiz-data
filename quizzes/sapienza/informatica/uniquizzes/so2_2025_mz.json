@@ -14,8 +14,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "dd if=filein of=fileout bs=1 seek=10 count=100",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando copia 100 byte consecutivi da filein e li scrive in fileout a partire dall'offset 10 (seek agisce sull'output), non seleziona byte intervallati dall'input. Per estrarre byte intervallati servirebbe utilizzare skip in combinazione con un ciclo o altri strumenti.",
+    "hint": "Ricorda la differenza tra skip (input) e seek (output) in dd, e cosa significa copiare blocchi consecutivi."
   },
   {
     "question": "Supponiamo di avere una directory '/home/dir' creata da root con permessi di accesso '0777/drwxrwxrwx (owner root)' ed al suo interno il file filename, creato da root, con permessi di accesso '0770/-rwxrwx--- (owner root)' Un qualsiasi utente puo' rimovere il file filename eseguendo, in user mode, il comando rm /home/dir/filename",
@@ -32,8 +32,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Per rimuovere un file, Unix richiede i permessi di scrittura sulla directory che lo contiene, non sul file stesso. Poiché /home/dir ha permessi 777, qualsiasi utente può modificare il contenuto della directory (incluso rimuovere filename) indipendentemente dai permessi del file.",
+    "hint": "Pensa a chi contiene il riferimento al file: la directory o il file stesso?"
   },
   {
     "question": "Si consideri il comando 'ln -s myfile mylink'.Dopo la sua esecuzione, l'output dei comandi \"du myfile\" e \"du mylink\" sara' diverso",
@@ -50,8 +50,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "`du` mostra lo spazio disco occupato. Un link simbolico occupa solo lo spazio necessario a memorizzare il percorso del target (pochi byte), mentre il file originale occupa lo spazio dei suoi contenuti. Pertanto i valori riportati saranno necessariamente diversi.",
+    "hint": "Cosa memorizza fisicamente su disco un link simbolico rispetto al file originale?"
   },
   {
     "question": "Il comando 'ls -r mydir' lista il contenuto di tutte le directory con radice \"mydir\".",
@@ -68,8 +68,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione `-r` inverte semplicemente l'ordine di ordinamento dell'output, mentre per una lista ricorsiva delle sottodirectory è necessario utilizzare l'opzione `-R` (maiuscola).",
+    "hint": "Fai attenzione alla distinzione tra maiuscole e minuscole nelle opzioni di ls."
   },
   {
     "question": "Nel comando '# cd ~/Lezione1/esempi/filesystem' e' stato utilizzato un path relativo",
@@ -86,8 +86,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il tilde (~) rappresenta la home directory dell'utente e si espande in un percorso assoluto (es. /home/user). Un path che inizia con ~ o / è assoluto, mentre i path relativi si riferiscono alla directory corrente senza questi prefissi.",
+    "hint": "Cosa rappresenta il simbolo ~ e come si distingue un percorso assoluto da uno relativo?"
   },
   {
     "question": "Per visualizzare l'atime di un file quale dei seguenti comandi e' corretto?",
@@ -108,8 +108,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando ls con l'opzione -u ordina e visualizza i file per access time (atime), ovvero l'ultima volta che il file è stato letto. L'opzione -c mostrerebbe invece il change time (ctime), mentre -la mostra la modification time (mtime) di default.",
+    "hint": "Ricorda che l'opzione -u in ls si riferisce all'access time."
   },
   {
     "question": "Per visualizzare la lista dei file presenti nella CWD ordinati per modified time si utilizza il comando:",
@@ -130,8 +130,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione -t del comando ls ordina i file per modification time (mtime) in ordine decrescente, combinata con -l fornisce il dettaglio long listing. L'opzione -u ordinerebbe per access time, non per modified time.",
+    "hint": "L'opzione -t ordina per tempo di modifica di default."
   },
   {
     "question": "Si supponga di avere un file di testo filein contenente 'abcdefghilmnopqrstuvwxyzABCDEFGHILMNOPQRSTUVWXYZ' dopo l'esecuzione del comando 'dd if=filein of=fileout bs=2 skip=3 count=10' cosa conterrà fileout?",
@@ -152,8 +152,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando dd utilizza blocchi di 2 byte (bs=2), salta i primi 3 blocchi ovvero 6 caratteri (skip=3) partendo da 'g', e copia esattamente 10 blocchi ovvero 20 caratteri (count=10), ottenendo 'ghilmnopqrstuvwxyzAB'.",
+    "hint": "Calcola quanti byte salta (skip × bs) e quanti ne copia (count × bs)."
   },
   {
     "question": "Il comando 'ls -ltc' restituisce la lista dei file nella CWD ordinati per atime",
@@ -170,8 +170,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione -c in ls si riferisce al change time (ctime), che indica l'ultima modifica ai metadati del file o al contenuto, non all'access time (atime). Per visualizzare ordinati per atime si dovrebbe usare ls -ltu.",
+    "hint": "L'opzione -c si riferisce al change time, non all'access time."
   },
   {
     "question": "Sia nomefile un file memorizzato nella CWD, il comando 'touch nomefile' crea un file vuoto che sostituisce il file esistente",
@@ -188,8 +188,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando touch su un file esistente non lo sostituisce né ne cancella il contenuto, ma aggiorna solamente i timestamp (access time e modification time) alla data/ora corrente. Crea un file vuoto solo se il file non esiste già.",
+    "hint": "Touch aggiorna i timestamp di file esistenti senza modificarne il contenuto."
   },
   {
     "question": "Il valore \"totale 1512\" del seguente codice rappresenta la dimensione della directory in numero di blocchi su disco",
@@ -206,8 +206,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "studente@debian9 :~ $ ls -l apache-tomcat-8.0.27/ \ntotale 1512 \ndrwxr-xr-x 2 studente studente",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il valore 'totale' mostrato da `ls -l` rappresenta la somma dei blocchi di disco (tipicamente da 1KB) occupati da tutti i file e sottodirectory elencati all'interno della directory, ovvero la dimensione totale del contenuto misurata in blocchi.",
+    "hint": "Verifica cosa calcola esattamente il comando ls -l quando somma i blocchi dei file elencati."
   },
   {
     "question": "Un utente che appartiene al gruppo sudo puo' direttamente accedere, in scrittura, al file /etc/passwd",
@@ -224,8 +224,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'appartenenza al gruppo sudo consente solo di utilizzare il comando `sudo` per elevare i privilegi, ma non conferisce permessi diretti di scrittura su file di sistema protetti come /etc/passwd, che richiedono privilegi di root.",
+    "hint": "Distingui tra permessi diretti sui file e la capacità di elevare i privilegi tramite comandi specifici."
   },
   {
     "question": "Entrambi i path che seguono sono path assoluti per l'utente studente",
@@ -242,8 +242,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "studente@debian9:~$ /home/studente/dir1/dir2 \nstudente@debian9:~$ ~/dir1/dir2/",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Un path assoluto inizia dalla directory root (/). La tilde (~) viene espansa dalla shell nel path assoluto della home dell'utente (/home/studente), rendendo entrambi i path assoluti che identificano la stessa locazione.",
+    "hint": "Considera come la shell interpreta il carattere ~ prima di eseguire il comando."
   },
   {
     "question": "Consideriamo il file eseguibile myProgram con proprietario utente1 e con permessi di accesso -rwxr-xr-x, Se utente2 esegue myProgramma si osserva che il RUID = EUID",
@@ -260,8 +260,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Senza il bit SUID (permessi -rwxr-xr-x), quando un utente esegue un programma, il Real UID (RUID) e l'Effective UID (EUID) coincidono con l'UID dell'utente che esegue (utente2), mantenendo i suoi privilegi originali.",
+    "hint": "Controlla se nei permessi è presente il bit SUID che modificherebbe l'EUID."
   },
   {
     "question": "Consideriamo il file eseguibile myProgram con proprietario utente1 e con permessi di accesso -rwsr-xr-x, Se utente2 esegue myProgramma si osserva che il RUID = EUID",
@@ -278,8 +278,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il bit SUID è attivo (indicato dalla 's' in -rwsr-xr-x), quindi quando utente2 esegue il programma, l'Effective UID (EUID) diventa quello del proprietario (utente1), mentre il Real UID (RUID) rimane quello di utente2, rendendoli diversi.",
+    "hint": "La 's' al posto della 'x' nel gruppo dei permessi del proprietario indica il bit SUID attivo."
   },
   {
     "question": "Supponiamo di avere una directory '/home/dir' creata da root con permessi di accesso '1777/drwxrwxrwt (owner root)' ed al suo interno il file filename, creato da root, con permessi di accesso '0770/-rwxrwx --- (owner root)'. Un qualsiasi utente puo' rimovere il file filename eseguendo, in user mode, il comando 'rm /home/dir/filename'",
@@ -296,8 +296,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il bit sticky (valore 1, visualizzato come 't') su una directory impedisce che un utente possa cancellare file di proprietà di altri utenti, anche se ha permessi di scrittura sulla directory. Poiché il file è di proprietà di root, un utente normale non può rimuoverlo nonostante i permessi 777 sulla cartella.",
+    "hint": "Ricorda il comportamento del bit sticky nelle directory con permessi 1777."
   },
   {
     "question": "I permessi di accesso del file eseguibile '/usr/bin/passwd' sono impostati a '4755/-rwsr-xr-x'. per impedire che un qualsiasi utente, operante in usermode, possa eseguire il comando passwd e quindi modificare il file '/etc/passwd'",
@@ -314,8 +314,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il bit SUID (valore 4, 's' in posizione owner) fa eseguire il programma con i privilegi dell'owner (root), non impedisce l'esecuzione. Al contrario, consente agli utenti normali di modificare /etc/passwd eseguendo il comando con privilegi elevati.",
+    "hint": "Il bit SUID permette l'esecuzione con i privilegi del proprietario del file, non blocca l'accesso."
   },
   {
     "question": "I permessi di accesso del file eseguibile '/usr/bin/passwd' sono impostati a '1755/-rwxr-xr-t' per consentire ad un qualsiasi utente, operante in usermode, di eseguire il comando passwd e quindi modificare il file '/etc/passwd'",
@@ -332,8 +332,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I permessi 1755 indicano il bit sticky (1), non il bit SUID necessario per passwd. Il comando passwd richiede il bit SUID (4755) per eseguire con privilegi di root e modificare /etc/passwd; il bit sticky su un file eseguibile non fornisce questa capacità.",
+    "hint": "Per operare su file di sistema protetti serve il bit SUID (4), non il bit sticky (1)."
   },
   {
     "question": "Il comando 'chmod 6774 nomefile' imposta i seguenti permessi per il file nomefile '- r w S r w S r - -'",
@@ -350,8 +350,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il valore 6774 imposta SUID+SGID (6) con permessi 774 (rwxrwxr--). Poiché i permessi 7 includono l'esecuzione ('x'), i bit speciali si manifestano come 's' minuscolo, non 'S' maiuscolo. La stringa corretta sarebbe '-rwsrwsr--'.",
+    "hint": "Verifica la differenza tra 'S' maiuscolo (senza esecuzione) e 's' minuscolo (con esecuzione) nei permessi."
   },
   {
     "question": "Il comando 'sudo adduser utente1 studente' genera un errore se il gruppo \"studente\" esiste ma l'utente \"utente1\" non esiste.",
@@ -368,8 +368,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Quando adduser riceve due argomenti (utente e gruppo), tenta di aggiungere un utente esistente a un gruppo esistente. Se l'utente non esiste, il comando fallisce perché non può aggiungere un utente inesistente al gruppo.",
+    "hint": "Il comando adduser con sintassi 'utente gruppo' richiede che l'utente esista già nel sistema."
   },
   {
     "question": "Il comando 'touch -cat202006021200 filename' imposta l'atime ed il ctime di filename al '2 giugno 2020 ore 12:00'.",
@@ -386,8 +386,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando touch non può modificare il ctime (change time), che viene aggiornato automaticamente dal kernel quando cambiano i metadati del file. Inoltre, la sintassi mostrata è errata: l'opzione corretta per specificare la data è -t, non -cat, e separa le opzioni dalla data.",
+    "hint": "Ricorda che il ctime è gestito dal sistema e non è modificabile manualmente dagli utenti."
   },
   {
     "question": "Il comando 'ls -R mydir' lista il contenuto di tutte le directory con radice \"mydir\".",
@@ -404,8 +404,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione -R (recursive) elenca ricorsivamente il contenuto di tutte le sottodirectory partendo dalla directory specificata, mostrando l'intera gerarchia.",
+    "hint": "L'opzione -R sta per 'recursive'."
   },
   {
     "question": "Si assuma di avere due shell aperte, etichettate come shell_1 e shell_2 e si consideri la seguente sequenza di comandi (shell_i:cmd indica che cmd e' eseguitto nella shell i, i=1,2) eseguiti in usermode. Quale e' il loro effetto?",
@@ -426,8 +426,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "shell_1: xterm\nshell_2: ps -C xterm\n#restituisce xtermPID\nshell 2: kill -s SIGINT xtermPID",
-    "explanation": "",
-    "hint": ""
+    "explanation": "SIGINT è il segnale di interruzione (tipicamente generato da Ctrl+C) che per default causa la terminazione del processo. Xterm, essendo un processo interattivo, terminerà a meno di non avere un handler specifico per il segnale.",
+    "hint": "SIGINT è il segnale che normalmente interrompe l'esecuzione di un programma."
   },
   {
     "question": "Si assuma di avere due shell aperte, etichettate come shell_1 e shell_2 e si consideri la seguente sequenza di comandi (shell_i:cmd indica che cmd e' eseguitto nella shell i, i=1,2) eseguiti in usermode. Quale e' il loro effetto?",
@@ -448,8 +448,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "shell_1: xterm\nshell_2: ps -C xterm\n#restituisce xtermPID\nshell 2: kill -s SIGSTOP xtermPID",
-    "explanation": "",
-    "hint": ""
+    "explanation": "SIGSTOP sospende l'esecuzione di un processo, che entra nello stato T (stopped). Il processo rimane in memoria ma non viene eseguito fino alla ricezione di SIGCONT, diversamente da SIGTSTP che può essere ignorato.",
+    "hint": "SIGSTOP mette in pausa un processo, non lo termina né lo manda in background."
   },
   {
     "question": "Per conoscere lo stato di un job in esecuzione si deve utilizzare il comando",
@@ -466,8 +466,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "~$ jobs -p",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando 'jobs -p' mostra solo i PID dei processi dei job in background, non il loro stato. Per visualizzare lo stato (running, stopped, done) è necessario usare il comando 'jobs' senza opzioni o con opzioni appropriate come -l.",
+    "hint": "L'opzione -p sta per 'process ID' e mostra solo i numeri di processo."
   },
   {
     "question": "Il comando",
@@ -488,8 +488,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "sudo adduser --home=/home/testdir --no-create-home usertest",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione --no-create-home impedisce la creazione della directory home, ma il campo home in /etc/passwd viene comunque impostato su /home/testdir. Questo genera inconsistenza perché il percorso registrato nel file di sistema non esiste fisicamente nel filesystem.",
+    "hint": "Considera cosa succede quando specifichi un percorso home ma impedisci esplicitamente la creazione della directory."
   },
   {
     "question": "I seguenti segnali possono essere catturati e gestiti da un programma c eseguito in usermode",
@@ -506,8 +506,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "SIGINT\nSIGABRT\nSIGTERM",
-    "explanation": "",
-    "hint": ""
+    "explanation": "SIGINT (interruzione da tastiera), SIGABRT (abort) e SIGTERM (terminazione graceful) sono segnali asincroni che il processo può catturare tramite signal() o sigaction() per eseguire cleanup prima di terminare.",
+    "hint": "Pensa a quali segnali permettono a un programma di 'pulire' prima di uscire."
   },
   {
     "question": "I seguenti segnali non possono essere catturati e gestiti da un programma c eseguito in usermode",
@@ -524,8 +524,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "SIGKILL\nSIGINT\nSIGABRT",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Sebbene SIGKILL non possa essere catturato né ignorato, SIGINT e SIGABRT sono gestibili dal programma tramite appositi handler. L'affermazione è quindi falsa perché non tutti i segnali elencati sono incatturabili.",
+    "hint": "Ricorda che c'è un segnale 'speciale' che il kernel gestisce sempre in modo forzato, mentre gli altri due sono intercettabili."
   },
   {
     "question": "I comandi '~$ sudo -u usertest' e '~$ su -l usertest' sono equivalenti",
@@ -542,8 +542,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "`su -l` simula un login completo caricando l'ambiente dell'utente target e cambiando directory nella home, mentre `sudo -u` esegue il comando mantenendo gran parte dell'ambiente corrente (a meno di opzioni aggiuntive come -i).",
+    "hint": "Confronta cosa succede alle variabili d'ambiente e alla directory di lavoro corrente nei due casi."
   },
   {
     "question": "I seguenti comandi producono lo stesso risultato",
@@ -560,8 +560,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "dd if=filein of=fileout bs=100 count=1\ndd if=filein of=fileout bs=1 count=100",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Entrambi i comandi copiano esattamente 100 byte dal file di input a quello di output: il primo legge 100 byte in un'unica operazione, il secondo legge 100 blocchi da 1 byte ciascuno. Il risultato finale è identico.",
+    "hint": "Fai il calcolo: moltiplica bs per count in entrambi i casi."
   },
   {
     "question": "Supponiamo di avere un file di nome filename e di eseguire il comando 'ln filename link1' i file filename e link1 hanno inode diversi",
@@ -578,8 +578,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando 'ln' senza opzioni crea un hard link, che non è una copia del file ma un nuovo nome che punta allo stesso inode del file originale. Entrambi i nomi condividono quindi identici metadati fisici su disco.",
+    "hint": "Gli hard link condividono la stessa struttura di inode con il file originale."
   },
   {
     "question": "Si consideri il comando 'ln -s myfile mylink'. Dopo la sua esecuzione, myfile e mylink avranno un diverso inode.",
@@ -596,8 +596,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando 'ln -s' crea un symbolic link (soft link), che è un file speciale distinto contenente solo un riferimento testuale al percorso del target. Essendo un file a sé stante, possiede un inode diverso dal file originale.",
+    "hint": "Un symbolic link è un file separato che punta a un altro percorso, non condivide l'inode."
   },
   {
     "question": "Il comando 'chmod 6774 nomefile' imposta i seguenti permessi per il file nomefile '- r w s r w s r - -'",
@@ -614,8 +614,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il valore ottale 6774 si scompone in: 6 (setuid=4 + setgid=2) per i bit speciali, 7 (rwx) per owner, 7 (rwx) per group e 4 (r--) per others. I bit setuid e setgid visualizzano 's' al posto di 'x' quando il permesso di esecuzione è presente, generando la stringa -rwsrwsr--.",
+    "hint": "Analizza separatamente il primo digit (bit speciali) dai tre gruppi di permessi standard."
   },
   {
     "question": "Assuma di avere due shell aperte, etichettate come shell_1 e shell_2 e supponga di eseguire, in usemode, la sequenza di comandi che segue (shell_i: cmd indica che cmd e' eseguitto nella shell_i, i=1,2). Quale e' il loro effetto sul processo xterm?",
@@ -636,8 +636,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "shell_1: sleep 300\nshell_2: ps -C sleep\n#restituisce sleepPID\nshell_2: kill -s SIGSTOP sleepPID\nshell_2: kill -s SIGCONT sleepPID",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Quando un processo in foreground riceve SIGSTOP, il controllo del terminale ritorna alla shell. Se riattivato con SIGCONT da un'altra shell, il processo riprende l'esecuzione ma in background, poiché non riacquista automaticamente il controllo del terminale e non è più gestito come job di foreground dalla shell originaria.",
+    "hint": "Considera cosa succede al controllo del terminale quando un processo viene fermato esternamente e poi riattivato."
   },
   {
     "question": "Il comando ~$ sleep 30 | sleep 15 | sleep 10 & crea 1 job in background",
@@ -654,8 +654,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Una pipeline (comandi collegati da |) viene gestita dalla shell come un unico job, indipendentemente dal numero di processi che la compongono. L'operatore & applicato alla pipeline intera crea quindi un singolo job in background.",
+    "hint": "La shell tratta l'intera pipeline come una singola unità di job control."
   },
   {
     "question": "La directory /tmp ha i permessi di accesso impostati a 1777/drwxrwxrwt per consentire a tutti gli utenti di leggere, creare e rimuovere file anche se non hanno permessi di scrittura su di essi.",
@@ -672,8 +672,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lo sticky bit (indicato dalla 't' finale in drwxrwxrwt) impone che solo il proprietario del file, il proprietario della directory o root possano rimuovere o rinominare i file al suo interno, impedendo agli altri utenti di cancellare file nonostante i permessi 777 sulla directory.",
+    "hint": "Lo sticky bit protegge i file nella directory da rimozioni arbitrarie da parte di utenti diversi dal proprietario."
   },
   {
     "question": "Consideriamo il file eseguibile myProgram con proprietario utente1 e con permessi di accesso -rwxr-xr-x. Se utente2 esegue myProgram si osserva che il RUID è diverso dal EUID",
@@ -690,8 +690,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I permessi -rwxr-xr-x non includono il bit setuid (s). Senza setuid, quando un utente esegue un programma, l'Effective UID (EUID) coincide con il Real UID (RUID) dell'utente che lo ha lanciato, quindi non sono diversi.",
+    "hint": "Verifica la presenza del bit setuid nei permessi del proprietario per determinare se l'EUID cambia."
   },
   {
     "question": "Supponiamo di avere una directory '/home/dir' creata da root con permessi di accesso '1777/drwxrwxrwt (owner root)' ed al suo interno il file filename, creato da root, con permessi di accesso '0770/-rwxrwx--- (owner root)' Un qualsiasi utente puo' rimovere il file filename eseguendo, in user mode, il comando rm /home/dir/filename",
@@ -708,8 +708,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lo sticky bit (t) sulla directory impedisce che utenti diversi dal proprietario del file (root) possano rimuoverlo, anche se la directory ha permessi 777. Pertanto un utente qualsiasi non può cancellare filename.",
+    "hint": "Lo sticky bit limita la capacità di rimozione ai soli proprietari dei file, nonostante i permessi di scrittura sulla cartella."
   },
   {
     "question": "Per eseguire con successo il comando studente@hostname~$ sudo -u usertest stat file_di_usertest quale password deve essere fornita?",
@@ -730,8 +730,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando sudo richiede l'autenticazione dell'utente che sta invocando il comando (lo studente), non dell'utente target (usertest) né di root, per verificare che il chiamante abbia i privilegi necessari.",
+    "hint": "sudo verifica l'identità di chi esegue il comando, non di chi viene impersonato."
   },
   {
     "question": "Il comando adduser utente1; adduser utente1 studente , dopo aver creato l'utente utente1, genera errore nell'esecuzione del secondo comando in quanto utente1 esiste già.",
@@ -748,8 +748,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La sintassi 'adduser utente gruppo' aggiunge un utente esistente a un gruppo esistente, non crea un nuovo utente. Quindi il secondo comando aggiunge semplicemente utente1 al gruppo studente senza generare errori.",
+    "hint": "adduser con due argomenti gestisce l'appartenenza ai gruppi, non la creazione di utenti duplicati."
   },
   {
     "question": "Dopo l'esecuzione del comando ln filename link1, il comando \"stat filename\" e \"stat link1\" avranno output uguale a meno del campo \"File\".",
@@ -766,8 +766,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando ln senza opzioni crea un hard link, che condivide lo stesso inode del file originale. Poiché stat mostra le informazioni dell'inode, i campi come dimensione, permessi e timestamp saranno identici, differendo solo il nome del file mostrato.",
+    "hint": "Considera che tipo di collegamento viene creato di default e quali metadati del file system vengono condivisi tra i due nomi."
   },
   {
     "question": "Una directory con i permessi di accesso settati a rw- --- --- permette all'utente proprietario della directory di: leggere il contenuto della directory inclusi gli attributi del file; impostare la directory come cwd; attraversare la directory;",
@@ -784,7 +784,7 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Per le directory, il permesso di esecuzione (x) è necessario per attraversare la directory (comando cd) e accedere ai file al suo interno. Con permessi rw- manca il bit x, quindi il proprietario non può impostare la directory come cwd né attraversarla, anche se può leggerne il contenuto.",
+    "hint": "Ricorda che per le directory il permesso di esecuzione non significa 'eseguire', ma abilita l'attraversamento e l'accesso ai file contenuti."
   }
 ]

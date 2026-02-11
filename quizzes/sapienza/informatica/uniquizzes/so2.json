@@ -22,8 +22,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I PID in Linux sono numeri interi che, una volta raggiunto il valore massimo configurabile (tipicamente 32767), vengono riutilizzati dal kernel selezionando il primo disponibile in ordine crescente. Non crescono indefinitamente perché lo spazio dei PID è finito.",
+    "hint": "Cosa succede quando un sistema rimane acceso per molto tempo e raggiunge il limite massimo di PID?"
   },
   {
     "question": "Quale delle seguenti affermazioni sugli errori delle syscall è vera?",
@@ -48,8 +48,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La funzione strerror() converte il codice di errore contenuto in errno in una stringa descrittiva che può essere stampata su qualsiasi stream, incluso stdout. La perror() invece stampa automaticamente su stderr e non accetta stringhe di formato come printf.",
+    "hint": "Confronta le signature delle funzioni perror e strerror, e nota dove scrive ciascuna."
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
@@ -74,8 +74,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il primo processo (init/systemd, PID 1) è creato direttamente dal kernel durante il boot. Tutti gli altri processi derivano da chiamate fork() (o clone()) eseguite da processi genitori già esistenti, formando una gerarchia ad albero.",
+    "hint": "Rifletti su come nasce il processo iniziale rispetto a tutti gli altri nel sistema."
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi Linux è falsa?",
@@ -100,8 +100,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I comandi interni della shell (built-in come cd, export, echo) vengono eseguiti direttamente dal processo shell senza creare un nuovo processo tramite fork(). Solo i comandi esterni generano nuovi processi.",
+    "hint": "Distingui tra comandi integrati nell'eseguibile della shell e programmi esterni memorizzati nel filesystem."
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
@@ -126,8 +126,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Ogni esecuzione di un programma crea un nuovo processo con un proprio PID univoco e uno spazio di indirizzamento indipendente. Anche se si tratta dello stesso file eseguibile, le istanze sono entità distinte gestite separatamente dallo scheduler.",
+    "hint": "Considera cosa rende unico un processo oltre al codice che esegue."
   },
   {
     "question": "Un programma scritto in linguaggio C:",
@@ -152,8 +152,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In C, le stringhe sono convenzionalmente rappresentate come array di caratteri terminati dal carattere nullo '\\0' (valore ASCII 0), che funge da sentinella per le funzioni di libreria. Non è corretto usare '\\n' (newline) o il carattere '0' (valore ASCII 48) come terminatori.",
+    "hint": "Ricorda quale carattere ha valore ASCII 0 e viene usato dalle funzioni come strlen per determinare la fine della stringa."
   },
   {
     "question": "Quale delle seguenti affermazioni è vera?",
@@ -178,8 +178,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Richard Stallman, fondatore della Free Software Foundation, descrisse la licenza GPL nel 1989. Linus Torvalds scrisse il kernel Linux nel 1991 (non anni '80), mentre i pacchetti GNU furono sviluppati dal progetto GNU di Stallman, non riscritti da Torvalds.",
+    "hint": "Distingui tra il progetto GNU (anni '80, Stallman, GPL) e il kernel Linux (1991, Torvalds)."
   },
   {
     "question": "Quale delle seguenti affermazioni è vera?",
@@ -204,8 +204,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "È possibile montare filesystem manualmente specificando dispositivo e punto di mount senza /etc/fstab. Inoltre, esistono filesystem virtuali (come procfs, sysfs, tmpfs) che non corrispondono a dischi fisici ma risiedono in memoria.",
+    "hint": "Considera i filesystem virtuali come /proc o /sys, e ricorda che il comando mount può essere usato con argomenti espliciti."
   },
   {
     "question": "Quale delle seguenti affermazioni sulla comunicazione tra processi in Linux è vera?",
@@ -230,8 +230,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le pipe anonime (pipe) permettono comunicazione solo tra processi in relazione parentale (padre-figlio), non qualunque coppia. Le named pipes (FIFO) consentono invece comunicazione tra processi non parenti. Il pipelining da shell non è l'unico modo né universale.",
+    "hint": "Ricorda che le pipe anonime ereditate dai figli richiedono parentela, mentre le named pipes usano il filesystem come punto di incontro."
   },
   {
     "question": "Quale delle seguenti affermazioni sulla comunicazione tra processi in Linux è vera?",
@@ -256,8 +256,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le socket (Unix domain o di rete) consentono comunicazione bidirezionale tra qualsiasi coppia di processi, indipendentemente dalla loro relazione gerarchica o dalla macchina su cui risiedono, a differenza delle pipe che hanno limitazioni di parentela o filesystem condiviso.",
+    "hint": "Le socket sono il meccanismo più versatile di IPC, utilizzabile anche per comunicare tra processi su macchine diverse via rete."
   },
   {
     "question": "Si supponga di avere il seguente frammento di codice: FILE *stream = fopen(NOMEFILE, \"w\"); Dire quale frammento di codice ha lo stesso effetto.",
@@ -282,8 +282,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La modalità \"w\" di fopen corrisponde alla combinazione di flag O_WRONLY (apertura in scrittura), O_CREAT (creazione del file se non esiste) e O_TRUNC (troncamento a zero se esiste). Il terzo argomento 0666 specifica i permessi di creazione.",
+    "hint": "Considera cosa succede al contenuto preesistente del file quando usi la modalità w."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files è falsa?",
@@ -308,8 +308,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I lock su file (record locking) si implementano tramite la syscall fcntl con comandi come F_SETLK o F_SETLKW, mentre ioctl è riservata a operazioni specifiche su dispositivi di I/O.",
+    "hint": "Pensa a quale syscall gestisce i lock advisory in conformità POSIX."
   },
   {
     "question": "Quale delle seguenti affermazioni sui segnali Linux è vera?",
@@ -334,8 +334,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Un processo può inviare segnali a un altro processo dello stesso utente (stesso UID effettivo) tramite la syscall kill, a condizione di avere i permessi necessari. I segnali SIGKILL e SIGSTOP non possono invece essere catturati o ignorati.",
+    "hint": "Verifica quali segnali sono incapturabili e chi può inviare segnali a chi."
   },
   {
     "question": "Quale delle seguenti affermazioni sugli errori delle syscall di Linux è vera?",
@@ -360,8 +360,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La funzione strerror converte il valore di errno in una stringa descrittiva dell'errore, che può essere stampata su stdout tramite printf. La funzione perror invece stampa automaticamente su stderr.",
+    "hint": "Distingui tra le funzioni che convertono il codice di errore e quelle che gestiscono l'output su stderr."
   },
   {
     "question": "La stringa Informatica9000 ha un match con la seguente REGEX:",
@@ -386,8 +386,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il metacarattere $ in una espressione regolare indica la fine della stringa (end-of-line anchor). Poiché la stringa termina esattamente con \"Informatica9000\", si verifica un match completo.",
+    "hint": "Controlla il significato del simbolo $ nel contesto delle regex."
   },
   {
     "question": "Quali delle seguenti affermazioni sui comandi della bash è vera?",
@@ -412,8 +412,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando echo con substitution di comando (backticks o $()) esegue il comando interno e ne stampa l'output su stdout. Le altre opzioni sono errate: cat legge file o stdin, non accetta stringhe come argomento; man apre la prima sezione trovata o quella specificata, non tutte in sequenza; clear scrolla il terminale verso l'alto ma non cancella la cronologia.",
+    "hint": "Presta attenzione alla sintassi di command substitution e al comportamento effettivo di cat, man e clear rispetto allo standard output."
   },
   {
     "question": "Relativamente alla programmazione bash, la variabile IFS:",
@@ -438,8 +438,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "IFS (Internal Field Separator) è una variabile speciale della shell che definisce l'insieme di caratteri utilizzati come separatori per lo word splitting durante l'espansione dei comandi. A differenza di quanto suggerito dall'acronimo 'Splitting', il nome corretto è 'Separator', e può contenere più caratteri contemporaneamente.",
+    "hint": "Considera che IFS può contenere sequenze di caratteri multipli, non solo uno singolo."
   },
   {
     "question": "Quale delle seguenti affermazioni sul Linguaggio C è vera? ",
@@ -464,8 +464,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il linguaggio C fu sviluppato da Dennis Ritchie e Ken Thompson presso i Bell Laboratories (AT&T) tra il 1969 e il 1973. I Bell Labs erano i laboratori di ricerca della American Telephone and Telegraph Company, una compagnia telefonica americana.",
+    "hint": "Pensa alla storia del linguaggio e alla famosa azienda telefonica americana dove furono sviluppati Unix e C."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle funzioni malloc, calloc, realloc e free è falsa?",
@@ -490,8 +490,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La funzione calloc inizializza tutta la memoria allocata a zero, mentre realloc(NULL, size) si comporta esattamente come malloc e non effettua alcuna inizializzazione. Inoltre, calloc gestisce separatamente il numero di elementi e la dimensione, verificando eventuali overflow.",
+    "hint": "Confronta il comportamento di calloc e malloc/realloc riguardo all'inizializzazione della memoria allocata."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle funzioni malloc, calloc, realloc e free è falsa?",
@@ -516,8 +516,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "malloc alloca memoria grezza senza inizializzarla, mentre calloc inizializza tutti i byte a zero e accetta due parametri distinti (numero di elementi e dimensione singola) anziché il prodotto diretto. Inoltre, calloc include controlli di overflow nella moltiplicazione.",
+    "hint": "Verifica se entrambe le funzioni inizializzano la memoria nello stesso modo e come gestiscono i parametri."
   },
   {
     "question": "Quale dei seguenti sistemi operativi non è un antenato di Linux?",
@@ -542,8 +542,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linux deriva da Unix (e indirettamente da MULTICS, che influenzò la progettazione di Unix), mentre MacOSX discende da BSD/NeXTSTEP ed è contemporaneo o posteriore a Linux, non un suo antenato storico.",
+    "hint": "Considera la linea temporale: MULTICS (anni '60) → Unix (anni '70) → Linux (anni '90), mentre MacOSX è degli anni '90 ma su linea evolutiva diversa."
   },
   {
     "question": "Si consideri il comando: find Doc* \\( -name ‘Doc*’ -a -type d \\) -o -newer Documenti -exec touch ‘{}’ \\;",
@@ -568,8 +568,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando utilizza l'operatore -o che collega condizioni alternative, selezionando anche file non directory che siano più recenti di Documenti. Inoltre, touch modifica solo atime e mtime (non ctime), e l'uso di -exec impedisce la stampa a schermo.",
+    "hint": "Analizza la precedenza degli operatori logici in find e verifica quali timestamp vengono effettivamente modificati dal comando touch."
   },
   {
     "question": "Quale delle seguenti affermazioni sulla syscall fork è falsa?",
@@ -594,8 +594,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La fork() duplica completamente lo spazio di indirizzamento del processo padre, incluso lo stack delle chiamate, permettendo al figlio di riprendere l'esecuzione esattamente dal punto della fork. Le eccezioni riguardano PID, PPID e valore di ritorno.",
+    "hint": "Se lo stack non venisse copiato, come potrebbe il processo figlio conoscere l'indirizzo di ritorno dalla system call?"
   },
   {
     "question": "Quale delle seguenti affermazioni sui comando cmp, diff e patch è vera?",
@@ -620,8 +620,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando patch applica modifiche a file testuali utilizzando il formato specifico prodotto da diff (unified o context diff). cmp confronta file byte per byte e non genera output compatibile con patch.",
+    "hint": "Ricorda che cmp è progettato per confronti binari byte-level, mentre diff genera istruzioni di editing applicabili da patch."
   },
   {
     "question": "Si supponga di voler avere in esecuzione in background i comando cmd1 e cmd2 (si supponga anche che tali comandi non terminino, a meno che non gli si mandi un opportuno segnale). Quale dei seguenti modi è corretto?",
@@ -646,8 +646,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Per mettere processi in background è necessario prima sospenderli con Ctrl+Z (SIGTSTP), poi usar bg. La sequenza corretta sospende cmd1, poi cmd2, e infine bg bg mette entrambi in background (agendo prima sull'ultimo job sospeso, poi sul precedente).",
+    "hint": "Ctrl+Z sospende il processo in foreground, mentre bg può essere invocato ripetutamente per riattivare job sospesi in background."
   },
   {
     "question": "Si supponga di voler avere in esecuzione in background i comando cmd1 e cmd2. Quale dei seguenti modi è corretto?",
@@ -672,8 +672,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Ctrl+Z sospende il processo in foreground inviando il segnale SIGTSTP; il comando bg successivo lo riprende in background. Va ripetuto per entrambi i comandi per averli entrambi in background contemporaneamente.",
+    "hint": "Ricorda che dopo aver sospeso un processo con Ctrl+Z, devi esplicitamente riattivarlo in background con il comando bg."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files è falsa?",
@@ -698,8 +698,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "unlink() rimuove solo il riferimento (hard link) al file; il contenuto fisico rimane sul disco finché il contatore dei link non arriva a zero e nessun processo tiene aperto un file descriptor su quel file.",
+    "hint": "Considera cosa succede quando esistono multiple hard link o quando un processo ha ancora aperto il file."
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
@@ -724,8 +724,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Un job può comprendere pipeline di più processi (es. cmd1 | cmd2); il comando jobs elenca tutti i job sospesi o in background, non solo quelli in foreground; la bash notifica la terminazione solo per i job in background, non per quelli in foreground.",
+    "hint": "Ricorda che un job può essere una pipeline e che le notifiche di terminazione con job ID riguardano i processi in background."
   },
   {
     "question": "Quale delle seguenti affermazioni sulla syscall sigaction è vera?",
@@ -750,8 +750,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "sigaction configura il gestore per un singolo segnale specificato come primo argomento; non esiste un handler universale per tutti i segnali, e sa_mask serve a bloccare (mascherare) segnali aggiuntivi durante l'esecuzione dell'handler, non a ignorarli.",
+    "hint": "Verifica la differenza tra mascherare (bloccare) e ignorare un segnale, e ricorda che ogni segnale richiede una chiamata separata."
   },
   {
     "question": "Quale delle seguenti affermazioni sulla syscall sigaction è vera?",
@@ -776,8 +776,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "sigaction opera su un segnale specifico per volta, quindi non è possibile definire un unico handler per tutti i segnali con chiamate ripetute; inoltre, il campo sa_mask blocca (maschera) i segnali durante l'esecuzione dell'handler, ma non li ignora.",
+    "hint": "Controlla attentamente la terminologia: sa_mask blocca i segnali in arrivo durante l'handler, ma non li ignora permanentemente."
   },
   {
     "question": "Si supponga di voler lanciare in background i comandi cmd1 e cmd2. Quale dei seguenti modi è corretto?",
@@ -802,8 +802,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In bash, l'operatore & applicato alla fine di un comando lo esegue in background. L'opzione B mette solo cmd1 in background, l'opzione C esegue i comandi in sequenza in un subshell backgroundato, e l'opzione D mette solo cmd2 in background. Per eseguire entrambi in background come job separati servirebbe `cmd1 & cmd2 &`.",
+    "hint": "Ricorda che l'operatore & si applica solo al comando che lo precede immediatamente, a meno che non venga usato un raggruppamento."
   },
   {
     "question": "Si supponga di voler lanciare in background i comandi cmd1 e cmd2 (si supponga anche che tali comandi non terminino, a meno che non gli si mandi un opportuno segnale). Quale dei seguenti modi è corretto?",
@@ -828,8 +828,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione A esegue cmd1 in foreground e cmd2 in background, l'opzione B esegue entrambi in foreground con dipendenza logica, e l'opzione C esegue solo cmd1 in background lasciando cmd2 in foreground. Per eseguire entrambi in background è necessario usare `cmd1 & cmd2 &`.",
+    "hint": "Controlla quanti processi vengono realmente messi in background in ciascuna opzione."
   },
   {
     "question": "Si supponga di voler lanciare in background i comandi cmd1 e cmd2. Quale dei seguenti modi è corretto?",
@@ -854,8 +854,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'operatore & posto dopo un comando ne permette l'esecuzione in background. Per lanciare entrambi i comandi come job separati in background è necessario applicare & a ciascuno di essi: `cmd1 & cmd2 &`. Le altre opzioni o eseguono solo uno dei due in background, o li eseguono sequenzialmente in un subshell.",
+    "hint": "Ogni comando che deve girare in background necessita del proprio operatore &."
   },
   {
     "question": "Quale delle seguenti affermazioni sul comando time è falsa?",
@@ -880,8 +880,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando esterno `/usr/bin/time` (a differenza del builtin della bash) può mostrare statistiche dettagliate oltre ai tempi, come l'uso della memoria, le operazioni di I/O e i cambi di contesto, specialmente con l'opzione `-v`. Quindi non è limitato solo ai tempi di esecuzione.",
+    "hint": "Il comando time esterno offre opzioni di formattazione che includono risorse di sistema oltre al tempo."
   },
   {
     "question": "Quale delle seguenti affermazioni sui comandi less e more è falsa?",
@@ -906,8 +906,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I pager `less` e `more` si terminano premendo il tasto `q` (quit), non CTRL+C. L'uso di CTRL+C invia un segnale SIGINT che potrebbe interrompere bruscamente il programma lasciando il terminale in uno stato non corretto, mentre `q` permette una terminazione pulita e ordinata.",
+    "hint": "Pensa al tasto standard per uscire dalla maggior parte delle applicazioni interattive testuali in Unix."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall wait e waitpid è falsa?",
@@ -932,8 +932,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La variabile status non contiene direttamente l'exit status, ma un valore codificato che include informazioni su come il processo è terminato (normalmente, per segnale, etc.). Per estrarre l'exit status vero e proprio è necessario utilizzare la macro WEXITSTATUS(status).",
+    "hint": "Ricorda che status è un intero che codifica più informazioni, non solo il valore di ritorno."
   },
   {
     "question": "Relativamente alla programmazione bash, quale delle seguenti affermazioni è vera?",
@@ -958,8 +958,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "BASH sta per Bourne Again Shell, non Advanced. Inoltre, sebbene bash supporti array associativi (dalla v4.0), la sintassi mostrata nell'opzione C è errata (non usa parentesi graffe e virgole, ma parentesi tonde e spazi).",
+    "hint": "Verifica l'acronimo di BASH e la sintassi corretta per gli array associativi in bash moderno."
   },
   {
     "question": "Una directory di un filesystem:",
@@ -984,8 +984,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Ogni directory contiene i link speciali \".\" e \"..\", dove \"..\" punta alla directory padre. Per la directory root \"/\", il padre punta a se stessa, evitando cicli infiniti nel filesystem.",
+    "hint": "Pensa ai link speciali \".\" e \"..\" nelle directory, specialmente nella root."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files è falsa?",
@@ -1010,8 +1010,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La syscall rename sposta o rinomina un file modificando i link nella directory senza copiare i dati, mentre cp crea una nuova copia fisica del contenuto del file su disco.",
+    "hint": "Considera la differenza tra spostare un file e duplicarne il contenuto."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files e che si trovano nella sezione 2 del manuale è falsa?",
@@ -1036,8 +1036,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le syscall su file includono anche operazioni di controllo come ioctl, fcntl, gestione dei permessi (chmod, chown), link (link, symlink), metadati (stat), e molte altre, non solo le operazioni base di I/O.",
+    "hint": "Pensa alle operazioni di controllo, permessi, link simbolici e metadati che si possono fare sui file."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano le directory è falsa?",
@@ -1062,8 +1062,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La funzione opendir (wrapper di syscall) serve per leggere il contenuto di una directory tramite readdir, non per modificarla. Per cambiare il contenuto (creare/cancellare file) si usano syscall come open, mkdir, unlink o rmdir direttamente, senza bisogno di aprire la directory in lettura.",
+    "hint": "Pensa alla differenza tra operazioni di lettura (scansione) e operazioni di modifica del contenuto di una directory."
   },
   {
     "question": "Quale delle seguenti affermazioni sul comando kill è falsa?",
@@ -1088,8 +1088,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il simbolo % prima del numero indica un job ID relativo alla shell corrente, non un PID. Per riferirsi al processo con PID 10 bisogna omettere il percento, scrivendo semplicemente kill -KILL 10.",
+    "hint": "Ricorda la differenza tra identificatore di job (job ID) e identificatore di processo (PID) nella sintassi del comando kill."
   },
   {
     "question": "Per eliminare tutte le linee duplicate in un file di testo (senza preoccuparsi dell’ordinamento delle righe) occorre:",
@@ -1114,8 +1114,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando uniq rimuove solo le linee duplicate adiacenti. Per eliminare tutti i duplicati indipendentemente dalla loro posizione, è necessario prima ordinare il file con sort (che raggruppa i duplicati) e poi applicare uniq.",
+    "hint": "Considera il comportamento di uniq quando le linee duplicate non sono consecutive nel file."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle pipe di Linux è vera?",
@@ -1140,8 +1140,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La syscall pipe() crea una pipe anonima e restituisce due file descriptor nell'array fornito: pipefd[0] per la lettura e pipefd[1] per la scrittura, abilitando la comunicazione unidirezionale tra processi.",
+    "hint": "Ricorda cosa restituisce la funzione pipe() nel suo array di interi."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files è falsa?",
@@ -1166,8 +1166,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La syscall stat() popola una struttura dati in memoria (struct stat) con i metadati del file, mentre il comando bash stat formatta e visualizza queste informazioni su stdout in modo leggibile. Hanno effetti diversi a livello di I/O e output.",
+    "hint": "Distingui tra l'interfaccia di sistema che manipola strutture dati in memoria e il comando utente che produce output formattato."
   },
   {
     "question": "Gli script sed:",
@@ -1192,8 +1192,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gli script sed seguono la sintassi 'indirizzo azione', dove l'indirizzo (condizione) può essere un numero di riga, un intervallo o un'espressione regolare che seleziona le linee su cui applicare il comando. Questo formato è fondamentale per l'uso dell'opzione -f di sed.",
+    "hint": "Ricorda che sed usa il pattern 'indirizzo comando' dove l'indirizzo filtra le righe prima dell'elaborazione."
   },
   {
     "question": "Quale delle seguenti affermazioni sui comandi cat e od è falsa?",
@@ -1218,8 +1218,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'affermazione è falsa perché od (octal dump) produce sempre una rappresentazione numerica dei byte (in ottale, esadecimale o decimale), mentre cat visualizza i caratteri interpretati. Anche con file ASCII, od mostrerebbe i valori numerici corrispondenti ai caratteri, non il testo leggibile.",
+    "hint": "Considera che od mostra sempre una rappresentazione numerica dei byte, mai il contenuto testuale diretto."
   },
   {
     "question": "Relativamente alla programmazione bash, quale delle seguenti affermazioni sul carattere # è vera?",
@@ -1244,8 +1244,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In bash il carattere # non è sempre un commento: in costrutti come $# (numero di argomenti) o ${#variabile} (lunghezza stringa) ha significato speciale, e #! all'inizio del file è lo shebang. Inoltre, all'interno di stringhe quotate singolarmente può perdere il significato di commento.",
+    "hint": "Pensa a contesti come $# o ${#var} dove il cancelletto assume funzioni diverse dal commento."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall dei processi Linux è falsa?",
@@ -1270,8 +1270,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La syscall setuid() ha restrizioni severe: un processo senza privilegi può solo scambiare il real UID con l'effective UID (se il bit set-user-ID è impostato sul file eseguibile), ma non può impostare arbitrariamente il real UID a qualsiasi valore. Solo processi con privilegi elevati possono modificare liberamente gli UID.",
+    "hint": "Ricorda che le syscall per modificare gli UID richiedono privilegi specifici o condizioni particolari di sicurezza."
   },
   {
     "question": "Relativamente alla programmazione bash, quale delle seguenti affermazioni è vera?",
@@ -1296,8 +1296,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Bash è un linguaggio debolmente tipizzato: non esiste dichiarazione esplicita di tipo come 'int count' (A falsa), le variabili intere (declare -i) convertono silenziosamente valori non numerici a 0 senza terminare il programma (B falsa), e esistono variabili in sola lettura tramite readonly o declare -r (D falsa).",
+    "hint": "Ricorda che bash gestisce le variabili principalmente come stringhe e supporta esplicitamente l'attributo readonly."
   },
   {
     "question": "Relativamente alla programmazione bash, quale delle seguenti affermazioni è vera?",
@@ -1322,8 +1322,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In bash, quando si dichiara una variabile con un tipo specifico tramite `declare` (es. `-i` per interi), l'attributo persiste finché la variabile non viene rimossa con `unset`. Solo dopo è possibile ridichiarla con un diverso tipo, poiché bash mantiene i metadati della variabile fino alla sua eliminazione esplicita.",
+    "hint": "Ricorda che in bash le variabili mantengono i loro attributi di tipo anche quando cambi valore, a meno che non vengano esplicitamente rimosse."
   },
   {
     "question": "Quale delle seguenti affermazioni sul comando ps è vera?",
@@ -1348,8 +1348,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando `ps` senza argomenti mostra per default i processi associati al terminale corrente (TTY) dell'utente che esegue il comando. Questo comportamento è definito dallo standard POSIX e mostra solo i processi del session leader associato al terminale.",
+    "hint": "Pensa a cosa succede quando apri un terminale e lanci semplicemente `ps` senza opzioni: quali processi vedi immediatamente?"
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
@@ -1374,8 +1374,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I processi in background non possono leggere dal terminale (stdin) perché riceverebbero il segnale SIGTTIN che li sospende; per interagire interattivamente con un processo tramite tastiera è necessario che sia in foreground, ovvero il processo di controllo del terminale.",
+    "hint": "Cosa succede a un processo in background che tenta di leggere dall'input? Ricorda il segnale che riceve."
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
@@ -1400,8 +1400,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il text segment è condivisibile tra processi (es. eseguibili multipli o dopo fork con copy-on-write), lo stack contiene variabili locali e contesto di esecuzione mentre i dati statici inizializzati risiedono nel data segment, e il PCB è una struttura dati unica per ogni processo gestita dal kernel.",
+    "hint": "Analizza attentamente ogni segmento di memoria: il codice può essere condiviso? Dove risiedono davvero le variabili statiche? Il PCB è unico o condiviso?"
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi Linux è falsa?",
@@ -1426,8 +1426,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I comandi builtin della bash (come `cd`, `echo`, `pwd`) vengono eseguiti direttamente dal processo della shell senza creare un nuovo processo figlio tramite fork/exec, al contrario dei comandi esterni che richiedono la creazione di un nuovo processo.",
+    "hint": "Perché `cd` deve essere necessariamente builtin e non un comando esterno? Pensa all'ambiente della shell."
   },
   {
     "question": "Quale dei seguenti campi non è presente nel process control block?",
@@ -1452,8 +1452,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il Process Control Block (PCB) contiene metadati essenziali per la gestione del processo come stato, registri, UID/GID, nice value e working directory, ma non include 'change time', che è un attributo dei file (inode) relativo ai metadati del filesystem.",
+    "hint": "Pensa alla differenza tra attributi di un processo in esecuzione e attributi di un file sul disco."
   },
   {
     "question": "Quale delle seguenti affermazioni sui comandi della bash è falsa?",
@@ -1478,8 +1478,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando `type` in bash indica come un comando verrebbe interpretato (builtin, alias, funzione o eseguibile), mentre per determinare il tipo di file (regolare, directory, etc.) si utilizza il comando `file`.",
+    "hint": "Esiste un comando specifico per identificare il tipo di file che ha un nome diverso da 'type'."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall dei processi in Linux è vera?",
@@ -1504,8 +1504,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'ambiente di esecuzione è accessibile al processo tramite il terzo argomento del main (char **envp) o la variabile globale environ, senza necessità di system call. Le altre opzioni confondono funzioni di lettura (getenv) con quelle di scrittura (setenv/putenv) o invertono chiave e valore.",
+    "hint": "Ricorda che il main può accettare tre argomenti, e il terzo contiene già l'ambiente."
   },
   {
     "question": "Quale delle seguenti affermazioni è vera?",
@@ -1530,8 +1530,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linux è multiutente perché permette a processi di utenti diversi di coesistere simultaneamente sul sistema, indipendentemente dal login interattivo. L'opzione A è falsa perché supporta login multipli contemporanei, mentre C e D confondono il concetto di multiprocesso con quello di multiutente.",
+    "hint": "Distingui tra la capacità di ospitare più utenti (multiutente) e la capacità di eseguire più programmi (multiprocesso)."
   },
   {
     "question": "Quale delle seguenti affermazioni è vera?",
@@ -1556,8 +1556,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione A è falsa perché Linux permette login multipli simultanei. L'opzione C confonde multiutente con multiprocesso. L'opzione D è imprecisa: essere multiprocesso significa gestire l'esecuzione concorrente, non semplicemente 'essere usato' su macchine con più processi.",
+    "hint": "Verifica attentamente le definizioni di multiutente e multiprocesso rispetto alle affermazioni specifiche."
   },
   {
     "question": "Il linguaggio C:",
@@ -1582,8 +1582,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il C è un linguaggio procedurale/strutturato che organizza il codice in funzioni e blocchi di controllo, ed è compilato in linguaggio macchina prima dell'esecuzione. È pienamente compatibile con Windows tramite compilatori come MSVC o MinGW.",
+    "hint": "Rifletti sul paradigma di programmazione del C e sulla trasformazione del codice sorgente in eseguibile."
   },
   {
     "question": "Quale delle seguenti non è un possibile stato di un processo Linux?",
@@ -1608,8 +1608,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "\"Continued\" non è uno stato di scheduling dei processi Linux. Quando un processo stoppato riceve SIGCONT, transiziona direttamente nello stato Running (o Runnable). Gli stati kernel standard sono Running, Sleeping (interruptible/uninterruptible), Stopped e Zombie.",
+    "hint": "Cosa succede a livello di stato quando un processo fermo riceve il segnale di continuazione?"
   },
   {
     "question": "Quale delle seguenti non è un possibile stato di un processo Linux?",
@@ -1634,8 +1634,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "\"Orphaned\" descrive una condizione relativa nella gerarchia dei processi (figlio il cui genitore è terminato), non uno stato di scheduling. Un processo orfano viene adottato da init/systemd e continua la sua esecuzione in uno stato standard come Running o Sleeping.",
+    "hint": "Distingui tra gli stati di esecuzione dello scheduler e le relazioni gerarchiche tra processi."
   },
   {
     "question": "Quale delle seguenti affermazioni sul comando top è vera?",
@@ -1660,8 +1660,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "top fornisce una vista dinamica aggiornata in tempo reale, diversamente da ps che offre un'istantanea statica. In modalità batch (-b) il comando è non-interattivo, quindi non può essere terminato premendo Q. In modalità interattiva si usa il tasto q, non necessariamente CTRL+C.",
+    "hint": "Considera le differenze tra modalità interattiva e batch, e come top differisce da ps nel comportamento dell'output."
   },
   {
     "question": "Relativamente alla programmazione bash, quali delle seguenti affermazioni è esatta?",
@@ -1686,8 +1686,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La sintassi $count[3] è errata per l'accesso agli array in bash. Senza parentesi graffe, bash espande $count (primo elemento) e concatena la stringa \"[3]\". La sintassi corretta richiede obbligatoriamente ${count[3]}.",
+    "hint": "Verifica la sintassi corretta per l'espansione di variabili e l'indicizzazione degli array in bash: le parentesi graffe sono opzionali o obbligatorie?"
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
@@ -1712,8 +1712,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando fg, quando invocato senza argomenti, agisce esclusivamente sul job corrente (indicato dal simbolo + nell'output di jobs), riportandolo in foreground. Per riattivare un job diverso è necessario specificare esplicitamente il job ID (es. fg %1).",
+    "hint": "Rifletti sulla differenza tra job della shell e processi di sistema, e su come fg seleziona il job senza argomenti espliciti."
   },
   {
     "question": "Per modificare tutte le occorrenze della lettera o ed i rispettivamente in O ed 1 di un file di testo, quale comando è più appropriato utilizzare?",
@@ -1738,8 +1738,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "sed è uno stream editor progettato per trasformare testo in modo non interattivo, permettendo sostituzioni multiple tramite espressioni regolari (es. sed 's/o/O/g; s/i/1/g'), mentre tr gestisce solo singoli caratteri e grep/awk hanno funzioni diverse.",
+    "hint": "Pensa a quale comando permette sostituzioni multiple complesse basate su pattern in un file."
   },
   {
     "question": "Si supponga di voler vedere, per tutti i processi dell’utente utente, il suo PID, il suo PPID, il comando usato per lanciare il processo (con tutti gli argomenti), la sua occupazione totale di memoria in kB e la sua attuale occupazione di memoria in RAM (senza considerare quindi la parte eventualmente swappata su disco), sempre in kB. Quale dei seguenti comandi è quello corretto?",
@@ -1764,8 +1764,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione vsz (Virtual Memory Size) indica la memoria virtuale totale in kB (inclusa la parte swappata), mentre rss (Resident Set Size) indica solo la memoria fisica residente in RAM; l'opzione -u filtra correttamente per l'utente specifico.",
+    "hint": "Ricorda la differenza tra memoria virtuale totale e memoria fisica residente, e quali opzioni di ps le rappresentano."
   },
   {
     "question": "Una espressione regolare:",
@@ -1790,8 +1790,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Un'espressione regolare definisce un pattern formale che descrive un insieme di stringhe che soddisfano determinate condizioni sintattiche, permettendo il riconoscimento di sequenze specifiche all'interno di testi.",
+    "hint": "Considera cosa rappresenta concettualmente una regex rispetto all'insieme delle stringhe che riconosce."
   },
   {
     "question": "Quale delle seguenti affermazioni è vera?",
@@ -1816,8 +1816,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La filosofia Unix 'everything is a file' tratta la maggior parte delle risorse (dispositivi, pipe, socket) come file attraverso un'interfaccia uniforme, ma i processi sono gestiti dal kernel come entità distinte con proprie strutture dati e system call dedicate.",
+    "hint": "Pensa alla filosofia Unix 'everything is a file' e a quale risorsa fondamentale richiede system call specifiche anziché operazioni su file descriptor."
   },
   {
     "question": "Quale delle seguenti affermazioni è vera?",
@@ -1842,8 +1842,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In Unix vigono la filosofia \"everything is a file\": processi (/proc), dispositivi hardware (/dev), socket di rete e persino le stampanti sono rappresentati come file nel filesystem. Pertanto le eccezioni indicate nelle opzioni A, B e C sono errate.",
+    "hint": "Ricorda il principio fondamentale \"everything is a file\" dei sistemi Unix-like."
   },
   {
     "question": "Quale delle seguenti affermazioni sul comando kill è vera?",
@@ -1868,8 +1868,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "CTRL+C invia il segnale SIGINT (interruzione), mentre CTRL+Z invia SIGTSTP (sospensione). Il comando kill può inviare entrambi questi segnali (es. kill -INT o kill -TSTP), replicando il comportamento delle combinazioni da tastiera.",
+    "hint": "Pensa a quali segnali specifici corrispondono le combinazioni da tastiera CTRL+C e CTRL+Z."
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
@@ -1894,8 +1894,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In una shell interattiva, il controllo del terminale (stdin) può essere detenuto da un solo job alla volta (foreground), mentre è possibile eseguire contemporaneamente più job in background. Il job ID è diverso dal PID e identifica il job all'interno della shell.",
+    "hint": "Considera la differenza tra foreground e background riguardo al controllo del terminale."
   },
   {
     "question": "Si supponga che sia appena stata eseguita la seguente riga di codice di un processo: int pid = fork();. Quale delle seguenti affermazioni è vera?",
@@ -1920,8 +1920,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La funzione fork() crea un nuovo processo duplicando il chiamante. Ritorna 0 nel processo figlio, il PID del figlio nel padre, e -1 in caso di errore senza creare alcun processo. Quindi, se il valore di ritorno non è -1, un nuovo processo è stato creato con successo.",
+    "hint": "Ricorda i tre possibili valori di ritorno di fork() e cosa rappresentano nel padre e nel figlio."
   },
   {
     "question": "Quali delle seguenti affermazioni sulla variabile IFS è vera?",
@@ -1946,8 +1946,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "IFS (Internal Field Separator) definisce i caratteri delimitatori usati dalla shell per lo \"word splitting\". Modificando questa variabile si altera il comportamento dei cicli for e dell'espansione di variabili, permettendo ad esempio di iterare su righe anziché su parole.",
+    "hint": "Pensa a come la shell utilizza IFS per dividere le stringhe in token durante l'espansione."
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi Linux è vera?",
@@ -1972,8 +1972,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il PCB è mantenuto in RAM kernel, non su disco. Lo heap contiene dati dinamici allocati a runtime, mentre i dati statici inizializzati risiedono nel data segment. Il text segment può essere soggetto a demand paging e swapping, quindi non è garantito che sia sempre interamente residente in RAM.",
+    "hint": "Rifletti sulla collocazione fisica delle strutture di controllo e sulla natura dei vari segmenti di memoria virtuale."
   },
   {
     "question": "Quale dei seguenti linguaggi non è mai stato usato per implementare Unix?",
@@ -1998,8 +1998,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Unix fu inizialmente sviluppato in assembler per il PDP-7, poi riscritto nel linguaggio B (precursore del C), e infine reimplementato in C per garantire portabilità. Tutti e tre i linguaggi sono stati effettivamente utilizzati nelle varie fasi storiche.",
+    "hint": "Ricorda l'evoluzione storica dei linguaggi di implementazione di Unix dagli anni '70."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle espressioni regolari è vera?",
@@ -2024,8 +2024,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nelle espressioni regolari, un carattere letterale (non metacarattere) corrisponde esattamente a se stesso nel testo di input. Il metacarattere + è invece un quantificatore che indica 'uno o più' dell'elemento precedente, non un operatore di concatenazione.",
+    "hint": "Distingui tra metacaratteri speciali (come quantificatori) e caratteri che rappresentano se stessi."
   },
   {
     "question": "Quale delle seguenti affermazioni è vera?",
@@ -2050,8 +2050,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linux supporta filesystem virtuali come procfs (/proc) e sysfs (/sys) che risiedono solo in memoria e forniscono interfacce alle strutture dati del kernel senza backing storage fisico. Il filesystem è un albero singolo con radice /, non una foresta di alberi separati.",
+    "hint": "Pensa ai filesystem che espongono informazioni del kernel e non hanno un corrispondente fisico su disco."
   },
   {
     "question": "Quale delle seguenti affermazioni sul comando find è falsa?",
@@ -2076,8 +2076,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando find può accettare anche file singoli come starting point, non solo directory. In tal caso processa semplicemente quel percorso specifico senza tentare di attraversare un albero di directory.",
+    "hint": "Considera cosa succede se esegui find passando come argomento un file regolare invece di una directory."
   },
   {
     "question": "Quale delle seguenti affermazioni sul filesystem Linux è vera?",
@@ -2102,8 +2102,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il filesystem Linux adotta una struttura gerarchica ad albero rovesciato con radice unica rappresentata da /. Tutti i dispositivi e le partizioni vengono montati sotto questa gerarchia, creando un namespace logicamente unificato indipendentemente dalla distribuzione fisica dei dati.",
+    "hint": "Considera come Linux gestisce il mount dei dispositivi rispetto ai sistemi con lettere di unità separate."
   },
   {
     "question": "Quale delle seguenti affermazioni è vera?",
@@ -2128,8 +2128,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nelle espressioni regolari, il metacarattere ^ funge da ancoraggio per l'inizio della stringa (o riga) soltanto quando posizionato come primo carattere del pattern. In altre posizioni perde il significato speciale o viene interpretato letteralmente.",
+    "hint": "Verifica cosa succede se inserisci il simbolo ^ nel mezzo di una regex."
   },
   {
     "question": "Quale delle seguenti affermazioni sui comandi cat e od è falsa?",
@@ -2154,8 +2154,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione -A di od (octal dump) determina la base numerica per la visualizzazione degli offset di file (indirizzi), non per i dati stessi. Per specificare la base dei byte si utilizza l'opzione -t o le opzioni specifiche come -x, -o, -d.",
+    "hint": "Controlla nel manuale cosa controlla esattamente il flag -A rispetto al formato di output."
   },
   {
     "question": "Quale delle seguenti affermazioni è falsa?",
@@ -2180,8 +2180,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nelle regex il backslash è il carattere di escape. Per effettuare il match con un backslash letterale è necessario utilizzare la sequenza '\\\\' (doppio backslash), poiché la regex '\\' è sintatticamente invalida o interpreta il backslash come escape del carattere successivo.",
+    "hint": "Ricorda che per cercare un metacarattere bisogna 'sfuggirlo' con il backslash, ma il backslash stesso è un metacarattere."
   },
   {
     "question": "Il linguaggio C:",
@@ -2206,8 +2206,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Dennis Ritchie sviluppò il C ai Bell Labs nei primi anni '70 come evoluzione del linguaggio B (creato da Ken Thompson). Il C mantenne la filosofia di sistema ma aggiunse tipi di dati e altre caratteristiche che lo resero adatto alla riscrittura di Unix.",
+    "hint": "Pensa alla sequenza storica dei linguaggi sviluppati ai Bell Labs: BCPL, poi B, poi il successore."
   },
   {
     "question": "Esiste in unix un comando che consente di stampare il numero di occorrenze di una riga di un file?",
@@ -2232,8 +2232,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando `uniq -c` conta e stampa il numero di occorrenze di ciascuna riga in un file (tipicamente dopo averlo ordinato con `sort`). Pertanto, esiste effettivamente un comando che svolge questa funzione senza necessità di combinare altri comandi.",
+    "hint": "Pensa al comando `uniq` con il flag che conta le occorrenze."
   },
   {
     "question": "Quali tra le seguenti affermazioni è vera?",
@@ -2258,8 +2258,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione `-N` di `cat` numera le righe ma non limita l'output alle ultime righe. `tail -c` specifica il numero di byte, non di righe. Il comando `cut` estrae campi o colonne basandosi su delimitatori, non gruppi di righe contigue.",
+    "hint": "Verifica le funzionalità specifiche di ciascun comando riguardo alla manipolazione delle righe."
   },
   {
     "question": "Quali tra le seguenti affermazioni è vera?",
@@ -2284,8 +2284,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "`cat -N` aggiunge solo i numeri di riga senza filtrare le ultime righe. `tail -c` richiede un argomento numerico per i byte e l'opzione `-f` (non `-c`) serve per l'output continuo. `cut` opera su campi delimitati, non sulla selezione di righe specifiche.",
+    "hint": "Controlla il comportamento esatto dei flag di ciascun comando e il loro scopo principale."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle applicazioni client-server realizzate tramite socket è vera?",
@@ -2310,8 +2310,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Sia il client che il server devono creare un endpoint di comunicazione chiamando `socket()` per ottenere un file descriptor. Successivamente, il server utilizzerà `bind()`, `listen()` e `accept()`, mentre il client userà `connect()`.",
+    "hint": "Considera il passaggio iniziale richiesto ad entrambe le parti per creare un punto di comunicazione prima di qualsiasi connessione."
   },
   {
     "question": "Si supponga di voler scrivere un programma immune al CTRL+C. Quali dei seguenti frammenti di codice realizza quanto detto sopra?",
@@ -2336,8 +2336,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La combinazione CTRL+C genera il segnale SIGINT. Impostare la disposition a `SIG_IGN` tramite `signal()` ignora il segnale, impedendo l'azione predefinita di terminazione. `SIG_DFL` invece ripristinerebbe il comportamento default (terminazione).",
+    "hint": "Considera quale segnale corrisponde a CTRL+C e quale costante di disposition ignora il segnale anziché ripristinare il comportamento predefinito."
   },
   {
     "question": "Quale dei seguenti comandi scrive una singola riga che consiste nel solo carattere '? ",
@@ -2362,8 +2362,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La sequenza '\"'\"'\" permette di inserire un apice singolo all'interno di una stringa shell delimitata da apici singoli: si chiude il quoting con ', si inserisce l'apice protetto da doppi apici \"'\", e si riapre il quoting con '. Awk riceve quindi {print \"'\"} che stampa solo il carattere richiesto.",
+    "hint": "Ricorda come si 'rompe' una stringa single-quoted in shell per inserire un carattere single-quote."
   },
   {
     "question": "Nell'albero di directory radicato nella directory corrente di una shell bash ci sono molteplici file di testo, ognuno dei quali contiene il log di una esecuzione di un comando. La prima riga di ogni log riporta esattamente il comando usato per ottenere il log stesso, opzioni ed argomenti compresi. Volendo sapere quali sono i diversi comandi (opzioni ed argomenti esclusi; il comando non contiene mai spazi ed è sempre all'inizio della riga) usati nei vari file di log, quale dei seguenti comandi bash è sbagliato? ",
@@ -2388,8 +2388,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Inserire sort | uniq dentro il ciclo for processa ogni file singolarmente, impedendo di trovare i comandi unici tra tutti i file. Le altre opzioni applicano sort | uniq all'output aggregato di tutti i file, che è l'approccio corretto.",
+    "hint": "Pensa a quando devi eliminare i duplicati: prima unisci tutti i dati o dopo ogni singolo file?"
   },
   {
     "question": "Quale dei seguenti comandi Bash permette di scrivere il numero di caratteri di ogni singola riga di un file di testo nomefile?",
@@ -2414,8 +2414,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Tutte le opzioni falliscono perché non gestiscono correttamente l'IFS (Internal Field Separator): A, B e C effettuano word splitting sugli spazi e tabulazioni, perdendo la struttura per-riga. Per processare righe serve while read o IFS= con read, non un for su cat.",
+    "hint": "Considera come bash divide le parole quando espande variabili o backticks senza doppi apici."
   },
   {
     "question": "Quale delle seguenti affermazioni sul Linguaggio C è vera?",
@@ -2440,8 +2440,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il C è un linguaggio compilato: il codice sorgente viene tradotto in linguaggio macchina da un compilatore (come gcc) prima dell'esecuzione. Non è interpretato, non richiede estensioni specifiche (anche se .c è convenzionale), e non impone una struttura modulare rigida come Java.",
+    "hint": "Distingui tra linguaggi dove il codice viene tradotto prima dell'esecuzione versus quelli eseguiti riga per riga."
   },
   {
     "question": "Quale delle seguenti affermazioni sul Linguaggio C è vera?",
@@ -2466,8 +2466,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il C supporta la programmazione strutturata (blocchi, funzioni, controllo di flusso) ed è compilato. Non richiede estensioni .c obbligatorie ed è perfettamente compatibile con Windows tramite compilatori come MinGW o MSVC.",
+    "hint": "Valuta le caratteristiche strutturali del C rispetto ai linguaggi non strutturati come l'assembly."
   },
   {
     "question": "Si supponga di voler trovare tutti i link simbolici presenti nell'intero file system, che siano stati acceduti nell'ultimo giorno, e si supponga di volerli spostare nella directory /tmp. Quale dei seguenti comandi realizza tale specifica?",
@@ -2492,8 +2492,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'opzione -type l filtra i link simbolici, -atime 0 seleziona i file accessi nelle ultime 24 ore, e -exec permette di eseguire mv per ogni risultato trovato, con {} che rappresenta il nome del file e \\; che termina il comando.",
+    "hint": "Controlla la differenza tra tempo di accesso (-atime) e tempo di modifica dei metadati (-ctime), e verifica la sintassi corretta del comando -exec in find."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall dei processi in Linux è falsa?",
@@ -2518,8 +2518,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La syscall setuid() serve per modificare l'user ID effettivo del processo (e potenzialmente il saved set-user-ID), non per leggerlo. Restituisce 0 in caso di successo o -1 in caso di errore, mentre è getuid() che restituisce il real UID.",
+    "hint": "Ricorda la differenza tra syscall che 'get' (leggono) e syscall che 'set' (impostano) i privilegi di un processo."
   },
   {
     "question": "Si supponga che l'utente nomeutente voglia terminare forzatamente tutti i processi attualmente in esecuzione che lui stesso abbia creato con il comando bash cmd (senza argomenti). Si supponga anche che la stringa cmd non contenga metacaratteri per regular expressions estese. Quale dei seguenti comandi bash deve usare l'utente nomeutente?",
@@ -2544,8 +2544,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando ps elenca i processi con PID e comando, grep filtra esattamente le righe con il pattern 'numero cmd' (inizio e fine riga), e awk estrae solo il primo campo (PID) da passare a kill -9 per terminare i processi.",
+    "hint": "Verifica cosa succederebbe se passassi a kill non solo il numero PID ma anche il nome del comando, e considera l'importanza di ancorare il pattern di grep a inizio e fine riga."
   },
   {
     "question": "Quale delle seguenti affermazioni sui programmi scritti in Linguaggio C è vera?",
@@ -2570,8 +2570,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La funzione printf con lo specificatore %s si aspetta una stringa terminata dal carattere nullo '\\0' per determinare dove finisce la stampa; senza di esso continuerebbe a leggere memoria indefinitamente. La syscall write invece richiede esplicitamente la lunghezza, ignorando eventuali terminatori.",
+    "hint": "Considera la differenza tra funzioni di libreria C che gestiscono stringhe (che si basano sul terminatore nullo) e syscall di sistema che operano su buffer di byte con lunghezza esplicita."
   },
   {
     "question": "Esiste in Linux un comando che consente, sfruttando opportunamente le sue opzioni, di stampare il numero di occorrenze consecutive di una riga in un file?",
@@ -2596,8 +2596,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando uniq con l'opzione -c (count) stampa il numero di occorrenze consecutive per ogni riga duplicata in un file, preceduto da un contatore numerico.",
+    "hint": "Pensa al comando che rimuove o conta le righe duplicate adiacenti in un file di testo."
   },
   {
     "question": "Quale delle seguenti affermazioni su un file in un filesystem Linux è vera?",
@@ -2622,8 +2622,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il path assoluto rappresenta la posizione di un file a partire dalla directory root in modo univoco e indipendente dalla directory di lavoro corrente, a differenza dei path relativi che variano in base al contesto.",
+    "hint": "Confronta la natura dei path assoluti (sempre dalla root) con quelli relativi (dipendenti dalla posizione corrente)."
   },
   {
     "question": "Si consideri il seguente programma in codice C:",
@@ -2648,8 +2648,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "#include <string.h>\n        #include <stdlib.h>\n        #include <stdio.h>\n        \n        int main() {\n          struct s {\n            char *a;\n            char b[20];\n          } *p[2];\n          char *a = strdup(\"ciao\");\n          p[0] = (struct s*)malloc(sizeof(struct s));\n          p[0]->a = a;\n          strcpy(p[0]->b, a);\n          COPIA\n          a[1] = '0';\n          printf(\"%s %s %s %s\\n\", p[0]->a, p[0]->b, p[1]->a, p[1]->b);\n        }\n",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'istruzione memcpy tenta di scrivere i dati all'indirizzo contenuto in p[1], che non è stato inizializzato e contiene un valore casuale (garbage pointer), causando un comportamento indefinito o un segmentation fault.",
+    "hint": "Verifica lo stato di inizializzazione di tutti i puntatori nell'array prima di operare dereferenziazione."
   },
   {
     "question": "Si consideri il seguente frammento di codice C, quali tra queste risposte è falsa?",
@@ -2674,8 +2674,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "int main() {\n    struct s {\n      char *a;\n      char b[20];\n    } p[5];\n  ...\n  }",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La dichiarazione di un array di strutture all'interno di una funzione alloca la memoria nello stack (memoria automatica), non nello heap. Inoltre, i puntatori interni non hanno memoria allocata per i dati puntati.",
+    "hint": "Distingui tra allocazione automatica (stack) e dinamica (heap), e osserva cosa viene allocato per i puntatori versus i dati puntati."
   },
   {
     "question": "Si supponga di eseguire con successo i seguenti comandi da una shell sulla quale non ci sono job in background:",
@@ -2700,8 +2700,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "sudo cp -a `which cat` .\nsudo chmod u+s cat\n./cat &\ncat &\n",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Ogni processo ha un PID univoco nel sistema, quindi i due job in background avranno necessariamente identificativi diversi. Gli UID effettivi (euid) invece potrebbero coincidere se l'utente è root, rendendo l'opzione C l'unica sempre vera.",
+    "hint": "Ricorda che il PID è unico per ogni processo, mentre gli UID dipendono dal bit setuid e dall'utente esecutore."
   },
   {
     "question": "Un file nomefile contiene il risultato della compilazione di un programma. Il compilatore in questione scrive righe che iniziano con la sola parola 'error' per gli errori veri e propri, e con 'error warning' per i semplici warning (è garantito che la stringa 'error warning' non sia mai all'inizio di una riga contenente un errore vero e proprio). Quale dei seguenti comandi restituisce le sole righe che si riferiscono ad errori veri e propri?",
@@ -2726,8 +2726,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La pipeline seleziona prima tutte le righe che iniziano con 'error', poi filtra via quelle contenenti 'warning', isolando correttamente gli errori veri. Le espressioni regolari nelle altre opzioni sono troppo rigide o errate nella gestione dei caratteri.",
+    "hint": "Pensa a come combinare grep in pipeline per includere un pattern iniziale e poi escludere un sotto-pattern specifico."
   },
   {
     "question": "Quale delle seguenti affermazioni sulle syscall wait e waitpid è falsa?",
@@ -2752,8 +2752,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La syscall wait() restituisce il PID del processo figlio terminato come valore di ritorno della funzione stessa, mentre il parametro status (passato per riferimento) contiene informazioni codificate sul modo di terminazione (flag di uscita normale, exit status, segnali), non il PID.",
+    "hint": "Distingui tra il valore restituito dalla funzione wait() (il PID) e il contenuto della variabile status (informazioni di terminazione)."
   },
   {
     "question": "Si consideri il seguente programma in codice C:",
@@ -2779,7 +2779,7 @@
     "image": "",
     "code": "#include <string.h>\n#include <stdlib.h>\n#include <stdio.h>\n\nint main() {\n  struct s {\n    char *a;\n    char b[20];\n  } p[2];\n  char *a = strdup(\"ciao\");\n  p[0].a = a;\n  strcpy(p[0].b, a);\n  COPIA\n  a[1] = '0';\n  printf(\"%s %s %s %s\\n\", p[0].a, p[0].b, p[1].a, p[1].b);\n}",
     "explanation": "",
-    "hint": ""
+    "hint": "Considera attentamente la differenza tra la copia di un puntatore (shallow copy) e la copia di un array in una struct, e verifica quale memoria viene effettivamente modificata dalla riga a[1] = '0'."
   },
   {
     "question": "La directory corrente di una shell bash contiene N directory non nascoste. In ognuna di queste directory è contenuto un file di testo .txt contenente una sola riga con un numero M, potenzialmente diverso da directory a directory. Inoltre può essere presente un file dati.M.txt. Si vuole sapere quanti sono in totale, tra le varie directory, questi file dati.M.txt, senza scrivere nulla su standard error. Quale dei seguenti comandi bash è corretto?",
@@ -2804,8 +2804,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il ciclo for itera sulle directory; la command substitution `cat $dir/.txt` legge il valore M; test -f verifica l'esistenza del file e, solo se esiste (operatore &&), stampa 'si'. La pipe finale a wc -l conta il numero totale di righe prodotte, corrispondente al numero di file dati.M.txt trovati.",
+    "hint": "Analizza il flusso di dati: il ciclo produce output condizionato dall'esistenza del file, e wc -l conta le linee totali prodotte dal ciclo completo."
   },
   {
     "question": "Si supponga di eseguire con successo i seguenti comandi da una shell sulla quale non ci sono job in background: sudo cp -a `which cat` . sudo chmod u+s cat ./cat & cat & Quale delle seguenti affermazioni è falsa?",
@@ -2830,8 +2830,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il bit setuid (u+s) su ./cat fa sì che il processo giri con effective UID (euid) root ma real UID (ruid) dell'utente che lo ha lanciato. Il comando cat di sistema gira invece con entrambi gli UID uguali all'utente. Pertanto i real UID dei due job sono identici, mentre gli effective UID differiscono.",
+    "hint": "Ricorda la distinzione tra Real UID (chi ha lanciato il processo) e Effective UID (con quali permessi gira), specialmente nel contesto del setuid bit."
   },
   {
     "question": "Si supponga di avere il seguente frammento di codice:",
@@ -2856,8 +2856,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "FILE *stream = fopen(\"file_esistente.txt\",\"r\");\nfseek(stream, -100, SEEK_END);\nlong pos = ftell(stream);",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La funzione ftell restituisce la posizione corrente del cursore nel file, che corrisponde all'offset in byte dall'inizio. L'equivalente system call lseek utilizza SEEK_CUR con offset 0 per ottenere la stessa informazione, dopo aver posizionato il cursore a -100 byte dalla fine con SEEK_END.",
+    "hint": "Ricorda che per ottenere la posizione corrente con lseek si usa offset 0 e SEEK_CUR."
   },
   {
     "question": "Si vuole scrivere un programma equivalente a questo script ",
@@ -2882,8 +2882,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "echo -n \"Esecuzione in corso...\"\r\n/bin/ls -la /\r\necho \"fatto\"\r\n",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le chiamate execl (e famiglia exec) sostituiscono l'immagine del processo corrente con il nuovo programma: se l'esecuzione ha successo, il controllo non ritorna mai al programma chiamante. Pertanto il printf finale nelle opzioni B, C e D non verrebbe mai eseguito, rendendo nessuna di esse equivalente allo script.",
+    "hint": "Considera cosa succede al processo quando execl ha successo."
   },
   {
     "question": "Quale dei seguenti frammenti di codice è corretto?",
@@ -2908,8 +2908,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La system call fork() restituisce 0 nel processo figlio, il PID del figlio (valore positivo) nel processo padre, e -1 in caso di errore. L'opzione A gestisce correttamente questi tre casi per distinguere l'esecuzione tra padre e figlio.",
+    "hint": "Chi riceve il valore 0 e chi riceve un numero positivo dopo la fork?"
   },
   {
     "question": "Si supponga di avere il seguente frammento di codice, quale dei seguenti frammenti di codice ha lo stesso effetto?",
@@ -2934,8 +2934,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "int var = somefunction1();\r\ndouble var2 = somefunction2();\r\nfprintf(stdout, \"%d\\n%lf\\n\", var, var2);\r\n",
-    "explanation": "",
-    "hint": ""
+    "explanation": "fprintf formatta i dati in stringhe testuali prima di scriverli. L'opzione D replica questo comportamento usando sprintf per convertire i valori in stringhe e write per scriverle su stdout (file descriptor 1), gestendo correttamente i caratteri newline separatamente come nel codice originale.",
+    "hint": "Confronta l'output testuale esatto: fprintf scrive caratteri, non dati binari."
   },
   {
     "question": "Si consideri la riga di comando bash while condizione; do comando1 | comando2; done | comando3. Assumendo che condizione, comando1, comando2 e comando3 non contengano errori, quale delle seguenti affermazioni è vera?",
@@ -2960,8 +2960,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il costrutto while...done è un comando completo che può essere inserito in una pipeline. Anche se la condizione è inizialmente falsa e il corpo del ciclo non viene eseguito, il while stesso produce un flusso di output (vuoto) che attraversa la pipe, causando l'esecuzione di comando3.",
+    "hint": "La pipe finale collega l'intero ciclo while a comando3, indipendentemente da quante iterazioni vengano eseguite."
   },
   {
     "question": "Si consideri la riga di comando bash if condizione; then comando1; fi. Assumendo che comando1 non contenga errori di sintassi, quale delle seguenti affermazioni è vera?",
@@ -2986,8 +2986,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In bash, la struttura if valuta il codice di uscita (exit status) del comando condizione, non il suo output su stdout o stderr. Il ramo then viene eseguito solo se il codice di ritorno è 0 (successo), indipendentemente dal contenuto dei flussi standard.",
+    "hint": "Ricorda che il shell controlla la variabile $? per decidere se un comando ha avuto successo, non ciò che viene stampato a video."
   },
   {
     "question": "Si supponga che le variabili bash a, b e c abbiano valori, rispettivamente, b, c e 1. Quale delle seguenti affermazioni è vera?",
@@ -3012,8 +3012,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'espansione aritmetica $((a)) risolve ricorsivamente i nomi delle variabili fino a ottenere un valore numerico: a contiene 'b', b contiene 'c', e c contiene '1', quindi il risultato finale è 1. L'espansione standard $a restituirebbe invece semplicemente la stringa 'b'.",
+    "hint": "Pensa a come la shell risolve le variabili quando si trova all'interno di un contesto aritmetico con doppie parentesi."
   },
   {
     "question": "Quale delle seguenti affermazioni sul comando top è vera?",
@@ -3038,8 +3038,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il comando top è un visualizzatore interattivo che si aggiorna continuamente, a differenza di ps che è statico. Si termina premendo 'q', mentre CTRL+C invia un segnale di interruzione; la modalità batch (-b) è non-interattiva e non risponde al tasto 'q'.",
+    "hint": "Distingui tra modalità interattiva e batch, e considera come vengono gestiti i segnali di terminazione rispetto ai comandi interni del programma."
   },
   {
     "question": "Si supponga di voler inizializzare una variabile var1 di una shell bash in modo tale che sia il contenuto del file filename.txt se tale file esiste, ed il valore della variabile var2 altrimenti. Quale dei seguenti comandi realizza correttamente quanto sopra ? ",
@@ -3064,8 +3064,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'operatore || esegue il secondo comando solo se il primo fallisce (exit code non zero). Redirigendo stderr (2>) su /dev/null si sopprimono gli errori se il file non esiste, permettendo a cat di fallire silenziosamente e attivare l'alternativa echo $var2.",
+    "hint": "Osserva la differenza tra la redirezione dello standard error (2>) e quello standard (>), e il comportamento degli operatori logici || versus &&."
   },
   {
     "question": "Il comando ssh hostname cmd esegue il comando cmd sulla bash della macchina remota hostname, dopo aver richiesto l'immissione della password per l'utente corrente. Supponendo che la fase di connessione e di immissione della password vada a buon fine, quale delle seguenti affermazioni è falsa?",
@@ -3090,8 +3090,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Quando la pipe non è quotata o protetta, la shell locale la interpreta prima di eseguire ssh. Quindi ssh esegue solo ls sul host remoto, mentre wc -l viene eseguito localmente ricevendo l'output di ssh via pipe. Le altre opzioni con quoting o escaping fanno eseguire entrambi i comandi sul remoto.",
+    "hint": "Considera quali metacaratteri vengono interpretati dalla shell locale prima dell'esecuzione di ssh e quali vengono invece passati all'host remoto."
   },
   {
     "question": "Si supponga di avere il seguente frammento di codice, e che  il file file_esistente.txt abbia il seguente contenuto (comprensivo di 2 caratteri carriage return) 4567 34.56",
@@ -3116,8 +3116,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "FILE *stream = fopen(\"file_esistente.txt\", \"r\");\r\nint var;\r\ndouble var2;\r\nfscanf(stream, \"%d\\n%lf\\n\", &var, &var2);",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La funzione fscanf legge dati formattati come testo ASCII. Per ottenere lo stesso risultato con read, è necessario leggere i byte in un buffer e convertirli esplicitamente con atoi e atof, poiché read effettua solo trasferimenti binari senza interpretazione del formato. L'opzione B leggerebbe i byte ASCII come rappresentazione binaria dei numeri, mentre la D usa erroneamente un file descriptor con fscanf che richiede un puntatore FILE*.",
+    "hint": "Ricorda che read legge byte raw mentre fscanf legge testo formattato, richiedendo conversione esplicita per simularne il comportamento."
   },
   {
     "question": "Ignorando eventuali memory leaks, quale dei seguenti frammenti di codice può portare ad un segmentation fault?",
@@ -3142,7 +3142,7 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Dopo free(p), il puntatore diventa dangling. Invocare realloc su un puntatore già liberato costituisce un errore di use-after-free, che causa undefined behavior e tipicamente un segmentation fault poiché il gestore della memoria tenta di accedere a metadati dell'heap invalidi.",
+    "hint": "Verifica la sequenza delle operazioni: cosa succede se tenti di riallocare un puntatore che hai appena rilasciato?"
   }
 ]
