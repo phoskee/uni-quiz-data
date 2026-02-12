@@ -20,11 +20,21 @@ Per utilizzare gli script di generazione e validazione, è consigliato configura
 ## 📂 Struttura del repository
 
 Il progetto è organizzato per università e facoltà:
+
+### Quiz a risposta multipla
 - `quizzes/<università>/<facoltà>/`:
     - `_docs/`: Contiene il materiale grezzo (PDF, dispense).
     - `community/`: Contiene i quiz generati o revisionati dagli utenti.
     - `uniquizzes/`: (Opzionale) Quiz provenienti da fonti ufficiali o specifiche.
+
+### Domande aperte
+- `open-questions/<università>/<facoltà>/<categoria>.json`: Domande a risposta aperta, valutate tramite AI.
+    - Il nome del file definisce la categoria (es. `sistemi-operativi.json` diventa "Sistemi Operativi").
+    - Ogni file JSON contiene un array di oggetti con campo `text` (obbligatorio), `referenceAnswer` e `hint` (opzionali).
+
+### Altro
 - `scripts/`: Strumenti per la generazione e validazione dei quiz.
+- `schema/`: Schemi JSON di riferimento.
 
 ## 🤖 Come generare un quiz
 
@@ -58,9 +68,16 @@ python3 scripts/validate.py
 
 ## 🚀 Come contribuire
 
+### Quiz a risposta multipla
 1. Carica il materiale in `_docs/`.
 2. Genera il JSON (automaticamente o via prompt).
 3. Verifica il file con lo script.
+4. Invia una Pull Request.
+
+### Domande aperte
+1. Crea un file JSON in `open-questions/<università>/<facoltà>/<categoria>.json`.
+2. Ogni oggetto deve avere almeno il campo `text`. Aggiungi `referenceAnswer` per guidare la valutazione AI e `hint` per aiutare lo studente.
+3. Verifica il file con lo script di validazione.
 4. Invia una Pull Request.
 
 ---

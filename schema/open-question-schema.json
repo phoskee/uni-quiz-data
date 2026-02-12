@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Uni-Quiz Open Questions",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "text": {
+        "type": "string",
+        "description": "Il testo della domanda aperta."
+      },
+      "referenceAnswer": {
+        "type": "string",
+        "description": "Risposta di riferimento usata dall'AI per la valutazione."
+      },
+      "hint": {
+        "type": "string",
+        "description": "Suggerimento per lo studente."
+      }
+    },
+    "required": ["text"]
+  }
+}

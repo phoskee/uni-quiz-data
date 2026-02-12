@@ -1,0 +1,17 @@
+[
+  {
+    "text": "Descrivi il concetto di deadlock nei sistemi operativi, includendo le quattro condizioni necessarie di Coffman.",
+    "referenceAnswer": "Un deadlock è una situazione in cui due o più processi sono bloccati indefinitamente, ciascuno in attesa di una risorsa detenuta da un altro processo del gruppo. Le quattro condizioni necessarie di Coffman sono: (1) Mutua esclusione: almeno una risorsa deve essere non condivisibile. (2) Hold and wait: un processo detiene almeno una risorsa e ne attende altre. (3) No preemption: le risorse non possono essere sottratte forzatamente. (4) Attesa circolare: esiste una catena circolare di processi, ciascuno in attesa di una risorsa detenuta dal successivo.",
+    "hint": "Pensa alle quattro condizioni di Coffman e a cosa succede quando tutte sono soddisfatte contemporaneamente."
+  },
+  {
+    "text": "Spiega la differenza tra processi e thread, evidenziando vantaggi e svantaggi dell'uso dei thread.",
+    "referenceAnswer": "Un processo è un'istanza di un programma in esecuzione con il proprio spazio di indirizzamento, mentre un thread è un'unità di esecuzione all'interno di un processo che condivide lo spazio di indirizzamento con gli altri thread dello stesso processo. Vantaggi dei thread: creazione e context switch più veloci, comunicazione più semplice tramite memoria condivisa, minor uso di risorse. Svantaggi: maggiore complessità nella sincronizzazione, un bug in un thread può compromettere l'intero processo, difficoltà nel debugging.",
+    "hint": "Considera cosa viene condiviso e cosa no tra processi e thread."
+  },
+  {
+    "text": "Descrivi l'algoritmo di scheduling Round Robin, specificando come influisce il quanto di tempo sulle prestazioni.",
+    "referenceAnswer": "Round Robin è un algoritmo di scheduling preemptive in cui ogni processo riceve un quanto di tempo (time quantum) fisso per l'esecuzione. Allo scadere del quanto, il processo viene interrotto e messo in coda, e il processore passa al processo successivo. Un quanto troppo piccolo causa overhead eccessivo per i context switch, riducendo il throughput. Un quanto troppo grande fa degenerare l'algoritmo in FCFS, aumentando i tempi di attesa. Il valore ottimale bilancia reattività e overhead, tipicamente tra 10 e 100 millisecondi.",
+    "hint": "Pensa a cosa succede con quanti di tempo molto piccoli o molto grandi."
+  }
+]
