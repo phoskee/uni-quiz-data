@@ -22,8 +22,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Naive Bayes uses Bayes' theorem: P(y|x) ∝ P(x|y)P(y). Since P(x) is constant for all classes, we maximize the joint probability P(x,y) = P(x|y)P(y), which is the probability of both predictors and label occurring together.",
+    "hint": "Recall Bayes' theorem and that the denominator P(x) is constant across all classes."
   },
   {
     "question": "If your dataset has two variables 𝒙, 𝒙′ such that 𝒙 = 𝒂 ⋅ 𝒙′ for some constant a > 0, then you have:",
@@ -48,8 +48,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Multicollinearity occurs when predictor variables are highly correlated, and here x = a·x' represents perfect linear dependence (correlation = 1), which is the strongest form of multicollinearity.",
+    "hint": "Think about what it means when one variable is an exact linear transformation of another."
   },
   {
     "question": "A naïve Bayes classifier can deal with previously unseen feature-label combination through:",
@@ -74,8 +74,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Laplacian smoothing (add-k smoothing) adds a small constant k to each count, preventing zero probabilities for unseen feature-label combinations that were never observed in the training data.",
+    "hint": "Consider what mathematical operation prevents a probability from being exactly zero."
   },
   {
     "question": "For a linear regression model, the expected squared error can be decomposed in:",
@@ -100,8 +100,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The expected prediction error decomposes into bias² + variance + irreducible error (noise), representing the bias-variance tradeoff in model performance.",
+    "hint": "Think about the bias-variance decomposition formula for expected prediction error."
   },
   {
     "question": " What is the key assumption of the Naïve Bayes Classifier?",
@@ -126,8 +126,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The 'naive' assumption is conditional independence: given the class label y, all predictors x₁,...,xₙ are independent, so P(x₁,...,xₙ|y) = ∏P(xᵢ|y).",
+    "hint": "Remember what makes the classifier 'naive' - it's about independence between predictors."
   },
   {
     "question": "Which one of the following performance indicates the best model for prediction?",
@@ -152,8 +152,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A good predictive model should have similar performance on training and test data (generalization). R' = 0.7 on both indicates good generalization without overfitting or underfitting.",
+    "hint": "Look for the model that performs similarly on both training and test data, not just high on training."
   },
   {
     "question": "You want to predict the market price of a team’s merchandising (t-shirts, hats..), according to the team’s seasonal performance. You suggest using:",
@@ -178,8 +178,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linear regression is used when the target variable is continuous (like price), which is the case here for predicting merchandising market prices.",
+    "hint": "Consider whether the output variable is continuous or categorical."
   },
   {
     "question": "When is the accuracy a misleading classifier performance measure?",
@@ -204,8 +204,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Accuracy can be misleading when class distribution is imbalanced because a trivial classifier predicting the majority class can achieve high accuracy without learning real patterns.",
+    "hint": "Think about what happens when one class dominates the dataset."
   },
   {
     "question": "The goal of linear regression is to?",
@@ -230,8 +230,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linear regression aims to learn a linear function (a straight line in 2D, or hyperplane in higher dimensions) that best fits the relationship between input variables and the continuous target.",
+    "hint": "What is the fundamental task of this supervised learning method?"
   },
   {
     "question": "In the bias-variance decomposition of the expected squared error, what does high bias suggest?",
@@ -256,8 +256,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "High bias means the model makes strong assumptions about the data (e.g., assuming linearity when relationships are complex), resulting in underfitting where it fails to capture important patterns.",
+    "hint": "What does it mean when a model is too simple for the data complexity?"
   },
   {
     "question": "Social network users often form communities according to their tastes. If you had access to their personal data, you may verify this intuition by:",
@@ -282,8 +282,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Clustering is an unsupervised learning technique used to group similar observations into clusters based on their features, which matches the goal of identifying communities of users with similar tastes.",
+    "hint": "Think about whether you have a predefined label/target variable or want to discover natural groupings in the data."
   },
   {
     "question": "R^2 is a measure of:",
@@ -308,8 +308,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "R² measures how well the independent variables explain the variability of the dependent variable, indicating how well a regression model fits the data.",
+    "hint": "Consider what aspect of model quality R² specifically evaluates - does it measure accuracy, complexity, or statistical significance?"
   },
   {
     "question": "A company wants to relate the monthly revenue to productivity parameters such as total number of working hours, etc. They could use:",
@@ -334,8 +334,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linear regression is used when the target variable (monthly revenue) is continuous and we want to model its relationship with predictor variables (productivity parameters).",
+    "hint": "Ask yourself: is the target variable continuous (regression) or categorical (classification)?"
   },
   {
     "question": "How do you perform a linear regression in R?",
@@ -360,8 +360,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In R, the lm() function performs linear regression with formula syntax y ~ x and a data frame argument; the family parameter is only used for generalized linear models like logistic regression.",
+    "hint": "Remember that lm() is for linear models, while predict() is for making predictions using a fitted model."
   },
   {
     "question": "Your friend proposes to cluster 300 observations by trying all possible clustering and taking the one that minimizes intra cluster variance. You observe that:",
@@ -386,8 +386,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The number of possible partitions of 300 observations grows super-exponentially (Bell numbers), making exhaustive enumeration computationally impossible even with centuries of time.",
+    "hint": "Consider the combinatorial complexity of partitioning a set - does the number of possibilities grow linearly or explosively with the number of observations?"
   },
   {
     "question": "Single-linkage clustering works by",
@@ -412,8 +412,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Single-linkage è un metodo di clustering gerarchico agglomerativo che parte dai singoli punti e unisce iterativamente i due cluster più vicini (basati sulla distanza minima tra coppie di punti in cluster diversi).",
+    "hint": "È un approccio bottom-up che costruisce la gerarchia fondendo progressivamente i cluster."
   },
   {
     "question": "In linear regression, a high value of 𝑹𝟐 on the training set suggests:",
@@ -438,8 +438,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "R² misura la proporzione di varianza explicata dal modello sui dati di training. Un valore alto indica solo che il modello si adatta bene ai dati di training, non che funzionerà bene su dati futuri.",
+    "hint": "Le metriche sui dati di training non ci dicono nulla sulla capacità di generalizzazione."
   },
   {
     "question": "A logistic regression gives the following scores, preceded by the actual label: (Y, 0.85), (Y, 0.75), (N,0.6), (Y,0.5), (N, 0.4), (N, 0.2). For a sensitivity of at least 2/3, the best choice is to predict Y when the score is at least:",
@@ -464,8 +464,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Per avere sensibilità ≥ 2/3, serviamo almeno 2 veri positivi su 3 Y totali. Con soglia 0.75 otteniamo TP=2, FN=1, quindi sensibilità = 2/3. Con soglia 0.6 avremmo 3/3 ma anche più falsi positivi.",
+    "hint": "La sensibilità è TP/(TP+FN). Conta quanti Y effettivi sono sopra la soglia."
   },
   {
     "question": "Look at the confusion matrix below. What we can say?",
@@ -490,8 +490,8 @@
     "correctIndex": 3,
     "image": "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",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Dalla matrice di confusione possiamo dedurre che il classificatore predice la classe 1 nel 60% dei casi (60% delle predizioni sono positive).",
+    "hint": "Somma le predizioni della classe 1 e confrontale col totale."
   },
   {
     "question": "A set of observations (𝒙𝟏, 𝒚𝟏), (𝒙𝟐,𝒚𝟐)…(𝒙𝒏, 𝒚𝒏) obeys the law 𝒚𝒊 ≔ 𝒂𝒙𝒊 + 𝒃 + 𝜺𝒊, where 𝜺𝒊 is some random noise. The task of estimating a and b from the dataset is called:",
@@ -516,8 +516,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il modello y = ax + b + ε è un modello di regressione lineare dove a e b sono i parametri da stimare che definiscono la retta di best-fit.",
+    "hint": "È la formulazione classica della retta di regressione con rumore gaussiano."
   },
   {
     "question": "Laplacian smoothing aims at:",
@@ -542,8 +542,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Laplacian (o Laplace) smoothing aggiunge una piccola costante alle probabilità per evitare che categorie mai osservate nei dati di training abbiano probabilità zero, il cheporterebbe a una penalizzazione eccessiva di nuove osservazioni.",
+    "hint": "Cosa succede quando incontriamo una categoria mai vista durante il training?"
   },
   {
     "question": "A dataset of points (𝒙𝟏, 𝒚𝟏), (𝒙𝟐,𝒚𝟐)…(𝒙𝒏, 𝒚𝒏) has been generated by the model 𝒚𝒊 ≔ 𝒂𝒙𝒊 + 𝒃 + 𝜺𝒊, where 𝜺𝒊 is gaussian noise. Linear regression aims at estimating:",
@@ -568,8 +568,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La regressione lineare stima i parametri della retta che meglio approssima i dati: la pendenza a e l'intercetta b. Il termine di rumore ε è considerato un errore casuale, non un parametro da stimare.",
+    "hint": "Quali sono i coefficienti incogniti della retta y = ax + b?"
   },
   {
     "question": "Which one of the following R commands selects only the rows of data where X equals 0?",
@@ -594,8 +594,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In R, la funzione filter() del pacchetto dplyr serve specificamente per selezionare righe che soddisfano una condizione, mentre select() seleziona colonne, summarize() aggrega dati e table() crea tabelle di contingenza.",
+    "hint": "Quale funzione è progettata per filtrare le righe in base a condizioni?"
   },
   {
     "question": "If an algorithm has exponential complexity, then we can assume that:",
@@ -620,8 +620,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La complessità esponenziale O(2^n) cresce così rapidamente che rende il problema intrattabile anche con qualsiasi miglioramento tecnologico immaginabile, poiché il tempo raddoppia con ogni unità aggiuntiva di input.",
+    "hint": "Quanto velocemente crescono le funzioni esponenziali rispetto a qualsiasi miglioramento tecnologico?"
   },
   {
     "question": "If you have n points, what is the number of clusters that minimizes the within-cluster sum of square?",
@@ -646,8 +646,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La within-cluster sum of squares è minimizzata quando ogni punto forma il proprio cluster, ottenendo varianza nulla all'interno di ogni cluster (zero errori di distanza).",
+    "hint": "Cosa succede quando ogni punto diventa il proprio cluster?"
   },
   {
     "question": "Which regression model has smaller squared error in fitting a real function 𝒇(𝒙)?",
@@ -672,8 +672,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A simple linear regression has fewer parameters and is less prone to overfitting. While polynomial regression of degree 10 can fit training data more closely, it typically generalizes poorly to new data. The simpler model achieves a better balance between bias and variance.",
+    "hint": "Think about the bias-variance tradeoff and the difference between training error and generalization error."
   },
   {
     "question": "A doping screening is tested on a pool of 800 athletes of which 796 are clean. The test is correct in 99% of the cases. What can we say about it?",
@@ -698,8 +698,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "With 800 athletes and only 4 doped, even a 99% accurate test could miss all doped athletes if the errors fall on the small doped population. The 1% error rate applied to just 4 athletes means it's statistically possible all 4 were incorrectly classified as clean.",
+    "hint": "Consider what '99% correct' means when the positive class (doped athletes) is very rare (only 4 out of 800)."
   },
   {
     "question": "In linear programming, the space of feasible solution is:",
@@ -724,8 +724,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In linear programming, the feasible region is defined by linear constraints, which create a convex set. The intersection of these half-spaces forms a convex polytope (polyhedron in higher dimensions).",
+    "hint": "Remember that linear constraints define half-spaces, and their intersection creates a specific type of geometric shape."
   },
   {
     "question": "The explained variance of a clustering equals:",
@@ -750,8 +750,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Explained variance in clustering measures how much variance is captured by the cluster structure. Within-cluster SSE represents unexplained variance, so the ratio of within-cluster SSE to total sum of squares gives the proportion of unexplained variance, and subtracting from 1 gives explained variance.",
+    "hint": "Think about what proportion of total variance is 'explained' by the clustering versus what remains 'unexplained' within clusters."
   },
   {
     "question": "Gradient descent is a technique we have used to:",
@@ -776,8 +776,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gradient descent is an optimization algorithm that iteratively moves in the direction of the negative gradient to find local minima of a function. It's commonly used in machine learning to minimize loss functions.",
+    "hint": "Remember that gradient descent is about finding optimal parameter values by following the slope downhill."
   },
   {
     "question": "Which of these models is probably overfitting?",
@@ -802,8 +802,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Overfitting occurs when a model memorizes training data instead of learning general patterns, resulting in high performance on training but poor performance on test data. The large gap between training R' (0.8) and test R' (0.1) indicates the model failed to generalize.",
+    "hint": "Compare the gap between training and test performance across all options."
   },
   {
     "question": "Laplacian smoothing aims at:",
@@ -828,8 +828,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Laplacian smoothing adds a small constant (typically 1) to probability estimates to prevent zero probabilities for unseen events. This reduces the model's sensitivity to noise in the training data by smoothing out extreme predictions.",
+    "hint": "Think about what happens when a rare event doesn't appear in training data."
   },
   {
     "question": "To visualize a hierarchical clustering one can use:",
@@ -854,8 +854,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A dendrogram is the standard visualization for hierarchical clustering, showing the tree structure of nested clusters and the distances at which merges occur. It displays the complete hierarchy of how observations group together.",
+    "hint": "Which visualization shows a tree-like structure with branches?"
   },
   {
     "question": "The goal of linear regression is to:",
@@ -880,8 +880,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linear regression aims to find the best-fitting straight line (or hyperplane in higher dimensions) that minimizes the error between predicted and actual values. The goal is to learn a linear function that captures the relationship between features and target.",
+    "hint": "What does 'regression' mean in the context of finding a function from data?"
   },
   {
     "question": "Naive Bayes classiers work well for:",
@@ -906,8 +906,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Naive Bayes classifiers are particularly effective for text classification tasks like spam filtering because they handle high-dimensional sparse data well and are computationally efficient. They calculate the probability of a document belonging to a class based on word frequencies.",
+    "hint": "Think about what type of data (text, numbers, etc.) Naive Bayes is traditionally known for classifying."
   },
   {
     "question": "The explained variance of a clustering equals:",
@@ -932,8 +932,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In clustering, explained variance measures how much of the total variance is accounted for by the cluster structure, which is the between-cluster variance divided by total variance. This is analogous to R² in regression.",
+    "hint": "Think about what 'explained' means - it represents variance BETWEEN clusters, not within them."
   },
   {
     "question": "A binary classifier on 6 points gives the probabilities: 0.9, 0.85, 0.75, 0.5, 0.4, 0.3; the correct labels are 1,1,0,1,0,0. What is the best probability threshold, if we need FPR <= 1/3?",
@@ -958,8 +958,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "At threshold 0.45, we predict positive for probabilities > 0.45 (0.9, 0.85, 0.75, 0.5), giving 1 false positive out of 3 negatives (actual 0s), so FPR = 1/3 which satisfies the constraint.",
+    "hint": "Calculate FPR at each candidate threshold to find the highest threshold that keeps FPR ≤ 1/3."
   },
   {
     "question": "Mark the wrong statement about gradient descent:",
@@ -984,8 +984,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Increasing the learning rate actually AMPLIFIES oscillations, not dampens them. A larger step size can cause the optimization to overshoot the minimum, leading to oscillations or divergence.",
+    "hint": "Think about what happens physically when you take bigger steps - you might overshoot your target."
   },
   {
     "question": "Which task does not require to learn a model?",
@@ -1010,8 +1010,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Clustering is an unsupervised technique that groups data based on similarity without learning a predictive model. Unlike regression or classification, it doesn't learn a function mapping inputs to outputs.",
+    "hint": "Which method doesn't predict a target variable or learn from labeled data?"
   },
   {
     "question": "For two sets A, B the probability that the first element in a random permutation of A U B is in A ∩ B:",
@@ -1036,8 +1036,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The probability that the first element in a random permutation of A∪B is in A∩B equals |A∩B|/(|A|+|B|), which is exactly the Jaccard index J(A,B) = |A∩B|/|A∪B|.",
+    "hint": "The Jaccard index measures the intersection relative to the union - what proportion of the union belongs to the intersection?"
   },
   {
     "question": "The R^2 and the p-values of a regression:",
@@ -1062,8 +1062,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "R² measures how much variance the model explains (goodness of fit), while p-values test whether predictors are statistically significant. They address different questions about the regression.",
+    "hint": "One metric tells you how well the model fits, the other tells you if the relationships are statistically meaningful."
   },
   {
     "question": "xXmini=1k||x-ci||22 is the objective function of:",
@@ -1088,8 +1088,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This is the k-means objective: minimize the sum of squared Euclidean distances (||x-ci||²) between each point and its assigned cluster center.",
+    "hint": "The notation ||·||²₂₂ represents the squared Euclidean distance."
   },
   {
     "question": "Classification accuracy is misleading when:",
@@ -1114,8 +1114,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "When classes are imbalanced (e.g., 95% negative, 5% positive), a classifier predicting all negatives achieves 95% accuracy but is useless for detecting the minority class.",
+    "hint": "Consider a disease test where only 1% of people are sick."
   },
   {
     "question": "A binary classifier on 6 points gives the probabilities: 0.85, 0.75, 0.65, 0.5, 0.4, 0.2; the correct labels are 1,1,1,0,0,0. What is the best probability threshold?",
@@ -1140,8 +1140,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "At threshold 0.6, points with probability ≥0.6 (0.85, 0.75, 0.65) are classified as 1, matching exactly the three positive labels, achieving perfect classification.",
+    "hint": "Find the threshold that separates the three 1s from the three 0s in the probability ordering."
   },
   {
     "question": "An algorithm is considered practical if its running time, as a function of the input size, is:",
@@ -1166,8 +1166,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Polynomial time algorithms (like n², n³) scale reasonably with input size and are considered practical, unlike exponential algorithms which become infeasible for moderate inputs.",
+    "hint": "Think about the difference between n² and 2ⁿ as n grows."
   },
   {
     "question": "The naive Bayes classier learns:",
@@ -1192,8 +1192,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Naive Bayes is a generative model that learns the joint probability distribution P(X,Y) of predictors and class labels, then uses Bayes' theorem to compute the posterior probability P(Y|X) for classification.",
+    "hint": "Naive Bayes models the joint distribution of features and labels together, unlike discriminative models."
   },
   {
     "question": "k-PCA differs from k-means in that xi is:",
@@ -1218,8 +1218,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In k-PCA, data points are projected onto the first k principal components, meaning each xi can be expressed as a linear combination of those k PCA components.",
+    "hint": "Think about what k-PCA means - projecting onto k principal components."
   },
   {
     "question": "In logistic regression, the estimated probability of xi being a positive is:",
@@ -1244,8 +1244,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Logistic regression uses the sigmoid (logistic) function σ(z) = 1/(1+e^(-z)) where z = θ^Tx, which gives the probability of the positive class.",
+    "hint": "Recall the sigmoid function form used to map linear predictions to probabilities."
   },
   {
     "question": "A sports betting agency wants to predict whether the Italian national football team will or not qualify for the World Cup championship. They should use:",
@@ -1270,8 +1270,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This is a binary classification problem (qualify or not qualify), and logistic regression is specifically designed for predicting binary outcomes with probabilities.",
+    "hint": "Consider whether the outcome is binary (two classes) and whether you need probabilities."
   },
   {
     "question": "A problem X  NP is said to be NP-complete if:",
@@ -1296,8 +1296,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A problem X is NP-complete if X belongs to NP and every problem in NP can be polynomially reduced to X, making X one of the hardest problems in NP.",
+    "hint": "Think about what 'complete' means - it represents the hardest problems in NP."
   },
   {
     "question": "The quadratic loss of linear regression is:",
@@ -1322,8 +1322,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The quadratic loss in linear regression measures the squared difference between actual values (yi) and predicted values (ŷi). This is the mean squared error (MSE) objective that OLS minimizes.",
+    "hint": "Think about what the model predicts (ŷi) versus the true labels (yi)."
   },
   {
     "question": "What is the best threshold value for turning probability scores into binary predictions?",
@@ -1348,8 +1348,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The optimal classification threshold depends on the specific context and the relative costs of false positives versus false negatives. In medical diagnosis, you might want high sensitivity; in spam detection, you might prioritize specificity.",
+    "hint": "Consider that different applications have different requirements for the trade-off between types of errors."
   },
   {
     "question": "In Human coding, the encoder:",
@@ -1374,8 +1374,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Human coding (Huffman coding) assigns binary codes to individual symbols based on their frequency in the input. It processes each symbol separately rather than looking for runs of identical symbols.",
+    "hint": "Remember that Huffman coding is different from run-length encoding."
   },
   {
     "question": "The Maximum Likelihood Estimator for the parameters of a linear model with independent Gaussian noise is:",
@@ -1400,8 +1400,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "For linear regression with independent Gaussian noise, the Maximum Likelihood Estimator coincides exactly with the Ordinary Least Squares (OLS) solution. This is a fundamental equivalence in statistical learning.",
+    "hint": "Think about the Gaussian assumption and how it relates to minimizing squared errors."
   },
   {
     "question": "Consider the LP: min f(x,y)=x+y; x+y2; x,y0. The corresponding polytope is:",
@@ -1426,8 +1426,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Given the constraints x + y ≥ 2 and x ≥ 0, y ≥ 0, the feasible region exists and is bounded in the first quadrant. The region above the line x + y = 2 within the first quadrant forms a valid (bounded) polytope.",
+    "hint": "Consider what the feasible region looks like when you draw the constraint x + y ≥ 2 with non-negative variables."
   },
   {
     "question": "Min-hashing maps each document to:",
@@ -1452,8 +1452,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Min-hashing is a technique that creates a compact signature (minhash signature) for each document/set by applying multiple hash functions and taking the minimum value. This signature is used to estimate Jaccard similarity between documents efficiently.",
+    "hint": "Think about what 'signature' means in the context of document similarity - it's a compact representation."
   },
   {
     "question": "How do you do a linear regression in R?",
@@ -1478,8 +1478,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In R, the lm() function (linear model) is used to fit linear regression models, with the formula notation y ~ x specifying the relationship between dependent and independent variables.",
+    "hint": "Remember that lm stands for 'linear model' and is used for fitting, while predict is for making predictions."
   },
   {
     "question": "How do you measure the significance of an estimate?",
@@ -1504,8 +1504,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The p-value measures the probability of observing the estimated effect (or more extreme) if the null hypothesis were true. Lower p-values indicate stronger evidence against the null hypothesis, suggesting statistical significance.",
+    "hint": "Consider what statistical test tells you whether an effect is likely real or due to chance."
   },
   {
     "question": "A manufacturing company wants to nd out the relationship between the budget spent in advertising and the total sales of the next semester. They could use:",
@@ -1530,8 +1530,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linear regression is used when predicting a continuous numerical outcome (sales) from one or more predictors (advertising budget). This is a regression problem where both variables are continuous.",
+    "hint": "Ask yourself: is the outcome (sales) a continuous number or a category?"
   },
   {
     "question": "The company wants to predict if a machine will have a technical failure in the next 10 days. This could be done with:",
@@ -1556,8 +1556,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Logistic regression is used for binary classification problems where the outcome is categorical with two classes (failure/no failure). It models the probability of a binary outcome.",
+    "hint": "Think about whether the outcome is binary (two possible results) or continuous."
   },
   {
     "question": "Moreover, items from the same production line are similar while those from different lines are radically different. You suggest to check by using:",
@@ -1582,8 +1582,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Clustering is an unsupervised learning technique that groups similar data points together based on their characteristics without predefined labels. The description of items from the same production line being similar (same cluster) and different production lines being radically different (different clusters) matches exactly what clustering aims to accomplish.",
+    "hint": "The question describes grouping similar items together without prior labels or categories."
   },
   {
     "question": "What is the true positive rate aka sensitivity?",
@@ -1608,8 +1608,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "True positive rate (sensitivity) measures the proportion of actual positives that are correctly identified as positives by the model. It quantifies how well the model detects positive cases among all actual positives present in the data.",
+    "hint": "It measures how well the model identifies positive cases among all actual positives."
   },
   {
     "question": "Single-linkage clustering works by:",
@@ -1634,8 +1634,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Single-linkage clustering is a hierarchical clustering method that merges clusters based on the minimum distance between any two points in different clusters (nearest neighbor approach). It repeatedly finds and merges the two closest clusters until only one cluster remains.",
+    "hint": "It builds clusters by progressively merging the nearest pairs of clusters."
   },
   {
     "question": "You have a set of observations (x; y) with x; y 2 R. Which one of the following gives the highest R2?",
@@ -1660,8 +1660,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "R2 measures the proportion of variance in the dependent variable explained by the model. Higher degree polynomials have more parameters and can fit more complex, nuanced patterns in the training data, potentially achieving higher R2 values, though this may lead to overfitting.",
+    "hint": "Higher degree polynomials can capture more complex patterns in the training data."
   },
   {
     "question": "Which one of the following performances indicates the best model for prediction?",
@@ -1686,8 +1686,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The best predictive model should generalize well to unseen data, meaning it should perform similarly on both training and test sets. Option B shows equal performance (0.7) on both sets, indicating good generalization without overfitting, while other options show either poor overall performance, overfitting, or worse-than-baseline test performance.",
+    "hint": "A good predictive model should perform well on unseen data (test set), not just on training data."
   },
   {
     "question": "Which task does not require a training set (i.e. a dataset used for learning a model)?",
@@ -1712,8 +1712,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Clustering is an unsupervised learning method that discovers natural groupings in data without requiring labeled examples. In contrast, Linear Regression, Logistic Regression, and Classification all require a training set with known labels (y values) to learn the relationship between features and targets.",
+    "hint": "Think about whether the algorithm needs 'answers' (labels) to learn."
   },
   {
     "question": "If you have n points, what is the number of clusters that minimizes the within-cluster sum of squares?",
@@ -1738,8 +1738,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The within-cluster sum of squares (WCSS) measures the variance within each cluster. When each observation is in its own cluster (n clusters for n points), there is zero variance within clusters, making this the mathematical minimum.",
+    "hint": "What happens when each point gets its own cluster?"
   },
   {
     "question": "In the bias-variance decomposition of the expected squared error, what does a high bias suggest?",
@@ -1764,8 +1764,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "High bias means the model is too simple to capture the underlying pattern in the data, resulting in systematic errors. This is the definition of underfitting, where the model oversimplifies the relationship between features and target.",
+    "hint": "High bias means the model makes strong (incorrect) assumptions that don't fit the data well."
   },
   {
     "question": "A set of observations (x1; y1), (x2; y2), …,(xn; yn) obeys the law yi := axi + b + i where  i is some random noise. The task of estimating a and b from the dataset is called:",
@@ -1790,8 +1790,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The equation yi = axi + b + εi represents a linear relationship between x and y with additive noise εi. The task of estimating the coefficients a (slope) and b (intercept) that best fit this relationship is the definition of linear regression.",
+    "hint": "Look for the linear equation form with parameters to estimate."
   },
   {
     "question": "A regression model (M1) on a training set gives R^2 = 0.5 while a second model (M2) gives R^2 = 0.9. What can we say about predictions on a test set?",
@@ -1816,8 +1816,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "R² measures fit on the training data only. A higher training R² does not guarantee better test performance because the model may overfit to training data. Without additional information about the test set, we cannot determine which model will perform better on unseen data.",
+    "hint": "Training performance doesn't always generalize to test data."
   },
   {
     "question": "You developed a clinical test to distinguish sick patients from healthy patients. In the population, on average 998 out of 1000 people are healthy, and the test gives an incorrect prediction in 0.5% of the cases. This means the test:",
@@ -1842,8 +1842,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The 0.5% error rate applies to all predictions. With only 2 sick patients out of 1000, it's statistically possible (though unlikely) that both could be misclassified as false negatives, meaning the test could miss all sick patients.",
+    "hint": "Consider that the 0.5% error applies to all predictions, and think about how few sick patients there are relative to healthy ones."
   },
   {
     "question": "How would you describe overfitting?",
@@ -1868,8 +1868,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Overfitting occurs when a model is so complex it learns the random fluctuations (noise) in the training data rather than just the underlying pattern, capturing spurious relationships that won't generalize to new data.",
+    "hint": "Think about what 'following the noise' means - the model is fitting to random variations instead of the true signal."
   },
   {
     "question": "You have to convert the scores given by a logistic regression model into binary predictions. What is the best threshold?",
@@ -1894,8 +1894,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The optimal threshold depends on the specific application: medical diagnostics may require high sensitivity (catching all sick patients), spam filters may prioritize precision, and cost-benefit tradeoffs vary by context.",
+    "hint": "Consider that different applications have different priorities - catching all positives vs. avoiding false alarms."
   },
   {
     "question": "Given a linear regression model, the expected squared error can be usefully decomposed in:",
@@ -1920,8 +1920,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The expected squared error in regression can be decomposed into bias (systematic error from overly simple models), variance (error from model sensitivity to training data), and irreducible error (noise in the data itself).",
+    "hint": "This is the classic bias-variance tradeoff decomposition used to understand model performance."
   },
   {
     "question": "Look at the confusion matrix below (1=positive=true,0=negative=false). What can we say?",
@@ -1946,8 +1946,8 @@
     "correctIndex": 0,
     "image": "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",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Specificity = TN/(TN+FP). From the confusion matrix, there are 2 true negatives and 1 false positive, so specificity = 2/(2+1) = 2/3.",
+    "hint": "Remember that specificity measures how well the test identifies negatives - it's calculated as TN/(TN+FP)."
   },
   {
     "question": "You are using k-means, and notice that different executions give different results. This happens since:",
@@ -1972,8 +1972,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "k-means utilizza un'inizializzazione random dei centroidi e l'algoritmo converge a minimi locali, quindi esecuzioni diverse possono portare a soluzioni diverse.",
+    "hint": "Il risultato cambia ad ogni esecuzione dello stesso algoritmo sugli stessi dati?"
   },
   {
     "question": "You have 6 observations; their class (Positive or Negative) and the score given by a logistic regression are as follows: (P,0.9), (P,0.85), (N,0.75), (P,0.5), (N,0.4), (N,0.3). If you do not want the false positive rate of your classier to exceed 1/3, the best choice is to predict “Y\" whenever the score is at least:",
@@ -1998,8 +1998,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Con soglia 0.45, i negativi con score ≥0.45 sono solo quello con 0.75, quindi FP=1, TN=2, e FPR=1/(1+2)=1/3, soddisfacendo esattamente il vincolo.",
+    "hint": "Calcola FPR per ciascuna soglia候选 e verifica quale soddisfa FPR ≤ 1/3."
   },
   {
     "question": "Logistic regression finds the parameters that maximize: ",
@@ -2024,8 +2024,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La regressione logistica stima i parametri massimizzando la log-likelihood dei dati, ovvero la probabilità dei dati osservati dato il modello.",
+    "hint": "Quale funzione viene ottimizzata nella regressione logistica per stimare i parametri?"
   },
   {
     "question": "What does the Bayesian Optimal Classier need to know in order to work?",
@@ -2050,8 +2050,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il classificatore Bayes ottimale usa la distribuzione congiunta P(x,y) per calcolare la classe più probabile dato x, minimizzando l'errore di classificazione.",
+    "hint": "Quale distribuzione serve per calcolare P(y|x) esattamente?"
   },
   {
     "question": "Which one of the following classifiers has the best performance?",
@@ -2076,8 +2076,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il punto ideale sulla curva ROC è in alto a sinistra (TPR alto, FPR basso), quindi TPR=0.8 e FPR=0.2 rappresenta il miglior tradeoff.",
+    "hint": "Quale combinazione di TPR e FPR è più vicina all'angolo ideale (1,0)?"
   },
   {
     "question": "Your boss calls you to tell your new regression model seems completely useless for prediction, in spite of the high R^2 of the t. You realize that probably there is:",
@@ -2102,8 +2102,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'overfitting si verifica quando il modello si adatta troppo bene ai dati di training (alto R^2) ma non generalizza a nuovi dati, rendendolo inutile per previsioni reali.",
+    "hint": "Pensa a cosa succede quando un modello 'impara a memoria' i dati di training invece di apprendere pattern generalizzabili."
   },
   {
     "question": "From the confusion matrix below, what can we say?",
@@ -2128,8 +2128,8 @@
     "correctIndex": 1,
     "image": "iVBORw0KGgoAAAANSUhEUgAAALUAAAB3CAYAAABFcwEWAAAABHNCSVQICAgIfAhkiAAAABl0RVh0U29mdHdhcmUAZ25vbWUtc2NyZWVuc2hvdO8Dvz4AAAAndEVYdENyZWF0aW9uIFRpbWUAbWVyIDE4IGdlbiAyMDIzLCAxMTo0MToyNfQ7K74AACAASURBVHic7V1pdBRVFv6qu6u7s9IJgSQQwIAsYQAjbixzjAgGQSEgMqBiWBURUAR3nTkqjAIyo44K4mhEzeC4gIoIiLgzDkeEMGpEnEASlkTI0iHpJL1Udc2PnPt4Xekk3Ul1OmTqO6dPL1X93qtXX91337333ScoiqJAh45OBEO4G6BDh9bQSa2j00EntY5OB53UOjoddFLr6HQwBXqioigQBIG9y7IMWZZD2TYd/8cwGo0wGo2NeBcIBN2kp6OzISBJzfPe7XbDYrEgNzcXb7zxBkRRhMvlClkD/99gMpkgSRIMBgO8Xm+4m9PusFgs8Hg8yM7OxqxZs+ByuWA2m9nxQKR1QJKaTpEkCZIkISIiAvPmzUPv3r1x0003we12w2g0Bjw86PAFDa2VlZXIzs7G9u3b4XQ6YTabYTAYoCgKFEVhnztjPyuKAlmWYTab8dZbb+H48ePIyclBfX09TCYTTKYG+RvItQckqQVBgNfrhSiKkCQJQMMTNXDgQAwcOLANl6KDR21tLXr27Im0tLRwNyWsGDhwIE6fPs2+i6IIr9cLgyEwu0bA6gcRmy+4vr4eiqL4DBGdUYqEGtS/dXV1cLvdUBSFSWrqc+rXzti/pAmQaltfX8+OkRoWzGQxYOsHgSweXq8XJpMJgiB0+k5vDwiC4POiPqX+VBSFWQPofLVlQH1M/Zm+U3mBtMnfeYHU5a9edTvVbaJrNplMbD4hyzJEUWyxrTyCIjX/pBgMBt2kFwLwQoH0aK/X2yyh6VyesP4+03d1PWq0ZEYLpK6m6vVXpprksiwzjSBYcx4QhE5NkoJXP/jPTT3VOoIDTzpeavMqIHBuWObvAT+hpCGb7guVS+fzv9F3XmBJksQkplq6U/n86OHvwaO28iMOAB+rjj/SqjnG26sDQUCad1NPLn+RnXVW3t7g1TjqV/ouCAJzStB3r9cLSZIYURRFYd+JbDx5vV4vPB6Pz/lULtUpyzL7L3BO5eSlLV82XxbVIUmSz3f6DYDPdUmSxJx5hEDVlqYQlKRuTj9rzTChozHUxKEb7na7IcuyD9mtViuMRiP7L0luMo8R4Uwmk0959B+StHV1dQDO2YhJr5UkCaIoNpqs0WhgNBpZm3hi+lMdqD0Oh4OVT2VQnfz/+P4IllsBx340NxHUJ4naQd2XkiTBaDRi7dq1iI2NRUxMDKKiohAdHY0//OEPKCsrg6IozGridruZ34Ckdl1dHTweDyM8SWuPxwNJknDfffdh9uzZcDgcGDRoEBYtWgSj0QhRFOHxeOB2u9m5/D0+ceIEk75utxuSJLGHj1eTnE4ncygtXrwYS5YsgdlsZiMNb4duqT8CQdDWDx2hBX8TSToJggCXy4U+ffpg0qRJEEURDocDubm5WLduHdasWcOkL5HDH1k8Hg+TwBaLhf1uNptRW1sLi8WCVatWITk5mUlg3psHNKgiRqMRq1evhsFgwP3339+oPKDhYaQyIiMjff7Pqyv8SKPVnEwndQeDv8kbqRPp6el4/vnn2XGHw4G9e/eipqYGL7zwAuLj43HixAmUlpbiueeeQ15eHlauXAkAWLJkCSZPnszI/pe//AWffvoprr/+eiiKAovFAkVRcOrUKWZCMxgM+O677/Dkk0/C5XLh1ltvxc0334zHH38cjz32GC644AK43W48+uijKCwsxAMPPICqqirMmDED8+fPZ9J51apV+OabbzB9+nRERETA6XRCURQ2EeVVJC2gk7qDgdepCSStq6urUVhYCIvFArvdjh9++AFpaWkwmUzYvXs3vvzyS9hsNowcORLffvstbr31VsiyDJPJhMWLF0MURUyYMIGR0mKxIC8vDzU1NZg4cSKcTic2btyIMWPGYMaMGThw4ACmT5+OEydOIDIyErt27YLdbsfJkychiiJOnDiBX375BceOHcPs2bPx888/w2w244cffoAkSVi4cCFWrFiBv/71r7BarTh06BCqq6tx0003QRAEpiYRobVSX/V46g4KGprpRouiiC+++AJ9+/ZFz549MWTIEFRUVGD+/PmwWCyIjIzEhRdeiMLCQuzYsQM7duyALMvIycnB+++/j379+uGdd96Bw+HAW2+9hWnTpsHpdOLw4cMYMGAA3G43RFFEQkICbDYbFEXBxo0bIUkSzpw5A4fDgYceegjl5eVYt24dLr74Ytx3333Izc3F9u3bsX//fqxZswZb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",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'accuratezza si calcola come (veri positivi + veri negativi)/(totale osservazioni), e dalla matrice emerge che l'80% delle previsioni sono corrette.",
+    "hint": "L'accuratezza è la proporzione di predizioni corrette sul totale dei casi."
   },
   {
     "question": "Consider the LP: max f(x,y)=x+3y; x10; y3. The value of the optimal solution is:",
@@ -2154,8 +2154,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Per massimizzare x+3y con i vincoli x≤10 e y≤3, si scelgono i valori massimi ammissibili: x=10, y=3, ottenendo 10+3×3=19.",
+    "hint": "Nei problemi di programmazione lineare, la soluzione ottimale si trova sempre su un vertice della regione ammissibile."
   },
   {
     "question": "Your friend proposes a novel clustering algorithm that tries all possible clusterings of the data. This algorithm:",
@@ -2180,8 +2180,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il numero di tutte le possibili partizioni di n punti in cluster cresce esponenzialmente (numeri di Bell), rendendo l'algoritmo computazionalmente infattibile per dataset grandi.",
+    "hint": "Il numero di modi per dividere n elementi in gruppi cresce molto velocemente al crescere di n."
   },
   {
     "question": "In a binary classier build by thresholding the scores of a logistic regression model, the positive observations:",
@@ -2206,8 +2206,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La regressione logistica stima un confine di decisione lineare (iperpiano) che separa le osservazioni positive da quelle negative nello spazio delle feature.",
+    "hint": "La regressione logistica trova un classificatore lineare che suddivide lo spazio in due regioni."
   },
   {
     "question": "The class NP contains all problems whose solution:",
@@ -2232,8 +2232,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "NP (Non-deterministic Polynomial) is defined as the class of problems where a proposed solution can be verified in polynomial time, regardless of how long it might take to find the solution.",
+    "hint": "Think about what the 'N' in NP stands for and how verification differs from computation."
   },
   {
     "question": "Lloyd's algorithm for k-means works by:",
@@ -2258,8 +2258,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lloyd's algorithm iteratively alternates between two steps: assigning each point to the nearest centroid and then recomputing centroids based on the current cluster assignments.",
+    "hint": "Consider the two main phases of the k-means algorithm."
   },
   {
     "question": "You want to learn how your revenue depends on parameters such as number of working hours, etc. You could use:",
@@ -2284,8 +2284,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linear regression is used to predict a continuous numerical output (revenue) based on one or more input variables, modeling the relationship as a linear function.",
+    "hint": "Is revenue a categorical or continuous variable? What type of prediction task does that suggest?"
   },
   {
     "question": "In least squares, R^2 can be seen as:",
@@ -2310,8 +2310,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "R² measures how much better the model explains the variance in the data compared to a baseline model that simply predicts the mean of the target variable.",
+    "hint": "What would a trivial model that always predicts the average outcome achieve in terms of R²?"
   },
   {
     "question": "The ROC curve shows:",
@@ -2336,8 +2336,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The ROC curve plots the True Positive Rate (sensitivity) on the y-axis against the False Positive Rate on the x-axis at different classification thresholds.",
+    "hint": "Recall that FPR = 1 - specificity, and the ROC shows the trade-off between TPR and FPR."
   },
   {
     "question": "Can feature scaling improve the model fitted via least squares?",
@@ -2362,8 +2362,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Feature scaling does not improve statistical properties of OLS estimates (they remain unbiased and efficient), but it makes coefficients comparable and thus improves interpretability when features have different units.",
+    "hint": "Consider what happens to coefficient magnitudes when features have very different scales."
   },
   {
     "question": "Can a clustering on n points achieve 0 within-cluster sum of squares?",
@@ -2388,8 +2388,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Within-cluster sum of squares measures variance within each cluster. With n clusters (each point in its own cluster), there is no variance within any cluster, so WCSS equals zero.",
+    "hint": "Think about what happens to variance when each cluster contains only one observation."
   },
   {
     "question": "In linear regression, if the p-value for the estimate i is small enough, then we:",
@@ -2414,8 +2414,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A small p-value provides evidence against the null hypothesis, which in regression states that the coefficient equals zero. A small p-value leads to rejecting H₀: βᵢ = 0.",
+    "hint": "Remember that p-value measures evidence against the null hypothesis."
   },
   {
     "question": "Texts written in the same language have a similar letter frequency distribution. You can check this fact by:",
@@ -2440,8 +2440,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This is an unsupervised learning problem where we want to discover groups of similar texts based on letter frequency, without predefined labels. Clustering algorithms can group texts by their letter frequency distributions.",
+    "hint": "Think about whether you have labeled data or need to discover groups automatically."
   },
   {
     "question": "Texts written in the same language have a similar letter frequency distribution. You can check this fact by:",
@@ -2466,8 +2466,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This is an unsupervised learning problem where we want to discover groups of similar texts based on letter frequency, without predefined labels. Clustering algorithms can group texts by their letter frequency distributions.",
+    "hint": "Think about whether you have labeled data or need to discover groups automatically."
   },
   {
     "question": "Two classifiers, C1 and C2, have accuracy respectively 98\\\\% \\\\and 95%. Which one is the best?",
@@ -2492,8 +2492,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Accuracy percentages alone don't indicate statistical significance. Without confidence intervals or hypothesis testing, we cannot determine if the 3% difference is meaningful or due to random variation.",
+    "hint": "What additional statistical measure would help validate if the difference is real?"
   },
   {
     "question": "Correlation clustering asks to minimize:",
@@ -2518,8 +2518,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Correlation clustering optimizes for agreement/disagreement between pairs of data points - minimizing cases where similar items are separated or dissimilar items are grouped together.",
+    "hint": "Think about pairwise relationships in clustering."
   },
   {
     "question": "If you increase the complexity of your linear regression model, eventually the SSE on the test set will:",
@@ -2544,8 +2544,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This describes overfitting: as model complexity increases, training error decreases but test error eventually increases, making test SSE exceed training SSE.",
+    "hint": "What happens to generalization when complexity grows too large?"
   },
   {
     "question": "Classification accuracy is misleading when:",
@@ -2570,8 +2570,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "With imbalanced classes, high accuracy can be achieved by simply predicting the majority class, masking poor performance on the minority class which is often the critical one to detect.",
+    "hint": "Consider a medical test with 99% healthy people."
   },
   {
     "question": "The worst-case running time of the k-means algorithm on the n points is:",
@@ -2596,8 +2596,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "K-means is NP-hard, meaning in the worst case its running time can be exponential in n, making it superpolynomial, even though it typically converges quickly in practice.",
+    "hint": "Recall the computational complexity classification of the k-means problem itself."
   },
   {
     "question": "In linear regression, the expected squared error s the sum of:",
@@ -2622,8 +2622,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nella regressione lineare, l'errore quadratico medio atteso si decompone in tre componenti: bias al quadrato (errore sistematico da underfitting), varianza (errore da overfitting) e errore irreducibile (rumore nei dati).",
+    "hint": "Ricorda la decomposizione bias-varianza dell'errore di previsione."
   },
   {
     "question": "Your friend proposes an innovative clustering algorithm that enumerates all possible clusterings of the points. This algorithm:",
@@ -2648,8 +2648,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il numero di modi possibili per partizionare n punti in cluster (numeri di Bell) cresce esponenzialmente con n, rendendo l'enumerazione completa computazionalmente infattibile per dataset grandi.",
+    "hint": "Pensa a quante possibili partizioni esistono per n oggetti."
   },
   {
     "question": "A high R^2 on a given dataset means:",
@@ -2674,8 +2674,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "R² misura la proporzione di varianza spiegata dal modello sui dati di training, indicando quanto bene il modello si adatta a quei dati specifici, non necessariamente a dati nuovi.",
+    "hint": "R² è una metrica calcolata sui dati di training, non sulla generalizzazione."
   },
   {
     "question": "Multicollinearity arises if the features vectors are:",
@@ -2700,8 +2700,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La multicollinearità si verifica quando due o più variabili predittive sono altamente correlate, cioè linearmente dipendenti l'una dall'altra, causando problemi nella stima dei coefficienti.",
+    "hint": "Collinearità implica relazioni lineari tra feature."
   },
   {
     "question": "A logistic regression model learns:",
@@ -2726,8 +2726,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La regressione logistica apprende la distribuzione condizionata P(y|X), ovvero la probabilità del label dato il vettore delle feature, non la distribuzione marginale.",
+    "hint": "La regressione logistica modella la probabilità del label condizionata alle feature."
   },
   {
     "question": "Consider the LP: min f(x,y) = x + y; x+y >= 2; x, y <= 0. The corresponding polytope is:",
@@ -2752,8 +2752,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I vincoli x ≤ 0 e y ≤ 0 implicano che x + y ≤ 0, mentre il vincolo x + y ≥ 2 richiede che la somma sia almeno 2. Non esiste alcun punto che soddisfi tutti i vincoli contemporaneamente, quindi il poliedro è vuoto.",
+    "hint": "Considera cosa implicano i vincoli x ≤ 0 e y ≤ 0 sulla somma x + y."
   },
   {
     "question": "To measure the efficiency of algorithms we use:",
@@ -2778,8 +2778,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'analisi asintotica è lo standard per misurare l'efficienza degli algoritmi, esprimendo la complessità in funzione della dimensione dell'input con notazioni come O, Ω e Θ.",
+    "hint": "Pensa a come viene misurata la complessità computazionale quando la dimensione dell'input tende all'infinito."
   },
   {
     "question": "Everything else being equal, what does suggest a good clustering?",
@@ -2804,8 +2804,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'obiettivo del clustering è minimizzare la varianza intra-cluster, misurata dal within-cluster sum of squares (WCSS), che rappresenta la somma delle distanze al quadrato tra i punti e i rispettivi centroidi.",
+    "hint": "Cosa si cerca di minimizzare quando si formano i gruppi?"
   },
   {
     "question": "The set cover problem:",
@@ -2830,8 +2830,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il Set Cover è un classico problema NP-completo, dimostrato tale da Karp nel 1972, il che significa che non esiste un algoritmo polinomiale noto per risolverlo (a meno che P = NP).",
+    "hint": "Ricorda la classificazione dei problemi NP-completi nota come '21 problemi di Karp'."
   },
   {
     "question": "A company must allocate 5M€ so that each department receives a minimum amount. You can use:",
@@ -2856,8 +2856,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il clustering permette di raggruppare i dipartimenti in base a caratteristiche simili, facilitando un'allocazione del budget che tenga conto delle esigenze omogenee di ciascun gruppo.",
+    "hint": "Quale tecnica permette di raggruppare entità simili per prendere decisioni?"
   },
   {
     "question": "With hierarchical clustering on n points you can get:",
@@ -2882,8 +2882,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Hierarchical clustering produces a dendrogram (tree) where you can cut at any level. Cutting at the top gives 1 cluster (all points together), while cutting at the bottom gives n clusters (each point separate), so any number in between is possible.",
+    "hint": "Think about the two extreme cases: when all points are in one cluster vs. each point in its own cluster."
   },
   {
     "question": "The standard assumption of linear regression is that the noise across the observations:",
@@ -2908,8 +2908,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Classical linear regression assumes errors are independent and identically distributed (i.i.d.) with a Gaussian (normal) distribution, meaning they are both Gaussian and independent (uncorrelated).",
+    "hint": "Recall the 'i.i.d.' assumption in the Gauss-Markov theorem."
   },
   {
     "question": "The ROC curve is used to measure:",
@@ -2934,8 +2934,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The ROC curve plots the True Positive Rate against the False Positive Rate at various classification thresholds, providing a way to evaluate binary classifier performance independent of threshold choice.",
+    "hint": "This curve compares sensitivity and specificity at different decision thresholds."
   },
   {
     "question": "Geometrically, each constraint of a linear program corresponds to:",
@@ -2960,8 +2960,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Each linear constraint in the form ax ≤ b (or ax ≥ b) defines a half-space in the n-dimensional decision variable space. The feasible region is the intersection of all these half-spaces.",
+    "hint": "Consider what geometric object a single linear inequality like x1 + x2 ≤ 5 represents."
   },
   {
     "question": "Many well-known clustering problems are:",
@@ -2986,8 +2986,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Many fundamental clustering problems (like k-means, hierarchical clustering with certain objectives) are NP-hard, meaning there is no known polynomial-time algorithm to solve them exactly for arbitrary instances.",
+    "hint": "Think about the computational complexity of finding the optimal partition of points into clusters."
   },
   {
     "question": "A polytope is:",
@@ -3012,8 +3012,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Un politopo in geometria computazionale è definito matematicamente come l'intersezione di un numero finito di semispazi (half-spaces) chiusi. Questa definizione fondamentale lo distingue da unioni o altre operazioni.",
+    "hint": "Ricorda la definizione formale di politopo come regione limitata ottenuta intersecando semispazi."
   },
   {
     "question": "Everything else being equal. What does suggest good clustering?",
@@ -3038,7 +3038,7 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Un buon clustering bilancia la qualità della segmentazione con la semplicità del modello; avere pochi cluster suggerisce che i dati sono ben raggruppati senza sovradattamento, secondo il principio di parsimonia.",
+    "hint": "Pensa al compromesso tra complessità del modello e qualità dei risultati nel clustering."
   }
 ]

@@ -7,18 +7,36 @@ In questa cartella trovi gli strumenti per gestire e generare i quiz.
 Per evitare conflitti tra librerie, usa un ambiente virtuale Python.
 
 ```bash
-# Crea e attiva l'ambiente
-python3 -m venv venv
-source venv/bin/activate        # macOS/Linux
-# .\venv\Scripts\activate       # Windows
+# Comando unico (consigliato): prepara venv + dipendenze e apre la CLI interattiva
+./scripts/quiz_cli.sh
+```
 
-# Installa le dipendenze
-pip install -r scripts/requirements.txt
+```bash
+# macOS/Linux (crea venv, attiva, installa dipendenze in un colpo)
+source scripts/setup_env.sh
+```
+
+```powershell
+# Windows PowerShell (crea venv, attiva, installa dipendenze in un colpo)
+. .\scripts\setup_env.ps1
 ```
 
 ---
 
 ## Script disponibili
+
+Puoi avviarli singolarmente (comandi sotto) oppure tramite la CLI interattiva unica:
+
+```bash
+./scripts/quiz_cli.sh
+```
+
+La CLI include anche:
+- generazione quiz
+- enrich Ollama
+- validazione JSON
+
+Per ogni voce la CLI mostra argomenti tipici. Nel prompt `Argomenti extra` puoi digitare `help` per vedere l'`--help` completo dello script selezionato.
 
 ### `generate_quiz.py` — Generatore di quiz da PDF
 
@@ -43,9 +61,14 @@ Il processo è interattivo:
 
 ---
 
-### `enrich_quiz.py` — Arricchitore di explanation e hint via Ollama
+### `ollama_enrich_quiz.py` — Arricchitore di explanation e hint via Ollama
 
 Compila i campi `explanation` e `hint` su un quiz JSON esistente usando un modello LLM locale tramite [Ollama](https://ollama.com). Lavora a batch per essere compatibile anche con modelli di piccole dimensioni.
+
+All'avvio lo script scansiona **tutti** i quiz in `quizzes/` e li classifica in:
+- `completi`
+- `incompleti`
+- `da fare`
 
 Per ogni domanda ancora priva di spiegazione, invia al modello un batch di domande (con la risposta corretta già nota) chiedendo di produrre:
 - `explanation`: perché quella risposta è corretta (concetto teorico, max 2-3 frasi)
@@ -59,7 +82,7 @@ Il file viene aggiornato dopo ogni batch, quindi in caso di interruzione il lavo
 
 **Uso base:**
 ```bash
-python scripts/enrich_quiz.py
+python scripts/ollama_enrich_quiz.py
 ```
 
 Il processo è interattivo: selezioni il file quiz e il modello da usare.
@@ -69,7 +92,13 @@ Il processo è interattivo: selezioni il file quiz e il modello da usare.
 | Flag | Default | Descrizione |
 |---|---|---|
 | `--model MODEL` | interattivo | Specifica il modello senza selezione interattiva |
+| `--quiz PATH` | interattivo | File quiz relativo a `quizzes/` senza selezione interattiva |
+| `--list-models` | off | Mostra i modelli disponibili e termina |
 | `--batch-size N` | `5` | Domande per chiamata. Riduci a 3 per modelli < 3B |
+| `--retries N` | `1` | Tentativi extra per batch su errore/parse fail |
+| `--plan-only` | off | Precalcola e mostra il piano batch, poi termina senza chiamare Ollama |
+| `--plan-limit N` | `20` | Quanti batch mostrare nel piano (`-1` per tutti) |
+| `--walk-incomplete` | off | Processa un quiz incompleto/da fare alla volta e chiede se passare al successivo |
 | `--base-url URL` | `http://localhost:11434` | URL dell'istanza Ollama |
 | `--api-key KEY` | nessuna | API key per istanze Ollama con autenticazione |
 | `--force` | off | Rigenera anche le domande che hanno già i campi compilati |
@@ -77,13 +106,22 @@ Il processo è interattivo: selezioni il file quiz e il modello da usare.
 **Esempi:**
 ```bash
 # Usa un modello specifico con batch ridotto per modelli piccoli
-python scripts/enrich_quiz.py --model llama3.2 --batch-size 3
+python scripts/ollama_enrich_quiz.py --model llama3.2 --batch-size 3
 
 # Ollama remoto con autenticazione
-python scripts/enrich_quiz.py --base-url https://mio-ollama.example.com --api-key sk-xxx
+python scripts/ollama_enrich_quiz.py --base-url https://mio-ollama.example.com --api-key sk-xxx
+
+# Scegli quiz via flag + retry extra
+python scripts/ollama_enrich_quiz.py --quiz sapienza/informatica/uniquizzes/so1.json --retries 2
+
+# Solo pianificazione: quali batch sono completi e quali da popolare
+python scripts/ollama_enrich_quiz.py --quiz sapienza/informatica/uniquizzes/so1.json --batch-size 10 --plan-only --plan-limit -1
+
+# Workflow guidato: completa un quiz per volta, poi chiede se andare al prossimo
+python scripts/ollama_enrich_quiz.py --walk-incomplete --model llama3.2
 
 # Rigenera tutto da capo
-python scripts/enrich_quiz.py --force
+python scripts/ollama_enrich_quiz.py --force
 ```
 
 ---

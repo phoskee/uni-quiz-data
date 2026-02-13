@@ -18,8 +18,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Charles Darwin ha scritto numerose opere divulgative e di viaggio, tra cui 'Il viaggio del Beagle', che sono state ampiamente adattate per un pubblico infantile nel XIX secolo, diventando tra le più famose biografie per bambini dell'epoca.",
+    "hint": "Considera chi, nel XIX secolo, ha prodotto opere naturalistiche accessibili ai giovani lettori."
   },
   {
     "question": "2) Nell'osservazione naturalistica l'osservatore esercita un controllo",
@@ -40,8 +40,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'osservazione naturalistica prevede che l'osservatore osservi i comportamenti nel loro ambiente naturale senza intervenire o manipolare le variabili, esercitando quindi un controllo minimo.",
+    "hint": "Nel metodo naturalistico si osserva senza intervenire: quanto controllo esercita il ricercatore?"
   },
   {
     "question": "3) L'etogramma è utilizzato nell'approccio",
@@ -62,8 +62,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'etogramma è uno strumento specifico dell'etologia che cataloga i comportamenti tipici di una specie, rappresentando l'insieme dei comportamenti innati osservabili.",
+    "hint": "L'etologia studia il comportamento animale in natura: quale termine tecnico usa per descrivere il repertorio comportamentale?"
   },
   {
     "question": "4) L'approccio etnografico utilizza l'osservazione",
@@ -84,8 +84,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'approccio etnografico si basa sull'osservazione partecipante, dove il ricercatore si integra nel gruppo sociale studiato per comprenderne usi, costumi e significati culturali dall'interno.",
+    "hint": "Nell'etnografia il ricercatore 'entra' nel gruppo studiato: che tipo di osservazione comporta?"
   },
   {
     "question": "5) Quale metodo prevede il controllo della/e variabile/i indipendente/i",
@@ -106,8 +106,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il metodo sperimentale prevede la manipolazione controllata della variabile indipendente per osservarne gli effetti sulla variabile dipendente, garantendo validità interna.",
+    "hint": "Il controllo diretto delle variabili è caratteristico del metodo che manipola attivamente la situazione sperimentale."
   },
   {
     "question": "6) L'osservazione diretta e partecipe del bambino nei primi due anni di vita prende il nome di",
@@ -128,8 +128,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'infant observation è il termine tecnico specifico per l'osservazione diretta e partecipe del bambino nei primi due anni di vita, sviluppata nell'ambito della psicologia dello sviluppo.",
+    "hint": "La strange situation misura l'attaccamento, il target child è un termine diverso."
   },
   {
     "question": "7) L'osservazione scientifica consiste nel",
@@ -150,8 +150,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'osservazione scientifica si distingue dall'osservazione comune perché prevede una pianificazione metodologica precisa, con obiettivi definiti e strumenti specifici.",
+    "hint": "Il termine 'programmata' implica un metodo strutturato, non una semplice visione passiva."
   },
   {
     "question": "8) Piaget propone un'osservazione",
@@ -172,8 +172,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Piaget utilizzava un approccio che combinava l'osservazione in contesti naturali con elementi di controllo sperimentale, senza giungere a un esperimento controllato puro.",
+    "hint": "La risposta non è 'naturalistica' perché Piaget introduceva stimoli specifici."
   },
   {
     "question": "9) Nella visione attuale, l'osservazione può essere utilizzata a scopo",
@@ -194,8 +194,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'osservazione contemporanea può servire sia per raccogliere dati descrittivi che per testare ipotesi in disegni sperimentali o quasi-sperimentali.",
+    "hint": "Le metodologie moderne permettono entrambi gli approcci."
   },
   {
     "question": "10) Nel processo osservativo la realtà osservata è",
@@ -216,8 +216,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nella prospettiva attuale, l'osservazione è un processo attivo in cui l'osservatore interpreta inevitabilmente la realtà attraverso i propri costrutti mentali e pregiudizi.",
+    "hint": "Non esiste un'osservazione puramente oggettiva senza mediazione del soggetto."
   },
   {
     "question": "11) Qual è la fonte dei dati nel caso dell'osservazione?",
@@ -238,8 +238,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nell'osservazione, i dati derivano dalla percezione e registrazione da parte dell'osservatore, che funge da fonte primaria attraverso i suoi sensi e la sua interpretazione.",
+    "hint": "Chi è il protagonista nel processo di rilevazione dei dati osservativi?"
   },
   {
     "question": "12) La validità dei dati riguarda",
@@ -260,8 +260,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La validità riguarda il grado in cui le misure ottenute rappresentano effettivamente il costrutto che si intende misurare, cioè il loro significato.",
+    "hint": "La validità risponde alla domanda: stiamo misurando ciò che vogliamo misurare?"
   },
   {
     "question": "13) L'affidabilità dei dati riguarda",
@@ -282,8 +282,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'affidabilità riguarda la consistenza e la riproducibilità delle misure, ovvero la loro precisione quando l'osservazione viene ripetuta.",
+    "hint": "Se ripetessi l'osservazione, otterrei gli stessi risultati?"
   },
   {
     "question": "14) La messa a punto di un progetto osservativo richiede di",
@@ -304,8 +304,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La messa a punto di un progetto osservativo richiede una pianificazione strutturata delle fasi, dei tempi e delle modalità dell'osservazione.",
+    "hint": "Un progetto ben strutturato richiede una definizione preventiva delle attività."
   },
   {
     "question": "15) Il progetto osservativo prevede il protocollo di rilevazione",
@@ -326,8 +326,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il protocollo di rilevazione è uno strumento fondamentale che fa parte di ogni tipo di progetto osservativo, indipendentemente dal metodo utilizzato.",
+    "hint": "È un elemento cardine che accompagna qualsiasi forma di osservazione sistematica."
   },
   {
     "question": "16) Scopo del periodo di addestramento è",
@@ -348,8 +348,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il periodo di addestramento serve sia a correggere eventuali difetti o malfunzionamenti dello strumento di osservazione, sia a migliorare le competenze e l'accuratezza dell'osservatore nell'eseguire le rilevazioni.",
+    "hint": "Considera che l'addestramento può riguardare sia l'aspetto tecnico (strumento) che quello umano (osservatore)."
   },
   {
     "question": "17) La validità è la capacità di uno strumento di rilevare",
@@ -370,8 +370,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La validità indica la capacità di uno strumento di misurare esattamente ciò che intende misurare, ovvero il costrutto teorico o la variabile di interesse.",
+    "hint": "Distingui tra 'rilevare qualsiasi cosa' e 'rilevare ciò che realmente si vuole rilevare'."
   },
   {
     "question": "18) Il kappa di Cohen è una statistica designata a",
@@ -392,8 +392,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il kappa di Cohen corregge l'accordo osservato tenendo conto dell'accordo atteso per puro caso, fornendo così una misura più affidabile dell'accordo reale tra osservatori.",
+    "hint": "Pensa al fatto che parte dell'accordo potrebbe essere dovuta al caso, non alla reale concordanza."
   },
   {
     "question": "19) L'effetto Rosenthal è una distorsione che riguarda",
@@ -414,8 +414,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'effetto Rosenthal riguarda come le aspettative e le credenze dell'osservatore possono influenzare inconsciamente le performance o il comportamento dei soggetti osservati.",
+    "hint": "Questo effetto coinvolge chi osserva e le sue aspettative sui risultati."
   },
   {
     "question": "20) L'effetto Hawthorne è una parte d'errore riguardante",
@@ -436,8 +436,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'effetto Hawthorne riguarda i soggetti osservati che, sapendo di essere osservati, possono modificare volontariamente il proprio comportamento indipendentemente dall'intervento sperimentale.",
+    "hint": "Pensa a come cambiano i comportamenti quando le persone sanno di essere watched."
   },
   {
     "question": "21) Il resoconto è",
@@ -458,8 +458,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il resoconto nella metodologia osservativa rappresenta la registrazione oggettiva e fedele di ciò che viene osservato, senza aggiungere interpretazioni o sintesi soggettive.",
+    "hint": "Distinguitelo dalla sintesi o interpretazione dei dati."
   },
   {
     "question": "22) Lo schema di codifica rileva",
@@ -480,8 +480,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lo schema di codifica definisce a priori le categorie comportamentali da rilevare, fungendo da guida sistematica per l'osservazione.",
+    "hint": "Viene costruito prima dell'osservazione vera e propria."
   },
   {
     "question": "23) Le categorie molecolari rilevano",
@@ -502,8 +502,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le categorie molecolari si riferiscono a comportamenti singoli, specifici e ben definiti, distinguendosi dai comportamenti più ampi e globali.",
+    "hint": "Rappresentano il livello più elementare di analisi comportamentale."
   },
   {
     "question": "24) Le categorie operazionali",
@@ -524,8 +524,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le categorie operazionali traducono i costrutti teorici in indicatori comportamentali concreti e osservabili.",
+    "hint": "Devono essere verificabili direttamente attraverso i sensi."
   },
   {
     "question": "25) I questionari e le scale di valutazione",
@@ -546,8 +546,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I questionari e le scale di valutazione sono strumenti psicometrici standardizzati che permettono di rilevare e misurare caratteristiche psicologiche specifiche.",
+    "hint": "Non sono limitati a particolari fasce d'età o solo ad esperti."
   },
   {
     "question": "26) I questionari di etero osservazione servono a rilevare i comportamenti in modo",
@@ -568,8 +568,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I questionari di etero-osservazione sono compilati da un osservatore esterno (etero) che rileva i comportamenti in modo indiretto, attraverso la compilazione di item descrittivi, non attraverso l'osservazione diretta del comportamento.",
+    "hint": "Il prefisso 'etero' indica che l'osservatore è esterno al soggetto osservato."
   },
   {
     "question": "27) Il Q-set serve a valutare una data dimensione psicologica tramite item che forniscono",
@@ -590,8 +590,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il Q-set utilizza item costituiti da descrizioni comportamentali dettagliate che vengono ordinate (sorted) dal soggetto o dall'osservatore per valutare una dimensione psicologica.",
+    "hint": "Il nome 'Q-set' deriva dal termine 'sorting' (ordinamento) delle descrizioni."
   },
   {
     "question": "28) L'attachment Q-sort è",
@@ -612,8 +612,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'Attachment Q-sort è uno strumento sviluppato da Waters che valuta la sicurezza dell'attaccamento attraverso l'osservazione del comportamento del bambino nel suo ambiente naturale.",
+    "hint": "Non fa parte della Strange Situation, che è un'altra procedura standardizzata."
   },
   {
     "question": "29) L'età mentale o età di sviluppo di un bambino si definisce mediante",
@@ -634,8 +634,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'età mentale si ottiene confrontando le prestazioni del bambino con quelle di un gruppo normativo di bambini della stessa età cronologica, identificando a quale età corrispondono le sue prestazioni.",
+    "hint": "È un concetto legato alla normazione dei test psicologici."
   },
   {
     "question": "30) Per l'approccio psicometrico l'intelligenza è",
@@ -656,8 +656,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'approccio psicometrico tradizionale (Spearman) concepisce l'intelligenza come una capacità unitaria globale (fattore g), da cui derivano le abilità specifiche.",
+    "hint": "Questo approccio enfatizza l'esistenza di un fattore generale di intelligenza."
   },
   {
     "question": "31) Le scale di Uzgiris-Hunt si basano su un approccio",
@@ -678,8 +678,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le scale di Uzgiris-Hunt misurano lo sviluppo sensomotorio attraverso livelli ordinali di acquisizione, ordinando le risposte del bambino dal meno al più competente, senza presupporre stadi qualitativi discreti come nella teoria piagetiana.",
+    "hint": "Distingui tra misure ordinali (ordine di successione) e stadi (qualitativamente diversi)."
   },
   {
     "question": "32) Da quante scale sono composte le scale di Uzgiris-hunt?",
@@ -700,8 +700,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le scale di Uzgiris-Hunt comprendono 6 scale specifiche che valutano diverse aree dello sviluppo sensomotorio: oggetto permanente, causalità, mezzi-fini, relazioni spaziali, schemi di azione e vocalizzazione.",
+    "hint": "Ricorda il numero esatto delle scale che compongono questa batteria diagnostica."
   },
   {
     "question": "33) Nell'utilizzo delle scale U-H con il termine tappa di sviluppo si intende un particolare",
@@ -722,8 +722,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nelle scale U-H, la 'tappa' indica il livello specifico di acquisizione di una singola capacità sensomotoria all'interno di una scala, distinguendosi dal livello generale di sviluppo sensomotorio del bambino.",
+    "hint": "È un concetto più circoscritto rispetto al livello complessivo di sviluppo."
   },
   {
     "question": "34) Per la somministrazione delle scale U-H è necessario",
@@ -744,8 +744,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La procedura standard prevede di ripetere ogni item per verificare la consistenza delle risposte del bambino, garantendo l'affidabilità della misurazione e distinguendo risposte casuali da competenze effettive.",
+    "hint": "La ripetizione serve a verificare la stabilità della risposta."
   },
   {
     "question": "35) L'utilizzo delle scale U-H in ambito clinico permette di valutare",
@@ -766,8 +766,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le scale U-H sono uno strumento di valutazione dello sviluppo sensomotorio che permette di identificare il livello di competenza del bambino, ma non forniscono diagnosi nosografiche di patologie specifiche.",
+    "hint": "Misura il 'quanto' dello sviluppo, non il 'che tipo' di disturbo."
   },
   {
     "question": "36) La caratteristica principale delle scale U-H è che ogni scala comprende una serie di:",
@@ -788,8 +788,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le scale U-H (Urie Bronfenbrenner) sono strumenti osservativi che utilizzano situazioni-stimolo come unità fondamentali di analisi del comportamento infantile, permettendo di osservare le risposte del bambino a contesti strutturati.",
+    "hint": "Ricorda che le scale U-H si basano su osservazioni strutturate di situazioni specifiche."
   },
   {
     "question": "37) Le dimensioni indagate dallo schema di codifica delle attività del bambino nel contesto educativo sono",
@@ -810,8 +810,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lo schema di codifica delle attività del bambino nel contesto educativo analizza quattro dimensioni: il clima sociale dell'ambiente, le attività svolte, il linguaggio utilizzato e il livello cognitivo coinvolto.",
+    "hint": "È uno strumento multidimensionale che valuta sia il contesto che il comportamento."
   },
   {
     "question": "38) L'osservazione dei comportamenti a cui viene applicato lo schema di codifica delle attività del bambino avviene attraverso rilevazioni",
@@ -832,8 +832,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La rilevazione con carta e matita prevede l'osservazione diretta e la registrazione manuale dei comportamenti durante l'attività, senza utilizzo di supporti audio/video.",
+    "hint": "È un metodo di osservazione classico e immediato."
   },
   {
     "question": "39) Lo schema di codifica delle attività del bambino permette di descrivere il comportamento del bambino in unità temporali di",
@@ -854,8 +854,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lo schema di codifica suddivide il comportamento in unità temporali di 1 minuto, permettendo un'analisi granulare e sistematica delle azioni del bambino.",
+    "hint": "L'unità temporale è breve per catturare i cambiamenti comportamentali."
   },
   {
     "question": "40) Le categorie di codifica del livello cognitivo dello schema di codifica delle attività del bambino sono",
@@ -876,8 +876,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le categorie di codifica del livello cognitivo sono classificate su tre livelli: alto (coinvolgimento elevato), medio (coinvolgimento moderato) e basso (coinvolgimento scarso).",
+    "hint": "È una classificazione a tre livelli basata sull'intensità del coinvolgimento."
   },
   {
     "question": "41) La presa del turno nel contesto scolastico è",
@@ -898,8 +898,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nel contesto scolastico l'insegnante ha un ruolo di regista della comunicazione: decide quando e chi può parlare, gestendo attivamente la presa del turno per mantenere l'ordine e la didattica.",
+    "hint": "Pensa a chi controlla la comunicazione in una classe tradizionale."
   },
   {
     "question": "42) Il QSCL è uno strumento che valuta",
@@ -920,8 +920,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il QSCL è uno strumento di screening che valuta lo sviluppo comunicativo nella prima infanzia, coprendo diverse modalità espressive: gesti, parole singole e combinazioni di parole.",
+    "hint": "Ricorda che è uno strumento di valutazione globale della comunicazione precoce."
   },
   {
     "question": "43) Quali sono le misure criteriali della forma II del QSCL?",
@@ -942,8 +942,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La forma II del QSCL si concentra su indicatori di comunicazione sociale e linguistica: il ricorso all'adulto come supporto, l'indicazione referenziale, la produzione di frasi e il conteggio delle parole.",
+    "hint": "Guarda quali sono le dimensioni valutate nella forma più avanzata dello strumento."
   },
   {
     "question": "44) Il QSCL è composto da domande",
@@ -964,8 +964,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le domande a risposta strutturata prevedono opzioni predefinite tra cui scegliere,特点是既非 completamente chiuse né completamente aperte, permettendo una valutazione standardizzata.",
+    "hint": "Non sono domande dove si può rispondere liberamente con qualsiasi parola."
   },
   {
     "question": "45) Negli studi di applicazione del QSCL i bambini con sviluppo tipico sono stati osservati a",
@@ -986,8 +986,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gli studi di validazione del QSCL hanno osservato bambini con sviluppo tipico a 12, 16 e 20 mesi, per catturare l'evoluzione delle competenze comunicative durante il secondo anno di vita.",
+    "hint": "Questi mesi corrispondono a momenti chiave dello sviluppo linguistico precoce."
   },
   {
     "question": "46) Quali comportamenti del bambino è necessario valutare per garantire l'attendibilità del QSCL?",
@@ -1008,8 +1008,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il QSCL valuta i comportamenti comunicativi attuali e in fase di sviluppo per garantire che l'attendibilità sia riferita alle abilità emergenti, non a quelle già consolidate.",
+    "hint": "Per l'attendibilità servono comportamenti osservabili nel momento della valutazione."
   },
   {
     "question": "47) Gli ambiti di utilizzo del QSCL sono",
@@ -1030,8 +1030,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il QSCL è uno strumento standardizzato usato in diagnostica per la valutazione di difficoltà, in contesto clinico per interventi e nella ricerca per studi sullo sviluppo.",
+    "hint": "È uno strumento di valutazione formale con usi molteplici."
   },
   {
     "question": "48) La codifica del QSCL viene fatta per ogni item mediante una scala a",
@@ -1052,8 +1052,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il QSCL utilizza una scala a tre livelli (presente, assente, in emergenza) per codificare ogni item, offrendo una valutazione categorica piuttosto che graduale.",
+    "hint": "È una scala semplice che distingue tra assenza, presenza e comparsa."
   },
   {
     "question": "49) Lo scopo principale dell'uso del QSCL per lo screening preventivo è",
@@ -1074,8 +1074,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lo screening preventivo con il QSCL serve a identificare precocemente bambini che potrebbero avere difficoltà communicative, permettendo interventi tempestivi.",
+    "hint": "Non si tratta di formulare una diagnosi definitiva ma di individuare precocemente segnali di rischio."
   },
   {
     "question": "50) Dalla lista dei gesti comunicativi del QSCL emerge che Laura produce",
@@ -1096,8 +1096,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il profilo di Laura nel QSCL mostra una limitata produzione di gesti referenziali, cioè gesti che rimandano a oggetti o persone assenti.",
+    "hint": "Riguarda la quantità di gesti con funzione rappresentativa specifica."
   },
   {
     "question": "51) Da uno studio con il QSCL è emerso che i bambini con autismo rispetto ai bambini con ritardo",
@@ -1118,8 +1118,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lo studio QSCL (Questionnaire for Social Communication Skills) ha evidenziato che i bambini con autismi e quelli con ritardo mentale condividono deficit simili nelle abilità comunicative primitive (contatto visivo, gesti, attenzione condivisa), mentre si differenziano nelle competenze sociali più complesse.",
+    "hint": "Pensa a quali competenze comunicative di base sono comuni a entrambi i disturbi."
   },
   {
     "question": "52) Lo schema di codifica delle conversazioni in classe di Selleri e Santarcangelo ha come unità di analisi",
@@ -1140,8 +1140,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lo schema di codifica di Selleri e Santarcangelo è uno strumento osservativo che analizza le interazioni comunicative in classe, quindi l'unità di analisi deve includere sia chi insegna che chi apprende.",
+    "hint": "Ricorda che l'osservazione avviene in un contesto di interazione tra due soggetti."
   },
   {
     "question": "53) Lo schema di codifica delle conversazioni in classe di Selleri e Santarcangelo codifica gli interventi linguistici nelle seguenti tipologie",
@@ -1162,8 +1162,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nello schema di codifica, gli interventi linguistici vengono classificati in routine (es. saluti, ringraziamenti) e organizzativi (es. istruzioni, richieste di chiarimento), distinguendo la comunicazione funzionale da quella gestionale.",
+    "hint": "Considera quali sono le principali funzioni della comunicazione in aula."
   },
   {
     "question": "54) La raccolta dei dati con lo schema di codifica delle conversazioni in classe di S.S. avviene",
@@ -1184,8 +1184,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La raccolta dati può avvenire sia in tempo reale (osservazione dal vivo con annotazione) che attraverso videoregistrazione per consentire analisi successive più accurate.",
+    "hint": "Esistono due modalità complementari di documentazione dell'osservazione."
   },
   {
     "question": "55) L'analisi attraverso lo schema di codifica delle conversazioni in classe di S.S si può effettuare",
@@ -1206,8 +1206,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lo schema consente analisi sia a livello individuale (singolo bambino) che collettivo (intera classe), permettendo di studiare pattern comunicativi in entrambi i livelli.",
+    "hint": "Lo strumento è versatile e può adattarsi a diversi livelli di analisi."
   },
   {
     "question": "56) Il sistema di codifica relazionale (Fogel, 2000) considera la comunicazione",
@@ -1228,8 +1228,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il sistema di codifica relazionale di Fogel definisce la comunicazione come un processo dinamico in cui i partecipanti si adattano reciprocamente, modificando continuamente il proprio comportamento in risposta all'altro.",
+    "hint": "Pensare a come due persone si influenzano a vicenda durante una conversazione."
   },
   {
     "question": "57) Il sistema di codifica relazionale si propone di",
@@ -1250,8 +1250,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Questo sistema si focalizza sulla qualità della relazione e dell'interazione tra le persone, analizzando come i partecipanti si relazionano, piuttosto che sul contenuto verbale in sé.",
+    "hint": "Non si concentra sulle parole dette, ma su come le persone interagiscono tra loro."
   },
   {
     "question": "58) Nel sistema di codifica relazionale l'unità di analisi è",
@@ -1272,8 +1272,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'unità di analisi è l'episodio di coregolazione, ovvero il segmento di interazione in cui i partecipanti si regolano reciprocamente attraverso comportamenti coordinati.",
+    "hint": "È un segmento specifico di interazione, non il singolo comportamento né l'intera conversazione."
   },
   {
     "question": "59) Nella coregolazione unilaterale si osserva un livello di coinvolgimento interpersonale",
@@ -1294,8 +1294,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nella coregolazione unilaterale un partecipante guida l'interazione mentre l'altro segue passivamente, determinando un livello di coinvolgimento reciproco minimo.",
+    "hint": "Un partecipante è attivo mentre l'altro ha un ruolo passivo."
   },
   {
     "question": "60) La partecipazione congiunta nell'episodio interattivo è codificato dalla categoria",
@@ -1316,8 +1316,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La categoria simmetrica codifica quei momenti in cui entrambi i partecipanti contribuiscono attivamente e in modo equilibrato all'interazione, manifestando partecipazione congiunta.",
+    "hint": "Quando entrambi i partecipanti sono equally coinvolti e attivi."
   },
   {
     "question": "61) La ricerca che utilizza lo schema di codifica relazionale (Aureli e picciolo, 2002) ha indagato",
@@ -1338,8 +1338,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Lo schema di codifica relazionale di Aureli e Piccini è uno strumento osservativo specifico per l'analisi delle interazioni diadiche madre-bambino durante attività condivise, focalizzandosi sulla qualità del legame e sulla reciprocità emotiva.",
+    "hint": "Il termine 'relazionale' indica il focus sulle interazioni tra due persone specifiche."
   },
   {
     "question": "62) La scala di valutazione del comportamento e della competenza sociale (SCBE) valuta",
@@ -1360,8 +1360,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La SCBE è uno strumento psicometrico sviluppato specificamente per la fascia d'età prescolare (3-6 anni), che valuta sia le competenze sociali prosociali che le difficoltà di adattamento come ansia e aggressività.",
+    "hint": "L'acronimo SCBE e la letteratura di riferimento indirizzano chiaramente la popolazione target."
   },
   {
     "question": "63) Le SCBE vengono compilate da",
@@ -1382,8 +1382,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le SCBE sono questionari compilati dagli insegnanti perché possono osservare il comportamento del bambino nel contesto scolastico naturale, offrendo una valutazione ecologica delle competenze sociali.",
+    "hint": "Nel contesto scolastico, chi ha la possibilità di osservare regolarmente le interazioni tra pari?"
   },
   {
     "question": "64) La SCBE ha principalmente uno scopo",
@@ -1404,8 +1404,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La SCBE ha una duplice finalità: clinica (identificare bambini con difficoltà che potrebbero necessitare di interventi specifici) ed educativa (fornire agli insegnanti informazioni utili per adattare le strategie didattiche).",
+    "hint": "Uno strumento può servire sia per la diagnosi che per la pianificazione di interventi."
   },
   {
     "question": "65) L'SCBE-30 comprende le 3 seguenti scale",
@@ -1426,8 +1426,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'SCBE-30 comprende tre scale: Competenza sociale (abilità prosociali), Rabbia e aggressività (comportamenti problematici esterni), e Ansia e isolamento (comportamenti problematici interni).",
+    "hint": "Le tre scale corrispondono alle principali dimensioni del funzionamento socio-emotivo infantile."
   },
   {
     "question": "66) Ciascuna scala dell'SCBE-30 prevede il seguente numero di item",
@@ -1448,8 +1448,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'SCBE-30 è uno strumento standardizzato con 3 scale (competenza sociale, problemi internalizzanti, problemi externalizzanti), ciascuna composta da 10 item per un totale di 30 item.",
+    "hint": "Ricorda che il numero 30 nel nome si riferisce al totale degli item, non al numero per scala."
   },
   {
     "question": "67) La somministrazione dell'SCBE-30 è consigliata per bambini che sono inseriti nella scuola dell'infanzia da almeno",
@@ -1470,8 +1470,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il periodo minimo di 2 mesi di inserimento nella scuola dell'infanzia è necessario per permettere al bambino di ambientarsi e per consentire agli osservatori di valutare un comportamento rappresentativo.",
+    "hint": "Pensa a quanto tempo serve per osservare un comportamento tipico del bambino in un nuovo ambiente."
   },
   {
     "question": "68) Gli ambiti di utilizzo dell'SCBE-30 sono",
@@ -1492,8 +1492,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'SCBE-30 è uno strumento multiuso utilizzato in ambito educativo (screening scolastico), clinico (valutazione diagnostica) e di ricerca (studi sullo sviluppo sociale).",
+    "hint": "Uno strumento di valutazione validato può essere impiegato in contesti diversi."
   },
   {
     "question": "69) Gli studi di validazione dell'SCBE-30 hanno dimostrato",
@@ -1514,8 +1514,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La validazione psicometrica completa dell'SCBE-30 ha dimostrato sia proprietà relative alla validità (costrutto, consistenza interna, validità discriminante) sia proprietà relative all'affidabilità (attendibilità tra osservatori e stabilità nel tempo).",
+    "hint": "Una buona validazione richiede la dimostrazione di entrambe le proprietà psicometriche fondamentali."
   },
   {
     "question": "70) Nello studio di confronto trans-culturale dell'SCBE-30 è stato dimostrato che nello sviluppo sociale ci sono differenze",
@@ -1536,7 +1536,7 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Le ricerche trans-culturali con l'SCBE-30 hanno evidenziato che le bambine mostrano generalmente competenze sociali superiori rispetto ai bambini in diverse culture.",
+    "hint": "Questo risultato è coerente con la letteratura sullo sviluppo di genere nelle competenze sociali."
   }
 ]

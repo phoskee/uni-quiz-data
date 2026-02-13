@@ -2778,8 +2778,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "#include <string.h>\n#include <stdlib.h>\n#include <stdio.h>\n\nint main() {\n  struct s {\n    char *a;\n    char b[20];\n  } p[2];\n  char *a = strdup(\"ciao\");\n  p[0].a = a;\n  strcpy(p[0].b, a);\n  COPIA\n  a[1] = '0';\n  printf(\"%s %s %s %s\\n\", p[0].a, p[0].b, p[1].a, p[1].b);\n}",
-    "explanation": "",
-    "hint": "Considera attentamente la differenza tra la copia di un puntatore (shallow copy) e la copia di un array in una struct, e verifica quale memoria viene effettivamente modificata dalla riga a[1] = '0'."
+    "explanation": "Quando si assegna p[1] = p[0], si effettua una shallow copy: p[1].a punta alla stessa memoria di p[0].a, mentre p[1].b è una copia indipendente dell'array. Dopo a[1]='0', la stringa puntata da p[0].a e p[1].a diventa 'c0ao', mentre p[0].b e p[1].b mantengono 'ciao' (copiato prima della modifica).",
+    "hint": "Ricorda che la shallow copy copia solo il puntatore, non i dati puntati, mentre l'array viene copiato elemento per elemento."
   },
   {
     "question": "La directory corrente di una shell bash contiene N directory non nascoste. In ognuna di queste directory è contenuto un file di testo .txt contenente una sola riga con un numero M, potenzialmente diverso da directory a directory. Inoltre può essere presente un file dati.M.txt. Si vuole sapere quanti sono in totale, tra le varie directory, questi file dati.M.txt, senza scrivere nulla su standard error. Quale dei seguenti comandi bash è corretto?",

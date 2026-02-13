@@ -6,6 +6,12 @@ Questo repository nasce con l'obiettivo di raccogliere, archiviare e standardizz
 
 Per utilizzare gli script di generazione e validazione, è consigliato configurare un ambiente Python:
 
+### Avvio rapido (consigliato)
+```bash
+./scripts/quiz_cli.sh
+```
+Questo comando crea/usa `venv`, installa le dipendenze (solo quando cambiano) e apre una CLI interattiva per lanciare tutti gli script principali.
+
 1. **Crea e attiva l'ambiente virtuale:**
    ```bash
    python3 -m venv venv

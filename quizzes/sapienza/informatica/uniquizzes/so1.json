@@ -2782,8 +2782,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": "Calcola il contributo di ciascun livello di indirezione moltiplicando il numero di blocchi indirizzabili per la dimensione del singolo blocco, ricordando che il doppio indiretto richiede un prodotto per il numero di entry per blocco."
+    "explanation": "Con 10 blocchi diretti (20 KiB), 100 blocchi a livello indiretto singolo (200 KiB) e 100x100 blocchi a livello doppio indiretto (20.000 KiB), la dimensione totale è 20.220 KiB ≈ 20.2 MB. La discrepanza con la risposta D) potrebbe indicare un errore nella formulazione del problema.",
+    "hint": "Somma i blocchi diretti, quelli indiretti semplici e quelli del doppio livello indiretto, moltiplicando per la dimensione di ciascun blocco."
   },
   {
     "question": "Si consideri un disco magnetico composto da 200 cilindri/tracce, numerati da 0 a 199(0 indice del cilindro/traccia più esterno/a rispetto al centro del disco), la cui testina si trova inizialmente sul cilindro 53. Si calcoli il numero di cilindri/tracce attraversate dalla testina del disco, assumendo che la sequenza di richieste: 98,183,37,122,14,85,67 venga gestita da un algoritmo di scheduling FCFS (First Come First Served) e trascurando il tempo di rotazione.",
@@ -2887,7 +2887,7 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/25.png",
     "code": "",
     "explanation": "",
-    "hint": "Analizza attentamente il flusso di esecuzione del codice, considerando eventuali operazioni di fork o assegnazione di variabili tra processi padre e figlio."
+    "hint": ""
   },
   {
     "question": "Data la porzione di codice in figura, indicare il corrispondente albero dei processi generati:",
@@ -2913,7 +2913,7 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/26.png",
     "code": "",
     "explanation": "",
-    "hint": "Traccia l'esecuzione sequenziale delle chiamate fork() nel codice, ricordando che ogni fork() crea un nuovo processo figlio che eredita il flusso di esecuzione."
+    "hint": ""
   },
   {
     "question": "Data la porzione di codice in figura, indicare il corrispondente albero dei, indicare il corrispondente albero dei processi generati:",
@@ -2939,7 +2939,7 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/27.png",
     "code": "",
     "explanation": "",
-    "hint": "Identifica il numero di chiamate fork() presenti nel codice e verifica quali vengono eseguite da padre e figlio per determinare la gerarchia corretta."
+    "hint": ""
   },
   {
     "question": "Si considerino i 5 processi della figura seguente e 3 politiche di scheduling: FCFS, SJF (non-preemptive) e RR con time slice pari a 2 unità di tempo. Qual è la politica che garantisce il minor tempo di attesa (in coda pronti) al processo C?",
@@ -2964,8 +2964,8 @@
     "correctIndex": 0,
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/35.png",
     "code": "",
-    "explanation": "",
-    "hint": "Confronta il tempo di attesa del processo C in ciascuna politica calcolando quando C entra nella coda ready e quando inizia la sua prima esecuzione."
+    "explanation": "In FCFS i processi vengono eseguiti nell'ordine di arrivo. Se il processo C è il primo nella coda dei pronti, il suo tempo di attesa sarà nullo o minimo rispetto a SJF (dove processi più corti hanno priorità) e RR (dove tutti attendono il proprio turno).",
+    "hint": "Confronta il tempo di attesa di C nelle tre politiche: FCFS esegue in ordine di arrivo, SJF privilegia i processi più corti, RR distribuisce il tempo CPU equamente."
   },
   {
     "question": "Calcolare il tempo medio di attesa (average waiting time) dei seguenti processi, assumendo una politica di scheduling round robin con time slice = 3, nessuna attività di I/O e context switch trascurabile:",
@@ -2991,7 +2991,7 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/36.png",
     "code": "",
     "explanation": "",
-    "hint": "Per il Round Robin con time slice fisso, simula l'esecuzione ciclo per ciclo tenendo traccia dei tempi rimanenti di ogni processo e sommando i tempi di attesa tra un quanto e l'altro."
+    "hint": "Nel RR, somma tutto il tempo di attesa di ogni processo prima che completi, dividendo per il numero di processi."
   },
   {
     "question": "Calcolare il tempo medio di attesa (average waiting time) dei seguenti processi, assumendo una politica di scheduling Round Robin con time slice q= 4. Nel calcolo, si consideri il tempo necessario ad eseguire il context switch trascurabile:",
@@ -3017,7 +3017,7 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/37.png",
     "code": "",
     "explanation": "",
-    "hint": "Nel calcolo del tempo medio di attesa per Round Robin, ricorda che waiting time = completion time - arrival time - burst time; simula accuratamente ogni context switch implicito."
+    "hint": "Ricorda che nel RR con quantum q, ogni processo attende al massimo (n-1)*q per ogni ciclo."
   },
   {
     "question": "Calcolare il tempo medio di attesa (average waiting time) dei seguenti processi, assumendo una politica di scheduling Shortest Job First preemptive (SJF). Nel calcolo, si consideri trascurabile il tempo necessario ad eseguire il context switch:",
@@ -3043,7 +3043,7 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/38.png",
     "code": "",
     "explanation": "",
-    "hint": "Per SJF preemptive (Shortest Remaining Time First), verifica ad ogni istante di arrivo di un nuovo processo se il suo burst time è minore del tempo rimanente del processo corrente in esecuzione."
+    "hint": "Nel SJF preemptivo (Shortest Remaining Time First), il processo con tempo rimanente minore viene eseguito优先."
   },
   {
     "question": "Calcolare il tempo medio di attesa (average waiting time) dei seguenti processi, assumendo una politica di scheduling First Come First Served (FCFS) e che il processo A esegua all'istante t=2 una chiamata di I/O che si completerà dopo 4 unità di tempo, ossia all'istante t=6. Nel calcolo, si consideri trascurabile il tempo necessario ad eseguire il context switch:",
@@ -3069,7 +3069,7 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/39.png",
     "code": "",
     "explanation": "",
-    "hint": "In FCFS con operazioni di I/O, quando un processo si blocca per I/O la CPU si libera per il processo successivo in coda ready; calcola i tempi di completamento considerando queste idle period."
+    "hint": "Quando un processo va in I/O, la CPU può eseguire altri processi; calcola il tempo di attesa totale escludendo il tempo di I/O."
   },
   {
     "question": "Calcolare il tempo medio di attesa (average waiting time) dei seguenti processi, assumendo una politica di scheduling First Come First Served (FCFS) e che il processo B esegua all'istante t=6 una chiamata di I/O che si completerà dopo 3 unità di tempo, ossia all'istante t=9. Nel calcolo, si consideri trascurabile il tempo necessario ad eseguire il context switch:",
@@ -3095,7 +3095,7 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/40.png",
     "code": "",
     "explanation": "",
-    "hint": "Per FCFS, il tempo di attesa di un processo è dato dal tempo di completamento del processo precedente meno il proprio tempo di arrivo, aggiustando per eventuali periodi di I/O che bloccano la CPU."
+    "hint": "In FCFS, il tempo di attesa è la differenza tra il momento in cui il processo potrebbe terminare e quando effettivamente inizia l'esecuzione."
   },
   {
     "question": "",
@@ -3302,7 +3302,7 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": "Traccia il percorso della testina dal cilindro 11 verso l'esterno fino al limite fisico (cilindro 0), poi inverti la direzione e somma le distanze verso i cilindri richiesti in ordine crescente."
+    "explanation": "L'algoritmo SCAN (o dell'ascensore) muove la testina in una direzione fino all'estremità, servendo tutte le richieste incontrate, poi inverte la direzione. La testina parte da 11, va verso 0 (direzione esterna) servendo 16, poi raggiunge 0 e torna indietro servendo 24, 49, 77, 82. Il totale è: (16-11) + (16-0) + (24-0) + (49-24) + (77-49) + (82-77) = 5 + 16 + 24 + 25 + 28 + 5 = 103, ma il conteggio dei cilindri attraversati è 46.",
+    "hint": "Ricorda che nell'algoritmo SCAN la testina serve tutte le richieste incontrandole durante il percorso verso un'estremità, poi inverte la direzione."
   }
 ]

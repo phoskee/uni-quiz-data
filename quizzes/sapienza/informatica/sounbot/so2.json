@@ -1546,8 +1546,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": "Ricorda la differenza tra /etc/fstab (filesystem da montare al boot) e /etc/mtab (filesystem attualmente montati); nessuno dei due è strettamente necessario per un mount manuale."
+    "explanation": "/etc/mtab (o /proc/mounts nei sistemi moderni) tiene traccia dei filesystem attualmente montati nel sistema. Quando un filesystem viene montato con il comando mount, viene registrato in mtab, quindi tale file elenca i filesystem che sono stati montati. Al contrario, /etc/fstab contiene le entry per il mount automatico all'avvio, ma non è obbligatorio per montare manualmente un filesystem.",
+    "hint": "Ricorda che fstab serve per il mount automatico, mentre mtab elenca i filesystem già montati."
   },
   {
     "question": "72. Si supponga di avere il seguente frammento di codice:\n<code>FILE *stream = fopen(NOMEFILE, \"w\");</code>\nQuale dei seguenti frammenti di codice ha lo stesso effetto?",
@@ -2698,8 +2698,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": "Controlla attentamente la funzione usata alla riga 10 e verifica se è appropriata per chiudere uno stream FILE*, poi considera lo stato del puntatore alle righe successive."
+    "explanation": "Il codice apre correttamente il file con fopen in modalità w+ (lettura e scrittura), scrive con fprintf, chiude con close, riavvolge con rewind e legge con le due fscanf. La chiamata a close(pFile) invece di fclose(pFile) è tecnicamente scorretta in C standard, ma in molti compilatori funziona comunque, permettendo l'esecuzione di tutte le righe successive.",
+    "hint": "Attenzione alla differenza tra close() e fclose() in C: la prima è per file descriptor (syscall), la seconda per FILE* (libreria stdio)."
   },
   {
     "question": "124. Cosa fa il seguente segmento di codice?\n<pre>\nscanf(“%d”,&num); \ndo {\nprintf(“%d\\n”,num); \nscanf(“%d”,&num);\n} while(num!=0);\n</pre>",

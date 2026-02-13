@@ -2626,8 +2626,8 @@
     "correctIndex": 0,
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/35.png",
     "code": "",
-    "explanation": "",
-    "hint": "Considera l'ordine di arrivo dei processi e come ciascuna politica gestisce la coda dei pronti."
+    "explanation": "In FCFS (First-Come-First-Served), i processi vengono eseguiti nell'ordine di arrivo. Se il processo C arriva prima degli altri, non deve attendere in coda, garantendo il minor tempo di attesa.",
+    "hint": "Nel FCFS, il tempo di attesa dipende dall'ordine di arrivo dei processi."
   },
   {
     "question": "Calcolare il tempo medio di attesa (average waiting time) dei seguenti processi, assumendo una politica di scheduling round robin con time slice = 3, nessuna attività di I/O e context switch trascurabile:",
@@ -2652,8 +2652,8 @@
     "correctIndex": 1,
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/36.png",
     "code": "",
-    "explanation": "",
-    "hint": "Costruisci il diagramma di Gantt tenendo conto del time slice e calcola il tempo di attesa per ogni processo."
+    "explanation": "Con RR e time slice = 3, i processi si alternano. Calcolando i tempi di attesa per ciascun processo e facendo la media, si ottiene 6.75.",
+    "hint": "Per calcolare il tempo medio di attesa, considera quante unità di tempo ogni processo attende prima di essere eseguito completamente."
   },
   {
     "question": "Calcolare il tempo medio di attesa (average waiting time) dei seguenti processi, assumendo una politica di scheduling Round Robin con time slice q= 4. Nel calcolo, si consideri il tempo necessario ad eseguire il context switch trascurabile:",
@@ -2678,8 +2678,8 @@
     "correctIndex": 1,
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/37.png",
     "code": "",
-    "explanation": "",
-    "hint": "Disegna la timeline di esecuzione con q=4 e somma i periodi in cui ciascun processo è in stato di ready."
+    "explanation": "Nel Round Robin con q=4, il tempo di attesa dipende dal numero di preemption e dall'ordine di arrivo dei processi. Il tempo medio di attesa si calcola come la somma dei periodi in cui ogni processo è stato nella ready queue pronto per eseguire, diviso per il numero di processi.",
+    "hint": "Ricorda che nel RR il waiting time include tutto il tempo trascorso nella ready queue, inclusi i periodi tra una slice e l'altra."
   },
   {
     "question": "Calcolare il tempo medio di attesa (average waiting time) dei seguenti processi, assumendo una politica di scheduling Shortest Job First preemptive (SJF). Nel calcolo, si consideri trascurabile il tempo necessario ad eseguire il context switch:",
@@ -2704,8 +2704,8 @@
     "correctIndex": 1,
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/38.png",
     "code": "",
-    "explanation": "",
-    "hint": "Verifica se arrivano nuovi processi con burst time residuo inferiore durante l'esecuzione del processo corrente."
+    "explanation": "Nel SJF preemptivo (Shortest Remaining Time First), il processo con il tempo di burst rimanente più breve viene eseguito prioritariamente. Il tempo di attesa si calcola dalla differenza tra il tempo di completamento e il tempo di arrivo meno il burst time effettivo.",
+    "hint": "Nel SJF preemptivo, considera che un processo può essere interrotto se arriva un processo con bursttime più breve."
   },
   {
     "question": "Calcolare il tempo medio di attesa (average waiting time) dei seguenti processi, assumendo una politica di scheduling First Come First Served (FCFS) e che il processo A esegua all'istante t=2 una chiamata di I/O che si completerà dopo 4 unità di tempo, ossia all'istante t=6. Nel calcolo, si consideri trascurabile il tempo necessario ad eseguire il context switch:",
@@ -2730,8 +2730,8 @@
     "correctIndex": 0,
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/39.png",
     "code": "",
-    "explanation": "",
-    "hint": "Ricorda che durante l'I/O il processo A esce dalla coda dei pronti e gli altri processi possono procedere."
+    "explanation": "Nel FCFS con I/O, quando un processo effettua una chiamata di I/O, cede la CPU e gli altri processi possono eseguire. Il tempo di attesa si calcola considerando i periodi in cui ciascun processo attende nella ready queue, inclusi quelli dovuti all'I/O di altri processi.",
+    "hint": "Nel FCFS, l'ordine di arrivo determina la sequenza; l'I/O di un processo permette agli altri di avanzare nella CPU."
   },
   {
     "question": "Calcolare il tempo medio di attesa (average waiting time) dei seguenti processi, assumendo una politica di scheduling First Come First Served (FCFS) e che il processo B esegua all'istante t=6 una chiamata di I/O che si completerà dopo 3 unità di tempo, ossia all'istante t=9. Nel calcolo, si consideri trascurabile il tempo necessario ad eseguire il context switch:",
@@ -2756,8 +2756,8 @@
     "correctIndex": 2,
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/40.png",
     "code": "",
-    "explanation": "",
-    "hint": "Disegna la timeline di esecuzione includendo il periodo di I/O bloccante del processo B per calcolare i tempi di attesa individuali."
+    "explanation": "Nel FCFS con I/O per il processo B, quando B va in I/O, gli altri processi nella coda possono proseguire. Il waiting time medio considera tutto il tempo che ogni processo trascorre in attesa nella ready queue prima di ottenere la CPU.",
+    "hint": "Ricorda che durante l'I/O di un processo, la CPU può servire gli altri processi in attesa nella coda FCFS."
   },
   {
     "question": "",
@@ -2860,8 +2860,8 @@
     "correctIndex": 2,
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/59.png",
     "code": "",
-    "explanation": "",
-    "hint": "Verifica l'assenza di cicli nel grafo o la presenza di risorse con multiple istanze che impediscono la condizione di deadlock."
+    "explanation": "In un RAG, il deadlock esiste solo se esiste un ciclo irrisolvibile. Se il sistema non presenta deadlock, significa che il grafo mostra un caso in cui le risorse possono essere rilasciate e i processi possono completare.",
+    "hint": "Ricorda che in un RAG un ciclo non implica necessariamente deadlock: dipende dalla disponibilità di risorse e dalla possibilità di soddisfare tutte le richieste."
   },
   {
     "question": "Il seguente Resource Allocation Graph (RAG) mostra un sistema il cui stato:",
@@ -3251,6 +3251,6 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/63.png",
     "code": "",
     "explanation": "",
-    "hint": "Ricorda che in FCFS il tempo di attesa si calcola sommando i tempi di burst dei processi precedenti e sottraendo il tempo di arrivo, considerando che un'operazione di I/O blocca il processo corrente permettendo ad altri di proseguire."
+    "hint": ""
   }
 ]

@@ -304,8 +304,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": "Considera la differenza tra un riferimento basato sull'inode fisico e uno basato sul percorso logico."
+    "explanation": "Un hard link punta direttamente all'inode (ai dati fisici), quindi spostando il file originale l'hard link perde il riferimento. Un soft link (symlink) contiene invece il percorso del file: se il file viene spostato, il soft link può essere risolto dinamicamente e rimane funzionale.",
+    "hint": "Ricorda la differenza tra puntare ai dati (inode) e puntare a un percorso."
   },
   {
     "question": "15) In un file system la dimensione di un blocco influenza alcuni indici di prestazioni. All’aumentare della dimensione del blocco si osserva ______ e _____",
@@ -724,8 +724,8 @@
     "correctIndex": 4,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": "Considera la gerarchia dei livelli in Windows NT: dove si colloca l'Executive rispetto al microkernel e ai sottosistemi ambientali?"
+    "explanation": "In Windows, l'architettura è gerarchica: applicazioni utente → Executive → Kernel. Il Kernel (nucleo) è il livello più basso del sistema operativo, quindi Executive si trova 'sotto' (a un livello inferiore rispetto a) il nucleo.",
+    "hint": "Pensa alla classica architettura a cipolla di Windows: applicazioni in alto, kernel in basso."
   },
   {
     "question": "33) Il sistema operativo Linux ha una organizzazione della memoria basata su ______. Le tabelle delle pagine sono organizzate ______. La memoria fisica è divisa in ____",
@@ -906,8 +906,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": "Ricorda che le operazioni che modificano lo stato globale del sistema o l'hardware critico richiedono privilegi elevati."
+    "explanation": "La disabilitazione degli interrupt può essere invocata anche da modalità utente tramite system call. La lettura dell'ora è un'operazione di sola lettura, non pericolosa, quindi consentita anche in user mode. L'impostazione dell'ora invece modifica lo stato del sistema e richiede privilegi di kernel.",
+    "hint": "Distinguere tra operazioni di sola lettura (sicure) e operazioni di scrittura (privilegiate)."
   },
   {
     "question": "40) [architetture ideali] efficienza e prestazioni:",

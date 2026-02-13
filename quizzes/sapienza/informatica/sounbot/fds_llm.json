@@ -22,8 +22,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The smaller hidden layer creates a bottleneck that forces the network to learn a compressed representation of the input data, capturing only the most essential features.",
+    "hint": "Think about what happens when you compress information into a smaller space."
   },
   {
     "question": "Autoencoders: According to the source, why is the constraint of a smaller hidden layer important in an autoencoder?",
@@ -48,8 +48,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The constraint forces the network to extract and preserve the most important patterns since it cannot simply memorize all input information through the bottleneck.",
+    "hint": "What happens when you can't pass all information through?"
   },
   {
     "question": "Autoencoders: Which of the following is NOT a typical use case for autoencoders mentioned in the source?",
@@ -74,8 +74,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Autoencoders are unsupervised learning models designed to reconstruct inputs from learned representations, not to perform supervised classification with labeled data.",
+    "hint": "Consider what type of learning autoencoders are designed for."
   },
   {
     "question": "Autoencoders: What does the source say about using autoencoders with unlabeled data?",
@@ -100,8 +100,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Autoencoders are particularly effective for unsupervised learning, allowing them to extract meaningful patterns from large datasets without requiring labeled examples.",
+    "hint": "Remember that autoencoders learn without needing labels."
   },
   {
     "question": "Autoencoders: In a linear autoencoder, what is the relationship between the input data (x) and the reconstructed output (x̂), according to the source?",
@@ -126,8 +126,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In a linear autoencoder, the input x is first encoded through matrix V to produce hidden representation h = Vx, then decoded through matrix U to produce x̂ = Uh = UVx.",
+    "hint": "Think about the sequence of matrix multiplications through encoder and decoder."
   },
   {
     "question": "Autoencoders: What is the encoded representation of x in a linear autoencoder?",
@@ -152,8 +152,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In a linear autoencoder, the encoded representation (the hidden layer) is computed as z = Vx, where V is the encoding weight matrix. This is the compressed representation of the input x before reconstruction.",
+    "hint": "Think about what the 'encoding' step produces in the encoder part of the network."
   },
   {
     "question": "Autoencoders: According to the source, what is the main drawback of a linear autoencoder?",
@@ -178,8 +178,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linear autoencoders can only learn linear representations because both encoder and decoder are linear transformations. This limits their ability to capture complex, non-linear patterns that exist in real-world data.",
+    "hint": "Consider what happens when the data itself has non-linear structure."
   },
   {
     "question": "Autoencoders: In the context of the source, what is Principal Component Analysis (PCA) equivalent to?",
@@ -204,8 +204,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "PCA performs singular value decomposition to find orthogonal directions of maximum variance. A linear autoencoder with a single hidden layer and linear activations learns the same subspace through gradient descent, making them mathematically equivalent.",
+    "hint": "Think about the mathematical properties of linear layers and PCA."
   },
   {
     "question": "Autoencoders: What are Eigenfaces, as described in the source?",
@@ -230,8 +230,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Eigenfaces are the eigenvectors (principal components) obtained by applying PCA to a large dataset of facial images. Each eigenface represents a principal direction of variation in face images.",
+    "hint": "Remember that eigenfaces come from applying PCA to face images."
   },
   {
     "question": "Autoencoders: According to the source, what does the value of the eigenvalues in PCA represent?",
@@ -256,8 +256,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In PCA, eigenvalues quantify how much variance each principal component (eigenface) captures. Larger eigenvalues indicate directions in which the data varies the most.",
+    "hint": "Think about what PCA maximizes and what the eigenvalues represent mathematically."
   },
   {
     "question": "Autoencoders: How are the weights (or coefficients) for each eigenface found, according to the source?",
@@ -282,8 +282,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In eigenface-based face recognition, the weights (coefficients) are computed by projecting the original face image onto each eigenface using dot product, representing the face as a linear combination of eigenfaces.",
+    "hint": "Think about how you represent a face as a combination of basis faces."
   },
   {
     "question": "Autoencoders: Which of the following is a limitation of using eigenfaces for face recognition as mentioned in the source?",
@@ -308,8 +308,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Eigenfaces capture variations in pixel intensity patterns but are sensitive to external factors like lighting changes, different poses, and facial expressions that alter the pixel values significantly.",
+    "hint": "Consider what happens to pixel values when lighting or pose changes."
   },
   {
     "question": "Autoencoders: What distinguishes a deep autoencoder from a linear autoencoder?",
@@ -334,8 +334,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Deep autoencoders with non-linear activation functions can learn non-linear manifolds, whereas linear autoencoders (with linear activation) can only learn linear subspaces, similar to PCA.",
+    "hint": "Think about how multiple non-linear layers create more complex representations."
   },
   {
     "question": "Autoencoders: What is the key characteristic of an undercomplete autoencoder?",
@@ -360,8 +360,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Undercomplete autoencoders force compression by having a bottleneck (hidden) layer with fewer units than the input, learning a lower-dimensional embedded representation.",
+    "hint": "Consider what the prefix 'under-' implies about the bottleneck layer size."
   },
   {
     "question": "Autoencoders: What is the main challenge with overcomplete autoencoders?",
@@ -386,8 +386,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Overcomplete autoencoders with more hidden units than inputs can learn the identity function, simply copying input to output without learning meaningful features, leading to overfitting.",
+    "hint": "Think about what happens when the hidden layer is larger than the input."
   },
   {
     "question": "Autoencoders: What is a stacked autoencoder?",
@@ -412,8 +412,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Uno stacked autoencoder è un' architettura profonda che utilizza più livelli di codifica e decodifica impilati, permettendo di apprendere rappresentazioni gerarchiche dei dati a diversi livelli di astrazione.",
+    "hint": "Il termine 'stacked' indica la presenza di più livelli nell'architettura."
   },
   {
     "question": "Autoencoders: According to the source, what does the layer-wise training of a stacked autoencoder achieve?",
@@ -438,8 +438,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il training layer-wise addestra ogni livello separatamente prima di combinarli, semplificando l'ottimizzazione di una rete profonda e garantendo che ogni livello apprenda feature significative incrementalmente.",
+    "hint": "Pensare a come si addestra una rete profonda partendo da livelli più semplici."
   },
   {
     "question": "Autoencoders: What is a denoising autoencoder (DAE) designed to do?",
@@ -464,8 +464,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Un denoising autoencoder apprende rappresentazioni robuste addestrandosi a ricostruire dati puliti da input rumorosi, forcing la rete a apprendere feature che sono invarianti al rumore.",
+    "hint": "Il nome stesso suggerisce l'obiettivo principale della rete."
   },
   {
     "question": "Autoencoders: How does a denoising autoencoder achieve noise-resistance?",
@@ -490,8 +490,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La rete viene addestrata con input a cui è stato aggiunto rumore, ma deve ricostruire l'originale pulito, imparando così feature che rappresentano la struttura sottostante dei dati indipendentemente dal rumore.",
+    "hint": "Considera cosa succede quando mostri alla rete dati 'imperfetti'."
   },
   {
     "question": "Autoencoders: What is a key characteristic of a sparse autoencoder?",
@@ -516,8 +516,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Un sparse autoencoder introduce un vincolo di sparsità che force la maggior parte delle unità nascoste ad avere attivazione prossima a zero, permettendo di scoprire feature più informative e specifiche.",
+    "hint": "La sparsità riguarda l'attivazione dei neuroni nascosti."
   },
   {
     "question": "Autoencoders: What is the purpose of the sparsity penalty in a sparse autoencoder?",
@@ -542,8 +542,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La penalità di sparsità (spesso implementata tramite divergenza KL) incoraggia le unità nascoste ad avere attivazioni medie basse, rendendo la maggior parte di esse inattive. Questo forza la rete a apprendere rappresentazioni più significative e distribuite.",
+    "hint": "Pensa a cosa significa letteralmente 'sparso' - pochi elementi attivi su molti possibili."
   },
   {
     "question": "Autoencoders: According to the source, what does the Kullback-Leibler (KL) divergence measure in the context of sparse autoencoders?",
@@ -568,8 +568,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La divergenza KL misura la differenza tra la distribuzione di attivazione media delle unità nascoste e un valore di sparsità desiderato (target), penalizzando le deviazioni da tale obiettivo.",
+    "hint": "La KL è una misura di divergenza tra due distribuzioni di probabilità."
   },
   {
     "question": "Autoencoders: a) Classify data into predefined categories.",
@@ -594,8 +594,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gli autoencoder sono modelli di apprendimento non supervisionato che ricostruiscono l'input imparando prima una rappresentazione compressa (spazio latente) e poi decodificandola, con l'obiettivo di minimizzare l'errore di ricostruzione.",
+    "hint": "Il nome stesso suggerisce qualcosa che codifica e poi decodifica se stesso."
   },
   {
     "question": "Autoencoders: The 'bottleneck' in an autoencoder architecture refers to:",
@@ -620,8 +620,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il bottleneck è lo strato nascosto centrale con un numero di unità significativamente inferiore rispetto agli strati di input e output. Questa compressione forzata obbliga la rete ad apprendere rappresentazioni efficienti dei dati.",
+    "hint": "Il termine 'collo di bottiglia' suggerisce un restringimento nel mezzo della struttura."
   },
   {
     "question": "Autoencoders: What is the primary purpose of the dimensionality constraint in autoencoders?",
@@ -646,8 +646,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La limitazione dimensionale forza l'autoencoder ad apprendere le caratteristiche più importanti dei dati invece di memorizzarli semplicemente. Senza questa compressione, la rete potrebbe copiare l'input senza estrarre pattern significativi.",
+    "hint": "Cosa deve fare la rete per ricostruire l'input se non può memorizzarlo direttamente?"
   },
   {
     "question": "Autoencoders: Which of the following is NOT a typical application of autoencoders?",
@@ -672,8 +672,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gli autoencoders sono modelli di apprendimento non supervisionato che imparano a comprimere e ricostruire i dati senza utilizzare etichette. Non sono progettati per attività di classificazione supervisionata, che richiedono dati etichettati e un'architettura diversa.",
+    "hint": "Ricorda che gli autoencoders imparano rappresentazioni senza dati etichettati - sono non supervisionati."
   },
   {
     "question": "Autoencoders: A linear autoencoder, which uses linear activation functions, is functionally equivalent to:",
@@ -698,8 +698,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Un autoencoder lineare con attivazioni lineari esegue sostanzialmente una riduzione dimensionale lineare, trovando le componenti principali che catturano la maggior parte della varianza - esattamente ciò che fa PCA.",
+    "hint": "Pensa a cosa succede quando limiti tutto a essere lineare - ottieni una proiezione lineare come in PCA."
   },
   {
     "question": "Autoencoders: In a linear autoencoder, the reconstruction of the input is computed as a linear transformation expressed as:",
@@ -724,8 +724,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In un autoencoder lineare, l'encoder mappa l'input x a una rappresentazione nascosta come V*x, e il decoder ricostruisce come U*(V*x), ottenendo U*V*x.",
+    "hint": "L'encoder trasforma prima, poi il decoder trasforma il risultato - è una composizione di due trasformazioni lineari."
   },
   {
     "question": "Autoencoders: According to the source, a linear autoencoder learns to choose a subspace that:",
@@ -750,8 +750,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Un autoencoder lineare impara a minimizzare l'errore di ricostruzione (distanza quadratica dai dati alle proiezioni) e contemporaneamente massimizza la varianza delle proiezioni, che è esattamente l'obiettivo di PCA.",
+    "hint": "L'obiettivo è bilanciare fedeltà della ricostruzione e compattezza della rappresentazione."
   },
   {
     "question": "Autoencoders: Eigenfaces are:",
@@ -776,8 +776,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gli Eigenfaces sono gli autovettori (componenti principali) della matrice di covarianza di un grande insieme di immagini facciali, usati per la rappresentazione e riconoscimento di volti.",
+    "hint": "Sono letteralmente le 'facce' ottenute analizzando le componenti principali - come i vettori propri di una matrice di covarianza."
   },
   {
     "question": "Autoencoders: What is the purpose of centering the data (subtracting the mean) before performing PCA on a set of face images?",
@@ -802,8 +802,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "PCA computes principal components that maximize variance. When data is centered by subtracting the mean, the first component points in the direction of maximum variance rather than simply toward the mean, ensuring the analysis captures true data patterns.",
+    "hint": "Think about what PCA actually maximizes and how the mean affects this calculation."
   },
   {
     "question": "Autoencoders: When recognising faces using eigenfaces, each face is represented as:",
@@ -828,8 +828,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Eigenfaces are the eigenvectors (principal components) of the covariance matrix of face images. Any face can be approximated as a linear combination of these eigenfaces, where the weights represent the face's projection onto each eigenface.",
+    "hint": "Remember that eigenfaces form a basis set for representing faces."
   },
   {
     "question": "Autoencoders: Which of the following is a limitation of using eigenfaces for facial recognition?",
@@ -854,8 +854,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Eigenfaces are based on pixel intensities and linear transformations, making them sensitive to changes in lighting conditions, face pose, and facial expressions. These variations can significantly alter the pixel values and thus the eigenface representation.",
+    "hint": "Consider how real-world variations affect the pixel-level representation used by eigenfaces."
   },
   {
     "question": "Autoencoders: Deep autoencoders project the data onto a:",
@@ -880,8 +880,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Deep autoencoders use non-linear activation functions (like sigmoid, ReLU) that allow them to learn non-linear manifolds, unlike linear PCA which can only project onto linear subspaces.",
+    "hint": "Think about how non-linear activation functions enable more complex representations."
   },
   {
     "question": "Autoencoders: An undercomplete autoencoder is characterized by:",
@@ -906,8 +906,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "An undercomplete autoencoder has a hidden layer with fewer neurons than the input layer, creating a bottleneck that forces the network to learn compressed representations by capturing the most important features.",
+    "hint": "Consider what 'undercomplete' means in terms of the hidden layer size relative to the input."
   },
   {
     "question": "Autoencoders: What is the main challenge associated with overcomplete autoencoders?",
@@ -932,8 +932,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Overcomplete autoencoders have more hidden units than input dimensions, which gives them excessive capacity. Without proper constraints, they can simply learn the identity function by copying inputs directly to outputs, which is a form of overfitting where no useful compression or feature learning occurs.",
+    "hint": "Think about what happens when a model has more capacity than needed for the task."
   },
   {
     "question": "Autoencoders: A stacked autoencoder introduces which property to the network?",
@@ -958,8 +958,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Stacked autoencoders combine multiple autoencoders in sequence, creating a deep neural network. This architecture enables learning hierarchical representations where each layer learns increasingly abstract features from the previous layer's representations.",
+    "hint": "Consider how stacking multiple encoders creates a deep structure with multiple levels of abstraction."
   },
   {
     "question": "Autoencoders: In the simplified training of a stacked autoencoder:",
@@ -984,8 +984,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Stacked autoencoders use greedy layer-wise training, where each autoencoder is trained independently before adding the next layer. The trained encoder's output becomes the training input for the next layer, building the stack progressively.",
+    "hint": "Think about how each layer is trained one at a time, with the previous layer's output feeding into the next."
   },
   {
     "question": "Autoencoders: What is a key feature of denoising autoencoders (DAE)?",
@@ -1010,8 +1010,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Denoising autoencoders are trained on corrupted inputs (with added noise) but must reconstruct the original clean data. This forces the model to learn robust features that capture the underlying data structure rather than simply memorizing training examples.",
+    "hint": "Consider what the model must learn to recover clean data from corrupted inputs."
   },
   {
     "question": "Autoencoders: Sparse autoencoders enforce sparsity by:",
@@ -1036,8 +1036,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Sparse autoencoders impose a sparsity constraint that encourages most hidden units to have zero or near-zero activation. This is typically achieved through regularization techniques like L1 regularization or KL divergence, forcing the network to use only a small subset of neurons for each input.",
+    "hint": "Sparsity means most neurons should remain inactive - think about what activation values represent this state."
   },
   {
     "question": "Autoencoders: The Kullback-Leibler (KL) divergence in sparse autoencoders is used to:",
@@ -1062,8 +1062,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The KL divergence term in sparse autoencoders penalizes the difference between the average activation of hidden units and a target sparsity value (typically small). This encourages most hidden units to be inactive, creating a sparse representation.",
+    "hint": "Think about what 'sparsity' means - it refers to having few active units, and KL measures the difference between two distributions."
   },
   {
     "question": "Autoencoders: What are the weights in the context of face representation using eigenfaces?",
@@ -1088,8 +1088,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In eigenface representation, weights are the coefficients obtained by projecting the original face image onto the eigenfaces (eigenvectors). These coefficients form the face representation used for recognition.",
+    "hint": "Remember that eigenfaces are the basis vectors, and projecting an image onto them gives coordinate coefficients."
   },
   {
     "question": "VAE: According to the source, the joint probability of observed data 'x' and latent variable 'z' in a VAE is expressed as:",
@@ -1114,8 +1114,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "By the chain rule of probability, the joint distribution p(x,z) can be decomposed as p(x|z)p(z), where p(x|z) is the likelihood and p(z) is the prior. This is fundamental to generative models.",
+    "hint": "Recall the basic probability rule: p(x,z) = p(x|z) * p(z)."
   },
   {
     "question": "VAE: The term 'p(x|z)' in the VAE framework represents:",
@@ -1140,8 +1140,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "p(x|z) represents the likelihood function in the VAE framework - it gives the probability of observing data x given a specific latent code z. This is modeled by the decoder/generative network.",
+    "hint": "Think of this as the 'generative' part that creates x from latent z."
   },
   {
     "question": "VAE: In the VAE model, the probability of the observed data 'x' is obtained by:",
@@ -1166,8 +1166,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The marginal likelihood p(x) in VAE is obtained by integrating (summing) the joint probability p(x,z) = p(x|z)p(z) over all possible latent values z. This is intractable to compute directly.",
+    "hint": "Remember that p(x) = ∫ p(x|z)p(z) dz is the marginal distribution obtained by 'integrating out' z."
   },
   {
     "question": "VAE: According to the source, the encoder in a VAE aims to approximate:",
@@ -1192,8 +1192,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The encoder learns the mapping from input x to the latent space z, approximating the posterior distribution p(z|x) - the probability of latent variables given the observed data.",
+    "hint": "Think about what the encoder outputs: it predicts the distribution of latent variables z given the input x."
   },
   {
     "question": "VAE: The decoder network in a VAE is parameterised by:",
@@ -1218,8 +1218,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The decoder parameterizes the likelihood p(x|z), which represents the probability of reconstructing the original input x from a latent representation z.",
+    "hint": "The decoder takes a latent code z and produces a reconstruction of the original input."
   },
   {
     "question": "VAE: The encoder in the VAE is denoted as:",
@@ -1244,8 +1244,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In VAE notation, q(z|x) denotes the encoder's approximated posterior, which differs from the true posterior p(z|x). The q distribution is learned to approximate the true posterior.",
+    "hint": "Remember that q is used to denote an approximation to the true posterior p."
   },
   {
     "question": "VAE: In a VAE, the Evidence Lower Bound (ELBO) is introduced as a:",
@@ -1270,8 +1270,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The ELBO provides a tractable lower bound on the log-marginal likelihood log p(x), which is otherwise intractable due to the integration over latent variables.",
+    "hint": "Since computing the true marginal likelihood requires intractable integration, we use a lower bound instead."
   },
   {
     "question": "VAE: The ELBO is represented by the expression:",
@@ -1296,8 +1296,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The ELBO consists of a reconstruction term E[log p(x|z)] (expected log-likelihood of the data) minus the KL divergence term D_KL(q(z|x)||p(z)), which regularizes the latent space.",
+    "hint": "The KL term acts as a regularizer, pulling q(z|x) toward the prior p(z), which is typically a standard Gaussian."
   },
   {
     "question": "VAE: The first term in the ELBO, E[log p(x|z)], represents:",
@@ -1322,8 +1322,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This term computes the expected log-likelihood of the reconstruction, measuring how well the decoder can reconstruct the original input x from the sampled latent variables z. It directly quantifies reconstruction quality.",
+    "hint": "Think about what p(x|z) represents - it's the probability of reconstructing x given z."
   },
   {
     "question": "VAE: The second term in the ELBO, D_KL(q(z|x)||p(z)), represents:",
@@ -1348,8 +1348,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This is literally the definition of the term - it computes the KL divergence between the approximate posterior q(z|x) produced by the encoder and the prior p(z) over latent variables.",
+    "hint": "This term compares two probability distributions over the latent space."
   },
   {
     "question": "VAE: What is the purpose of the KL divergence term in the VAE loss function?",
@@ -1374,8 +1374,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The KL term acts as a regularizer that forces the learned latent distribution to match a prior (usually standard Gaussian), ensuring a well-structured and continuous latent space that enables sampling.",
+    "hint": "Consider what 'regularization' means in the context of constraining the latent space."
   },
   {
     "question": "VAE: The source mentions that if q(z|x) is equal to p(z) then:",
@@ -1400,8 +1400,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "When q(z|x) equals p(z), the encoder ignores the input data entirely and always outputs the same prior distribution, losing all ability to capture data-specific information, which leads to underfitting.",
+    "hint": "If the encoder outputs the same distribution regardless of input, what does it learn about the data?"
   },
   {
     "question": "VAE: According to the source, the approximate posterior q(z|x) is often assumed to be a:",
@@ -1426,8 +1426,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The approximate posterior is typically assumed to be a Gaussian with mean and variance predicted by the encoder, enabling the reparameterization trick for backpropagation through sampling.",
+    "hint": "Which distribution allows for easy sampling and the reparameterization trick?"
   },
   {
     "question": "VAE: In a VAE, if we assume that q(z|x) is a Gaussian distribution, then what are the two outputs of the encoder network?",
@@ -1452,8 +1452,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In VAEs, the encoder learns to approximate the posterior distribution q(z|x). When we assume q(z|x) is Gaussian, the encoder outputs the parameters (mean and variance) that fully characterize this distribution.",
+    "hint": "Remember that q(z|x) is the approximate posterior learned by the encoder, not the prior or likelihood."
   },
   {
     "question": "VAE: The reparameterisation trick in VAEs allows us to:",
@@ -1478,8 +1478,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The reparameterization trick moves the randomness to an auxiliary variable ε, making z a deterministic function of parameters. This allows gradients to flow through the sampling operation during backpropagation.",
+    "hint": "Think about why sampling normally prevents gradient flow and how we can make it differentiable."
   },
   {
     "question": "VAE: The reparameterisation trick expresses the latent variable ‘z’ as:",
@@ -1504,8 +1504,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The reparameterization trick expresses z as z = μ + σ ⊙ ε, where ε is sampled from a standard normal distribution. This separates the stochastic component from the learnable parameters μ and σ.",
+    "hint": "The key is to separate randomness from learnable parameters while maintaining the same distribution."
   },
   {
     "question": "VAE: In the reparameterisation trick the random variable ε is drawn from:",
@@ -1530,8 +1530,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In the reparameterization trick, ε is drawn from a standard normal distribution N(0,I), which is then scaled by σ and shifted by μ to produce z.",
+    "hint": "We need a simple, fixed distribution that doesn't depend on learnable parameters."
   },
   {
     "question": "Backpropagation: What are the two key requirements for probabilities when using the Softmax classifier?",
@@ -1556,8 +1556,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Softmax naturally produces valid probabilities: exponentials ensure non-negativity, and the normalization term ensures all probabilities sum to exactly one.",
+    "hint": "The softmax function is specifically designed to create a valid probability distribution from raw scores."
   },
   {
     "question": "Backpropagation: In the context of training a classifier, what does Maximum Likelihood Estimation aim to do?",
@@ -1582,8 +1582,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Maximum Likelihood Estimation aims to find the model weights that maximize the probability of observing the training data. This is the fundamental principle behind training classifiers - we want weights that make the data most likely under our model.",
+    "hint": "Think about what 'maximum likelihood' means - we want to maximize the probability of the data."
   },
   {
     "question": "Backpropagation: Cross-entropy is described as the sum of two components. Which of the following correctly identifies these components?",
@@ -1608,8 +1608,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Cross-entropy can be mathematically decomposed into the sum of entropy and KL-divergence. This relationship comes from information theory and explains why cross-entropy is a natural loss function for probabilistic models.",
+    "hint": "Remember that cross-entropy has roots in information theory, specifically relating to entropy and divergence measures."
   },
   {
     "question": "Backpropagation: What is the primary effect of L2 regularization on the weights of a model?",
@@ -1634,8 +1634,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L2 regularization adds a penalty term (λ||w||²) to the loss that discourages large weights, effectively distributing the weight values more evenly across all parameters. This prevents overfitting by constraining the magnitude of individual weights.",
+    "hint": "Think about what adding a squared penalty term does to large vs. small weights."
   },
   {
     "question": "Backpropagation: When using gradient descent to find the best weights (W), what is the relationship between the data loss and the regularization term?",
@@ -1660,8 +1660,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The data loss and regularization term are combined into a single total loss function: L_total = L_data + λL_regularization. This combined loss is then minimized during gradient descent to balance fitting the data and preventing overfitting.",
+    "hint": "Consider how gradient descent operates on a single scalar value - all components must be summed together."
   },
   {
     "question": "Backpropagation: Why is deriving gradients on paper considered a bad idea for complex models?",
@@ -1686,8 +1686,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Manual gradient derivation for complex models is extremely tedious, requiring extensive matrix calculus for each layer. Additionally, any change to the model architecture or loss function necessitates completely re-deriving all gradients from scratch.",
+    "hint": "Think about why we need automated tools for this process in modern deep learning."
   },
   {
     "question": "Backpropagation: In the context of backpropagation, what are the two gradients that are multiplied using the chain rule?",
@@ -1712,8 +1712,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In backpropagation, the chain rule multiplies the upstream gradient (coming from later layers/forward) by the local gradient (derivative of the operation with respect to that specific variable).",
+    "hint": "Think about how error signals propagate from output to input through the network."
   },
   {
     "question": "Backpropagation: In a computational graph, what is the behavior of the \"add gate\" regarding gradients?",
@@ -1738,8 +1738,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "For an add gate (z = x + y), the local gradients are both 1, so the upstream gradient is simply passed through to each input equally - it distributes the gradient.",
+    "hint": "Consider what happens mathematically when you differentiate z = x + y with respect to x and y."
   },
   {
     "question": "Backpropagation: In a computational graph, what is the behavior of the \"mul gate\" regarding gradients?",
@@ -1764,8 +1764,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "For a mul gate (z = x * y), the local gradient for x is y and for y is x, so the upstream gradient gets multiplied by the OTHER input value - this is called 'swapping' the multiplier.",
+    "hint": "Derive ∂z/∂x and ∂z/∂y for z = x * y and observe what each gets multiplied by."
   },
   {
     "question": "Backpropagation: In a computational graph, what is the behavior of the \"copy gate\" regarding gradients?",
@@ -1790,8 +1790,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A copy gate (where the same input goes to multiple outputs) has multiple backward paths, so the gradients from each output path sum together at the input.",
+    "hint": "Think about when the same variable contributes to multiple parts of the computation."
   },
   {
     "question": "Backpropagation: In a computational graph, what is the behaviour of the \"max gate\" regarding gradients?",
@@ -1816,8 +1816,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "For a max gate (z = max(x, y)), the gradient is 1 for whichever input was larger and 0 for the smaller one - it routes the entire gradient to the 'winner'.",
+    "hint": "Only the input that actually determined the output (the max) should receive the gradient."
   },
   {
     "question": "Backpropagation: In a modularized implementation of backpropagation, what is a key function of a gate/node/function object?",
@@ -1842,8 +1842,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In un'implementazione modulare di backpropagation, ogni nodo deve sia memorizzare valori necessari per il backward pass (come gli input del forward pass) sia calcolare il gradiente locale moltiplicandolo per il gradiente upstream seguendo la chain rule.",
+    "hint": "I gate devono fare sia forward che backward pass, non solo uno dei due."
   },
   {
     "question": "Backpropagation: When dealing with vector derivatives, what is the derivative called when mapping from a vector to a scalar?",
@@ -1868,8 +1868,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il gradient è la derivata di una funzione scalare rispetto a un vettore, risultando in un vettore della stessa forma che indica la direzione di massima pendenza.",
+    "hint": "È la generalizzazione della derivata per funzioni a più variabili."
   },
   {
     "question": "Backpropagation: When dealing with vector derivatives, what is the derivative called when mapping from a vector to a vector?",
@@ -1894,8 +1894,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La Jacobian è la matrice delle derivate parziali di tutti gli output rispetto a tutti gli input, quindi rappresenta il mapping completo da vettore a vettore.",
+    "hint": "È una matrice, non un vettore o uno scalare."
   },
   {
     "question": "Backpropagation: In backpropagation with vectors, what is the loss (L) considered to be?",
@@ -1920,8 +1920,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La loss function aggrega tutti gli errori in un singolo valore scalare che misura l'errore totale del modello, e la backpropagation propaga i gradienti a partire da questo valore.",
+    "hint": "La backpropagation parte da un singolo valore di errore."
   },
   {
     "question": "Backpropagation: In backpropagation with vectors, what is the relationship between the shape of dL/dx and x?",
@@ -1946,8 +1946,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il gradiente dL/dx ha sempre la stessa forma di x perché rappresenta la derivata rispetto a ciascun elemento del vettore, permettendo aggiornamenti parametro per parametro.",
+    "hint": "Per applicare la chain rule, le dimensioni devono essere compatibili."
   },
   {
     "question": "Backpropagation: When backpropagating through a matrix multiplication, what is the primary challenge in dealing with Jacobians?",
@@ -1972,8 +1972,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Jacobians can be extremely large matrices—for deep networks with millions of parameters, storing the full Jacobian would require billions of elements and gigabytes of memory. We therefore work with them implicitly, computing gradient contributions without materializing the entire matrix.",
+    "hint": "Consider the size of a Jacobian for a typical layer with thousands of neurons."
   },
   {
     "question": "Backpropagation: When performing backpropagation with matrices, what does an element of X affect in the output Y (considerando che Y = X x W)?",
@@ -1998,8 +1998,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In matrix multiplication Y = X × W, each row of X is a vector that multiplies with all columns of W to produce the corresponding row in Y. Therefore, every element in a row of X contributes to all elements in that same row of Y.",
+    "hint": "Recall how row-by-column multiplication works in matrix operations."
   },
   {
     "question": "Backpropagation: What is the core principle of backpropagation?",
@@ -2024,8 +2024,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Backpropagation recursively applies the chain rule from calculus, propagating error gradients backward through the computational graph defined by the network architecture to compute gradients for all parameters and inputs.",
+    "hint": "What fundamental calculus rule enables gradient computation through nested functions?"
   },
   {
     "question": "Backpropagation: What are the two essential methods that nodes implement in a modularized backpropagation system?",
@@ -2050,8 +2050,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In modular design, each computational node implements forward() to compute outputs and save intermediates, and backward() to apply the chain rule and compute gradients with respect to inputs and parameters.",
+    "hint": "What are the two distinct phases of the backpropagation algorithm?"
   },
   {
     "question": "Backpropagation: In a modularized backpropagation system, what is the purpose of the forward() method of a node?",
@@ -2076,8 +2076,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The forward() method computes the actual output of the operation (e.g., matrix multiplication, ReLU) and stores any intermediate values (activations, pre-activations) that will be needed later by backward() to compute gradients.",
+    "hint": "What must be preserved during the forward pass for the backward pass to work?"
   },
   {
     "question": "Backpropagation: In a modularized backpropagation system, what is the purpose of the backward() method of a node?",
@@ -2102,8 +2102,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The backward() method implements the chain rule: it takes the gradient from the upstream (later) layers and multiplies it by the local gradient (derivative of the operation with respect to its inputs) to compute the gradient with respect to the loss.",
+    "hint": "Backpropagation propagates error gradients backwards from output to input through the computational graph."
   },
   {
     "question": "Backpropagation: What is the primary difference between a linear classifier and a two-layer neural network?",
@@ -2128,8 +2128,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The key difference is the presence of non-linear activation functions (like ReLU or sigmoid). Without these, stacking multiple linear layers would still result in a single linear transformation, so the network wouldn't be more powerful than a linear classifier.",
+    "hint": "What makes a 'network' different from simply multiplying matrices together?"
   },
   {
     "question": "Backpropagation: According to the sources, what is the consequence of building a neural network without an activation function?",
@@ -2154,8 +2154,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Without activation functions, the network consists only of linear transformations (matrix multiplications). The composition of linear functions remains linear, so even a deep network with many layers reduces to a single linear transformation.",
+    "hint": "What is the result of multiplying multiple matrices together? Is it linear or non-linear?"
   },
   {
     "question": "Backpropagation: What does the Universal Approximation Theorem state in the context of Neural Networks?",
@@ -2180,8 +2180,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The Universal Approximation Theorem proves that a feedforward neural network with a single hidden layer containing a finite number of neurons can approximate any continuous function on compact subsets of R^n, given appropriate weights exist.",
+    "hint": "The theorem guarantees existence of approximation, but not that we can actually find the weights."
   },
   {
     "question": "Backpropagation: What does the source say about training of Multi-Layer Perceptrons (MLPs)?",
@@ -2206,8 +2206,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Training MLPs is highly non-convex due to the non-linear activation functions, resulting in a complex loss landscape with many local minima and saddle points. This makes optimization challenging and explains why initialization and optimization tricks are important.",
+    "hint": "Think about the shape of the loss function - how many valleys might there be?"
   },
   {
     "question": "Backpropagation: What does the source state is a good default choice for an activation function?",
@@ -2232,8 +2232,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "ReLU is a good default choice because it's computationally efficient, helps mitigate the vanishing gradient problem, and works well in practice across many deep learning architectures.",
+    "hint": "Consider which activation is simple, avoids gradient issues, and is computationally cheap."
   },
   {
     "question": "Backpropagation: What does the source say about using the size of a neural network as a regularizer?",
@@ -2258,8 +2258,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Using network size as regularization is not ideal because simply constraining capacity can lead to underfitting; stronger explicit regularization methods like dropout or L2 are more effective.",
+    "hint": "Think about whether making a network smaller is the best way to prevent overfitting."
   },
   {
     "question": "Backpropagation: What are the key factors contributing to the advancements in deep learning, according to the provided text?",
@@ -2284,8 +2284,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Deep learning advancements require the combination of large datasets, powerful parallel computing (GPUs), and progress in ML algorithms - no single factor is sufficient alone.",
+    "hint": "Consider what enables modern deep learning breakthroughs - is it one thing or multiple??"
   },
   {
     "question": "Backpropagation: According to the sources, what is a limitation of hand-crafted features used in traditional machine learning?",
@@ -2310,8 +2310,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Hand-crafted features are designed by humans and can be either too general (losing important details) or too specific (failing to generalize), limiting their effectiveness.",
+    "hint": "Think about the trade-off when humans manually design features for different tasks."
   },
   {
     "question": "Backpropagation: What is a key characteristic of features in deep learning, in contrast to traditional approaches?",
@@ -2336,8 +2336,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In deep learning, features are learned automatically from data through training (parameterized), unlike traditional approaches where features are fixed and hand-crafted.",
+    "hint": "Consider how features are obtained in deep learning versus traditional ML methods."
   },
   {
     "question": "Backpropagation: In deep learning, what does \"end-to-end\" training refer to?",
@@ -2362,8 +2362,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "End-to-end training refers to jointly optimizing the entire pipeline—from raw input to final output—as a single differentiable function, rather than pre-training separate components.",
+    "hint": "Consider what 'end' means: from the beginning input to the final output."
   },
   {
     "question": "Backpropagation: What does the source emphasize about how complex systems in deep learning are built?",
@@ -2388,8 +2388,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Deep learning systems are built by stacking simple, basic operations (like linear transformations, ReLU, convolutions) to create complex hierarchical representations.",
+    "hint": "Think about how neural networks are constructed from fundamental components."
   },
   {
     "question": "ConvNets: In the context of Convolutional Neural Networks, a fully connected layer applied to a 32x32x3 image involves stretching the image into a 3072x1 vector. What is the primary drawback of this approach?",
@@ -2414,8 +2414,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Flattening a 2D image into a 1D vector loses all spatial information about pixel positions and their relationships with neighboring pixels.",
+    "hint": "What structural information exists in an image that a flat vector cannot represent?"
   },
   {
     "question": "ConvNets: A convolutional layer processes a 32x32x3 image using a 5x5x3 filter. What does the output of a single filter application produce?",
@@ -2440,8 +2440,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "With stride 1 and no padding, output size = (32 - 5 + 1) = 28. Each filter produces one 2D activation map representing the filter's response across the image.",
+    "hint": "Apply the output size formula for valid padding: N_out = N_in - F + 1."
   },
   {
     "question": "ConvNets: In a convolutional layer, if you have multiple filters, say six filters, what is the result of applying those filters to a single input image?",
@@ -2466,8 +2466,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Each filter independently scans the input and produces its own 2D activation map. These maps are stacked along the depth dimension, increasing the depth of the output volume.",
+    "hint": "What happens to the depth dimension when you add more filters?"
   },
   {
     "question": "ConvNets: What does it mean for a convolutional filter to \"slide\" over the image during the convolution operation?",
@@ -2492,8 +2492,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "During convolution, the filter computes dot products between its weights and small overlapping image patches at each spatial location, producing a 2D activation map that indicates where the filter's pattern is detected.",
+    "hint": "Think about what mathematical operation is performed at each position and what the output represents."
   },
   {
     "question": "ConvNets: What is a key difference between a convolutional layer and a fully connected layer in terms of how they process spatial information?",
@@ -2518,8 +2518,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Convolutional layers use local connectivity to preserve the 2D spatial structure of the input, while fully connected layers flatten everything into a 1D vector, losing all positional information.",
+    "hint": "Consider what happens to the height and width dimensions in each layer type."
   },
   {
     "question": "ConvNets: What is the consequence of having 6 separate 5x5 filters in a convolutional layer that acts on a 32x32x3 input?",
@@ -2544,8 +2544,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Each 5x5 filter applied to a 32x32x3 input produces one 28x28x1 activation map (output_size = input_size - filter_size + 1). With 6 filters, you get 6 separate maps that are stacked along the depth dimension.",
+    "hint": "Remember that the number of filters determines the depth of the output, and each filter produces one feature map."
   },
   {
     "question": "ConvNets: What are the four hyperparameters that a convolutional layer needs?",
@@ -2570,8 +2570,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "These four hyperparameters control the convolution operation: number of filters determines output depth, filter size defines the receptive field, stride controls the step size, and zero padding preserves spatial dimensions.",
+    "hint": "Think about what parameters you need to specify to completely define a convolution operation."
   },
   {
     "question": "ConvNets: What are the two primary functions of a pooling layer in a CNN?",
@@ -2596,8 +2596,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Pooling reduces the spatial dimensions of feature maps through downsampling (making computation more efficient) and introduces spatial invariance by making features robust to small translations and distortions.",
+    "hint": "Consider both the effect on size and the effect on feature position sensitivity."
   },
   {
     "question": "ConvNets: How does a max pooling layer with 2x2 filters and a stride of 2 operate?",
@@ -2622,8 +2622,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Max pooling is a downsampling operation that selects the maximum value from each 2x2 non-overlapping region, reducing spatial dimensions while preserving the most salient features.",
+    "hint": "Remember that 'max' in max pooling refers to selecting the largest value, not averaging."
   },
   {
     "question": "ConvNets: What is a trend in recent CNN architectures regarding pooling and fully connected layers?",
@@ -2648,8 +2648,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Modern architectures like ResNet and GoogLeNet favor all-convolutional designs with global average pooling, eliminating traditional pooling and fully connected layers to reduce parameters and prevent overfitting.",
+    "hint": "Think about how recent papers emphasize 'fully convolutional' networks and global pooling."
   },
   {
     "question": "ConvNets: According to the source, what is a typical structure of CNN architectures historically, before recent advancements like ResNet/GoogLeNet challenged it?",
@@ -2674,8 +2674,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The classic CNN structure follows a repeating pattern of CONV-RELU blocks, interspersed with pooling for downsampling, ending with FC layers for classification - the traditional LeNet/AlexNet pattern.",
+    "hint": "This describes the canonical pattern seen in early deep learning architectures."
   },
   {
     "question": "MoreNN: During the training phase, how does dropout modify the activation of a neuron with a dropout rate of p?",
@@ -2700,8 +2700,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "During training, dropout randomly sets neuron activations to zero with probability p, forcing the network to learn redundant representations and preventing co-adaptation of neurons.",
+    "hint": "Dropout is a regularization technique that temporarily 'drops out' neurons randomly."
   },
   {
     "question": "MoreNN: During inference (testing or validation), what adjustment is typically made to neuron activations in a network that uses dropout?",
@@ -2726,8 +2726,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "At inference time, activations are scaled by (1-p) to compensate for having all neurons active, maintaining the same expected activation magnitude as during training.",
+    "hint": "Since all neurons are active during inference, scaling is needed to match training behavior."
   },
   {
     "question": "MoreNN: What is the purpose of scaling the activations by 1-p during inference when using dropout?",
@@ -2752,8 +2752,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "During training with dropout, only a fraction (1-p) of neurons are active on average. To maintain the same expected output magnitude at inference time when all neurons are active, we scale activations by (1-p). This ensures the network's behavior is consistent between training and testing phases.",
+    "hint": "Think about what happens to the expected value of activations when you randomly zero out neurons during training."
   },
   {
     "question": "MoreNN: In the \"inverse dropout\" formulation, when is the scaling applied to the activations, and what is the key benefit?",
@@ -2778,8 +2778,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In inverse (inverted) dropout, scaling by 1/p is applied during training so that no scaling is needed at inference time. This ensures the expected value of activations remains the same during both phases, simplifying deployment.",
+    "hint": "Consider where scaling must be applied to make training and inference mathematically equivalent in expectation."
   },
   {
     "question": "MoreNN: What is the \"vanishing gradient\" problem in deep neural networks?",
@@ -2804,8 +2804,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The vanishing gradient problem occurs when gradients become exponentially small as they propagate backward through many layers, due to repeated multiplication of derivatives less than 1 (like in sigmoid/tanh activations). This makes early layers train very slowly.",
+    "hint": "Think about what happens mathematically when you multiply numbers between 0 and 1 many times in sequence."
   },
   {
     "question": "MoreNN: What is the main purpose of residual connections (skip connections) in ResNets?",
@@ -2830,8 +2830,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Residual connections (skip connections) allow gradients to flow directly from later layers to earlier layers through the identity mapping, bypassing the weight layers. This addresses the vanishing gradient problem in very deep networks.",
+    "hint": "Consider how adding the input directly to the output might create a 'highway' for gradient flow."
   },
   {
     "question": "MoreNN: How does a residual connection work mathematically?",
@@ -2856,8 +2856,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A residual connection works by adding the original input x to the transformed output F(x), giving h = F(x) + x. This 'residual' mapping makes it easier for the network to learn the identity function when needed.",
+    "hint": "Think about what mathematical operation combines the input with the layer's computed features."
   },
   {
     "question": "MoreNN: What happens if the parameters in a residual unit are set such that F(x) = 0?",
@@ -2882,8 +2882,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In a residual unit, the output is h(x) = F(x) + x. When F(x) = 0, the output becomes h(x) = 0 + x = x, so the input passes through unchanged.",
+    "hint": "Recall the residual connection formula h(x) = F(x) + x."
   },
   {
     "question": "MoreNN: What is the key advantage of residual connections in backpropagation?",
@@ -2908,8 +2908,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The identity term I in the gradient ∇ₓ h = ∂F/∂x + I ensures that gradients have a direct path during backpropagation, preventing them from vanishing even when the derivative of F is small.",
+    "hint": "Think about what the extra identity matrix I contributes to the gradient."
   },
   {
     "question": "MoreNN: What was the impact of Residual Networks (ResNets) on image classification performance on ImageNet?",
@@ -2934,8 +2934,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "ResNets introduced skip connections that enabled training of very deep networks (152 layers), achieving a 4.49% top-5 error that surpassed previous state-of-the-art and human performance (~5.1%).",
+    "hint": "Consider the breakthrough in network depth and accuracy that skip connections made possible."
   },
   {
     "question": "MoreNN: What does \"standard scaling\" aim to achieve when preprocessing data?",
@@ -2960,8 +2960,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Standard scaling (z-score normalization) transforms each feature using the formula (x - μ) / σ, which centers the data to zero mean and scales it to unit variance.",
+    "hint": "Think about the z-score formula and its effect on the distribution."
   },
   {
     "question": "MoreNN: In standard scaling, what do μ and σ² represent?",
@@ -2986,8 +2986,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In standard scaling, μ represents the mean and σ² represents the variance of each feature/column in the training data.",
+    "hint": "Recall the notation used in the standard scaling formula (x - μ) / σ."
   },
   {
     "question": "MoreNN: What is the main goal of Batch Normalization (BN) in neural networks?",
@@ -3012,8 +3012,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "BN normalizes inputs for each layer by learning optimal mean and variance during training, introducing learnable parameters (gamma and beta) that allow the network to adjust the normalized values as needed.",
+    "hint": "BN learns parameters to potentially undo the normalization if needed."
   },
   {
     "question": "MoreNN: How does Batch Normalization (BN) approximate the mean and variance?",
@@ -3038,8 +3038,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "During training, BN uses the statistics (mean and variance) computed from the current mini-batch of data to normalize the inputs.",
+    "hint": "The 'batch' in Batch Normalization refers to the mini-batch used during training."
   },
   {
     "question": "MoreNN: During BN training, how is the output H standardized, and what does ε do?",
@@ -3064,8 +3064,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The standardization formula is H_normalized = (H - mean) / sqrt(variance + ε), where ε is a small constant added to prevent division by zero when variance is close to zero.",
+    "hint": "ε is purely for numerical stability, not to modify the variance."
   },
   {
     "question": "MoreNN: During BN training, what trainable parameters are introduced to set a new mean and variance for each column j?",
@@ -3090,8 +3090,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "BN introduces two learnable parameters per feature (typically called gamma and beta or scale and shift) that allow the network to learn the optimal mean and variance after normalization.",
+    "hint": "These are per-channel/single values, not matrices or vectors of the same size as the layer."
   },
   {
     "question": "MoreNN: What are two common solutions used during inference to avoid the output depending on the mini-batch when using BN?",
@@ -3116,8 +3116,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "During inference, BN uses moving averages of batch means and variances computed during training (population statistics) instead of mini-batch statistics to ensure consistent output regardless of input batch size.",
+    "hint": "The network needs to use statistics learned during training, not dependent on the current inference input."
   },
   {
     "question": "MoreNN: How does Batch Normalization (BN) work with convolutional outputs that have dimensions (b, h, w, c)?",
@@ -3146,8 +3146,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In CNNs, BatchNorm treats each channel as a separate feature. For tensor (b,h,w,c), it computes mean and variance per channel across all b×h×w positions in the batch, then normalizes each spatial location independently for each channel.",
+    "hint": "Remember that each filter in a CNN learns a different feature, and BatchNorm normalizes per channel."
   },
   {
     "question": "MoreNN: What is a limitation of Batch Normalization when using small batch sizes?",
@@ -3172,8 +3172,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "BatchNorm estimates population statistics from mini-batch samples. With small batches, these estimates have high variance, making the normalization unreliable and causing training instability.",
+    "hint": "Think about statistical reliability - do we trust statistics computed from few samples?"
   },
   {
     "question": "MoreNN: How does Layer Normalization differ from Batch Normalization?",
@@ -3198,8 +3198,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "LayerNorm computes mean and variance across all features for each sample independently (each sample gets its own statistics), while BatchNorm computes statistics across the batch dimension for each feature.",
+    "hint": "Consider what 'layer' means in LayerNorm - it normalizes across the feature dimension for one sample at a time."
   },
   {
     "question": "MoreNN: In what type of networks is Layer Normalization commonly used?",
@@ -3224,8 +3224,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "LayerNorm doesn't depend on batch size because it computes statistics per sample, making it ideal for RNNs and Transformers where batch sizes can vary or be 1, especially with variable-length sequences.",
+    "hint": "Which normalization works when you have batch size = 1?"
   },
   {
     "question": "MoreNN: What is the primary goal of data augmentation?",
@@ -3250,8 +3250,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Data augmentation applies random transformations (rotations, flips, crops, etc.) to existing training samples to create new variants, effectively expanding the dataset and improving model generalization.",
+    "hint": "How can we create more training examples from the data we already have?"
   },
   {
     "question": "MoreNN: What are the typical transformations used in data augmentation?",
@@ -3276,8 +3276,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Data augmentation employs multiple transformation categories to artificially expand the training dataset and improve model generalization by preventing overfitting to specific patterns.",
+    "hint": "Consider that real-world data varies in many ways - position, color, noise, and more."
   },
   {
     "question": "MoreNN: What is the main purpose of using 1D convolutions for time-series data?",
@@ -3302,8 +3302,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "1D convolutions use local kernels (filters) that slide over sequential data to detect temporal patterns at specific time windows, unlike fully connected layers that consider the entire sequence at once.",
+    "hint": "Think about what 'local' means in the context of a sliding window operation."
   },
   {
     "question": "MoreNN: How does a 1D convolution capture local dependencies in time series data?",
@@ -3328,8 +3328,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A convolution filter of fixed size moves step-by-step across the time series, computing weighted sums of neighboring time steps to detect local trends or recurring patterns.",
+    "hint": "The key mechanism involves a sliding window operation across the sequence."
   },
   {
     "question": "MoreNN: What does it mean for a 1D convolution to have parameter sharing?",
@@ -3354,8 +3354,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Parameter sharing means the same learned filter weights are applied at every time step position, dramatically reducing total parameters compared to fully connected layers while enabling detection of the same pattern anywhere in the sequence.",
+    "hint": "Consider what happens when you apply the same weights everywhere versus different weights at each position."
   },
   {
     "question": "MoreNN: What does translation invariance mean in the context of 1D convolutions?",
@@ -3380,8 +3380,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Translation invariance means the model can recognize a pattern regardless of where it appears in the time dimension, making predictions robust to temporal shifts or delays in when events occur.",
+    "hint": "Invariance means the output doesn't change when the input is shifted."
   },
   {
     "question": "MoreNN: What is the key characteristic of a causal convolution?",
@@ -3406,8 +3406,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Causal convolution ensures temporal causality by restricting each output to depend only on the current and past inputs, preventing information leakage from future time steps.",
+    "hint": "Think about the meaning of 'causal' in terms of time - it means effect cannot precede cause."
   },
   {
     "question": "MoreNN: In the context of time series forecasting with a causal model, what is one way to train a model?",
@@ -3432,8 +3432,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Pooling all hidden representations across time and applying a regressor head allows the model to leverage the entire sequence history to predict the next time step value.",
+    "hint": "Consider how to combine all the time-dependent features for a single prediction."
   },
   {
     "question": "MoreNN: What is the difference between how 1D convolution and self-attention model sequences?",
@@ -3458,8 +3458,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "1D convolution processes local windows with a fixed-size filter, while self-attention computes attention scores between every pair of positions to capture global relationships.",
+    "hint": "Compare the receptive field of a sliding filter versus direct pairwise comparisons."
   },
   {
     "question": "MoreNN: In self-attention mechanisms, what are the three transformed vectors derived from each token's embedding?",
@@ -3484,8 +3484,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In self-attention, each embedding is transformed into three vectors: Query (what to look for), Key (what to match against), and Value (the actual information to retrieve).",
+    "hint": "These three vectors are the core components of the attention mechanism."
   },
   {
     "question": "MoreNN: In the analogy with a web search, what corresponds to the \"Query\" vector in self-attention?",
@@ -3510,8 +3510,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The Query vector represents what information the current position is seeking, analogous to a search query that specifies what you're looking for.",
+    "hint": "In the search analogy, Query is the question you ask, not the answer."
   },
   {
     "question": "MoreNN: What is the role of \"masking\" in masked self-attention?",
@@ -3536,8 +3536,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Masking prevents the model from attending to future tokens by setting their attention scores to negative infinity, ensuring causality in language modeling.",
+    "hint": "Think about what the model should NOT see when predicting the next token."
   },
   {
     "question": "MoreNN: What is the purpose of passing the concatenated outputs of multiple self-attention heads through a Multilayer Perceptron (MLP) layer?",
@@ -3562,8 +3562,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The MLP processes the combined output from all attention heads to learn more complex, non-linear transformations of the diverse relationships captured.",
+    "hint": "After combining multiple perspectives, what happens to enhance representational power?"
   },
   {
     "question": "MoreNN: What is the \"Add\" operation in a Transformer block?",
@@ -3588,8 +3588,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The 'Add' operation is a residual connection that adds the input of a sublayer to its output, facilitating gradient flow in deep networks.",
+    "hint": "What helps gradients travel through deep networks without vanishing?"
   },
   {
     "question": "MoreNN: What is the \"Norm\" operation in a Transformer block?",
@@ -3614,8 +3614,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Layer Normalization normalizes across the feature dimension (not batch dimension), standard in Transformers for training stability.",
+    "hint": "Which normalization normalizes across features rather than batch samples?"
   },
   {
     "question": "MoreNN: What is the first step in representing text as input for a transformer?",
@@ -3640,8 +3640,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The first step is tokenization followed by embedding: converting text into discrete tokens and then representing each token as a numerical vector.",
+    "hint": "Before applying any mathematical operations, what must first happen to raw text?"
   },
   {
     "question": "MoreNN: What are the main issues with word encoders?",
@@ -3666,8 +3666,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gli word encoders trattano ogni parola come un token indivisibile, quindi parole morphologicalmente correlate (come 'run', 'running', 'runner') vengono memorizzate separatamente nel vocabolario, aumentando la dimensionalità e la sparsità.",
+    "hint": "Pensa a come le variazioni grammaticali di una stessa radice vengono gestite a livello di parola."
   },
   {
     "question": "MoreNN: What are the characteristics of character encoders?",
@@ -3692,8 +3692,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gli encoder a livello di carattere riducono drasticamente la dimensione del vocabolario (solo caratteri ASCII/Unicode), ma producono sequenze molto lunghe che rendono difficile l'apprendimento di rappresentazioni significative e aumentano il costo computazionale.",
+    "hint": "Considera il trade-off tra dimensione del vocabolario e lunghezza delle sequenze generate."
   },
   {
     "question": "MoreNN: What is the byte pair encoding (BPE) algorithm used for?",
@@ -3718,8 +3718,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "BPE è un algoritmo di tokenizzazione subword che costruisce iterativamente il vocabolario unendo le coppie di token più frequenti nel corpus, creando token che bilanciano la granularità dei caratteri con il significato delle parole.",
+    "hint": "L'algoritmo mergesce sequenze basandosi sulla loro frequenza nel training data."
   },
   {
     "question": "MoreNN: What is the first step in the BPE algorithm?",
@@ -3744,8 +3744,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il primo passo di BPE consiste nell'inizializzare il vocabolario con tutti i caratteri unici presenti nel training corpus (inclusi spazi e caratteri speciali), che serviranno come unità base per i successivi merge.",
+    "hint": "Prima di poter unire coppie, devi avere le unità atomiche iniziali."
   },
   {
     "question": "MoreNN: What is the purpose of positional encodings in Transformer models?",
@@ -3770,8 +3770,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I Transformer usano self-attention che processa tutti i token simultaneamente senza ricorrenza, quindi le informazioni sull'ordine sequenziale devono essere aggiunte esplicitamente tramite positional encodings altrimenti il modello sarebbe invariante all'ordine.",
+    "hint": "Il meccanismo di attenzione non ha memoria dell'ordine dei token."
   },
   {
     "question": "MoreNN: Why are positional encodings needed in transformers?",
@@ -3796,8 +3796,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Transformers use parallel processing to handle all tokens simultaneously, which means they have no inherent understanding of token order. Positional encodings provide the model with information about where each token appears in the sequence, which is essential for capturing sequential relationships.",
+    "hint": "Consider how self-attention computes relationships between all tokens equally, regardless of their position in the sequence."
   },
   {
     "question": "MoreNN: How do relative positional embeddings work?",
@@ -3822,8 +3822,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Relative positional embeddings encode the distance and direction between pairs of tokens rather than their absolute positions. This approach helps the model generalize to sequences of varying lengths and captures positional relationships more flexibly.",
+    "hint": "Think about how knowing the relative distance between two words helps understand their relationship regardless of where they appear in the text."
   },
   {
     "question": "MoreNN: What are the outputs of the transformer block and what are they used for?",
@@ -3848,8 +3848,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The transformer block outputs logits, which are raw scores converted to probabilities via softmax. These probability distributions over the vocabulary are used for next-token prediction, enabling text generation through greedy decoding or sampling.",
+    "hint": "Consider what a language model fundamentally needs to decide at each step - selecting the next word from the entire vocabulary."
   },
   {
     "question": "MoreNN: What is the role of the \"temperature\" hyperparameter when generating text from a language model?",
@@ -3874,8 +3874,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Temperature scales the logits before applying softmax, thereby controlling the entropy of the output distribution. A high temperature (>1) produces more diverse/random outputs, while a low temperature (<1) makes the model more deterministic and confident in its predictions.",
+    "hint": "Think of it as adjusting how 'bold' or 'conservative' the model's choices are during generation."
   },
   {
     "question": "LR: What is the primary goal of the cost function in linear regression?",
@@ -3900,8 +3900,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The cost function in linear regression (typically Mean Squared Error) measures the discrepancy between predicted and actual values. The training process aims to find parameter values that minimize this error, thereby improving the model's predictive accuracy.",
+    "hint": "Consider what mathematical quantity we optimize during training to make the line fit the data points better."
   },
   {
     "question": "LR: In the context of gradient descent, which statement accurately describes the effect of the learning rate (α)?",
@@ -3926,8 +3926,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The learning rate controls the step size in parameter space. If α is too small, the algorithm takes tiny steps and converges slowly; if α is too large, the steps may be so big that the algorithm overshoots the minimum or even diverges (oscillates away).",
+    "hint": "Think of the learning rate as the length of each step you take downhill."
   },
   {
     "question": "LR: What is the key distinction between \"batch\" gradient descent and stochastic gradient descent (SGD)?",
@@ -3952,8 +3952,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Batch gradient descent computes the gradient using the entire dataset before each update, while SGD estimates the gradient using only a single training example at a time, leading to faster but noisier updates.",
+    "hint": "Consider how many samples are used to calculate each gradient update."
   },
   {
     "question": "LR: Which of the following is NOT a method to calculate simple linear regression?",
@@ -3978,8 +3978,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Principal Component Analysis (PCA) is a dimensionality reduction technique used for feature extraction and visualization, not a method for finding the relationship between dependent and independent variables in regression.",
+    "hint": "Ask yourself which technique is primarily used for supervised vs unsupervised learning."
   },
   {
     "question": "LR: What is the purpose of feature scaling in linear regression, and how is mean normalization typically applied?",
@@ -4004,8 +4004,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Feature scaling brings features to similar ranges so gradient descent converges faster. Mean normalization centers each feature by subtracting its mean, giving features approximately zero mean.",
+    "hint": "Consider why having features with very different scales could cause gradient descent to zig-zag."
   },
   {
     "question": "LR: What does the normal equation provide in the context of linear regression?",
@@ -4030,8 +4030,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The normal equation provides a closed-form solution: θ = (X^T X)^(-1) X^T y, directly computing the optimal parameters without iterative updates like gradient descent.",
+    "hint": "Think about the difference between solving an equation analytically versus iteratively."
   },
   {
     "question": "LR: When might the normal equation be computationally inefficient and what might be a workaround?",
@@ -4056,8 +4056,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The normal equation requires computing the inverse of (X^T X), which has O(n³) complexity. When the number of features is very high, this matrix inversion becomes computationally expensive and memory-intensive. Regularization (like ridge regression) or feature reduction helps make the matrix invertible and computationally feasible.",
+    "hint": "Think about the computational cost of matrix inversion when dimensions are large."
   },
   {
     "question": "LR: According to the sources, what does a Pearson correlation coefficient (r) of -1 signify?",
@@ -4082,8 +4082,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The Pearson correlation coefficient r ranges from -1 to +1. A value of -1 indicates a perfect negative linear relationship, meaning as one variable increases, the other decreases in a perfectly linear fashion.",
+    "hint": "Remember that r = -1 represents the extreme negative end of the correlation scale."
   },
   {
     "question": "LR: What does the coefficient of determination (R²) measure in regression analysis?",
@@ -4108,8 +4108,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "R² represents the proportion of variance in the dependent variable that is explained by the regression model. It indicates how well the regression line or curve fits the observed data points.",
+    "hint": "Consider what aspect of 'fit' or 'explanation' R² quantifies in a regression model."
   },
   {
     "question": "LR: What is a key characteristic that distinguishes locally-weighted regression from linear regression?",
@@ -4134,8 +4134,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Locally-weighted regression (LOESS) is a non-parametric method that retains all training examples and assigns weights to them for each prediction. This means the 'effective' number of parameters grows with the dataset size, unlike linear regression which has a fixed number of parameters.",
+    "hint": "Non-parametric methods don't have a fixed set of parameters that are independent of training data size."
   },
   {
     "question": "LR: According to the sources, what is the primary assumption underlying the probabilistic interpretation of least squares?",
@@ -4160,8 +4160,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The probabilistic interpretation of least squares assumes that the target variable can be expressed as a linear function of the parameters plus random error: y = θ^T x + ε, where ε represents irreducible noise (typically modeled as Gaussian).",
+    "hint": "Think about what error term is assumed in the probabilistic model for least squares."
   },
   {
     "question": "LR2: In the context of the normal equation, what does the term 'X' represent?",
@@ -4186,8 +4186,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In the normal equation θ = (XᵀX)⁻¹Xᵀy, X is the design matrix where each row represents an observation and each column represents a feature. This matrix contains all the input features used to make predictions.",
+    "hint": "Consider what matrix gets multiplied by θ to produce the predicted values Xθ."
   },
   {
     "question": "LR2: What does θ represent in the normal equation?",
@@ -4212,8 +4212,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "θ (theta) is the parameter vector containing the weights for each feature. The normal equation solves for these optimal weights that minimize the cost function.",
+    "hint": "Think about what the equation is solving for - it's the unknown we're trying to find."
   },
   {
     "question": "LR2: Given the cost function J(θ) = 1/2 * ||Xθ − y||², which statement correctly describes how the normal equation is derived?",
@@ -4238,8 +4238,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "To find the minimum of a function in calculus, we set its derivative (gradient) to zero. For the cost function J(θ), setting ∇J(θ) = 0 gives us the normal equation.",
+    "hint": "Remember how you find minima in calculus - it's about setting the derivative to zero."
   },
   {
     "question": "LR2: The normal equation solution θ = (XᵀX)⁻¹Xᵀy can be computed when:",
@@ -4264,8 +4264,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The solution requires computing (XᵀX)⁻¹, the inverse of XᵀX. An inverse only exists for invertible (non-singular) matrices, so XᵀX must be invertible.",
+    "hint": "Look at what is being inverted in the normal equation formula."
   },
   {
     "question": "LR2: What is the rank condition for XᵀX to be invertible?",
@@ -4290,8 +4290,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "XᵀX is invertible if and only if X has full column rank, meaning all columns are linearly independent. This requires the number of linearly independent columns to equal the number of features (m).",
+    "hint": "Consider what condition makes a matrix invertible in terms of its rank."
   },
   {
     "question": "LR2: In the equation for θ, θ = (XᵀX)⁻¹Xᵀy what does the (XᵀX)⁻¹ term represent?",
@@ -4316,8 +4316,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "(XᵀX)⁻¹ literally represents the mathematical inverse of the matrix product XᵀX. In the normal equation for OLS, this term helps solve the system of normal equations to find optimal weights.",
+    "hint": "Remember that the superscript -1 in matrix notation typically denotes the matrix inverse."
   },
   {
     "question": "LR2: If XᵀX is not invertible, what can be inferred about the feature matrix X?",
@@ -4342,8 +4342,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A matrix is invertible (non-singular) only when its columns are linearly independent. If XᵀX is singular, the original feature matrix X must have linearly dependent (redundant) columns.",
+    "hint": "Recall the fundamental condition for matrix invertibility: columns must be linearly independent."
   },
   {
     "question": "LR2: What is a key difference between linear regression and locally weighted regression (LWR)?",
@@ -4368,8 +4368,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "LWR is a non-parametric method that fits a separate weighted least squares model for each query point, where weights depend on the distance from that query point. Linear regression fits a single global model with equal weights for all points.",
+    "hint": "Think about how LWR treats each prediction differently based on location."
   },
   {
     "question": "LR2: In Locally Weighted Regression (LWR), what is the purpose of the kernel function?",
@@ -4394,8 +4394,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The kernel function (typically Gaussian) assigns weights w(i) = exp(-||x^(i) - x₀||²/(2τ²)) to each training point based on distance from the query point x₀, giving more influence to nearby points.",
+    "hint": "Consider what determines the 'locality' in locally weighted regression."
   },
   {
     "question": "LR2: What does the term 'τ' (tau) represent in the context of the weighting function for Locally Weighted Regression (LWR)?",
@@ -4420,8 +4420,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "τ (tau) is the bandwidth parameter in the Gaussian kernel that controls how quickly weights decay with distance. Larger τ means a wider kernel (more points influence the local fit), while smaller τ means a narrower kernel.",
+    "hint": "Think about what parameter controls the 'width' or 'spread' of a bell curve."
   },
   {
     "question": "LR2: What is an advantage of locally weighted regression compared to standard linear regression?",
@@ -4446,8 +4446,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Locally Weighted Regression (LWR) fits a separate weighted least squares at each query point, where points closer to the query have higher weights. This local adaptation allows the model to capture non-linear patterns that a single global linear model cannot represent.",
+    "hint": "Consider how LWR adjusts its model locally for each prediction point."
   },
   {
     "question": "LR2: Based on the diagram in the source, which of the following can be described as 'overfitting'?",
@@ -4472,8 +4472,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Overfitting occurs when a model has excessive flexibility, causing it to learn both the true underlying pattern and random noise in the training data, resulting in poor generalization to new data.",
+    "hint": "Think about what happens when model complexity exceeds what the data can support."
   },
   {
     "question": "BinaryClass: Given a binary classification scenario, which of the following is the correct interpretation of the notation 'y = 1'?",
@@ -4498,8 +4498,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In binary classification, the convention is that y=1 represents the positive class (the condition we're detecting), while y=0 represents the negative class.",
+    "hint": "Recall the standard convention in binary classification problems."
   },
   {
     "question": "BinaryClass: In the context of logistic regression, what does the notation 'p(y|x; θ)' represent?",
@@ -4524,8 +4524,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In probability notation, p(y|x; θ) denotes the conditional probability of y given x, parameterized by θ - this is the fundamental prediction in logistic regression.",
+    "hint": "Remember that the vertical bar means 'given' and semicolon means 'parameterized by'."
   },
   {
     "question": "BinaryClass: Based on the notes, what is the primary purpose of the sigmoid function, denoted as 'g(z)'?",
@@ -4550,8 +4550,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The sigmoid function g(z) = 1/(1+e^-z) squashes any real-valued input z into the (0,1) range, transforming linear combinations into valid probabilities.",
+    "hint": "Consider what type of output logistic regression needs to produce."
   },
   {
     "question": "BinaryClass: According to the notes, how is the decision boundary determined in the context of binary classification using a linear model?",
@@ -4576,8 +4576,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nella regressione logistica, il decision boundary è definito come il luogo dove la funzione sigmoidale restituisce 0.5, cioè dove z = 0. Questo corrisponde alla linea θ₀ + θ₁x₁ + θ₂x₂ = 0 che separa le due classi.",
+    "hint": "Il decision boundary è il punto esatto dove la probabilità di appartenere a una classe è uguale all'altra."
   },
   {
     "question": "BinaryClass: In the provided material, what does the notation 'J(θ)' represent?",
@@ -4602,8 +4602,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "J(θ) rappresenta la funzione di costo (cost function) che quantifica l'errore tra le predizioni del modello e i valori reali. Viene utilizzata per valutare quanto bene il modello si adatta ai dati di training.",
+    "hint": "È la funzione che viene ottimizzata durante l'addestramento per trovare i migliori parametri."
   },
   {
     "question": "BinaryClass: What is the primary goal of the optimization process with respect to J(θ)?",
@@ -4628,8 +4628,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "L'obiettivo dell'ottimizzazione è minimizzare J(θ) per trovare i parametri θ che producono le predizioni più accurate possibili. Il gradient descent è l'algoritmo comunemente usato per trovare il minimo.",
+    "hint": "L'ottimizzazione cerca di ridurre l'errore del modello, non di aumentarlo."
   },
   {
     "question": "BinaryClass: According to the notes, what is the significance of the term 'yi' in the cost function J(θ)?",
@@ -4654,8 +4654,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "yi rappresenta l'etichetta vera (true label) dei dati di training, cioè il valore che vogliamo che il modello predica correttamente. È il termine noto nella funzione di costo.",
+    "hint": "È il valore che conosciamo già e che il modello deve imparare a predire."
   },
   {
     "question": "BinaryClass: Which of the following best describes the update rule for θ using gradient descent, as per the source?",
@@ -4680,8 +4680,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La regola di aggiornamento del gradient descent sottrae il gradiente moltiplicato per il learning rate α dai parametri attuali: θ = θ - α∇J(θ). Questo sposta i parametri nella direzione di discesa più ripida della funzione di costo.",
+    "hint": "Il segno meno indica che ci muoviamo nella direzione opposta al gradiente per raggiungere il minimo."
   },
   {
     "question": "BinaryClass: In the context of the provided notes, what is the purpose of the expression (sigmoid(z(i)) − y(i)) in the gradient calculation?",
@@ -4706,8 +4706,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This term represents the error or residual in logistic regression, measuring how far the predicted probability (sigmoid output) deviates from the actual binary label, which drives the gradient descent optimization.",
+    "hint": "Think about what this subtraction represents in the context of supervised learning error computation."
   },
   {
     "question": "BinaryClass: According to the provided material, what does the Newton-Raphson method aim to accomplish?",
@@ -4732,8 +4732,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Newton-Raphson is fundamentally a root-finding algorithm that uses both first and second derivatives (gradient and Hessian) to iteratively find where a function equals zero, which in optimization corresponds to finding a stationary point.",
+    "hint": "Remember it solves for where f(x)=0, not directly for optimization minimum."
   },
   {
     "question": "BinaryClass: What does the term H in the update equation θ := θ − H⁻¹∇J(θ) refer to (Newton method)?",
@@ -4762,8 +4762,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In the Newton-Raphson formula θ := θ − H⁻¹∇J(θ), H represents the Hessian matrix containing second-order partial derivatives of the cost function, which provides information about curvature.",
+    "hint": "Think about what matrix appears in the denominator of the Newton update formula."
   },
   {
     "question": "BinaryClass: What is a key drawback mentioned in the notes regarding the Newton-Raphson method?",
@@ -4788,8 +4788,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The main computational limitation of Newton-Raphson is that computing the inverse of the Hessian matrix has O(n³) complexity, making it prohibitively expensive for high-dimensional problems.",
+    "hint": "Consider the computational cost of matrix operations, especially inversion."
   },
   {
     "question": "BinaryClass: According to the material, what algorithm is suggested as a practical alternative to Newton's method?",
@@ -4814,8 +4814,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "BFGS is a quasi-Newton method that approximates the Hessian matrix iteratively without computing it directly, making it computationally more efficient while still achieving fast convergence.",
+    "hint": "Think of methods that avoid explicit Hessian computation while retaining quadratic convergence benefits."
   },
   {
     "question": "BinaryClass: What is the relationship between the gradient and the direction of steepest ascent of a function J(θ)?",
@@ -4840,8 +4840,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The gradient points in the direction of steepest ascent because it gives the direction of maximum positive rate of change of the function. This is a fundamental property from multivariate calculus.",
+    "hint": "Remember that gradient points in the direction of greatest increase, while negative gradient points to greatest decrease."
   },
   {
     "question": "BinaryClass2: According to the source, what does \"Log Loss\" or \"Negative Log Likelihood\" (NLL) measure in the context of classification?",
@@ -4866,8 +4866,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Log Loss measures the discrepancy between the predicted class probabilities and the true one-hot encoded labels. It penalizes confident wrong predictions more heavily.",
+    "hint": "Think about what happens when a model predicts high probability for the wrong class."
   },
   {
     "question": "BinaryClass2: What does the term 'logits' refer to in the document?",
@@ -4892,8 +4892,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Logits are the raw output values from the neural network before any normalization is applied. They represent the unnormalized scores that get fed into the softmax function.",
+    "hint": "What comes before the probabilities are calculated in a classification network?"
   },
   {
     "question": "BinaryClass2: According to the source, what is the effect of the exponential function within Softmax?",
@@ -4918,8 +4918,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The exponential function in softmax amplifies differences because exp(x) grows rapidly - larger input scores get disproportionately larger exponentials, making the resulting probabilities more distinct.",
+    "hint": "Consider how the exponential function transforms numerical values and what happens to large vs small inputs."
   },
   {
     "question": "BinaryClass2: In the context of the provided document, what is the significance of the term \"cross-entropy\"?",
@@ -4944,8 +4944,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Cross-entropy quantifies the uncertainty or 'surprise' in predictions when comparing predicted probability distributions to true distributions. It's particularly useful for multi-class classification problems.",
+    "hint": "Think about what cross-entropy measures in terms of information theory and probability distributions."
   },
   {
     "question": "BinaryClass2: What does the diagram with the red, green and blue points with decision boundaries represent?",
@@ -4970,8 +4970,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This diagram illustrates the bias-variance tradeoff, showing three scenarios: underfitting (high bias, low variance), good fit, and overfitting (low bias, high variance) with decision boundaries.",
+    "hint": "Consider what concepts are typically demonstrated with visual representations of different model fits to the same data."
   },
   {
     "question": "BinaryClass2: Based on the document, what is the effect of \"overfitting\" on the model?",
@@ -4996,8 +4996,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Overfitting happens when a model becomes too complex and learns the noise/specific details of training data rather than generalizable patterns, failing to generalize to new data.",
+    "hint": "Think about what happens when a model is overly complex relative to the amount and complexity of the training data."
   },
   {
     "question": "BinaryClass2: What does 'bias' in the context of model training refer to in the document?",
@@ -5022,8 +5022,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Bias in model training refers to systematic errors caused by incorrect assumptions in the model - a high-bias model oversimplifies and consistently misses patterns in the data.",
+    "hint": "Consider what type of error results from a model that is too simple to capture the true relationship in data."
   },
   {
     "question": "BinaryClass2: According to the document, what does 'variance' in the context of model training refer to?",
@@ -5048,8 +5048,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Variance measures how much a model's predictions fluctuate with different training data - high variance means small changes in training data lead to large changes in predictions.",
+    "hint": "Think about what happens to predictions when you train the same model on different subsets of data."
   },
   {
     "question": "BinaryClass2: What does the source suggest about the relationship between model complexity and bias and variance?",
@@ -5074,8 +5074,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This describes the bias-variance tradeoff: more complex models can reduce bias (better fit) but tend to have higher variance (less stable across different datasets).",
+    "hint": "Recall the fundamental tradeoff: as you reduce one error type, the other typically increases."
   },
   {
     "question": "BinaryClass2: What do the dashed lines in the model representation diagrams indicate?",
@@ -5100,8 +5100,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In binary classification diagrams (like SVMs), dashed lines represent the hyperplanes that divide the feature space into regions corresponding to different classes. This is the standard way to visualize decision boundaries.",
+    "hint": "Think about what physically separates the different class regions in a classification diagram."
   },
   {
     "question": "BinaryClass2: What does the concept of 'Expected Error' (E(Err)) in the context of the document represent?",
@@ -5126,8 +5126,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Expected error in the bias-variance decomposition framework represents the combination of bias and variance components. The total expected prediction error is decomposed into these two main components plus irreducible error.",
+    "hint": "Recall the bias-variance tradeoff decomposition formula and what terms it contains."
   },
   {
     "question": "BiasVariance: In the context of bias-variance tradeoff, what does \"high variance\" typically indicate about a machine learning model?",
@@ -5152,8 +5152,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "High variance means the model is too complex and has essentially memorized the training data, capturing noise rather than true patterns. This leads to overfitting where performance varies greatly with different training sets.",
+    "hint": "Consider what happens when a model learns too many details from training data instead of general patterns."
   },
   {
     "question": "BiasVariance: What is the primary purpose of regularization in machine learning?",
@@ -5178,8 +5178,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Regularization adds a penalty term (like L1 or L2) to the loss function that constrains model parameters, effectively reducing model complexity and preventing the model from fitting too closely to training data.",
+    "hint": "Think about what constraints are imposed to prevent models from becoming too flexible."
   },
   {
     "question": "BiasVariance: Why is choosing hyperparameters based solely on the training data considered a bad practice?",
@@ -5204,8 +5204,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Training data performance does not indicate how the model will generalize to new, unseen data. Hyperparameters must be validated on held-out data to ensure the model will perform well on future observations.",
+    "hint": "Consider what the fundamental goal of machine learning is regarding new, unseen data."
   },
   {
     "question": "BiasVariance: What is the primary advantage of using k-fold cross-validation, compared to a single hold-out validation set?",
@@ -5230,8 +5230,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "K-fold cross-validation splits data into k subsets and trains/kwtests the model k times, using each subset as validation once. This maximizes the use of limited data since all observations contribute to both training and validation across folds.",
+    "hint": "Consider how k-fold differs from a single split in terms of data utilization across all folds."
   },
   {
     "question": "BiasVariance: According to the sources, which of the following represents the correct sequence of steps when using a hold-out cross validation method?",
@@ -5256,8 +5256,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The proper sequence is: split data into train/dev/test sets, train models on training set only, select the best model using development set error, and optionally evaluate final performance on the held-out test set.",
+    "hint": "Remember that model selection should never use the test set - it's only for final evaluation."
   },
   {
     "question": "BiasVariance: What does the term \"empirical risk\" refer to in the context of machine learning?",
@@ -5282,8 +5282,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Empirical risk is the average loss computed on the training data, representing the model's performance on observed examples rather than theoretical expected performance on unseen data.",
+    "hint": "The word 'empirical' refers to what can be observed/measured from actual data."
   },
   {
     "question": "BiasVariance: According to the sources, what is the relationship between model complexity and error?",
@@ -5308,8 +5308,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "This describes the bias-variance tradeoff: underfitting occurs with too-simple models (high bias), overfitting with too-complex models (high variance), and optimal complexity minimizes total error.",
+    "hint": "Think about what happens to training and validation error as you move from very simple to very complex models."
   },
   {
     "question": "PCA: What is a manifold in the context of PCA?",
@@ -5334,8 +5334,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In dimensionality reduction, a manifold is a lower-dimensional structure embedded in higher-dimensional space that locally behaves like Euclidean space, which PCA aims to discover and project data onto.",
+    "hint": "Think about the mathematical property of being locally similar to Euclidean space."
   },
   {
     "question": "PCA: What is a 'chart' in the context of manifolds?",
@@ -5360,8 +5360,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In differential geometry, a chart is a local coordinate system that maps an open subset of a manifold to a subset of Euclidean space, establishing a one-to-one correspondence essential for defining differentiable structures.",
+    "hint": "Think about how coordinates work on curved surfaces like a sphere."
   },
   {
     "question": "PCA: What is the key property of a chart mapping (ϕ)?",
@@ -5386,8 +5386,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "For a chart to define a smooth structure on a manifold, the mapping must be a diffeomorphism—smooth, continuous, and invertible with a smooth inverse.",
+    "hint": "Consider what mathematical properties ensure we can do calculus on curved spaces."
   },
   {
     "question": "PCA: In the context of unsupervised learning, what is the primary goal?",
@@ -5412,8 +5412,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Unsupervised learning aims to discover hidden patterns, clusters, or structures in data without any labeled responses, unlike supervised learning which uses known outputs.",
+    "hint": "Think about what distinguishes learning 'without answers' from learning 'with answers'."
   },
   {
     "question": "PCA: What is a basis in the context of vector spaces?",
@@ -5438,8 +5438,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A basis is the minimal set of linearly independent vectors that spans the entire vector space, allowing any vector to be expressed as a unique linear combination.",
+    "hint": "Consider what makes a set of vectors sufficient to represent all points in a space."
   },
   {
     "question": "PCA: What is the implication of mean-centering a dataset before applying PCA?",
@@ -5464,8 +5464,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Mean-centering shifts the data so that the mean of each variable becomes zero, placing the data cloud at the origin and simplifying covariance computations in PCA.",
+    "hint": "Think about what happens to the covariance matrix when data is centered at the origin."
   },
   {
     "question": "PCA: Why must basis vectors be linearly independent?",
@@ -5490,8 +5490,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linear independence ensures the basis vectors span the entire space without redundancy, allowing unique reconstruction of any point. If dependent, some vectors would contribute no new directional information.",
+    "hint": "Think about what redundant vectors would mean for the dimensionality of the span."
   },
   {
     "question": "PCA: In a standard basis, what is unique about the weights when representing a data point?",
@@ -5516,8 +5516,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In a standard basis, the basis vectors are simply the coordinate axes (e.g., [1,0,0], [0,1,0]), so the weights needed to reconstruct a point are exactly the point's coordinate values themselves.",
+    "hint": "What are the vectors in a standard/identity basis?"
   },
   {
     "question": "PCA: What is the significance of an orthonormal basis in the context of PCA?",
@@ -5542,8 +5542,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "An orthonormal basis (vectors orthogonal with unit length) allows direct computation of weights via dot product: w = U^T x. No matrix inversion or equation solving required.",
+    "hint": "What does orthonormal imply about the relationship between basis vectors?"
   },
   {
     "question": "PCA: What is the role of the operation CC^T (where C is the basis matrix) in the context of an orthonormal basis?",
@@ -5568,8 +5568,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "CC^T is a projection matrix that projects data onto the subspace spanned by C. For orthonormal C, this matrix is idempotent (P^2 = P) and represents the reconstruction in the new basis.",
+    "hint": "What happens when you project data onto a subspace and then project again?"
   },
   {
     "question": "PCA: What happens when the number of spanning vectors (K) is less than the dimensionality of the data space (D)?",
@@ -5594,8 +5594,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "When K < D, the K-dimensional subspace cannot capture all D-dimensional information. Data points can only be approximated (lossy compression), not perfectly reconstructed.",
+    "hint": "What information is lost when you reduce dimensionality?"
   },
   {
     "question": "PCA: What does the projection of a data point onto a subspace represent?",
@@ -5620,8 +5620,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In PCA, projection onto a subspace means finding the closest point in that subspace to the original data point, which geometrically corresponds to dropping the point perpendicularly onto the subspace defined by the principal component basis vectors.",
+    "hint": "Think about the geometric meaning of 'projection' in linear algebra and orthogonal decomposition."
   },
   {
     "question": "PCA: What is learned in Principal Component Analysis (PCA) besides weights?",
@@ -5646,8 +5646,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "PCA learns both the weights (how to represent each data point in the new basis) and the principal components themselves (the orthonormal basis vectors pointing in the directions of maximum variance).",
+    "hint": "Remember that PCA optimizes the transformation matrix to find meaningful directions."
   },
   {
     "question": "PCA: What is the relationship between the PCA least squares cost function and the autoencoder?",
@@ -5672,8 +5672,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A linear autoencoder with orthogonality constraints on its weights minimizes the same reconstruction error as PCA's least squares cost function, making them mathematically equivalent for linear dimensionality reduction.",
+    "hint": "Consider what happens when you constrain a neural network to perform linear dimensionality reduction."
   },
   {
     "question": "PCA: What are principal components?",
@@ -5698,8 +5698,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Principal components are the eigenvectors of the data's covariance matrix that correspond to the largest eigenvalues, forming an orthonormal basis that points in the directions where the data varies the most.",
+    "hint": "They are derived from the eigenvalue decomposition of the covariance matrix."
   },
   {
     "question": "PCA: How are principal components computed?",
@@ -5724,8 +5724,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Principal components are computed by performing eigenvalue decomposition (or singular value decomposition) on the data's covariance or correlation matrix; the eigenvectors represent the principal component directions.",
+    "hint": "Think about what mathematical operation gives you the directions of maximum variance."
   },
   {
     "question": "Clustering: In the context of decision trees, what is the primary purpose of a 'splitting variable'?",
@@ -5750,8 +5750,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In un albero decisionale, lo splitting variable è la variabile utilizzata per suddividere lo spazio delle feature in regioni reciprocamente esclusive. Questo processo di partizione ricorsiva è il meccanismo fondamentale che consente all'albero di creare regioni omogenee rispetto alla variabile target.",
+    "hint": "Pensa a come un albero decisionale suddivide lo spazio delle feature in regioni sempre più piccole e omogenee."
   },
   {
     "question": "Clustering: What is the role of the 'misclassification rate' in the context of building a decision tree?",
@@ -5776,8 +5776,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il misclassification rate misura la proporzione di osservazioni classificate erroneamente in un dato nodo. Questo criterio viene utilizzato per valutare la qualità di uno split候选 e selezionare la variabile che massimizza la purezza dei nodi figli.",
+    "hint": "Ricorda che gli alberi decisionali scelgono gli split ottimizzando un criterio di purezza o errore."
   },
   {
     "question": "Clustering: What is the primary distinction between 'Tree-based methods' and 'Linear regression models' as described in the text?",
@@ -5802,8 +5802,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "I metodi tree-based creano partizioni discrete dello spazio di input in regioni rettangolari (box), mentre la regressione lineare produce una singola superficie di regressione globale. Quest'ultima utilizza una combinazione lineare delle variabili per predire l'output.",
+    "hint": "Confronta come le due metodologie approcciano la relazione tra variabili indipendenti e dipendenti."
   },
   {
     "question": "Clustering: In the context of bagging, what is 'bootstrapping'?",
@@ -5828,8 +5828,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il bootstrapping è una tecnica di campionamento che estrae casualmente osservazioni dal dataset originale con replacement, permettendo che alcune osservazioni appaiano più volte. Questo processo genera dataset diversi per addestrare ciascun modello nella procedura di bagging.",
+    "hint": "È una tecnica di campionamento che permette di riutilizzare le stesse osservazioni più volte."
   },
   {
     "question": "Clustering: How does 'random forest' method build individual trees that are less correlated?",
@@ -5854,8 +5854,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In random forest, ad ogni split l'albero può utilizzare solo un sottoinsieme casuale delle feature disponibili (feature bagging). Questa随机izzazione riduce la correlazione tra gli alberi poiché impedisce alle feature più dominanti di apparire sempre alla radice.",
+    "hint": "È una forma di bagging applicata alle feature invece che ai campioni."
   },
   {
     "question": "Clustering: What is the fundamental idea behind 'Boosting' as described in the text?",
@@ -5880,8 +5880,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Boosting creates a sequential ensemble where each new model (weak learner) focuses on correcting the mistakes made by the previous models, combining them into a strong predictor.",
+    "hint": "Think about how each subsequent model improves upon previous errors."
   },
   {
     "question": "Clustering: In the context of boosting, how are the weights of the training samples adjusted after each boosting step?",
@@ -5906,8 +5906,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In boosting, after each iteration, samples that were misclassified receive higher weights so that subsequent learners focus more on these difficult cases.",
+    "hint": "Consider what the next weak learner needs to learn from the previous one's mistakes."
   },
   {
     "question": "Clustering: What is the objective function that is being optimized when fitting a single tree in a boosting model?",
@@ -5932,8 +5932,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Each tree in boosting is trained to minimize the weighted misclassification error, where the weights come from the previous boosting iterations.",
+    "hint": "Recall that boosting assigns importance weights to training samples."
   },
   {
     "question": "Clustering: In the context of gradient boosting, what does the ‘gradient’ refer to?",
@@ -5958,8 +5958,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gradient boosting uses gradient descent to minimize the loss function; each new tree fits the negative gradient (residuals) of the loss.",
+    "hint": "Think about how gradient descent moves in the direction of steepest ascent."
   },
   {
     "question": "Clustering: Which of the following best describes the core idea behind the k-Nearest Neighbour (k-NN) algorithm as presented in the source?",
@@ -5984,8 +5984,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "k-NN is an instance-based learning method that classifies a new point by majority vote of its k closest neighbors in the feature space.",
+    "hint": "Consider what 'nearest' means in the context of feature similarity."
   },
   {
     "question": "Clustering: In the context of tree-based methods, which of the following is NOT a typical criterion for splitting nodes?",
@@ -6010,8 +6010,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In tree-based methods like decision trees, splits are determined by impurity measures (Gini, entropy) to maximize information gain or minimize node impurity. The number of features used is a hyperparameter setting, not a splitting criterion.",
+    "hint": "Think about what makes a 'good' split in a decision tree - it's about node purity, not feature count."
   },
   {
     "question": "Clustering: What is the purpose of the 'margin' in the context of support vector machines as described in the source?",
@@ -6036,8 +6036,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In SVM, the margin is the distance between the decision boundary (hyperplane) and the closest data points (support vectors). The algorithm maximizes this margin to achieve better generalization.",
+    "hint": "Remember that 'support vectors' are the points that 'support' or define the margin."
   },
   {
     "question": "Clustering: The source mentions that the decision rule for k-NN is updated based on which aspect of the k neighbours?",
@@ -6062,8 +6062,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "k-NN uses majority voting among the k nearest neighbors, where each neighbor contributes its class label to determine the prediction for the query point.",
+    "hint": "k-NN is based on 'voting' - think about what the neighbors are voting for."
   },
   {
     "question": "Clustering: What is the primary focus of 'Boosting' algorithms, according to the source?",
@@ -6088,8 +6088,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Boosting works by sequentially training weak learners, where each subsequent learner gives more weight to instances misclassified by previous learners, building an ensemble that corrects errors.",
+    "hint": "The key word is 'iteratively' - boosting builds on the mistakes of previous models."
   },
   {
     "question": "Clustering: In the context of boosting, what is meant by “reweighting” training data?",
@@ -6114,8 +6114,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In boosting algorithms like AdaBoost, training instances that are misclassified receive higher weights in the next iteration, so subsequent weak learners focus more on difficult-to-classify examples.",
+    "hint": "Think about what gets 'boosted' - it's the attention paid to harder cases."
   },
   {
     "question": "Clustering: According to the source, what is a 'weak learner' in the context of boosting algorithms?",
@@ -6140,8 +6140,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In boosting, a weak learner (or weak classifier) is defined as a model whose performance is only slightly better than random guessing - typically with accuracy just above 50% for binary classification. The boosting algorithm then combines many such weak learners to form a strong ensemble.",
+    "hint": "Think about what 'weak' means in terms of performance relative to random chance, not model complexity."
   },
   {
     "question": "Clustering: What is the main objective of the 'objective function' mentioned in the section about boosting?",
@@ -6166,8 +6166,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The objective function in boosting algorithms is designed to minimize the empirical risk, which measures the average loss (error) on the training data. This is the fundamental principle of empirical risk minimization (ERM).",
+    "hint": "The objective function typically quantifies how well the model fits the training data through a loss measure."
   },
   {
     "question": "Clustering: According to the source, what is the rationale behind 'regularization' when building the objective function in boosting?",
@@ -6192,8 +6192,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Regularization in boosting adds penalty terms to the objective function to constrain model complexity and prevent overfitting. This helps the model generalize better to unseen data rather than just memorizing training examples.",
+    "hint": "Consider what happens when models become too complex relative to the amount of available training data."
   },
   {
     "question": "An image is defined as:",
@@ -6218,8 +6218,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Mathematically, an image is defined as a two-dimensional function f(x, y) that maps each spatial location (coordinates) to a pixel value representing intensity or color. This functional representation is fundamental to image processing.",
+    "hint": "Think about the formal mathematical definition rather than informal descriptions."
   },
   {
     "question": "How many colour combinations are possible for a single pixel in an RGB image, where each colour channel (Red, Green, Blue) has values ranging from 0 to 255?",
@@ -6244,8 +6244,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Each RGB channel has 256 possible values (0-255, which is 2^8). With three independent color channels, the total number of combinations is 256^3 = 16,777,216 (approximately 16.8 million colors).",
+    "hint": "Calculate 256 × 256 × 256, considering 8 bits per channel."
   },
   {
     "question": "What is the primary function of image filtering?",
@@ -6270,8 +6270,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Image filtering applies a mathematical operation (kernel/filter) to each pixel based on its neighborhood, modifying pixel values without altering their spatial positions.",
+    "hint": "Filtering changes HOW pixels look, not WHERE they are located in the image."
   },
   {
     "question": "Which of the following is NOT a typical application of image filtering?",
@@ -6296,8 +6296,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Image filtering modifies existing pixel values for deblurring, contrast enhancement, and noise reduction. Increasing resolution requires adding new pixels through interpolation, which is not a filtering operation.",
+    "hint": "Think about whether the operation changes pixel values or the number of pixels."
   },
   {
     "question": "What is the mathematical operation at the core of 2D convolutions?",
@@ -6322,8 +6322,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "2D convolution slides a kernel over the image, performing element-wise multiplication between kernel values and image patch values, then summing all products to produce one output pixel.",
+    "hint": "This is like a sliding dot product where you multiply corresponding elements and add them up."
   },
   {
     "question": "If the kernel was not flipped in a 2D convolution, the operation would be a:",
@@ -6348,8 +6348,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Cross-correlation is the same operation as convolution but without flipping the kernel (180-degree rotation). True convolution requires the kernel to be flipped before the sliding operation.",
+    "hint": "The difference lies in whether the kernel is rotated before sliding or not."
   },
   {
     "question": "What is the purpose of padding in 2D convolutions?",
@@ -6374,8 +6374,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Padding adds extra border pixels (typically zeros) around the input image so that the kernel can fully cover the edges, preserving spatial dimensions in the output when using 'same' padding.",
+    "hint": "Without padding, the output shrinks because the kernel can't fully operate at the image borders."
   },
   {
     "question": "An identity kernel in image filtering will:",
@@ -6400,8 +6400,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The identity kernel contains a 1 at the center and 0 everywhere else, so when convolved with an image it simply copies each pixel's original value without any modification.",
+    "hint": "Think about what values a kernel would need to simply pass through the original pixel values."
   },
   {
     "question": "A mean blur kernel works by:",
@@ -6426,8 +6426,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The mean blur kernel assigns equal weights to all pixels in the neighborhood and computes their arithmetic average, which smooths the image by reducing local variations.",
+    "hint": "Consider what the word 'mean' implies in terms of mathematical operation on pixel values."
   },
   {
     "question": "Which filter is known for weighting nearby pixels more heavily than distant ones, leading to a more natural-looking blur?",
@@ -6452,8 +6452,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The Gaussian blur uses a Gaussian (bell curve) function that gives higher weights to pixels closer to the center, creating a natural-looking blur that preserves edges better than uniform averaging.",
+    "hint": "Which filter is based on the Gaussian distribution that decays with distance?"
   },
   {
     "question": "Which of the following is a property of a Gaussian filter?",
@@ -6478,8 +6478,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The 2D Gaussian function is circularly symmetric around its center, meaning the filter has the same response in all directions regardless of orientation.",
+    "hint": "Imagine the 2D Gaussian shape - does it look the same when rotated?"
   },
   {
     "question": "What is the separable property of a filter?",
@@ -6504,8 +6504,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A separable filter can be decomposed into two 1D filters applied sequentially: first convolve all rows with a 1D kernel, then convolve all columns with the same or different 1D kernel.",
+    "hint": "Think about breaking down a 2D convolution into two sequential 1D operations."
   },
   {
     "question": "In the context of a Gaussian pyramid, what is the first step after starting with the original image?",
@@ -6530,8 +6530,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The Gaussian pyramid first applies a blur operation to the original image before any sampling change. This smoothing is essential to reduce high-frequency details that would cause artifacts when the image is later downsampled.",
+    "hint": "Consider what preparation is needed before reducing image dimensions to maintain quality."
   },
   {
     "question": "How does downsampling change the image size in each level of a Gaussian pyramid?",
@@ -6556,8 +6556,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Standard Gaussian pyramid downsampling reduces both width and height by a factor of 2 at each level, resulting in 1/4 of the original pixel count per level.",
+    "hint": "Think about halving both dimensions simultaneously."
   },
   {
     "question": "What is the primary reason for applying a Gaussian blur before downsampling in a Gaussian pyramid?",
@@ -6582,8 +6582,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gaussian blur acts as a low-pass filter that removes high-frequency components (edges and fine details) before reducing resolution, preventing aliasing artifacts in the downsampled image.",
+    "hint": "Consider what happens to high-frequency information when resolution decreases."
   },
   {
     "question": "What is aliasing, as discussed in the context of image downsampling?",
@@ -6608,8 +6608,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Aliasing is a distortion that occurs when high-frequency components in an image exceed the sampling rate after downsampling, causing visual artifacts like moiré patterns or jagged edges.",
+    "hint": "Think about what happens when signal frequency exceeds the sampling limit."
   },
   {
     "question": "CV Basics: Which of the following best describes the fundamental concept of computer vision, as presented in the material?",
@@ -6634,8 +6634,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Computer vision fundamentally addresses the 'inverse graphics' problem - inferring the 3D structure, objects, and properties of the world from 2D images, essentially reversing the image formation process.",
+    "hint": "Consider what 'inverse' means - we're working backwards from image to scene."
   },
   {
     "question": "CV Basics: The 'trompe l’oeil' examples in the text primarily illustrate which aspect of computer vision?",
@@ -6660,8 +6660,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Trompe l'oeil works by exploiting depth-perception cues like perspective, shading, and texture gradients to create convincing optical illusions. In computer vision, understanding these cues is essential for modeling how 2D images represent 3D structures mathematically.",
+    "hint": "Consider what visual cues trick our brain into perceiving depth in flat images."
   },
   {
     "question": "CV Basics: According to the provided text, what is a key characteristic of 'basic level categories' in object recognition?",
@@ -6686,8 +6686,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Basic level categories represent the optimal balance in object categorization - they are the most general level at which objects share similar shapes (like 'chair' vs. 'office chair' or 'furniture'), making them quickly and easily recognizable by humans.",
+    "hint": "Think about what level of categorization allows us to recognize objects fastest - not too specific, not too general."
   },
   {
     "question": "CV Basics: What is the primary purpose of image filtering, as described in the material?",
@@ -6712,8 +6712,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Image filtering is a fundamental preprocessing operation that modifies pixel values based on local neighborhoods to achieve various goals like smoothing noise, enhancing edges, or detecting specific features.",
+    "hint": "Consider what basic operations we need to perform on images before analyzing their content."
   },
   {
     "question": "CV Basics: In the context of 2D convolution, which of the following steps is essential?",
@@ -6738,8 +6738,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In 2D convolution, the kernel must be mirrored (flipped both horizontally and vertically) before being applied to the image. This is mathematically distinct from cross-correlation and is essential for proper convolution operations.",
+    "hint": "Remember the mathematical definition of convolution versus correlation - the flip operation is key."
   },
   {
     "question": "CV Basics: What does the text say about linear systems in the context of image processing?",
@@ -6764,8 +6764,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linear systems are defined by two fundamental properties: homogeneity (scaling an input scales the output proportionally) and additivity (the response to combined inputs equals the sum of individual responses). Superposition combines both.",
+    "hint": "Think about what makes a system 'linear' - it's about how the system handles scaling and addition of inputs."
   },
   {
     "question": "CV Basics: According to the source material, why is Gaussian averaging preferred over a simple box filter for smoothing?",
@@ -6790,8 +6790,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il filtro Gaussiano assegna pesi maggiori ai pixel vicini al centro e pesi decrescenti ai pixel più lontani, modellando un'inferenza probabilistica dove la probabilità di appartenenza diminuisce con la distanza, a differenza del box filter che tratta tutti i pixel equally.",
+    "hint": "Considera come la distribuzione Gaussiana assegna le probabilità in base alla distanza dal centro."
   },
   {
     "question": "CV Basics: What is the main problem caused by subsampling without average filtering, according to the text?",
@@ -6816,8 +6816,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il subsampling senza filtering viola il teorema del campionamento di Nyquist: campionando a una frequenza inferiore a quella richiesta, le componenti ad alta frequenza si ripetono nello spettro causing aliasing artifacts.",
+    "hint": "Ricorda il teorema del campionamento di Nyquist e cosa succede quando campioni sotto la frequenza di Nyquist."
   },
   {
     "question": "CV Basics: What is the significance of the 'derivative of Gaussian' in edge detection, according to the source?",
@@ -6842,8 +6842,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La derivata del Gaussian è considerata l'approssimazione dell'edge detector ottimale secondo l'analisi di Canny, che dimostra come, sotto le assunzioni di filtraggio lineare e rumore Gaussiano additivo, questo operatore massimizza il rapporto segnale-rumore e localizza correttamente gli edge.",
+    "hint": "Pensa al fundamenti teorici dell'edge detector di Canny."
   },
   {
     "question": "CV Basics: In the context of edge detection, what is the role of \"non-maximum suppression\"?",
@@ -6868,8 +6868,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "La non-maximum suppression assottiglia gli edge mantenendo solo i pixel con massima magnitudine del gradiente nella direzione perpendicolare all'edge, creando edge sottili di un solo pixel di larghezza.",
+    "hint": "Il termine 'non-maximum' indica che vengono mantenute solo le risposte massime."
   },
   {
     "question": "CV Basics: What is the Laplacian operator, as presented in the text, and what is it used for?",
@@ -6894,8 +6894,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Il Laplaciano è un operatore lineare che calcola la derivata seconda dell'immagine e viene usato per la detecttion degli edge attraverso gli zero-crossings, ovvero i punti dove la derivata seconda è zero, indicando una transizione di intensità.",
+    "hint": "Il Laplaciano si basa sulle derivate seconde, non sulle prime come il gradiente."
   },
   {
     "question": "CV Basics: What is a primary motivation for using color histograms for object recognition?",
@@ -6920,8 +6920,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Color histograms capture global color distribution statistics rather than spatial arrangement, making them naturally robust to geometric transformations and partial occlusions since the overall color composition remains similar.",
+    "hint": "Think about what information histograms represent and how that relates to spatial changes."
   },
   {
     "question": "CV Basics: According to the source, what is a limitation of using color histograms for object recognition?",
@@ -6946,8 +6946,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Color histograms depend on pixel intensity values, which are directly affected by lighting. Changes in illumination can significantly alter the observed colors in an image.",
+    "hint": "Consider how different lighting conditions affect the colors you see in a photo."
   },
   {
     "question": "CV Basics: Which of the following statements accurately describes the 'Intersection' method for comparing histograms?",
@@ -6972,8 +6972,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Histogram intersection computes the minimum value for each corresponding bin between two histograms and sums these values, giving a similarity measure that ranges from 0 (no overlap) to 1 (identical histograms).",
+    "hint": "Think about what 'intersection' means mathematically - it's about finding commonality."
   },
   {
     "question": "CV Basics: In the context of performance evaluation, what does a confusion matrix help to determine?",
@@ -6998,8 +6998,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A confusion matrix is a table that tabulates correct and incorrect predictions, organizing them into the four categories: true positives, true negatives, false positives, and false negatives.",
+    "hint": "Consider what the rows and columns of a confusion matrix typically represent."
   },
   {
     "question": "CV Basics: What does the term \"recall\" measure in the context of performance evaluation?",
@@ -7024,8 +7024,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Recall (also called sensitivity or true positive rate) measures how many of the actual positive cases the classifier correctly identifies, calculated as TP/(TP+FN).",
+    "hint": "Recall answers: 'Of all the positive cases, how many did we find?'"
   },
   {
     "question": "CV Basics: In the context of ROC curves, what does the True Positive Rate (TPR) represent?",
@@ -7050,8 +7050,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "TPR (True Positive Rate), also known as sensitivity or recall, measures the fraction of actual positive samples that are correctly classified as positive. It is the y-axis of the ROC curve and directly answers: 'Of all the positives, how many did we catch?'",
+    "hint": "Focus on the word 'positive' in both parts - what does it mean for a positive to be correctly identified?"
   },
   {
     "question": "CV Basics: What is the significance of the Area Under the ROC Curve (AUROC)?",
@@ -7076,8 +7076,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "AUROC summarizes the ROC curve into a single value representing the classifier's ability to rank positive samples higher than negative ones. A value of 0.5 means random guessing, while 1.0 means perfect separation between classes.",
+    "hint": "Think about what it means for a classifier to 'distinguish' between two classes - how well can it separate them?"
   },
   {
     "question": "CV Basics: According to the material, why is the precision-recall curve preferred for detection tasks?",
@@ -7102,8 +7102,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "In detection tasks like object detection, the concept of 'true negative' is problematic because there are infinitely many possible locations that are not the object. Precision-recall curve focuses only on positives and doesn't require counting true negatives.",
+    "hint": "Consider what constitutes a 'negative' in detection - is it well-defined like in classification?"
   },
   {
     "question": "CV Basics: Leonardo da Vinci's observations about the camera obscura, as described in the text, highlight which fundamental principle of image formation?",
@@ -7128,8 +7128,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Da Vinci's observations described how light passing through a tiny aperture projects an inverted image onto the opposite surface. This demonstrates the pinhole camera principle where the small hole acts as a lens, creating a reduced and reversed projection.",
+    "hint": "What happens to light when it passes through a very small opening? Think about projection and inversion."
   },
   {
     "question": "CV Basics: The text refers to computer vision as the problem of 'inverse graphics'. What does this imply about the goals of computer vision?",
@@ -7154,8 +7154,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Inverse graphics means working backwards from the 2D image to infer the 3D world properties that produced it. Graphics takes world parameters (objects, lighting, camera) and generates images; vision does the opposite by extracting those parameters from images.",
+    "hint": "Consider the direction of inference - are we going from world to image, or image to world?"
   },
   {
     "question": "CV Basics: According to the text, what is the significance of the 'pictorial structure' model in object recognition?",
@@ -7180,8 +7180,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The pictorial structure model represents objects as combinations of 2D image fragments (parts) and their spatial configurations. This approach is significant because it provides a way to model object appearance while accounting for viewpoint variations and part-based deformations, forming a foundational concept in part-based recognition.",
+    "hint": "Think about how this model breaks down objects into parts and their arrangements rather than using full 3D models."
   },
   {
     "question": "CV Basics: What does the material say about the challenges of visual categorization?",
@@ -7206,8 +7206,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Visual categorization faces numerous challenges including variations in scale, viewpoint, illumination, occlusion, background clutter, articulation, and the difficulty of distinguishing between classes with high intra-class variance and low inter-class variance. These factors make visual recognition a complex task that cannot be solved by simple linear methods.",
+    "hint": "Consider the wide range of factors that can change how an object appears in an image."
   },
   {
     "question": "CV Basics: What is the role of a 'filter kernel' in the context of image filtering?",
@@ -7232,8 +7232,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A filter kernel is a small matrix (e.g., 3x3, 5x5) that is slid across the image and used to compute a new pixel value based on a local neighborhood during convolution. This is the fundamental mechanism behind linear image filtering for tasks like smoothing and edge detection.",
+    "hint": "Think about what \"slides\" across the image during the filtering process."
   },
   {
     "question": "CV Basics: According to the source material, what is the primary goal of using linear filtering for smoothing an image?",
@@ -7258,8 +7258,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Linear filtering for smoothing primarily aims to reduce noise by averaging out random variations in pixel values, which also has the effect of slightly blurring the image. This is achieved through convolution with a smoothing kernel like Gaussian, which attenuates high-frequency noise.",
+    "hint": "Consider what happens to high-frequency noise when you average neighboring pixels."
   },
   {
     "question": "CV Basics: Why is the concept of 'separability' important in the context of Gaussian filtering?",
@@ -7284,8 +7284,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Separability in Gaussian filtering allows a 2D Gaussian filter to be decomposed into two 1D Gaussian filters applied sequentially (first horizontal, then vertical). This reduces computational complexity from O(n²) to O(n), making the filtering operation much more efficient for practical applications.",
+    "hint": "Think about how applying two 1D filters could be faster than one 2D filter."
   },
   {
     "question": "CV Basics: What is the main idea behind using a Gaussian pyramid for multi-scale image representation?",
@@ -7310,8 +7310,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The Gaussian pyramid creates multi-scale representations by repeatedly applying Gaussian smoothing (to blur/smooth the image) followed by subsampling (reducing resolution by half), creating a hierarchy of images at different scales.",
+    "hint": "Think about what 'pyramid' means - multiple levels at progressively lower resolutions."
   },
   {
     "question": "CV Basics: In the context of edge detection, why is smoothing an image prior to computing derivatives beneficial?",
@@ -7336,8 +7336,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Smoothing with a Gaussian filter before computing derivatives reduces high-frequency noise that can cause false edges, allowing the derivative operations to detect only significant intensity changes.",
+    "hint": "Derivatives amplify noise; consider what preprocessing can mitigate this."
   },
   {
     "question": "CV Basics: According to the text, what does the magnitude of the gradient measure in edge detection?",
@@ -7362,8 +7362,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Gradient magnitude measures the rate of intensity change - higher magnitude means stronger edge (steeper transition), while lower magnitude indicates weaker or gradual transitions.",
+    "hint": "Magnitude answers 'how much' the intensity changes, not 'where' it changes."
   },
   {
     "question": "CV Basics: What is the main advantage of using the Canny edge detector over other edge detection methods, according to the text?",
@@ -7388,8 +7388,8 @@
     "correctIndex": 1,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Canny's detector is theoretically optimal under the criteria of good detection, good localization, and minimal responses under assumptions of linear filtering with additive Gaussian noise.",
+    "hint": "Consider what 'optimal' means in terms of mathematical assumptions about the image formation process."
   },
   {
     "question": "CV Basics: In the context of edge detection using the Laplacian, what are 'zero-crossings' and what do they indicate?",
@@ -7414,8 +7414,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Zero-crossings occur where the second derivative (Laplacian) changes sign, corresponding to points of maximum change in the first derivative, which correspond to edge locations in the original image.",
+    "hint": "Think about inflection points in calculus - they occur where the second derivative is zero and changes sign."
   },
   {
     "question": "CV Basics: According to the text, what is a key characteristic of appearance-based object identification/recognition?",
@@ -7440,8 +7440,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Appearance-based methods use multiple 2D views (templates) of an object for recognition, avoiding the need to construct explicit 3D models. The object is recognized by matching its current 2D appearance against the stored collection of 2D views.",
+    "hint": "Think about what 'appearance-based' implies - does it focus on how things look or their underlying structure?"
   },
   {
     "question": "CV Basics: What does the material say about the use of color in object recognition?",
@@ -7466,8 +7466,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Color is a local feature computed at each image point, remains relatively constant under geometric transformations (rotation, scale), and partial occlusions don't completely prevent recognition since visible color information can still be matched.",
+    "hint": "Consider what makes a feature 'local' and how color behaves under transformations versus other features like edges."
   },
   {
     "question": "CV Basics: What does a 3D (joint) color histogram represent?",
@@ -7492,8 +7492,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "A 3D joint color histogram counts the number of pixels for each possible combination of R, G, and B values simultaneously, treating them as a single 3-dimensional distribution rather than three separate 1D histograms.",
+    "hint": "The word 'joint' in statistics means considering variables together, not individually."
   },
   {
     "question": "CV Basics: According to the text, what is the significance of using a 'chromatic representation' of color?",
@@ -7518,8 +7518,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Chromatic representation normalizes color by intensity (r = R/(R+G+B), g = G/(R+G+B)), separating the intrinsic color from brightness. This makes color matching invariant to lighting conditions since it focuses on hue/saturation rather than overall intensity.",
+    "hint": "Chromaticity refers to the pure quality of color apart from its intensity or brightness."
   },
   {
     "question": "CV Basics: What does the Euclidean distance measure in the context of histogram comparison?",
@@ -7544,8 +7544,8 @@
     "correctIndex": 0,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Euclidean distance computes the straight-line distance between two histogram vectors in N-dimensional space, treating each histogram bin equally without any special weighting or normalization.",
+    "hint": "Think about the standard formula for distance between two points in space."
   },
   {
     "question": "CV Basics: In the context of histogram comparison, what does the Chi-square measure primarily aim to test?",
@@ -7570,8 +7570,8 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "The Chi-square test is a statistical hypothesis test that measures the difference between observed and expected frequencies, determining whether two distributions are statistically different from each other.",
+    "hint": "Think about what statistical tests do - they determine if there's a significant difference between distributions."
   },
   {
     "question": "CV Basics: What is the 'nearest-neighbor' strategy for object recognition using histograms, as described in the text?",
@@ -7596,8 +7596,8 @@
     "correctIndex": 3,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Nearest-neighbor is a classification method that compares a test histogram against a database of known object histograms and assigns the label of the most similar one based on a matching score.",
+    "hint": "Consider how classification works when you have a database of labeled examples."
   },
   {
     "question": "CV Basics: According to the material, what is the 'color constancy problem' that affects color histograms?",
@@ -7622,7 +7622,7 @@
     "correctIndex": 2,
     "image": "",
     "code": "",
-    "explanation": "",
-    "hint": ""
+    "explanation": "Color constancy is the ability to perceive colors consistently under different illumination. The problem refers to how pixel colors change depending on lighting conditions, affecting histogram-based recognition.",
+    "hint": "Think about how the same object looks different under sunlight versus fluorescent light."
   }
 ]
