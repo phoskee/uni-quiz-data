@@ -1,23 +1,25 @@
+#!/usr/bin/env python3
 """
-ollama_enrich_quiz.py — Arricchisce i campi 'explanation' e 'hint' di un quiz JSON tramite Ollama.
+gemini_enrich_quiz.py — Arricchisce i campi 'explanation' e 'hint' di un quiz JSON tramite le API di Google Gemini.
 
 Uso:
-    python scripts/ollama_enrich_quiz.py [--batch-size N] [--base-url URL] [--model MODEL]
-
-Richiede Ollama in esecuzione (default: http://localhost:11434).
+    python scripts/gemini_enrich_quiz.py
 """
 
 import argparse
 import json
+import os
 import sys
-import threading
 import time
 from pathlib import Path
 
 try:
     import requests
+    from google import genai
+    from google.genai import types
+    from dotenv import load_dotenv
 except ImportError:
-    print("❌ Libreria 'requests' mancante! Installa con: pip install requests")
+    print("❌ Librerie mancanti! Installa con: pip install google-genai requests python-dotenv")
     sys.exit(1)
 
 try:
@@ -28,7 +30,9 @@ try:
 except ImportError:
     HAS_TERMIOS = False
 
-DEFAULT_BASE_URL = "http://localhost:11434"
+load_dotenv()
+API_KEY = os.getenv("GEMINI_API_KEY")
+
 DEFAULT_BATCH_SIZE = 5
 DEFAULT_RETRIES = 1
 DEFAULT_PLAN_LIMIT = 20
@@ -75,78 +79,30 @@ def is_key_pressed() -> str | None:
     return None
 
 
-
-
-class Spinner:
-    _FRAMES = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
-
-    def __init__(self):
-        self._stop_event = threading.Event()
-        self._thread: threading.Thread | None = None
-        self._lines: list[str] = []
-
-    def start(self, header: str, lines: list[str]) -> None:
-        self._stop_event.clear()
-        self._lines = lines
-        self._thread = threading.Thread(target=self._run, args=(header,), daemon=True)
-        self._thread.start()
-
-    def _run(self, header: str) -> None:
-        frame_idx = 0
-        while not self._stop_event.is_set():
-            frame = self._FRAMES[frame_idx % len(self._FRAMES)]
-            block = f"{DIM}{frame} {header}{RESET}\n"
-            for line in self._lines:
-                block += f"{DIM}  {line}{RESET}\n"
-            sys.stdout.write(block)
-            sys.stdout.flush()
-            time.sleep(0.12)
-            rows = 1 + len(self._lines)
-            sys.stdout.write(f"\033[{rows}A")
-            sys.stdout.flush()
-            frame_idx += 1
-
-    def stop(self) -> None:
-        self._stop_event.set()
-        if self._thread:
-            self._thread.join()
-        rows = 1 + len(self._lines)
-        for _ in range(rows):
-            sys.stdout.write(CLEAR_LINE + "\n")
-        sys.stdout.write(f"\033[{rows}A")
-        sys.stdout.flush()
-
-
-def get_ollama_models(base_url: str, api_key: str | None) -> list[str]:
-    headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
+def get_available_gemini_models(client: genai.Client) -> list[str]:
     try:
-        r = requests.get(f"{base_url}/api/tags", headers=headers, timeout=8)
-        r.raise_for_status()
-        names = [m.get("name", "") for m in r.json().get("models", [])]
-        return sorted([n for n in names if n])
-    except Exception as e:
-        print(f"⚠️  Impossibile recuperare i modelli: {e}")
-        return []
+        models = []
+        for m in client.models.list():
+            if "generateContent" in m.supported_actions and "gemini" in m.name:
+                models.append(m.name.split("/")[-1])
+        # Filtriamo per includere solo i modelli flash/pro più rilevanti
+        relevant = [m for m in models if "flash" in m or "pro" in m]
+        return sorted(list(set(relevant or models)), reverse=True)
+    except Exception:
+        # Fallback se le API falliscono o non c'è rete
+        return ["gemini-3.5-flash", "gemini-3.0-flash"]
 
 
-def chat(base_url: str, api_key: str | None, model: str, prompt: str) -> str:
-    headers = {"Content-Type": "application/json"}
-    if api_key:
-        headers["Authorization"] = f"Bearer {api_key}"
-    payload = {
-        "model": model,
-        "messages": [{"role": "user", "content": prompt}],
-        "stream": False,
-        "options": {"temperature": 0.2},
-    }
-    r = requests.post(
-        f"{base_url}/api/chat",
-        headers=headers,
-        json=payload,
-        timeout=120,
+def chat_gemini(client: genai.Client, model: str, prompt: str) -> str:
+    response = client.models.generate_content(
+        model=model,
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            response_mime_type="application/json",
+            temperature=0.2
+        )
     )
-    r.raise_for_status()
-    return r.json()["message"]["content"].strip()
+    return response.text.strip()
 
 
 def build_prompt(batch: list[dict]) -> str:
@@ -173,7 +129,7 @@ REGOLE IMPORTANTI DI SICUREZZA (ZERO ALLUCINAZIONI):
 1. È assolutamente vietato inventare concetti o fatti. La verità scientifica/teorica è la priorità assoluta.
 2. Se non hai la certezza assoluta sui concetti teorici della domanda o sul motivo esatto per cui la risposta segnata è corretta, DEVI impostare sia "explanation" che "hint" come stringa vuota "".
 3. Meglio un campo vuoto "" piuttosto che una spiegazione parzialmente incerta, dubbiosa, vaga o inventata.
-4. Rispondi esclusivamente con un array JSON valido, senza blocchi di markdown (no ```json ... ```), senza alcun testo introduttivo o conclusivo.
+4. Rispondi esclusivamente con un array JSON valido, senza blocchi di markdown, senza alcun testo introduttivo o conclusivo.
 
 FORMATO OUTPUT (array con un oggetto per ogni domanda, nell'ordine ricevuto):
 [
@@ -185,7 +141,7 @@ DOMANDE:
 
 {questions_text}
 
-Rispondi SOLO con l'array JSON:"""
+Rispondi solo con l'array JSON conforme al formato:"""
 
 
 def parse_response(text: str) -> list[dict] | None:
@@ -197,6 +153,13 @@ def parse_response(text: str) -> list[dict] | None:
     start = text.find("[")
     end = text.rfind("]")
     if start == -1 or end == -1:
+        # Tenta il parse diretto dell'intera stringa
+        try:
+            parsed = json.loads(text)
+            if isinstance(parsed, list):
+                return parsed
+        except Exception:
+            return None
         return None
 
     try:
@@ -291,7 +254,6 @@ def resolve_quiz_path(quizzes_root: Path, quiz_arg: str | None, scan: dict | Non
             return valid_paths[candidate]
 
         print(f"❌ Quiz non trovato: {quiz_arg}")
-        print("   Usa un path relativo a quizzes/, ad esempio: sapienza/informatica/uniquizzes/so1.json")
         sys.exit(1)
 
     labels = [build_quiz_label(item) for item in stats]
@@ -345,6 +307,8 @@ def scan_all_quizzes(quizzes_root: Path) -> dict:
     groups = {"completo": [], "incompleto": [], "da fare": []}
 
     for path in files:
+        if path.name.startswith("_"):
+            continue
         try:
             with open(path, encoding="utf-8") as f:
                 quiz_data = json.load(f)
@@ -383,27 +347,6 @@ def print_scan_report(scan: dict) -> None:
     print(f"🛠️  Incompleti: {len(groups['incompleto'])}")
     print(f"🆕 Da fare: {len(groups['da fare'])}")
 
-    def print_group(title: str, key: str, limit: int = 10) -> None:
-        items = groups[key]
-        print(f"\n{title} ({len(items)}):")
-        if not items:
-            print("  - nessuno")
-            return
-        for item in items[:limit]:
-            print(
-                f"  - {item['rel']} "
-                f"[{item['complete']}/{item['total']} | "
-                f"B: {item['missing_both']} | "
-                f"E: {item['missing_explanation']} | "
-                f"H: {item['missing_hint']}]"
-            )
-        if len(items) > limit:
-            print(f"  ... altri {len(items) - limit}")
-
-    print_group("✅ Completi", "completo")
-    print_group("🛠️  Incompleti", "incompleto")
-    print_group("🆕 Da fare", "da fare")
-
 
 def print_batch_plan(total: int, batch_size: int, to_enrich: list[int], plan_limit: int) -> None:
     to_enrich_set = set(to_enrich)
@@ -441,68 +384,16 @@ def print_batch_plan(total: int, batch_size: int, to_enrich: list[int], plan_lim
     print(f"🛠️  Batch da popolare: {enrich_batches}")
 
 
-def ask_yes_no(prompt: str, default_yes: bool = True) -> bool:
-    suffix = "[Y/n]" if default_yes else "[y/N]"
-    while True:
-        raw = input(f"{prompt} {suffix}: ").strip().lower()
-        if raw == "":
-            return default_yes
-        if raw in {"y", "yes", "s", "si"}:
-            return True
-        if raw in {"n", "no", "q", "quit", "exit"}:
-            return False
-        print("  Risposta non valida, usa y/n.")
+def draw_tui_header(title: str):
+    sys.stdout.write("\033[H\033[J")
+    sys.stdout.write("=" * 80 + "\n")
+    sys.stdout.write(f" 🤖 GEMINI QUIZ ENRICHER (TUI)                     API: Google AI Studio\n")
+    sys.stdout.write("=" * 80 + "\n")
 
 
-def pick_model(args: argparse.Namespace) -> str:
-    models = get_ollama_models(args.base_url, args.api_key)
-    cloud_models = [m for m in models if "cloud" in m.lower()]
-    if args.model:
-        model = args.model
-        if models and model not in models:
-            print(f"⚠️  Modello '{model}' non trovato in /api/tags, provo comunque.")
-        return model
-    if not cloud_models:
-        print("❌ Nessun modello cloud trovato (i modelli cloud devono contenere 'cloud' nel nome).")
-        sys.exit(1)
-    model_idx = select_from_list(cloud_models, "SELEZIONE MODELLO (SOLO CLOUD)")
-    return cloud_models[model_idx]
-
-
-def verify_connection(base_url: str) -> None:
-    try:
-        requests.get(f"{base_url}/api/tags", timeout=5).raise_for_status()
-    except Exception:
-        print(f"❌ Impossibile connettersi a {base_url}. Ollama è in esecuzione?")
-        sys.exit(1)
-
-
-def test_model_operability(base_url: str, api_key: str | None, model: str) -> tuple[bool, str]:
-    headers = {"Content-Type": "application/json"}
-    if api_key:
-        headers["Authorization"] = f"Bearer {api_key}"
-    payload = {
-        "model": model,
-        "messages": [{"role": "user", "content": "Rispondi solo con la parola 'OK' se mi senti."}],
-        "stream": False,
-        "options": {"temperature": 0.1},
-    }
-    try:
-        r = requests.post(
-            f"{base_url}/api/chat",
-            headers=headers,
-            json=payload,
-            timeout=15,
-        )
-        r.raise_for_status()
-        content = r.json().get("message", {}).get("content", "").strip()
-        return True, content
-    except Exception as e:
-        return False, str(e)
 def draw_tui(
     quiz_name: str,
     model: str,
-    base_url: str,
     total_q: int,
     initial_complete: int,
     session_enriched: int,
@@ -514,33 +405,27 @@ def draw_tui(
     logs: list[str],
     status: str = "IN ELABORAZIONE"
 ):
-    # Pulisce lo schermo e porta il cursore all'inizio (home)
     sys.stdout.write("\033[H\033[J")
-    
-    # Intestazione
     sys.stdout.write("=" * 80 + "\n")
-    sys.stdout.write(f" 🤖 OLLAMA QUIZ ENRICHER (TUI)                      Host: {base_url}\n")
+    sys.stdout.write(f" 🤖 GEMINI QUIZ ENRICHER (TUI)                     API: Google AI Studio\n")
     sys.stdout.write("=" * 80 + "\n")
     sys.stdout.write(f" 📋 Quiz: {quiz_name}\n")
     sys.stdout.write(f" 🧠 Modello: {model}\n")
     sys.stdout.write(f" 🚦 Stato: {status}\n")
     sys.stdout.write("-" * 80 + "\n")
-    
-    # Barra di progresso
+
     percent = (batch_current / batch_total * 100) if batch_total > 0 else 0
-    filled = int(percent / 2.5)  # 40 caratteri totale
+    filled = int(percent / 2.5)
     bar = "█" * filled + "░" * (40 - filled)
     sys.stdout.write(f" PROGRESSO SESSIONE:\n")
     sys.stdout.write(f" [{bar}] {percent:.1f}% (Batch {batch_current}/{batch_total})\n\n")
-    
-    # Statistiche domande
+
     sys.stdout.write(f" 📊 STATISTICHE DOMANDE:\n")
     sys.stdout.write(f"  • Totale domande nel quiz:    {total_q:,}\n")
     sys.stdout.write(f"  • Già complete all'avvio:    {initial_complete:,}\n")
     sys.stdout.write(f"  • Arricchite in sessione:     {session_enriched:,}\n")
     sys.stdout.write(f"  • Fallite in sessione:        {session_failed:,}\n\n")
-    
-    # Statistiche tempo
+
     sys.stdout.write(f" ⏱️ STATISTICHE TEMPO:\n")
     elapsed_str = time.strftime('%H:%M:%S', time.gmtime(elapsed_time))
     sys.stdout.write(f"  • Tempo trascorso:            {elapsed_str}\n")
@@ -555,16 +440,13 @@ def draw_tui(
         sys.stdout.write(f"  • Velocità media:             --- dom/sec\n")
         sys.stdout.write(f"  • Tempo stimato (ETA):        --:--:--\n")
     sys.stdout.write("-" * 80 + "\n")
-    
-    # Domande correnti
+
     sys.stdout.write(f" 🔄 BATCH CORRENTE ({len(current_questions)} domande):\n")
     for i, q in enumerate(current_questions):
-        # Tronca a 74 caratteri
         q_truncated = q[:74] + "..." if len(q) > 74 else q
         sys.stdout.write(f"  {i+1}. {q_truncated}\n")
     sys.stdout.write("\n")
-    
-    # Log eventi
+
     sys.stdout.write(" ⚠️ LOG ULTIMI EVENTI:\n")
     for log in logs[-4:]:
         sys.stdout.write(f"  {log}\n")
@@ -573,111 +455,75 @@ def draw_tui(
     sys.stdout.flush()
 
 
-def draw_tui_header(title: str, base_url: str):
-    sys.stdout.write("\033[H\033[J")
-    sys.stdout.write("=" * 80 + "\n")
-    sys.stdout.write(f" {title.upper():<50} Host: {base_url}\n")
-    sys.stdout.write("=" * 80 + "\n")
-
-
-def select_quiz_tui(stats: list[dict], base_url: str) -> int | None:
+def select_quiz_tui(stats: list[dict]) -> int | None:
     while True:
-        draw_tui_header("Selezione Quiz (TUI)", base_url)
+        draw_tui_header("Selezione Quiz (TUI)")
         print(" Scegli il file inserendo il numero corrispondente:\n")
-        
         for i, item in enumerate(stats):
             label = build_quiz_label(item)
             print(f"  [{i + 1}] {label}")
-            
         print(f"\n  [M] Torna al menu principale")
         print("=" * 80)
-        
         try:
             raw = input(" Digita la tua scelta e premi Invio: ").strip().lower()
         except (EOFError, KeyboardInterrupt):
             return None
-            
         if raw == 'm':
             return None
-            
         if raw.isdigit() and 1 <= int(raw) <= len(stats):
             return int(raw) - 1
-            
         print("\033[31m Scelta non valida. Riprova...\033[0m")
         time.sleep(1)
 
 
-def select_model_tui(models: list[str], base_url: str) -> str | None:
+def select_model_tui(models: list[str]) -> str | None:
     while True:
-        draw_tui_header("Selezione Modello Cloud (TUI)", base_url)
+        draw_tui_header("Selezione Modello Gemini (TUI)")
         print(" Scegli il modello inserendo il numero corrispondente:\n")
-        
         for i, m in enumerate(models):
             print(f"  [{i + 1}] {m}")
-            
         print(f"\n  [M] Torna al menu principale")
         print("=" * 80)
-        
         try:
             raw = input(" Digita la tua scelta e premi Invio: ").strip().lower()
         except (EOFError, KeyboardInterrupt):
             return None
-            
         if raw == 'm':
             return None
-            
         if raw.isdigit() and 1 <= int(raw) <= len(models):
             return models[int(raw) - 1]
-            
         print("\033[31m Scelta non valida. Riprova...\033[0m")
         time.sleep(1)
 
 
-def run_tests_tui(base_url: str, api_key: str | None) -> None:
-    draw_tui_header("Test Modelli Cloud (TUI)", base_url)
-    print(" Connessione all'host Ollama...")
-    
+def run_key_test_tui(client: genai.Client) -> None:
+    draw_tui_header("Verifica API Key Gemini (TUI)")
+    print(" Tentativo di connessione a Google AI Studio...")
     try:
-        requests.get(f"{base_url}/api/tags", timeout=5).raise_for_status()
-        print(" ✅ Connessione all'host Ollama riuscita!\n")
+        # Eseguiamo una chiamata leggerissima di test
+        response = client.models.generate_content(
+            model="gemini-3.5-flash",
+            contents="Rispondi solo con la parola 'OK'."
+        )
+        resp_text = response.text.strip()
+        print(f" ✅ API Key VALIDA ed OPERATIVA!")
+        print(f" 💬 Risposta test: '{resp_text}'\n")
     except Exception as e:
-        print(f" ❌ Connessione fallita: {e}\n")
-        print("=" * 80)
-        input(" Premi Invio per tornare al menu...")
-        return
-
-    models = get_ollama_models(base_url, api_key)
-    cloud_models = [m for m in models if "cloud" in m.lower()]
-    if not cloud_models:
-        print(" ❌ Nessun modello cloud trovato (devono contenere 'cloud' nel nome).\n")
-        print("=" * 80)
-        input(" Premi Invio per tornare al menu...")
-        return
-
-    print(f" Esecuzione test di operatività su {len(cloud_models)} modelli cloud:\n")
-    for m in cloud_models:
-        print(f"  • Modello '{m}': invio chiamata...", end="", flush=True)
-        success, msg = test_model_operability(base_url, api_key, m)
-        if success:
-            print(f"\r  • Modello '{m}': \033[32mOPERATIVO!\033[0m (Risposta: '{msg}')")
-        else:
-            print(f"\r  • Modello '{m}': \033[31mNON OPERATIVO\033[0m. Dettaglio: {msg}")
-            
-    print("\n" + "=" * 80)
+        print(f" ❌ Connessione o API Key non valida: {e}\n")
+    print("=" * 80)
     input(" Premi Invio per tornare al menu principale...")
 
 
-def main_menu_tui(args: argparse.Namespace) -> tuple[Path | None, str | None, int]:
+def main_menu_tui(args: argparse.Namespace, client: genai.Client) -> tuple[Path | None, str | None]:
     quizzes_root = Path("quizzes")
     scan = scan_all_quizzes(quizzes_root)
     if not scan["stats"]:
         print("❌ Nessun file JSON valido trovato in quizzes/")
         sys.exit(1)
-        
+
     selected_quiz_path: Path | None = None
-    selected_model: str | None = None
-    selected_batch_size: int = args.batch_size if args.batch_size > 0 else 5
-    
+    selected_model: str | None = "gemini-3.5-flash"  # Default raccomandato ed economico
+
     if args.quiz:
         candidate = Path(args.quiz)
         if not candidate.is_absolute():
@@ -686,30 +532,27 @@ def main_menu_tui(args: argparse.Namespace) -> tuple[Path | None, str | None, in
         valid_paths = {item["path"].resolve(): item["path"] for item in scan["stats"]}
         if candidate in valid_paths:
             selected_quiz_path = valid_paths[candidate]
-            
+
     if args.model:
         selected_model = args.model
-        
+
     while True:
-        draw_tui_header("Menu Principale (TUI)", args.base_url)
-        
+        draw_tui_header("Menu Principale (TUI)")
         quiz_label = selected_quiz_path.name if selected_quiz_path else "\033[31m[Nessun quiz selezionato]\033[0m"
         model_label = selected_model if selected_model else "\033[31m[Nessun modello selezionato]\033[0m"
-        
+
         print(" STATO CONFIGURAZIONE:")
         print(f"  • Quiz attivo:     {quiz_label}")
-        print(f"  • Modello cloud:   {model_label}")
-        print(f"  • Dimensione Batch:{selected_batch_size}\n")
-        
+        print(f"  • Modello Gemini:  {model_label}\n")
+
         print(" OPERAZIONI DISPONIBILI:")
         print("  [1] Seleziona Quiz")
-        print("  [2] Seleziona Modello Cloud")
-        print("  [3] Esegui Test Operatività Modelli")
-        print("  [4] Cambia dimensione Batch")
-        print("  [5] Avvia Arricchimento Quiz")
+        print("  [2] Seleziona Modello Gemini")
+        print("  [3] Esegui Test Validità API Key")
+        print("  [4] Avvia Arricchimento Quiz")
         print("\n  [Q] Esci dallo script")
         print("=" * 80)
-        
+
         with RawTerminal() if HAS_TERMIOS else DummyContext():
             while True:
                 time.sleep(0.1)
@@ -717,39 +560,19 @@ def main_menu_tui(args: argparse.Namespace) -> tuple[Path | None, str | None, in
                 if choice:
                     choice = choice.lower()
                     break
-                    
+
         if choice == '1':
-            idx = select_quiz_tui(scan["stats"], args.base_url)
+            idx = select_quiz_tui(scan["stats"])
             if idx is not None:
                 selected_quiz_path = scan["stats"][idx]["path"]
         elif choice == '2':
-            models = get_ollama_models(args.base_url, args.api_key)
-            cloud_models = [m for m in models if "cloud" in m.lower()]
-            if not cloud_models:
-                print("\n\033[31m❌ Impossibile caricare i modelli. Ollama è in esecuzione?\033[0m")
-                time.sleep(1.5)
-                continue
-            model_sel = select_model_tui(cloud_models, args.base_url)
+            models = get_available_gemini_models(client)
+            model_sel = select_model_tui(models)
             if model_sel is not None:
                 selected_model = model_sel
         elif choice == '3':
-            run_tests_tui(args.base_url, args.api_key)
+            run_key_test_tui(client)
         elif choice == '4':
-            draw_tui_header("Modifica Batch Size (TUI)", args.base_url)
-            print(f" Inserisci la nuova dimensione per il batch (Corrente: {selected_batch_size}):\n")
-            print(" Premere Invio senza digitare per mantenere il valore corrente.")
-            print("=" * 80)
-            try:
-                raw = input(" Nuova dimensione: ").strip()
-                if raw != "":
-                    if raw.isdigit() and int(raw) > 0:
-                        selected_batch_size = int(raw)
-                    else:
-                        print("\033[31m Dimensione non valida. Riprova...\033[0m")
-                        time.sleep(1.5)
-            except (EOFError, KeyboardInterrupt):
-                pass
-        elif choice == '5':
             if not selected_quiz_path:
                 print("\n\033[31m⚠️  Seleziona prima un quiz (Opzione [1])!\033[0m")
                 time.sleep(1.5)
@@ -758,19 +581,18 @@ def main_menu_tui(args: argparse.Namespace) -> tuple[Path | None, str | None, in
                 print("\n\033[31m⚠️  Seleziona prima un modello (Opzione [2])!\033[0m")
                 time.sleep(1.5)
                 continue
-            return selected_quiz_path, selected_model, selected_batch_size
+            return selected_quiz_path, selected_model
         elif choice == 'q':
             sys.stdout.write("\033[H\033[J")
-            print("Uscita dallo script.")
+            print("Uscita.")
             sys.exit(0)
 
 
-def enrich_single_quiz(args: argparse.Namespace, quiz_path: Path, model: str) -> tuple[int, int, int]:
+def enrich_single_quiz(client: genai.Client, args: argparse.Namespace, quiz_path: Path, model: str) -> tuple[int, int, int]:
     with open(quiz_path, encoding="utf-8") as f:
         quiz_data: list[dict] = json.load(f)
 
     total = len(quiz_data)
-
     complete, missing_explanation, missing_hint, missing_both = summarize_questions(quiz_data)
     to_enrich = [i for i, q in enumerate(quiz_data) if question_needs_enrich(q, args.force)]
 
@@ -792,7 +614,6 @@ def enrich_single_quiz(args: argparse.Namespace, quiz_path: Path, model: str) ->
     start_time = time.time()
     enriched = 0
     failed_batches = 0
-    
     total_batches = (len(to_enrich) + args.batch_size - 1) // args.batch_size
 
     with RawTerminal() if HAS_TERMIOS else DummyContext():
@@ -800,8 +621,6 @@ def enrich_single_quiz(args: argparse.Namespace, quiz_path: Path, model: str) ->
             batch_indices = to_enrich[batch_start: batch_start + args.batch_size]
             batch_questions = [quiz_data[i] for i in batch_indices]
             batch_num = batch_start // args.batch_size + 1
-
-            # Domande del batch corrente per anteprima
             preview_questions = [q["question"] for q in batch_questions]
 
             # Controlla tasti prima del batch
@@ -809,15 +628,14 @@ def enrich_single_quiz(args: argparse.Namespace, quiz_path: Path, model: str) ->
             if key:
                 if key.lower() == 'q':
                     logs.append(f"[{time.strftime('%H:%M:%S')}] Interruzione richiesta dall'utente.")
-                    draw_tui(quiz_path.name, model, args.base_url, total, complete, enriched, failed_batches,
+                    draw_tui(quiz_path.name, model, total, complete, enriched, failed_batches,
                              batch_num, total_batches, time.time() - start_time, preview_questions, logs, "INTERROTTO")
                     break
                 elif key.lower() == 'p':
                     logs.append(f"[{time.strftime('%H:%M:%S')}] In pausa. Premi 'P' o qualsiasi tasto per riprendere...")
-                    draw_tui(quiz_path.name, model, args.base_url, total, complete, enriched, failed_batches,
+                    draw_tui(quiz_path.name, model, total, complete, enriched, failed_batches,
                              batch_num - 1, total_batches, time.time() - start_time, [], logs, "IN PAUSA")
                     
-                    # Ciclo di attesa per la pausa
                     paused = True
                     while paused:
                         time.sleep(0.1)
@@ -831,14 +649,13 @@ def enrich_single_quiz(args: argparse.Namespace, quiz_path: Path, model: str) ->
                     
                     if key == 'q':
                         logs.append(f"[{time.strftime('%H:%M:%S')}] Interruzione richiesta dall'utente (dalla pausa).")
-                        draw_tui(quiz_path.name, model, args.base_url, total, complete, enriched, failed_batches,
+                        draw_tui(quiz_path.name, model, total, complete, enriched, failed_batches,
                                  batch_num, total_batches, time.time() - start_time, preview_questions, logs, "INTERROTTO")
                         break
                     
                     logs.append(f"[{time.strftime('%H:%M:%S')}] Ripresa elaborazione.")
 
-            # Render iniziale TUI per questo batch
-            draw_tui(quiz_path.name, model, args.base_url, total, complete, enriched, failed_batches,
+            draw_tui(quiz_path.name, model, total, complete, enriched, failed_batches,
                      batch_num, total_batches, time.time() - start_time, preview_questions, logs, "IN ELABORAZIONE")
 
             prompt = build_prompt(batch_questions)
@@ -847,14 +664,23 @@ def enrich_single_quiz(args: argparse.Namespace, quiz_path: Path, model: str) ->
 
             for attempt in range(args.retries + 1):
                 try:
-                    raw = chat(args.base_url, args.api_key, model, prompt)
+                    raw = chat_gemini(client, model, prompt)
                     results = parse_response(raw)
                     if results is not None:
                         break
                 except Exception as exc:
                     error = exc
+                    # Gestione esplicita del Rate Limit (quota esaurita, HTTP 429 o analogo)
+                    exc_str = str(exc).lower()
+                    if "429" in exc_str or "resource_exhausted" in exc_str or "quota" in exc_str or "exhausted" in exc_str:
+                        logs.append(f"[{time.strftime('%H:%M:%S')}] ⚠️ Quota API esaurita. Auto-attesa di 30s...")
+                        draw_tui(quiz_path.name, model, total, complete, enriched, failed_batches,
+                                 batch_num, total_batches, time.time() - start_time, preview_questions, logs, "PAUSA QUOTA (30s)")
+                        time.sleep(30)
+                        # Consenti di rieseguire questo tentativo del batch
+                        continue
                 if attempt < args.retries:
-                    time.sleep(1)
+                    time.sleep(2)
 
             if results is None:
                 if error is not None:
@@ -862,10 +688,9 @@ def enrich_single_quiz(args: argparse.Namespace, quiz_path: Path, model: str) ->
                 else:
                     logs.append(f"[{time.strftime('%H:%M:%S')}] ⚠️ Batch {batch_num}: risposta non parsabile.")
                 failed_batches += 1
-                # Aggiorna la TUI con l'errore
-                draw_tui(quiz_path.name, model, args.base_url, total, complete, enriched, failed_batches,
+                draw_tui(quiz_path.name, model, total, complete, enriched, failed_batches,
                          batch_num, total_batches, time.time() - start_time, preview_questions, logs, "IN ELABORAZIONE")
-                time.sleep(1)
+                time.sleep(2)
                 continue
 
             applied = 0
@@ -881,21 +706,24 @@ def enrich_single_quiz(args: argparse.Namespace, quiz_path: Path, model: str) ->
             enriched += applied
             logs.append(f"[{time.strftime('%H:%M:%S')}] ✅ Batch {batch_num} completato ({applied} domande aggiornate).")
             
-            # Salva
             with open(quiz_path, "w", encoding="utf-8") as f:
                 json.dump(quiz_data, f, indent=2, ensure_ascii=False)
 
-            # Ridisegna la TUI aggiornata alla fine del batch
-            draw_tui(quiz_path.name, model, args.base_url, total, complete, enriched, failed_batches,
+            draw_tui(quiz_path.name, model, total, complete, enriched, failed_batches,
                      batch_num, total_batches, time.time() - start_time, [], logs, "IN ELABORAZIONE")
 
-            if batch_start + args.batch_size < len(to_enrich):
-                time.sleep(1)
+            if batch_start + args.batch_size < len(to_enrich) and args.delay > 0:
+                # Pausa di cortesia tra i batch per rimanere sotto i 15 RPM
+                steps = int(args.delay * 10)
+                for _ in range(steps):
+                    time.sleep(0.1)
+                    k = is_key_pressed()
+                    if k:
+                        break
 
-    # Render finale
     elapsed = time.time() - start_time
     status_final = "COMPLETATO" if enriched + failed_batches * args.batch_size >= len(to_enrich) else "INTERROTTO"
-    draw_tui(quiz_path.name, model, args.base_url, total, complete, enriched, failed_batches,
+    draw_tui(quiz_path.name, model, total, complete, enriched, failed_batches,
              total_batches if status_final == "COMPLETATO" else batch_num,
              total_batches, elapsed, [], logs, status_final)
     
@@ -904,130 +732,42 @@ def enrich_single_quiz(args: argparse.Namespace, quiz_path: Path, model: str) ->
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Arricchisce explanation/hint di un quiz con Ollama.")
+    parser = argparse.ArgumentParser(description="Arricchisce explanation/hint di un quiz con Google Gemini.")
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE,
                         help=f"Domande per batch (default: {DEFAULT_BATCH_SIZE})")
-    parser.add_argument("--base-url", default=DEFAULT_BASE_URL,
-                        help=f"URL base di Ollama (default: {DEFAULT_BASE_URL})")
     parser.add_argument("--model", default=None,
-                        help="Modello Ollama da usare (se omesso, selezione interattiva)")
+                        help="Modello Gemini da usare (default: selezione interattiva / gemini-3.5-flash)")
     parser.add_argument("--quiz", default=None,
                         help="Path quiz relativo a quizzes/ (se omesso, selezione interattiva)")
-    parser.add_argument("--api-key", default=None,
-                        help="API key opzionale (per istanze Ollama con autenticazione)")
     parser.add_argument("--force", action="store_true",
                         help="Rigenera anche domande che hanno già explanation/hint")
-    parser.add_argument("--list-models", action="store_true",
-                        help="Mostra i modelli disponibili e termina")
-    parser.add_argument("--test", action="store_true",
-                        help="Esegue un test di connessione ed effettua una chiamata di prova (chat) per verificare l'operatività del modello")
     parser.add_argument("--retries", type=int, default=DEFAULT_RETRIES,
                         help=f"Tentativi extra per batch su errore/parse fail (default: {DEFAULT_RETRIES})")
     parser.add_argument("--plan-only", action="store_true",
-                        help="Mostra piano batch e termina (senza chiamare Ollama)")
+                        help="Mostra piano batch e termina (senza chiamare Gemini)")
     parser.add_argument("--plan-limit", type=int, default=DEFAULT_PLAN_LIMIT,
                         help=f"Numero massimo di batch da mostrare nel piano (default: {DEFAULT_PLAN_LIMIT}, -1 = tutti)")
-    parser.add_argument("--walk-incomplete", action="store_true",
-                        help="Processa un quiz incompleto/da fare alla volta, chiedendo se passare al successivo")
+    parser.add_argument("--delay", type=float, default=4.0,
+                        help="Ritardo in secondi tra i batch per rispettare il rate limit (default: 4.0, usa 0 per nessun ritardo)")
     args = parser.parse_args()
 
-    if args.batch_size <= 0:
-        print("❌ --batch-size deve essere > 0")
-        sys.exit(1)
-    if args.retries < 0:
-        print("❌ --retries deve essere >= 0")
+    if not API_KEY:
+        print("❌ Chiave API GEMINI_API_KEY non trovata nel file .env! Assicurati che sia configurata.")
         sys.exit(1)
 
-    if args.list_models:
-        models = get_ollama_models(args.base_url, args.api_key)
-        cloud_models = [m for m in models if "cloud" in m.lower()]
-        if not cloud_models:
-            print("❌ Nessun modello cloud trovato (i modelli cloud devono contenere 'cloud' nel nome).")
-            sys.exit(1)
-        print("\nModelli cloud disponibili:")
-        for m in cloud_models:
-            print(f"- {m}")
-        return
+    client = genai.Client(api_key=API_KEY)
 
-    if args.test:
-        print(f"📡 Test di connessione a Ollama: {args.base_url}...")
-        try:
-            requests.get(f"{args.base_url}/api/tags", timeout=5).raise_for_status()
-            print("✅ Connessione all'host Ollama riuscita!")
-        except Exception as e:
-            print(f"❌ Connessione fallita: {e}")
-            sys.exit(1)
-
-        models = get_ollama_models(args.base_url, args.api_key)
-        cloud_models = [m for m in models if "cloud" in m.lower()]
-        if not cloud_models:
-            print("❌ Nessun modello cloud disponibile trovato su questa istanza.")
-            sys.exit(1)
-
-        to_test = [args.model] if args.model else cloud_models
-        print(f"\n🧪 Test di operatività per i modelli cloud ({len(to_test)} da testare):")
-        for m in to_test:
-            if m not in models and not args.model:
-                continue
-            print(f"  - Modello '{m}': invio chiamata di test...", end="", flush=True)
-            success, msg = test_model_operability(args.base_url, args.api_key, m)
-            if success:
-                print(f"\r  ✅ Modello '{m}': OPERATIVO! (Risposta: '{msg}')")
-            else:
-                print(f"\r  ❌ Modello '{m}': NON OPERATIVO. Dettaglio: {msg}")
-        return
-
-
-    quizzes_root = Path("quizzes")
-    scan = scan_all_quizzes(quizzes_root)
-    if not scan["stats"]:
-        print("❌ Nessun file JSON valido trovato in quizzes/")
-        sys.exit(1)
-
-    # Se l'utente ha esplicitamente fornito sia quiz che modello da CLI,
-    # andiamo direttamente ad arricchire senza mostrare il menu TUI.
     if args.quiz and (args.model or args.plan_only):
+        quizzes_root = Path("quizzes")
+        scan = scan_all_quizzes(quizzes_root)
         quiz_path = resolve_quiz_path(quizzes_root, args.quiz, scan)
-        model = args.model or "<plan-only>"
-        if not args.plan_only:
-            verify_connection(args.base_url)
-        enrich_single_quiz(args, quiz_path, model)
+        model = args.model or "gemini-3.5-flash"
+        enrich_single_quiz(client, args, quiz_path, model)
         return
 
-    # Se l'utente ha chiesto walk-incomplete via CLI
-    if args.walk_incomplete:
-        print_scan_report(scan)
-        model = pick_model(args)
-        if not args.plan_only:
-            verify_connection(args.base_url)
-        queue = sorted(
-            [s for s in scan["stats"] if s["status"] in {"incompleto", "da fare"}],
-            key=lambda x: (0 if x["status"] == "incompleto" else 1, x["rel"]),
-        )
-        if not queue:
-            print("✅ Nessun quiz incompleto/da fare trovato.")
-            return
-
-        total_fixed = 0
-        total_pending = 0
-        processed = 0
-        for i, item in enumerate(queue):
-            print(f"\n➡️  Quiz {i + 1}/{len(queue)}: {item['rel']} ({item['status']})")
-            enriched, pending, _ = enrich_single_quiz(args, item["path"], model)
-            total_fixed += enriched
-            total_pending += pending
-            processed += 1
-            if i < len(queue) - 1 and not ask_yes_no("Vuoi passare al prossimo quiz?", default_yes=True):
-                break
-
-        print(f"\n🏁 Sessione completata: quiz processati {processed}, arricchite {total_fixed}/{total_pending} domande.")
-        return
-
-    # Di default, usiamo il Menu principale interattivo (TUI)
-    quiz_path, model, batch_size = main_menu_tui(args)
+    quiz_path, model = main_menu_tui(args, client)
     if quiz_path and model:
-        args.batch_size = batch_size
-        enrich_single_quiz(args, quiz_path, model)
+        enrich_single_quiz(client, args, quiz_path, model)
 
 
 if __name__ == "__main__":

@@ -28,8 +28,8 @@ OPTION_RE = re.compile(r"(?m)^\s*([A-E])\)\s*")
 EXPECTED_OPTIONS = ("A", "B", "C", "D", "E")
 QUESTION_ID_NAMESPACE = uuid.UUID("8200bc4d-aa86-4d3a-a4a7-8b55a44e9f10")
 
-# First question number for each section printed in the AG2026 source PDF.
-CATEGORY_BOUNDARIES = (
+# First question number for each section printed in the AG2026 source PDF (ordinario).
+ORDINARIO_BOUNDARIES = (
     (1, "Cultura generale"),
     (1338, "Storia"),
     (2005, "Matematica"),
@@ -40,22 +40,36 @@ CATEGORY_BOUNDARIES = (
     (5335, "Ragionamento critico-verbale"),
 )
 
+# First question number for each section printed in the AG2026 source PDF (volontari).
+VOLONTARI_BOUNDARIES = (
+    (1, "Cittadinanza e Costituzione"),
+    (761, "Geografia"),
+    (1216, "Grammatica"),
+    (1967, "Informatica"),
+    (2342, "Inglese"),
+    (3044, "Letteratura"),
+    (3801, "Matematica"),
+    (4563, "Scienze"),
+    (4868, "Storia"),
+    (5621, "Tecnologia"),
+)
+
 
 def compact(text: str) -> str:
     """Make PDF line wrapping harmless while preserving the actual content."""
     return re.sub(r"\s+", " ", text).strip()
 
 
-def category_for(question_number: int) -> str:
+def category_for(question_number: int, boundaries: tuple) -> str:
     """Return the source-PDF section containing the numbered question."""
     return next(
         category
-        for start, category in reversed(CATEGORY_BOUNDARIES)
+        for start, category in reversed(boundaries)
         if question_number >= start
     )
 
 
-def quiz_item(question_number: int, question: str, options: list[str]) -> dict[str, Any]:
+def quiz_item(question_number: int, question: str, options: list[str], boundaries: tuple) -> dict[str, Any]:
     """Return an item conforming to schema/schema.json, including empty optionals."""
     return {
         "id": str(uuid.uuid5(QUESTION_ID_NAMESPACE, f"ag2026:{question_number}")),
@@ -66,12 +80,12 @@ def quiz_item(question_number: int, question: str, options: list[str]) -> dict[s
         "code": "",
         "explanation": "",
         "hint": "",
-        "category": category_for(question_number),
+        "category": category_for(question_number, boundaries),
     }
 
 
 def parse_questions(
-    text: str, page_number: int, expected_number: int | None
+    text: str, page_number: int, expected_number: int | None, boundaries: tuple
 ) -> tuple[list[dict[str, Any]], list[str], int | None]:
     """Parse one page and return valid items plus review messages."""
     matches = list(QUESTION_RE.finditer(text))
@@ -111,12 +125,14 @@ def parse_questions(
             issues.append(f"pagina {page_number}, domanda {number}: testo vuoto")
             continue
 
-        questions.append(quiz_item(int(number), question, options))
+        questions.append(quiz_item(int(number), question, options, boundaries))
 
     return questions, issues, expected_number
 
 
-def extract(pdf_path: Path, start_page: int, end_page: int | None) -> tuple[list[dict[str, Any]], list[str]]:
+def extract(
+    pdf_path: Path, start_page: int, end_page: int | None, boundaries: tuple
+) -> tuple[list[dict[str, Any]], list[str]]:
     reader = PdfReader(pdf_path)
     if reader.is_encrypted and reader.decrypt("") == 0:
         raise ValueError("Il PDF è cifrato e non accetta una password vuota.")
@@ -134,7 +150,7 @@ def extract(pdf_path: Path, start_page: int, end_page: int | None) -> tuple[list
             issues.append(f"pagina {page_number}: nessun testo nativo; usare MinerU/OCR")
             continue
         questions, page_issues, expected_number = parse_questions(
-            text, page_number, expected_number
+            text, page_number, expected_number, boundaries
         )
         all_questions.extend(questions)
         issues.extend(page_issues)
@@ -150,8 +166,11 @@ def main() -> int:
     parser.add_argument("--report", type=Path, help="Report JSON con le anomalie da revisionare")
     args = parser.parse_args()
 
+    is_volontari = "volontari" in args.pdf.name.lower()
+    boundaries = VOLONTARI_BOUNDARIES if is_volontari else ORDINARIO_BOUNDARIES
+
     try:
-        questions, issues = extract(args.pdf, args.start_page, args.end_page)
+        questions, issues = extract(args.pdf, args.start_page, args.end_page, boundaries)
     except (OSError, ValueError) as error:
         print(f"Errore: {error}", file=sys.stderr)
         return 1
