@@ -40,6 +40,10 @@
       "hint": {
         "type": "string",
         "description": "Suggerimento per lo studente."
+      },
+      "category": {
+        "type": "string",
+        "description": "Categoria o sezione tematica opzionale della domanda."
       }
     },
     "required": ["question", "options", "correctIndex", "image", "code", "explanation", "hint"]
