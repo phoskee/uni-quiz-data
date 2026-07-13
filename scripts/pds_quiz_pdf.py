@@ -16,6 +16,7 @@ import argparse
 import json
 import re
 import sys
+import uuid
 from pathlib import Path
 from typing import Any
 
@@ -25,6 +26,7 @@ from pypdf import PdfReader
 QUESTION_RE = re.compile(r"(?m)^\s*(\d{1,4})\.\s+")
 OPTION_RE = re.compile(r"(?m)^\s*([A-E])\)\s*")
 EXPECTED_OPTIONS = ("A", "B", "C", "D", "E")
+QUESTION_ID_NAMESPACE = uuid.UUID("8200bc4d-aa86-4d3a-a4a7-8b55a44e9f10")
 
 # First question number for each section printed in the AG2026 source PDF.
 CATEGORY_BOUNDARIES = (
@@ -56,6 +58,7 @@ def category_for(question_number: int) -> str:
 def quiz_item(question_number: int, question: str, options: list[str]) -> dict[str, Any]:
     """Return an item conforming to schema/schema.json, including empty optionals."""
     return {
+        "id": str(uuid.uuid5(QUESTION_ID_NAMESPACE, f"ag2026:{question_number}")),
         "question": question,
         "options": [{"text": option, "image": ""} for option in options],
         "correctIndex": 0,

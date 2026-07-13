@@ -6,6 +6,7 @@ import gzip
 import hashlib
 import json
 import re
+import shutil
 import unicodedata
 from pathlib import Path
 
@@ -33,6 +34,8 @@ def main():
     parser.add_argument("--output", default="dist/packs")
     args = parser.parse_args()
     output = ROOT / args.output
+    if output.exists():
+        shutil.rmtree(output)
     output.mkdir(parents=True, exist_ok=True)
 
     source_manifest = json.loads((QUIZZES / "_manifest.json").read_text(encoding="utf-8"))

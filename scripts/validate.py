@@ -104,9 +104,27 @@ def main():
         sys.exit(1)
     with open(manifest_path, 'r', encoding='utf-8') as manifest_file:
         manifest = json.load(manifest_file)
-    quiz_ids = list(manifest.get('quizzes', {}).values())
+    manifest_quizzes = manifest.get('quizzes', {})
+    quiz_ids = list(manifest_quizzes.values())
     if len(quiz_ids) != len(set(quiz_ids)):
         print("❌ UUID quiz duplicati in quizzes/_manifest.json.")
+        sys.exit(1)
+    try:
+        for quiz_id in quiz_ids:
+            uuid.UUID(quiz_id)
+    except (ValueError, TypeError, AttributeError):
+        print("❌ UUID quiz non valido in quizzes/_manifest.json.")
+        sys.exit(1)
+    discovered = set()
+    for root, dirs, files in os.walk('quizzes'):
+        dirs[:] = [d for d in dirs if not d.startswith('_')]
+        for file in files:
+            if file.endswith('.json') and not file.startswith('_'):
+                discovered.add(os.path.join(root, file).replace(os.sep, '/'))
+    if discovered != set(manifest_quizzes):
+        missing = sorted(discovered - set(manifest_quizzes))
+        stale = sorted(set(manifest_quizzes) - discovered)
+        print(f"❌ Manifest quiz non allineato. Mancanti={missing}, obsoleti={stale}")
         sys.exit(1)
 
     # Validazione quiz a risposta multipla
