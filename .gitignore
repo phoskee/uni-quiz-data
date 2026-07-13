@@ -12,3 +12,4 @@ ENV/
 .DS_Store
 Thumbs.db
 CLAUDE.md
+dist/

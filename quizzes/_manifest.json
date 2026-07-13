@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "quizzes": {
+    "quizzes/ministero-dell-interno/polizia-di-stato/community/4400-allievi-agenti-2026.json": "40d23498-c885-467b-a83d-8ad84ba95294",
+    "quizzes/sapienza/informatica/sounbot/diritto_unive_inf.json": "5c03207c-4d87-4c27-a86c-084ce331504f",
+    "quizzes/sapienza/informatica/sounbot/fds.json": "adf89dce-a02e-4f10-97af-56b3ec593fb9",
+    "quizzes/sapienza/informatica/sounbot/fds_llm.json": "6d17062b-8d9c-4396-9d16-ed0b8ff21254",
+    "quizzes/sapienza/informatica/sounbot/ium_unive.json": "755bd204-0ae1-49b4-86fe-228ab7c60989",
+    "quizzes/sapienza/informatica/sounbot/ogas.json": "d0737fcf-cb98-440d-9493-0daa7f432a4b",
+    "quizzes/sapienza/informatica/sounbot/sicurezza.json": "ca427af6-bb9b-40bb-bb23-74d9631c16db",
+    "quizzes/sapienza/informatica/sounbot/sicurezza_appello1.json": "0826cc6d-2cd5-4331-92e6-2f5947dccad6",
+    "quizzes/sapienza/informatica/sounbot/so1.json": "22a1e188-3c3d-4256-b4ee-1bcb09df99cf",
+    "quizzes/sapienza/informatica/sounbot/so1_new.json": "eaad60e9-5eb2-4fdb-9254-f3ee215cb619",
+    "quizzes/sapienza/informatica/sounbot/so1_unive.json": "8eb69f0b-0b1e-4445-8926-5ed37c4bb703",
+    "quizzes/sapienza/informatica/sounbot/so2.json": "76900d07-4098-4da3-80f4-1d335c5ff79a",
+    "quizzes/sapienza/informatica/sounbot/sviluppo_psico.json": "37f3c182-1306-4e16-be6e-9826f175ef62",
+    "quizzes/sapienza/informatica/uniquizzes/2022_FDS.json": "f72db6e9-ea1a-49bf-bd9a-e512be72e059",
+    "quizzes/sapienza/informatica/uniquizzes/OLD_so1.json": "8327bb7b-40d4-4aaf-9e1a-de8998033b6d",
+    "quizzes/sapienza/informatica/uniquizzes/cc.json": "ee7bf49f-93ba-40b8-b783-7039878da833",
+    "quizzes/sapienza/informatica/uniquizzes/so1.json": "c87aeadd-b77d-4435-8bb5-28a540a22432",
+    "quizzes/sapienza/informatica/uniquizzes/so12024.json": "63595213-ae9a-4bb6-8e2a-1f9e4788fbea",
+    "quizzes/sapienza/informatica/uniquizzes/so2.json": "5083992f-a569-4867-9ef6-523af6dedfb0",
+    "quizzes/sapienza/informatica/uniquizzes/so2_2025_mz.json": "05a83e35-3c49-4d33-b218-6e6fdec0a817",
+    "quizzes/sapienza/informatica/uniquizzes/so2mz.json": "9755092a-4652-46fe-9dac-7d908e98608f",
+    "quizzes/sapienza/informatica/uniquizzes/swInedite.json": "bcb3774a-08bd-4bc8-a3a3-ddea39a7ecde",
+    "quizzes/unipegaso/informatica/community/ARCHITETTURA_DEI_CALCOLATORI.json": "2ef8de17-f687-4386-a959-c8244aadda0f"
+  }
+}

@@ -15,7 +15,8 @@
     "image": "",
     "code": "",
     "explanation": "Il diritto dell'informatica non è raccolto in un codice unico, ma è una branca interdisciplinare che riunisce norme provenienti da diversi ambiti giuridici come il diritto civile, penale, amministrativo e commerciale.",
-    "hint": "Quante fonti normative diverse regolano le tecnologie informatiche?"
+    "hint": "Quante fonti normative diverse regolano le tecnologie informatiche?",
+    "id": "ee770ad7-f093-493b-b4c2-2853741c65b0"
   },
   {
     "question": "2) Cosa si intende con principio di neutralità della rete?",
@@ -37,7 +38,8 @@
     "image": "",
     "code": "",
     "explanation": "La neutralità della rete garantisce che il traffico dati sia trattato in modo uguale indipendentemente dal contenuto, dalla sorgente o dalla destinazione, senza privilegiare alcune tecnologie di accesso rispetto ad altre.",
-    "hint": "Riguarda l'accesso tecnologico, non i contenuti o i consumatori."
+    "hint": "Riguarda l'accesso tecnologico, non i contenuti o i consumatori.",
+    "id": "172d1f72-575c-4546-a29d-bc5b0608ca62"
   },
   {
     "question": "3) Quando in Italia la riservatezza è divenuto diritto tutelato delle leggi? ",
@@ -59,7 +61,8 @@
     "image": "",
     "code": "",
     "explanation": "La Legge 675/1996 (Legge sulla privacy) ha introdotto in Italia la tutela del diritto alla riservatezza come diritto fondamentale, in adempimento alle direttive europee.",
-    "hint": "È legata all'armonizzazione europea sulla protezione dei dati personali."
+    "hint": "È legata all'armonizzazione europea sulla protezione dei dati personali.",
+    "id": "e703264a-c7f4-4b6e-863e-c372a06231f9"
   },
   {
     "question": "4) Perché di solito un internet provider non chiede un canone all’utente?",
@@ -81,7 +84,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli Internet Service Provider adottano modelli di business basati su servizi aggiuntivi come pubblicità mirata, hosting, servizi cloud, streaming e altri servizi a valore aggiunto.",
-    "hint": "La connettività è spesso solo l'ingresso per altri servizi redditizi."
+    "hint": "La connettività è spesso solo l'ingresso per altri servizi redditizi.",
+    "id": "00d6a196-0a05-45d1-bcb4-48fede9ede4b"
   },
   {
     "question": "5) Un file è un documento valido?",
@@ -103,7 +107,8 @@
     "image": "",
     "code": "",
     "explanation": "Un file informatico acquisisce valore legale equivalente alla scrittura privata solo se munito di firma digitale, che garantisce autenticità, integrità e non ripudio del documento.",
-    "hint": "Senza elementi di identificazione certa del firmatario, il file non ha valore probatorio."
+    "hint": "Senza elementi di identificazione certa del firmatario, il file non ha valore probatorio.",
+    "id": "4473ce67-3ca2-4f29-91e3-2e80bf340442"
   },
   {
     "question": "6) Cosa è la dematerializzazione dei titoli finanziari?",
@@ -125,7 +130,8 @@
     "image": "",
     "code": "",
     "explanation": "La dematerializzazione è il processo per cui i titoli finanziari cartacei (azioni, obbligazioni) vengono sostituiti da registrazioni elettroniche presso organismi di deposito centrale (es. Monte Titoli), eliminando la necessità del possesso fisico del documento.",
-    "hint": "Pensando ai titoli azionari in forma cartacea, cosa è successo nella rappresentazione di questi diritti?"
+    "hint": "Pensando ai titoli azionari in forma cartacea, cosa è successo nella rappresentazione di questi diritti?",
+    "id": "1cf2850b-e759-433b-ac59-dde7a5ba06b3"
   },
   {
     "question": "7) Cos’è l’informatizzazione dei registri immobiliari?  ",
@@ -147,7 +153,8 @@
     "image": "",
     "code": "",
     "explanation": "L'informatizzazione dei registri immobiliari si riferisce alla possibilità per chiunque di accedere telematicamente ai dati catastali e ipotecari digitali, non solo al semplice passaggio da carta a formato digitale.",
-    "hint": "L'aspetto chiave è chi può accedere e come, non solo la forma del registro."
+    "hint": "L'aspetto chiave è chi può accedere e come, non solo la forma del registro.",
+    "id": "bb42f670-0c9c-47c0-92b3-2ec2f29931f2"
   },
   {
     "question": "8) I bitcoins sono una moneta?",
@@ -169,7 +176,8 @@
     "image": "",
     "code": "",
     "explanation": "I bitcoins non sono una moneta in senso giuridico perché non hanno corso legale né garanzia statale, ma funzionano come mezzo di scambio privato in una rete decentralizzata.",
-    "hint": "La moneta ufficiale ha corso legale e supporto delle banche centrali, i bitcoins no."
+    "hint": "La moneta ufficiale ha corso legale e supporto delle banche centrali, i bitcoins no.",
+    "id": "93fb3ce3-32e0-49b9-b08c-31283a3f284c"
   },
   {
     "question": "9) Il commercio elettronico riguarda?",
@@ -191,7 +199,8 @@
     "image": "",
     "code": "",
     "explanation": "Il commercio elettronico comprende sia le transazioni B2C (impresa-consumatore) che B2B (impresa-impresa), quindi può riguardare consumatori e/o imprese.",
-    "hint": "Non solo i privati acquistano online, le aziende anche."
+    "hint": "Non solo i privati acquistano online, le aziende anche.",
+    "id": "338c1b36-c81a-40cb-a19b-26e5416abfff"
   },
   {
     "question": "10) Per effettuare una comunicazione commerciale:",
@@ -213,7 +222,8 @@
     "image": "",
     "code": "",
     "explanation": "Il consenso preventivo del destinatario è un principio fondamentale nelle comunicazioni commerciali elettroniche (direct marketing, email promozionali), richiesto dalla normativa sulla protezione dei dati personali.",
-    "hint": "È lo stesso principio del opt-in nelle comunicazioni di marketing."
+    "hint": "È lo stesso principio del opt-in nelle comunicazioni di marketing.",
+    "id": "3f9bb0cf-07d2-4152-98c0-7a67f87b71b2"
   },
   {
     "question": "11) A cosa servono i marchi di qualità?",
@@ -235,7 +245,8 @@
     "image": "",
     "code": "",
     "explanation": "I marchi di qualità (come certificazioni ISO, marchi CE, ecc.) sono strumenti che attestano formalmente che un prodotto o servizio rispetta determinati standard di qualità definiti da enti certificatori riconosciuti.",
-    "hint": "Pensa allo scopo primario di una certificazione: attestare la conformità a standard definiti."
+    "hint": "Pensa allo scopo primario di una certificazione: attestare la conformità a standard definiti.",
+    "id": "4df8d13c-cccb-46f0-908b-cf8ebe60f545"
   },
   {
     "question": "12) Si possono utilizzare tecniche digitali per bloccare l’accesso a proprie opere d’ingegno?",
@@ -257,7 +268,8 @@
     "image": "",
     "code": "",
     "explanation": "Le misure tecnologiche di protezione (come DRM, sistemi di accesso, crittografia) possono essere applicate a qualsiasi opera per controllarne l'accesso, indipendentemente dal fatto che sia brevettata o caratterizzata da creatività.",
-    "hint": "Considera che le tecniche digitali di blocco sono strumenti tecnici applicabili a qualsiasi contenuto."
+    "hint": "Considera che le tecniche digitali di blocco sono strumenti tecnici applicabili a qualsiasi contenuto.",
+    "id": "2d1c6587-88ce-4dac-bca4-9b4fefb62ce7"
   },
   {
     "question": "13) Esistono norme penali contro l’uso improprio del software?",
@@ -279,7 +291,8 @@
     "image": "",
     "code": "",
     "explanation": "Le norme penali in materia di software riguardano principalmente la violazione del diritto d'autore (copyright), ovvero l'uso non autorizzato di software protetto, indipendentemente dalla qualità dell'utilizzatore.",
-    "hint": "Ricorda che il reato di violazione del copyright si applica a chiunque usi software in modo non autorizzato."
+    "hint": "Ricorda che il reato di violazione del copyright si applica a chiunque usi software in modo non autorizzato.",
+    "id": "0b36ceb7-a75e-426a-82eb-615b06462a00"
   },
   {
     "question": "14) I provider devono controllare il materiale che viene inserito dagli utenti?",
@@ -301,7 +314,8 @@
     "image": "",
     "code": "",
     "explanation": "I provider di servizi internet sono considerati 'mere conduit' e non hanno l'obbligo generale di controllare o monitorare il contenuto inserito dagli utenti, pur avendo obblighi di rimozione su segnalazione.",
-    "hint": "Bilanciamento tra libertà di comunicazione e obblighi di controllo: il principio è che non c'è obbligo di sorveglianza preventiva."
+    "hint": "Bilanciamento tra libertà di comunicazione e obblighi di controllo: il principio è che non c'è obbligo di sorveglianza preventiva.",
+    "id": "45d8d216-19f3-4799-bb76-eaba962e5731"
   },
   {
     "question": "15) Quali regole disciplinano i social network?",
@@ -323,7 +337,8 @@
     "image": "",
     "code": "",
     "explanation": "I social network sono regolati primariamente da norme legislative specifiche (in materia di privacy, sicurezza, tutela dei minori) e secondariamente dai termini contrattuali stabiliti dalla piattaforma.",
-    "hint": "Prima viene la legge (normativa vincolante), poi il contratto (regole della piattaforma)."
+    "hint": "Prima viene la legge (normativa vincolante), poi il contratto (regole della piattaforma).",
+    "id": "253bd28b-042d-4c21-9a41-457085ed0ec3"
   },
   {
     "question": "16) Da quando è la legge scritta a tutelare la privacy?",
@@ -345,7 +360,8 @@
     "image": "",
     "code": "",
     "explanation": "La tutela legale della privacy come diritto specifico si è sviluppata negli anni '90 con l'avvento della normativa europea sulla protezione dei dati personali (Direttiva 95/46/CE).",
-    "hint": "Pensa all'entrata in vigore delle prime leggi organiche sulla privacy in Europa."
+    "hint": "Pensa all'entrata in vigore delle prime leggi organiche sulla privacy in Europa.",
+    "id": "e92ca029-2ab4-4242-ab78-163a4a762c9d"
   },
   {
     "question": "17) Chi è il \"responsabile\" nel trattamento dei dati personali?",
@@ -367,7 +383,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel trattamento dei dati personali, il responsabile è colui che tratta i dati per conto del titolare, determinando le modalità e le finalità del trattamento.",
-    "hint": "Distingui tra titolare (chi decide cosa fare) e responsabile (chi esegue materialmente il trattamento)."
+    "hint": "Distingui tra titolare (chi decide cosa fare) e responsabile (chi esegue materialmente il trattamento).",
+    "id": "9715e9b5-93c5-4a25-a568-3e5f698d08be"
   },
   {
     "question": "18) Dove si trovano le regole sulla trasparenza nelle comunicazioni elettroniche?",
@@ -389,7 +406,8 @@
     "image": "",
     "code": "",
     "explanation": "Le regole sulla trasparenza nelle comunicazioni elettroniche sono contenute nel Codice delle Comunicazioni Elettroniche (D.Lgs. 259/2003), che disciplina il settore delle telecomunicazioni.",
-    "hint": "È una normativa settoriale specifica per le telecomunicazioni, non general-civile."
+    "hint": "È una normativa settoriale specifica per le telecomunicazioni, non general-civile.",
+    "id": "52c580e0-8333-48cf-8b15-a7fbcae56429"
   },
   {
     "question": "19) Le regole del codice dell'amministrazione digitale sui documenti informatici valgono per i privati?",
@@ -411,7 +429,8 @@
     "image": "",
     "code": "",
     "explanation": "Il Codice dell'Amministrazione Digitale (CAD) disciplina le relazioni tra cittadini e Pubblica Amministrazione, non si applica ai rapporti tra privati.",
-    "hint": "Questo codice regola specificamente il rapporto tra privati e PA."
+    "hint": "Questo codice regola specificamente il rapporto tra privati e PA.",
+    "id": "0d1b83a1-2fc0-423e-8eb5-ab641cd50be7"
   },
   {
     "question": "20) Si può imporre ad un'amministrazione di rispondere via pec alle istanze dei privati?",
@@ -429,7 +448,8 @@
     "image": "",
     "code": "",
     "explanation": "La PEC (Posta Elettronica Certificata) è uno strumento ufficiale riconosciuto dalla legge per le comunicazioni con la PA, e l'amministrazione è tenuta a rispondere attraverso i canali previsti.",
-    "hint": "La PEC ha valore legale equivalente alla raccomandata AR."
+    "hint": "La PEC ha valore legale equivalente alla raccomandata AR.",
+    "id": "c59bd0a2-ddd0-4c4a-8481-151704980c10"
   },
   {
     "question": "21) Quali mezzi di comunicazione hanno la data certa opponibile a tutti?",
@@ -451,7 +471,8 @@
     "image": "",
     "code": "",
     "explanation": "La PEC e il fax garantiscono data certa opponibile a tutti in quanto mezzi che certificano legalmente data e ora di invio/ricezione, con valore probatorio equivalente alla notificazione per mezzo di ufficiale giudiziario.",
-    "hint": "Ricorda che non tutte le comunicazioni elettroniche hanno lo stesso valore legale."
+    "hint": "Ricorda che non tutte le comunicazioni elettroniche hanno lo stesso valore legale.",
+    "id": "dfc193ae-0e5e-4f24-b55b-7d743659eb45"
   },
   {
     "question": "22) Cosa è il processo civile telematico?",
@@ -473,7 +494,8 @@
     "image": "",
     "code": "",
     "explanation": "Il processo civile telematico è definito dalla legge come il processo in cui gli atti sono depositati in formato digitale attraverso sistemi informatici dedicati.",
-    "hint": "Il nome stesso indica la modalità di deposito degli atti."
+    "hint": "Il nome stesso indica la modalità di deposito degli atti.",
+    "id": "302568d9-f46a-4898-9e4d-26176b665f93"
   },
   {
     "question": "23) Cos'è la moneta elettronica?",
@@ -495,7 +517,8 @@
     "image": "",
     "code": "",
     "explanation": "La moneta elettronica è un valore monetario memorizzato elettronicamente su supporti come carte prepagate o conti digitali, riconosciuta giuridicamente come mezzo di pagamento.",
-    "hint": "La definizione si concentra sulla natura del valore, non sullo strumento specifico."
+    "hint": "La definizione si concentra sulla natura del valore, non sullo strumento specifico.",
+    "id": "6c992dee-ad86-45f9-ad6f-c01b62c5f03f"
   },
   {
     "question": "24) I bitcoins hanno valore stabile?",
@@ -517,7 +540,8 @@
     "image": "",
     "code": "",
     "explanation": "I bitcoins non hanno valore stabile in quanto sono soggetti a forti oscillazioni di mercato, essendo una criptovaluta non regolamentata e altamente volatile.",
-    "hint": "L'andamento dei prezzi negli ultimi anni dimostra una variabilità significativa."
+    "hint": "L'andamento dei prezzi negli ultimi anni dimostra una variabilità significativa.",
+    "id": "ab5ed420-82fa-45e2-9dcf-0493263be256"
   },
   {
     "question": "25) I pagamenti mediante bitcoins sono tracciati?",
@@ -539,7 +563,8 @@
     "image": "",
     "code": "",
     "explanation": "I pagamenti in bitcoins sono tracciabili attraverso la blockchain pubblica che registra tutte le transazioni, ma gli autori rimangono pseudonimi in quanto identificabili solo tramite indirizzi crittografici.",
-    "hint": "La blockchain è pubblica e trasparente, ma gli utenti non sono identificabili direttamente."
+    "hint": "La blockchain è pubblica e trasparente, ma gli utenti non sono identificabili direttamente.",
+    "id": "a227c650-f6e5-4cd7-9e26-9d1b951a0bd3"
   },
   {
     "question": "26) Si possono fornire ai consumatori beni non richiesti?",
@@ -561,7 +586,8 @@
     "image": "",
     "code": "",
     "explanation": "Secondo il Codice del Consumo (D.Lgs. 206/2005), è vietata la pratica commerciale di fornire beni non richiesti al consumatore. Il consumatore non è tenuto a pagare per merce che non ha ordinato, salvo espressa accettazione dell'offerta.",
-    "hint": "In Italia il consumatore non è obbligato a pagare per beni non ordinati (art. 1337 c.c. e normativa consumeristica)."
+    "hint": "In Italia il consumatore non è obbligato a pagare per beni non ordinati (art. 1337 c.c. e normativa consumeristica).",
+    "id": "b0c54ee1-6027-4651-8003-cfb27a27c2f2"
   },
   {
     "question": "27) A cosa servono i marchi di qualità?",
@@ -583,7 +609,8 @@
     "image": "",
     "code": "",
     "explanation": "I marchi di qualità (certificazioni come ISO, UNI, ecc.) sono rilasciati da organismi di certificazione terzi e indipendenti per attestare la conformità a standard specifici. Servono a garantire al consumatore l'affidabilità e la qualità del soggetto certificato.",
-    "hint": "Sono certificazioni rilasciate da enti terzi indipendenti, non dallo Stato o relative a software."
+    "hint": "Sono certificazioni rilasciate da enti terzi indipendenti, non dallo Stato o relative a software.",
+    "id": "2e1f57ac-d2f6-400b-9ef0-d3cb7e7436f0"
   },
   {
     "question": "28) Le banche dati sono tutelate?",
@@ -605,7 +632,8 @@
     "image": "",
     "code": "",
     "explanation": "Ai sensi della legge sul diritto d'autore (L. 633/1941 e successive modifiche), le banche dati sono protette come 'opere dell'ingegno' con carattere creativo. La tutela è riconosciuta automaticamente alla creazione.",
-    "hint": "La protezione è automatica e non dipende dalla brevettazione."
+    "hint": "La protezione è automatica e non dipende dalla brevettazione.",
+    "id": "0fc7fe1f-d614-4647-bc4f-67d8cadff293"
   },
   {
     "question": "29) Esiste un' autorità centrale che governa Internet?",
@@ -627,7 +655,8 @@
     "image": "",
     "code": "",
     "explanation": "Internet non ha un'autorità centrale che la governi. La gestione è distribuita tra diverse organizzazioni internazionali (ICANN, IETF, W3C) che operano in modo coordinato ma non gerarchico.",
-    "hint": "L'architettura di Internet è basata su un modello decentrato e collaborativo tra diverse organizzazioni."
+    "hint": "L'architettura di Internet è basata su un modello decentrato e collaborativo tra diverse organizzazioni.",
+    "id": "029a6ced-2ffe-4fcd-aff7-d0b2b7c296a1"
   },
   {
     "question": "30) Cosa si intende per privacy?",
@@ -649,7 +678,8 @@
     "image": "",
     "code": "",
     "explanation": "La privacy, tutelata dalla Costituzione italiana (art. 2) e dal Regolamento GDPR, consiste nel diritto di ogni persona di controllare la raccolta, l'uso e la diffusione delle proprie informazioni personali.",
-    "hint": "Il concetto di privacy va oltre la sfera sessuale e riguarda il controllo sui propri dati personali."
+    "hint": "Il concetto di privacy va oltre la sfera sessuale e riguarda il controllo sui propri dati personali.",
+    "id": "1401ae79-4b6d-4ec5-934e-f10f9ea9755d"
   },
   {
     "question": "31) I privati possono raccogliere i dati personali altrui?",
@@ -671,7 +701,8 @@
     "image": "",
     "code": "",
     "explanation": "In base al Codice in materia di protezione dei dati personali (D.Lgs. 196/2003), i privati possono raccogliere dati personali altrui senza autorizzazione del Garante, purché tali dati NON siano destinati alla diffusione pubblica.",
-    "hint": "La distinzione fondamentale è tra raccolta privata e diffusione pubblica di dati."
+    "hint": "La distinzione fondamentale è tra raccolta privata e diffusione pubblica di dati.",
+    "id": "d48fc6a7-2137-4614-af72-5bd4c1c14845"
   },
   {
     "question": "32) Quando non si adottano misure minime di sicurezza nella conservazione dei dati vi è una responsabilità?",
@@ -693,7 +724,8 @@
     "image": "",
     "code": "",
     "explanation": "L'art. 169 del Codice in materia di protezione dei dati personali prevede il reato di 'omessa adozione delle misure minime di sicurezza', punibile penalmente con reclusione fino a 2 anni.",
-    "hint": "Il Codice distingue chiaramente tra responsabilità amministrativa (sanzioni pecuniarie) e penale (reati) per la protezione dei dati."
+    "hint": "Il Codice distingue chiaramente tra responsabilità amministrativa (sanzioni pecuniarie) e penale (reati) per la protezione dei dati.",
+    "id": "6ebb4f3f-8257-4d12-9fd1-0897fb6c32b2"
   },
   {
     "question": "33) I documenti informatici?",
@@ -715,7 +747,8 @@
     "image": "",
     "code": "",
     "explanation": "Il Codice dell'Amministrazione Digitale (art. 20) stabilisce che il documento informatico, per avere piena efficacia probatoria, deve essere sottoscritto con firma digitale, che garantisce autenticità, integrità e non ripudio.",
-    "hint": "La firma digitale è lo strumento che conferisce valore legale al documento informatico."
+    "hint": "La firma digitale è lo strumento che conferisce valore legale al documento informatico.",
+    "id": "41c73e2d-b3a2-4437-b9c8-7951f4c9b584"
   },
   {
     "question": "34) Quando un documento inviato a mezzo posta certificata si considera consegnato?",
@@ -737,7 +770,8 @@
     "image": "",
     "code": "",
     "explanation": "Ai sensi del DPR 68/2005 e della normativa sulla PEC, il messaggio di posta elettronica certificata si considera consegnato nel momento in cui è disponibile nella casella di posta elettronica certificata del destinatario, cioè quando arriva sul server.",
-    "hint": "Non è necessaria la lettura effettiva per considerare avvenuta la consegna."
+    "hint": "Non è necessaria la lettura effettiva per considerare avvenuta la consegna.",
+    "id": "14bfb430-5471-4029-b055-baff9a068e17"
   },
   {
     "question": "35) Chi emette i bitcoins?",
@@ -759,7 +793,8 @@
     "image": "",
     "code": "",
     "explanation": "Il protocollo Bitcoin è stato creato da Satoshi Nakamoto (pseudonimo) che ha definito le regole di emissione. I bitcoins vengono 'minati' secondo regole crittografiche predefinite, senza alcun controllo da parte di autorità centrali o banche.",
-    "hint": "I bitcoins sono decentralizzati per design, senza un emittente centralizzato."
+    "hint": "I bitcoins sono decentralizzati per design, senza un emittente centralizzato.",
+    "id": "af64082d-97a4-4f1e-8381-f3a2220b31e3"
   },
   {
     "question": "36) I bitcoins sono convertibili in denaro?",
@@ -781,7 +816,8 @@
     "image": "",
     "code": "",
     "explanation": "I Bitcoin possono essere convertiti in valute tradizionali (euro, dollaro, ecc.) attraverso piattaforme di exchange online o sportelli bancomat crittografici, fungendo quindi come mezzo di scambio convertibile.",
-    "hint": "Esistono numerose piattaforme dove è possibile vendere Bitcoin in cambio di denaro fiat."
+    "hint": "Esistono numerose piattaforme dove è possibile vendere Bitcoin in cambio di denaro fiat.",
+    "id": "be541941-85fb-4639-be7e-87561b28e954"
   },
   {
     "question": "37) Il commercio elettronico disciplinato dal codice del consumo vale:",
@@ -803,7 +839,8 @@
     "image": "",
     "code": "",
     "explanation": "Il Codice del Consumo (D.Lgs. 206/2005) tutela specificamente il consumatore nelle relazioni con le imprese nel commercio elettronico, disciplinando obblighi informativi e diritti del consumatore.",
-    "hint": "Il Codice del Consumo protegge chi acquista per uso personale da un venditore professionale."
+    "hint": "Il Codice del Consumo protegge chi acquista per uso personale da un venditore professionale.",
+    "id": "97111cd3-bc5d-44ad-9c44-ffa1f20591b9"
   },
   {
     "question": "38) In caso di acquisti online si può recedere dall'acquisto?",
@@ -825,7 +862,8 @@
     "image": "",
     "code": "",
     "explanation": "Il diritto di recesso (art. 52 e ss. Codice del Consumo) tutela il consumatore nelle vendite a distanza, permettendo di restituire il bene entro 14 giorni senza motivazioni.",
-    "hint": "È una tutela specifica per chi acquista da un professionista tramite strumenti telematici."
+    "hint": "È una tutela specifica per chi acquista da un professionista tramite strumenti telematici.",
+    "id": "331f5d58-6358-4c0e-b098-a50a4d88efcd"
   },
   {
     "question": "39) Il commercio elettronico disciplinato dalla disciplina delle società dell'informazione riguarda:",
@@ -847,7 +885,8 @@
     "image": "",
     "code": "",
     "explanation": "La disciplina sulle società dell'informazione (D.Lgs. 70/2003, attuazione della Direttiva 2000/31/CE) regola l'attività dei prestatori di servizi della società dell'informazione in modo neutro, senza distinguere tra consumatori e imprese.",
-    "hint": "Riguarda chi offre servizi telematici in generale, non solo i rapporti B2C."
+    "hint": "Riguarda chi offre servizi telematici in generale, non solo i rapporti B2C.",
+    "id": "dba8c1cd-5ea4-4287-a4de-6a408b4c186c"
   },
   {
     "question": "40) Quando inizia il trattamento dei dati personali?",
@@ -869,7 +908,8 @@
     "image": "",
     "code": "",
     "explanation": "Il trattamento dei dati personali ai sensi del GDPR richiede una base giuridica legittima; il consenso dell'interessato è una delle basi giuridiche principali che autorizza l'inizio del trattamento.",
-    "hint": "È il momento in cui la persona acconsente esplicitamente al trattamento dei propri dati."
+    "hint": "È il momento in cui la persona acconsente esplicitamente al trattamento dei propri dati.",
+    "id": "7e8d17f7-56b3-4f8e-9421-3115f46e811f"
   },
   {
     "question": "41) I codici di autoregolamento sono obbligatori?",
@@ -891,7 +931,8 @@
     "image": "",
     "code": "",
     "explanation": "I codici di autoregolamento sono regolamenti emanati dalle stesse categorie professionali o imprenditoriali in modo volontario, non sono imposti dalla legge e quindi non sono obbligatori.",
-    "hint": "Derivano da una scelta autonoma delle categorie, non da obbligo normativo."
+    "hint": "Derivano da una scelta autonoma delle categorie, non da obbligo normativo.",
+    "id": "5139a684-c1b1-44ad-81fd-fc14fa42f477"
   },
   {
     "question": "42) Scannerizzo ed appongo la mia firma ad un documento, questa è una firma elettronica avanzata?",
@@ -913,7 +954,8 @@
     "image": "",
     "code": "",
     "explanation": "La firma elettronica avanzata richiede che sia creata con mezzi che il firmatario tenga sotto il proprio controllo esclusivo e sia collegata univocamente al firmatario. Scannerizzare una firma apposta su carta non soddisfa questi requisiti.",
-    "hint": "Deve essere generata con strumenti sotto il controllo esclusivo del firmatario."
+    "hint": "Deve essere generata con strumenti sotto il controllo esclusivo del firmatario.",
+    "id": "a7d3fd07-f401-4d0d-8e18-831a68a50181"
   },
   {
     "question": "43) Si può concludere un contratto via mail?\t",
@@ -935,7 +977,8 @@
     "image": "",
     "code": "",
     "explanation": "Il contratto si conclude quando c'è l'incontro tra offerta e accettazione manifestate attraverso qualsiasi mezzo idoneo, incluse le comunicazioni elettroniche come la mail.",
-    "hint": "Contano la manifestazione di volontà delle parti, non il mezzo usato."
+    "hint": "Contano la manifestazione di volontà delle parti, non il mezzo usato.",
+    "id": "a36a68f5-2ddc-461f-af1c-96619493c2a8"
   },
   {
     "question": "45) Se compro il pc ed il software è in licenza:",
@@ -957,7 +1000,8 @@
     "image": "",
     "code": "",
     "explanation": "Acquistando un PC con software in licenza, si acquista solo la licenza d'uso del software, che rimane di proprietà del titolare dei diritti. Si paga per il diritto di utilizzo, non per la proprietà intellettuale.",
-    "hint": "La licenza concede l'uso, non trasferisce la proprietà del software."
+    "hint": "La licenza concede l'uso, non trasferisce la proprietà del software.",
+    "id": "b61f268a-1bfa-4e10-b696-bcc91e2fce4c"
   },
   {
     "question": "46) Cos’è il fascicolo telematico?",
@@ -979,7 +1023,8 @@
     "image": "",
     "code": "",
     "explanation": "Il fascicolo telematico è il fascicolo digitale utilizzato nel processo civile per la gestione informatizzata degli atti e delle comunicazioni tra le parti e il giudice.",
-    "hint": "È specifico del processo civile telematico."
+    "hint": "È specifico del processo civile telematico.",
+    "id": "7297cbb7-f7b9-40b1-b0c1-7e4530b41824"
   },
   {
     "question": "47) Si può fare una copia di un programma che si ha in licenza?",
@@ -1001,7 +1046,8 @@
     "image": "",
     "code": "",
     "explanation": "La licenza software consente normalmente di effettuare una copia di backup esclusivamente per uso personale e per garantire l'utilizzo del programma stesso, ma è vietata qualsiasi forma di commercializzazione o distribuzione, come previsto dalle eccezioni al diritto d'autore.",
-    "hint": "Pensa alle eccezioni previste dalla legge sul diritto d'autore per l'uso personale del software."
+    "hint": "Pensa alle eccezioni previste dalla legge sul diritto d'autore per l'uso personale del software.",
+    "id": "e9966be6-b396-4334-bab1-dd40af3d7620"
   },
   {
     "question": "48) Cosa è una wireless community network?",
@@ -1023,7 +1069,8 @@
     "image": "",
     "code": "",
     "explanation": "Una wireless community network è una rete di telecomunicazioni creata e gestita collettivamente da un gruppo di persone che condividono le proprie risorse di connettività wireless in modo decentralizzato.",
-    "hint": "Il termine 'community' indica un gruppo di persone che condivide qualcosa insieme."
+    "hint": "Il termine 'community' indica un gruppo di persone che condivide qualcosa insieme.",
+    "id": "98b70de6-e939-41fa-bd45-aa1857b5b2e2"
   },
   {
     "question": "49) Le regole di comportamento previste nella piattaforma di un social network?",
@@ -1045,7 +1092,8 @@
     "image": "",
     "code": "",
     "explanation": "I termini e le condizioni di utilizzo di una piattaforma sociale costituiscono un contratto di adesione tra il fornitore del servizio e l'utente, quindi le regole di comportamento hanno natura contrattuale.",
-    "hint": "I termini di servizio che accetti sono considerati dalla legge come un contratto."
+    "hint": "I termini di servizio che accetti sono considerati dalla legge come un contratto.",
+    "id": "9b11e105-596e-4016-8c8b-8f27de8a7d67"
   },
   {
     "question": "50) Cliccando su accetto sull’iscrizione ad un social network si conclude un contratto?",
@@ -1067,7 +1115,8 @@
     "image": "",
     "code": "",
     "explanation": "L'accettazione dei termini di servizio online mediante click costituisce validamente un contratto, poiché nel commercio elettronico vige il principio di libertà della forma contrattuale.",
-    "hint": "Nel commercio elettronico, l'accettazione online ha validità contrattuale senza necessità di forma scritta."
+    "hint": "Nel commercio elettronico, l'accettazione online ha validità contrattuale senza necessità di forma scritta.",
+    "id": "729014d2-df3d-4d5a-a779-498729aa7fe5"
   },
   {
     "question": "51) Quando sono protette le banche dati?",
@@ -1089,7 +1138,8 @@
     "image": "",
     "code": "",
     "explanation": "Le banche dati sono protette dal diritto sui generis quando sono rese accessibili al pubblico, indipendentemente dalla loro creatività o brevettabilità, tutelando l'investimento del creatore.",
-    "hint": "La protezione deriva dall'investimento nel creare e mantenere la banca dati, non dalle sue caratteristiche intrinseche."
+    "hint": "La protezione deriva dall'investimento nel creare e mantenere la banca dati, non dalle sue caratteristiche intrinseche.",
+    "id": "e7b74ef2-f32f-49f9-815b-060974c2b1da"
   },
   {
     "question": "52) Cosa si intende per deterritorializzazione?",
@@ -1115,7 +1165,8 @@
     "image": "",
     "code": "",
     "explanation": "La deterritorializzazione si riferisce alla perdita di rilevanza dei confini fisici degli stati nel cyberspace. Poiché le attività online possono essere svolte da qualsiasi luogo, gli stati faticano a esercitare la propria giurisdizione e a controllare gli illeciti commessi in rete.",
-    "hint": "Pensa a come i confini geografici tradizionali perdono significato quando si opera online."
+    "hint": "Pensa a come i confini geografici tradizionali perdono significato quando si opera online.",
+    "id": "7f163fc6-b35f-4c5f-9745-e360a562b91b"
   },
   {
     "question": "53) Un nome di dominio è un bene?",
@@ -1133,7 +1184,8 @@
     "image": "",
     "code": "",
     "explanation": "Il nome di dominio è qualificato come bene immateriale perché ha valore economico, può essere compravenduto, dato in licenza ed è oggetto di tutele giuridiche in sede giudiziaria.",
-    "hint": "Considera il mercato secondario dei domini e le controversie sulla loro proprietà."
+    "hint": "Considera il mercato secondario dei domini e le controversie sulla loro proprietà.",
+    "id": "45b65c15-a1f2-4f76-bea9-610f1e19e18a"
   },
   {
     "question": "54) Un documento elettronico privo di firma digitale?",
@@ -1155,7 +1207,8 @@
     "image": "",
     "code": "",
     "explanation": "Il documento informatico senza firma digitale non ha valore legale perché manca l'autenticazione dell'autore e la garanzia dell'integrità del contenuto, requisiti essenziali per la validità probatoria.",
-    "hint": "La firma digitale assolve a funzioni di autenticazione e integrità del documento."
+    "hint": "La firma digitale assolve a funzioni di autenticazione e integrità del documento.",
+    "id": "35677d14-d246-4df0-a8a3-a71707f24cad"
   },
   {
     "question": "55) Un internet provider è responsabile degli insulti pubblici dai suoi utenti?",
@@ -1177,7 +1230,8 @@
     "image": "",
     "code": "",
     "explanation": "Secondo la Direttiva sul commercio elettronico, il provider che svolge un ruolo meramente tecnico e passivo (mere conduit) non è responsabile dei contenuti trasmessi dagli utenti, distinguendosi dall'editor.",
-    "hint": "La distinzione tra ruolo attivo e passivo dell'intermediario è fondamentale."
+    "hint": "La distinzione tra ruolo attivo e passivo dell'intermediario è fondamentale.",
+    "id": "0e89b5e7-be11-48b9-8dee-7fe2beeed470"
   },
   {
     "question": "56) Cos’è il trattamento dei dati personali?",
@@ -1199,7 +1253,8 @@
     "image": "",
     "code": "",
     "explanation": "Il trattamento dei dati personali comprende l'intero ciclo di vita dei dati: raccolta, elaborazione, conservazione e ogni altra operazione prevista dal Regolamento GDPR.",
-    "hint": "Il trattamento include qualsiasi operazione sui dati, non solo la raccolta iniziale."
+    "hint": "Il trattamento include qualsiasi operazione sui dati, non solo la raccolta iniziale.",
+    "id": "3eccae74-2cc2-4620-b0f4-6acffc38c853"
   },
   {
     "question": "57) È legittimo prendere una decisione (es. di tipo contrattuale) automatizzata utilizzando un algoritmo?",
@@ -1221,7 +1276,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel diritto dell'Unione Europea (GDPR e AI Act), le decisioni automatizzate che producono effetti giuridici o incidano significativamente sull'individuo richiedono un intervento umano (principio di human oversight), per garantire il controllo e la supervisione da parte di una persona fisica.",
-    "hint": "Pensa al concetto di 'human-in-the-loop' nelle normative europee sulla protezione dei dati e sull'intelligenza artificiale."
+    "hint": "Pensa al concetto di 'human-in-the-loop' nelle normative europee sulla protezione dei dati e sull'intelligenza artificiale.",
+    "id": "9dd6b47e-fc10-479a-b122-35b5a12fb17f"
   },
   {
     "question": "58) Le criptovalute sono monete?",
@@ -1239,7 +1295,8 @@
     "image": "",
     "code": "",
     "explanation": "Le criptovalute non sono considerate valute legali (monete) ma sono classificate come beni digitali o crypto-assets, soggetti a una regolamentazione specifica come il regolamento MiCA dell'Unione Europea.",
-    "hint": "Distingui tra mezzo di pagamento a corso legale e asset digitale."
+    "hint": "Distingui tra mezzo di pagamento a corso legale e asset digitale.",
+    "id": "9a015ebf-3d68-40a9-b07b-4e8e7d1ed4af"
   },
   {
     "question": "59) Cosa si intende con dematerializzazione?",
@@ -1261,7 +1318,8 @@
     "image": "",
     "code": "",
     "explanation": "La dematerializzazione indica il processo per cui beni, documenti e strumenti finanziari passano dalla forma fisica a quella digitale, come nel caso delle azioni dematerializzate o dei documenti elettronici.",
-    "hint": "Pensa alla trasformazione da supporto cartaceo a supporto digitale."
+    "hint": "Pensa alla trasformazione da supporto cartaceo a supporto digitale.",
+    "id": "9479062e-11a6-4e91-84be-70c1ccefece1"
   },
   {
     "question": "60) Cosa vuol dire che il contratto è fonte delle regole?",
@@ -1283,7 +1341,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel diritto digitale, molti rapporti (es. con provider di servizi internet) sono regolati quasi esclusivamente dai contratti (Terms of Service), poiché mancano norme specifiche che disciplinino interamente tali rapporti nell'ambiente digitale.",
-    "hint": "Considera come i contratti 'privati' suppliscono alla mancanza di norme pubbliche specifiche."
+    "hint": "Considera come i contratti 'privati' suppliscono alla mancanza di norme pubbliche specifiche.",
+    "id": "d2cda851-cfff-4ef4-a672-428bce12e35f"
   },
   {
     "question": "61) Cosa si intende con / cos'è il principio di neutralità tecnologica?",
@@ -1305,7 +1364,8 @@
     "image": "",
     "code": "",
     "explanation": "Il principio di neutralità tecnologica, sancito dalle normative europee, impone di non discriminare tra diverse tecnologie informatiche, garantendo che una tecnologia non sia favorita o svantaggiata rispetto ad un'altra.",
-    "hint": "È il principio per cui una legge non deve imporre o favorire una tecnologia specifica."
+    "hint": "È il principio per cui una legge non deve imporre o favorire una tecnologia specifica.",
+    "id": "c3bd8a96-e0d2-4de2-8813-1290f61d776c"
   },
   {
     "question": "62) Cos’è il digital divide?",
@@ -1327,7 +1387,8 @@
     "image": "",
     "code": "",
     "explanation": "Il digital divide descrive il divario esistente tra chi ha accesso alle tecnologie dell'informazione e chi ne è escluso, sia per mancanza di risorse materiali (hardware, connettività) sia per carenza di competenze digitali.",
-    "hint": "Pensa al termine 'divide' come a un 'divario' o 'gap' nell'accesso alla tecnologia."
+    "hint": "Pensa al termine 'divide' come a un 'divario' o 'gap' nell'accesso alla tecnologia.",
+    "id": "23740c15-caa6-4d47-9bfc-f67927057942"
   },
   {
     "question": "63) L’acquisto di competenze digitali:",
@@ -1349,7 +1410,8 @@
     "image": "",
     "code": "",
     "explanation": "L'Italia ha recepito direttive europee e approvato provvedimenti come la Strategia Nazionale per le Competenze Digitali e il PNRR, promuovendo l'acquisizione di competenze digitali attraverso politiche pubbliche.",
-    "hint": "Ricorda che le competenze digitali sono considerate strategiche a livello nazionale ed europeo."
+    "hint": "Ricorda che le competenze digitali sono considerate strategiche a livello nazionale ed europeo.",
+    "id": "9c811061-b482-45d5-8501-eda2b3a2ad54"
   },
   {
     "question": "64) Si può caricare su un social network l’immagine di una persona?",
@@ -1371,7 +1433,8 @@
     "image": "",
     "code": "",
     "explanation": "Il GDPR e il Codice in materia di protezione dei dati personali stabiliscono che l'immagine di una persona è un dato personale e richiede il consenso esplicito dell'interessato per essere trattata e pubblicata.",
-    "hint": "Il diritto all'immagine è un diritto fondamentale tutelato dalla normativa sulla privacy."
+    "hint": "Il diritto all'immagine è un diritto fondamentale tutelato dalla normativa sulla privacy.",
+    "id": "9110ff91-b340-4a50-ad0b-c975a6da28b5"
   },
   {
     "question": "65) Il cyberbullismo: ",
@@ -1393,7 +1456,8 @@
     "image": "",
     "code": "",
     "explanation": "In Italia la legge 71/2017 configura il cyberbullismo come reato, prevedendo sanzioni penali e civili per chiunque compia atti di bullismo informatico, rendendolo un comportamento espressamente vietato dalla legge.",
-    "hint": "La legge italiana ha specificamente criminalizzato il bullismo informatico, a differenza della semplice maleducazione."
+    "hint": "La legge italiana ha specificamente criminalizzato il bullismo informatico, a differenza della semplice maleducazione.",
+    "id": "0f7788ee-495f-4abe-8745-b56f07bdf331"
   },
   {
     "question": "66) Cos’è lo SPID?",
@@ -1415,7 +1479,8 @@
     "image": "",
     "code": "",
     "explanation": "SPID (Sistema Pubblico di Identità Digitale) è il sistema che consente ai cittadini di accedere ai servizi digitali della Pubblica Amministrazione utilizzando un'identità digitale unica e sicura.",
-    "hint": "SPID è l'acronimo di Sistema Pubblico di Identità Digitale, pensato per i servizi della PA."
+    "hint": "SPID è l'acronimo di Sistema Pubblico di Identità Digitale, pensato per i servizi della PA.",
+    "id": "be5a7af5-cb0a-4de9-97a2-d1d92947e132"
   },
   {
     "question": "67) Cos’è un domicilio digitale?",
@@ -1437,6 +1502,7 @@
     "image": "",
     "code": "",
     "explanation": "Il domicilio digitale è l'indirizzo PEC eletto per ricevere comunicazioni con valore legale da soggetti pubblici e privati, ha valore legale equipollente alla residenza per le comunicazioni telematiche.",
-    "hint": "Pensate a quale funzione ha la PEC rispetto alle comunicazioni tradizionali cartacee."
+    "hint": "Pensate a quale funzione ha la PEC rispetto alle comunicazioni tradizionali cartacee.",
+    "id": "d04efe3b-b31a-409c-b974-6d7c54d53e09"
   }
 ]

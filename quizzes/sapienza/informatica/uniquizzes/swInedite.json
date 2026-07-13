@@ -23,7 +23,8 @@
     "image": "",
     "code": "",
     "explanation": "Le opzioni B, C e D descrivono tutti vantaggi della modularizzazione (astrazione, manutenzione facilitata, separazione per funzionalità), non svantaggi. Quindi nessuna delle alternative proposte rappresenta uno svantaggio.",
-    "hint": "Leggi attentamente se le opzioni descrivono vantaggi o svantaggi della modularizzazione."
+    "hint": "Leggi attentamente se le opzioni descrivono vantaggi o svantaggi della modularizzazione.",
+    "id": "66c9596c-e39a-4539-811f-5291000fdab4"
   },
   {
     "question": "Quale dei seguenti è un tipo di Modello Architetturale?",
@@ -49,7 +50,8 @@
     "image": "",
     "code": "",
     "explanation": "I modelli architetturali includono il modello strutturale statico (struttura del sistema), il modello di distribuzione (deploy su hardware) e il modello dinamico di processo (comportamento runtime). Tutti e tre sono tipi validi.",
-    "hint": "Ricorda che esistono diverse prospettive per modellare un'architettura software."
+    "hint": "Ricorda che esistono diverse prospettive per modellare un'architettura software.",
+    "id": "f218cbad-273d-42b7-88a0-52af64ffe691"
   },
   {
     "question": "Quale di queste view mostra che il sistema è composto da processi interagenti a run time",
@@ -75,7 +77,8 @@
     "image": "",
     "code": "",
     "explanation": "La view 'process' si concentra sui processi in esecuzione e sulle loro interazioni durante il runtime del sistema, mostrando come i componenti comunicano.",
-    "hint": "Le view architetturali includono Logical, Development, Physical e Process; solo una descrive le interazioni a runtime."
+    "hint": "Le view architetturali includono Logical, Development, Physical e Process; solo una descrive le interazioni a runtime.",
+    "id": "a40e8099-406a-4e4d-b36f-02f5c56b2b39"
   },
   {
     "question": "Quale/i dei seguenti è un conflitto Architetturale",
@@ -101,7 +104,8 @@
     "image": "",
     "code": "",
     "explanation": "I conflitti architetturali sono trade-off tra requisiti contrastanti. L'opzione B descrive il conflitto safety-vs-comunicazione, mentre C descrive efficienza-vs-manutenibilità. Entrambi sono conflitti architetturali.",
-    "hint": "Un conflitto architetturale si ha quando due requisiti desiderabili sono in contrapposizione."
+    "hint": "Un conflitto architetturale si ha quando due requisiti desiderabili sono in contrapposizione.",
+    "id": "6d3e34ef-e837-427f-a8fb-720262f94311"
   },
   {
     "question": "Quale documento viene creato dal system analyst dopo che i requisiti sono stati raccolti dai vari stakeholders",
@@ -127,7 +131,8 @@
     "image": "",
     "code": "",
     "explanation": "Il Software Requirement Specification (SRS) è il documento formale che raccoglie e dettaglia tutti i requisiti software dopo la fase di requirement gathering dagli stakeholders.",
-    "hint": "È il documento che formalizza i requisiti raccolti; gli altri termini indicano fasi o attività diverse."
+    "hint": "È il documento che formalizza i requisiti raccolti; gli altri termini indicano fasi o attività diverse.",
+    "id": "67733282-054d-4d54-9b4d-abf34a6af002"
   },
   {
     "question": "Coupling è una indicazione qualitativa del fatto che un modulo",
@@ -153,7 +158,8 @@
     "image": "",
     "code": "",
     "explanation": "Il coupling (accoppiamento) misura il grado di interdipendenza tra moduli. Un alto coupling significa che un modulo dipende fortemente da altri moduli e dall'ambiente esterno, mentre un basso coupling indica moduli più indipendenti e manutenibili.",
-    "hint": "Pensa all'opposto di 'coesione': se la coesione riguarda cosa succede DENTRO un modulo, il coupling riguarda le relazioni all'ESTERNO."
+    "hint": "Pensa all'opposto di 'coesione': se la coesione riguarda cosa succede DENTRO un modulo, il coupling riguarda le relazioni all'ESTERNO.",
+    "id": "d34a2d78-2b79-4d9a-a9b9-053b833ae424"
   },
   {
     "question": "Il primo passo nel Software Development Life Cycle è",
@@ -179,7 +185,8 @@
     "image": "",
     "code": "",
     "explanation": "Il primo passo del SDLC è l'identificazione del problema e delle opportunità, poiché prima di analizzare, progettare o sviluppare qualsiasi soluzione, è fondamentale capire quale problema si vuole risolvere e quali opportunità esistono.",
-    "hint": "Prima di costruire qualcosa, devi sapere COSA costruire e PERCHÉ."
+    "hint": "Prima di costruire qualcosa, devi sapere COSA costruire e PERCHÉ.",
+    "id": "d73998df-14cf-400a-b609-0c019489e2ff"
   },
   {
     "question": "L'importanza del software design si può riassumere in una sola parola che è",
@@ -205,7 +212,8 @@
     "image": "",
     "code": "",
     "explanation": "Il software design è il processo che definisce l'architettura, le componenti e le interfacce per garantire che il prodotto finale soddisfi i requisiti di qualità, incluse affidabilità, manutenibilità e usabilità.",
-    "hint": "Il design è il processo che trasforma i requisiti in caratteristiche concrete del prodotto finale."
+    "hint": "Il design è il processo che trasforma i requisiti in caratteristiche concrete del prodotto finale.",
+    "id": "272e3be3-3e79-4c64-b71f-9df8872adcee"
   },
   {
     "question": "Quale dei seguenti non influenza la qualità del software ed il rendimento dell'organizzazione?",
@@ -231,7 +239,8 @@
     "image": "",
     "code": "",
     "explanation": "I fattori che influenzano la qualità del software e il rendimento organizzativo sono il prodotto stesso, la tecnologia utilizzata e le persone (skill, competenze). Il mercato è un fattore esterno che influenza il business, non direttamente la qualità tecnica del software.",
-    "hint": "I 'fattori P' classici della qualità del software sono: prodotto, persone, processo, progetto, piattaforma."
+    "hint": "I 'fattori P' classici della qualità del software sono: prodotto, persone, processo, progetto, piattaforma.",
+    "id": "f7451520-2712-4672-b709-0fb0c0dfc72b"
   },
   {
     "question": "Cohesion (coesione) è una indicazione qualitativa del fatto che un modulo",
@@ -257,7 +266,8 @@
     "image": "",
     "code": "",
     "explanation": "La cohesion (coesione) misura quanto le responsabilità interne di un modulo sono correlate e focalizzate su un singolo scopo. Un'alta coesione significa che il modulo fa 'una cosa sola' in modo efficace, facilitando manutenibilità e comprensibilità.",
-    "hint": "Coesione e accoppiamento sono opposti: la coesione riguarda le relazioni DENTRO un modulo, non quelle con l'esterno."
+    "hint": "Coesione e accoppiamento sono opposti: la coesione riguarda le relazioni DENTRO un modulo, non quelle con l'esterno.",
+    "id": "ec6a664f-942b-4972-981b-6cabc80b6611"
   },
   {
     "question": "Quale tecnica è applicabile quando altri progetti nello stesso dominio di applicazione sono stati completati?",
@@ -283,7 +293,8 @@
     "image": "",
     "code": "",
     "explanation": "La stima per analogia utilizza dati storici di progetti precedenti simili nel mismo dominio per stimare costi e durata del nuovo progetto, sfruttando l'esperienza accumulata.",
-    "hint": "Si basa sul confronto con progetti passati gia completati."
+    "hint": "Si basa sul confronto con progetti passati gia completati.",
+    "id": "1d1e2fbe-44f1-4897-9a75-1aa4fc64b914"
   },
   {
     "question": "Un ................ si sviluppa usando informazioni storiche sui costi che collegano netriche di software al costo del progetto",
@@ -309,7 +320,8 @@
     "image": "",
     "code": "",
     "explanation": "I modelli algoritmici dei costi (come COCOMO) usano formule matematiche derivate da dati storici che mettono in relazione metriche del software (dimensione, complessita) con i costi del progetto.",
-    "hint": "Utilizza formule e dati storici per calcolare i costi."
+    "hint": "Utilizza formule e dati storici per calcolare i costi.",
+    "id": "026af3f1-7e18-4e85-8b48-4ecffbeb32b3"
   },
   {
     "question": "Quale dei seguenti non si può ottenere con strumenti automatici di stima?",
@@ -335,7 +347,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli strumenti automatici di stima possono predire elementi quantificabili come costi, personale e schedulazione, ma le richieste del cliente sono requisiti soggettivi che richiedono comunicazione diretta e non possono essere dedotte automaticamente.",
-    "hint": "I requisiti del cliente dipendono dalle esigenze specifiche del progetto."
+    "hint": "I requisiti del cliente dipendono dalle esigenze specifiche del progetto.",
+    "id": "ef36a159-2ffb-4905-ad69-c80c0999f3ec"
   },
   {
     "question": "Quale delle seguenti affermazioni sul Model Checking è sbagliata ?",
@@ -361,7 +374,8 @@
     "image": "",
     "code": "",
     "explanation": "Il Model Checking e computazionalmente oneroso perche deve esplorare tutti i possibili stati e percorsi del sistema, problema noto come 'esplosione combinatoria' degli stati.",
-    "hint": "La verifica di tutti i percorsi possibili richiede molte risorse computazionali."
+    "hint": "La verifica di tutti i percorsi possibili richiede molte risorse computazionali.",
+    "id": "c4975888-8fd6-4363-8ade-fbaefef22cd4"
   },
   {
     "question": "Quale modello assume che i sistemi siano creati da componenti riusabili, scripting a programmazione di basi di dati?",
@@ -387,7 +401,8 @@
     "image": "",
     "code": "",
     "explanation": "L'application-composition model assume che i sistemi vengano costruiti assemblando componenti riusabili, integrando scripting e programmazione di basi di dati per creare nuove applicazioni.",
-    "hint": "Si basa sulla composizione di parti gia esistenti per creare nuovi sistemi."
+    "hint": "Si basa sulla composizione di parti gia esistenti per creare nuovi sistemi.",
+    "id": "e98b0496-0edc-4d8c-b0ca-253d646c0cd5"
   },
   {
     "question": "Quake dei seguenti non è una misura diretta di processo di IngSw?",
@@ -413,7 +428,8 @@
     "image": "",
     "code": "",
     "explanation": "L'efficienza è una misura derivata (indiretta) che si ottiene rapportando output a input, mentre costo e sforzo impiegato sono misure dirette di processo.",
-    "hint": "Distingui tra misure che si rilevano direttamente e quelle che derivano da calcoli."
+    "hint": "Distingui tra misure che si rilevano direttamente e quelle che derivano da calcoli.",
+    "id": "427e75f5-7e86-461a-9306-e297277c9669"
   },
   {
     "question": "Quale dei seguenti non è considerato un rischio in project management?",
@@ -439,7 +455,8 @@
     "image": "",
     "code": "",
     "explanation": "Il testing è un'attività di verifica del software, non un rischio. Le alternative B, C e D rappresentano invece eventi incerti che possono impattare negativamente il progetto.",
-    "hint": "Un rischio è un evento incerto negativo, non un'attività di processo."
+    "hint": "Un rischio è un evento incerto negativo, non un'attività di processo.",
+    "id": "62bbc469-2027-4108-8521-f41b7fb92b38"
   },
   {
     "question": "Quale/i di questi parametri principali dovresti usare per calcolare i costi di un progetto di sviluppo software?",
@@ -465,7 +482,8 @@
     "image": "",
     "code": "",
     "explanation": "Il costo totale di un progetto software include tutte le risorse: hardware e software, costi operativi come viaggi e formazione, e il personale (ingegneri e manager).",
-    "hint": "I costi di un progetto includono sia costi diretti che indiretti."
+    "hint": "I costi di un progetto includono sia costi diretti che indiretti.",
+    "id": "d8a62832-fde6-4318-ab4a-7b4d15800cf1"
   },
   {
     "question": "Lo studio di fattibilità è un'attività volta a",
@@ -491,7 +509,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo studio di fattibilità valuta tre aspetti: fattibilità tecnica, economicità e propone strategie realizzative.",
-    "hint": "La fattibilità è una valutazione multidimensionale del progetto."
+    "hint": "La fattibilità è una valutazione multidimensionale del progetto.",
+    "id": "f3821f1d-6b00-4a9a-b5d7-f6c08b28177d"
   },
   {
     "question": "Che relazione c'è tra la modularità di un progetto e l'organizzazione della modalità di sviluppo?",
@@ -517,7 +536,8 @@
     "image": "",
     "code": "",
     "explanation": "La modularità suddivide il sistema in componenti indipendenti, permettendo a team diversi di lavorare simultaneamente in modo distribuito.",
-    "hint": "La divisione in moduli indipendenti abilita il lavoro parallelo dei team."
+    "hint": "La divisione in moduli indipendenti abilita il lavoro parallelo dei team.",
+    "id": "71db1103-4a66-4440-9112-8a6e05acc74f"
   },
   {
     "question": "Quali delle seguenti strategie è diretta ad una riduzione dell'impatto del rischio?",
@@ -543,7 +563,8 @@
     "image": "",
     "code": "",
     "explanation": "Le strategie di minimizzazione (risk minimization) sono specificamente dirette a ridurre la probabilità o l'impatto di un rischio quando non è possibile evitarlo completamente, agendo direttamente sull'attenuazione degli effetti negativi.",
-    "hint": "La minimizzazione riduce l'impatto, l'avoidance elimina il rischio, i contingency gestiscono l'evento."
+    "hint": "La minimizzazione riduce l'impatto, l'avoidance elimina il rischio, i contingency gestiscono l'evento.",
+    "id": "0155c553-2d9c-4db5-96b7-f052ab4b7cb3"
   },
   {
     "question": "Quale dei seguenti non è considerato un rischio in Project management?",
@@ -569,7 +590,8 @@
     "image": "",
     "code": "",
     "explanation": "Il testing è un'attività di verifica e validazione del prodotto, non un fattore di incertezza. Le altre opzioni rappresentano tutti eventi incerti che possono influenzare negativamente il progetto.",
-    "hint": "I rischi sono eventi incerti che possono impedire il raggiungimento degli obiettivi, non attività di progetto."
+    "hint": "I rischi sono eventi incerti che possono impedire il raggiungimento degli obiettivi, non attività di progetto.",
+    "id": "e5142feb-08d4-4dbb-b9cf-8884e25e0290"
   },
   {
     "question": "Quali rischi sono associati ai vincoli imposti dal management o dal mercato?",
@@ -595,7 +617,8 @@
     "image": "",
     "code": "",
     "explanation": "I Business impact risks riguardano specifically i vincoli esterni imposti dall'organizzazione o dal contesto di mercato, come limitazioni di budget, scadenze e requisiti aziendali.",
-    "hint": "Sono rischi legati all'ambiente esterno e alle decisioni strategiche aziendali."
+    "hint": "Sono rischi legati all'ambiente esterno e alle decisioni strategiche aziendali.",
+    "id": "a203fe0a-7077-4021-b868-8a49392e1598"
   },
   {
     "question": "Una risorsa di sistema che ha valore e deve essere protetta si chiama",
@@ -621,7 +644,8 @@
     "image": "",
     "code": "",
     "explanation": "Un asset è una risorsa di sistema che possiede valore per l'organizzazione e richiede protezione da minacce, come dati, software, hardware o asset intangibili.",
-    "hint": "Non è una vulnerabilità (punto debole) né un controllo (misura di sicurezza)."
+    "hint": "Non è una vulnerabilità (punto debole) né un controllo (misura di sicurezza).",
+    "id": "159f155c-eabc-431b-a521-2839907d236b"
   },
   {
     "question": "Le circostanze che hanno il potenziale di causare perdite o danno si chiamano",
@@ -647,7 +671,8 @@
     "image": "",
     "code": "",
     "explanation": "Una minaccia è una circostanza o evento che ha il potenziale di causare perdite o danni a un sistema, violando la sua sicurezza.",
-    "hint": "Distingui dalla vulnerabilità che è il punto debole sfruttabile dalla minaccia."
+    "hint": "Distingui dalla vulnerabilità che è il punto debole sfruttabile dalla minaccia.",
+    "id": "0ac605a0-eb3e-40b4-91a1-9974ec641ae8"
   },
   {
     "question": "Interaction Diagram è un termine composto per",
@@ -673,7 +698,8 @@
     "image": "",
     "code": "",
     "explanation": "Interaction Diagram in UML può fare riferimento a diagrammi che modellano interazioni tra oggetti. Activity Diagram e State Chart Diagram sono entrambi diagrammi comportamentali che mostrano il flusso delle attività o gli stati di un sistema.",
-    "hint": "In UML esistono diverse categorie di diagrammi: strutturali e comportamentali."
+    "hint": "In UML esistono diverse categorie di diagrammi: strutturali e comportamentali.",
+    "id": "2f5e0775-7fee-40b3-8ce8-1705b544da8c"
   },
   {
     "question": "Quale/i di questi diagrammi è time-oriented ?",
@@ -699,7 +725,8 @@
     "image": "",
     "code": "",
     "explanation": "Il Sequence Diagram è orientato al tempo perché mostra esplicitamente la sequenza temporale delle interazioni tra oggetti lungo un asse verticale (timeline).",
-    "hint": "Quale diagramma visualizza le interazioni in ordine cronologico?"
+    "hint": "Quale diagramma visualizza le interazioni in ordine cronologico?",
+    "id": "05de4a5a-0dbe-4c20-a4f9-826c327fe7cf"
   },
   {
     "question": "Quale di questi diagrammi ha una view (visione) statica ?",
@@ -725,7 +752,8 @@
     "image": "",
     "code": "",
     "explanation": "I Use Case Diagram rappresentano le funzionalità del sistema dal punto di vista degli attori, mostrando cosa il sistema fa senza mostrare come lo fa internamente.",
-    "hint": "Quale diagramma mostra le funzionalità senza comportamento dinamico?"
+    "hint": "Quale diagramma mostra le funzionalità senza comportamento dinamico?",
+    "id": "65b93d8d-c623-42c9-86d8-d0efaea02ba4"
   },
   {
     "question": "Quale/i delle seguenti relazioni è/sono valida/e nei Use Case Diagrams ?",
@@ -751,7 +779,8 @@
     "image": "",
     "code": "",
     "explanation": "In UML, i Use Case Diagrams supportano tre relazioni: Generalization (ereditarietà tra use case), Extend (estensione di un use case) e Include (inclusione di funzionalità comuni).",
-    "hint": "Ricorda le tre relazioni base: ereditare, estendere, includere."
+    "hint": "Ricorda le tre relazioni base: ereditare, estendere, includere.",
+    "id": "fc68a419-f914-4eca-b7bc-3ad83e8518ad"
   },
   {
     "question": "Identificare la/le affermazione/i vere per gli activity diagrams.",
@@ -777,6 +806,7 @@
     "image": "",
     "code": "",
     "explanation": "Gli Activity Diagram descrivono flussi di lavoro, non mostrano responsabilità specifiche (punto C inteso come limitazione progettuale), e permettono di identificare attività parallele tramite frecce convergenti/divergenti.",
-    "hint": "Gli activity diagram si concentrano sul flusso delle attività, non sulla struttura degli oggetti."
+    "hint": "Gli activity diagram si concentrano sul flusso delle attività, non sulla struttura degli oggetti.",
+    "id": "2c823aa7-2cc3-4e5e-aad9-e6a85d645e17"
   }
 ]

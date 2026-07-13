@@ -23,7 +23,8 @@
     "image": "",
     "code": "",
     "explanation": "Naive Bayes uses Bayes' theorem to compute the posterior P(y|x) ∝ P(x|y)P(y), and predicts the class that maximizes this joint probability P(x,y).",
-    "hint": "Remember that NB maximizes the posterior, which involves the joint probability of features and labels."
+    "hint": "Remember that NB maximizes the posterior, which involves the joint probability of features and labels.",
+    "id": "e53a2046-6273-4b91-b9ed-2d2ec7bf4478"
   },
   {
     "question": "If your dataset has two variables 𝒙, 𝒙′ such that 𝒙 = 𝒂 ⋅ 𝒙′ for some constant a > 0, then you have:",
@@ -49,7 +50,8 @@
     "image": "",
     "code": "",
     "explanation": "Multicollinearity occurs when predictor variables are linearly dependent, which is exactly the case when x = a·x' for a > 0.",
-    "hint": "Think about what happens when one predictor can be perfectly expressed as a linear function of another."
+    "hint": "Think about what happens when one predictor can be perfectly expressed as a linear function of another.",
+    "id": "cf066337-3ac9-43ae-b873-1720a24d2612"
   },
   {
     "question": "A naïve Bayes classifier can deal with previously unseen feature-label combination through:",
@@ -75,7 +77,8 @@
     "image": "",
     "code": "",
     "explanation": "Laplacian smoothing adds a small constant (usually 1) to count occurrences, preventing zero probabilities for unseen feature-label combinations.",
-    "hint": "What technique adds a small constant to probabilities to avoid zero counts?"
+    "hint": "What technique adds a small constant to probabilities to avoid zero counts?",
+    "id": "c7c1504f-9c03-4ae7-9fdf-85aa8c71b300"
   },
   {
     "question": "For a linear regression model, the expected squared error can be decomposed in:",
@@ -101,7 +104,8 @@
     "image": "",
     "code": "",
     "explanation": "The expected prediction error in linear regression decomposes into bias (underfitting), variance (overfitting), and irreducible noise.",
-    "hint": "Think about the classic decomposition of expected error into components related to model complexity."
+    "hint": "Think about the classic decomposition of expected error into components related to model complexity.",
+    "id": "bb6fda32-2fe6-473d-8ed3-478a543b33ea"
   },
   {
     "question": " What is the key assumption of the Naïve Bayes Classifier?",
@@ -127,7 +131,8 @@
     "image": "",
     "code": "",
     "explanation": "The key assumption is that features are independent of each other given the class label, which simplifies the joint probability P(x|y) to a product of individual conditional probabilities.",
-    "hint": "Consider how conditional independence simplifies complex probability calculations."
+    "hint": "Consider how conditional independence simplifies complex probability calculations.",
+    "id": "dd00be3a-d5d2-430b-88c3-6550995ab7e7"
   },
   {
     "question": "Which one of the following performance indicates the best model for prediction?",
@@ -153,7 +158,8 @@
     "image": "",
     "code": "",
     "explanation": "A good predictive model should generalize well, meaning it performs similarly on both training and test data. Option B shows consistent performance (0.7 on both), indicating the model has learned generalizable patterns without overfitting.",
-    "hint": "Look for the model that performs similarly on both training and test data, not just high on one."
+    "hint": "Look for the model that performs similarly on both training and test data, not just high on one.",
+    "id": "e473b6a2-2f0a-4837-a078-996c9bd4e9ad"
   },
   {
     "question": "You want to predict the market price of a team’s merchandising (t-shirts, hats..), according to the team’s seasonal performance. You suggest using:",
@@ -179,7 +185,8 @@
     "image": "",
     "code": "",
     "explanation": "Since we want to predict a continuous value (market price) based on another variable (seasonal performance), this is a regression problem. Linear regression is specifically designed to predict continuous outcomes.",
-    "hint": "Consider whether you need to predict continuous values or discrete categories."
+    "hint": "Consider whether you need to predict continuous values or discrete categories.",
+    "id": "64b7c893-e55d-41f0-865b-c154f710e8e6"
   },
   {
     "question": "When is the accuracy a misleading classifier performance measure?",
@@ -205,7 +212,8 @@
     "image": "",
     "code": "",
     "explanation": "With imbalanced class distributions, a classifier can achieve high accuracy by simply predicting the majority class most of the time, which masks poor performance on the minority class.",
-    "hint": "Think about what happens when one class is much more frequent than another."
+    "hint": "Think about what happens when one class is much more frequent than another.",
+    "id": "00ad75a0-7ddf-4d01-9d6d-df5f2090e8a9"
   },
   {
     "question": "The goal of linear regression is to?",
@@ -231,7 +239,8 @@
     "image": "",
     "code": "",
     "explanation": "Linear regression's objective is to find the best-fitting linear function that describes the relationship between input variables and the continuous target variable.",
-    "hint": "Regression in statistics involves fitting a function to predict continuous outcomes."
+    "hint": "Regression in statistics involves fitting a function to predict continuous outcomes.",
+    "id": "bf0de10d-ac4c-4a86-a3e2-946cbade53d3"
   },
   {
     "question": "In the bias-variance decomposition of the expected squared error, what does high bias suggest?",
@@ -257,7 +266,8 @@
     "image": "",
     "code": "",
     "explanation": "High bias in the bias-variance decomposition indicates the model is too simple to capture the underlying data patterns, resulting in underfitting and poor performance on both training and test data.",
-    "hint": "Bias measures how far the model's predictions are from the true values on average."
+    "hint": "Bias measures how far the model's predictions are from the true values on average.",
+    "id": "55f903ed-96ac-488c-997e-462bc2925ead"
   },
   {
     "question": "Social network users often form communities according to their tastes. If you had access to their personal data, you may verify this intuition by:",
@@ -283,7 +293,8 @@
     "image": "",
     "code": "",
     "explanation": "Clustering is an unsupervised learning technique that groups data points into clusters based on similarity, making it ideal for discovering communities of users with similar tastes without predefined labels.",
-    "hint": "Think about what technique is used to discover natural groupings in data without predefined labels."
+    "hint": "Think about what technique is used to discover natural groupings in data without predefined labels.",
+    "id": "ef25d24f-16c3-4771-81c5-8e5ed46511f7"
   },
   {
     "question": "R^2 is a measure of:",
@@ -309,7 +320,8 @@
     "image": "",
     "code": "",
     "explanation": "R² (R-squared) measures the proportion of variance in the dependent variable that is explained by the independent variables in the regression model, indicating how well the model fits the data.",
-    "hint": "R² tells you how much of the variation in the outcome is explained by your model."
+    "hint": "R² tells you how much of the variation in the outcome is explained by your model.",
+    "id": "491685cf-b482-48b5-8950-c60463521ae2"
   },
   {
     "question": "A company wants to relate the monthly revenue to productivity parameters such as total number of working hours, etc. They could use:",
@@ -335,7 +347,8 @@
     "image": "",
     "code": "",
     "explanation": "Linear regression is used when the target variable is continuous, making it suitable for predicting monthly revenue from productivity parameters like working hours.",
-    "hint": "Consider whether the outcome variable (revenue) is continuous or categorical."
+    "hint": "Consider whether the outcome variable (revenue) is continuous or categorical.",
+    "id": "05bcaaec-3919-4502-a987-24f0510a0090"
   },
   {
     "question": "How do you perform a linear regression in R?",
@@ -361,7 +374,8 @@
     "image": "",
     "code": "",
     "explanation": "The lm() function in R is used for linear regression models, with the formula syntax y ~ x specifying the relationship between dependent and independent variables.",
-    "hint": "Remember that lm() is the base R function for fitting linear models."
+    "hint": "Remember that lm() is the base R function for fitting linear models.",
+    "id": "2f5fddf1-d26f-4267-91e6-77844218a48b"
   },
   {
     "question": "Your friend proposes to cluster 300 observations by trying all possible clustering and taking the one that minimizes intra cluster variance. You observe that:",
@@ -387,7 +401,8 @@
     "image": "",
     "code": "",
     "explanation": "Enumerating all possible clusterings (partitions) for 300 observations is computationally infeasible because the number of possible partitions grows super-exponentially (Bell numbers), requiring astronomical time even with modern computers.",
-    "hint": "Consider how many possible ways there are to partition 300 objects into any number of clusters."
+    "hint": "Consider how many possible ways there are to partition 300 objects into any number of clusters.",
+    "id": "bf3dbc7d-96af-4559-b557-55ed9a0b772a"
   },
   {
     "question": "Single-linkage clustering works by",
@@ -413,7 +428,8 @@
     "image": "",
     "code": "",
     "explanation": "Single-linkage is a hierarchical agglomerative clustering method that iteratively merges the pair of clusters with the smallest minimum distance between any two points, building larger clusters from smaller ones.",
-    "hint": "Think about what 'agglomerative' means - it involves merging things together gradually."
+    "hint": "Think about what 'agglomerative' means - it involves merging things together gradually.",
+    "id": "624e5bf7-f399-4027-8bc7-3098846eef1a"
   },
   {
     "question": "In linear regression, a high value of 𝑹𝟐 on the training set suggests:",
@@ -439,7 +455,8 @@
     "image": "",
     "code": "",
     "explanation": "R² on the training set measures the proportion of variance explained by the model on the training data itself, indicating fit quality on the training set but not predictive performance on new data.",
-    "hint": "Remember R² is calculated on the training data, not on test/validation data."
+    "hint": "Remember R² is calculated on the training data, not on test/validation data.",
+    "id": "407a7ef7-bbd0-4ad8-97cb-b824b4d1b542"
   },
   {
     "question": "A logistic regression gives the following scores, preceded by the actual label: (Y, 0.85), (Y, 0.75), (N,0.6), (Y,0.5), (N, 0.4), (N, 0.2). For a sensitivity of at least 2/3, the best choice is to predict Y when the score is at least:",
@@ -465,7 +482,8 @@
     "image": "",
     "code": "",
     "explanation": "With sensitivity = TP/(TP+FN), we need at least 2/3. With threshold 0.75, we correctly predict Y for scores 0.85 and 0.75 (2 out of 3 Y values), achieving exactly 2/3 sensitivity.",
-    "hint": "Calculate sensitivity (true positive rate) for each threshold option."
+    "hint": "Calculate sensitivity (true positive rate) for each threshold option.",
+    "id": "0244e843-2893-4ab2-9436-2de5401e6b13"
   },
   {
     "question": "Look at the confusion matrix below. What we can say?",
@@ -491,7 +509,8 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/FDS/matrixwhatcanwesay.png.png",
     "code": "",
     "explanation": "The question refers to a confusion matrix where the classifier predicts the positive class (1) in 60% of cases, meaning the proportion of positive predictions equals 60%.",
-    "hint": "Look at the ratio of positive predictions to total predictions in the confusion matrix."
+    "hint": "Look at the ratio of positive predictions to total predictions in the confusion matrix.",
+    "id": "b450f193-1843-4dc4-89a2-2467cdcaf210"
   },
   {
     "question": "A set of observations (𝒙𝟏, 𝒚𝟏), (𝒙𝟐,𝒚𝟐)…(𝒙𝒏, 𝒚𝒏) obeys the law 𝒚𝒊 ≔ 𝒂𝒙𝒊 + 𝒃 + 𝜺𝒊, where 𝜺𝒊 is some random noise. The task of estimating a and b from the dataset is called:",
@@ -517,7 +536,8 @@
     "image": "",
     "code": "",
     "explanation": "Fitting a linear model with parameters a and b to data following y = ax + b + noise is the definition of linear regression, which estimates these coefficients by minimizing the residual sum of squares.",
-    "hint": "Consider what mathematical technique estimates parameters in a linear equation with noise."
+    "hint": "Consider what mathematical technique estimates parameters in a linear equation with noise.",
+    "id": "01569f37-d0de-482d-8f38-3dfb1d36efc0"
   },
   {
     "question": "Laplacian smoothing aims at:",
@@ -543,7 +563,8 @@
     "image": "",
     "code": "",
     "explanation": "Laplacian smoothing adds a constant (typically 1) to probability estimates to avoid zero probabilities for unseen events, preventing the model from excessively penalizing observations it hasn't encountered during training.",
-    "hint": "Think about what happens to probabilities when a category hasn't been seen before."
+    "hint": "Think about what happens to probabilities when a category hasn't been seen before.",
+    "id": "a7e36c15-7611-4b3b-8329-05082de14a22"
   },
   {
     "question": "A dataset of points (𝒙𝟏, 𝒚𝟏), (𝒙𝟐,𝒚𝟐)…(𝒙𝒏, 𝒚𝒏) has been generated by the model 𝒚𝒊 ≔ 𝒂𝒙𝒊 + 𝒃 + 𝜺𝒊, where 𝜺𝒊 is gaussian noise. Linear regression aims at estimating:",
@@ -569,7 +590,8 @@
     "image": "",
     "code": "",
     "explanation": "Linear regression estimates the parameters of the linear relationship (slope a and intercept b) that best fits the data, treating the noise as random error that should not be estimated.",
-    "hint": "The noise ε is random and unpredictable - we don't estimate it."
+    "hint": "The noise ε is random and unpredictable - we don't estimate it.",
+    "id": "95269dd1-96f4-4824-8b41-a10526db450f"
   },
   {
     "question": "Which one of the following R commands selects only the rows of data where X equals 0?",
@@ -595,7 +617,8 @@
     "image": "",
     "code": "",
     "explanation": "In R's dplyr package, filter() is the function specifically designed to select rows based on a condition, while select() chooses columns and summarize() aggregates data.",
-    "hint": "Which dplyr function is specifically for row selection based on conditions?"
+    "hint": "Which dplyr function is specifically for row selection based on conditions?",
+    "id": "cbe54773-4f47-415a-803b-c7263bd3b9d8"
   },
   {
     "question": "If an algorithm has exponential complexity, then we can assume that:",
@@ -621,7 +644,8 @@
     "image": "",
     "code": "",
     "explanation": "Exponential complexity grows so rapidly (O(2^n)) that no amount of technological improvement can make it practical for reasonably large inputs, as the growth outpaces any hardware advances.",
-    "hint": "Consider how exponential growth compares to any potential future technological improvement."
+    "hint": "Consider how exponential growth compares to any potential future technological improvement.",
+    "id": "0b7276d9-db6c-44b8-a396-a1e4553e4f11"
   },
   {
     "question": "If you have n points, what is the number of clusters that minimizes the within-cluster sum of square?",
@@ -647,7 +671,8 @@
     "image": "",
     "code": "",
     "explanation": "With n clusters (each point in its own cluster), the within-cluster sum of squares equals zero since each centroid coincides with its point, which is the mathematical minimum.",
-    "hint": "What happens when each point becomes its own cluster?"
+    "hint": "What happens when each point becomes its own cluster?",
+    "id": "2759208d-cd3d-46b3-b7a9-0e184ed17226"
   },
   {
     "question": "Which regression model has smaller squared error in fitting a real function 𝒇(𝒙)?",
@@ -673,7 +698,8 @@
     "image": "",
     "code": "",
     "explanation": "When the true underlying function is linear (a 'real function' in the context of regression), a simple linear regression is correctly specified and will have the smallest squared error because more complex models (polynomials) would overfit or introduce unnecessary variance.",
-    "hint": "Consider whether the model is correctly specified for the true function being fitted."
+    "hint": "Consider whether the model is correctly specified for the true function being fitted.",
+    "id": "651feeb6-78f4-4381-ba31-9e574e89cb04"
   },
   {
     "question": "A doping screening is tested on a pool of 800 athletes of which 796 are clean. The test is correct in 99% of the cases. What can we say about it?",
@@ -699,7 +725,8 @@
     "image": "",
     "code": "",
     "explanation": "With only 4 doped athletes out of 800 and a 99% accuracy rate, it's possible (though unlikely) that all 4 doped athletes were misclassified as clean, meaning the test missed all of them. The 1% error rate (≈8 people) could easily include all 4 positives.",
-    "hint": "Consider the very low base rate of positives (4 out of 800) and what the 99% accuracy means for error distribution."
+    "hint": "Consider the very low base rate of positives (4 out of 800) and what the 99% accuracy means for error distribution.",
+    "id": "3b2a1039-9c8a-4934-ac60-f7c94d32127f"
   },
   {
     "question": "In linear programming, the space of feasible solution is:",
@@ -725,7 +752,8 @@
     "image": "",
     "code": "",
     "explanation": "In linear programming, the feasible region is defined by linear constraints, which form a convex polytope (a bounded convex polyhedron) in ℝⁿ. This is a fundamental property of linear programming problems.",
-    "hint": "Recall that linear constraints define half-spaces, and their intersection creates a specific geometric structure."
+    "hint": "Recall that linear constraints define half-spaces, and their intersection creates a specific geometric structure.",
+    "id": "b99921ef-f669-43dd-a798-189cea25a1e9"
   },
   {
     "question": "The explained variance of a clustering equals:",
@@ -751,7 +779,8 @@
     "image": "",
     "code": "",
     "explanation": "Explained variance in clustering measures the proportion of total variance accounted for by the cluster structure, calculated as within-cluster SSE divided by total sum of squares (1 minus this ratio gives the unexplained variance).",
-    "hint": "Think of this as the complement of the unexplained variance ratio."
+    "hint": "Think of this as the complement of the unexplained variance ratio.",
+    "id": "b06f1cda-12f0-490d-adba-36d67d9feb72"
   },
   {
     "question": "Gradient descent is a technique we have used to:",
@@ -777,7 +806,8 @@
     "image": "",
     "code": "",
     "explanation": "Gradient descent is an optimization algorithm that iteratively moves in the direction of the negative gradient to find local minima of a function, commonly used in machine learning to minimize loss functions.",
-    "hint": "Remember it searches for optima by following the slope of the function."
+    "hint": "Remember it searches for optima by following the slope of the function.",
+    "id": "2122a8fe-2fac-462f-9a3c-d9c82ac3164f"
   },
   {
     "question": "Which of these models is probably overfitting?",
@@ -803,7 +833,8 @@
     "image": "",
     "code": "",
     "explanation": "Overfitting occurs when a model performs very well on training data but poorly on test data, indicating it has memorized training examples rather than learning generalizable patterns. The large gap between training (0.8) and test (0.1) performance is the telltale sign of overfitting.",
-    "hint": "Look for a large discrepancy between training and test performance - that's the key indicator."
+    "hint": "Look for a large discrepancy between training and test performance - that's the key indicator.",
+    "id": "7bd6ba3e-370e-46f0-8f09-a99c55aac0f9"
   },
   {
     "question": "Laplacian smoothing aims at:",
@@ -829,7 +860,8 @@
     "image": "",
     "code": "",
     "explanation": "Laplacian smoothing adds a small constant (typically 1) to each count to avoid zero probabilities. This reduces the model's sensitivity to noise in the data, especially for rare events or small sample sizes.",
-    "hint": "Think about what happens when you have zero or very small counts in your probability calculations."
+    "hint": "Think about what happens when you have zero or very small counts in your probability calculations.",
+    "id": "134507f6-5c51-4f3a-ad7f-ad8a2d48f69a"
   },
   {
     "question": "To visualize a hierarchical clustering one can use:",
@@ -855,7 +887,8 @@
     "image": "",
     "code": "",
     "explanation": "A dendrogram is a tree-like diagram that displays the hierarchical clustering process, showing how clusters are nested and merged at different similarity levels.",
-    "hint": "Think about what structure naturally represents hierarchy - a tree-like branching structure."
+    "hint": "Think about what structure naturally represents hierarchy - a tree-like branching structure.",
+    "id": "716428e7-2f63-4193-9f45-ac9eb83a038a"
   },
   {
     "question": "The goal of linear regression is to:",
@@ -881,7 +914,8 @@
     "image": "",
     "code": "",
     "explanation": "Linear regression finds the best-fit line (or hyperplane in higher dimensions) that minimizes the sum of squared differences between predicted and actual values, learning a linear function from the data.",
-    "hint": "What mathematical object describes a straight line relationship between variables?"
+    "hint": "What mathematical object describes a straight line relationship between variables?",
+    "id": "94111fda-8de8-4c4d-b410-9d3fa704483e"
   },
   {
     "question": "Naive Bayes classiers work well for:",
@@ -907,7 +941,8 @@
     "image": "",
     "code": "",
     "explanation": "Naive Bayes classifiers are particularly effective for text classification tasks like spam filtering because they handle high-dimensional sparse data well and make strong independence assumptions that work reasonably well in practice.",
-    "hint": "Think about a classic, widely-used application where you need to classify text documents into categories."
+    "hint": "Think about a classic, widely-used application where you need to classify text documents into categories.",
+    "id": "8bf1cc88-59c6-4089-8ca9-b00f994d252b"
   },
   {
     "question": "The explained variance of a clustering equals:",
@@ -933,7 +968,8 @@
     "image": "",
     "code": "",
     "explanation": "The explained variance in clustering measures the proportion of total variance accounted for by the cluster structure. It's computed as between-cluster variance divided by total variance (which equals within-cluster variance + between-cluster variance), similar to R² in regression.",
-    "hint": "Think of total variance as sum of within-cluster and between-cluster variance."
+    "hint": "Think of total variance as sum of within-cluster and between-cluster variance.",
+    "id": "4fbea09e-ffda-4f1c-a7fd-731f4324c700"
   },
   {
     "question": "A binary classifier on 6 points gives the probabilities: 0.9, 0.85, 0.75, 0.5, 0.4, 0.3; the correct labels are 1,1,0,1,0,0. What is the best probability threshold, if we need FPR <= 1/3?",
@@ -959,7 +995,8 @@
     "image": "",
     "code": "",
     "explanation": "FPR = FP/(FP+TN). At threshold 0.45, we get exactly 1 FP out of 3 negatives (the point with probability 0.75), giving FPR = 1/3 which satisfies the constraint.",
-    "hint": "Calculate FPR for each candidate threshold by counting false positives and true negatives."
+    "hint": "Calculate FPR for each candidate threshold by counting false positives and true negatives.",
+    "id": "9f77bf07-9fcd-47f5-be4c-3e1e5ac34fb7"
   },
   {
     "question": "Mark the wrong statement about gradient descent:",
@@ -985,7 +1022,8 @@
     "image": "",
     "code": "",
     "explanation": "A larger learning rate can cause more severe oscillations or instability, not damp them. Too high a learning rate causes overshooting. Batch gradient descent uses ALL samples, not mini-batch.",
-    "hint": "Consider how learning rate affects the step size in the parameter update."
+    "hint": "Consider how learning rate affects the step size in the parameter update.",
+    "id": "b11d8311-7ed3-41e4-9fe1-cff260d7c08c"
   },
   {
     "question": "Which task does not require to learn a model?",
@@ -1011,7 +1049,8 @@
     "image": "",
     "code": "",
     "explanation": "Clustering is an unsupervised learning task that groups data without labeled responses. The other methods (regression, classification) learn predictive models from labeled training data.",
-    "hint": "Supervised methods require labeled data to learn a model."
+    "hint": "Supervised methods require labeled data to learn a model.",
+    "id": "fc840868-6372-47ab-a4c5-576880c2b0d8"
   },
   {
     "question": "For two sets A, B the probability that the first element in a random permutation of A U B is in A ∩ B:",
@@ -1037,7 +1076,8 @@
     "image": "",
     "code": "",
     "explanation": "The probability equals |A ∩ B|/|A ∪ B|, which is precisely the Jaccard index J(A,B). A random permutation gives each element equal chance to be first.",
-    "hint": "This is exactly the definition of Jaccard similarity."
+    "hint": "This is exactly the definition of Jaccard similarity.",
+    "id": "9f008150-1558-47ae-8c76-d4ec8c89920a"
   },
   {
     "question": "The R^2 and the p-values of a regression:",
@@ -1063,7 +1103,8 @@
     "image": "",
     "code": "",
     "explanation": "R² measures the proportion of variance explained by the regression model (goodness of fit), while p-values test the statistical significance of the relationship between variables. They capture different aspects of model quality.",
-    "hint": "Think about what each metric actually measures in terms of statistical inference vs. explanatory power."
+    "hint": "Think about what each metric actually measures in terms of statistical inference vs. explanatory power.",
+    "id": "c25cd5f0-6658-4932-8e81-6f86cd525da0"
   },
   {
     "question": "xXmini=1k||x-ci||22 is the objective function of:",
@@ -1089,7 +1130,8 @@
     "image": "",
     "code": "",
     "explanation": "The formula ||x-ci||² represents squared Euclidean distance. Minimizing the sum of squared distances to cluster centroids is exactly the k-means objective function.",
-    "hint": "Think about what the notation 2 means in the subscript."
+    "hint": "Think about what the notation 2 means in the subscript.",
+    "id": "ca410513-7aca-4092-a637-eef5b6c28f50"
   },
   {
     "question": "Classification accuracy is misleading when:",
@@ -1115,7 +1157,8 @@
     "image": "",
     "code": "",
     "explanation": "When classes are imbalanced, a classifier that always predicts the majority class can achieve high accuracy without actually learning meaningful patterns.",
-    "hint": "Consider a dataset with 99% negative and 1% positive labels."
+    "hint": "Consider a dataset with 99% negative and 1% positive labels.",
+    "id": "e4e70dd5-60ef-47bb-89c0-c1c0f9d870b5"
   },
   {
     "question": "A binary classifier on 6 points gives the probabilities: 0.85, 0.75, 0.65, 0.5, 0.4, 0.2; the correct labels are 1,1,1,0,0,0. What is the best probability threshold?",
@@ -1141,7 +1184,8 @@
     "image": "",
     "code": "",
     "explanation": "A threshold of 0.6 perfectly separates all six points: the three with probabilities 0.85, 0.75, 0.65 are above 0.6 (predicted as 1), and the three below 0.6 are predicted as 0, matching all true labels.",
-    "hint": "Find the threshold that creates a boundary between the positive and negative probability values."
+    "hint": "Find the threshold that creates a boundary between the positive and negative probability values.",
+    "id": "18310de4-f4e6-4878-b629-015ea624b35c"
   },
   {
     "question": "An algorithm is considered practical if its running time, as a function of the input size, is:",
@@ -1167,7 +1211,8 @@
     "image": "",
     "code": "",
     "explanation": "Polynomial time algorithms (like O(n²), O(n³)) are considered practically tractable, as opposed to exponential time algorithms which become infeasible even for moderate input sizes.",
-    "hint": "This is the classic distinction in computational complexity theory."
+    "hint": "This is the classic distinction in computational complexity theory.",
+    "id": "0278d96e-d93e-4d47-af57-f7d9d38943b8"
   },
   {
     "question": "The naive Bayes classier learns:",
@@ -1193,7 +1238,8 @@
     "image": "",
     "code": "",
     "explanation": "Naive Bayes learns the joint probability distribution P(X,Y) by estimating both P(Y) (prior) and P(X|Y) (likelihood) from training data, then applying Bayes' theorem for classification.",
-    "hint": "Recall that Naive Bayes uses Bayes' theorem: P(Y|X) = P(X|Y)P(Y)/P(X)"
+    "hint": "Recall that Naive Bayes uses Bayes' theorem: P(Y|X) = P(X|Y)P(Y)/P(X)",
+    "id": "0470596c-5de0-482c-943d-c954b5a86f8a"
   },
   {
     "question": "k-PCA differs from k-means in that xi is:",
@@ -1219,7 +1265,8 @@
     "image": "",
     "code": "",
     "explanation": "In k-PCA, each data point is represented as a linear combination of the kernel principal component directions, which are computed in the feature space induced by the kernel.",
-    "hint": "Think about what k-PCA outputs - it's a projection onto new axes (components)."
+    "hint": "Think about what k-PCA outputs - it's a projection onto new axes (components).",
+    "id": "4bf2c889-19a6-4777-a8ac-cda9713a04c0"
   },
   {
     "question": "In logistic regression, the estimated probability of xi being a positive is:",
@@ -1245,7 +1292,8 @@
     "image": "",
     "code": "",
     "explanation": "Logistic regression uses the sigmoid (logistic) function to transform the linear combination of features into a probability value between 0 and 1.",
-    "hint": "Remember the characteristic S-shaped curve in logistic regression."
+    "hint": "Remember the characteristic S-shaped curve in logistic regression.",
+    "id": "bbfe4080-f1d1-4b42-b58f-91c86eeb215a"
   },
   {
     "question": "A sports betting agency wants to predict whether the Italian national football team will or not qualify for the World Cup championship. They should use:",
@@ -1271,7 +1319,8 @@
     "image": "",
     "code": "",
     "explanation": "Predicting whether the Italian team will qualify or not is a binary classification problem, and logistic regression is specifically designed for binary classification tasks.",
-    "hint": "Consider whether this is a classification or regression problem, and how many possible outcomes exist."
+    "hint": "Consider whether this is a classification or regression problem, and how many possible outcomes exist.",
+    "id": "8b755cd3-cfc3-4b97-8d03-c2d0ff3d0fac"
   },
   {
     "question": "A problem X  NP is said to be NP-complete if:",
@@ -1297,7 +1346,8 @@
     "image": "",
     "code": "",
     "explanation": "By definition, a problem X is NP-complete if every problem in NP can be polynomially reduced to X, making X at least as hard as any problem in NP.",
-    "hint": "Remember: NP-complete problems are the 'hardest' problems in NP - think about the direction of reduction."
+    "hint": "Remember: NP-complete problems are the 'hardest' problems in NP - think about the direction of reduction.",
+    "id": "a183414e-d6e7-4a1d-a327-c721440c5ea8"
   },
   {
     "question": "The quadratic loss of linear regression is:",
@@ -1323,7 +1373,8 @@
     "image": "",
     "code": "",
     "explanation": "La perdita quadratica della regressione lineare è la somma dei quadrati delle differenze tra i valori osservati (yi) e i valori predetti (ŷi), nota come Mean Squared Error (MSE).",
-    "hint": "La regressione lineare minimizza la somma dei quadrati degli errori tra valori reali e predetti."
+    "hint": "La regressione lineare minimizza la somma dei quadrati degli errori tra valori reali e predetti.",
+    "id": "7784b7b1-fe69-464a-9177-973ded1a0a09"
   },
   {
     "question": "What is the best threshold value for turning probability scores into binary predictions?",
@@ -1349,7 +1400,8 @@
     "image": "",
     "code": "",
     "explanation": "La soglia ottimale dipende dal problema specifico perché varia in base al costo relativo dei falsi positivi rispetto ai falsi negativi e all'obiettivo primario del modello.",
-    "hint": "In diagnostica medica vs screening generalista, le soglie ideali sono diverse."
+    "hint": "In diagnostica medica vs screening generalista, le soglie ideali sono diverse.",
+    "id": "f43a6c1f-dae5-40c3-a694-2cfbd63476d5"
   },
   {
     "question": "In Human coding, the encoder:",
@@ -1375,7 +1427,8 @@
     "image": "",
     "code": "",
     "explanation": "Nella codifica di Huffman (Human coding), ogni simbolo viene processato singolarmente per assegnargli un codice a lunghezza variabile, senza considerare sequenze di simboli identici.",
-    "hint": "Distinguere tra codifica run-length e codifica simbolo-per-simbolo."
+    "hint": "Distinguere tra codifica run-length e codifica simbolo-per-simbolo.",
+    "id": "40d9f1f3-17a9-4f2c-9664-c6b4888d4778"
   },
   {
     "question": "The Maximum Likelihood Estimator for the parameters of a linear model with independent Gaussian noise is:",
@@ -1401,7 +1454,8 @@
     "image": "",
     "code": "",
     "explanation": "Sotto l'assunzione di rumore Gaussiano indipendente con varianza costante, lo stimatore di massima verosimiglianza (MLE) coincide esattamente con la soluzione dei minimi quadrati ordinari (OLS).",
-    "hint": "Il rumore Gaussiano con varianza costante porta a MLE = OLS."
+    "hint": "Il rumore Gaussiano con varianza costante porta a MLE = OLS.",
+    "id": "9dc47260-7852-47d8-8a7a-28348fc6fa15"
   },
   {
     "question": "Consider the LP: min f(x,y)=x+y; x+y2; x,y0. The corresponding polytope is:",
@@ -1427,7 +1481,8 @@
     "image": "",
     "code": "",
     "explanation": "Il vincolo x+y≤2 (se interpretato come ≤) con x,y≥0 definisce un'area limitata (triangolo), ma se i vincoli sono inconsistenti tra loro (come x+y≤2 e x+y≥2 che si escludono a vicenda), il politopo è vuoto.",
-    "hint": "Un politopo è vuoto quando non esiste nessun punto che soddisfi tutti i vincoli contemporaneamente."
+    "hint": "Un politopo è vuoto quando non esiste nessun punto che soddisfi tutti i vincoli contemporaneamente.",
+    "id": "e7cc26f4-9d24-4b25-b67d-7caedd4169e4"
   },
   {
     "question": "Min-hashing maps each document to:",
@@ -1453,7 +1508,8 @@
     "image": "",
     "code": "",
     "explanation": "Min-hashing is a technique for estimating Jaccard similarity between sets. It converts each document (represented as a set of elements) into a compact signature (a set of hash values) that can be used to quickly estimate similarity between documents.",
-    "hint": "Think about what 'signature' means in the context of locality-sensitive hashing."
+    "hint": "Think about what 'signature' means in the context of locality-sensitive hashing.",
+    "id": "34ff7732-10ec-4de1-8789-034586d01e33"
   },
   {
     "question": "How do you do a linear regression in R?",
@@ -1479,7 +1535,8 @@
     "image": "",
     "code": "",
     "explanation": "In R, the lm() function is the standard way to fit linear models. The formula notation y ~ x specifies the relationship between the dependent variable (y) and the independent variable (x), with the data parameter specifying the data frame.",
-    "hint": "Remember that 'lm' stands for linear model and uses formula syntax in R."
+    "hint": "Remember that 'lm' stands for linear model and uses formula syntax in R.",
+    "id": "e788ac40-1ea0-4ece-b308-b39e4c0db40d"
   },
   {
     "question": "How do you measure the significance of an estimate?",
@@ -1505,7 +1562,8 @@
     "image": "",
     "code": "",
     "explanation": "The p-value measures the probability of observing the estimated effect (or more extreme) if the null hypothesis were true. It indicates whether an estimate is statistically significant, helping determine if an observed relationship is likely real or due to chance.",
-    "hint": "Think about hypothesis testing and what statistical measure tells you if an effect is likely not due to random chance."
+    "hint": "Think about hypothesis testing and what statistical measure tells you if an effect is likely not due to random chance.",
+    "id": "c3e537a6-e812-4869-be7b-755deb73d242"
   },
   {
     "question": "A manufacturing company wants to nd out the relationship between the budget spent in advertising and the total sales of the next semester. They could use:",
@@ -1531,7 +1589,8 @@
     "image": "",
     "code": "",
     "explanation": "Linear regression is used when the target variable is continuous. Here, both advertising budget (predictor) and total sales (outcome) are continuous variables, and we want to understand their linear relationship.",
-    "hint": "Consider the type of the target variable - sales is a continuous quantity, not a category."
+    "hint": "Consider the type of the target variable - sales is a continuous quantity, not a category.",
+    "id": "53d243e8-e870-4429-86a5-9bbb743db9ae"
   },
   {
     "question": "The company wants to predict if a machine will have a technical failure in the next 10 days. This could be done with:",
@@ -1557,7 +1616,8 @@
     "image": "",
     "code": "",
     "explanation": "Logistic regression is a classification method used for binary outcomes. Predicting whether a machine will fail (yes/no) is a binary classification problem, making logistic regression the appropriate choice.",
-    "hint": "The outcome is binary - the machine either will fail or will not fail in the next 10 days."
+    "hint": "The outcome is binary - the machine either will fail or will not fail in the next 10 days.",
+    "id": "abeab3cc-15f4-4035-819e-3ed3662b053c"
   },
   {
     "question": "Moreover, items from the same production line are similar while those from different lines are radically different. You suggest to check by using:",
@@ -1583,7 +1643,8 @@
     "image": "",
     "code": "",
     "explanation": "Il clustering è la tecnica di apprendimento non supervisionato che raggruppa automaticamente punti simili nello stesso cluster e diversi in cluster separati, senza bisogno di etichette预先.",
-    "hint": "Cerca una tecnica che trovi gruppi naturali nei dati senza usare variabili obiettivo."
+    "hint": "Cerca una tecnica che trovi gruppi naturali nei dati senza usare variabili obiettivo.",
+    "id": "3555998c-a354-4f73-abbf-49fe10cb58b8"
   },
   {
     "question": "What is the true positive rate aka sensitivity?",
@@ -1609,7 +1670,8 @@
     "image": "",
     "code": "",
     "explanation": "La sensitivity o true positive rate misura la capacità del modello di identificare correttamente tutti i casi positivi reali, ovvero la proporzione di positivi che il modello ha classificato come positivi.",
-    "hint": "Ricorda la differenza tra vera positività (correctly classified positives) e falsa positività."
+    "hint": "Ricorda la differenza tra vera positività (correctly classified positives) e falsa positività.",
+    "id": "a5796b99-d3ca-46a7-b5f2-2665c845cc46"
   },
   {
     "question": "Single-linkage clustering works by:",
@@ -1635,7 +1697,8 @@
     "image": "",
     "code": "",
     "explanation": "Single-linkage è un algoritmo di clustering gerarchico agglomerativo che parte da cluster individuali e ripetibilmente unisce i due cluster con la distanza minima tra i loro punti più vicini.",
-    "hint": "È un metodo gerarchico che parte dai singoli punti e unisce progressivamente i cluster più vicini."
+    "hint": "È un metodo gerarchico che parte dai singoli punti e unisce progressivamente i cluster più vicini.",
+    "id": "9679c361-c3c3-4d81-847e-4c7a3cf517ab"
   },
   {
     "question": "You have a set of observations (x; y) with x; y 2 R. Which one of the following gives the highest R2?",
@@ -1661,7 +1724,8 @@
     "image": "",
     "code": "",
     "explanation": "Un polinomio di grado maggiore ha maggiore capacità di flessione e può sempre adattarsi perfettamente o meglio ai dati di training, aumentando quindi R² rispetto a modelli più semplici.",
-    "hint": "Modelli con più parametri possono sempre replicare (o superare) le prestazioni di modelli più semplici sui stessi dati."
+    "hint": "Modelli con più parametri possono sempre replicare (o superare) le prestazioni di modelli più semplici sui stessi dati.",
+    "id": "48b0de9b-542a-44fa-a42b-96c70ff2ea42"
   },
   {
     "question": "Which one of the following performances indicates the best model for prediction?",
@@ -1687,7 +1751,8 @@
     "image": "",
     "code": "",
     "explanation": "Un buon modello predittivo deve generalizzare, ovvero avere prestazioni simili su dati di training e test. L'opzione B mostra prestazioni buone e consistenti su entrambi i set, indicando assenza di overfitting.",
-    "hint": "Cerca la combinazione con la minor differenza tra training e test, oltre a prestazioni accettabili."
+    "hint": "Cerca la combinazione con la minor differenza tra training e test, oltre a prestazioni accettabili.",
+    "id": "5324344d-73b9-4072-9c88-1ff2f3f97706"
   },
   {
     "question": "Which task does not require a training set (i.e. a dataset used for learning a model)?",
@@ -1713,7 +1778,8 @@
     "image": "",
     "code": "",
     "explanation": "Clustering is an unsupervised learning technique that groups data based on similarity without requiring labeled examples - it discovers structure in data without learning from a training set with known outcomes.",
-    "hint": "Think about whether the method needs labeled examples to learn."
+    "hint": "Think about whether the method needs labeled examples to learn.",
+    "id": "0790cd3f-e56a-4ce9-a156-1756e3e8e078"
   },
   {
     "question": "If you have n points, what is the number of clusters that minimizes the within-cluster sum of squares?",
@@ -1739,7 +1805,8 @@
     "image": "",
     "code": "",
     "explanation": "When each point forms its own cluster (n clusters), the within-cluster sum of squares is exactly zero since there's no variance within a single point - this is the mathematical minimum, though not useful in practice.",
-    "hint": "Consider what happens when each point becomes its own cluster."
+    "hint": "Consider what happens when each point becomes its own cluster.",
+    "id": "e24ff522-d5a8-4370-9fc7-4d38ddba518c"
   },
   {
     "question": "In the bias-variance decomposition of the expected squared error, what does a high bias suggest?",
@@ -1765,7 +1832,8 @@
     "image": "",
     "code": "",
     "explanation": "High bias means the model makes overly simplistic assumptions and fails to capture the underlying data pattern, which is the definition of underfitting.",
-    "hint": "Think about whether the model is too simple to learn the data structure."
+    "hint": "Think about whether the model is too simple to learn the data structure.",
+    "id": "f7b7fc4e-514f-488d-9ae7-f3ef888cf960"
   },
   {
     "question": "A set of observations (x1; y1), (x2; y2), …,(xn; yn) obeys the law yi := axi + b + i where  i is some random noise. The task of estimating a and b from the dataset is called:",
@@ -1791,7 +1859,8 @@
     "image": "",
     "code": "",
     "explanation": "This describes the classic linear regression problem: estimating the linear relationship y = ax + b + ε where a and b are the slope and intercept parameters to be learned from data with noise.",
-    "hint": "What method estimates linear relationships between variables with random noise?"
+    "hint": "What method estimates linear relationships between variables with random noise?",
+    "id": "1fb8905f-77b1-4c7c-a144-168d831b4791"
   },
   {
     "question": "A regression model (M1) on a training set gives R^2 = 0.5 while a second model (M2) gives R^2 = 0.9. What can we say about predictions on a test set?",
@@ -1817,7 +1886,8 @@
     "image": "",
     "code": "",
     "explanation": "R² measures fit on training data only. A higher training R² doesn't guarantee better test performance due to potential overfitting, and test error depends on many factors beyond training R².",
-    "hint": "Remember that training performance doesn't always translate to test performance."
+    "hint": "Remember that training performance doesn't always translate to test performance.",
+    "id": "d14d987c-2f75-4f3b-b67f-27180809e09c"
   },
   {
     "question": "You developed a clinical test to distinguish sick patients from healthy patients. In the population, on average 998 out of 1000 people are healthy, and the test gives an incorrect prediction in 0.5% of the cases. This means the test:",
@@ -1843,7 +1913,8 @@
     "image": "",
     "code": "",
     "explanation": "With only 2 sick patients out of 1000 and a 0.5% error rate, it's statistically possible (though unlikely) that both sick patients receive false negatives, meaning the test could miss all sick patients.",
-    "hint": "Consider the small number of sick patients and what the 0.5% error means for each group."
+    "hint": "Consider the small number of sick patients and what the 0.5% error means for each group.",
+    "id": "63cd9a05-0d53-4486-a64d-d4c3ac3db214"
   },
   {
     "question": "How would you describe overfitting?",
@@ -1869,7 +1940,8 @@
     "image": "",
     "code": "",
     "explanation": "Overfitting occurs when a model is so complex it learns the random noise in training data rather than the true underlying pattern, failing to generalize to new data.",
-    "hint": "Think about what 'following the noise' means for model performance on new data."
+    "hint": "Think about what 'following the noise' means for model performance on new data.",
+    "id": "9e1b7251-ab99-4971-8904-ac819048a3a0"
   },
   {
     "question": "You have to convert the scores given by a logistic regression model into binary predictions. What is the best threshold?",
@@ -1895,7 +1967,8 @@
     "image": "",
     "code": "",
     "explanation": "The optimal threshold depends on the context—for some applications minimizing false negatives is critical, for others minimizing false positives matters more, so there's no universal best threshold.",
-    "hint": "Consider whether a false positive or false negative is more costly in different scenarios."
+    "hint": "Consider whether a false positive or false negative is more costly in different scenarios.",
+    "id": "11acd559-d0a0-41ef-b697-709712a77176"
   },
   {
     "question": "Given a linear regression model, the expected squared error can be usefully decomposed in:",
@@ -1921,7 +1994,8 @@
     "image": "",
     "code": "",
     "explanation": "The expected squared error in linear regression decomposes into bias (systematic error from model assumptions), variance (sensitivity to training data), and irreducible error (noise).",
-    "hint": "This is the fundamental bias-variance tradeoff decomposition."
+    "hint": "This is the fundamental bias-variance tradeoff decomposition.",
+    "id": "eacfa3b2-088d-4d56-9cfa-775afdac5281"
   },
   {
     "question": "Look at the confusion matrix below (1=positive=true,0=negative=false). What can we say?",
@@ -1947,7 +2021,8 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/FDS/1positive0negative.png.png",
     "code": "",
     "explanation": "Specificity = TN/(TN+FP). From the confusion matrix, TN=2, FP=1, so specificity = 2/(2+1) = 2/3.",
-    "hint": "Remember specificity is calculated from the negative class row."
+    "hint": "Remember specificity is calculated from the negative class row.",
+    "id": "6edf7650-5b53-4545-85b3-d1fb4887029f"
   },
   {
     "question": "You are using k-means, and notice that different executions give different results. This happens since:",
@@ -1973,7 +2048,8 @@
     "image": "",
     "code": "",
     "explanation": "k-means utilizza un'inizializzazione random dei centroidi (k-means++) e può convergere a minimi locali diversi ad ogni esecuzione, producendo risultati diversi.",
-    "hint": "Il problema non è il tempo né il fatto che sia non supervisionato, ma l'inizializzazione randomica."
+    "hint": "Il problema non è il tempo né il fatto che sia non supervisionato, ma l'inizializzazione randomica.",
+    "id": "68712576-1004-428c-9253-f9f05336b740"
   },
   {
     "question": "You have 6 observations; their class (Positive or Negative) and the score given by a logistic regression are as follows: (P,0.9), (P,0.85), (N,0.75), (P,0.5), (N,0.4), (N,0.3). If you do not want the false positive rate of your classier to exceed 1/3, the best choice is to predict “Y\" whenever the score is at least:",
@@ -1999,7 +2075,8 @@
     "image": "",
     "code": "",
     "explanation": "Per avere FPR = FP/(FP+TN) ≤ 1/3 con 3 negativi, servono al massimo 1 FP. Con soglia 0.45, solo il negativo con score 0.75 viene classificato come Y, dando FP=1 e FPR=1/3.",
-    "hint": "Calcola il FPR per ogni possibile soglia e verifica quale soddisfa il vincolo."
+    "hint": "Calcola il FPR per ogni possibile soglia e verifica quale soddisfa il vincolo.",
+    "id": "6e2d520f-7bcf-4818-afb5-a46d05a0bee9"
   },
   {
     "question": "Logistic regression finds the parameters that maximize: ",
@@ -2025,7 +2102,8 @@
     "image": "",
     "code": "",
     "explanation": "La regressione logistica stima i parametri massimizzando la log-verosimiglianza dei dati, equivalentemente a minimizzare la log-loss (cross-entropy).",
-    "hint": "È un metodo di massima verosimiglianza, non di errore quadratico medio."
+    "hint": "È un metodo di massima verosimiglianza, non di errore quadratico medio.",
+    "id": "f4ea0a38-ae76-4c9d-8d6b-074eabafec45"
   },
   {
     "question": "What does the Bayesian Optimal Classier need to know in order to work?",
@@ -2051,7 +2129,8 @@
     "image": "",
     "code": "",
     "explanation": "Il classificatore bayesiano ottimale sceglie la classe con massima P(y|x) = P(x,y)/P(x), quindi richiede la distribuzione congiunta completa di variabili e label.",
-    "hint": "Per calcolare P(y|x) serve la distribuzione condizionale, che deriva dalla distribuzione congiunta."
+    "hint": "Per calcolare P(y|x) serve la distribuzione condizionale, che deriva dalla distribuzione congiunta.",
+    "id": "94b7dbe6-744b-4483-ad1f-f92eec47c1f6"
   },
   {
     "question": "Which one of the following classifiers has the best performance?",
@@ -2077,7 +2156,8 @@
     "image": "",
     "code": "",
     "explanation": "Un buon classificatore deve avere TPR alto (alta sensibilità) e FPR basso (alta specificità). L'opzione C con TPR=0.8 e FPR=0.2 domina le altre (maggiore TPR e minore FPR).",
-    "hint": "Confronta le coppie: devi massimizzare TPR e minimizzare FPR simultaneamente."
+    "hint": "Confronta le coppie: devi massimizzare TPR e minimizzare FPR simultaneamente.",
+    "id": "36fe7304-ad04-487b-ad8a-076b68d7e860"
   },
   {
     "question": "Your boss calls you to tell your new regression model seems completely useless for prediction, in spite of the high R^2 of the t. You realize that probably there is:",
@@ -2103,7 +2183,8 @@
     "image": "",
     "code": "",
     "explanation": "L'overfitting si verifica quando il modello memorizza il rumore nei dati di training invece di apprendere pattern generalizzabili. Un alto R^2 sui dati di training può indicare che il modello si è adattato troppo bene ai dati specifici, perdendo capacità predittiva su nuovi dati.",
-    "hint": "Pensa a cosa succede quando un modello 'impara a memoria' invece di 'comprendere'."
+    "hint": "Pensa a cosa succede quando un modello 'impara a memoria' invece di 'comprendere'.",
+    "id": "2754e36d-ae9d-4966-83bc-05f8291273dd"
   },
   {
     "question": "From the confusion matrix below, what can we say?",
@@ -2129,7 +2210,8 @@
     "image": "https://raw.githubusercontent.com/dag7dev/UniQuizzes/master/img/FDS/accuracy80.png.png",
     "code": "",
     "explanation": "L'accuracy è definita come (veri positivi + veri negativi) / totale osservazioni. Se dalla matrice si ricava l'80% di classificazioni corrette, allora l'accuracy è 80%.",
-    "hint": "Ricorda la formula base dell'accuracy: (TP + TN) / total."
+    "hint": "Ricorda la formula base dell'accuracy: (TP + TN) / total.",
+    "id": "36fa9d4e-a822-409e-bf10-2bb8067f4a8d"
   },
   {
     "question": "Consider the LP: max f(x,y)=x+3y; x10; y3. The value of the optimal solution is:",
@@ -2155,7 +2237,8 @@
     "image": "",
     "code": "",
     "explanation": "Per massimizzare f(x,y) = x + 3y con i vincoli x ≤ 10 e y ≤ 3, si scelgono i valori massimi ammissibili: x=10, y=3. Il valore ottimale è 10 + 3×3 = 19.",
-    "hint": "Nella programmazione lineare, la soluzione ottimale si trova sempre ai vertici della regione fattibile."
+    "hint": "Nella programmazione lineare, la soluzione ottimale si trova sempre ai vertici della regione fattibile.",
+    "id": "60345fcf-5172-42ab-8e31-df22fee82cd5"
   },
   {
     "question": "Your friend proposes a novel clustering algorithm that tries all possible clusterings of the data. This algorithm:",
@@ -2181,7 +2264,8 @@
     "image": "",
     "code": "",
     "explanation": "Il numero di possibili partizioni (clustering) di n punti dati cresce esponenzialmente (numeri di Bell). Provarle tutte richiede quindi tempo esponenziale, rendendo l'algoritmo computazionalmente infattibile per dataset di dimensioni realistiche.",
-    "hint": "Il numero di modi per dividere n elementi in gruppi cresce molto rapidamente."
+    "hint": "Il numero di modi per dividere n elementi in gruppi cresce molto rapidamente.",
+    "id": "ba129195-fd95-4e9d-a50f-68a99ccff80b"
   },
   {
     "question": "In a binary classier build by thresholding the scores of a logistic regression model, the positive observations:",
@@ -2207,7 +2291,8 @@
     "image": "",
     "code": "",
     "explanation": "La regressione logistica stima un modello lineare che produce un confine di decisione (iperpiano) che separa le osservazioni positive da quelle negative in base al punteggio (log-odds) prodotto dal modello.",
-    "hint": "La logistic regression trova un confine di separazione lineare tra le classi."
+    "hint": "La logistic regression trova un confine di separazione lineare tra le classi.",
+    "id": "2db17461-bb57-4afa-a69c-a8be3bf2e9c4"
   },
   {
     "question": "The class NP contains all problems whose solution:",
@@ -2233,7 +2318,8 @@
     "image": "",
     "code": "",
     "explanation": "NP (Nondeterministic Polynomial) contains problems whose solutions can be verified in polynomial time given a certificate, even if finding the solution may require exponential time.",
-    "hint": "P in NP stands for verification, not computation."
+    "hint": "P in NP stands for verification, not computation.",
+    "id": "be41fb86-1634-4116-b9b0-bba1b736221c"
   },
   {
     "question": "Lloyd's algorithm for k-means works by:",
@@ -2259,7 +2345,8 @@
     "image": "",
     "code": "",
     "explanation": "Lloyd's algorithm iteratively alternates between assigning points to the nearest centroid and recomputing each centroid as the mean of its assigned points until convergence.",
-    "hint": "The algorithm has two main steps: assignment and centroid update."
+    "hint": "The algorithm has two main steps: assignment and centroid update.",
+    "id": "5ee8d17e-160e-4603-a5ca-8d8502516185"
   },
   {
     "question": "You want to learn how your revenue depends on parameters such as number of working hours, etc. You could use:",
@@ -2285,7 +2372,8 @@
     "image": "",
     "code": "",
     "explanation": "Linear regression is used to model the relationship between a continuous dependent variable (revenue) and independent variables (working hours, etc.).",
-    "hint": "You're predicting a continuous quantity (revenue) from other variables."
+    "hint": "You're predicting a continuous quantity (revenue) from other variables.",
+    "id": "0f792b83-a214-4f19-bdc8-79c421d1ba90"
   },
   {
     "question": "In least squares, R^2 can be seen as:",
@@ -2311,7 +2399,8 @@
     "image": "",
     "code": "",
     "explanation": "R² represents the proportion of variance explained by the model compared to a baseline model that always predicts the mean; it's the gain over simply predicting the average.",
-    "hint": "Compare the model's performance to a trivial baseline."
+    "hint": "Compare the model's performance to a trivial baseline.",
+    "id": "83f813f6-0a7b-4948-ad68-92a743f5a76a"
   },
   {
     "question": "The ROC curve shows:",
@@ -2337,7 +2426,8 @@
     "image": "",
     "code": "",
     "explanation": "The ROC curve plots True Positive Rate (sensitivity/recall) on the y-axis against False Positive Rate (1-specificity) on the x-axis at various classification thresholds.",
-    "hint": "It shows how TPR changes as we vary the decision threshold."
+    "hint": "It shows how TPR changes as we vary the decision threshold.",
+    "id": "5a8dcf07-dbd8-4f9e-a9b3-fa341901e9a4"
   },
   {
     "question": "Can feature scaling improve the model fitted via least squares?",
@@ -2363,7 +2453,8 @@
     "image": "",
     "code": "",
     "explanation": "Feature scaling does not change the fitted values, R², or p-values in least squares regression because the estimates are scale-invariant. However, scaling makes coefficients comparable and interpretable, especially when predictors have different units.",
-    "hint": "Recall that least squares coefficients don't depend on the scale of predictors, but interpretation can change."
+    "hint": "Recall that least squares coefficients don't depend on the scale of predictors, but interpretation can change.",
+    "id": "afae6aa9-d99d-49a5-b7c7-ec912147a89c"
   },
   {
     "question": "Can a clustering on n points achieve 0 within-cluster sum of squares?",
@@ -2389,7 +2480,8 @@
     "image": "",
     "code": "",
     "explanation": "When each point forms its own cluster (n clusters), the within-cluster variance is zero because there's only one point per cluster and no dispersion within a single observation.",
-    "hint": "Think about what happens to variance when there's only one point in a group."
+    "hint": "Think about what happens to variance when there's only one point in a group.",
+    "id": "c356859e-11d6-4752-8b8b-8f9dfd2712f9"
   },
   {
     "question": "In linear regression, if the p-value for the estimate i is small enough, then we:",
@@ -2415,7 +2507,8 @@
     "image": "",
     "code": "",
     "explanation": "A small p-value provides strong evidence to reject the null hypothesis that the coefficient equals zero, indicating the predictor is statistically significant.",
-    "hint": "Small p-values mean we reject the null hypothesis that there's no effect."
+    "hint": "Small p-values mean we reject the null hypothesis that there's no effect.",
+    "id": "01eac29d-42b1-4f85-9a73-59649cdd6def"
   },
   {
     "question": "Texts written in the same language have a similar letter frequency distribution. You can check this fact by:",
@@ -2441,7 +2534,8 @@
     "image": "",
     "code": "",
     "explanation": "This is an unsupervised learning problem where we want to group documents by similarity without predefined labels. Clustering algorithms can identify natural groupings based on letter frequency distributions.",
-    "hint": "Consider whether we have labeled data or are trying to discover groups automatically."
+    "hint": "Consider whether we have labeled data or are trying to discover groups automatically.",
+    "id": "d01c6c3d-c1f0-43bc-b4a0-bae4e77625cc"
   },
   {
     "question": "Texts written in the same language have a similar letter frequency distribution. You can check this fact by:",
@@ -2467,7 +2561,8 @@
     "image": "",
     "code": "",
     "explanation": "This is an unsupervised learning problem where we want to group documents by similarity without predefined labels. Clustering algorithms can identify natural groupings based on letter frequency distributions.",
-    "hint": "Consider whether we have labeled data or are trying to discover groups automatically."
+    "hint": "Consider whether we have labeled data or are trying to discover groups automatically.",
+    "id": "f7fd34cc-8f1f-48b7-b91e-753df4553cfb"
   },
   {
     "question": "Two classifiers, C1 and C2, have accuracy respectively 98\\\\% \\\\and 95%. Which one is the best?",
@@ -2493,7 +2588,8 @@
     "image": "",
     "code": "",
     "explanation": "Accuracy alone is insufficient to determine the best classifier. We need additional information such as dataset size, class distribution, statistical significance of the difference, and the specific application context to make a proper comparison.",
-    "hint": "What other factors beyond accuracy percentages should we consider when comparing classifiers?"
+    "hint": "What other factors beyond accuracy percentages should we consider when comparing classifiers?",
+    "id": "5048d9ab-16d2-47b8-9505-94efc0e7c8da"
   },
   {
     "question": "Correlation clustering asks to minimize:",
@@ -2519,7 +2615,8 @@
     "image": "",
     "code": "",
     "explanation": "Correlation clustering minimizes the number of disagreements, which includes both co-clustering of dissimilar pairs and separation of similar pairs. This is a measure of how well the clustering matches the pairwise similarity relationships.",
-    "hint": "Think about what 'disagreement' means when comparing pairs of data points."
+    "hint": "Think about what 'disagreement' means when comparing pairs of data points.",
+    "id": "7c0cc679-2a4f-4ff3-9206-668ecbe108ea"
   },
   {
     "question": "If you increase the complexity of your linear regression model, eventually the SSE on the test set will:",
@@ -2545,7 +2642,8 @@
     "image": "",
     "code": "",
     "explanation": "As model complexity increases beyond the optimal point, the model begins to overfit by capturing noise in the training data. While training error continues to decrease, test error increases because the model fails to generalize to unseen data.",
-    "hint": "What happens to generalization when complexity grows too large?"
+    "hint": "What happens to generalization when complexity grows too large?",
+    "id": "044b0000-7a00-4e17-b236-9e366487f078"
   },
   {
     "question": "Classification accuracy is misleading when:",
@@ -2571,7 +2669,8 @@
     "image": "",
     "code": "",
     "explanation": "With unbalanced label proportions, a trivial classifier predicting only the majority class can achieve high accuracy without learning meaningful patterns. For instance, in a 99%-1% class distribution, always predicting the majority class yields 99% accuracy.",
-    "hint": "Consider a dataset where one class dominates - what accuracy would a naive classifier achieve?"
+    "hint": "Consider a dataset where one class dominates - what accuracy would a naive classifier achieve?",
+    "id": "6f5362e4-2a16-49f3-8a46-8a5ffc65cc5e"
   },
   {
     "question": "The worst-case running time of the k-means algorithm on the n points is:",
@@ -2597,7 +2696,8 @@
     "image": "",
     "code": "",
     "explanation": "K-means does not have a polynomial-time guarantee in the worst case. Although it usually converges quickly in practice, theoretically it can take exponential time as it may cycle through different cluster assignments without converging.",
-    "hint": "Does k-means have theoretical guarantees on convergence time?"
+    "hint": "Does k-means have theoretical guarantees on convergence time?",
+    "id": "ba415e1d-d2f6-432e-9c1a-1996a505a40f"
   },
   {
     "question": "In linear regression, the expected squared error s the sum of:",
@@ -2623,7 +2723,8 @@
     "image": "",
     "code": "",
     "explanation": "L'errore quadratico atteso nella regressione lineare si decompone in tre termini: il bias al quadrato (squared bias), la varianza e l'errore irriducibile (rumore). Questo è il celebre trade-off bias-varianza della teoria statistica dell'apprendimento.",
-    "hint": "Ricorda la classica decomposizione dell'errore di generalizzazione in statistica."
+    "hint": "Ricorda la classica decomposizione dell'errore di generalizzazione in statistica.",
+    "id": "7c198823-d2d3-4f2f-91eb-aa4f62384719"
   },
   {
     "question": "Your friend proposes an innovative clustering algorithm that enumerates all possible clusterings of the points. This algorithm:",
@@ -2649,7 +2750,8 @@
     "image": "",
     "code": "",
     "explanation": "Il numero di possibili partizioni di n punti (numeri di Bell) cresce esponenzialmente con n, rendendo computazionalmente impossibile enumerare tutte le possibili configurazioni di clustering per dataset di dimensioni realistiche.",
-    "hint": "Pensa a quanto rapidamente grows il numero di modi per dividere n elementi in gruppi."
+    "hint": "Pensa a quanto rapidamente grows il numero di modi per dividere n elementi in gruppi.",
+    "id": "f57a7337-f0c9-46a9-8331-d5902f5faf6c"
   },
   {
     "question": "A high R^2 on a given dataset means:",
@@ -2675,7 +2777,8 @@
     "image": "",
     "code": "",
     "explanation": "R² misura la proporzione di varianza della variabile dipendente spiegata dal modello sui dati di training. Un valore alto indica semplicemente un buon fit sui dati su cui il modello è stato addestrato, non garantendo prestazioni su dati nuovi.",
-    "hint": "R² è una metrica in-sample, non misura la capacità di generalizzazione."
+    "hint": "R² è una metrica in-sample, non misura la capacità di generalizzazione.",
+    "id": "a34878d1-3582-4a7a-a8cd-1bdb66cdd8fd"
   },
   {
     "question": "Multicollinearity arises if the features vectors are:",
@@ -2701,7 +2804,8 @@
     "image": "",
     "code": "",
     "explanation": "La multicollinearità si verifica quando almeno una feature può essere espressa come combinazione lineare delle altre, rendendo la matrice delle feature (o la matrice di design) non invertibile o mal condizionata.",
-    "hint": "Una matrice con vettori colonne linearmente dipendenti è singolare."
+    "hint": "Una matrice con vettori colonne linearmente dipendenti è singolare.",
+    "id": "83312b3e-3b4e-4a59-a2b1-4ca50a30637e"
   },
   {
     "question": "A logistic regression model learns:",
@@ -2727,7 +2831,8 @@
     "image": "",
     "code": "",
     "explanation": "La regressione logistica stima la distribuzione condizionata P(Y|X), cioè la probabilità delle etichette (variabile dipendente) dato i predittori, attraverso la funzione sigmoide.",
-    "hint": "La logistic regression modella la probabilità di appartenenza a una classe condizionata ai feature."
+    "hint": "La logistic regression modella la probabilità di appartenenza a una classe condizionata ai feature.",
+    "id": "f99ab367-f84f-48b6-84d1-5d21fbbf1047"
   },
   {
     "question": "Consider the LP: min f(x,y) = x + y; x+y >= 2; x, y <= 0. The corresponding polytope is:",
@@ -2753,7 +2858,8 @@
     "image": "",
     "code": "",
     "explanation": "The constraints x ≤ 0 and y ≤ 0 imply x + y ≤ 0, but the constraint x + y ≥ 2 requires the sum to be at least 2. These contradictory requirements make the feasible region empty.",
-    "hint": "Check if all constraints can be satisfied simultaneously."
+    "hint": "Check if all constraints can be satisfied simultaneously.",
+    "id": "99b2df2c-c7bb-4ed0-9930-b244ecba8291"
   },
   {
     "question": "To measure the efficiency of algorithms we use:",
@@ -2779,7 +2885,8 @@
     "image": "",
     "code": "",
     "explanation": "Asymptotic analysis (Big-O, Ω, Θ notation) is the standard method for measuring algorithm efficiency, describing how runtime scales with input size.",
-    "hint": "Think about how we describe algorithm complexity in computer science."
+    "hint": "Think about how we describe algorithm complexity in computer science.",
+    "id": "3a127281-0456-4674-b68c-c503163112c0"
   },
   {
     "question": "Everything else being equal, what does suggest a good clustering?",
@@ -2805,7 +2912,8 @@
     "image": "",
     "code": "",
     "explanation": "A low within-cluster sum of squares (WCSS) indicates that data points are close to their cluster centroids, meaning clusters are compact and well-defined.",
-    "hint": "Consider what makes points in the same cluster similar to each other."
+    "hint": "Consider what makes points in the same cluster similar to each other.",
+    "id": "d1d52dfe-3c4c-4052-9e94-88c06e3595fc"
   },
   {
     "question": "The set cover problem:",
@@ -2831,7 +2939,8 @@
     "image": "",
     "code": "",
     "explanation": "Set cover is a classic NP-Complete problem, meaning there is no known polynomial-time algorithm to solve it exactly.",
-    "hint": "Recall the famous NP-complete problems from computational complexity theory."
+    "hint": "Recall the famous NP-complete problems from computational complexity theory.",
+    "id": "9c00b40c-f282-4e95-ba2b-6a4fd778e8c5"
   },
   {
     "question": "A company must allocate 5M€ so that each department receives a minimum amount. You can use:",
@@ -2857,7 +2966,8 @@
     "image": "",
     "code": "",
     "explanation": "Clustering is used to group entities (departments) into homogeneous segments based on shared characteristics, which is appropriate for dividing a budget among groups.",
-    "hint": "Think about what technique groups similar entities together."
+    "hint": "Think about what technique groups similar entities together.",
+    "id": "4e44b2d1-3b68-48a0-97cc-82d8df80d918"
   },
   {
     "question": "With hierarchical clustering on n points you can get:",
@@ -2883,7 +2993,8 @@
     "image": "",
     "code": "",
     "explanation": "Hierarchical clustering produces a dendrogram where each merge reduces the number of clusters by one, starting from n single-point clusters down to 1 cluster containing all points.",
-    "hint": "Think about the two extremes: when should the clustering stop?"
+    "hint": "Think about the two extremes: when should the clustering stop?",
+    "id": "32a90268-b1df-46d4-9ccc-baf3c4fdcf69"
   },
   {
     "question": "The standard assumption of linear regression is that the noise across the observations:",
@@ -2909,7 +3020,8 @@
     "image": "",
     "code": "",
     "explanation": "The Gauss-Markov theorem assumes normally distributed, uncorrelated errors for OLS to be the best linear unbiased estimator. Independence ensures each observation provides unique information.",
-    "hint": "What are the standard assumptions for ordinary least squares?"
+    "hint": "What are the standard assumptions for ordinary least squares?",
+    "id": "1d3f75a3-7e45-434c-b9ec-11917f9b0ec8"
   },
   {
     "question": "The ROC curve is used to measure:",
@@ -2935,7 +3047,8 @@
     "image": "",
     "code": "",
     "explanation": "ROC (Receiver Operating Characteristic) curves plot the true positive rate against the false positive rate at various classification thresholds, evaluating how well a binary classifier discriminates between classes.",
-    "hint": "What does the curve show when you vary the classification threshold?"
+    "hint": "What does the curve show when you vary the classification threshold?",
+    "id": "5befee67-e1d1-4516-9b2b-bf34a50f8ba5"
   },
   {
     "question": "Geometrically, each constraint of a linear program corresponds to:",
@@ -2961,7 +3074,8 @@
     "image": "",
     "code": "",
     "explanation": "Each linear constraint defines a half-space (the region on one side of a hyperplane). The feasible region is the intersection of all these half-spaces, forming a convex polytope.",
-    "hint": "What geometric region does a linear inequality define?"
+    "hint": "What geometric region does a linear inequality define?",
+    "id": "df1b7200-32c9-42e3-9a11-819d8130c70f"
   },
   {
     "question": "Many well-known clustering problems are:",
@@ -2987,7 +3101,8 @@
     "image": "",
     "code": "",
     "explanation": "Many clustering problems like k-means and hierarchical clustering with certain linkage criteria are NP-hard, meaning no polynomial-time algorithm is known for finding exact solutions in general.",
-    "hint": "Think about the combinatorial nature of partitioning n points into k groups."
+    "hint": "Think about the combinatorial nature of partitioning n points into k groups.",
+    "id": "8bef73d0-7999-4091-bf12-1f102aae16b1"
   },
   {
     "question": "A polytope is:",
@@ -3013,7 +3128,8 @@
     "image": "",
     "code": "",
     "explanation": "Un politopo è definito matematicamente come l'insieme di tutti i punti che soddisfano un sistema finito di disequazioni lineari, cioè l'intersezione di semispazi chiusi. Questa è la definizione fondamentale nella teoria dei poliedri e nella geometria computazionale.",
-    "hint": "Ricorda la definizione formale: un politopo è l'insieme限 definito da disequazioni lineari."
+    "hint": "Ricorda la definizione formale: un politopo è l'insieme限 definito da disequazioni lineari.",
+    "id": "17cd6000-a35c-46af-807f-179092fdd42d"
   },
   {
     "question": "Everything else being equal. What does suggest good clustering?",
@@ -3039,6 +3155,7 @@
     "image": "",
     "code": "",
     "explanation": "",
-    "hint": ""
+    "hint": "",
+    "id": "ca7c0ef2-7faf-4e08-84db-36738c61d3ce"
   }
 ]

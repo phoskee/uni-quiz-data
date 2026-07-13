@@ -15,7 +15,8 @@
     "image": "",
     "code": "",
     "explanation": "Il controllo degli accessi dipende da identità, credenziali e attributi forniti in input per prendere decisioni di autorizzazione. Se questi dati non sono affidabili (es. soggetti a manomissione o spoofing), il meccanismo di sicurezza viene compromesso.",
-    "hint": "Considera l'importanza dell'integrità dei dati su cui il sistema basa le decisioni di permesso."
+    "hint": "Considera l'importanza dell'integrità dei dati su cui il sistema basa le decisioni di permesso.",
+    "id": "06f62f90-8642-4ecd-9ddf-75dca5b78d91"
   },
   {
     "question": "2) I / Le __________ forniscono un mezzo per adattare RBAC alle specifiche delle politiche amministrative e di sicurezza in un'organizzazione",
@@ -41,7 +42,8 @@
     "image": "",
     "code": "",
     "explanation": "Nei sistemi RBAC, i vincoli (constraints) permettono di configurare regole specifiche come la separazione dei compiti (SoD), la cardinalità dei ruoli o i prerequisiti, personalizzando il modello base alle policy aziendali.",
-    "hint": "Pensa a quali elementi di RBAC consentono di imporre regole come 'un utente non può ricoprire simultaneamente ruoli in conflitto'."
+    "hint": "Pensa a quali elementi di RBAC consentono di imporre regole come 'un utente non può ricoprire simultaneamente ruoli in conflitto'.",
+    "id": "69e2c7db-1ce6-403c-b97a-275d38b84f51"
   },
   {
     "question": "3) _______________ è il metodo tradizionale per implementare il controllo degli accessi",
@@ -67,7 +69,8 @@
     "image": "",
     "code": "",
     "explanation": "DAC (Discretionary Access Control) è il modello storico dove il proprietario di una risorsa decide chi può accedervi, tipico dei primi sistemi Unix. RBAC e MAC sono evoluzioni successive più strutturate.",
-    "hint": "Ricorda quale modello si basa sulla discrezionalità del proprietario della risorsa nella gestione dei permessi."
+    "hint": "Ricorda quale modello si basa sulla discrezionalità del proprietario della risorsa nella gestione dei permessi.",
+    "id": "77794adb-6ecf-4168-ae13-0e97bae3b0ee"
   },
   {
     "question": "4) Qualsiasi programma di proprietà e con SetUID del \"superutente\" potenzialmente concede l'accesso illimitato al sistema a qualsiasi utente che esegue quel programma",
@@ -85,7 +88,8 @@
     "image": "",
     "code": "",
     "explanation": "Un programma con bit SetUID appartenente a root esegue con privilegi di superutente indipendentemente dall'utente che lo lancia. Se il programma contiene vulnerabilità, consente privilege escalation con accesso completo al sistema.",
-    "hint": "Rifletti sul significato del bit SetUID e sui privilegi effettivi acquisiti dal processo durante l'esecuzione."
+    "hint": "Rifletti sul significato del bit SetUID e sui privilegi effettivi acquisiti dal processo durante l'esecuzione.",
+    "id": "df02d15e-ba0d-46bc-9588-952f40df6e02"
   },
   {
     "question": "5) Le minacce (thrats) sono attacchi effettuati",
@@ -103,7 +107,8 @@
     "image": "",
     "code": "",
     "explanation": "Una minaccia (threat) rappresenta una potenziale causa di danno o un pericolo, mentre un attacco (attack) è l'azione concreta che sfrutta una vulnerabilità per realizzare la minaccia. Sono concetti distinti: potenzialità vs azione.",
-    "hint": "Distingui tra la possibilità di causare un danno e l'azione effettivamente messa in atto per realizzarlo."
+    "hint": "Distingui tra la possibilità di causare un danno e l'azione effettivamente messa in atto per realizzarlo.",
+    "id": "1f191dc6-7b5f-473c-ad9f-4c65c0c7d387"
   },
   {
     "question": "6) Masquerade, falsificazione e ripudio sono azioni di minaccia che causano conseguenze di minaccia di __________",
@@ -129,7 +134,8 @@
     "image": "",
     "code": "",
     "explanation": "Masquerade, falsificazione e ripudio sono azioni attive che inducono il sistema a credere a informazioni o identità false. L'inganno (deception) rappresenta la conseguenza di minaccia in cui un'entità viene indotta in errore riguardo allo stato del sistema o all'identità di un'altra entità, violando l'autenticità.",
-    "hint": "Pensa a cosa succede quando qualcuno si spaccia per un altro o nega di aver inviato un messaggio: quale conseguenza comporta la credibilità di informazioni non veritiere?"
+    "hint": "Pensa a cosa succede quando qualcuno si spaccia per un altro o nega di aver inviato un messaggio: quale conseguenza comporta la credibilità di informazioni non veritiere?",
+    "id": "67c0ff22-3eb1-4430-b892-eb2450bcec5e"
   },
   {
     "question": "7) La \"A\" nella triade CIA sta per \"autenticità\"",
@@ -147,7 +153,8 @@
     "image": "",
     "code": "",
     "explanation": "La triade CIA classica si riferisce a Confidentiality (riservatezza), Integrity (integrità) e Availability (disponibilità). L'autenticità, sebbene fondamentale, non costituisce la 'A' originale del modello, ma rappresenta una proprietà aggiuntiva spesso inclusa in modelli estesi di sicurezza.",
-    "hint": "Ricorda i tre pilastri fondamentali della sicurezza informatica: riservatezza, integrità e... cosa garantisce che il sistema sia accessibile quando serve?"
+    "hint": "Ricorda i tre pilastri fondamentali della sicurezza informatica: riservatezza, integrità e... cosa garantisce che il sistema sia accessibile quando serve?",
+    "id": "4852078e-7c09-4487-803d-1f46aaa406d0"
   },
   {
     "question": "8) Un difetto (flow) o debolezza (weakness) nella progettazione, implementazione o funzionamento e gestione di un sistema che potrebbe essere sfruttato per violare la politica di sicurezza del sistema è un / una __________",
@@ -173,7 +180,8 @@
     "image": "",
     "code": "",
     "explanation": "Una vulnerabilità è una caratteristica del sistema (difetto di progettazione, implementazione o configurazione) che può essere sfruttata da una minaccia per compromettere la sicurezza. Rappresenta il punto debole che, combinato con una minaccia, genera un rischio per l'organizzazione.",
-    "hint": "Se il sistema ha un 'buco' che un attaccante potrebbe sfruttare, come si chiama questa caratteristica del sistema stesso?"
+    "hint": "Se il sistema ha un 'buco' che un attaccante potrebbe sfruttare, come si chiama questa caratteristica del sistema stesso?",
+    "id": "79fef2b7-a182-435f-9b4b-7ffb2d95814d"
   },
   {
     "question": "9) La presentazione o la generazione di informazioni di autenticazione che confermano il legame tra l'entità e l'identificatore è la ___________",
@@ -199,7 +207,8 @@
     "image": "",
     "code": "",
     "explanation": "La fase di verifica richiede all'entità di fornire prove (credenziali, token, dati biometrici) che confermano la correttezza dell'identità dichiarata nella fase di identificazione. Questo processo stabilisce l'autenticità del legame tra l'entità fisica e il suo identificatore logico.",
-    "hint": "Dopo aver dichiarato chi sei (identificazione), quale fase richiede di dimostrare effettivamente di essere quella persona attraverso credenziali?"
+    "hint": "Dopo aver dichiarato chi sei (identificazione), quale fase richiede di dimostrare effettivamente di essere quella persona attraverso credenziali?",
+    "id": "27168231-c340-43d8-98de-66cd78386b5c"
   },
   {
     "question": "10) L'autenticazione dell'utente è la base per la maggior parte dei tipi di controllo degli accessi (Access control) e della responsabilità dell'utente (User accountability)",
@@ -217,7 +226,8 @@
     "image": "",
     "code": "",
     "explanation": "L'autenticazione è prerequisito indispensabile per l'autorizzazione, poiché solo dopo aver verificato l'identità è possibile applicare le regole di controllo degli accessi. Inoltre, permette di associare in modo non ripudiabile le azioni compiute a un soggetto specifico, garantendo la responsabilità (accountability).",
-    "hint": "Se non sai con certezza chi sta accedendo al sistema, puoi decidere cosa può fare o tracciare le sue azioni?"
+    "hint": "Se non sai con certezza chi sta accedendo al sistema, puoi decidere cosa può fare o tracciare le sue azioni?",
+    "id": "0cda4d20-d047-4232-8250-7103ecb25267"
   },
   {
     "question": "11) Un attacco __________ coinvolge un avversario che ripete una risposta dell'utente acquisita in precedenza",
@@ -243,7 +253,8 @@
     "image": "",
     "code": "",
     "explanation": "L'attacco replay consiste nell'intercettare e successivamente ritrasmettere dati (come credenziali o token) precedentemente acquisiti per impersonare l'utente legittimo, sfruttando il fatto che la risposta è ancora valida per il sistema.",
-    "hint": "Pensa al significato letterale di 'replay' in inglese."
+    "hint": "Pensa al significato letterale di 'replay' in inglese.",
+    "id": "e95a772d-74af-4e24-879f-ba25259da6f0"
   },
   {
     "question": "12) L'autenticazione dell'utente è una procedura che consente ai soggetti comunicanti di verificare che i contenuti di un messaggio ricevuto non siano stati alterati e che la fonte sia autentica",
@@ -261,7 +272,8 @@
     "image": "",
     "code": "",
     "explanation": "Questa definizione descrive l'integrità dei dati e l'autenticazione dell'origine, tipiche della firma digitale o MAC, mentre l'autenticazione dell'utente verifica l'identità del soggetto che accede al sistema.",
-    "hint": "Distingui tra verifica dell'identità di un utente e verifica dell'integrità di un messaggio."
+    "hint": "Distingui tra verifica dell'identità di un utente e verifica dell'integrità di un messaggio.",
+    "id": "43952516-f9d9-4dd5-8522-98ae646ba5fd"
   },
   {
     "question": "13) Due svantaggi della crittografia dei database sono la gestione delle chiavi e la poca flessibilità",
@@ -279,7 +291,8 @@
     "image": "",
     "code": "",
     "explanation": "La crittografia dei database richiede una complessa gestione delle chiavi (key management) per garantire sicurezza e disponibilità, e riduce la flessibilità perché operazioni come ricerche o ordinamenti diventano complesse su dati cifrati.",
-    "hint": "Considera le difficoltà pratiche nell'applicare la crittografia a grandi volumi di dati strutturati."
+    "hint": "Considera le difficoltà pratiche nell'applicare la crittografia a grandi volumi di dati strutturati.",
+    "id": "fd1eed85-542e-4687-836e-279352e6811d"
   },
   {
     "question": "14) Il / La / L' __________ è il processo di esecuzione di query autorizzate e deduzione di informazioni non autorizzate dalle risposte legittime ricevute",
@@ -305,7 +318,8 @@
     "image": "",
     "code": "",
     "explanation": "L'attacco per inferenza permette di ricavare informazioni sensibili combinando dati aggregati o risposte a query legittime, senza accedere direttamente ai dati protetti, sfruttando la correlazione tra informazioni.",
-    "hint": "Si tratta di un tipo di attacco che sfrutta la logica e l'aggregazione di dati apparentemente innocui."
+    "hint": "Si tratta di un tipo di attacco che sfrutta la logica e l'aggregazione di dati apparentemente innocui.",
+    "id": "8165f4ed-97bb-4a51-8c68-42a3152bb295"
   },
   {
     "question": "15) Un SQL Server consente agli utenti di creare ruoli a cui è possibile assegnare diritti di accesso a porzioni del database",
@@ -323,7 +337,8 @@
     "image": "",
     "code": "",
     "explanation": "I sistemi DBMS come SQL Server implementano il controllo degli accessi basato su ruoli (RBAC), permettendo di definire ruoli personalizzati e assegnare privilegi specifici su tabelle o colonne per semplificare l'amministrazione della sicurezza.",
-    "hint": "Pensa al modello di sicurezza basato sui ruoli tipico dei database enterprise."
+    "hint": "Pensa al modello di sicurezza basato sui ruoli tipico dei database enterprise.",
+    "id": "fcfd014b-7ee2-4b38-b65e-f11a7690263b"
   },
   {
     "question": "16) La crittografia è l'ultima linea di difesa nella sicurezza del database",
@@ -341,7 +356,8 @@
     "image": "",
     "code": "",
     "explanation": "La crittografia rappresenta l'ultima barriera nella strategia della 'difesa in profondità' (defense in depth): anche se un attaccante bypassa firewall, controlli di accesso e autenticazioni, i dati cifrati rimangono incomprensibili senza la chiave corretta, proteggendo la riservatezza delle informazioni a riposo e in transito.",
-    "hint": "Pensa a cosa protegge i dati quando tutte le altre misure di sicurezza perimetrale sono state violate."
+    "hint": "Pensa a cosa protegge i dati quando tutte le altre misure di sicurezza perimetrale sono state violate.",
+    "id": "1ae4345f-0f64-4284-b6bf-181151492a2e"
   },
   {
     "question": "17) Un ______ attiva un bug nel software di gestione della rete del sistema, provocandone l'arresto anomalo e il sistema non può più comunicare sulla rete fino a quando questo software non viene ricaricato",
@@ -367,7 +383,8 @@
     "image": "",
     "code": "",
     "explanation": "Un pacchetto avvelenato (poison packet) è appositamente costruito per sfruttare vulnerabilità specifiche nel codice del software di rete, attivando bug che causano crash o arresti anomali. A differenza degli attacchi di flooding che saturano la banda, questo mira a exploitare difetti di implementazione tramite input malformati.",
-    "hint": "Cerca il termine che indica un pacchetto maliziosamente craftato per innescare bug specifici nel codice piuttosto che sovraccaricare risorse."
+    "hint": "Cerca il termine che indica un pacchetto maliziosamente craftato per innescare bug specifici nel codice piuttosto che sovraccaricare risorse.",
+    "id": "ad147e56-b5cf-4fb3-80e5-05cca29d3be3"
   },
   {
     "question": "18) Gli attacchi Reflector e Amplifier utilizzano sistemi compromessi che eseguono i programmi dell'aggressore",
@@ -385,7 +402,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli attacchi reflector e amplifier sfruttano server legittimi e non compromessi (come DNS, NTP o server memcached) che rispondono a richieste spoofate, usando la loro banda legittima per amplificare il traffico verso la vittima. I sistemi che eseguono codice malevolo dell'attaccante sono invece le botnet, usate in altri tipi di DDoS.",
-    "hint": "Rifletti sulla differenza tra sistemi compromessi che eseguono malware e server legittimi usati inconsapevolmente come riflettori."
+    "hint": "Rifletti sulla differenza tra sistemi compromessi che eseguono malware e server legittimi usati inconsapevolmente come riflettori.",
+    "id": "19946668-3dfa-44b7-b1cc-49ca7e1c1242"
   },
   {
     "question": "19) Un attacco DoS che prende di mira le risorse dell'applicazione in genere mira a sovraccaricare o arrestare in modo anomalo il software di gestione della rete",
@@ -403,7 +421,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli attacchi DoS a livello applicativo mirano a esaurire risorse specifiche dell'applicazione come connessioni database, thread del server web o calcolo CPU per operazioni complesse (es. HTTP flooding). Il software di gestione della rete è invece bersaglio di attacchi a livello di sistema operativo o rete, come il SYN flooding.",
-    "hint": "Distingui tra attacchi che colpiscono il livello applicativo (HTTP, logiche di business) e quelli che colpiscono l'infrastruttura di rete sottostante."
+    "hint": "Distingui tra attacchi che colpiscono il livello applicativo (HTTP, logiche di business) e quelli che colpiscono l'infrastruttura di rete sottostante.",
+    "id": "49f359b8-c43a-4253-ac48-ab7d0ed618b5"
   },
   {
     "question": "20) Il ______ attacca la capacità di un server di rete di rispondere alle richieste di connessione TCP sovraccaricando le tabelle utilizzate per gestire tali connessioni",
@@ -429,7 +448,8 @@
     "image": "",
     "code": "",
     "explanation": "L'attacco SYN spoofing (o SYN flood) invia pacchetti SYN con IP sorgente falsificato senza completare il three-way handshake, riempiendo la tabella delle connessioni half-open (SYN backlog) del server. Questo esaurisce le risorse del kernel dedicate alle connessioni in stato SYN_RECEIVED, impedendo al server di accettare nuove connessioni legittime.",
-    "hint": "Ricorda cosa succede alla tabella delle connessioni TCP quando un server riceve richieste di connessione iniziali che non vengono mai completate."
+    "hint": "Ricorda cosa succede alla tabella delle connessioni TCP quando un server riceve richieste di connessione iniziali che non vengono mai completate.",
+    "id": "d04a9311-4719-44ab-a9f3-842c2b0f79d0"
   },
   {
     "question": "21) Il codice metamorfico (metamorphic code) è un software che può essere spedito invariato a un insieme eterogenea di piattaforme ed eseguito con semantica identica",
@@ -447,7 +467,8 @@
     "image": "",
     "code": "",
     "explanation": "Il codice metamorfico è una tecnica di evasione antivirus in cui il malware muta la propria struttura sintattica ad ogni infezione mantenendo invariata la semantica, al fine di evitare il rilevamento basato su firme. Non ha nulla a che fare con la portabilità cross-platform, che è tipica di linguaggi interpretati o bytecode.",
-    "hint": "Pensa alla differenza tra 'cambiare forma' per nascondersi e 'girare su più piattaforme'."
+    "hint": "Pensa alla differenza tra 'cambiare forma' per nascondersi e 'girare su più piattaforme'.",
+    "id": "bc3c44e8-b357-4f16-883e-3e581d4b11a2"
   },
   {
     "question": "22) I / Gli / La __________ si integrerà con il sistema operativo di un computer host e monitorerà il comportamento del programma in tempo reale per azioni dannose",
@@ -473,7 +494,8 @@
     "image": "",
     "code": "",
     "explanation": "I behavior-blocking scanner si integrano a livello di sistema operativo e intercettano in tempo reale le chiamate di sistema per bloccare azioni dannose (come modifiche al registro o accessi a file sensibili) prima che vengano completate, a differenza degli scanner basati su firme che analizzano il codice staticamente.",
-    "hint": "Cerca la tecnologia che agisce in tempo reale monitorando le azioni piuttosto che analizzando il codice prima dell'esecuzione."
+    "hint": "Cerca la tecnologia che agisce in tempo reale monitorando le azioni piuttosto che analizzando il codice prima dell'esecuzione.",
+    "id": "c8792dde-cd1b-46e6-b5af-be9cfcd7fb04"
   },
   {
     "question": "23) Un macro virus infetta porzioni eseguibili di codice",
@@ -491,7 +513,8 @@
     "image": "",
     "code": "",
     "explanation": "I macro virus infettano documenti che supportano macro (come file Word o Excel), sfruttando il linguaggio di scripting incorporato (es. VBA), e non modificano file eseguibili binari (.exe, .dll). Il loro target sono i documenti, non le porzioni eseguibili di codice macchina.",
-    "hint": "Ricorda in quali tipi di file si trovano tipicamente le macro e cosa infettano i virus che le sfruttano."
+    "hint": "Ricorda in quali tipi di file si trovano tipicamente le macro e cosa infettano i virus che le sfruttano.",
+    "id": "d24c7c47-fad0-42b3-8771-969bb92da178"
   },
   {
     "question": "24) Un / Una __________ è un codice inserito in un malware che rimane dormiente finché non viene soddisfatta una condizione predefinita, che attiva un'azione non autorizzata",
@@ -517,7 +540,8 @@
     "image": "",
     "code": "",
     "explanation": "Una logic bomb è un frammento di codice che rimane dormiente fino al verificarsi di una condizione logica specifica (data, evento, input particolare), dopodiché attiva il payload dannoso. Si distingue dal worm (autoreplicazione), dal trojan (mascheramento) e dalla trapdoor (accesso segreto).",
-    "hint": "Pensa a un ordigno che esplode solo quando si verifica una specifica condizione logica o temporale predefinita."
+    "hint": "Pensa a un ordigno che esplode solo quando si verifica una specifica condizione logica o temporale predefinita.",
+    "id": "17edab6b-9c1a-493a-8729-a4432d1d7375"
   },
   {
     "question": "25) La / Le __________ possono impedire attacchi di buffer overflow, in genere a dati globali, che tentano di sovrascrivere regioni adiacenti nello spazio degli indirizzi dei processi, come la tabella di offset globale",
@@ -543,7 +567,8 @@
     "image": "",
     "code": "",
     "explanation": "Le guard pages sono pagine di memoria non mappate o protette posizionate strategicamente tra buffer e aree critiche (come la GOT) per generare un'eccezione (segmentation fault) quando un overflow tenta di sovrascrivere oltre i limiti consentiti, impedendo l'alterazione di strutture di controllo.",
-    "hint": "Cerca il meccanismo che funziona come una 'barriera' o 'zona cuscinetto' di memoria per intercettare scritture eccessive."
+    "hint": "Cerca il meccanismo che funziona come una 'barriera' o 'zona cuscinetto' di memoria per intercettare scritture eccessive.",
+    "id": "0970ddd6-dad0-444b-b027-02b5be506f15"
   },
   {
     "question": "26) Una conseguenza di un errore di buffer overflow è la / il / __________",
@@ -569,7 +594,8 @@
     "image": "",
     "code": "",
     "explanation": "Un buffer overflow permette di scrivere oltre i limiti di un buffer, sovrascrivendo dati adiacenti (corruzione), modificando indirizzi di ritorno (hijacking del controllo) o accedendo a zone di memoria protette (violazione di accesso). Tutte queste conseguenze sono possibili simultaneamente.",
-    "hint": "Considera gli effetti a catena della scrittura eccedente in memoria contigua."
+    "hint": "Considera gli effetti a catena della scrittura eccedente in memoria contigua.",
+    "id": "4aa91c5b-5c1f-413a-9030-3cfcb16539c2"
   },
   {
     "question": "27) Un overflow dello stack può provocare, su di un sistema, una qualche forma di attacco denial-of-service",
@@ -587,7 +613,8 @@
     "image": "",
     "code": "",
     "explanation": "Un overflow dello stack può causare il crash immediato del processo o del sistema operativo, rendendo il servizio indisponibile agli utenti legittimi. Questo costituisce un attacco denial-of-service (DoS) per indisponibilità del servizio.",
-    "hint": "Cosa succede al servizio quando un programma va in crash per corruzione dello stack?"
+    "hint": "Cosa succede al servizio quando un programma va in crash per corruzione dello stack?",
+    "id": "d87f23cf-2a26-48af-a1b0-2521d93c13fe"
   },
   {
     "question": "28) Java, anche se è un linguaggio di programmazione di alto livello, soffre ancora della vulnerabilità di buffer overflow perché consente di salvare più dati in un buffer di quanti ne possa contenere",
@@ -605,7 +632,8 @@
     "image": "",
     "code": "",
     "explanation": "Java esegue controlli automatici sui limiti degli array (bounds checking) e gestisce la memoria tramite JVM, impedendo la scrittura arbitraria oltre i buffer allocati. Questo elimina la vulnerabilità classica di buffer overflow presente in linguaggi come C/C++.",
-    "hint": "Pensa alla gestione della memoria automatica e ai controlli di sicurezza intrinseci della JVM."
+    "hint": "Pensa alla gestione della memoria automatica e ai controlli di sicurezza intrinseci della JVM.",
+    "id": "796c4cda-0190-4821-a64a-5109d319b1a3"
   },
   {
     "question": "29) Un _________ controlla le caratteristiche di un singolo host e gli eventi che si verificano all'interno di tale host per attività sospette",
@@ -631,7 +659,8 @@
     "image": "",
     "code": "",
     "explanation": "Un Host-based IDS (HIDS) analizza log di sistema, file di registro, chiamate di sistema e modifiche ai file su un singolo host per rilevare attività sospette, operando localmente piuttosto che sul traffico di rete.",
-    "hint": "Distingui tra monitoraggio del traffico in transito e analisi degli eventi interni a una macchina specifica."
+    "hint": "Distingui tra monitoraggio del traffico in transito e analisi degli eventi interni a una macchina specifica.",
+    "id": "c1703990-d276-40b5-ae3c-a83cdbd7d16f"
   },
   {
     "question": "30) Il _________ comporta la raccolta di dati relativi al comportamento degli utenti legittimi in un periodo di tempo",
@@ -657,7 +686,8 @@
     "image": "",
     "code": "",
     "explanation": "Il rilevamento delle anomalie (anomaly detection) richiede una fase di apprendimento per stabilire un profilo comportamentale di riferimento (baseline) degli utenti legittimi, confrontando poi le attività correnti con questo modello per identificare deviazioni.",
-    "hint": "Si basa sul concetto di 'profilo normale' rispetto al quale vengono confrontate le azioni future."
+    "hint": "Si basa sul concetto di 'profilo normale' rispetto al quale vengono confrontate le azioni future.",
+    "id": "90832f0e-7442-4b09-92df-6c856306809c"
   },
   {
     "question": "31) Un sensore NIDS è solitamente posizionato all'interno del firewall esterno",
@@ -675,7 +705,8 @@
     "image": "",
     "code": "",
     "explanation": "Un sensore NIDS (Network Intrusion Detection System) viene tipicamente posizionato nella porzione interna della rete, dietro il firewall esterno, per monitorare il traffico che entra nel perimetro protetto e rilevare intrusioni o attività sospesse che il firewall potrebbe avere lasciato passare.",
-    "hint": "Considera dove si trova la zona 'trusted' rispetto al firewall perimetrale."
+    "hint": "Considera dove si trova la zona 'trusted' rispetto al firewall perimetrale.",
+    "id": "5683277b-80ea-4872-bb95-45b4a1fdc76d"
   },
   {
     "question": "32) Gli approcci di intrusion detection basati sulle firme (signature-based) tentano di definire i comportamenti normali, o attesi, mentre gli approcci basati su anomalia (anomaly-based) tentano di definire il comportamento corretto",
@@ -693,7 +724,8 @@
     "image": "",
     "code": "",
     "explanation": "L'affermazione inverte i ruoli: gli approcci signature-based rilevano pattern noti di attacchi (firme), mentre quelli anomaly-based definiscono un profilo di comportamento normale (baseline) per identificare deviazioni statisticamente significative.",
-    "hint": "Chi confronta con pattern conosciuti e chi stabilisce cosa è 'normale' per rilevare anomalie?"
+    "hint": "Chi confronta con pattern conosciuti e chi stabilisce cosa è 'normale' per rilevare anomalie?",
+    "id": "cfb39855-b7a5-4a97-a5d3-8eaa0e2f3031"
   },
   {
     "question": "33) SHA-1 produce un valore di hash di ______ bits",
@@ -719,7 +751,8 @@
     "image": "",
     "code": "",
     "explanation": "SHA-1 (Secure Hash Algorithm 1) produce un digest di 160 bit (20 byte). È importante non confonderlo con SHA-256 (256 bit) o SHA-384 (384 bit) che appartengono alla famiglia SHA-2.",
-    "hint": "Ricorda la dimensione caratteristica di SHA-1 rispetto alle varianti più recenti della famiglia SHA-2."
+    "hint": "Ricorda la dimensione caratteristica di SHA-1 rispetto alle varianti più recenti della famiglia SHA-2.",
+    "id": "e318caa2-f1aa-444d-8daa-e707964409b5"
   },
   {
     "question": "34) Una funzione hash come SHA-1 non è stata progettata per essere utilizzata come MAC e non può essere utilizzata direttamente a tale scopo perché non si basa su una chiave segreta",
@@ -737,7 +770,8 @@
     "image": "",
     "code": "",
     "explanation": "Un MAC (Message Authentication Code) richiede necessariamente una chiave segreta per garantire autenticità e integrità, mentre le funzioni hash come SHA-1 sono algoritmi keyless; per ottenere un MAC si deve utilizzare una costruzione apposita come HMAC.",
-    "hint": "Cosa distingue un algoritmo MAC da una semplice funzione di hash crittografica in termini di chiave?"
+    "hint": "Cosa distingue un algoritmo MAC da una semplice funzione di hash crittografica in termini di chiave?",
+    "id": "c0b16348-2fbf-462b-b2bb-31a3ec835f93"
   },
   {
     "question": "35) Gli attacchi di tipo Timing (timing attacks) sono applicabili solo a RSA",
@@ -755,7 +789,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli attacchi temporali (timing attacks) sfruttano variazioni nei tempi di esecuzione di operazioni crittografiche e possono essere applicati a molti algoritmi oltre a RSA, come ECC, DH o implementazioni software di AES, se non implementati con tecniche constant-time.",
-    "hint": "Pensa se altri algoritmi che eseguono operazioni matematiche condizionali potrebbero rivelare informazioni attraverso il tempo di calcolo."
+    "hint": "Pensa se altri algoritmi che eseguono operazioni matematiche condizionali potrebbero rivelare informazioni attraverso il tempo di calcolo.",
+    "id": "c482cd41-478d-45f4-b86b-a3460c87e9e4"
   },
   {
     "question": "36) Gli attacchi _________ usano diversi approcci, tutti equivalenti, in termini di costo, a fattorizzare il prodotto di due numeri primi",
@@ -781,7 +816,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli attacchi matematici alla crittografia asimmetrica come RSA si basano sulla difficoltà computazionale della fattorizzazione di grandi numeri interi. Qualsiasi metodo che riesca a rompere RSA deve necessariamente risolvere il problema della fattorizzazione del modulo n=p×q.",
-    "hint": "Pensa al fondamento matematico della sicurezza di RSA e quale operazione è computazionalmente onerosa."
+    "hint": "Pensa al fondamento matematico della sicurezza di RSA e quale operazione è computazionalmente onerosa.",
+    "id": "682d2eff-9441-4d84-8715-45d30703a27b"
   },
   {
     "question": "37) Per la trasmissione orientata al flusso (stream-oriented) su un canale rumoroso, in genere si utilizza la modalità di cifratura a blocchi _______",
@@ -807,7 +843,8 @@
     "image": "",
     "code": "",
     "explanation": "OFB genera un keystream indipendente dal testo cifrato, operando come un cifrario a flusso sincrono. Su canali rumorosi, un errore di trasmissione corrompe solo il bit corrispondente del plaintext senza propagarsi ai blocchi successivi.",
-    "hint": "Considera quale modalità si comporta come cifrario a flusso e non propaga gli errori di trasmissione."
+    "hint": "Considera quale modalità si comporta come cifrario a flusso e non propaga gli errori di trasmissione.",
+    "id": "df32dd73-c5d7-435d-8844-a8acb1be52dc"
   },
   {
     "question": "38) Per la trasmissione generica orientata ai blocchi (block-oriented), in genere si utilizza la modalità di cifratura a blocchi ________",
@@ -833,7 +870,8 @@
     "image": "",
     "code": "",
     "explanation": "CBC è la modalità standard per dati strutturati in blocchi perché collega ogni blocco al precedente tramite XOR, eliminando i pattern ripetitivi del plaintext e garantendo che blocchi identici producano cifrati diversi.",
-    "hint": "Ricorda la modalità che utilizza un IV e concatena i blocchi cifrati per evitare pattern identici."
+    "hint": "Ricorda la modalità che utilizza un IV e concatena i blocchi cifrati per evitare pattern identici.",
+    "id": "311ef435-b5f9-405e-90af-aedeeef763b0"
   },
   {
     "question": "39) È possibile convertire qualsiasi cifrario a blocchi in un cifrario a flusso utilizzando la modalità Cipher Feedback (CFB)",
@@ -851,7 +889,8 @@
     "image": "",
     "code": "",
     "explanation": "CFB opera generando un keystream tramite il cifrario a blocchi che viene poi XORato con il plaintext bit per bit o byte per byte. Questo permette di cifrare flussi di dati di qualsiasi dimensione minore del blocco base.",
-    "hint": "Pensa a come CFB permette di cifrare unità di dati più piccole della dimensione del blocco del cifrario sottostante."
+    "hint": "Pensa a come CFB permette di cifrare unità di dati più piccole della dimensione del blocco del cifrario sottostante.",
+    "id": "78eea26d-1f25-4e0e-887d-50febcd0f0df"
   },
   {
     "question": "40) AES usa una struttura di Feistel",
@@ -869,6 +908,7 @@
     "image": "",
     "code": "",
     "explanation": "AES utilizza una rete di sostituzione-permutazione (SPN) dove l'intero blocco viene trasformato in ogni round attraverso operazioni di SubBytes, ShiftRows e MixColumns. La struttura di Feistel, usata in DES, divide invece il blocco in due metà che vengono processate alternativamente.",
-    "hint": "Confronta la struttura di DES, che divide il blocco in due parti, con quella di AES che opera sull'intero blocco simultaneamente."
+    "hint": "Confronta la struttura di DES, che divide il blocco in due parti, con quella di AES che opera sull'intero blocco simultaneamente.",
+    "id": "c0e94f3b-595a-4ced-8ceb-485ae8c83326"
   }
 ]

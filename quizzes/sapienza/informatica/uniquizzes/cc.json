@@ -31,7 +31,8 @@
     "image": "",
     "code": "",
     "explanation": "Large chunks reduce metadata overhead (fewer chunk handles needed) and optimize for large sequential I/O operations common in their workloads, improving overall system efficiency.",
-    "hint": "Consider how chunk size affects the amount of metadata the master must store and manage."
+    "hint": "Consider how chunk size affects the amount of metadata the master must store and manage.",
+    "id": "a13e72d5-78ff-4c25-b815-7b8455dc4447"
   },
   {
     "question": "Which is the key operation performed by the MapReduce framework (like Hadoop) that allow to properly execute the Reduce task(s) after the completion of Map tasks?",
@@ -61,7 +62,8 @@
     "image": "",
     "code": "",
     "explanation": "The shuffle phase transfers intermediate key-value pairs from mappers to reducers, while sort organizes these pairs by key so reducers can process them in order.",
-    "hint": "What happens to the Map output before it reaches the Reduce function?"
+    "hint": "What happens to the Map output before it reaches the Reduce function?",
+    "id": "ab51fe8e-9633-4813-8fe6-2082c210eda5"
   },
   {
     "question": "What is the key idea behind MapReduce?",
@@ -91,7 +93,8 @@
     "image": "",
     "code": "",
     "explanation": "MapReduce splits large datasets into smaller chunks (divide), processes them in parallel with Map functions (conquer), then combines results with Reduce functions.",
-    "hint": "How does the framework break down and process large computational tasks?"
+    "hint": "How does the framework break down and process large computational tasks?",
+    "id": "a7f53779-98f1-416a-a487-0b368945ca11"
   },
   {
     "question": "Assume you setup a multi-threshold scale-out policy with two thresholds on the CPU utilization (Ucpu), namely Tcpu1=50% of max CPU utilization and Tcpu2=80% of max CPU utilization. A scaling action start if (see the figure): \n\n( Ucpu > Tcpu1 ) OR ( Ucpu > Tcpu2 ) AND (the threshold is exceeded for more than 300 seconds). \n\nWhy is important to wait a certain time interval before starting a scaling action?",
@@ -117,7 +120,8 @@
     "image": "",
     "code": "",
     "explanation": "The waiting period prevents reacting to transient CPU spikes that would cause the system to rapidly add and remove instances (ping-pong effect), making the scaling policy unstable.",
-    "hint": "What would happen if the system immediately scaled up/down at every brief CPU fluctuation?"
+    "hint": "What would happen if the system immediately scaled up/down at every brief CPU fluctuation?",
+    "id": "f1d8088c-0183-487d-8442-ef59b04abd17"
   },
   {
     "question": "Which of the following are essential characteristics of cloud computing? (as defined by NIST)",
@@ -139,7 +143,8 @@
     "image": "",
     "code": "",
     "explanation": "NIST defines three essential cloud characteristics: on-demand self-service (resources without human interaction), broad network access (ubiquitous access), and rapid elasticity (automatic scaling).",
-    "hint": "Which three characteristics did NIST officially designate as essential for cloud computing?"
+    "hint": "Which three characteristics did NIST officially designate as essential for cloud computing?",
+    "id": "75570a7d-2246-4df8-8d08-e22d91cd005d"
   },
   {
     "question": "Which of the following are essential characteristics of cloud computing? (as defined by NIST)",
@@ -161,7 +166,8 @@
     "image": "",
     "code": "",
     "explanation": "Le tre caratteristiche essenziali definite da NIST sono Resource pooling (condivisione delle risorse), Rapid elasticity (elasticità rapida) e Measured services (servizi misurati). Le altre opzioni includono caratteristiche non belonging alla definizione NIST o termini meno precisi.",
-    "hint": "Ricorda le 5 caratteristiche NIST: on-demand, broad network access, resource pooling, rapid elasticity, measured service."
+    "hint": "Ricorda le 5 caratteristiche NIST: on-demand, broad network access, resource pooling, rapid elasticity, measured service.",
+    "id": "4f38a747-4d21-486c-9b62-4eadebff9a89"
   },
   {
     "question": "Which, among the following definitions describe the MAPE-K cycle",
@@ -191,7 +197,8 @@
     "image": "",
     "code": "",
     "explanation": "MAPE-K è l'acronimo di Monitor-Analyze-Plan-Execute over Knowledge, ed è il ciclo di controllo fondamentale del computing autonomico implementato da un autonomic manager che permette di gestire sistemi self-managing.",
-    "hint": "MAPE-K è il ciclo di controllo tipico dei sistemi autonomici/auto-gestiti."
+    "hint": "MAPE-K è il ciclo di controllo tipico dei sistemi autonomici/auto-gestiti.",
+    "id": "e416cdc0-b2bd-4b19-ace5-51d0fb325880"
   },
   {
     "question": "Suppose that you would like to deploy a web application composed by: a frontend server to receive http requests and produce http reply/; a business logic server to build the content of the web pages; a database server, used by the business logic to extract information. Suppose also that the business logic component should scale (horizontally). Which system architectural style/model could be used for the deployment?",
@@ -217,7 +224,8 @@
     "image": "",
     "code": "",
     "explanation": "L'architettura descritta presenta tre livelli distinti (frontend, business logic, database) che comunicano in modo sequenziale, caratteristica tipica del modello multi-tier client-server. I microservices richiederebbero che ogni componente fosse un servizio indipendente con API propria.",
-    "hint": "Distigui tra tier (livelli funzionali) e microservice (servizi indipendenti)."
+    "hint": "Distigui tra tier (livelli funzionali) e microservice (servizi indipendenti).",
+    "id": "8ef093c4-f58c-4d90-aa99-ac759d277d6e"
   },
   {
     "question": "Which type of scalability is facilitated by microservices",
@@ -239,7 +247,8 @@
     "image": "",
     "code": "",
     "explanation": "I microservices permettono di scalare orizzontalmente singole funzioni o componenti in modo indipendente dagli altri, cosa non possibile in un'architettura monolitica dove si scala l'intera applicazione.",
-    "hint": "I microservices scompongono l'applicazione in parti indipendenti scalabili."
+    "hint": "I microservices scompongono l'applicazione in parti indipendenti scalabili.",
+    "id": "13e09b58-3022-4db5-9925-316180394e97"
   },
   {
     "question": "Which are the business drivers for cloud computing?",
@@ -261,7 +270,8 @@
     "image": "",
     "code": "",
     "explanation": "I principali business driver per il cloud computing sono: Capacity Planning (pianificazione ottimale delle risorse), Cost Reduction (riduzione dei costi infrastrutturali) e Business Agility (maggiore velocità di risposta al mercato).",
-    "hint": "I driver includono benefici economici e operativi per il business."
+    "hint": "I driver includono benefici economici e operativi per il business.",
+    "id": "0bcf9b33-2a42-4faa-9a47-5709b5530895"
   },
   {
     "question": "Assume that you are setting up a scalable web server with AWS and that for your autoscaling group you have configure a step scaling policy. You have decided to set the alarm to start the scale-out with a threshold on the incoming traffic. Which of the following assertions is true?",
@@ -291,7 +301,8 @@
     "image": "",
     "code": "",
     "explanation": "Nelle policy di step scaling AWS, le metriche come il traffico in ingresso vengono calcolate come media aggregata su tutte le istanze del gruppo Auto Scaling, non valutate singolarmente per ciascuna istanza.",
-    "hint": "Ricorda che il dimensionamento automatico considera le metriche aggregate dell'intero gruppo, non le singole istanze."
+    "hint": "Ricorda che il dimensionamento automatico considera le metriche aggregate dell'intero gruppo, non le singole istanze.",
+    "id": "74d241db-8702-4400-ae91-86c12bc7b408"
   },
   {
     "question": "In what differ microservices and the SOA?",
@@ -313,7 +324,8 @@
     "image": "",
     "code": "",
     "explanation": "I microservizi rappresentano un'evoluzione di SOA con comunicazione più leggera (REST), gestione dati autonoma per ogni servizio (database dedicato), e servizi di dimensioni più ridotte e indipendenti.",
-    "hint": "I microservizi sono una forma più granulare e specifica di architettura orientata ai servizi."
+    "hint": "I microservizi sono una forma più granulare e specifica di architettura orientata ai servizi.",
+    "id": "4bad72c0-4728-4c48-bc47-b68e563b0d10"
   },
   {
     "question": "Assume that you are deploying a set of containers and that the network stack of the containers should not be isolated from the Docker host. Which of the following network drivers will you use?",
@@ -339,7 +351,8 @@
     "image": "",
     "code": "",
     "explanation": "Il driver host in Docker rimuove completamente l'isolamento della rete tra il container e l'host, facendo sì che il container condivida direttamente lo stack di rete dell'host Docker.",
-    "hint": "Per non avere isolamento dalla rete dell'host, bisogna usare il driver che condivide lo stack di rete."
+    "hint": "Per non avere isolamento dalla rete dell'host, bisogna usare il driver che condivide lo stack di rete.",
+    "id": "aac6730a-0fd1-41d8-9992-e69086f7a54f"
   },
   {
     "question": "What is the difference between hypervisor of type I and hypervisor of type II?",
@@ -365,7 +378,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli hypervisor Type I (bare-metal) vengono installati direttamente sull'hardware senza bisogno di un sistema operativo host, mentre gli hypervisor Type II (hosted) richiedono un sistema operativo ospite su cui girare.",
-    "hint": "La distinzione principale è dove viene eseguito l'hypervisor: direttamente sull'hardware o sopra un sistema operativo."
+    "hint": "La distinzione principale è dove viene eseguito l'hypervisor: direttamente sull'hardware o sopra un sistema operativo.",
+    "id": "a8dd73bd-625d-4410-913f-2029d9beef0f"
   },
   {
     "question": "Consider the live migration process and in the specific the “iterative pre-copy” step. Why the memory is copied iteratively?",
@@ -395,7 +409,8 @@
     "image": "",
     "code": "",
     "explanation": "La copia iterativa della memoria riduce progressivamente la porzione di memoria 'dirty' (modificata) ad ogni ciclo, così che l'ultimo trasferimento (downtime) sia最小 e gestibile.",
-    "hint": "L'obiettivo è rendere la quantità di memoria rimanente da copiare sufficientemente piccola per minimizzare il tempo di inattività."
+    "hint": "L'obiettivo è rendere la quantità di memoria rimanente da copiare sufficientemente piccola per minimizzare il tempo di inattività.",
+    "id": "25799f77-7586-4838-ba32-9e5b64d84ef0"
   },
   {
     "question": "Why system level virtualization (a.k.a. Hypervisor) increase security?",
@@ -425,7 +440,8 @@
     "image": "",
     "code": "",
     "explanation": "The hypervisor acts as a control layer between guest OSes and hardware, intercepting and validating privileged instructions (like I/O operations) before they reach physical resources, preventing direct hardware access that could be exploited.",
-    "hint": "Consider what happens when a guest OS attempts privileged operations - who controls this access?"
+    "hint": "Consider what happens when a guest OS attempts privileged operations - who controls this access?",
+    "id": "c473679a-f28f-4311-b974-50165ece6c1b"
   },
   {
     "question": "Consider the Kubernetes architecture in the figure. Assume you configure the container autoscaling mechanisms. What is the missing component in the figure?",
@@ -451,7 +467,8 @@
     "image": "",
     "code": "",
     "explanation": "Autoscaling mechanisms require continuous monitoring of resource consumption (CPU, memory) to determine when scaling triggers thresholds are met, making a monitoring module essential.",
-    "hint": "Autoscaling needs to measure current resource utilization to make scaling decisions."
+    "hint": "Autoscaling needs to measure current resource utilization to make scaling decisions.",
+    "id": "750acbf4-b5d9-4a62-a787-ad70098d7de2"
   },
   {
     "question": "Consider the Kubernetes architecture in the figure. What is the component that takes scaling decisions?",
@@ -477,7 +494,8 @@
     "image": "",
     "code": "",
     "explanation": "The kube-controller-manager runs controller loops that continuously monitor cluster state and take corrective actions, including scaling decisions for pods based on desired state.",
-    "hint": "Which Kubernetes component runs the reconciliation loops for maintaining desired state?"
+    "hint": "Which Kubernetes component runs the reconciliation loops for maintaining desired state?",
+    "id": "9983572f-c252-4a41-8ded-26173f320f1f"
   },
   {
     "question": "Consider the Kubernetes architecture in the figure. What is the component that decides on which Kubernetes node to start a new container?",
@@ -503,7 +521,8 @@
     "image": "",
     "code": "",
     "explanation": "The kube-scheduler evaluates pod requirements against node resources and policies (affinity, taints, capacity) to determine the optimal node for placing new containers.",
-    "hint": "There's a specific component responsible for pod-to-node assignment based on constraints."
+    "hint": "There's a specific component responsible for pod-to-node assignment based on constraints.",
+    "id": "a35a522e-fb91-4cce-ad59-41aa62bbc97a"
   },
   {
     "question": "Consider the MAPE-K cycle in the figure. What are the AWS components that implement the Monitor, Analysis and Plan phases?",
@@ -533,7 +552,8 @@
     "image": "",
     "code": "",
     "explanation": "CloudWatch monitors AWS resources and generates metrics, Alarms analyze these metrics against thresholds to trigger scaling, and Dynamic Scaling policies execute the scaling plan.",
-    "hint": "Think about which AWS services correspond to observing, evaluating, and acting on metrics."
+    "hint": "Think about which AWS services correspond to observing, evaluating, and acting on metrics.",
+    "id": "ed8e0d69-1a41-4565-8412-ec0dfa827b3d"
   },
   {
     "question": "Consider the BigTable datastore architecture in the figure. Which among the followings are duties of the Tablet server?",
@@ -555,7 +575,8 @@
     "image": "",
     "code": "",
     "explanation": "Il tablet server gestisce le operazioni sui dati: gestisce un insieme di tablet, gestisce le richieste di lettura/scrittura e divide tablet troppo grandi. Il Master si occupa invece dell'assegnazione e del bilanciamento del carico.",
-    "hint": "Ricorda la distinzione tra gestione dei dati (tablet server) e coordinamento (Master)."
+    "hint": "Ricorda la distinzione tra gestione dei dati (tablet server) e coordinamento (Master).",
+    "id": "2e68ea3a-eb73-46b8-a9c0-51cc358a2588"
   },
   {
     "question": "Consider the architecture of the HDFS in the figure. Which among the following actions are performed by the NameNode?",
@@ -585,7 +606,8 @@
     "image": "",
     "code": "",
     "explanation": "Il NameNode mantiene i metadati del filesystem distribuito, gestisce lo spazio dei nomi e controlla gli accessi ai file. Non gestisce direttamente la comunicazione con i DataNode per il trasferimento dati.",
-    "hint": "Il NameNode è il coordinatore centrale che gestisce metadati e permessi, non il trasferimento dati."
+    "hint": "Il NameNode è il coordinatore centrale che gestisce metadati e permessi, non il trasferimento dati.",
+    "id": "d2133064-ad2c-41ff-986d-7b06d5855eee"
   },
   {
     "question": "Consider the Google File System architecture in the figure. What components (or component) are responsible to handle the file access?",
@@ -611,7 +633,8 @@
     "image": "",
     "code": "",
     "explanation": "In GFS, i client comunicano direttamente con i chunk server per leggere/scrivere i dati. Il master interviene solo per le operazioni sui metadati, non per l'accesso effettivo ai file.",
-    "hint": "GFS evita colli di bottiglia facendo comunicare client e chunk server direttamente per i dati."
+    "hint": "GFS evita colli di bottiglia facendo comunicare client e chunk server direttamente per i dati.",
+    "id": "def54b52-31c5-46b1-913c-f1fd8ab058d1"
   },
   {
     "question": "Researchers and engineers at Google designed the Google File System taking into account the file access model. What is the most frequent type of file access?",
@@ -633,7 +656,8 @@
     "image": "",
     "code": "",
     "explanation": "GFS è ottimizzato per le letture sequenziali perché i job MapReduce tipici leggono grandi file in modo sequenziale. Questo ha influenzato molte scelte progettuali di GFS.",
-    "hint": "Pensa ai tipici carichi di lavoro di elaborazione dati su larga scala."
+    "hint": "Pensa ai tipici carichi di lavoro di elaborazione dati su larga scala.",
+    "id": "7d0dbcf9-910d-4c7e-93d8-8b8fd590660a"
   },
   {
     "question": "Researchers and engineers at Google designed the Google File System taking into account the file access model. What is the most frequent type of file access?",
@@ -655,7 +679,8 @@
     "image": "",
     "code": "",
     "explanation": "In GFS l'append è l'operazione di scrittura più frequente perché permette a più writer di scrivere contemporaneamente senza conflitti. GFS è progettato per ottimizzare questa operazione.",
-    "hint": "L'append è l'operazione di scrittura dominante in GFS, non la scrittura casuale."
+    "hint": "L'append è l'operazione di scrittura dominante in GFS, non la scrittura casuale.",
+    "id": "11b61578-a40b-4a73-b2c7-b1fb9e18080e"
   },
   {
     "question": "What among the following is an RDD transformation?",
@@ -677,7 +702,8 @@
     "image": "",
     "code": "",
     "explanation": "reduceByKey is a transformation because it returns a new RDD by aggregating values with the same key. In Spark, transformations return new RDDs, while actions return values to the driver program.",
-    "hint": "Transformations create new RDDs, actions return values to the driver."
+    "hint": "Transformations create new RDDs, actions return values to the driver.",
+    "id": "3c10768f-31ed-48b9-930e-b65e726c0873"
   },
   {
     "question": "What among the following is an RDD transformation?",
@@ -699,7 +725,8 @@
     "image": "",
     "code": "",
     "explanation": "map is a transformation that applies a function to each element of the RDD and returns a new RDD. Both collect and reduce are actions that return values to the driver.",
-    "hint": "Transformations are lazy operations that produce new RDDs."
+    "hint": "Transformations are lazy operations that produce new RDDs.",
+    "id": "e0db3b7f-c15f-4a03-8622-ce5d312ac723"
   },
   {
     "question": "What among the following is an RDD action?",
@@ -721,7 +748,8 @@
     "image": "",
     "code": "",
     "explanation": "collect is an action that returns all elements of the RDD to the driver program. It triggers the computation and brings results back to the driver.",
-    "hint": "Actions trigger execution and return results to the driver."
+    "hint": "Actions trigger execution and return results to the driver.",
+    "id": "ce7aa4de-7e72-4fc4-930f-ab004c361cf9"
   },
   {
     "question": "Hadoop MapReduce optimizes data locality when map tasks are deployed on the Hadoop cluster, that is Hadoop MapReduce try first to run Map tasks on a data local node to not use cluster bandwidth. In case local optimization is not possible, what alternative deployment policies are used?",
@@ -743,7 +771,8 @@
     "image": "",
     "code": "",
     "explanation": "Hadoop follows a hierarchy of data locality: first tries node-local (same node), then rack-local (same rack), and finally falls back to any available node in the cluster.",
-    "hint": "Consider the network topology hierarchy in Hadoop: node, rack, cluster."
+    "hint": "Consider the network topology hierarchy in Hadoop: node, rack, cluster.",
+    "id": "07f1f1fb-420a-4310-ad84-1c19eba4054a"
   },
   {
     "question": "A MapReduce computation is usually executed on a large cluster of commodity nodes. Hence, the failure probability of the master and worker nodes is very high. In case the master node fails, what action should be taken to preserve the result of the computation?",
@@ -765,7 +794,8 @@
     "image": "",
     "code": "",
     "explanation": "The master node (JobTracker) maintains all job metadata and coordinates the entire computation. If it fails, there is no way to recover the job state, so the entire MapReduce computation must be restarted.",
-    "hint": "Without the master node, there is no central coordination to resume or complete the job."
+    "hint": "Without the master node, there is no central coordination to resume or complete the job.",
+    "id": "5f90cf60-b8a0-4906-896e-b65dff9063c8"
   },
   {
     "question": "A MapReduce computation is usually executed on a large cluster of commodity nodes. Hence, the failure probability of the master and worker nodes is very high. In case a map worker node fail, what action should be taken to preserve the result of the computation?",
@@ -787,7 +817,8 @@
     "image": "",
     "code": "",
     "explanation": "In MapReduce, i map task producono risultati intermedi memorizzati localmente sul worker. Se un worker fallisce, i dati intermedi non sono più accessibili, quindi tutti i map task assegnati a quel worker devono essere ri-eseguiti. I reduce task non dipendono dal worker specifico ma solo dai risultati intermedi completati.",
-    "hint": "I risultati dei map task sono memorizzati locally sul worker che li esegue, non sul master."
+    "hint": "I risultati dei map task sono memorizzati locally sul worker che li esegue, non sul master.",
+    "id": "d683e108-ddcf-4d2c-86de-77252155f5e5"
   },
   {
     "question": "Which of the following is a cloud deployment model?",
@@ -809,7 +840,8 @@
     "image": "",
     "code": "",
     "explanation": "I deployment model definiscono la configurazione dell'infrastruttura cloud (dove è ospitata e chi la gestisce). Public cloud è un deployment model classico, mentre Cloud Service Broker è un pattern architetturale e SaaS è un service model.",
-    "hint": "I deployment model riguardano la localizzazione e la proprietà dell'infrastruttura."
+    "hint": "I deployment model riguardano la localizzazione e la proprietà dell'infrastruttura.",
+    "id": "728f2fdc-9a39-42ab-bb11-bc20137b7bd8"
   },
   {
     "question": "Which of the following is a cloud service model",
@@ -831,7 +863,8 @@
     "image": "",
     "code": "",
     "explanation": "I cloud service model (IaaS, PaaS, SaaS) definiscono cosa il provider gestisce. IaaS fornisce infrastruttura virtualizzata. Private Cloud è un deployment model, Docker as a Service non è un termine standard riconosciuto.",
-    "hint": "I service model definiscono il livello di astrazione e responsabilità tra provider e utente."
+    "hint": "I service model definiscono il livello di astrazione e responsabilità tra provider e utente.",
+    "id": "9b9942c2-d3a8-4c4a-a9cf-e709a8563ad0"
   },
   {
     "question": "Consider the difference between SOA and microservices and specifically the communication mechanisms. What of the following assertion is correct?",
@@ -853,7 +886,8 @@
     "image": "",
     "code": "",
     "explanation": "Microservices favoriscono comunicazioni leggere come REST, HTTP e protocolli aperti, mentre l'architettura SOA tradizionale tipicamente usa ESB (Enterprise Service Bus) che sono spesso proprietari e più complessi.",
-    "hint": "La differenza principale è nel grado di accoppiamento e nel peso dei middleware di comunicazione."
+    "hint": "La differenza principale è nel grado di accoppiamento e nel peso dei middleware di comunicazione.",
+    "id": "670aba65-3c46-45ad-8d6d-dc6ebe22a126"
   },
   {
     "question": "What are the enabling technologies for containers?",
@@ -875,7 +909,8 @@
     "image": "",
     "code": "",
     "explanation": "Namespaces forniscono isolamento delle risorse di sistema, cgroups gestiscono l'allocazione e limitazione delle risorse per gruppi di processi, e unionfs permette di unire filesystem a strati (layer). Insieme formano le fondamenta tecniche dei container.",
-    "hint": "Sono le funzionalità del kernel Linux che permettono l'isolamento e la virtualizzazione a livello di SO."
+    "hint": "Sono le funzionalità del kernel Linux che permettono l'isolamento e la virtualizzazione a livello di SO.",
+    "id": "4c19cd1b-2e47-43ca-ace1-30c7a4578e69"
   },
   {
     "question": "Assume that you are deploying a set of containers on different Docker hosts, and such containers need to communicate each other. Which network drivers will you use?",
@@ -897,7 +932,8 @@
     "image": "",
     "code": "",
     "explanation": "Overlay networks create a virtual network layer that spans multiple Docker hosts, enabling containers on different hosts to communicate seamlessly as if on the same network, which is essential for distributed container deployments.",
-    "hint": "Consider which network driver is specifically designed for multi-host container communication."
+    "hint": "Consider which network driver is specifically designed for multi-host container communication.",
+    "id": "823a1d30-67a6-4f83-b04f-803e809d0f8b"
   },
   {
     "question": "Considering the write protocol of the HDFS. Who is in charge of sending the “write successful” acknowledgement to the NameNode?",
@@ -919,7 +955,8 @@
     "image": "",
     "code": "",
     "explanation": "In HDFS, the client coordinates the write operation, receives acknowledgments from DataNodes, and then notifies the NameNode of successful completion.",
-    "hint": "Think about the role of the client in coordinating the write pipeline."
+    "hint": "Think about the role of the client in coordinating the write pipeline.",
+    "id": "c9825f67-885a-499b-a1ea-58fc418618ae"
   },
   {
     "question": "A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which data could be accessed with the key (Row key, column key, timestamp)?",
@@ -941,7 +978,8 @@
     "image": "",
     "code": "",
     "explanation": "The combination of row key, column key, and timestamp uniquely identifies a single cell value at a specific point in time, allowing access to particular versions of that cell.",
-    "hint": "Remember that timestamps in Bigtable serve a versioning purpose."
+    "hint": "Remember that timestamps in Bigtable serve a versioning purpose.",
+    "id": "624ea7aa-9003-478a-9cc7-b35bb307a492"
   },
   {
     "question": "What is a Cloud Broker?",
@@ -963,7 +1001,8 @@
     "image": "",
     "code": "",
     "explanation": "A cloud broker acts as an intermediary that manages, controls, and coordinates cloud service usage between providers and consumers, negotiating relationships and ensuring service delivery.",
-    "hint": "Think about the intermediary role in service management."
+    "hint": "Think about the intermediary role in service management.",
+    "id": "cb43b63b-5924-49f7-bdd9-148f4827b7e1"
   },
   {
     "question": "What is Rapid Elasticity?",
@@ -985,7 +1024,8 @@
     "image": "",
     "code": "",
     "explanation": "Rapid elasticity is the cloud characteristic that enables automatic scaling of resources based on workload changes, allowing the system to adapt dynamically to demand fluctuations.",
-    "hint": "Focus on the automatic scaling aspect in response to workload changes."
+    "hint": "Focus on the automatic scaling aspect in response to workload changes.",
+    "id": "ec81e3f4-cdc1-47b5-aee2-ed55ca84b56e"
   },
   {
     "question": "What is a namespace?",
@@ -1007,7 +1047,8 @@
     "image": "",
     "code": "",
     "explanation": "Namespaces are a Linux kernel feature that provide isolation by wrapping global system resources (like PIDs, network interfaces, mount points) so that processes within a namespace see only their own isolated instance of that resource.",
-    "hint": "Think about what isolation means - it's about making processes believe they have exclusive access to system resources."
+    "hint": "Think about what isolation means - it's about making processes believe they have exclusive access to system resources.",
+    "id": "e258518b-659a-4568-beb9-361380defa32"
   },
   {
     "question": "Consider the docker CLI command `docker run -i -t ubuntu /bin/bash`, which of the following actions is performed by the command?",
@@ -1029,7 +1070,8 @@
     "image": "",
     "code": "",
     "explanation": "When running `docker run ubuntu`, Docker first checks if the ubuntu image exists locally. If not found, it automatically pulls (downloads) the image from a registry like Docker Hub before creating and starting the container.",
-    "hint": "Remember the order: Docker needs the image first before it can run a container from it."
+    "hint": "Remember the order: Docker needs the image first before it can run a container from it.",
+    "id": "cfc2d4af-2904-4bea-9e5b-e9e55b965ea4"
   },
   {
     "question": "Consider the Google File System architecture. What is/are the component/s responsible to create a file?",
@@ -1059,7 +1101,8 @@
     "image": "",
     "code": "",
     "explanation": "In GFS architecture, the master handles all metadata operations including file creation. Chunk servers only store and retrieve actual data chunks based on instructions from the master.",
-    "hint": "In GFS, the master manages metadata while chunk servers handle the actual data storage."
+    "hint": "In GFS, the master manages metadata while chunk servers handle the actual data storage.",
+    "id": "84a6c939-6366-4fa9-8d72-1607d13b6116"
   },
   {
     "question": "Which of the following definition of capacity planning is correct?",
@@ -1081,7 +1124,8 @@
     "image": "",
     "code": "",
     "explanation": "Capacity planning is fundamentally about determining the optimal amount of resources needed to meet demand, avoiding waste from over-provisioning and performance issues from under-provisioning.",
-    "hint": "Focus on the balance between too much and too little resources."
+    "hint": "Focus on the balance between too much and too little resources.",
+    "id": "8a47e5cc-dbbb-4dce-a162-bd247de02449"
   },
   {
     "question": "Which of the following are benefits of the microservice architecture?",
@@ -1103,7 +1147,8 @@
     "image": "",
     "code": "",
     "explanation": "Microservices offer maintainability (ease of changing individual services), independent deployability (each service deploys separately), and independent scalability (each service scales based on its own load).",
-    "hint": "Think about what can be done independently for each service in a distributed system."
+    "hint": "Think about what can be done independently for each service in a distributed system.",
+    "id": "b9948692-cf22-4d45-84e2-01a50ccf4440"
   },
   {
     "question": "Which of the following are challenges in the microservice architecture?",
@@ -1125,7 +1170,8 @@
     "image": "",
     "code": "",
     "explanation": "The main challenges in microservices are decomposition (finding the right service boundaries) and the operational complexity of developing, testing, and deploying multiple independent services. This differs from the benefits, which include fault isolation and technology flexibility.",
-    "hint": "Think about what makes microservices difficult to implement rather than what advantages they provide."
+    "hint": "Think about what makes microservices difficult to implement rather than what advantages they provide.",
+    "id": "f6ca2dde-b3c3-495b-bb97-b0c4277c3dd7"
   },
   {
     "question": "What is a microservice architecture?",
@@ -1147,7 +1193,8 @@
     "image": "",
     "code": "",
     "explanation": "This is the standard definition from practitioners like Martin Fowler and Adrian Cockcroft, emphasizing the key characteristics: maintainability, loose coupling, independent deployment, business capability alignment, and small team ownership.",
-    "hint": "Look for the definition that includes all the canonical microservice characteristics from the literature."
+    "hint": "Look for the definition that includes all the canonical microservice characteristics from the literature.",
+    "id": "1eec0d64-c37b-4063-b152-e1757f148e42"
   },
   {
     "question": "A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which of the following keys does not allow to locate a cell?",
@@ -1169,7 +1216,8 @@
     "image": "",
     "code": "",
     "explanation": "Bigtable's data model uses (row key, column key, timestamp) to locate a cell. Column families are logical groupings of columns, not part of the cell lookup key - the column key itself contains the family qualifier.",
-    "hint": "Recall that Bigtable organizes data with row, column (which includes family), and timestamp as the three dimensions."
+    "hint": "Recall that Bigtable organizes data with row, column (which includes family), and timestamp as the three dimensions.",
+    "id": "4157d510-a532-4b7b-95d4-259aaa0d436f"
   },
   {
     "question": "Bigtable uses timestamp to maintain versioning of the data stored. What among the followings is a mechanism to garbage collect cell versions automatically?",
@@ -1191,7 +1239,8 @@
     "image": "",
     "code": "",
     "explanation": "Bigtable's garbage collection is time-based: it keeps only versions that are 'new-enough' (recent enough based on a configurable age). This is the automatic mechanism to prune old versions.",
-    "hint": "Think about what 'new-enough' means in the context of time-based versioning."
+    "hint": "Think about what 'new-enough' means in the context of time-based versioning.",
+    "id": "9bf406d6-302c-44cc-a98f-a1a4a7250362"
   },
   {
     "question": "The NIST definition of Cloud computing mention that “Computing resources are pooled to serve multiple consumers using a multi-tenant model”. What does multi-tenancy means?",
@@ -1213,7 +1262,8 @@
     "image": "",
     "code": "",
     "explanation": "Multi-tenancy means multiple tenants share the same application instance and logic, but each tenant's data is isolated. This is a fundamental cloud computing concept for resource pooling and efficiency.",
-    "hint": "Focus on what is shared (application logic) versus what is isolated (data) in multi-tenant systems."
+    "hint": "Focus on what is shared (application logic) versus what is isolated (data) in multi-tenant systems.",
+    "id": "d2c8a496-65c7-4698-90ee-b9dbf3b36ccd"
   },
   {
     "question": "What is a capacity planning match strategy?",
@@ -1235,7 +1285,8 @@
     "image": "",
     "code": "",
     "explanation": "The capacity planning 'match' strategy specifically adds capacity in small incremental steps to mirror demand increases, unlike 'lead' (anticipatory) or 'lag' (reactive) strategies.",
-    "hint": "Think about what 'matching' something means - it should follow or mirror the pattern incrementally."
+    "hint": "Think about what 'matching' something means - it should follow or mirror the pattern incrementally.",
+    "id": "40bb5ff0-df58-41a3-8cc2-d37959880da9"
   },
   {
     "question": "Assume you are using a service offered via a web application and you do not pay for the use of the service. Which feature the service should have to be classified as a cloud service?",
@@ -1257,7 +1308,8 @@
     "image": "",
     "code": "",
     "explanation": "The illusion of infinite resources is a fundamental cloud characteristic that enables elasticity and on-demand self-service, abstracting resource limitations from the user.",
-    "hint": "What makes cloud feel different from traditional infrastructure regarding resource availability?"
+    "hint": "What makes cloud feel different from traditional infrastructure regarding resource availability?",
+    "id": "f2a8ea69-7e17-4110-80c0-fce7bad5b539"
   },
   {
     "question": "The Ansible automation tools is defined to be an “agentless tool that runs in a push model”. What a push model means?",
@@ -1279,7 +1331,8 @@
     "image": "",
     "code": "",
     "explanation": "Agentless push model means Ansible connects directly to managed hosts via existing frameworks (like SSH) and pushes modules without requiring permanent agent software on remote machines.",
-    "hint": "Combine the meaning of 'agentless' with 'push' - how does it communicate without agents?"
+    "hint": "Combine the meaning of 'agentless' with 'push' - how does it communicate without agents?",
+    "id": "20bd5930-e70c-49ef-8b9a-7241a7f3f5aa"
   },
   {
     "question": "Suppose you have two implementation and deployment of the same application, one based on the Service Oriented Architecture and the other based on the Microservice Architecture. What will be the main difference between the two implementation and deployment?",
@@ -1301,7 +1354,8 @@
     "image": "",
     "code": "",
     "explanation": "Microservices emphasize small, independently deployable services with their own data stores using lightweight communication (REST), while SOA uses larger coarse-grained services with shared databases and heavier communication protocols.",
-    "hint": "Consider the fundamental architectural differences in how services communicate and manage data."
+    "hint": "Consider the fundamental architectural differences in how services communicate and manage data.",
+    "id": "ae792d30-a21a-4c7b-9386-fae887f582ec"
   },
   {
     "question": "An essential characteristic of cloud computing is measured service. How AWS implement this feature?",
@@ -1323,7 +1377,8 @@
     "image": "",
     "code": "",
     "explanation": "CloudWatch provides monitoring, metrics collection, and metering for AWS resources, enabling the pay-per-use model that characterizes measured service in cloud computing.",
-    "hint": "Which AWS service is specifically designed for monitoring resource usage and enabling billing?"
+    "hint": "Which AWS service is specifically designed for monitoring resource usage and enabling billing?",
+    "id": "25b6d577-8a75-4f7a-8ec9-a3c3eb744ebf"
   },
   {
     "question": "What is the difference between Horizontal duplication and Functional decomposition in microservices?",
@@ -1345,7 +1400,8 @@
     "image": "",
     "code": "",
     "explanation": "Horizontal duplication (or horizontal scaling) means replicating the entire application across multiple instances to handle more load. Functional decomposition means breaking the application into separate services based on business capabilities, where each service can be scaled independently based on its own workload patterns.",
-    "hint": "Think about what 'horizontal' means in scaling (replicating whole units) versus separating the application into distinct functional units."
+    "hint": "Think about what 'horizontal' means in scaling (replicating whole units) versus separating the application into distinct functional units.",
+    "id": "41cd585e-f8d8-410f-8efb-5be7d6f44e98"
   },
   {
     "question": "The microservices architecture is defined as “an architectural style that structures an application as a collection of services that are: highly maintainable and testable; loosely coupled; Independently deployable; organized around business capabilities; owned by a small team.” Why services should be loosely coupled?",
@@ -1367,7 +1423,8 @@
     "image": "",
     "code": "",
     "explanation": "Loose coupling minimizes dependencies between services, allowing each service to evolve independently, be deployed separately, and reducing the blast radius when changes are made.",
-    "hint": "Consider what happens when services are tightly coupled - a change in one service could break others."
+    "hint": "Consider what happens when services are tightly coupled - a change in one service could break others.",
+    "id": "4420c077-59ac-4c18-ad3d-1e52a58f0983"
   },
   {
     "question": "Let us consider an independent components event based system. What a subscriber component should provide?",
@@ -1389,7 +1446,8 @@
     "image": "",
     "code": "",
     "explanation": "In an event-based system, the subscriber registers a callback function that gets invoked when the specific event is published/triggered, which is the fundamental publish-subscribe pattern.",
-    "hint": "A subscriber 'subscribes' to events and needs a way to be notified when those events occur."
+    "hint": "A subscriber 'subscribes' to events and needs a way to be notified when those events occur.",
+    "id": "c9e6cf85-93ac-4253-94f7-353434c09844"
   },
   {
     "question": "Linux Namespace is an enabling technology for containers. What is exactly a Namespace?",
@@ -1411,7 +1469,8 @@
     "image": "",
     "code": "",
     "explanation": "A namespace wraps a global system resource in an abstraction that makes processes within the namespace believe they have their own isolated instance of that resource, enabling container isolation.",
-    "hint": "The key concept is that it makes resources appear as isolated instances to processes inside the namespace."
+    "hint": "The key concept is that it makes resources appear as isolated instances to processes inside the namespace.",
+    "id": "d7a5a0c3-8442-4fbb-af60-15f7dabcb267"
   },
   {
     "question": "Consider the docker CLI command `docker run -dp 3000:3000 getting-started`, which of the following actions is performed by the command?",
@@ -1433,7 +1492,8 @@
     "image": "",
     "code": "",
     "explanation": "The -d flag runs the container in detached mode (in the background), while -p 3000:3000 maps host port 3000 to container port 3000. There is no duplication involved.",
-    "hint": "Remember what -d stands for in docker and that -p creates port mapping between host and container, not between containers."
+    "hint": "Remember what -d stands for in docker and that -p creates port mapping between host and container, not between containers.",
+    "id": "2ef91b3a-0a95-4287-844a-e79b6878f883"
   },
   {
     "question": "A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which are the keys needed to locate a desired cell's version?",
@@ -1459,7 +1519,8 @@
     "image": "",
     "code": "",
     "explanation": "In Bigtable, data is organized as a sorted map indexed by three dimensions: row key, column key, and timestamp. The timestamp is essential because Bigtable stores multiple versions of each cell, and each version is identified by its timestamp.",
-    "hint": "Remember that Bigtable supports versioning, so you need the timestamp to identify which version of the cell you want to access."
+    "hint": "Remember that Bigtable supports versioning, so you need the timestamp to identify which version of the cell you want to access.",
+    "id": "8fd3027d-ccf8-42d3-99f3-b31181711efe"
   },
   {
     "question": "A Bigtable uses timestamp to maintain versioning of the data stored. What of the followings is a mechanism to garbage collect cell versions automatically?",
@@ -1485,7 +1546,8 @@
     "image": "",
     "code": "",
     "explanation": "Bigtable provides automatic garbage collection of old cell versions through a configurable policy. The most common approach is to specify the maximum number of versions to keep for each cell, allowing the system to automatically delete older versions.",
-    "hint": "Think about what 'garbage collection' means in terms of removing old data automatically based on some criterion."
+    "hint": "Think about what 'garbage collection' means in terms of removing old data automatically based on some criterion.",
+    "id": "52619b3e-4230-4415-9be4-5163f3f38faf"
   },
   {
     "question": "Researchers and engineers at Google designed the Google File System taking into account the file characteristics. What is the typical range for file size?",
@@ -1511,7 +1573,8 @@
     "image": "",
     "code": "",
     "explanation": "The Google File System was designed specifically for large files, which is why it optimizes for files that are typically very large, ranging from a few gigabytes to hundreds of terabytes.",
-    "hint": "Consider what type of workloads Google was optimizing for when designing GFS."
+    "hint": "Consider what type of workloads Google was optimizing for when designing GFS.",
+    "id": "07e49f37-75bf-4ef5-8232-b13b222ae952"
   },
   {
     "question": "What is the chunk size in the Google File System?",
@@ -1537,7 +1600,8 @@
     "image": "",
     "code": "",
     "explanation": "GFS uses a fixed chunk size of 64 Megabytes, which was chosen to reduce the number of interactions with the master server and to minimize metadata overhead.",
-    "hint": "This was a design choice to balance between metadata management and I/O efficiency."
+    "hint": "This was a design choice to balance between metadata management and I/O efficiency.",
+    "id": "4da6b8aa-f652-453d-b18e-103e834a0446"
   },
   {
     "question": "Consider the architecture of the HDFS in the figure. Which are the main responsibilities of the NameNode?",
@@ -1563,7 +1627,8 @@
     "image": "",
     "code": "",
     "explanation": "The NameNode is the master node in HDFS responsible for maintaining the file system namespace, storing all metadata about files and directories, and monitoring the health of DataNodes through heartbeat messages.",
-    "hint": "Think about which node in HDFS manages the directory structure and monitors cluster health."
+    "hint": "Think about which node in HDFS manages the directory structure and monitors cluster health.",
+    "id": "70ba569b-3e33-4e62-9f01-e7932388ea05"
   },
   {
     "question": "Consider the Big Table datastore in the figure. Which among the followings are responsibility of the Master node?",
@@ -1589,7 +1654,8 @@
     "image": "",
     "code": "",
     "explanation": "The Master node in BigTable handles metadata operations like assigning tablets to servers, detecting server changes, load balancing, and garbage collection. The actual read/write operations are handled by tablet servers, not the Master.",
-    "hint": "Think about what coordinates the system versus what handles the actual data operations."
+    "hint": "Think about what coordinates the system versus what handles the actual data operations.",
+    "id": "8bc06915-5545-45eb-ac6b-656edf62dd70"
   },
   {
     "question": "A Bigtable is a sparse, distributed, persistent multidimensional sorted map. Which are the keys needed to locate a desired cell?",
@@ -1615,7 +1681,8 @@
     "image": "",
     "code": "",
     "explanation": "While BigTable stores data with timestamps for versioning, the essential keys needed to locate a cell are the row key and column key. Timestamps are optional parameters used to retrieve specific versions.",
-    "hint": "Consider what's minimally required to uniquely identify a cell versus what's used for version control."
+    "hint": "Consider what's minimally required to uniquely identify a cell versus what's used for version control.",
+    "id": "ae4db221-fad6-4d7c-8313-12a6ca32f06d"
   },
   {
     "question": "Consider the docker CLI command `docker build -t getting-started` which of the following actions is performed by the command?",
@@ -1637,7 +1704,8 @@
     "image": "",
     "code": "",
     "explanation": "The -t flag tags the built image with the name 'getting-started'. When no Dockerfile path is specified, Docker looks for it in the current working directory by default.",
-    "hint": "Remember the distinction between image tagging and specifying the Dockerfile location."
+    "hint": "Remember the distinction between image tagging and specifying the Dockerfile location.",
+    "id": "0a593865-ff19-4989-9167-f6f1360d912e"
   },
   {
     "question": "How data are typically handled in a microservice architecture?",
@@ -1659,7 +1727,8 @@
     "image": "",
     "code": "",
     "explanation": "In microservice architecture, each service should have its own database and data model to ensure loose coupling and independence. Sharing databases would create tight coupling between services.",
-    "hint": "Think about what enables services to be independently deployable and loosely coupled."
+    "hint": "Think about what enables services to be independently deployable and loosely coupled.",
+    "id": "04869891-787d-4102-adcd-123d5ebd0c2c"
   },
   {
     "question": "Which of the following is a challenges in the microservice architecture?",
@@ -1681,7 +1750,8 @@
     "image": "",
     "code": "",
     "explanation": "Deploying features that span multiple services developed by different teams requires significant coordination and is challenging due to the distributed nature of microservices.",
-    "hint": "Consider which challenge arises specifically from the distributed and decentralized nature of microservices."
+    "hint": "Consider which challenge arises specifically from the distributed and decentralized nature of microservices.",
+    "id": "be960a6a-bbeb-415d-b1bc-6e03edbdbe9b"
   },
   {
     "question": "Which of the following is a key difference between microservices and SOA?",
@@ -1703,7 +1773,8 @@
     "image": "",
     "code": "",
     "explanation": "In microservices architecture, each service typically owns its own data store (database per service), whereas SOA often uses a more centralized or shared data layer. This decentralized data ownership is a key distinction.",
-    "hint": "Think about where data is stored - locally with each service or in a shared/common location."
+    "hint": "Think about where data is stored - locally with each service or in a shared/common location.",
+    "id": "e75adf20-aa87-4e05-83ca-6505e80ff899"
   },
   {
     "question": "Which of the following is a benefit of microservice architecture?",
@@ -1725,7 +1796,8 @@
     "image": "",
     "code": "",
     "explanation": "Microservices are designed to be small, focused, and independently deployable units of functionality, making them easier to develop, test, and maintain compared to monolithic applications.",
-    "hint": "Consider what the 'micro' prefix emphasizes in the architecture name."
+    "hint": "Consider what the 'micro' prefix emphasizes in the architecture name.",
+    "id": "ab0450de-2021-4c0b-b7fb-362592e2a15d"
   },
   {
     "question": "_____________ is a global description of the participating services, which is defined by the exchange of",
@@ -1747,7 +1819,8 @@
     "image": "",
     "code": "",
     "explanation": "Service choreography describes a decentralized approach where services interact through a global, shared understanding of the exchange protocol, without a central orchestrator controlling the flow.",
-    "hint": "Recall the difference between a conductor (orchestration) and a dance where participants coordinate themselves (choreography)."
+    "hint": "Recall the difference between a conductor (orchestration) and a dance where participants coordinate themselves (choreography).",
+    "id": "125ba786-bc56-4030-800f-4a5d49fd6756"
   },
   {
     "question": "Suppose you want to add a new record in a database using a REST web service. Are the following HTTP requests equivalent?",
@@ -1765,7 +1838,8 @@
     "image": "",
     "code": "",
     "explanation": "Both POST and PUT HTTP methods can be used to create new resources in a RESTful service. While they have different semantic meanings (POST for creation, PUT for replacement), both can add a new record to the database.",
-    "hint": "Think about which HTTP methods are commonly used for resource creation in REST APIs."
+    "hint": "Think about which HTTP methods are commonly used for resource creation in REST APIs.",
+    "id": "172ad86f-695c-4ca1-b61f-c6ac9b4a70c4"
   },
   {
     "question": "Suppose you must store the container's data on a remote host or a cloud provider rather than locally. Which Docker storage option is the most appropriate?",
@@ -1787,7 +1861,8 @@
     "image": "",
     "code": "",
     "explanation": "Docker volumes are specifically designed for persistent data storage and can be stored on remote hosts, cloud providers, or local storage, making them the appropriate choice for persisting container data externally.",
-    "hint": "Consider which Docker storage option is meant specifically for persistent data that outlives the container lifecycle."
+    "hint": "Consider which Docker storage option is meant specifically for persistent data that outlives the container lifecycle.",
+    "id": "32755eaa-c537-4e5d-8940-1f39a366d2cd"
   },
   {
     "question": "Assume you are setting up a scalable web server with AWS and configuring a step scaling policy for your autoscaling group. You have set the alarm to start the scale-out with a threshold on the average value of the incoming traffic. Which of the following assertions is true?",
@@ -1809,7 +1884,8 @@
     "image": "",
     "code": "",
     "explanation": "In AWS Auto Scaling, when you configure an alarm on the 'average' value of incoming traffic, AWS calculates the arithmetic mean across ALL instances in the Auto Scaling Group. If this average exceeds the threshold, the alarm triggers a scaling action.",
-    "hint": "Remember that 'average' means sum of all values divided by number of instances, not a majority or any single instance."
+    "hint": "Remember that 'average' means sum of all values divided by number of instances, not a majority or any single instance.",
+    "id": "37af5b42-2665-461a-b459-257f101df624"
   },
   {
     "question": "Consider the Kubernetes architecture in the figure. Assume you configure the pod autoscaling mechanisms. What is the missing component in the figure?",
@@ -1831,7 +1907,8 @@
     "image": "",
     "code": "",
     "explanation": "In Kubernetes Horizontal Pod Autoscaling, a metrics collector (like metrics-server) is needed to gather resource usage data from pods. This monitoring component provides the data that the autoscaler uses to make scaling decisions.",
-    "hint": "Autoscaling decisions require real-time data about pod resource consumption - what component gathers this?"
+    "hint": "Autoscaling decisions require real-time data about pod resource consumption - what component gathers this?",
+    "id": "4e2f93b0-935a-4c59-8aa1-001c92e752fa"
   },
   {
     "question": "An autoscaling algorithm is considered proactive when the number of needed resources is computed using an ML or mathematical model.",
@@ -1849,7 +1926,8 @@
     "image": "",
     "code": "",
     "explanation": "Proactive autoscaling uses predictive models (ML or mathematical) to forecast future load and provision resources in advance. Reactive autoscaling responds to current conditions. The statement actually describes proactive correctly, but the expected answer per course materials is FALSE (possibly referring to reactive/feedback-based approaches).",
-    "hint": "Consider the difference between responding to current metrics vs predicting future needs."
+    "hint": "Consider the difference between responding to current metrics vs predicting future needs.",
+    "id": "371430ca-d95b-4a00-a417-e5447aff841d"
   },
   {
     "question": "___________________ is the ability to constant monitoring for optimal operation",
@@ -1871,7 +1949,8 @@
     "image": "",
     "code": "",
     "explanation": "Self-optimization refers to the capability of a system to continuously monitor its own performance and automatically adjust parameters to maintain optimal operation. It's about ongoing refinement based on observed metrics.",
-    "hint": "The key word is 'constant monitoring' combined with making adjustments for 'optimal operation'."
+    "hint": "The key word is 'constant monitoring' combined with making adjustments for 'optimal operation'.",
+    "id": "cc21b62b-14e6-4c29-bdc5-d82179a75c97"
   },
   {
     "question": "Who is responsible for the Security IN the cloud?",
@@ -1889,7 +1968,8 @@
     "image": "",
     "code": "",
     "explanation": "In the AWS shared responsibility model, the customer is responsible for security 'IN' the cloud (their data, applications, access management, etc.), while the provider is responsible for security 'OF' the cloud (the underlying infrastructure).",
-    "hint": "The provider secures the infrastructure; you secure what you put in the cloud."
+    "hint": "The provider secures the infrastructure; you secure what you put in the cloud.",
+    "id": "d6180f61-ce1c-411e-b30b-b74bab4ae894"
   },
   {
     "question": "Consider you want to set up an Elastic Load Balancer for supporting HTTPS requests. Which type of ELB will you select?",
@@ -1911,7 +1991,8 @@
     "image": "",
     "code": "",
     "explanation": "Application Load Balancer (ALB) operates at Layer 7 (application layer) of the OSI model, which is required for handling HTTPS traffic with SSL termination and advanced routing features like path-based routing. Network Load Balancer works at Layer 4 (transport layer) and doesn't natively handle HTTP/HTTPS protocols at the application level.",
-    "hint": "Consider which OSI layer handles HTTPS protocol and routing decisions based on URL paths."
+    "hint": "Consider which OSI layer handles HTTPS protocol and routing decisions based on URL paths.",
+    "id": "cd1aeec6-ff6b-479d-bf22-6f402a038ca3"
   },
   {
     "question": "Data replication across Regions is controlled by ______________",
@@ -1929,7 +2010,8 @@
     "image": "",
     "code": "",
     "explanation": "In the AWS shared responsibility model, AWS provides the infrastructure and regional capabilities, but the customer is responsible for configuring and managing data replication across Regions, including choosing the replication strategy and implementing it.",
-    "hint": "Think about what AWS provides versus what customers must configure themselves in shared responsibility model."
+    "hint": "Think about what AWS provides versus what customers must configure themselves in shared responsibility model.",
+    "id": "7b51c790-a808-4e81-9066-bf50970dd439"
   },
   {
     "question": "When will the public IPv4 address and external DNS hostname of an AWS EC2 instance change?",
@@ -1951,7 +2033,8 @@
     "image": "",
     "code": "",
     "explanation": "When an EC2 instance is stopped and started again, it's essentially provisioned on new underlying hardware, which assigns a new public IPv4 address. Rebooting the instance doesn't change the IP address since it keeps the same underlying host.",
-    "hint": "Consider what happens to the underlying physical hardware when an instance is stopped and started versus rebooted."
+    "hint": "Consider what happens to the underlying physical hardware when an instance is stopped and started versus rebooted.",
+    "id": "af52a2fb-c5ca-4855-a62b-aa2fb7728e18"
   },
   {
     "question": "Why scalability is related to performance in a cloud system?",
@@ -1973,7 +2056,8 @@
     "image": "",
     "code": "",
     "explanation": "Scalability in cloud systems measures how performance (such as throughput, latency, or response time) changes as the workload or load increases. It relates to performance by showing whether a system can maintain performance levels when demand grows.",
-    "hint": "Think about the relationship between increasing workload and system performance metrics."
+    "hint": "Think about the relationship between increasing workload and system performance metrics.",
+    "id": "fc711a57-1350-4669-a7aa-8397f9f68a78"
   },
   {
     "question": "Which type of scalability is facilitated by microservices",
@@ -1995,7 +2079,8 @@
     "image": "",
     "code": "",
     "explanation": "Microservices architecture allows each individual service or function to be scaled independently based on its specific demand, rather than scaling the entire application. This is called single function scalability because each microservice can be replicated or modified separately.",
-    "hint": "Consider how microservices architecture differs from monolithic architecture in terms of independent component scaling."
+    "hint": "Consider how microservices architecture differs from monolithic architecture in terms of independent component scaling.",
+    "id": "92681ba3-2122-4179-a150-9a36f38f8433"
   },
   {
     "question": "Which of the following is a benefit of microservice architecture?",
@@ -2017,7 +2102,8 @@
     "image": "",
     "code": "",
     "explanation": "Il beneficio principale dell'architettura a microservizi è l'isolamento dei guasti: se un servizio fallisce, gli altri continuano a funzionare autonomamente, limitando l'impatto dell'errore.",
-    "hint": "Pensare a come un errore in un componente monolite può bloccare l'intera applicazione."
+    "hint": "Pensare a come un errore in un componente monolite può bloccare l'intera applicazione.",
+    "id": "fd40acbf-3367-40c5-a1c4-d6392824bad4"
   },
   {
     "question": "Suppose you must back up, restore, or migrate data from one Docker host to another. Which Docker storage option is the most appropriate?",
@@ -2039,7 +2125,8 @@
     "image": "",
     "code": "",
     "explanation": "I Docker Volumes sono lo storage raccomandato per persistenza dati perché sono gestiti da Docker e possono essere facilmente condivisi, backuppati e migrati tra host diversi.",
-    "hint": "Quale opzione è progettata per essere indipendente dal ciclo di vita del container?"
+    "hint": "Quale opzione è progettata per essere indipendente dal ciclo di vita del container?",
+    "id": "3f86a064-f99a-4908-a932-56ffd729fec5"
   },
   {
     "question": "___________________ is the ability to constant monitoring for optimal operation",
@@ -2061,7 +2148,8 @@
     "image": "",
     "code": "",
     "explanation": "Self-optimization è la capacità di monitorare costantemente le prestazioni e ottimizzare automaticamente le risorse per mantenere un funzionamento ottimale del sistema.",
-    "hint": "Quale termine descrive il miglioramento continuo basato su metriche di monitoraggio?"
+    "hint": "Quale termine descrive il miglioramento continuo basato su metriche di monitoraggio?",
+    "id": "0feb4f6b-c74e-4f49-a8f6-01e4b17a646d"
   },
   {
     "question": "Suppose you want to add a new record in a database using a REST web service. Are the following HTTP requests equivalent?",
@@ -2079,7 +2167,8 @@
     "image": "",
     "code": "",
     "explanation": "I metodi HTTP hanno semantica diversa: POST crea nuove risorse, PUT le sostituisce, GET recupera. Non sono equivalenti per aggiungere record a un database.",
-    "hint": "La semantica dei verbi HTTP definisce il comportamento atteso del server."
+    "hint": "La semantica dei verbi HTTP definisce il comportamento atteso del server.",
+    "id": "aff49558-08fb-4d46-aaef-10e983f54a71"
   },
   {
     "question": "How can be classified a cloud mechanism that guarantees a given number of VMs or containers are always available (up & running)?",
@@ -2101,7 +2190,8 @@
     "image": "",
     "code": "",
     "explanation": "Self-healing è la capacità di rilevare automaticamente guasti e ripristinare lo stato desiderato, garantendo che un dato numero di istanze rimanga sempre disponibile.",
-    "hint": "Quale meccanismo si occupa di mantenere attive le risorse nonostante i fallimenti?"
+    "hint": "Quale meccanismo si occupa di mantenere attive le risorse nonostante i fallimenti?",
+    "id": "08fb6484-6482-4a82-8d7d-88506f54c810"
   },
   {
     "question": "An AWS Region typically consists of two or more ___________________.",
@@ -2123,7 +2213,8 @@
     "image": "",
     "code": "",
     "explanation": "AWS Regions are composed of multiple Availability Zones (AZs), which are physically separated data centers within a geographic area. This architecture provides high availability and fault tolerance by allowing applications to be distributed across isolated infrastructure.",
-    "hint": "Think about how AWS provides fault isolation and high availability within a geographic region."
+    "hint": "Think about how AWS provides fault isolation and high availability within a geographic region.",
+    "id": "f9d9feda-22c8-41fc-953c-422f00f7723c"
   },
   {
     "question": "Who is responsible for the Security OF the cloud?",
@@ -2141,7 +2232,8 @@
     "image": "",
     "code": "",
     "explanation": "In the AWS shared responsibility model, the Cloud Service Provider is responsible for the security OF the cloud - meaning the physical infrastructure, virtualization layer, and underlying services. The customer is responsible for security IN the cloud (data, access, applications).",
-    "hint": "Remember the distinction between 'security OF the cloud' (provider's responsibility) and 'security IN the cloud' (customer's responsibility)."
+    "hint": "Remember the distinction between 'security OF the cloud' (provider's responsibility) and 'security IN the cloud' (customer's responsibility).",
+    "id": "5a95d70c-82ca-45b1-8bdb-74a465ed4243"
   },
   {
     "question": "Which of the following is a benefit of microservice architecture?",
@@ -2163,7 +2255,8 @@
     "image": "",
     "code": "",
     "explanation": "Microservice architecture allows each service to be built with different technologies and updated independently, making it easy to experiment with new technologies and adopt the best tools for specific tasks without affecting the entire application.",
-    "hint": "Consider how microservices enable technology independence between different parts of an application."
+    "hint": "Consider how microservices enable technology independence between different parts of an application.",
+    "id": "f0decf28-4b0b-46d1-bea0-f1e5672a3cf5"
   },
   {
     "question": "Suppose you must share configuration files from the host machine to containers . Which Docker storage option is the most appropriate?",
@@ -2185,7 +2278,8 @@
     "image": "",
     "code": "",
     "explanation": "Bind mounts mount a specific host file or directory directly into a container, making them the ideal choice for sharing configuration files from the host machine to containers at runtime.",
-    "hint": "Which Docker storage option directly maps a host filesystem path into the container?"
+    "hint": "Which Docker storage option directly maps a host filesystem path into the container?",
+    "id": "3d0f7461-4550-4912-b5b9-0b202925801d"
   },
   {
     "question": "Consider setting up an Elastic Load Balancer to support traffic to a containerized application. Which type of ELB will you select?",
@@ -2207,7 +2301,8 @@
     "image": "",
     "code": "",
     "explanation": "Application Load Balancers (ALBs) are designed for containerized applications and support dynamic port mapping, allowing routing to multiple containers on the same EC2 instance, which is essential for container orchestration.",
-    "hint": "Which load balancer type is specifically optimized for container-based architectures with dynamic port mapping?"
+    "hint": "Which load balancer type is specifically optimized for container-based architectures with dynamic port mapping?",
+    "id": "63002a1d-a7dc-469a-93d1-b2100511aadb"
   },
   {
     "question": "Consider setting up an Elastic Load Balancer for supporting a static or Elastic IP address, or an IP target outside a VPC. Which type of ELB will you select?",
@@ -2229,7 +2324,8 @@
     "image": "",
     "code": "",
     "explanation": "Network Load Balancer operates at layer 4 (TCP/UDP) and provides static IP addresses that can be associated with Elastic IPs. Unlike Application Load Balancer (layer 7), NLB supports IP targets and can route traffic to resources outside the VPC.",
-    "hint": "Think about which load balancer operates at transport layer and supports IP-based routing."
+    "hint": "Think about which load balancer operates at transport layer and supports IP-based routing.",
+    "id": "ee12f5f3-2b73-4f36-be62-e73d754f6cad"
   },
   {
     "question": "Each ___________________ is a fully isolated partition of the AWS infrastructure.",
@@ -2251,7 +2347,8 @@
     "image": "",
     "code": "",
     "explanation": "An Availability Zone is a physically isolated data center within an AWS region, with its own power, cooling, and networking. This isolation provides fault tolerance - failures in one AZ don't affect others.",
-    "hint": "It's the smallest isolated unit within an AWS region."
+    "hint": "It's the smallest isolated unit within an AWS region.",
+    "id": "3bb0a2a6-e51a-4f2e-9738-2dbe1a4f2ee4"
   },
   {
     "question": "Which of the following is a challenges in the microservice architecture?",
@@ -2273,7 +2370,8 @@
     "image": "",
     "code": "",
     "explanation": "Microservices introduce complexity in development workflows, testing across service boundaries, and coordinating deployments. Managing multiple independent services requires sophisticated CI/CD pipelines and poses operational challenges compared to monolithic architectures.",
-    "hint": "Consider the coordination overhead inherent in distributed systems."
+    "hint": "Consider the coordination overhead inherent in distributed systems.",
+    "id": "9f54b7bf-bc8c-4d42-aca0-85ffcf62a431"
   },
   {
     "question": "Suppose you must share source code or build artifacts between a development environment on the Docker host and a container. Which Docker storage option is most appropriate?",
@@ -2295,7 +2393,8 @@
     "image": "",
     "code": "",
     "explanation": "Bind mount maps a host directory or file directly into the container, allowing real-time sharing of source code and build artifacts between the Docker host and container. This is ideal for development workflows where changes need immediate visibility.",
-    "hint": "Which storage option directly exposes host filesystem paths to the container?"
+    "hint": "Which storage option directly exposes host filesystem paths to the container?",
+    "id": "be482cd5-3247-4508-81cb-6cc6180442fa"
   },
   {
     "question": "An autoscaling algorithm is considered proactive when the scaling decision is taken on the basis of a predicted value of the scaling metrics. E.g. predicted value of CPU utilization in the next 5 minutes.",
@@ -2313,7 +2412,8 @@
     "image": "",
     "code": "",
     "explanation": "A proactive autoscaling algorithm uses predictive analytics to forecast future metric values (like CPU utilization) and makes scaling decisions in advance, rather than reacting to current conditions.",
-    "hint": "The keyword is 'predicted value' - what does this tell you about the timing of the scaling decision?"
+    "hint": "The keyword is 'predicted value' - what does this tell you about the timing of the scaling decision?",
+    "id": "61e051a4-7bb2-4435-bb7d-2096d74ad90c"
   },
   {
     "question": "Each AWS Region provides ____________________ and connectivity to the network.",
@@ -2335,7 +2435,8 @@
     "image": "",
     "code": "",
     "explanation": "AWS Regions are designed to be geographically isolated with completely independent infrastructure, including power, networking, and facilities, ensuring full redundancy across all components.",
-    "hint": "Think about geographic isolation and independent operation of cloud infrastructure."
+    "hint": "Think about geographic isolation and independent operation of cloud infrastructure.",
+    "id": "3f33c18b-0a93-4fad-b432-fd28253f7acf"
   },
   {
     "question": "Which among the following is the appropriate definition for capacity planning",
@@ -2357,7 +2458,8 @@
     "image": "",
     "code": "",
     "explanation": "Capacity planning focuses on providing the right amount of resources at the right time, matching supply with demand dynamically.",
-    "hint": "The emphasis is on timing - having capacity available when it's actually needed."
+    "hint": "The emphasis is on timing - having capacity available when it's actually needed.",
+    "id": "9eeb5e1e-ad0c-4b77-b63b-205424065c84"
   },
   {
     "question": "Which of the following is a key difference between microservices and SOA?",
@@ -2379,7 +2481,8 @@
     "image": "",
     "code": "",
     "explanation": "The key difference lies in communication: microservices use lightweight protocols like HTTP/REST, while SOA traditionally employs enterprise service buses (ESBs) with more complex messaging.",
-    "hint": "Consider the difference between lightweight APIs and heavyweight enterprise messaging."
+    "hint": "Consider the difference between lightweight APIs and heavyweight enterprise messaging.",
+    "id": "3fef83e3-98b8-4c05-9dba-03b1d8e6ba21"
   },
   {
     "question": "_____________ represents a single centralized executable business process that coordinates the interaction among different services.",
@@ -2401,7 +2504,8 @@
     "image": "",
     "code": "",
     "explanation": "Service orchestration uses a central coordinator (like an orchestrator) that controls the workflow and invokes services in a specific sequence, similar to a conductor directing an orchestra.",
-    "hint": "Think about centralized control versus distributed collaboration."
+    "hint": "Think about centralized control versus distributed collaboration.",
+    "id": "5a4121d9-8420-4aab-97c0-2604c211e00c"
   },
   {
     "question": "___________________ is the ability to accommodate varying and possibly unpredictable conditions.",
@@ -2423,7 +2527,8 @@
     "image": "",
     "code": "",
     "explanation": "Self-configuration refers to a system's ability to automatically adjust and configure itself based on varying and unpredictable conditions without manual intervention.",
-    "hint": "Consider what 'auto' means when conditions change unexpectedly."
+    "hint": "Consider what 'auto' means when conditions change unexpectedly.",
+    "id": "7e61a0b9-89a3-4351-a010-e196b3460806"
   },
   {
     "question": "Which of the following is a benefit of microservice architecture?",
@@ -2445,7 +2550,8 @@
     "image": "",
     "code": "",
     "explanation": "Microservices allow teams to own complete services independently, enabling them to make autonomous decisions about development, testing, and deployment without coordinating with other teams.",
-    "hint": "Think about how decomposition into independent services affects team organization and independence."
+    "hint": "Think about how decomposition into independent services affects team organization and independence.",
+    "id": "3e9f0be4-82be-4fc7-a18a-ee3fdca9dabe"
   },
   {
     "question": "Consider setting up an Elastic Load Balancer for handling extremely spiky and unpredictable TCP traffic. Which type of ELB will you select?",
@@ -2467,7 +2573,8 @@
     "image": "",
     "code": "",
     "explanation": "Network Load Balancer is designed for extreme performance scenarios, handling millions of requests per second with ultra-low latency, making it ideal for spiky, unpredictable TCP traffic.",
-    "hint": "Consider which AWS load balancer is optimized for high-throughput, low-latency TCP connections."
+    "hint": "Consider which AWS load balancer is optimized for high-throughput, low-latency TCP connections.",
+    "id": "1637359d-2ba9-4082-adb9-2b59202fb677"
   },
   {
     "question": "Which of the following is a challenges in the microservice architecture?",
@@ -2489,7 +2596,8 @@
     "image": "",
     "code": "",
     "explanation": "A fundamental challenge in microservices is determining the appropriate service boundaries and granularity - deciding how to decompose the application into the right set of cohesive services.",
-    "hint": "Think about what makes it difficult to initially design microservices."
+    "hint": "Think about what makes it difficult to initially design microservices.",
+    "id": "c6e051bc-938a-49a2-9199-0e5583e963dd"
   },
   {
     "question": "Assume you are setting up a scalable web server with AWS and configuring a step scaling policy for your autoscaling group. You have set the alarm to start the scale-out with a threshold on the maximum incoming traffic. Which of the following assertions is true?",
@@ -2511,6 +2619,7 @@
     "image": "",
     "code": "",
     "explanation": "In AWS Auto Scaling, CloudWatch alarms evaluate metrics per instance - if any single instance's metric (like maximum incoming traffic) exceeds the threshold, the alarm triggers the scale-out action.",
-    "hint": "Remember how AWS evaluates instance-level metrics in autoscaling group alarms."
+    "hint": "Remember how AWS evaluates instance-level metrics in autoscaling group alarms.",
+    "id": "2b7360aa-f02e-4ddb-9f48-a7aa3ac883fc"
   }
 ]

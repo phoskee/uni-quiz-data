@@ -23,7 +23,8 @@
     "image": "",
     "code": "",
     "explanation": "A e B sono false perché è possibile identificare un file sia con path assoluto che relativo (non è sempre necessario solo uno dei due). C è falsa perché nella stessa directory non si possono avere due file con lo stesso nome (il file system non saprebbe quale aprire).",
-    "hint": "Ricorda che un file può essere identificato in modi diversi e che i nomi devono essere univoci all'interno di una stessa directory."
+    "hint": "Ricorda che un file può essere identificato in modi diversi e che i nomi devono essere univoci all'interno di una stessa directory.",
+    "id": "feaa6ae1-ef12-40df-a13e-690fb40570d3"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla concorrenza tra processi o thread è falsa?",
@@ -49,7 +50,8 @@
     "image": "",
     "code": "",
     "explanation": "La disabilitazione delle interruzioni funziona anche su sistemi multi-core, ma solo sul core che esegue l'istruzione. Ogni core ha il proprio registro di controllo delle interruzioni indipendente.",
-    "hint": "Su multi-core, la disabilitazione delle interruzioni protegge solo il core corrente, non gli altri."
+    "hint": "Su multi-core, la disabilitazione delle interruzioni protegge solo il core corrente, non gli altri.",
+    "id": "171c40fa-52d0-4efd-a9bd-4cc3fc106b11"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni è vera? ",
@@ -75,7 +77,8 @@
     "image": "",
     "code": "",
     "explanation": "Il throughput (volume di lavoro nel tempo) è un obiettivo classico dello scheduler. A è falso perché si cerca di massimizzare (non minimizzare) i processi che rispettano le deadline. C è falso perché si cerca di minimizzare il tempo di risposta. D è sbagliato perché il tempo di inattività è già minimo in un sistema correttamente dimensionato.",
-    "hint": "Il throughput misura quanti lavori completati nell'unità di tempo, ed è un indicatore fondamentale dell'efficienza dello scheduler."
+    "hint": "Il throughput misura quanti lavori completati nell'unità di tempo, ed è un indicatore fondamentale dell'efficienza dello scheduler.",
+    "id": "e70c0599-607f-404c-8543-98f701e59cd3"
   },
   {
     "question": "Quale delle seguenti affermazioni sul modello dei processi in UNIX SVR4 System V Release 4 è falsa?",
@@ -101,7 +104,8 @@
     "image": "",
     "code": "",
     "explanation": "Non tutti i processi terminati diventano Zombie: lo stato Zombie serve specificamente per i processi terminati il cui genitore non ha ancora letto lo stato di terminazione (tramite wait/waitpid). I processi che vengono immediatamente raccolti dal genitore non diventano Zombie.",
-    "hint": "Lo stato Zombie è transitorio: esiste solo finché il padre non legge lo stato di terminazione del figlio."
+    "hint": "Lo stato Zombie è transitorio: esiste solo finché il padre non legge lo stato di terminazione del figlio.",
+    "id": "76993782-47eb-468a-ae2d-afd912ea886e"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla memoria virtuale con paginazione è falsa? ",
@@ -127,7 +131,8 @@
     "image": "",
     "code": "",
     "explanation": "Il TLB è una cache hardware completamente trasparente al sistema operativo: il SO non gestisce direttamente il suo funzionamento, non sa quali entry sono presenti e non interviene nelle hit/miss del TLB.",
-    "hint": "Il TLB è gestito interamente dall'hardware per velocizzare la traduzione degli indirizzi virtuali in fisici."
+    "hint": "Il TLB è gestito interamente dall'hardware per velocizzare la traduzione degli indirizzi virtuali in fisici.",
+    "id": "c069a2ba-5ebf-4963-a118-e7bbc4f96301"
   },
   {
     "question": "Quale delle seguenti affermazioni sugli obiettivi di sicurezza di un sistema operativo è vera?",
@@ -153,7 +158,8 @@
     "image": "",
     "code": "",
     "explanation": "Le definizioni di disponibilità, confidenzialità e integrità sono tutte errate. La disponibilità riguarda l'accesso alle risorse quando richiesto, non la posizione fisica; la confidenzialità riguarda l'accesso autorizzato ai dati, non la loro generazione; l'integrità riguarda la protezione da modifiche non autorizzate, non l'impossibilità di modifiche in generale.",
-    "hint": "Ricorda le tre proprietà fondamentali della sicurezza: CIA triad (Confidentiality, Integrity, Availability)."
+    "hint": "Ricorda le tre proprietà fondamentali della sicurezza: CIA triad (Confidentiality, Integrity, Availability).",
+    "id": "5d70595b-a299-4201-b48d-8ac131847ff3"
   },
   {
     "question": "Quale delle seguenti affermazioni sul buffering dell'I/O è vera? ",
@@ -179,7 +185,8 @@
     "image": "",
     "code": "",
     "explanation": "Questa è la tecnica del write-behind buffering o output buffering: l'operazione di output viene completata prima delle istruzioni successive, permettendo al programma di continuare mentre l'I/O avviene in background.",
-    "hint": "Il buffering può essere di input o output; pensa a come il SO nasconde la latenza dell'I/O al processore."
+    "hint": "Il buffering può essere di input o output; pensa a come il SO nasconde la latenza dell'I/O al processore.",
+    "id": "939a6c7a-6ac5-4d54-a06c-8a6ac9261ebb"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla gerarchia della memoria è vera?",
@@ -205,7 +212,8 @@
     "image": "",
     "code": "",
     "explanation": "La gerarchia della memoria segue il principio di località: i livelli superiori (cache L1, L2) sono più veloci e piccoli, quindi il processore li usa più frequentemente, mentre quelli inferiori (RAM, disco) hanno accessi meno frequenti.",
-    "hint": "Ricorda il compromesso velocità-costo-capacità: più è veloce, meno costa per byte e minore è la capacità."
+    "hint": "Ricorda il compromesso velocità-costo-capacità: più è veloce, meno costa per byte e minore è la capacità.",
+    "id": "47aa3ace-199a-4ad5-b3cd-741ce094319a"
   },
   {
     "question": "Quale dei seguenti elementi non fa parte del process control block?",
@@ -231,7 +239,8 @@
     "image": "",
     "code": "",
     "explanation": "Il PCB (Process Control Block) contiene informazioni relative al processo, non ai thread. L'identificatore del thread appartiene al TCB (Thread Control Block), che è una struttura separata.",
-    "hint": "Il PCB gestisce il processo come entità, mentre i thread sono gestiti dal TCB."
+    "hint": "Il PCB gestisce il processo come entità, mentre i thread sono gestiti dal TCB.",
+    "id": "af5b14f7-b0b0-4da8-a854-7656b8722884"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sugli algoritmi di scheduling è vera?",
@@ -257,7 +266,8 @@
     "image": "",
     "code": "",
     "explanation": "B è falsa perché il quanto ottimale deve essere MINORE del tempo tipico di un processo interattivo per garantire buona responsività. C è falsa perché FCFS svantaggia i processi I/O-bound (devono aspettare i CPU-bound). D è falsa perché FCFS non ha starvation se tutti i processi terminano.",
-    "hint": "Ricorda le caratteristiche di FCFS: semplice, non preemptive, ma può causare effetto convoglio."
+    "hint": "Ricorda le caratteristiche di FCFS: semplice, non preemptive, ma può causare effetto convoglio.",
+    "id": "94d0c9de-b07e-420f-b7b9-117575626449"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla segmentazione della memoria è falsa? ",
@@ -283,7 +293,8 @@
     "image": "",
     "code": "",
     "explanation": "Nella segmentazione, diversamente dalla paginazione, il programmatore assembler può interagire esplicitamente con la gestione dei segmenti, potendo definire nel codice i segmenti (codice, dati, stack). L'affermazione B è quindi falsa.",
-    "hint": "Ricorda che nella segmentazione il programmatore può dichiarare esplicitamente i segmenti nel codice sorgente."
+    "hint": "Ricorda che nella segmentazione il programmatore può dichiarare esplicitamente i segmenti nel codice sorgente.",
+    "id": "4f6dd47d-69cb-40b2-b04b-ffc91ca9a5ea"
   },
   {
     "question": "Quale delle seguenti affermazioni sull'algoritmo per il rilevamento del deadlock visto a lezione è vera?",
@@ -309,7 +320,8 @@
     "image": "",
     "code": "",
     "explanation": "L'algoritmo di rilevamento del deadlock (algoritmo del banchiere o wait-for graph) marca progressivamente i processi che possono completare la loro esecuzione; i processi NON marcati alla fine sono quelli coinvolti nel deadlock.",
-    "hint": "I processi marcati sono quelli 'sani' che possono terminare normalmente."
+    "hint": "I processi marcati sono quelli 'sani' che possono terminare normalmente.",
+    "id": "dfac5c47-342a-4cf7-91f5-7c99794b243e"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sul long-term scheduler è falsa? ",
@@ -335,7 +347,8 @@
     "image": "",
     "code": "",
     "explanation": "Il long-term scheduler interviene non solo alla creazione di nuovi processi, ma anche quando un processo termina e si liberano risorse di memoria, permettendo l'ammissione di nuovi processi in memoria centrale.",
-    "hint": "Il long-term scheduler viene chiamato anche quando un processo termina e si libera spazio in memoria."
+    "hint": "Il long-term scheduler viene chiamato anche quando un processo termina e si libera spazio in memoria.",
+    "id": "40a5df65-5ffc-4bde-93f7-71e73199ab6f"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla memoria virtuale con paginazione è vera? ",
@@ -361,7 +374,8 @@
     "image": "",
     "code": "",
     "explanation": "Il prepaging (pre-caricamento di pagine) ha il difetto di poter caricare in memoria pagine che poi non verranno effettivamente utilizzate, sprecando tempo e risorse di I/O.",
-    "hint": "Il prepaging tenta di anticipare le richieste, ma potrebbe sbagliare."
+    "hint": "Il prepaging tenta di anticipare le richieste, ma potrebbe sbagliare.",
+    "id": "dbcda609-cc81-4554-9fdc-59a2c9fc7e8c"
   },
   {
     "question": "Quale dei seguenti requisiti deve soddisfare un meccanismo che offra la mutua esclusione?",
@@ -387,7 +401,8 @@
     "image": "",
     "code": "",
     "explanation": "Un meccanismo di mutua esclusione valido deve funzionare indipendentemente dalla velocità relativa dei processi, senza fare assunzioni su quanto tempo impiega ciascun processo.",
-    "hint": "Deve funzionare correttamente sia con processi molto veloci che molto lenti."
+    "hint": "Deve funzionare correttamente sia con processi molto veloci che molto lenti.",
+    "id": "e7270e69-e67d-4487-b224-d0331a3f2d0c"
   },
   {
     "question": "Quale delle seguenti affermazioni sui metodi di gestione dello spazio libero su disco è vera?",
@@ -413,7 +428,8 @@
     "image": "",
     "code": "",
     "explanation": "Nella lista di blocchi liberi, ogni blocco libero contiene un puntatore al blocco successivo, occupando spazio utile. La concatenazione di blocchi liberi (o bitmap) utilizza invece un vettore di bit, senza overhead di puntatori nei blocchi dati.",
-    "hint": "Pensare a come i puntatori vengono memorizzati nella lista collegata dei blocchi liberi."
+    "hint": "Pensare a come i puntatori vengono memorizzati nella lista collegata dei blocchi liberi.",
+    "id": "0bcbfdc7-0c20-4414-8e4d-6a072ff90972"
   },
   {
     "question": "Quale delle seguenti affermazioni sul kernel di un sistema operativo è vera?",
@@ -439,7 +455,8 @@
     "image": "",
     "code": "",
     "explanation": "Il kernel è il nucleo del sistema operativo e gestisce le risorse hardware, inclusi i processori (CPU). Tra le sue funzioni c'è lo scheduling della CPU e la gestione dei context switch.",
-    "hint": "Il kernel gestisce tutte le risorse hardware del sistema."
+    "hint": "Il kernel gestisce tutte le risorse hardware del sistema.",
+    "id": "2e12949e-d84d-4657-b814-633e9b3937a8"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sulla preemption è vera?",
@@ -465,7 +482,8 @@
     "image": "",
     "code": "",
     "explanation": "Uno scheduler non-preemptive non può interrompere un processo in esecuzione. Un processo CPU-bound che non si blocca mai può quindi monopolizzare il processore indefinitamente, anche se ci sono altri processi ready in attesa.",
-    "hint": "In uno scheduler non-preemptive, cosa succede quando un processo CPU-bound è in esecuzione?"
+    "hint": "In uno scheduler non-preemptive, cosa succede quando un processo CPU-bound è in esecuzione?",
+    "id": "ffc43a76-d1b3-45cf-9d11-06d8d28a7499"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sugli algoritmi di scheduling è vera?",
@@ -491,7 +509,8 @@
     "image": "",
     "code": "",
     "explanation": "Il round-robin virtuale introduce code separate per i processi in attesa di I/O e quelli in attesa della CPU, dando priorità ai processi I/O-bound quando tornano ready. Questo compensa il loro svantaggio nel round-robin classico.",
-    "hint": "Come vengono penalizzati i processi I/O-bound nel round-robin tradizionale?"
+    "hint": "Come vengono penalizzati i processi I/O-bound nel round-robin tradizionale?",
+    "id": "a27cf092-5ee5-4e67-a9cd-2b00aed5f1d3"
   },
   {
     "question": "Quale delle seguenti affermazioni sugli indirizzi di memoria principale è vera?",
@@ -517,7 +536,8 @@
     "image": "",
     "code": "",
     "explanation": "Nella paginazione, gli indirizzi logici sono composti da un numero di pagina e un offset (indirizzo relativo). La MMU traduce questo indirizzo relativo nell'indirizzo fisico corrispondente.",
-    "hint": "La paginazione usa indirizzi logici composti da numero di pagina e offset."
+    "hint": "La paginazione usa indirizzi logici composti da numero di pagina e offset.",
+    "id": "a28239a5-c394-4a52-9996-f33bc426f956"
   },
   {
     "question": "Quale delle seguenti affermazioni sui termini tipici della concorrenza è falsa?",
@@ -543,7 +563,8 @@
     "image": "",
     "code": "",
     "explanation": "L'affermazione A è falsa perché una sezione critica è una porzione di CODICE (non memoria) che accede a risorse condivise, non una porzione di memoria contenente variabili.",
-    "hint": "Ricorda che la sezione critica riguarda il codice, non la memoria fisica."
+    "hint": "Ricorda che la sezione critica riguarda il codice, non la memoria fisica.",
+    "id": "ae4fbd47-86ac-4d01-b09e-3c5a142a1814"
   },
   {
     "question": "Quale dei seguenti elementi fa parte del process control block?",
@@ -569,7 +590,8 @@
     "image": "",
     "code": "",
     "explanation": "L'opzione B è errata perché il contesto del processo nel PCB viene salvato solo durante i context switch, non ad ogni istruzione eseguita. Le opzioni C e D non sono componenti del PCB.",
-    "hint": "Il PCB contiene informazioni di controllo del processo, non l'intera immagine in memoria."
+    "hint": "Il PCB contiene informazioni di controllo del processo, non l'intera immagine in memoria.",
+    "id": "a56cd8c1-f4b1-4124-8819-0eb12ac7b731"
   },
   {
     "question": "Quale delle seguenti informazioni non è presente in una tipica entry di una directory di un ﬁle system?",
@@ -595,7 +617,8 @@
     "image": "",
     "code": "",
     "explanation": "Nelle entry tipiche di directory NON è presente il gruppo dell'utente creatore, mentre sono presenti la data di creazione, i permessi e la dimensione del file.",
-    "hint": "I file system conservano metadati essenziali come data, permessi e dimensione, ma non sempre il gruppo."
+    "hint": "I file system conservano metadati essenziali come data, permessi e dimensione, ma non sempre il gruppo.",
+    "id": "9cdd7482-7277-4680-958f-05dbde43f37b"
   },
   {
     "question": "Quale delle seguenti affermazioni sugli algoritmi di scheduling per i dischi è vera?",
@@ -621,7 +644,8 @@
     "image": "",
     "code": "",
     "explanation": "C-SCAN (Circular SCAN) è una variante di SCAN che tratta il disco come un circolo, permettendo un accesso più uniforme alle tracce ai bordi del disco.",
-    "hint": "L'algoritmo C-SCAN deriva da SCAN e serve per evitare favoritismi sulle tracce esterne."
+    "hint": "L'algoritmo C-SCAN deriva da SCAN e serve per evitare favoritismi sulle tracce esterne.",
+    "id": "5034be4a-6beb-493a-9fe7-816d907f8a45"
   },
   {
     "question": "Quale delle seguenti affermazioni sul metodo di allocazione contigua dei file è vera? ",
@@ -647,7 +671,8 @@
     "image": "",
     "code": "",
     "explanation": "La compattazione (deframmentazione) riordina i file nel disco rendendo lo spazio contiguo, permettendo così di memorizzare file che altrimenti non potrebbero essere salvati perché il loro spazio è frammentato.",
-    "hint": "La compattazione risolve il problema della frammentazione esterna riordinando i blocchi."
+    "hint": "La compattazione risolve il problema della frammentazione esterna riordinando i blocchi.",
+    "id": "e9756c3c-a36b-43b7-89e8-ad4de50bd3b5"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla paginazione della memoria è vera? ",
@@ -673,7 +698,8 @@
     "image": "",
     "code": "",
     "explanation": "Nella paginazione, le pagine (unità logiche di memoria virtuale) e i frame (unità fisiche di memoria principale) devono avere dimensione identica per permettere un mapping diretto e semplice attraverso la tabella delle pagine.",
-    "hint": "Pensa al mapping come a un puzzle: i pezzi (pagine) devono entrare esattamente negli spazi (frame)."
+    "hint": "Pensa al mapping come a un puzzle: i pezzi (pagine) devono entrare esattamente negli spazi (frame).",
+    "id": "c118b4e9-3c3f-46fb-a354-f270a3138bbe"
   },
   {
     "question": "Quale delle seguenti affermazioni sul controllo di accesso è vera? ",
@@ -699,7 +725,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel controllo di accesso discrezionale (DAC), i permessi sono definiti direttamente nella relazione soggetto-oggetto: chi possiede una risorsa decide chi può accedervi e con quali modalità.",
-    "hint": "Il termine 'discrezionale' indica che è il proprietario a decidere liberamente, senza vincoli esterni."
+    "hint": "Il termine 'discrezionale' indica che è il proprietario a decidere liberamente, senza vincoli esterni.",
+    "id": "1a3224d6-59a9-481b-bdfe-ed46df111c42"
   },
   {
     "question": "Quale delle seguenti affermazioni è falsa? ",
@@ -725,7 +752,8 @@
     "image": "",
     "code": "",
     "explanation": "Un grafo di allocazione delle risorse può contenere cicli: un ciclo indica che un processo attende una risorsa che potrebbe essere detenuta da un altro processo nel ciclo, ma non implica necessariamente deadlock.",
-    "hint": "Non confondere la presenza di un ciclo con un deadlock: un ciclo è condizione necessaria ma non sufficiente."
+    "hint": "Non confondere la presenza di un ciclo con un deadlock: un ciclo è condizione necessaria ma non sufficiente.",
+    "id": "d6facf79-68e1-4b93-8351-3b93efc8237e"
   },
   {
     "question": "Quali delle seguenti affermazioni è vera? ",
@@ -751,7 +779,8 @@
     "image": "",
     "code": "",
     "explanation": "La disponibilità (availability) è uno dei tre pilastri della sicurezza informatica (insieme a confidenzialità e integrità) e riguarda la capacità del sistema di rispondere tempestivamente alle richieste legittime degli utenti.",
-    "hint": "Pensa alla disponibilità come alla garanzia che un servizio sia raggiungibile quando serve."
+    "hint": "Pensa alla disponibilità come alla garanzia che un servizio sia raggiungibile quando serve.",
+    "id": "0edf19eb-4473-4938-a7a5-5d9221a075d4"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla memoria virtuale con paginazione è vera? ",
@@ -777,7 +806,8 @@
     "image": "",
     "code": "",
     "explanation": "Il prepagging carica in anticipo pagine che預期potrebbero servire, ma il rischio è portare in memoria pagine che poi non verranno mai referenziate, sprecando tempo I/O e spazio.",
-    "hint": "Il prepagging è una scommessa: si prevede cosa servirà, ma si può sbagliare."
+    "hint": "Il prepagging è una scommessa: si prevede cosa servirà, ma si può sbagliare.",
+    "id": "394aa4ee-0c2c-4a67-a8d3-19797e451476"
   },
   {
     "question": "Quale delle seguenti affermazioni sui dispositivi di memoria di massa è vera? ",
@@ -803,7 +833,8 @@
     "image": "",
     "code": "",
     "explanation": "B è falsa perché un settore è uno 'spicchio' del disco (simile a una fetta di torta), non una corona circolare. C è falsa perché una traccia è l'intera corona circolare a una determinata distanza dal centro. D è falsa perché oltre a posizionare la testina sulla traccia corretta, bisogna attendere che il settore desiderato ruoti sotto la testina.",
-    "hint": "Distingui tra la forma geometrica di un settore (spicchio) e quella di una traccia (corona circolare)."
+    "hint": "Distingui tra la forma geometrica di un settore (spicchio) e quella di una traccia (corona circolare).",
+    "id": "f4264c72-546d-4c2f-a683-672386d5335f"
   },
   {
     "question": "Quale delle seguenti affermazioni sul process control block è vera? ",
@@ -829,7 +860,8 @@
     "image": "",
     "code": "",
     "explanation": "A è falsa perché il PCB risiede nello spazio di indirizzamento del kernel, non nella memoria utente. B è falsa perché i thread hanno i propri TCB (Thread Control Block). C è falsa perché il PCB mantiene tutte le informazioni anche per i processi bloccati, non vengono cancellate.",
-    "hint": "Ricorda che il PCB è una struttura dati del kernel che persiste per tutto il ciclo di vita del processo."
+    "hint": "Ricorda che il PCB è una struttura dati del kernel che persiste per tutto il ciclo di vita del processo.",
+    "id": "7dd09989-9009-4478-9c3f-02d84231e54a"
   },
   {
     "question": "Quale delle seguenti affermazioni sui semafori per la gestione della concorrenza è falsa? ",
@@ -855,7 +887,8 @@
     "image": "",
     "code": "",
     "explanation": "Ogni semaforo ha il proprio contatore e la propria coda; non sono condivisi tra tutti i semafori. Questo permette a ciascun semaforo di gestire indipendentemente i propri processi in attesa.",
-    "hint": "Pensa a come funzionerebbero due semafori indipendenti: servirebbero contatori e code separati."
+    "hint": "Pensa a come funzionerebbero due semafori indipendenti: servirebbero contatori e code separati.",
+    "id": "d781180a-1ca0-4136-9ab7-351f6e53411d"
   },
   {
     "question": "Quale delle seguenti affermazioni sugli algoritmi di scheduling per i dischi è falsa? ",
@@ -881,7 +914,8 @@
     "image": "",
     "code": "",
     "explanation": "LIFO (Last In First Out) non è affatto equo: favorisce solo le richieste più recenti e può causare starvation di quelle più vecchie, che potrebbero non essere mai servite.",
-    "hint": "L'equità implica che tutte le richieste abbiano possibilità di essere servite, indipendentemente dall'ordine di arrivo."
+    "hint": "L'equità implica che tutte le richieste abbiano possibilità di essere servite, indipendentemente dall'ordine di arrivo.",
+    "id": "a4f41390-511f-42ee-8bd1-64b2c6e76d5f"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sul long-term scheduler è falsa? ",
@@ -907,7 +941,8 @@
     "image": "",
     "code": "",
     "explanation": "Il long-term scheduler viene chiamato anche quando un processo termina (liberando memoria) o quando il grado di multiprogrammazione scende sotto una soglia, non solo alla creazione di nuovi processi.",
-    "hint": "Il long-term scheduler gestisce il grado di multiprogrammazione, non solo l'ingresso di nuovi processi."
+    "hint": "Il long-term scheduler gestisce il grado di multiprogrammazione, non solo l'ingresso di nuovi processi.",
+    "id": "613f4eff-207c-404e-9b8b-6782d1cd2fcc"
   },
   {
     "question": "Quale delle seguenti affermazioni sui metodi di gestione dello spazio libero su disco è vera? ",
@@ -933,7 +968,8 @@
     "image": "",
     "code": "",
     "explanation": "La lista di blocchi liberi (free list) memorizza esplicitamente l'indirizzo di ogni blocco libero, occupando spazio su disco. La concatenazione (linked list di blocchi liberi) invece usa gli stessi blocchi liberi per collegarsi tra loro, senza overhead aggiuntivo.",
-    "hint": "Ricorda la differenza tra memorizzare puntatori espliciti e usare i blocchi liberi stessi come puntatori."
+    "hint": "Ricorda la differenza tra memorizzare puntatori espliciti e usare i blocchi liberi stessi come puntatori.",
+    "id": "0f4ad1e2-519d-416d-a2c5-830c0a3f9577"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla memoria cache è vera? ",
@@ -959,7 +995,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel meccanismo di write-back, le scritture in cache non vengono immediatamente propagate in RAM; la cache può contenere dati più recenti (sporchi) rispetto alla memoria principale, causando incoerenza temporanea.",
-    "hint": "Pensa a cosa succede quando scrivi in cache ma non ancora in RAM nel write-back."
+    "hint": "Pensa a cosa succede quando scrivi in cache ma non ancora in RAM nel write-back.",
+    "id": "a18d69ad-5633-4dcd-bf0c-35eba03a9efa"
   },
   {
     "question": "Quale delle seguenti affermazioni sui problemi dei produttori/consumatori e dei lettori/scrittori, nelle accezioni viste a lezione, è vera? ",
@@ -985,7 +1022,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel problema produttori/consumatori il buffer è una risorsa critica che richiede mutua esclusione: solo un consumatore alla volta può prelevare. Nel problema lettori/scrittori, i lettori possono accedere simultaneamente perché non modificano i dati, mentre gli scrittori necessitano di accesso esclusivo.",
-    "hint": "Ricorda che i lettori non modificano i dati, quindi possono coesistere; i consumatori invece modificano il buffer (lo svuotano)."
+    "hint": "Ricorda che i lettori non modificano i dati, quindi possono coesistere; i consumatori invece modificano il buffer (lo svuotano).",
+    "id": "ff61dce9-b456-48d8-87f8-0615095c553a"
   },
   {
     "question": "Quale delle seguenti affermazioni sui (vecchi) metodi per il partizionamento della memoria è vera? ",
@@ -1011,7 +1049,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel partizionamento dinamico (variabile) la memoria viene allocata su richiesta esatta, ma quando i processi terminano si creano buchi tra partizioni cariche. Questi buchi sparsi non contigui costituiscono la frammentazione esterna, che non può essere usata per allocare nuovi processi.",
-    "hint": "La frammentazione esterna deriva da spazi liberi non contigui che non possono soddisfare richieste di memoria contigua."
+    "hint": "La frammentazione esterna deriva da spazi liberi non contigui che non possono soddisfare richieste di memoria contigua.",
+    "id": "524178b2-84e4-495d-b878-43cb66eec23d"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sulla preemption è vera? ",
@@ -1037,7 +1076,8 @@
     "image": "",
     "code": "",
     "explanation": "Uno scheduler non-preemptive (cooperativo) non può interrompere un processo in esecuzione nemmeno se ci sono altri processi pronti. Il processo tiene la CPU fino a quando non si blocca volontariamente o termina, potenzialmente monopolizzando il processore.",
-    "hint": "In uno scheduler non-preemptive, solo il processo stesso può rilasciare la CPU."
+    "hint": "In uno scheduler non-preemptive, solo il processo stesso può rilasciare la CPU.",
+    "id": "75bdede9-b1ad-4d2b-80ea-ec4e3c08b174"
   },
   {
     "question": "Nel modello dei processi a 5 stati, quali delle seguenti transizioni non è possibile? ",
@@ -1063,7 +1103,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel modello a 5 stati, un processo nello stato Blocked non può passare direttamente allo stato Running perché deve prima tornare nello stato Ready (quando l'evento che lo bloccava si verifica), e solo lo scheduler può portarlo da Ready a Running.",
-    "hint": "Ricorda che da Blocked si può andare solo a Ready, non direttamente a Running."
+    "hint": "Ricorda che da Blocked si può andare solo a Ready, non direttamente a Running.",
+    "id": "4920fd44-0a80-457d-b5d5-0b431398dbec"
   },
   {
     "question": "Quale delle seguenti affermazioni sul metodo di allocazione indicizzata dei file è vera? ",
@@ -1089,7 +1130,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'allocazione indicizzata con porzioni di dimensione variabile, ogni entry dell'indice deve contenere non solo il puntatore al blocco dati ma anche la lunghezza della porzione, poiché il sistema deve sapere quanti byte leggere per ciascuna porzione.",
-    "hint": "Con porzioni variabili, come facciamo a sapere quanto leggere da ciascun blocco?"
+    "hint": "Con porzioni variabili, come facciamo a sapere quanto leggere da ciascun blocco?",
+    "id": "b96bab68-bf71-4d23-8fac-3140baea61a9"
   },
   {
     "question": "Quale delle seguenti affermazioni sul requisito di rilocazione nella gestione della memoria è vera? ",
@@ -1115,7 +1157,8 @@
     "image": "",
     "code": "",
     "explanation": "La rilocazione tramite sostituzione nel programma sorgente (loadtime) produce indirizzi assoluti fissi a compile-time, quindi il processo deve sempre caricarsi allo stesso indirizzo; nessuna delle altre opzioni descrive correttamente questo meccanismo.",
-    "hint": "Se sostituisco gli indirizzi nel sorgente, questi diventano fissi o rimangono relativi?"
+    "hint": "Se sostituisco gli indirizzi nel sorgente, questi diventano fissi o rimangono relativi?",
+    "id": "3ffb1571-5ce3-4e89-af16-831864e9fb94"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sulla preemption è vera?",
@@ -1141,7 +1184,8 @@
     "image": "",
     "code": "",
     "explanation": "Uno scheduler non-preemptive non interrompe un processo in esecuzione, quindi un processo CPU-bound può terminare il suo quanto di tempo naturale (o l'intero burst) prima di cedere il processore, monopolizzandolo anche con altri processi ready.",
-    "hint": "Cosa succede se un processo CPU-bound ha un burst lungo in uno scheduler che non preemptiona?"
+    "hint": "Cosa succede se un processo CPU-bound ha un burst lungo in uno scheduler che non preemptiona?",
+    "id": "3bde8b87-e12a-457a-82a5-632663fc3d7e"
   },
   {
     "question": "Quale dei seguenti requisiti deve soddisfare un meccanismo che offra la mutua esclusione? ",
@@ -1167,7 +1211,8 @@
     "image": "",
     "code": "",
     "explanation": "Un meccanismo corretto di mutua esclusione deve funzionare indipendentemente dalle velocità relative dei processi, poiché non si può assumere nulla sulla loro temporizzazione in un sistema reale.",
-    "hint": "Il meccanismo deve funzionare anche se un processo è infinitamente più lento di un altro?"
+    "hint": "Il meccanismo deve funzionare anche se un processo è infinitamente più lento di un altro?",
+    "id": "faf6bc72-d5dd-4659-8bf5-054e5b3a6f24"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sul dispatcher è falsa? ",
@@ -1193,7 +1238,8 @@
     "image": "",
     "code": "",
     "explanation": "La predictibility (prevedibilità) è un criterio di sistema, non utente. I criteri di sistema misurano le prestazioni complessive del sistema (throughput, utilizzo CPU), mentre i criteri utente riguardano l'esperienza del singolo utente (tempo di risposta, deadline).",
-    "hint": "Ricorda la distinzione tra criteri di sistema (qualità del servizio globale) e criteri utente (qualità percepita dal singolo utente)."
+    "hint": "Ricorda la distinzione tra criteri di sistema (qualità del servizio globale) e criteri utente (qualità percepita dal singolo utente).",
+    "id": "ec7ebea4-9855-4398-998c-92eb5e1b1fc3"
   },
   {
     "question": "Quale delle seguenti affermazioni sugli interrupt (o eccezioni) è falsa? ",
@@ -1219,7 +1265,8 @@
     "image": "",
     "code": "",
     "explanation": "Per le eccezioni di tipo fault (come page fault o division by zero), dopo la gestione si ritorna a ripetere l'istruzione che ha causato l'eccezione, non l'istruzione successiva. Questo è fondamentale per permettere alla condizione di essere risolta e ritentare l'operazione.",
-    "hint": "Ricorda la differenza tra interrupt (si riparte dall'istruzione successiva) e fault (si ritenta l'istruzione che ha causato l'eccezione)."
+    "hint": "Ricorda la differenza tra interrupt (si riparte dall'istruzione successiva) e fault (si ritenta l'istruzione che ha causato l'eccezione).",
+    "id": "17373472-bd25-45a1-8bf9-31df3e24d248"
   },
   {
     "question": "Quale delle seguenti affermazioni sulle istruzioni macchina speciali per la gestione della concorrenza è vera? ",
@@ -1245,7 +1292,8 @@
     "image": "",
     "code": "",
     "explanation": "Le istruzioni macchina speciali (test-and-set, compare-and-swap) non usano busy-waiting ma meccanismi atomici hardware, riescono a prevenire il deadlock con algoritmi giusti, e funzionano anche su multiprocessore tramite atomici hardware.",
-    "hint": "Le istruzioni atomiche hardware sono la base per costruire lock e semafori senza busy-waiting."
+    "hint": "Le istruzioni atomiche hardware sono la base per costruire lock e semafori senza busy-waiting.",
+    "id": "a9c40fc9-0279-4fcc-98f6-ffdfd443e985"
   },
   {
     "question": "Quale delle seguenti affermazioni sui processi è vera? ",
@@ -1271,7 +1319,8 @@
     "image": "",
     "code": "",
     "explanation": "La system call exit (o return in main) è il meccanismo standard per la terminazione normale di un processo in tutti i sistemi operativi Unix-like e Windows, permettendo al processo di restituire un exit code e liberare le risorse.",
-    "hint": "Il process spawning crea nuovi processi, non li fa morire; la memoria non crea processi."
+    "hint": "Il process spawning crea nuovi processi, non li fa morire; la memoria non crea processi.",
+    "id": "1c6cd3b3-8554-449a-a53c-6fcfb3ec73ae"
   },
   {
     "question": "Quale delle seguenti affermazioni è falsa? ",
@@ -1297,7 +1346,8 @@
     "image": "",
     "code": "",
     "explanation": "La gestione del process switch nel kernel separato NON è un processo, ma viene eseguita direttamente dal kernel (modalità kernel) senza creare un nuovo processo. Il process switch è un'operazione del kernel, non un processo.",
-    "hint": "Il process switch è una funzione del kernel eseguita in modalità sistema, non un processo separato."
+    "hint": "Il process switch è una funzione del kernel eseguita in modalità sistema, non un processo separato.",
+    "id": "4c947a43-31ef-41f8-992a-698647c31989"
   },
   {
     "question": "Quale delle seguenti affermazioni sul metodo di allocazione concatenata dei file è vera? ",
@@ -1323,7 +1373,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'allocazione concatenata non esiste una tabella di allocazione: i blocchi sono collegati sequenzialmente tramite puntatori contenuti nei blocchi stessi. Il consolidamento (compaction) serve a unire blocchi liberi contigui, non a memorizzare file più grandi. L'allocazione concatenata usa porzioni a dimensione fissa (blocchi), non variabile.",
-    "hint": "Ricorda che nell'allocazione concatenata i puntatori sono nei blocchi, non in una tabella esterna."
+    "hint": "Ricorda che nell'allocazione concatenata i puntatori sono nei blocchi, non in una tabella esterna.",
+    "id": "84dbce6d-30f4-4d72-8d56-0f44a29e00fb"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla memoria virtuale con paginazione è vera? ",
@@ -1349,7 +1400,8 @@
     "image": "",
     "code": "",
     "explanation": "Nella paginazione a 2 livelli, si cerca tipicamente di far entrare ogni tabella di secondo livello in una singola pagina fisica: questo evita di dover aggiungere ulteriori livelli di indirezione e semplifica la gestione della memoria.",
-    "hint": "Pensa a come il design delle tabelle a 2 livelli minimizzi i page fault durante la traduzione degli indirizzi."
+    "hint": "Pensa a come il design delle tabelle a 2 livelli minimizzi i page fault durante la traduzione degli indirizzi.",
+    "id": "b403757d-b788-4222-9c1b-1536ceeb6240"
   },
   {
     "question": "Quale delle seguenti affermazioni sul deadlock è falsa? ",
@@ -1375,7 +1427,8 @@
     "image": "",
     "code": "",
     "explanation": "Per prevenire il deadlock basta impedire UNA qualsiasi delle 4 condizioni (non 3). In particolare, la mutua esclusione non può essere impedita per molte risorse (es. stampanti), quindi si agisce sulle altre tre.",
-    "hint": "Ricorda: Coffman ha identificato 4 condizioni necessarie, ma per prevenirne uno basta bloccarne una sola."
+    "hint": "Ricorda: Coffman ha identificato 4 condizioni necessarie, ma per prevenirne uno basta bloccarne una sola.",
+    "id": "8618af37-b86e-4b21-b76b-4e6dd979d23e"
   },
   {
     "question": "Quale delle seguenti affermazioni è vera? ",
@@ -1401,7 +1454,8 @@
     "image": "",
     "code": "",
     "explanation": "La modalità di un processo utente cambia durante l'esecuzione: passa da utente a sistema quando avviene un sistema call o interrupt, e il dispatcher gira anch'esso in modalità sistema (kernel). Quindi né 'sempre utente' né 'sempre sistema' sono corretti.",
-    "hint": "Pensa a cosa succede quando un processo utente fa una system call."
+    "hint": "Pensa a cosa succede quando un processo utente fa una system call.",
+    "id": "98580449-db14-4466-8d00-db860c0a9b91"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla memoria virtuale con paginazione è vera? ",
@@ -1427,7 +1481,8 @@
     "image": "",
     "code": "",
     "explanation": "B) Falso: il resident set varia dinamicamente. C) Falso: l'algoritmo dell'orologio è per page replacement, non per replacement scope. D) Falso: la politica dinamica mira a mantenere il numero ottimale di pagine, non necessariamente ad ampliare.",
-    "hint": "Ricorda la differenza tra resident set (pagine caricate) e working set (pagine usate attivamente)."
+    "hint": "Ricorda la differenza tra resident set (pagine caricate) e working set (pagine usate attivamente).",
+    "id": "a041d64e-fa9d-42c1-84f0-7ac6cf2e5d12"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sul dispatcher è falsa?",
@@ -1453,7 +1508,8 @@
     "image": "",
     "code": "",
     "explanation": "Il throughput misura il numero di processi completati per unità di tempo (es. processi/secondo) ed è un criterio di sistema che valuta le prestazioni complessive del dispatcher.",
-    "hint": "Il throughput indica l'efficienza del sistema nel completare lavoro, quindi è un criterio prestazionale."
+    "hint": "Il throughput indica l'efficienza del sistema nel completare lavoro, quindi è un criterio prestazionale.",
+    "id": "51c86ac7-5e19-4132-9e94-e3de31ccfb56"
   },
   {
     "question": "Quale delle seguenti affermazioni è falsa?",
@@ -1479,7 +1535,8 @@
     "image": "",
     "code": "",
     "explanation": "Ogni thread ha un proprio thread identifier (TID) univoco che lo distingue dagli altri thread dello stesso processo, mentre il process identifier (PID) è condiviso.",
-    "hint": "Il PID identifica il processo, mentre ogni thread ha un proprio identificativo univoco."
+    "hint": "Il PID identifica il processo, mentre ogni thread ha un proprio identificativo univoco.",
+    "id": "3efe566c-de49-483a-afe7-4f03f98f2538"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla page cache è falsa?",
@@ -1505,7 +1562,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'algoritmo ARC a 3 segmenti, i contatori NON vengono incrementati quando le pagine sono nel segmento vecchio (oldest), mentre vengono incrementati quando sono nei segmenti new e middle.",
-    "hint": "Nel segmento oldest i contatori non vengono modificati per evitare di favorire eccessivamente pagine mantenute a lungo."
+    "hint": "Nel segmento oldest i contatori non vengono modificati per evitare di favorire eccessivamente pagine mantenute a lungo.",
+    "id": "d418ce03-e8d5-4b9a-83da-f464c4780f57"
   },
   {
     "question": "Quali delle seguenti affermazioni sulla efficienza di un sistema operativo è falsa?",
@@ -1531,7 +1589,8 @@
     "image": "",
     "code": "",
     "explanation": "L'accesso equo non significa egualitario: un sistema operativo deve rispettare le priorità e può assegnare più risorse a processi con priorità maggiore.",
-    "hint": "Le priorità dei processi influenzano l'allocazione delle risorse."
+    "hint": "Le priorità dei processi influenzano l'allocazione delle risorse.",
+    "id": "fa18c93b-6f38-402f-a455-68bcb7ea973b"
   },
   {
     "question": "Si consideri una unità disco con una velocità di rotazione di R rivoluzioni al minuto (rpm). La testina, per spostarsi da una traccia alla successiva, impiega un tempo trascurabile. Ogni traccia del disco contiene T kB. Si assuma che una porzione di dimensione P kB di un file sia memorizzata sul disco in settori contigui. Stimare il tempo totale, in secondi, necessario per il trasferimento di questi P kB di dati dal disco in memoria principale, nel caso in cui la testina sia già posizionata sul settore di partenza.",
@@ -1557,7 +1616,8 @@
     "image": "",
     "code": "",
     "explanation": "La velocità di trasferimento è T kB per ogni rotazione, e con R rpm la velocità è T*R/60 kB/s. Dividendo P per questa velocità si ottiene il tempo totale.",
-    "hint": "Calcola prima la velocità di trasferimento in kB/s, poi dividi i dati da trasferire per questa velocità."
+    "hint": "Calcola prima la velocità di trasferimento in kB/s, poi dividi i dati da trasferire per questa velocità.",
+    "id": "93b376f5-022c-4f0f-b81e-fa8ffd12114e"
   },
   {
     "question": "Un sistema con gestione paginata semplice della memoria ha indirizzi di B bit e pagine di dimensione P kB. Se tutta la memoria è paginabile, qual è il numero massimo di elementi contenuti nella tabella delle pagine di un processo?",
@@ -1583,7 +1643,8 @@
     "image": "",
     "code": "",
     "explanation": "Il numero di voci nella tabella delle pagine corrisponde al numero di pagine logiche che un processo può avere, calcolato come spazio degli indirizzi (2^B byte) diviso per la dimensione di ogni pagina (P*1024 byte).",
-    "hint": "La tabella delle pagine ha una voce per ogni pagina logica del processo."
+    "hint": "La tabella delle pagine ha una voce per ogni pagina logica del processo.",
+    "id": "bc06fc06-5374-4247-bbfc-c7dc322a8be4"
   },
   {
     "question": "Si consideri la seguente soluzione (sbagliata) al problema della mutua esclusione tra processi: ",
@@ -1609,7 +1670,8 @@
     "image": "",
     "code": "int bolt = 0;\r\nvoid P(int i)\r\n    while (bolt == 1) /* do nothing */;\r\n    bolt = 1;\r\n    /* critical section */;\r\n    bolt = 0;\r\n    /* remainder */;",
     "explanation": "Con bolt inizializzato a 0, se entrambi i processi controllano bolt prima che uno possa assegnare 1, entrambi escono dal ciclo while e possono accedere alla sezione critica contemporaneamente, causando potenziale deadlock o violazione della mutua esclusione.",
-    "hint": "Il problema è la race condition tra il controllo e l'assegnazione di bolt."
+    "hint": "Il problema è la race condition tra il controllo e l'assegnazione di bolt.",
+    "id": "9b3a8c96-2265-4a29-8222-8334c9f7beaf"
   },
   {
     "question": "Si consideri il seguente modo di implementare la mutua esclusione:",
@@ -1635,7 +1697,8 @@
     "image": "",
     "code": "int bolt = 1;\r\nvoid P(int i)\r\n    while(true)\r\n      while (compare_and_swap(bolt, 1, 0) == 0) ;\r\n      critical_section();\r\n      bolt = 1;",
     "explanation": "compare_and_swap atomico garantisce mutua esclusione: solo un processo può entrare quando bolt passa da 1 a 0. Le altre affermazioni sono false perché non serve disabilitare interruzioni né usare exchange.",
-    "hint": "L'atomicità di compare_and_swap garantisce la mutua esclusione."
+    "hint": "L'atomicità di compare_and_swap garantisce la mutua esclusione.",
+    "id": "9545293c-454b-490e-a126-3e0b1c8782be"
   },
   {
     "question": "Si consideri la seguente soluzione al problema della mutua esclusione tra processi: ",
@@ -1661,7 +1724,8 @@
     "image": "",
     "code": "semaphore s = 0;\r\nvoid P(int i)\r\n    semWait(s);\r\n    /* critical section */;\r\n    semSignal(s);\r\n    /* remainder */;",
     "explanation": "Con semaforo inizializzato a 0, il primo processo che arriva si blocca su semWait. Eliminando semWait, tutti i processi entrano liberamente nella sezione critica, rispettando implicitamente il requisito di(mutua esclusione in senso lato, anche se non c'è sincronizzazione).",
-    "hint": "Il semaforo a 0 blocca subito il primo processo."
+    "hint": "Il semaforo a 0 blocca subito il primo processo.",
+    "id": "17ad2cfa-8b45-492e-aaba-af1ee6fee6f7"
   },
   {
     "question": "I seguenti due processi concorrenti condividono una variabile: ",
@@ -1687,7 +1751,8 @@
     "image": "",
     "code": "semaphore S = 1;\r\nint X = N;\r\n\r\n[Process 1]             [Process 2]\r\n    int Y;                       int Z;\r\n    semWait(S);          semWait(S);    \r\n    Y = X*2;                  Z = X+1;\r\n    X = Y;                      X = Z;\r\n    semSignal(S);       semSignal(S); ",
     "explanation": "Analizzando tutti gli interleaving possibili, i valori finali di X sono N*2+1 (se P1 legge per primo e P2 scrive) o 2*(N+1) (se P2 legge per primo e P1 scrive). I valori N+1 e N*2 sono solo transitori.",
-    "hint": "Considera tutti gli ordini possibili di lettura e scrittura."
+    "hint": "Considera tutti gli ordini possibili di lettura e scrittura.",
+    "id": "4466f8f3-a67e-4199-b048-31cdb5bd9208"
   },
   {
     "question": "I seguenti tre processi concorrenti condividono due semafori: ",
@@ -1713,7 +1778,8 @@
     "image": "",
     "code": "semaphore U = 3; \r\nsemaphore V = 0;\r\n\r\n[Process 1]                      [Process 2]                        [Process 3]\r\n  while(1)                           while(1)                              while(1)  \r\n        semWait(U);                     semWait(V);                       semWait(V);\r\n        print(\"A\");                          print(\"B\");                             print(\"C\");\r\n        semSignal(V);                  semSignal(V);\r\n",
     "explanation": "Il sistema non può proseguire indefinitamente: dopo 3 esecuzioni di Process 1, il semaforo U reaches 0 e Process 1 si blocca. Process 2 e 3 possono alternarsi grazie a V, ma non possono riaprire U. Quindi il sistema si blocca dopo un numero finito di passi, ma non può nemmeno esaurirsi completamente poiché Process 2 e 3 possono ancora alternarsi. Nessuna delle opzioni (0, 3, infinito) descrive correttamente questo comportamento.",
-    "hint": "Traccia l'evoluzione dei semafori: U parte da 3 e viene decrementato da Process 1, V parte da 0 e viene incrementato/decrementato."
+    "hint": "Traccia l'evoluzione dei semafori: U parte da 3 e viene decrementato da Process 1, V parte da 0 e viene incrementato/decrementato.",
+    "id": "a7db5a77-5f8c-4908-be27-00ab61d12965"
   },
   {
     "question": "Si consideri la seguente soluzione al problema della mutua esclusione tra processi: ",
@@ -1739,7 +1805,8 @@
     "image": "",
     "code": "const message null = /* null message */; \r\nmailbox box;\r\nvoid P(int i) { \r\n     message msg;\r\n     while (true) {\r\n          receive(box, msg);\r\n          /* critical section */;  \r\n          send(box, msg);\r\n          /* remainder */;  } }\r\n\r\nvoid main() {\r\n     box = create_mailbox();\r\n     nbsend(box, null);\r\n     parbegin (P(1), P(2), . . ., P(n));  }",
     "explanation": "Con un solo processo (n=1), non può verificarsi deadlock perché non c'è competizione: l'unico processo può sempre ricevere il messaggio, eseguire la sezione critica e rimandare il messaggio. Con più processi, due processi potrebbero bloccarsi entrambi in receive aspettando un messaggio.",
-    "hint": "Analizza cosa succede quando n=1 vs quando n>1, in particolare il comportamento della receive."
+    "hint": "Analizza cosa succede quando n=1 vs quando n>1, in particolare il comportamento della receive.",
+    "id": "137161c6-6128-4b9b-9856-cc4ee0662a14"
   },
   {
     "question": "Si consideri la soluzione al problema del produttore/consumatore che usa lo scambio messaggi vista a lezione. Quale delle seguenti affermazioni è vera?",
@@ -1765,7 +1832,8 @@
     "image": "",
     "code": "const int capacity = /* buffering capacity */ ;\r\n           mailbox mayproduce, mayconsume;\r\n    \r\n     void main() {\r\n         mayproduce = create_mailbox(),\r\n         mayconsume = create_mailbox();\r\n         for (int i = 1; i <= capacity; i++)\r\n              nbsend (mayproduce,null);\r\n         parbegin (producer,consumer); }\r\n    \r\n    void producer() {\r\n         message pmsg;\r\n         while (true) {\r\n           receive (mayproduce,pmsg);\r\n           pmsg = produce(); /* fa anche append */\r\n           nbsend (mayconsume,pmsg);  } }\r\n    \r\n    void consumer() {\r\n         message cmsg;\r\n         while (true) {\r\n           receive (mayconsume,cmsg);\r\n           consume (cmsg); /* fa anche take */\r\n           nbsend (mayproduce,null);  } }",
     "explanation": "Il codice usa nbsend (send non bloccante), quindi non c'è sincronizzazione tra l'invio del messaggio e la ricezione effettiva. Due produttori potrebbero ricevere entrambi 'mayproduce' (conoscendo che c'è uno slot disponibile), produrre due oggetti diversi, e poi inviare entrambi a 'mayconsume' contemporaneamente - ma il buffer ha un solo slot per ogni messaggio ricevuto.",
-    "hint": "nbsend non garantisce che il ricevente abbia effettivamente completato la receive."
+    "hint": "nbsend non garantisce che il ricevente abbia effettivamente completato la receive.",
+    "id": "c9542730-0f4d-479b-8593-10a8a10f13a7"
   },
   {
     "question": "Considerare un insieme di cinque processi P1, P2, P3, P4, P5 con i seguenti tempi di arrivo e tempi di esecuzione in millisecondi. Quale delle seguenti affermazioni è falsa?",
@@ -1791,7 +1859,8 @@
     "image": "",
     "code": "Processo    Tempo di Arrivo Tempo di Esecuzione\r\nP1  0   14\r\nP2  8   16\r\nP3  5   3\r\nP4  11  7\r\nP5  17  9\r\n",
     "explanation": "Per l'algoritmo SRT (Shortest Remaining Time), che è un algoritmo preemptive shortest job first, abbiamo tutti i dati necessari: i tempi di arrivo e i tempi di esecuzione. Gli altri algoritmi (Unix feedback, Virtual Round-Robin, Round-Robin) richiedono informazioni aggiuntive come quantum, priorità iniziale, o politiche di boosting.",
-    "hint": "Quale algoritmo richiede solo tempi di arrivo e burst per essere determinato?"
+    "hint": "Quale algoritmo richiede solo tempi di arrivo e burst per essere determinato?",
+    "id": "e78e6dd0-7e08-4ec4-a6e7-4c2e47f3b9b1"
   },
   {
     "question": "Considerare un insieme di cinque processi P1, P2, P3, P4, P5 con i seguenti tempi di arrivo e tempi di esecuzione in millisecondi. Quale delle seguenti affermazioni è falsa?",
@@ -1817,7 +1886,8 @@
     "image": "",
     "code": "Processo    Tempo di Arrivo Tempo di Esecuzione\r\nP1  0   14\r\nP2  8   16\r\nP3  5   3\r\nP4  11  7\r\nP5  17  9\r\n",
     "explanation": "Con FCFS (first-come-first-served), P3 arriva a 5 ma viene servito dopo P1 che era già in esecuzione, quindi non viene servito 'subito' all'arrivo. Analogamente P4 arriva a 11 e viene servito dopo P2. Quindi i processi non serviti subito sono P3 e P4, non P3 e P5.",
-    "hint": "Traccia l'ordine di esecuzione con FCFS: chi viene eseguito quando arrivano nuovi processi?"
+    "hint": "Traccia l'ordine di esecuzione con FCFS: chi viene eseguito quando arrivano nuovi processi?",
+    "id": "ae044840-465a-415a-860c-e9541739ab7a"
   },
   {
     "question": "Quale delle seguenti affermazioni, riguardanti il joint progress diagram di 2 processi, è vera? ",
@@ -1843,7 +1913,8 @@
     "image": "",
     "code": "",
     "explanation": "Il joint progress diagram è uno strumento teorico per analizzare l'interazione tra processi, specificamente per individuare regioni di unsafe execution dove può verificarsi deadlock. Non ha limitazioni sul numero di risorse (B è falsa), non determina scheduling (C è falsa) e non è correlato a page fault (D è falsa).",
-    "hint": "Ricorda che il joint progress diagram serve per analizzare unsafe regions, non per scheduling o fault."
+    "hint": "Ricorda che il joint progress diagram serve per analizzare unsafe regions, non per scheduling o fault.",
+    "id": "e2aab661-4b6b-483f-b522-32c0598b8fda"
   },
   {
     "question": "Quale delle seguenti affermazioni sui dispositivi di I/O è vera? ",
@@ -1869,7 +1940,8 @@
     "image": "",
     "code": "",
     "explanation": "Le affermazioni A, B e D sono tutte false. Il data rate è la velocità di un singolo dispositivo, non un confronto (A). I dispositivi I/O non sono limitati a un tipo di applicazione (B). Non tutti i dispositivi trasferiscono in blocchi (es. tastiera invia caratteri singoli) (D).",
-    "hint": "Considera che esistono dispositivi che trasferiscono dati in modo carattere (come la tastiera), non solo a blocchi."
+    "hint": "Considera che esistono dispositivi che trasferiscono dati in modo carattere (come la tastiera), non solo a blocchi.",
+    "id": "83b36caf-3a29-4e32-a2a3-52116bff58d7"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla traduzione di un indirizzo virtuale in fisico, in un sistema con memoria virtuale con paginazione (avente tabella delle pagine ad 1 livello), è falsa?",
@@ -1895,7 +1967,8 @@
     "image": "",
     "code": "",
     "explanation": "L'hardware NON cerca il numero di pagina nelle entries: usa il numero di pagina virtuale come indice (offset) per accedere direttamente alla entry corrispondente nella page table. È un'operazione di indicizzazione, non di ricerca.",
-    "hint": "L'accesso alla page table è indexed, non searched: il VPN è un indice, non una chiave di ricerca."
+    "hint": "L'accesso alla page table è indexed, non searched: il VPN è un indice, non una chiave di ricerca.",
+    "id": "98fb79bd-02ad-4d34-8ee5-40e8cff657bd"
   },
   {
     "question": "Quale delle seguenti affermazioni sui file system è vera? ",
@@ -1921,7 +1994,8 @@
     "image": "",
     "code": "",
     "explanation": "Il journaling registra le operazioni di scrittura in un log (journal) prima di eseguirle, garantendo consistenza in caso di crash. Le altre opzioni sono false: un volume può essere parte di un disco (B), i metadati descrivono i dati ma non li contengono (C), e viceversa (D).",
-    "hint": "Il journaling funziona come un diario delle operazioni da compiere, eseguite poi in modo atomico."
+    "hint": "Il journaling funziona come un diario delle operazioni da compiere, eseguite poi in modo atomico.",
+    "id": "512598f4-a44d-4d87-904a-9b9b20acbd25"
   },
   {
     "question": "Quale delle seguenti affermazioni sui meccanismi per la gestione della concorrenza è vera? ",
@@ -1947,7 +2021,8 @@
     "image": "",
     "code": "",
     "explanation": "Con la tecnica della commutazione strettamente alternata (turn), due processi possono ottenere mutua esclusione senza semafori, messaggi o istruzioni atomiche. Ogni processo cede il turno all'altro, garantendo fairness e assenza di starvation.",
-    "hint": "Esiste una soluzione classica basata su una variabile condivisa 'turn' che alterna l'accesso."
+    "hint": "Esiste una soluzione classica basata su una variabile condivisa 'turn' che alterna l'accesso.",
+    "id": "efae93c7-7d71-4fc6-99cb-43c430f45cdd"
   },
   {
     "question": "Quale dei seguenti elementi non è una delle parti che definiscono un processo? ",
@@ -1973,7 +2048,8 @@
     "image": "",
     "code": "",
     "explanation": "Le parti che definiscono un processo sono il contatore di programma, la priorità e i dati (stack e heap). Le informazioni sullo stato delle risorse (file aperti, memoria allocata) sono gestite dal sistema operativo e non definiscono il processo in sé.",
-    "hint": "Ricorda che un processo è definito dal suo contesto di esecuzione e dalle sue risorse private, non da quelle condivise con il sistema."
+    "hint": "Ricorda che un processo è definito dal suo contesto di esecuzione e dalle sue risorse private, non da quelle condivise con il sistema.",
+    "id": "f41a0320-e94f-42be-8592-50a68f9f647a"
   },
   {
     "question": "Un computer esegue 20 istruzioni ogni microsecondo. Ricordando che 1 millisecondo = 1000 microsecondi = 1000000 nanosecondi, per eseguire una singola istruzione impiega",
@@ -1999,7 +2075,8 @@
     "image": "",
     "code": "",
     "explanation": "Se il computer esegue 20 istruzioni in 1 microsecondo, il tempo per una singola istruzione è 1/20 = 0.05 microsecondi. È sufficiente dividere il tempo totale per il numero di istruzioni.",
-    "hint": "Ricorda che il tempo per una singola istruzione si calcola come: tempo totale / numero di istruzioni."
+    "hint": "Ricorda che il tempo per una singola istruzione si calcola come: tempo totale / numero di istruzioni.",
+    "id": "25430438-5438-47a6-a5cd-bde66ab23315"
   },
   {
     "question": "Quale delle seguenti affermazioni è falsa?",
@@ -2025,7 +2102,8 @@
     "image": "",
     "code": "",
     "explanation": "Ogni thread all'interno di uno stesso processo ha un proprio Thread Identifier (TID) univoco, diversamente dal Process Identifier (PID) che è condiviso da tutti i thread del processo.",
-    "hint": "Ricorda la differenza tra PID (condiviso da tutti i thread) e TID (univoco per ogni thread)."
+    "hint": "Ricorda la differenza tra PID (condiviso da tutti i thread) e TID (univoco per ogni thread).",
+    "id": "54bb6be0-c889-4838-acf9-b991c5f57fa6"
   },
   {
     "question": "Quale delle seguenti affermazioni è vera?",
@@ -2051,7 +2129,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'algoritmo a 2 segmenti (2Q), un blocco passa dal segmento first-in-first-out (FIFO) al segmento second chance esclusivamente quando viene nuovamente acceduto (scorrimento), non per semplice passaggio di tempo.",
-    "hint": "L'algoritmo 2Q usa due code: una per l'ingresso (FIFO) e una per i blocchi riacceduti."
+    "hint": "L'algoritmo 2Q usa due code: una per l'ingresso (FIFO) e una per i blocchi riacceduti.",
+    "id": "f7fab7c6-e5d0-452a-8dea-775d434d16fd"
   },
   {
     "question": "Quale delle seguenti affermazioni sugli i-node di UNIX è falsa?",
@@ -2077,7 +2156,8 @@
     "image": "",
     "code": "",
     "explanation": "In UNIX, le directory non vengono modificate aprendo file speciali, ma attraverso chiamate di sistema dedicate come mkdir, rmdir, rename, link e unlink. I file speciali rappresentano dispositivi, non directory.",
-    "hint": "Le directory vengono gestite tramite system call specifiche, non come file normali."
+    "hint": "Le directory vengono gestite tramite system call specifiche, non come file normali.",
+    "id": "8f4a28b1-43aa-46e7-83f0-e14ddf876b23"
   },
   {
     "question": "Quale delle seguenti affermazioni è vera sulla memoria virtuale con paginazione a segmentazione?",
@@ -2103,7 +2183,8 @@
     "image": "",
     "code": "",
     "explanation": "Il bit di 'dirty' o modifica è presente sia nelle entry della tabella dei segmenti che in quelle della tabella delle pagine, indicando se il corrispondente segmento/pagina è stato modificato in memoria e deve essere salvato su disco in caso di sostituzione.",
-    "hint": "Il dirty bit serve per decidere cosa fare quando una pagina/segmento deve essere rimosso dalla memoria."
+    "hint": "Il dirty bit serve per decidere cosa fare quando una pagina/segmento deve essere rimosso dalla memoria.",
+    "id": "c4f91123-9f04-4fbe-a46b-85c7e4f9c7a1"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla memoria virtuale con paginazione è vera?",
@@ -2129,7 +2210,8 @@
     "image": "",
     "code": "",
     "explanation": "La traduzione degli indirizzi da virtuale a fisico è un'operazione frequente che, se gestita interamente dal software, causerebbe un overhead troppo elevato per il sistema.",
-    "hint": "Pensa a quante traduzioni di indirizzi avvengono per ogni istruzione e quale componente è più adatto a gestirle."
+    "hint": "Pensa a quante traduzioni di indirizzi avvengono per ogni istruzione e quale componente è più adatto a gestirle.",
+    "id": "6a3b2b15-6f75-432e-a025-afe14762cf63"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla concorrenza tra processi o thread è vera?",
@@ -2155,7 +2237,8 @@
     "image": "",
     "code": "",
     "explanation": "L'istruzione exchange scambia il contenuto di due registri, quindi non può usare costanti come argomenti; compare_and_swap invece confronta un valore con una costante e può therefore usare costanti.",
-    "hint": "Prova a implementare mentalmente queste istruzioni e vedi quali operandi richiedono."
+    "hint": "Prova a implementare mentalmente queste istruzioni e vedi quali operandi richiedono.",
+    "id": "afeaec3f-1127-4ed6-a3d7-2b8d7ffa2334"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sugli algoritmi di scheduling è vera?",
@@ -2181,7 +2264,8 @@
     "image": "",
     "code": "",
     "explanation": "L'exponential averaging è una tecnica che stima il valore successivo di una serie (come il tempo di burst) usando una media ponderata tra il valore precedente e quello attuale: tn+1 = α * tn + (1-α) * tn-1.",
-    "hint": "Questa tecnica è usata per predire il comportamento futuro basandosi sulla storia recente."
+    "hint": "Questa tecnica è usata per predire il comportamento futuro basandosi sulla storia recente.",
+    "id": "7079ee62-2090-457c-b04a-d2f8cf5b0086"
   },
   {
     "question": "Quale delle seguenti azioni non viene necessariamente eseguita al momento della creazione di un processo in un sistema operativo moderno?",
@@ -2207,7 +2291,8 @@
     "image": "",
     "code": "",
     "explanation": "Un processo appena creato viene messo nello stato 'pronto' (ready) e non viene eseguito immediatamente; lo scheduler deciderà quando assegnargli la CPU.",
-    "hint": "Ricorda la differenza tra creazione di un processo e la sua effettiva esecuzione."
+    "hint": "Ricorda la differenza tra creazione di un processo e la sua effettiva esecuzione.",
+    "id": "4481f476-01b2-4190-9e05-5b3d61879f64"
   },
   {
     "question": "Quale delle seguenti affermazioni sul file system FAT è vera?",
@@ -2233,7 +2318,8 @@
     "image": "",
     "code": "",
     "explanation": "Tutte e tre le opzioni A, B e C contengono errori: FAT usa allocazione concatenata (non contigua), la tabella FAT ha tante voci quanti sono i cluster (non i file), e i puntatori al prossimo cluster sono memorizzati nella tabella FAT, non all'interno di ogni cluster.",
-    "hint": "Ricorda che in FAT la 'tabella' contiene i puntatori, non i cluster stessi."
+    "hint": "Ricorda che in FAT la 'tabella' contiene i puntatori, non i cluster stessi.",
+    "id": "5dc79543-23ac-477c-af47-49c23626f5e5"
   },
   {
     "question": "Quale delle seguenti affermazioni sul requisito di rilocazione nella gestione della memoria è vera?",
@@ -2259,7 +2345,8 @@
     "image": "",
     "code": "",
     "explanation": "L'opzione B è effettivamente corretta: il requisito di rilocazione permette a un processo di essere caricato in posizioni diverse in memoria. Le opzioni C e D sono false. Probabilmente l'intento era mostrare un caso in cui tutte le affermazioni sembrano false tranne una.",
-    "hint": "Il requisito di rilocazione riguarda la possibilità di caricare un processo in posizioni di memoria differenti."
+    "hint": "Il requisito di rilocazione riguarda la possibilità di caricare un processo in posizioni di memoria differenti.",
+    "id": "e70e5404-926c-41db-a98f-15bcbe200594"
   },
   {
     "question": "Quale delle seguenti affermazioni sul modello dei processi a 7 stati è vera?",
@@ -2285,7 +2372,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel modello a 7 stati, 'New' non viene sdoppiato (solo Ready e Blocked hanno versioni Suspend), lo stato Suspend non è causato da timeout del dispatcher, e la transizione Ready/Suspend ==> Blocked/Suspend non è ammessa.",
-    "hint": "Nel modello a 7 stati, il processo può passare da Suspend a Ready ma non direttamente a Blocked."
+    "hint": "Nel modello a 7 stati, il processo può passare da Suspend a Ready ma non direttamente a Blocked.",
+    "id": "27172178-6644-4de6-9bba-35653c5c1fa3"
   },
   {
     "question": "Quale delle seguenti affermazioni sugli i-node di Unix è vera?",
@@ -2311,7 +2399,8 @@
     "image": "",
     "code": "",
     "explanation": "I puntatori a tripla indirezione (triple indirect) vengono usati solo quando i file sono talmente grandi da richiedere più livelli di indirizzamento indiretto oltre ai puntatori diretti e a quelli a indirezione singola e doppia.",
-    "hint": "Gli i-node hanno puntatori diretti, a singola, doppia e tripla indirezione per file di dimensioni crescenti."
+    "hint": "Gli i-node hanno puntatori diretti, a singola, doppia e tripla indirezione per file di dimensioni crescenti.",
+    "id": "984dc12a-da9e-47c0-a21d-e7f254bd7540"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni sul dispatcher è falsa?",
@@ -2337,7 +2426,8 @@
     "image": "",
     "code": "",
     "explanation": "Il turnaround time si definisce come il tempo che intercorre tra il momento in cui il processo entra nel sistema (submission) e il suo completamento, non dalla prima esecuzione sul processore.",
-    "hint": "Il turnaround time include tutto il tempo di attesa in coda, non solo il tempo di esecuzione effettiva."
+    "hint": "Il turnaround time include tutto il tempo di attesa in coda, non solo il tempo di esecuzione effettiva.",
+    "id": "fa3bbab9-7940-4433-b3f1-562efa99eb97"
   },
   {
     "question": "Quale delle seguenti affermazioni sull'algoritmo del banchiere per evitare il deadlock visto a lezione è falsa?",
@@ -2363,7 +2453,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'algoritmo del banchiere, la matrice C-A rappresenta le risorse ancora richiedibili (max - allocato) e deve sempre essere non negativa per uno stato valido e sicuro; se fosse negativa, il processo avrebbe già superato le sue richieste massime, violando i vincoli del sistema.",
-    "hint": "Ricorda che C-A rappresenta le risorse ancora richiedibili e deve essere sempre >= 0 in uno stato valido."
+    "hint": "Ricorda che C-A rappresenta le risorse ancora richiedibili e deve essere sempre >= 0 in uno stato valido.",
+    "id": "9cdf7af6-fb7d-4ddd-a24f-3179c7576e5c"
   },
   {
     "question": "Quale delle seguenti affermazioni sugli scheduler per architetture multiprocessore è vera?",
@@ -2389,7 +2480,8 @@
     "image": "",
     "code": "",
     "explanation": "L'assegnamento statico ha overhead MINORE (non maggiore) rispetto a quello dinamico, poiché non richiede decisioni di scheduling ad ogni context switch; inoltre l'assegnamento dinamico distribuisce il carico su più processori evitando bottleneck.",
-    "hint": "L'overhead statico è generalmente minore di quello dinamico, non maggiore."
+    "hint": "L'overhead statico è generalmente minore di quello dinamico, non maggiore.",
+    "id": "f191fadc-6c85-4c25-9d6d-0f33d4ee2272"
   },
   {
     "question": "Assumendo un sistema monoprocessore, quale delle seguenti affermazioni è falsa? ",
@@ -2415,7 +2507,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo scheduler gestisce la CPU e la sua allocazione ai processi, ma il deadlock è un problema di allocazione delle risorse (non solo CPU) che viene gestito da algoritmi specifici di gestione dei deadlock, non dallo scheduler della CPU.",
-    "hint": "Lo scheduler gestisce la CPU, ma il deadlock riguarda l'allocazione di tutte le risorse, non solo la CPU."
+    "hint": "Lo scheduler gestisce la CPU, ma il deadlock riguarda l'allocazione di tutte le risorse, non solo la CPU.",
+    "id": "05e1822b-c6d7-4f6a-b8b7-da30b239c2a1"
   },
   {
     "question": "Quale delle seguenti affermazioni sui metodi di gestione del deadlock è vera?",
@@ -2441,7 +2534,8 @@
     "image": "",
     "code": "",
     "explanation": "L'algoritmo del banchiere per evitare il deadlock richiede che le risorse siano richieste volontariamente e non prevede mai preemption, a differenza dei metodi di rilevamento e prevenzione che possono prevedere preemption.",
-    "hint": "Il metodo per evitare il deadlock (Banchiere) lavora con richieste volontarie senza togliere risorse ai processi."
+    "hint": "Il metodo per evitare il deadlock (Banchiere) lavora con richieste volontarie senza togliere risorse ai processi.",
+    "id": "889d52a0-3019-45e7-a3db-79256252e5c6"
   },
   {
     "question": "Quale delle seguenti affermazioni sulla memoria virtuale con paginazione è vera?",
@@ -2467,7 +2561,8 @@
     "image": "",
     "code": "",
     "explanation": "Il thrashing si verifica quando l'overhead è MOLTO ALTO (non basso); la paginazione funziona bene GRAZIE al principio di località; il principio di località afferma che i processi tendono a usare un insieme limitato di pagine, ma non garantisce che sia sempre sufficiente per evitare thrashing.",
-    "hint": "Il thrashing è causato da overhead elevato, non basso, e il principio di località è ciò che rende la paginazione efficiente."
+    "hint": "Il thrashing è causato da overhead elevato, non basso, e il principio di località è ciò che rende la paginazione efficiente.",
+    "id": "ab277c4e-8d0a-4d5b-ae43-b56dcdb6cf00"
   },
   {
     "question": "Quale delle seguenti affermazioni sui metodi di gestione dello spazio libero su disco è vera?",
@@ -2493,7 +2588,8 @@
     "image": "",
     "code": "",
     "explanation": "Le alternative A, C e D sono tutte false. A è falsa perché i metodi di gestione dello spazio libero (bitmap, lista concatenata, lista raggruppata) non derivano i blocchi liberi per esclusione dalla tabella di allocazione. C è falsa perché l'allocazione dinamica richiede comunque l'aggiornamento delle strutture dati per lo spazio libero. D è falsa perché la tabella di bit è compatibile con qualsiasi metodo di allocazione, inclusa la preallocazione.",
-    "hint": "Ricorda che i metodi di gestione dello spazio libero (bitmap, linked list, grouped list) sono indipendenti dal metodo di allocazione dei file."
+    "hint": "Ricorda che i metodi di gestione dello spazio libero (bitmap, linked list, grouped list) sono indipendenti dal metodo di allocazione dei file.",
+    "id": "8fd5401c-04c2-40b5-bbac-746cf97cfb72"
   },
   {
     "question": "Quale delle seguenti operazioni non è tipicamente effettuata su un file?",
@@ -2519,6 +2615,7 @@
     "image": "",
     "code": "",
     "explanation": "Le operazioni tipiche su un file includono apertura (open), seek (posizionamento) e lock/unlock per controllo concorrenza. 'Connessione' è un'operazione associata a risorse di rete o database, non ai file system.",
-    "hint": "Quale di queste operazioni è tipica delle connessioni di rete piuttosto che dei file?"
+    "hint": "Quale di queste operazioni è tipica delle connessioni di rete piuttosto che dei file?",
+    "id": "c762c741-333f-4b76-8fb7-a26be7035181"
   }
 ]

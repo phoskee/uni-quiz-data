@@ -1,6 +1,7 @@
 import os
 import json
 import sys
+import uuid
 from pathlib import Path
 
 try:
@@ -153,6 +154,8 @@ def main():
     quiz_data = generate_quiz(text_content, model_name)
     
     if quiz_data:
+        for question in quiz_data:
+            question.setdefault("id", str(uuid.uuid4()))
         dest_dir = selected_file.parent.parent / "community"
         dest_dir.mkdir(exist_ok=True)
         # Normalizziamo il nome del file sostituendo gli spazi con _

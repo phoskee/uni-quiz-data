@@ -23,7 +23,8 @@
     "image": "",
     "code": "",
     "explanation": "Le tabelle multilivello riducono l'occupazione di memoria allocando solo le porzioni di tabella effettivamente necessarie per gli indirizzi virtuali utilizzati, eliminando le entry per spazi vuoti. Questo permette di ridurre l'overhead di memoria rispetto a una singola tabella monolitica che richiederebbe allocazione per l'intero spazio virtuale.",
-    "hint": "Considera come le tabelle multilivello gestiscono gli spazi di indirizzamento virtuali sparsi o parzialmente utilizzati."
+    "hint": "Considera come le tabelle multilivello gestiscono gli spazi di indirizzamento virtuali sparsi o parzialmente utilizzati.",
+    "id": "e99c25c7-1c51-405d-9fe4-990af2090332"
   },
   {
     "question": "2) La tecnica di gestione della memoria con paginazione basata su tabella inversa delle pagine _______ l’indirizzo della memoria secondaria e la tabella ha una dimensione pari alla cardinalità del _______.",
@@ -45,7 +46,8 @@
     "image": "",
     "code": "",
     "explanation": "La tabella inversa mantiene una entry per ogni frame fisico (page frame) anziché per pagina virtuale, riducendo la dimensione proporzionalmente alla memoria fisica disponibile. L'indirizzo della memoria secondaria non è memorizzato nella tabella inversa ma gestito separatamente tramite strutture dati di swap.",
-    "hint": "Pensa alla direzione della mappatura: da fisico a virtuale invece che viceversa."
+    "hint": "Pensa alla direzione della mappatura: da fisico a virtuale invece che viceversa.",
+    "id": "be973563-6c64-4f99-98b0-3b024b14ddac"
   },
   {
     "question": "3) La tecnica di gestione della memoria con paginazione e sostituzione delle pagine ‘Far’ sostituisce la pagina più lontana nel grafo delle pagine da _______, dove il grafo rappresenta le pagine come _______.",
@@ -67,7 +69,8 @@
     "image": "",
     "code": "",
     "explanation": "L'algoritmo Far (farthest) sostituisce la pagina il cui prossimo riferimento è più lontano nel futuro tra tutte le pagine attualmente residenti in memoria. Il grafo di riferimento modella le pagine come nodi e le sequenze di accesso come archi tra essi.",
-    "hint": "Ricorda che l'algoritmo ottimale guarda al futuro, non al passato, per scegliere la vittima."
+    "hint": "Ricorda che l'algoritmo ottimale guarda al futuro, non al passato, per scegliere la vittima.",
+    "id": "9c272fc2-d4b9-4678-b6d4-7ed15efe0dcc"
   },
   {
     "question": "4) Nella gestione della memoria basata sulla segmentazione si possono verificare errori di traduzione, nella traduzione si controllano i campi _____ e si può avere un’eccezione di _______",
@@ -89,7 +92,8 @@
     "image": "",
     "code": "",
     "explanation": "Durante la traduzione in segmentazione, il sistema verifica il bit di residenza (presenza in RAM), i bit di protezione (diritti di accesso) e il campo lunghezza (limite del segmento). Se l'offset supera la lunghezza si ha overflow del segmento; se si violano i permessi si ha un'eccezione di protezione.",
-    "hint": "Ricorda quali controlli di sicurezza e di validità sono necessari quando si accede a un segmento."
+    "hint": "Ricorda quali controlli di sicurezza e di validità sono necessari quando si accede a un segmento.",
+    "id": "ce9ea1f5-9b87-4464-9897-cea75c5f7744"
   },
   {
     "question": "5) Le strategie di sostituzione di pagina globali rispetto a quelle locali _______",
@@ -111,7 +115,8 @@
     "image": "",
     "code": "",
     "explanation": "Le strategie globali selezionano le vittime da tutti i frame fisici disponibili indipendentemente dal processo proprietario, trattando la memoria come un pool comune. Questo comporta che un processo possa subire sostituzioni causate dal comportamento di altri processi.",
-    "hint": "Pensa se la strategia considera l'appartenenza dei frame ai singoli processi quando sceglie la pagina da sostituire."
+    "hint": "Pensa se la strategia considera l'appartenenza dei frame ai singoli processi quando sceglie la pagina da sostituire.",
+    "id": "b353de88-951c-4067-9574-cc826f94e8d3"
   },
   {
     "question": "6) La strategia di sostituzione di pagina a orologio _____",
@@ -133,7 +138,8 @@
     "image": "",
     "code": "",
     "explanation": "L'algoritmo dell'orologio (clock) è una variante della FIFO che utilizza un bit di riferimento per dare una 'seconda chance' alle pagine recentemente usate, evitando di sostituire pagine ancora necessarie. Utilizza una struttura circolare gestita da un puntatore.",
-    "hint": "Considera come il bit di riferimento permetta di differenziare questo algoritmo dalla FIFO pura pur mantenendone la struttura base."
+    "hint": "Considera come il bit di riferimento permetta di differenziare questo algoritmo dalla FIFO pura pur mantenendone la struttura base.",
+    "id": "d7bbd62d-1adf-4402-bf9c-4c1e96049148"
   },
   {
     "question": "7) Il modello working set nella gestione della memoria con paginazione si basa sull’osservazione della dipendenza del _______ dalla quantità di memoria per le pagine di un processo.",
@@ -155,7 +161,8 @@
     "image": "",
     "code": "",
     "explanation": "Il modello working set si basa sul principio di località: se la memoria allocata è sufficiente a contenere il working set, il tasso di page fault rimane basso; altrimenti si verifica il thrashing con un aumento drastico dei fault.",
-    "hint": "Rifletti su cosa succede quando un processo non ha abbastanza memoria per mantenere le pagine che sta effettivamente usando."
+    "hint": "Rifletti su cosa succede quando un processo non ha abbastanza memoria per mantenere le pagine che sta effettivamente usando.",
+    "id": "0a068d9d-036a-427c-ab13-926861342846"
   },
   {
     "question": "8) Il working set definisce un ______ durante l’intervallo di tempo [t – w, t]",
@@ -177,7 +184,8 @@
     "image": "",
     "code": "",
     "explanation": "Il working set W(t, w) è definito formalmente come l'insieme delle pagine distinte referenziate dal processo durante l'intervallo temporale [t-w, t], rappresentando la località temporale del programma.",
-    "hint": "Ricorda che il working set descrive quali pagine sono state toccate recentemente, non un valore temporale o una approssimazione generica."
+    "hint": "Ricorda che il working set descrive quali pagine sono state toccate recentemente, non un valore temporale o una approssimazione generica.",
+    "id": "1a08d04e-f6a1-4a72-964b-588c38a58bc5"
   },
   {
     "question": "9) La strategia del working set unito all’algoritmo del clock per gestire i page fault si basa su una ______",
@@ -199,7 +207,8 @@
     "image": "",
     "code": "",
     "explanation": "L'algoritmo del clock implementa una politica di sostituzione approximativa LRU utilizzando una lista circolare di frame e un puntatore che scorre come una lancetta d'orologio, controllando il bit di riferimento di ogni pagina.",
-    "hint": "L'analogia con l'orologio meccanico suggerisce una struttura dati dove gli elementi sono disposti in cerchio."
+    "hint": "L'analogia con l'orologio meccanico suggerisce una struttura dati dove gli elementi sono disposti in cerchio.",
+    "id": "46b171cc-5df0-4532-a856-83d8d0abe43f"
   },
   {
     "question": "10) Nella gestione della memoria virtuale, la tecnica di traduzione dell'indirizzo da virtuale a reale si basa sulla tabella delle pagine. Per migliorare le prestazioni della traduzione in alcuni casi tale tabella _____. E Per la miglior gestione della sostituzione di pagine si usano ______",
@@ -221,7 +230,8 @@
     "image": "",
     "code": "",
     "explanation": "La memoria associativa (TLB) memorizza le traduzioni recenti per velocizzare l'accesso, mentre i bit di modifica (dirty bit) e di riferimento aiutano gli algoritmi di sostituzione a identificare pagine non modificate o poco usate come candidate ideali per la rimozione.",
-    "hint": "Pensa alla cache hardware per la traduzione indirizzi e ai bit che indicano se una pagina è stata scritta o letta recentemente."
+    "hint": "Pensa alla cache hardware per la traduzione indirizzi e ai bit che indicano se una pagina è stata scritta o letta recentemente.",
+    "id": "c6b88984-7c96-4c61-b307-cdbcaadffc77"
   },
   {
     "question": "11) Nella tecnica di paginazione per la gestione della memoria, la scelta della dimensione della pagina di piccole dimensioni ______ la frammentazione interna, _____ la quantità di memoria per mantenere il working set di un processo e può ______ la dimensione della tabella delle pagine.",
@@ -243,7 +253,8 @@
     "image": "",
     "code": "",
     "explanation": "Pagine di piccole dimensioni riducono la frammentazione interna poiché lo spreco di memoria nell'ultima pagina parzialmente utilizzata è minore, e permettono un working set più preciso con minore occupazione di memoria. Tuttavia, richiedono un maggior numero di entry nella tabella delle pagine, aumentandone le dimensioni.",
-    "hint": "Considera il compromesso tra granularità della memoria e overhead di gestione."
+    "hint": "Considera il compromesso tra granularità della memoria e overhead di gestione.",
+    "id": "b6ff9439-306a-4718-878a-40415dee8f3b"
   },
   {
     "question": "12) La tecnica di gestione basata su DMA permette di interagire con il dispositivo ______ e le interruzioni ______",
@@ -265,7 +276,8 @@
     "image": "",
     "code": "",
     "explanation": "Il DMA (Direct Memory Access) consente ai dispositivi di trasferire dati direttamente da/verso la memoria senza intervento della CPU per ogni operazione, riducendo significativamente il numero di interruzioni necessarie.",
-    "hint": "Pensa al significato di 'Direct' nel contesto del trasferimento dati."
+    "hint": "Pensa al significato di 'Direct' nel contesto del trasferimento dati.",
+    "id": "8cd52eda-fc3f-4884-a0c4-35e985ad39fa"
   },
   {
     "question": "13) In un file system quando ad un record fisico corrisponde un record logico si parla di file con ______",
@@ -287,7 +299,8 @@
     "image": "",
     "code": "",
     "explanation": "Quando non vi è raggruppamento di record logici all'interno di un unico record fisico, si parla di record non bloccati (unblocked), dove esiste una corrispondenza uno-a-uno tra record logico e fisico.",
-    "hint": "Rifletti sul significato di 'blocco' come raggruppamento di record."
+    "hint": "Rifletti sul significato di 'blocco' come raggruppamento di record.",
+    "id": "b9666d94-c425-4894-a156-005a3ec7a9d1"
   },
   {
     "question": "14) La variazione della posizione fisica di un file rende un hard link non valido e un soft link _____ ",
@@ -305,7 +318,8 @@
     "image": "",
     "code": "",
     "explanation": "Un hard link punta direttamente all'inode (ai dati fisici), quindi spostando il file originale l'hard link perde il riferimento. Un soft link (symlink) contiene invece il percorso del file: se il file viene spostato, il soft link può essere risolto dinamicamente e rimane funzionale.",
-    "hint": "Ricorda la differenza tra puntare ai dati (inode) e puntare a un percorso."
+    "hint": "Ricorda la differenza tra puntare ai dati (inode) e puntare a un percorso.",
+    "id": "27ee78ae-8697-4330-a503-12307a9fd2b4"
   },
   {
     "question": "15) In un file system la dimensione di un blocco influenza alcuni indici di prestazioni. All’aumentare della dimensione del blocco si osserva ______ e _____",
@@ -327,7 +341,8 @@
     "image": "",
     "code": "",
     "explanation": "Blocchi di grandi dimensioni aumentano la frammentazione interna poiché più spazio viene sprecato negli ultimi blocchi parzialmente pieni dei file. Al contempo, riducono il tempo di accesso complessivo perché richiedono meno operazioni di I/O per leggere la stessa quantità di dati.",
-    "hint": "Valuta il compromesso tra efficienza temporale e utilizzo dello spazio."
+    "hint": "Valuta il compromesso tra efficienza temporale e utilizzo dello spazio.",
+    "id": "31c56888-911c-4ac6-99e2-f1fc8ccd92bf"
   },
   {
     "question": "16) Per migliorare le prestazioni del file system con il metodo della allocazione non contigua e tabellare si usa una tabella per memorizzare i puntatori ai blocchi. La sua dimensione cresce con ______",
@@ -349,7 +364,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'allocazione tabellare (FAT), la tabella contiene una entry per ogni blocco fisico del disco. Ogni entry memorizza l'indirizzo del blocco successivo (o un marker di fine file), quindi la dimensione totale è data dal prodotto tra il numero di blocchi e la dimensione di ogni puntatore/indirizzo.",
-    "hint": "Considera quante entry sono necessarie nella tabella e cosa deve contenere ciascuna entry per puntare ai blocchi."
+    "hint": "Considera quante entry sono necessarie nella tabella e cosa deve contenere ciascuna entry per puntare ai blocchi.",
+    "id": "76e3b633-ed68-4399-aff5-749f94e32a1b"
   },
   {
     "question": "17) In una allocazione contigua di file su un dispositivo di memoria secondaria, considerando un disco, i record logici sono ______. Questa tecnica permette generalmente di ottenere ______ prestazioni; inoltre può dare luogo al fenomeno della ______. ",
@@ -371,7 +387,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'allocazione contigua i blocchi di un file occupano posizioni consecutive sul disco. Sebbene l'accesso sequenziale sia veloce, le prestazioni globali sono penalizzate dalla difficoltà di trovare spazi contigui liberi, causando frammentazione esterna: lo spazio libero si frammenta in tanti piccoli segmenti isolati tra i file allocati.",
-    "hint": "Ricorda che quando i file vengono cancellati, lasciano 'buchi' di varie dimensioni tra i file esistenti."
+    "hint": "Ricorda che quando i file vengono cancellati, lasciano 'buchi' di varie dimensioni tra i file esistenti.",
+    "id": "0409ee1d-0ce0-412e-aadd-b7d8bb2afe3a"
   },
   {
     "question": "18) In un file system le tecniche di backup e recovery includono backup fisico e logico. Il backup incrementale si applica per _____",
@@ -397,7 +414,8 @@
     "image": "",
     "code": "",
     "explanation": "Il backup incrementale riduce tempo e spazio di archiviazione copiando solo i file modificati o creati dall'ultimo backup effettuato (completo o incrementale). Questo approccio è tipicamente implementato a livello logico, operando su file e directory piuttosto che su settori fisici grezzi.",
-    "hint": "Pensa alla differenza tra copiare tutto il disco e copiare solo ciò che è cambiato dall'ultima volta."
+    "hint": "Pensa alla differenza tra copiare tutto il disco e copiare solo ciò che è cambiato dall'ultima volta.",
+    "id": "b8b2e223-4ccc-4353-8f1a-376c3f331d59"
   },
   {
     "question": "19) Per effettuare backup e recovery in file system si utilizzano principalmente tecniche di _____. Un backup incrementale si basa su ______. Un backup logico ha il vantaggio di _____.",
@@ -419,7 +437,8 @@
     "image": "",
     "code": "",
     "explanation": "Le strategie di backup si fondano sulla ridondanza, creando copie multiple dei dati per garantire la recovery. Il backup incrementale ottimizza le risorse salvando solo le modifiche successive all'ultimo backup, mentre il backup logico preserva la struttura gerarchica del file system (file, directory, attributi) facilitando il ripristino selettivo.",
-    "hint": "Distingui tra copia bit-a-bit del disco (fisica) e copia basata sul contenuto logico dei file."
+    "hint": "Distingui tra copia bit-a-bit del disco (fisica) e copia basata sul contenuto logico dei file.",
+    "id": "6ce6e409-b927-4794-9898-af12a79cb22d"
   },
   {
     "question": "20) Nella gestione dei dispositivi di I/O i metodi che comprendo l’ I/O programmato con busy waiting che è caratterizzato da ______.",
@@ -441,7 +460,8 @@
     "image": "",
     "code": "",
     "explanation": "L'I/O programmato con busy waiting (polling) è la tecnica più semplice da implementare: la CPU invia il comando al dispositivo e attende attivamente in un ciclo di polling finché l'operazione non è completata. Non richiede hardware specializzato come i controller DMA o meccanismi di interrupt, ma sacrifica l'efficienza della CPU.",
-    "hint": "Considera cosa fa la CPU mentre attende il completamento dell'operazione di I/O."
+    "hint": "Considera cosa fa la CPU mentre attende il completamento dell'operazione di I/O.",
+    "id": "634b56fe-fb1f-4508-8711-b44ece752dc8"
   },
   {
     "question": "21) Nella gerarchia di gestione dei dispositivi di I/O i gestori degli interrupt ______ dall’utente e si trovano concettualmente ______ dei driver dei dispositivi. Un driver di dispositivo si trova tipicamente ______",
@@ -467,7 +487,8 @@
     "image": "",
     "code": "",
     "explanation": "I gestori degli interrupt operano a livello hardware e sono trasparenti all'utente, posizionandosi al di sotto dei driver nella gerarchia. I driver risiedono nel kernel per gestire direttamente l'hardware con privilegi elevati.",
-    "hint": "Pensa alla pila protetta del sistema operativo: più si scende, più ci si avvicina all'hardware fisico."
+    "hint": "Pensa alla pila protetta del sistema operativo: più si scende, più ci si avvicina all'hardware fisico.",
+    "id": "1aa97942-62ae-45b9-8aea-0cd31667900f"
   },
   {
     "question": "22) I sistemi RAID per la gestione dei dischi per incrementare l’affidabilità usano un meccanismo di ______, per incrementare le prestazioni usano _____ ",
@@ -489,7 +510,8 @@
     "image": "",
     "code": "",
     "explanation": "I sistemi RAID utilizzano la ridondanza (es. RAID 1, 5, 6) per tollerare guasti hardware, mentre lo striping distribuisce i dati su più dischi per permettere accessi paralleli e aumentare la velocità di trasferimento.",
-    "hint": "L'affidabilità richiede copie di sicurezza, mentre le prestazioni beneficiano del lavoro parallelo."
+    "hint": "L'affidabilità richiede copie di sicurezza, mentre le prestazioni beneficiano del lavoro parallelo.",
+    "id": "f7f96d5f-dd08-4f61-99f5-d73f35633404"
   },
   {
     "question": "23) Gli algoritmo di scheduling del disco di tipo SCAN includono il C-SCAN che _____, le varianti ‘Freeze’ e ‘N-step’ che _____.",
@@ -511,7 +533,8 @@
     "image": "",
     "code": "",
     "explanation": "C-SCAN offre tempi di attesa più uniformi tra le richieste ma sacrifica leggermente le prestazioni medie. Le varianti Freeze e N-step introducono meccanismi di aging o batching per evitare che richieste lontane attendano indefinitamente.",
-    "hint": "C-SCAN è 'più equo' ma meno efficiente dello SCAN semplice; le varianti servono a evitare che qualcuno resti indietro per sempre."
+    "hint": "C-SCAN è 'più equo' ma meno efficiente dello SCAN semplice; le varianti servono a evitare che qualcuno resti indietro per sempre.",
+    "id": "acb1cad0-35ed-47ed-9985-885584efc6cb"
   },
   {
     "question": "24) Il primo algoritmo di scheduling SCAN ricerca del cilindro _____",
@@ -533,7 +556,8 @@
     "image": "",
     "code": "",
     "explanation": "L'algoritmo SCAN muove la testina del disco in una direzione specifica servendo tutte le richieste incontrate lungo il percorso, minimizzando i movimenti della testina (seek time) in quella direzione prima di invertire il senso.",
-    "hint": "Immagina un ascensore che sale servendo tutte le chiamate verso l'alto prima di scendere."
+    "hint": "Immagina un ascensore che sale servendo tutte le chiamate verso l'alto prima di scendere.",
+    "id": "f7a41458-cf5c-4b99-9bd7-7a7cabd3dafb"
   },
   {
     "question": "25) La formattazione di un disco con la tecnica dell’interleaving si applica per gestire il problema ______",
@@ -559,7 +583,8 @@
     "image": "",
     "code": "",
     "explanation": "L'interleaving nei dischi gestisce la deviazione del cilindro (cylinder skew) compensando il tempo necessario alla testina per spostarsi tra tracce consecutive, permettendo al settore successivo di arrivare sotto la testina dopo lo spostamento.",
-    "hint": "Serve a sincronizzare la rotazione del disco con lo spostamento meccanico della testina tra tracce adiacenti."
+    "hint": "Serve a sincronizzare la rotazione del disco con lo spostamento meccanico della testina tra tracce adiacenti.",
+    "id": "71675a04-0f94-43e9-9c60-46f2c6845600"
   },
   {
     "question": "26) L’algoritmo di scheduling del disco Shortest Seek Time First fornisce ______ rispetto all algoritmo FIFO. ",
@@ -585,7 +610,8 @@
     "image": "",
     "code": "",
     "explanation": "SSTF seleziona sempre la richiesta più vicina alla posizione corrente della testina, minimizzando il tempo di seek medio e permettendo di servire più richieste per unità di tempo rispetto a FIFO, che elabora le richieste in ordine di arrivo ignorando la posizione fisica.",
-    "hint": "Considera come la riduzione del movimento meccanico della testina influenzi il numero di operazioni completate nell'unità di tempo."
+    "hint": "Considera come la riduzione del movimento meccanico della testina influenzi il numero di operazioni completate nell'unità di tempo.",
+    "id": "0c736a5f-da05-465b-9dd8-2234c395cd6b"
   },
   {
     "question": "27) L’algoritmo di scheduling del disco SCAN si basa su una ricerca del cilindro  ______",
@@ -607,7 +633,8 @@
     "image": "",
     "code": "",
     "explanation": "L'algoritmo SCAN muove la testina in una direzione servendo tutte le richieste incontrate fino all'estremo fisico del disco, per poi invertire la direzione e ripetere il processo, simile al comportamento di un ascensore.",
-    "hint": "Pensa al movimento dell'ascensore che serve tutte le chiamate in salita fino all'ultimo piano, poi scende."
+    "hint": "Pensa al movimento dell'ascensore che serve tutte le chiamate in salita fino all'ultimo piano, poi scende.",
+    "id": "d00a9172-b9c7-4ae1-aa88-aa2f6f7bd19e"
   },
   {
     "question": "28) Nel sistema operativo Windows, gli oggetti sono nomi di ____",
@@ -629,7 +656,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel modello architetturale di Windows, gli oggetti sono astrazioni del kernel che rappresentano risorse logiche come processi, thread, file o semafori, gestiti dall'Object Manager per fornire un'interfaccia uniforme e sicura.",
-    "hint": "Ricorda che gli oggetti Windows sono entità software astratte, non componenti hardware fisici."
+    "hint": "Ricorda che gli oggetti Windows sono entità software astratte, non componenti hardware fisici.",
+    "id": "002c9c00-f18a-4367-9107-07025863b296"
   },
   {
     "question": "29) Ogni oggetto nel sistema Windows: ",
@@ -651,7 +679,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli oggetti Windows possono essere anonimi (unnamed) per uso privato o nominati (named) per la condivisione tra processi; inoltre utilizzano handle (riferimenti validi nel contesto di un processo) e puntatori (riferimenti kernel diretti) con scope e privilegi diversi.",
-    "hint": "Distingui tra il nome per identificare l'oggetto globalmente e i meccanismi di accesso che differiscono tra spazio kernel e spazio utente."
+    "hint": "Distingui tra il nome per identificare l'oggetto globalmente e i meccanismi di accesso che differiscono tra spazio kernel e spazio utente.",
+    "id": "a2c488c8-46e6-45ce-8db6-dbab7db9e4dc"
   },
   {
     "question": "30) In un sistema operativo Windows le interruzioni sono organizzate in livelli di priorità che includono i livelli, nell’ordine, dal basso: _____ e i thread sono schedulati con una disciplina a _____ ",
@@ -673,7 +702,8 @@
     "image": "",
     "code": "",
     "explanation": "Windows utilizza livelli IRQL crescenti (da passivo a hardware) per gestire le interruzioni, dove livelli superiori possono interrompere inferiori; lo scheduler dei thread implementa code a priorità multiple dove thread della stessa priorità vengono eseguiti in round robin con time slicing.",
-    "hint": "Ricorda la gerarchia delle interruzioni software e hardware, e che lo scheduler Windows assegna time slice a parità di priorità."
+    "hint": "Ricorda la gerarchia delle interruzioni software e hardware, e che lo scheduler Windows assegna time slice a parità di priorità.",
+    "id": "b2055ea3-c053-42d6-a239-2f4735deb0b6"
   },
   {
     "question": "31) Nel sistema operativo Windows, il nucleo NTOS include: ",
@@ -695,7 +725,8 @@
     "image": "",
     "code": "",
     "explanation": "NTOSKRNL è il componente fondamentale del kernel Windows NT che implementa l'Executive e il microkernel, gestendo direttamente le chiamate di sistema native (Native API) che costituiscono l'interfaccia tra user-mode e kernel-mode.",
-    "hint": "Pensa alla differenza tra API di alto livello (Win32) e le primitive di base del sistema operativo."
+    "hint": "Pensa alla differenza tra API di alto livello (Win32) e le primitive di base del sistema operativo.",
+    "id": "d2407665-d1f4-4b8d-b6e4-988a916cecd1"
   },
   {
     "question": "32) Nel sistema operativo Windows, il livello Executive si trova:",
@@ -725,7 +756,8 @@
     "image": "",
     "code": "",
     "explanation": "In Windows, l'architettura è gerarchica: applicazioni utente → Executive → Kernel. Il Kernel (nucleo) è il livello più basso del sistema operativo, quindi Executive si trova 'sotto' (a un livello inferiore rispetto a) il nucleo.",
-    "hint": "Pensa alla classica architettura a cipolla di Windows: applicazioni in alto, kernel in basso."
+    "hint": "Pensa alla classica architettura a cipolla di Windows: applicazioni in alto, kernel in basso.",
+    "id": "cba48835-e89f-4a8a-87e3-9bbd60fb9d65"
   },
   {
     "question": "33) Il sistema operativo Linux ha una organizzazione della memoria basata su ______. Le tabelle delle pagine sono organizzate ______. La memoria fisica è divisa in ____",
@@ -751,7 +783,8 @@
     "image": "",
     "code": "",
     "explanation": "Linux implementa la memoria virtuale tramite paginazione, utilizzando tabelle delle pagine gerarchiche a multi-livello (3 o 4 livelli a seconda dell'architettura) per mappare indirizzi virtuali a fisici; la memoria fisica è organizzata in frame di pagina raggruppati in zone (DMA, Normal, HighMem) ottimizzate per diversi utilizzi.",
-    "hint": "Ricorda l'organizzazione gerarchica delle page table in Linux e la divisione della RAM in aree con vincoli diversi di indirizzamento."
+    "hint": "Ricorda l'organizzazione gerarchica delle page table in Linux e la divisione della RAM in aree con vincoli diversi di indirizzamento.",
+    "id": "0e25fb34-3386-4245-a957-79e0b3818272"
   },
   {
     "question": "34) Il sistema opeartivo Linux: ",
@@ -773,7 +806,8 @@
     "image": "",
     "code": "",
     "explanation": "Linux adotta un'architettura monolitica dove tutti i servizi di sistema girano in modalità kernel condividendo lo spazio di indirizzamento, ma differisce dai kernel monolitici tradizionali per la capacità di caricare e scaricare dinamicamente moduli (driver, filesystem) tramite i Loadable Kernel Modules (LKM).",
-    "hint": "Pensa alla differenza tra un kernel monolitico statico e la capacità di Linux di caricare driver 'al volo' senza ricompilazione."
+    "hint": "Pensa alla differenza tra un kernel monolitico statico e la capacità di Linux di caricare driver 'al volo' senza ricompilazione.",
+    "id": "0b9a374c-34c8-4a8c-9bc7-0d82ceb96fdb"
   },
   {
     "question": "35) Nel sistema sistema opeartivo Linux con porting si intende:  ",
@@ -795,7 +829,8 @@
     "image": "",
     "code": "",
     "explanation": "Il porting del kernel Linux consiste nell'adattare il codice sorgente e le astrazioni hardware-specifiche (architetture diverse da x86, come ARM, MIPS, RISC-V) per permettere l'esecuzione su una nuova piattaforma target, modificando principalmente il codice dipendente dall'architettura (arch/).",
-    "hint": "Considera cosa significa 'portare' un software da un sistema ad un altro diverso."
+    "hint": "Considera cosa significa 'portare' un software da un sistema ad un altro diverso.",
+    "id": "f13abb03-0757-484a-87dc-453d316f6728"
   },
   {
     "question": "36) [GENERAZIONI] Algoritmi di scheduling di processi basati sui quanti di tempo",
@@ -825,7 +860,8 @@
     "image": "",
     "code": "",
     "explanation": "La III generazione (1964-1971) vide l'introduzione dei sistemi time-sharing e multiprogrammazione, dove i quanti di tempo permisero di alternare l'esecuzione di processi sulla CPU per simulare il parallelismo.",
-    "hint": "Pensa all'era dei mainframe e del time-sharing quando i sistemi hanno iniziato a gestire più utenti simultaneamente."
+    "hint": "Pensa all'era dei mainframe e del time-sharing quando i sistemi hanno iniziato a gestire più utenti simultaneamente.",
+    "id": "b685e984-6e1a-48ca-9464-0ec6ff8a998d"
   },
   {
     "question": "37) [GENERAZIONI] Definizione e uso della memoria virutale:",
@@ -855,7 +891,8 @@
     "image": "",
     "code": "",
     "explanation": "La memoria virtuale fu sviluppata nella III generazione per superare i limiti della memoria fisica, permettendo l'esecuzione di programmi più grandi della RAM disponibile attraverso la paginazione o segmentazione.",
-    "hint": "Considera quando i sistemi hanno iniziato a separare lo spazio degli indirizzi logici dalla memoria RAM fisica."
+    "hint": "Considera quando i sistemi hanno iniziato a separare lo spazio degli indirizzi logici dalla memoria RAM fisica.",
+    "id": "26a98966-bc9c-4885-a156-5a82f4503218"
   },
   {
     "question": "38) [GENERAZIONI] Interfacce grafiche: IV Generazione ",
@@ -885,7 +922,8 @@
     "image": "",
     "code": "",
     "explanation": "Le interfacce grafiche (GUI) si diffusero nella IV generazione con l'avvento dei personal computer e workstation (Xerox, Apple, Microsoft), rendendo l'interazione visuale accessibile agli utenti non tecnici.",
-    "hint": "Pensa all'avvento dei personal computer con mouse e finestre, successivo all'era dei mainframe a linea di comando."
+    "hint": "Pensa all'avvento dei personal computer con mouse e finestre, successivo all'era dei mainframe a linea di comando.",
+    "id": "5fe4beec-bd1e-40cd-8fe8-d62521434fd0"
   },
   {
     "question": "39) Quale di queste istruzioni dovrebbe essere consentità solo in modalità nucleo disabilitare gli interrupt: _____; leggere il dispositivo che calcola l’ora corrente: _____; impostare il dispositivo che calcola l’ora corrente: ______;",
@@ -907,7 +945,8 @@
     "image": "",
     "code": "",
     "explanation": "La disabilitazione degli interrupt può essere invocata anche da modalità utente tramite system call. La lettura dell'ora è un'operazione di sola lettura, non pericolosa, quindi consentita anche in user mode. L'impostazione dell'ora invece modifica lo stato del sistema e richiede privilegi di kernel.",
-    "hint": "Distinguere tra operazioni di sola lettura (sicure) e operazioni di scrittura (privilegiate)."
+    "hint": "Distinguere tra operazioni di sola lettura (sicure) e operazioni di scrittura (privilegiate).",
+    "id": "f08c4ed5-2ee8-4261-be3e-04f0a0b3b947"
   },
   {
     "question": "40) [architetture ideali] efficienza e prestazioni:",
@@ -929,7 +968,8 @@
     "image": "",
     "code": "",
     "explanation": "L'architettura monolitica offre prestazioni superiori perché evita l'overhead dei cambi di contesto e della comunicazione tra processi tipici dei microkernel, eseguendo tutte le funzioni in modalità kernel.",
-    "hint": "Considera l'overhead introdotto dalla comunicazione IPC tra moduli in spazi di indirizzamento diversi."
+    "hint": "Considera l'overhead introdotto dalla comunicazione IPC tra moduli in spazi di indirizzamento diversi.",
+    "id": "9f80b90f-c0bb-4b25-9e28-226e83492938"
   },
   {
     "question": "41) [architetture ideali] flessibilità e modificabilità:",
@@ -951,7 +991,8 @@
     "image": "",
     "code": "",
     "explanation": "L'architettura a microkernel sposta i servizi del sistema operativo (come driver e file system) in spazio utente, separandoli dal nucleo essenziale. Questo consente di modificare, aggiornare o aggiungere funzionalità senza intervenire sul kernel, garantendo maggiore flessibilità e facilità di manutenzione rispetto alle architetture monolitiche.",
-    "hint": "Pensa a dove risiedono i driver e i servizi del sistema operativo nelle diverse architetture."
+    "hint": "Pensa a dove risiedono i driver e i servizi del sistema operativo nelle diverse architetture.",
+    "id": "a6b0a6fd-81d4-4782-b3c0-61f7346490cd"
   },
   {
     "question": "42) [architetture ideali] isolamento delle funzioni:",
@@ -973,7 +1014,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'architettura a livelli, il sistema operativo è organizzato in strati gerarchici dove ogni livello comunica solo con quello immediatamente superiore e inferiore attraverso interfacce ben definite. Questa struttura garantisce un rigido isolamento tra le diverse funzionalità, impedendo che un errore in un modulo si propaghi agli altri.",
-    "hint": "Considera quale architettura organizza i componenti in strati sovrapposti con comunicazione solo tra livelli adiacenti."
+    "hint": "Considera quale architettura organizza i componenti in strati sovrapposti con comunicazione solo tra livelli adiacenti.",
+    "id": "0e382911-7ead-4281-a6ff-ce28bff15807"
   },
   {
     "question": "43) In un file system che contiene un insieme di record, un record fisico corrisponde a un record logico se si parla di file con :",
@@ -999,7 +1041,8 @@
     "image": "",
     "code": "",
     "explanation": "Nei file con record non bloccati, ogni record logico corrisponde esattamente a un record fisico (blocco) su disco, senza raggruppamenti. Al contrario, nei file a record bloccati, più record logici vengono aggregati in un unico blocco fisico per ottimizzare le operazioni di I/O.",
-    "hint": "Rifletti sulla differenza tra l'unità logica vista dall'applicazione e l'unità fisica di memorizzazione quando non c'è raggruppamento di dati."
+    "hint": "Rifletti sulla differenza tra l'unità logica vista dall'applicazione e l'unità fisica di memorizzazione quando non c'è raggruppamento di dati.",
+    "id": "0e6d00d0-501a-4416-a603-185d900e8862"
   },
   {
     "question": "44) L'uso di link in un file system permette di creare dei collegamenti ai file. Se un file viene ritoccato fisicamente nel sistema, un eventuale hard link al file ______ e un eventuale soft link ______ .",
@@ -1025,7 +1068,8 @@
     "image": "",
     "code": "",
     "explanation": "Se un file viene fisicamente rimosso e sostituito con un nuovo file avente lo stesso nome, l'hard link continua a puntare all'inode originale (ora diverso dal nuovo file), rendendolo tecnicamente obsoleto, mentre il soft link, essendo un riferimento al percorso, punterà automaticamente al nuovo file creato con lo stesso nome.",
-    "hint": "Considera cosa succede quando un file viene cancellato e ricreato: a cosa punta esattamente un hard link rispetto a un soft link?"
+    "hint": "Considera cosa succede quando un file viene cancellato e ricreato: a cosa punta esattamente un hard link rispetto a un soft link?",
+    "id": "002b0ca5-f276-495f-96d3-c6ae535132ea"
   },
   {
     "question": "45) Considerare un sistema operativo della IV generazione, include la caratteristica \"sviluppo di interfacce grafiche\"?",
@@ -1051,7 +1095,8 @@
     "image": "",
     "code": "",
     "explanation": "La quarta generazione di sistemi operativi, legata all'avvento dei personal computer (anni '80-'90), ha introdotto le interfacce grafiche utente (GUI) basate su finestre, icone e puntatori, rendendo l'interazione più intuitiva rispetto alla riga di comando della terza generazione.",
-    "hint": "Collega l'avvento del mouse e delle icone visive all'epoca dei primi personal computer commerciali di massa."
+    "hint": "Collega l'avvento del mouse e delle icone visive all'epoca dei primi personal computer commerciali di massa.",
+    "id": "908da279-4986-4732-8f9a-f6d4278af8d5"
   },
   {
     "question": "46) Considerare un sistema operativo della IV generazione, include la caratteristica \"gestione vincoli real-time\"?",
@@ -1077,7 +1122,8 @@
     "image": "",
     "code": "",
     "explanation": "La gestione dei vincoli real-time è stata introdotta nei sistemi operativi della III generazione per applicazioni di controllo industriale e sistemi embedded, mentre la IV generazione si distingue principalmente per personal computer e interfacce grafiche.",
-    "hint": "Pensa a quando sono nati i primi sistemi real-time per il controllo di processi industriali."
+    "hint": "Pensa a quando sono nati i primi sistemi real-time per il controllo di processi industriali.",
+    "id": "e5a39c89-6ed7-4ecf-87b7-e885c9c4880c"
   },
   {
     "question": "47) Considerare un sistema operativo della IV generazione, include la caratteristica \"memoria virtuale\"?",
@@ -1103,7 +1149,8 @@
     "image": "",
     "code": "",
     "explanation": "La memoria virtuale è stata sviluppata nei sistemi della III generazione (es. Atlas, 1962) per supportare la multiprogrammazione e superare i limiti della memoria fisica, prima dell'avvento dei PC.",
-    "hint": "Ricorda quale generazione ha introdotto la multiprogrammazione e la memoria virtuale per gestire programmi più grandi della RAM disponibile."
+    "hint": "Ricorda quale generazione ha introdotto la multiprogrammazione e la memoria virtuale per gestire programmi più grandi della RAM disponibile.",
+    "id": "95c1060d-8168-4836-a569-502c11b4b52f"
   },
   {
     "question": "48) Considerare un sistema operativo della IV generazione, include la caratteristica \"scheduling di processi basato sul tempo\"?",
@@ -1129,7 +1176,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo scheduling basato sul tempo (time-sharing) è una caratteristica fondamentale dei sistemi della III generazione, nato per permettere l'accesso interattivo multiutente ai mainframe, mentre la IV generazione si focalizza su GUI e personal computing.",
-    "hint": "Considera quando è nato il time-sharing per permettere a più utenti di usare contemporaneamente lo stesso computer in modo interattivo."
+    "hint": "Considera quando è nato il time-sharing per permettere a più utenti di usare contemporaneamente lo stesso computer in modo interattivo.",
+    "id": "a83d6d95-3617-4abd-87c1-c19f8b82a0b2"
   },
   {
     "question": "49) Considerare un sistema operativo per un moderno sistema di elaborazione con connessione ad una rete. Il sistema operativo: ",
@@ -1155,7 +1203,8 @@
     "image": "",
     "code": "",
     "explanation": "Un sistema operativo moderno connesso a una rete deve fornire necessariamente funzionalità di rete come stack protocollari (TCP/IP), driver di rete e API socket per consentire la comunicazione tra sistemi.",
-    "hint": "Qual è la funzione primaria e indispensabile di un OS in un ambiente networked?"
+    "hint": "Qual è la funzione primaria e indispensabile di un OS in un ambiente networked?",
+    "id": "c665d23f-ecdf-4841-a0d7-ac90a9df6f3a"
   },
   {
     "question": "50) Considerare un sistema operativo per un moderno sistema di elaborazione con connessione ad una rete. Il sistema operativo: ",
@@ -1181,7 +1230,8 @@
     "image": "",
     "code": "",
     "explanation": "Il sistema operativo gestisce l'intero sistema hardware e software che è connesso alla rete, coordinando risorse, processi e connessioni, non solo un singolo client o utente.",
-    "hint": "L'OS gestisce le risorse dell'intero computer connesso alla rete, non solo di una singola applicazione client."
+    "hint": "L'OS gestisce le risorse dell'intero computer connesso alla rete, non solo di una singola applicazione client.",
+    "id": "2de57c5f-45e5-435b-a26d-fd63329460b1"
   },
   {
     "question": "51) I sistemi time-sharing e i sistemi con multiprogrammazione in che relazione sono fra loro?",
@@ -1203,7 +1253,8 @@
     "image": "",
     "code": "",
     "explanation": "Il time-sharing è una evoluzione della multiprogrammazione che permette a più utenti di interagire simultaneamente con il sistema. Per implementare la commutazione rapida della CPU tra processi (round-robin), è necessario che più programmi risiedano contemporaneamente in memoria, il che è proprio la definizione di multiprogrammazione.",
-    "hint": "Per alternare rapidamente l'esecuzione tra più utenti, quanti programmi devono essere caricati in memoria contemporaneamente?"
+    "hint": "Per alternare rapidamente l'esecuzione tra più utenti, quanti programmi devono essere caricati in memoria contemporaneamente?",
+    "id": "ec33f469-53c9-49a7-9b2c-00a7a3ebb1c2"
   },
   {
     "question": "52) Considerando gli stati di un processo, se un processo è dispatched se:",
@@ -1229,7 +1280,8 @@
     "image": "",
     "code": "",
     "explanation": "Il dispatch è l'azione compiuta dallo scheduler a breve termine (dispatcher) che seleziona un processo dalla coda dei pronti e gli assegna la CPU. Questa transizione avviene quando il processo passa dallo stato di pronto (ready) a quello di esecuzione (running).",
-    "hint": "Il dispatcher 'prende' un processo dalla coda dei pronti e lo 'carica' sulla CPU."
+    "hint": "Il dispatcher 'prende' un processo dalla coda dei pronti e lo 'carica' sulla CPU.",
+    "id": "9ca3db44-c0ef-4173-bd48-8bbad415e31a"
   },
   {
     "question": "52) Considerando gli stati di un processo, un processo che riceve una notifica attesa di un evento:",
@@ -1255,7 +1307,8 @@
     "image": "",
     "code": "",
     "explanation": "Quando si verifica l'evento atteso (es. completamento di un'operazione di I/O), il processo viene svegliato (wakeup) e reinserito nella coda dei pronti. Non entra immediatamente in esecuzione, ma deve attendere che lo scheduler gli assegni nuovamente la CPU.",
-    "hint": "L'evento sblocca il processo, ma prima di tornare ad eseguire deve competere per la CPU con gli altri processi pronti."
+    "hint": "L'evento sblocca il processo, ma prima di tornare ad eseguire deve competere per la CPU con gli altri processi pronti.",
+    "id": "a2c7a814-d7e4-4375-b63d-e94d24a2228a"
   },
   {
     "question": "53) Considerando gli stati di un processo, se il processo si blocca in attesa di un evento esterno:",
@@ -1281,7 +1334,8 @@
     "image": "",
     "code": "",
     "explanation": "Un processo in esecuzione che richiede un'operazione di I/O o attende una risorsa esterna esegue una system call bloccante. Rilascia volontariamente la CPU e passa allo stato bloccato (waiting), permettendo allo scheduler di selezionare un altro processo dalla coda dei pronti.",
-    "hint": "Il processo attivo ha bisogno di qualcosa che non è immediatamente disponibile e si mette in attesa."
+    "hint": "Il processo attivo ha bisogno di qualcosa che non è immediatamente disponibile e si mette in attesa.",
+    "id": "ef586905-1344-42c9-b935-ea9e4cbfd6d6"
   },
   {
     "question": "54) In una allocazione contigua di file su un dispositivo di memoria secondaria, considerando un disco, i record logici sono _____ .",
@@ -1307,7 +1361,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'allocazione contigua, ogni file occupa un insieme di blocchi consecutivi sul disco. I record logici del file sono memorizzati in blocchi fisicamente adiacenti, garantendo un accesso sequenziale efficiente, anche se questo può causare frammentazione esterna.",
-    "hint": "Il significato etimologico di 'contiguo' è 'che si tocca, adiacente'."
+    "hint": "Il significato etimologico di 'contiguo' è 'che si tocca, adiacente'.",
+    "id": "75511653-94c7-403f-8886-3dcdcd122e3e"
   },
   {
     "question": "55) L'allocazione contigua di file su un dispositivo di memoria secondaria, considerando un disco, permette generalmente: ",
@@ -1333,7 +1388,8 @@
     "image": "",
     "code": "",
     "explanation": "L'allocazione contigua richiede blocchi consecutivi sul disco. Nel tempo, la creazione e cancellazione di file genera frammentazione esterna: lo spazio libero si frammenta in segmenti non contigui, rendendo difficile trovare spazio per nuovi file e richiedendo costose operazioni di compattazione.",
-    "hint": "Considera cosa succede allo spazio libero quando cancelli file di dimensioni diverse e ne crei di nuovi più grandi."
+    "hint": "Considera cosa succede allo spazio libero quando cancelli file di dimensioni diverse e ne crei di nuovi più grandi.",
+    "id": "b34ace8c-a763-4327-b657-573eebcd1d30"
   },
   {
     "question": "55) L'allocazione contigua di file su un dispositivo di memoria secondaria, considerando un disco, permette generalmente: ",
@@ -1359,6 +1415,7 @@
     "image": "",
     "code": "",
     "explanation": "L'allocazione contigua soffre di frammentazione esterna: quando i file vengono cancellati, rimangono 'buchi' di spazio libero tra i file esistenti. Se questi buchi sono troppo piccoli singolarmente, non possono ospitare nuovi file anche se la somma totale dello spazio libero è sufficiente.",
-    "hint": "Distingui tra spazio sprecato all'interno dei blocchi assegnati e spazio libero frammentato tra i file allocati."
+    "hint": "Distingui tra spazio sprecato all'interno dei blocchi assegnati e spazio libero frammentato tra i file allocati.",
+    "id": "4232b0fe-31f0-4d0c-bda8-ccedfbc1562e"
   }
 ]

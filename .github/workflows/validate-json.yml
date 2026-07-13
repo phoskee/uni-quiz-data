@@ -19,3 +19,27 @@ jobs:
           
       - name: Run validation script
         run: python scripts/validate.py
+
+      - name: Build downloadable packs
+        run: python scripts/build_packs.py
+
+      - name: Upload GitHub Pages artifact
+        if: github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy-packs:
+    if: github.event_name == 'push'
+    needs: validate
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy packs to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,6 +1,9 @@
 import json
 import os
 import sys
+import uuid
+
+SEEN_QUESTION_IDS = set()
 
 def validate_quiz_file(file_path):
     try:
@@ -12,8 +15,16 @@ def validate_quiz_file(file_path):
 
         for idx, item in enumerate(data):
             # Campi obbligatori
-            if 'question' not in item or 'options' not in item or 'correctIndex' not in item:
-                return False, f"Oggetto all'indice {idx} manca di campi obbligatori (question, options, correctIndex)."
+            if 'id' not in item or 'question' not in item or 'options' not in item or 'correctIndex' not in item:
+                return False, f"Oggetto all'indice {idx} manca di campi obbligatori (id, question, options, correctIndex)."
+
+            try:
+                question_id = str(uuid.UUID(item['id']))
+            except (ValueError, TypeError, AttributeError):
+                return False, f"Oggetto all'indice {idx}: 'id' deve essere un UUID valido."
+            if question_id in SEEN_QUESTION_IDS:
+                return False, f"Oggetto all'indice {idx}: UUID duplicato '{question_id}'."
+            SEEN_QUESTION_IDS.add(question_id)
 
             if not isinstance(item['options'], list) or len(item['options']) == 0:
                 return False, f"Oggetto all'indice {idx} deve avere un array 'options' non vuoto."
@@ -71,7 +82,7 @@ def validate_directory(base_dir, validator, label):
         # Ignora cartelle con prefisso _
         dirs[:] = [d for d in dirs if not d.startswith('_')]
         for file in files:
-            if file.endswith('.json'):
+            if file.endswith('.json') and not file.startswith('_'):
                 files_checked += 1
                 file_path = os.path.join(root, file)
                 is_valid, error_msg = validator(file_path)
@@ -86,6 +97,17 @@ def validate_directory(base_dir, validator, label):
 def main():
     total_files = 0
     total_errors = 0
+
+    manifest_path = os.path.join('quizzes', '_manifest.json')
+    if not os.path.exists(manifest_path):
+        print("❌ quizzes/_manifest.json mancante.")
+        sys.exit(1)
+    with open(manifest_path, 'r', encoding='utf-8') as manifest_file:
+        manifest = json.load(manifest_file)
+    quiz_ids = list(manifest.get('quizzes', {}).values())
+    if len(quiz_ids) != len(set(quiz_ids)):
+        print("❌ UUID quiz duplicati in quizzes/_manifest.json.")
+        sys.exit(1)
 
     # Validazione quiz a risposta multipla
     print("📝 Quiz a risposta multipla (quizzes/):")

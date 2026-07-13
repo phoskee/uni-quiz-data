@@ -19,7 +19,8 @@
     "image": "",
     "code": "",
     "explanation": "In Linux ogni utente deve appartenere almeno al proprio gruppo primario (primary group), creato automaticamente in fase di registrazione. Oltre a questo, può appartenere a gruppi supplementari, ma il minimo è uno.",
-    "hint": "Ricorda che alla creazione di un utente viene sempre creato anche un gruppo omonimo che diventa il suo gruppo primario."
+    "hint": "Ricorda che alla creazione di un utente viene sempre creato anche un gruppo omonimo che diventa il suo gruppo primario.",
+    "id": "009cc8ab-72f7-4164-82be-ca65bb476b32"
   },
   {
     "question": "2. Si supponga che nel sistema esiste un gruppo \"studente\" ed anche l'utente \"utente1\".\nSi supponga quindi di eseguire il comando <code>adduser utente1 studente</code>.\nQuale delle seguenti affermazioni è sbagliata?",
@@ -41,7 +42,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando `adduser` supporta la sintassi `adduser utente gruppo` per aggiungere un utente esistente a un gruppo esistente, quindi non genera errore. L'affermazione A è falsa perché esistono diversi modi per aggiungere utenti ai gruppi.",
-    "hint": "Verifica la sintassi di adduser quando viene invocato con due argomenti."
+    "hint": "Verifica la sintassi di adduser quando viene invocato con due argomenti.",
+    "id": "9adf4890-ee8a-4f6d-8847-f98a8c0a28ff"
   },
   {
     "question": "3. Si supponga che nel sistema esiste un gruppo \"studente\" e non esista ancora l'utente \"utente1\".\nSi supponga quindi di eseguire il comando <code>sudo adduser utente1 studente</code>\nQuale sarà il risultato?",
@@ -63,7 +65,8 @@
     "image": "",
     "code": "",
     "explanation": "La sintassi `adduser utente gruppo` richiede che entrambi esistano già: aggiunge l'utente al gruppo. Se l'utente non esiste, il comando fallisce perché cerca un utente esistente da aggiungere, non ne crea uno nuovo.",
-    "hint": "Distingui tra la creazione di un nuovo utente e l'aggiunta di un utente esistente a un gruppo."
+    "hint": "Distingui tra la creazione di un nuovo utente e l'aggiunta di un utente esistente a un gruppo.",
+    "id": "154aac89-ffd5-4a8a-857c-d091edcc2a93"
   },
   {
     "question": "4. Supponga di eseguire, come utente sudoer, i seguenti comandi: C1) sudo ls /home, C2) sudo su --command=’ls /homè. Quale affermazioneè corretta?",
@@ -85,7 +88,8 @@
     "image": "",
     "code": "",
     "explanation": "Entrambi i comandi eseguono `ls /home` con privilegi di root. C1 lo fa direttamente tramite sudo, C2 lo fa cambiando utente a root con su e poi eseguendo il comando, ma il risultato pratico è identico.",
-    "hint": "Concentrati sul risultato finale: chi esegue il comando ls in entrambi i casi?"
+    "hint": "Concentrati sul risultato finale: chi esegue il comando ls in entrambi i casi?",
+    "id": "5fc084d9-5de1-4138-bb49-c6a8c27d6f43"
   },
   {
     "question": "5. Quale è la differenza tra i comandi sudo e su",
@@ -107,7 +111,8 @@
     "image": "",
     "code": "",
     "explanation": "`su` (switch user) apre una shell come un altro utente (di default root), mentre `sudo` esegue un comando specifico con privilegi elevati mantenendo l'identità dell'utente corrente per il resto della sessione.",
-    "hint": "Pensa alla differenza tra cambiare identità nella shell ed eseguire un singolo comando con privilegi diversi."
+    "hint": "Pensa alla differenza tra cambiare identità nella shell ed eseguire un singolo comando con privilegi diversi.",
+    "id": "db066ac5-c811-4f99-b83d-f65096ed30e8"
   },
   {
     "question": "6. Di quante sezioni è composto il man di Linux?",
@@ -129,7 +134,8 @@
     "image": "",
     "code": "",
     "explanation": "Le pagine di manuale di Linux sono tradizionalmente organizzate in 9 sezioni standard: comandi utente, chiamate di sistema, funzioni di libreria, file speciali, formati di file, giochi, varie, comandi di amministrazione e routine del kernel. Questa struttura consente di distinguere tra oggetti omonimi appartenenti a categorie diverse.",
-    "hint": "Considera le diverse categorie di documentazione, dai comandi utente fino alle routine del kernel."
+    "hint": "Considera le diverse categorie di documentazione, dai comandi utente fino alle routine del kernel.",
+    "id": "c0f0c8d6-39bb-42e7-a208-20d09fadfe60"
   },
   {
     "question": "7. Supponga di voler creare un file vuoto e di voler settare il tempo di ultimo accesso al \"2 giugno 2020 ore 12:00\". Quale dei seguenti comandi è corretto?",
@@ -151,7 +157,8 @@
     "image": "",
     "code": "",
     "explanation": "L'opzione `-a` di touch modifica solo l'access time (atime), mentre `-t` permette di specificare una data nel formato [[CC]YY]MMDDhhmm. La stringa 202006021200 rappresenta anno 2020, mese 06, giorno 02, ore 12, minuti 00.",
-    "hint": "Ricorda che 'a' sta per access time e che il formato timestamp richiede anno, mese, giorno, ora e minuto in sequenza."
+    "hint": "Ricorda che 'a' sta per access time e che il formato timestamp richiede anno, mese, giorno, ora e minuto in sequenza.",
+    "id": "240f8413-a284-43fd-ba57-c88090c6ad0b"
   },
   {
     "question": "8. Quale è il risultato del comando touch nomefile?",
@@ -173,7 +180,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando touch, quando applicato a un file esistente, aggiorna automaticamente atime e mtime all'istante corrente senza modificare il contenuto. Se il file non esiste, lo crea vuoto, ma il ctime (che riflette le modifiche all'inode) non può essere impostato manualmente dal sistema operativo.",
-    "hint": "Pensa a quali timestamp vengono aggiornati di default quando il file esiste già, e ricorda che il ctime non è modificabile dall'utente."
+    "hint": "Pensa a quali timestamp vengono aggiornati di default quando il file esiste già, e ricorda che il ctime non è modificabile dall'utente.",
+    "id": "f3eee489-3e18-411b-8771-cee136d08f74"
   },
   {
     "question": "9. I premessi di acceesso della directory /tmp sono <code>1777/drwxrwxrwt</code>\nCosa significa?",
@@ -195,7 +203,8 @@
     "image": "",
     "code": "",
     "explanation": "Il bit sticky è indicato dal prefisso ottale 1 (sommato ai permessi 777) e dalla lettera 't' finale nella notazione simbolica drwxrwxrwt. Questo bit speciale impedisce agli utenti di cancellare file di altri utenti in directory condivise scrivibili da tutti, come /tmp.",
-    "hint": "Osserva l'ultimo carattere della stringa dei permessi e ricorda quale bit speciale protegge i file nella directory temporanea."
+    "hint": "Osserva l'ultimo carattere della stringa dei permessi e ricorda quale bit speciale protegge i file nella directory temporanea.",
+    "id": "df5e910e-6bf8-4ae2-addc-28f105a76cab"
   },
   {
     "question": "10. Supponga di voler mostrare l’albero delle directory con radice dir1 e con profondità 3.\nQuale tra i seguenti comandi è il più apprropriato usare?(uscito 2 volte)",
@@ -217,7 +226,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando tree utilizza l'opzione `-L` (level) seguita da un numero per limitare la profondità massima di visualizzazione dell'albero delle directory. Questa è la sintassi standard e portabile, mentre altre varianti potrebbero non essere disponibili in tutte le implementazioni.",
-    "hint": "Cerca l'opzione che sta per 'level' o 'livello' per limitare la profondità di ricorsione."
+    "hint": "Cerca l'opzione che sta per 'level' o 'livello' per limitare la profondità di ricorsione.",
+    "id": "5eccd85f-2593-46a6-a051-9cd2b65f0700"
   },
   {
     "question": "11. Supponiamo vogliate visualizzare l’albero delle directory con radice nella vostra home. In particolare volete visualizzare solo le directory e non i file in esse contenuti.\nQuali tra i seguenti comandi è il più appropriato?",
@@ -239,7 +249,8 @@
     "image": "",
     "code": "",
     "explanation": "Il flag -d di tree mostra esclusivamente le directory escludendo i file, mentre il carattere ~ viene espanso dalla shell come percorso della home dell'utente, rendendo l'opzione A la soluzione più diretta e corretta.",
-    "hint": "Considera quale flag filtra specificamente le directory e quale simbolo rappresenta la home directory."
+    "hint": "Considera quale flag filtra specificamente le directory e quale simbolo rappresenta la home directory.",
+    "id": "767aefda-6488-4fd1-af32-76fd8c4eb452"
   },
   {
     "question": "12. Si supponga di avere un file di testo (filein) e di voler copiare in un altro file (fileout) i primi 100 caratteri. Quale di questi comandi è corretto?",
@@ -261,7 +272,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando dd copia dati in blocchi di dimensione bs (block size). Impostando bs=100 e count=1, si legge esattamente un blocco di 100 byte, copiando così i primi 100 caratteri del file.",
-    "hint": "Rifletti su come il prodotto tra la dimensione del blocco e il conteggio determini la quantità totale di dati trasferiti."
+    "hint": "Rifletti su come il prodotto tra la dimensione del blocco e il conteggio determini la quantità totale di dati trasferiti.",
+    "id": "c84e3aa1-7338-4e28-a6d3-b504e75d0bed"
   },
   {
     "question": "13. Si supponga di avere un file di testo (filein) contenente 1000 caratteri e di voler copiare in un altro file (fileout) 100 caratteri a partire dal decimo. Quale di questi comandi non produce il risultato atteso?",
@@ -283,7 +295,8 @@
     "image": "",
     "code": "",
     "explanation": "Il parametro seek in dd posiziona il puntatore del file di output, non dell'input. Per saltare byte nel file di input è necessario usare skip. Pertanto l'opzione B legge dall'inizio di filein invece che dal decimo carattere.",
-    "hint": "Distingui attentamente tra l'opzione che salta dati in input e quella che si posiziona nel file di output."
+    "hint": "Distingui attentamente tra l'opzione che salta dati in input e quella che si posiziona nel file di output.",
+    "id": "3f5b73ca-8cd5-4b23-af29-1c63b4c494b5"
   },
   {
     "question": "14. Quanti job in background crea il comando seguente?\n<code>sleep 30 | sleep 15 | sleep 10 &</code> ",
@@ -305,7 +318,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel job control della shell, un'intera pipeline (comandi collegati da |) viene trattata come un unico job quando viene messa in background con &, ricevendo un solo job ID indipendentemente dal numero di processi coinvolti.",
-    "hint": "Considera se l'operatore di background si applica all'intera struttura della pipeline o a ciascun comando singolarmente."
+    "hint": "Considera se l'operatore di background si applica all'intera struttura della pipeline o a ciascun comando singolarmente.",
+    "id": "7ba187be-f11c-4b75-ace6-ee9d20a862bc"
   },
   {
     "question": "15. Quanti file system principali ha linux?",
@@ -327,7 +341,8 @@
     "image": "",
     "code": "",
     "explanation": "Linux mantiene un'unica gerarchia di filesystem unificata con radice in /. Tutti i dispositivi di archiviazione vengono montati come sottodirectory all'interno di questo albero singolo, piuttosto che come filesystem root separati.",
-    "hint": "Pensa al concetto architetturale di albero di directory unificato versus radici di filesystem multiple indipendenti."
+    "hint": "Pensa al concetto architetturale di albero di directory unificato versus radici di filesystem multiple indipendenti.",
+    "id": "2e3945fa-bd4c-4a63-9988-bd81a8b947fe"
   },
   {
     "question": "16. In che file è contenuta la lista dei filesystem montati al boot?",
@@ -349,7 +364,8 @@
     "image": "",
     "code": "",
     "explanation": "Il file /etc/fstab (file system table) contiene la configurazione statica dei filesystem che il sistema deve montare automaticamente durante la fase di boot. A differenza di /etc/mtab che mostra solo i mount attuali, fstab è letto all'avvio per determinare quali dispositivi montare e con quali opzioni.",
-    "hint": "Pensa a quale file viene letto dal sistema durante l'inizializzazione per sapere cosa montare automaticamente."
+    "hint": "Pensa a quale file viene letto dal sistema durante l'inizializzazione per sapere cosa montare automaticamente.",
+    "id": "e2d020ac-3dab-4ab6-86a7-842bc571dec7"
   },
   {
     "question": "17. perché il comando passwd (ovvero il file eseguibile /usr/bin/passwd) ha il SetUID bit settato?",
@@ -371,7 +387,8 @@
     "image": "",
     "code": "",
     "explanation": "Il bit SetUID permette all'eseguibile di girare con i privilegi del proprietario (root) anziché dell'utente che lo lancia. Questo è necessario perché la modifica delle password richiede l'accesso in scrittura a file di sistema protetti come /etc/shadow, operazione normalmente riservata all'amministratore.",
-    "hint": "Considera quale file sensibile deve essere modificato per cambiare una password e chi è il proprietario di quel file."
+    "hint": "Considera quale file sensibile deve essere modificato per cambiare una password e chi è il proprietario di quel file.",
+    "id": "b9e86929-dbc7-4150-9244-fc5024e3735c"
   },
   {
     "question": "18. Supponiamo di avere il seguente makefile (memorizzato in un file di nome makefile):\n<pre>merge_sorted_lists: merge_sorted_lists.c\ngcc -Wall -Wextra -O3 merge_sorted_lists.c \\\n-o merge_sorted_lists\nsort_file_int: sort_file_int.c\ngcc -Wall -Wextra -O3 sort_file_int.c \\\n-o sort_file_int\n.PHONY: clean\nclean:\nrm -f *.o merge_sorted_lists</pre>\nsupponendo che non esistono entrambi i file merge_sorted_lists e sort_file_int e lanciando il comando make, quale target viene eseguito?\n<b>Adesso posso scrivere in bold con l'HTML nelle domande yeee</b>",
@@ -393,7 +410,8 @@
     "image": "",
     "code": "",
     "explanation": "Quando il comando make viene invocato senza argomenti, esegue per default il primo target definito nel makefile. In questo caso, 'merge_sorted_lists' è il primo target elencato, quindi verrà compilato automaticamente.",
-    "hint": "Ricorda quale target sceglie make di default quando non viene specificato alcun target nella riga di comando."
+    "hint": "Ricorda quale target sceglie make di default quando non viene specificato alcun target nella riga di comando.",
+    "id": "ae00548d-4df7-4c00-b7f4-2be09823b7aa"
   },
   {
     "question": "19.\tAssumiamo di compilare un file .c nei seguenti modi\n<pre>gcc file.c -o file1.o\ngcc -g file.c -o file2.o\n</pre>\nperché le dimensioni di file2.o sono diverse da quelle di file1.o?",
@@ -415,7 +433,8 @@
     "image": "",
     "code": "",
     "explanation": "L'opzione -g di gcc include nel file oggetto le informazioni di debug (simboli, numeri di linea, nomi di variabili) necessarie per l'utilizzo di debugger come gdb. Queste informazioni aggiuntive aumentano le dimensioni del file rispetto a una compilazione senza debug.",
-    "hint": "Cosa significa la lettera 'g' nel contesto delle opzioni di compilazione relative al debugging?"
+    "hint": "Cosa significa la lettera 'g' nel contesto delle opzioni di compilazione relative al debugging?",
+    "id": "b62be930-89b6-4fbb-9b22-90cd750e4b30"
   },
   {
     "question": "20.\tAssuma di avere due shell aperte, etichettate come shell_1 e shell_2 e supponga di eseguire la sequenza di comandi che segue\n(shell_i: cmd indica che cmd è eseguitto nella shell_i, i=1,2).\n<pre>shell_1: xterm\nshell_2: ps -C xterm\n#restituisce xtermPID\nshell_2: kill -s SIGSTOP xtermPID\nshell_2: kill -s SIGCONT xtermPID</pre>\nQuale è il loro effetto su processo xterm?\n<code>\n(NOTA BENE: la risposta 3 viene data come corretta all'esame, anche se errata)\n</code>",
@@ -437,7 +456,8 @@
     "image": "",
     "code": "",
     "explanation": "Il segnale SIGSTOP sospende immediatamente il processo portandolo nello stato stopped (T), mentre SIGCONT lo riprende. Poiché il segnale viene inviato da una shell diversa (shell_2), al ripristino il processo riprende l'esecuzione ma non è più controllato in foreground dalla shell originaria, risultando quindi in background.",
-    "hint": "Considera cosa succede allo stato di un processo quando riceve SIGSTOP e come viene ripristinato da SIGCONT inviato da un terminale diverso."
+    "hint": "Considera cosa succede allo stato di un processo quando riceve SIGSTOP e come viene ripristinato da SIGCONT inviato da un terminale diverso.",
+    "id": "0ca50c8c-8e58-4a5f-9796-65bd6817f958"
   },
   {
     "question": "21.\tSi assuma di avere due shell aperte, etichettate come shell_1 e shell_2 e si consideri la seguente sequenza di comandi\n(shell_i:cmd indica che cmd è eseguitto nella shell i, i=1,2)\n<pre>shell_1: xterm\nshell_2: ps -C xterm\n#restituisce xtermPID\nshell_2: kill -s SIGSTOP xtermPID</pre>\nQuale è il loro effetto?",
@@ -459,7 +479,8 @@
     "image": "",
     "code": "",
     "explanation": "Il segnale SIGSTOP sospende l'esecuzione di un processo, portandolo nello stato 'T' (stopped/traced), senza terminarlo. Questo differisce dalla terminazione (SIGTERM/SIGKILL) o dall'esecuzione in background, che richiederebbe l'uso di '&' o del comando 'bg'.",
-    "hint": "Rifletti sul significato dello stato 'T' nei processi Unix e sulla differenza tra sospensione e terminazione."
+    "hint": "Rifletti sul significato dello stato 'T' nei processi Unix e sulla differenza tra sospensione e terminazione.",
+    "id": "df0aae29-c0d8-4d1c-908b-eefea72b0ccd"
   },
   {
     "question": "22.\tSupponga di avere 2 file hw1.c e hw2.c contenenti il seguente codice(uscita 2 volte)\nhw1.c:\n<pre>#include <stdio.h>\n#include \"hw2.c\"\nint f(int argc, char *args[]) {\n  printf(\"Hello World!\\n\");\n  return 256;\n}\n</pre>\nhw2.c:<pre>\nint f(int argc, char *args[]);\nint main(int argc, char *args[]) {\n  return f(argc, args);\n}\n</pre>\nQuale dei seguenti comandi di compilazione genera errore?",
@@ -481,7 +502,8 @@
     "image": "",
     "code": "",
     "explanation": "Poiché hw1.c include già hw2.c tramite #include, compilare entrambi i file separatamente causa una doppia inclusione del codice di hw2.c, generando errori di 'multiple definition' (in particolare per la funzione main).",
-    "hint": "Considera cosa accade quando un file sorgente viene incluso textualmente e poi compilato anche come unità separata."
+    "hint": "Considera cosa accade quando un file sorgente viene incluso textualmente e poi compilato anche come unità separata.",
+    "id": "61a23a63-b6c1-4f6a-9c27-803b3b080e2f"
   },
   {
     "question": "23.\tSupponiamo di avere il file eseguibile (ottenuto dalla compilazione di una programma C) mioprogramma\nQuesti due modi di invocare il programma sono equivalenti?\n<code>$ ./mioprogramma A B C</code>\n<code>$ ./mioprogramma < input.txt</code>\ndove input.txt contiene A B C",
@@ -503,7 +525,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli argomenti da riga di comando sono accessibili al programma tramite i parametri argc e argv di main(), mentre la redirezione dell'input (<) invia i dati allo stream stdin, che deve essere letto esplicitamente con funzioni come scanf() o fgets().",
-    "hint": "Distingui tra i parametri passati al main() e i dati letti dallo standard input attraverso le system call di I/O."
+    "hint": "Distingui tra i parametri passati al main() e i dati letti dallo standard input attraverso le system call di I/O.",
+    "id": "90c11227-f99e-4ad0-8859-5dd7abc4abab"
   },
   {
     "question": "24.\tQuale è la differenza tra thread posix e processo linux (uscito 2 volte)",
@@ -525,7 +548,8 @@
     "image": "",
     "code": "",
     "explanation": "I thread POSIX condividono lo spazio di indirizzamento del processo padre (codice, dati globali, heap e file descriptor), mentre i processi Linux hanno spazi di indirizzamento separati e indipendenti. Ogni thread mantiene però il proprio stack privato.",
-    "hint": "Ricorda che i thread sono 'processi leggeri' che condividono risorse, ma ognuno ha il proprio contesto di esecuzione incluso lo stack."
+    "hint": "Ricorda che i thread sono 'processi leggeri' che condividono risorse, ma ognuno ha il proprio contesto di esecuzione incluso lo stack.",
+    "id": "dafac0de-6d65-4297-b90d-700c38b10f36"
   },
   {
     "question": "25.\tPer mostare il pid dei job in esecuzione in backgroud quali di questi comandi è corretto?",
@@ -547,7 +571,8 @@
     "image": "",
     "code": "",
     "explanation": "L'opzione -p del comando jobs mostra esclusivamente i PID dei processi dei job in background, mentre il comando jobs senza opzioni mostra anche lo stato e il numero del job. Il comando ps -p richiede specifici PID come argomenti, non è usato per elencare job.",
-    "hint": "Consulta la pagina di manuale di jobs per verificare quale opzione estrae solo gli identificatori di processo."
+    "hint": "Consulta la pagina di manuale di jobs per verificare quale opzione estrae solo gli identificatori di processo.",
+    "id": "030585e3-5682-4333-aa8b-26137ba9c32e"
   },
   {
     "question": "26. Quale di queste stringhe non è valida come identificatore in C?",
@@ -569,7 +594,8 @@
     "image": "",
     "code": "",
     "explanation": "In C, gli identificatori possono contenere solo lettere, cifre e underscore, e non possono iniziare con una cifra. Il trattino '-' è un operatore aritmetico, quindi 'x-axis' viene interpretato come 'x - axis' e non è un identificatore valido.",
-    "hint": "Ricorda che il trattino meno è un operatore in C, non può far parte di un nome di variabile."
+    "hint": "Ricorda che il trattino meno è un operatore in C, non può far parte di un nome di variabile.",
+    "id": "996422cf-9e1f-4bfe-9199-0237a209054b"
   },
   {
     "question": "27. Quale di queste stringe è valida come identificatore in C?",
@@ -591,7 +617,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli identificatori in C possono iniziare con underscore o lettera, seguiti da lettere, cifre o underscore. 'return' è una parola chiave riservata e 'x-ray' contiene un carattere non ammesso (il trattino).",
-    "hint": "Verifica se la stringa coincide con una keyword del linguaggio o contiene simboli di operazioni."
+    "hint": "Verifica se la stringa coincide con una keyword del linguaggio o contiene simboli di operazioni.",
+    "id": "906b7c2c-df01-4e4c-9efb-9a6aaac2bfe6"
   },
   {
     "question": "28. Si consideri la seguente funzione  f\n<pre>char *f(char *a, const char *b, size_t n) {\n    size_t i;\n    for (i = 0; i < n && b[i] != '\\0'; i++)\n        a[i] = b[i];\n    for ( ; i < n; i++)\n           a[i] = '\\0';\n        return a;\n}</pre>\nCosa  produce come risultato quando eseguita?",
@@ -613,7 +640,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione copia caratteri da b ad a finché non raggiunge n caratteri o non incontra il terminatore '\\0' in b (condizione i < n && b[i] != '\\0'). Se b è più corta di n, il secondo ciclo completa con '\\0', quindi copia al più n caratteri effettivi di b.",
-    "hint": "Osserva la condizione del primo ciclo: quando si interrompe la copia rispetto alla lunghezza effettiva della stringa sorgente?"
+    "hint": "Osserva la condizione del primo ciclo: quando si interrompe la copia rispetto alla lunghezza effettiva della stringa sorgente?",
+    "id": "5ec8826b-18a7-4714-924f-f1c1f4ac8ae1"
   },
   {
     "question": "29. Si consideri la seguente funzione  f\n<pre>char *f(char *a, const char *b, size_t n) {\n    size_t l = strlen(a);\n    size_t i;\n    for (i = 0 ; i < n && b[i] != '\\0' ; i++)\n        a[l + i] = b[i];\n    a[l + i] = '\\0';\nreturn a;\n}</pre>\nCosa  produce come risultato quando eseguita?",
@@ -635,7 +663,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione calcola prima la lunghezza di a con strlen, poi scrive i caratteri di b a partire dalla posizione l (fine di a). Questo comportamento corrisponde alla concatenazione (append) di b ad a, limitata a n caratteri.",
-    "hint": "Nota che la scrittura inizia alla posizione strlen(a): cosa significa aggiungere caratteri dopo la fine di una stringa?"
+    "hint": "Nota che la scrittura inizia alla posizione strlen(a): cosa significa aggiungere caratteri dopo la fine di una stringa?",
+    "id": "7ba668d5-854b-404e-b599-4ec51b0eb0e7"
   },
   {
     "question": "30. Si consideri la seguente dichiarazione di struttura\n<pre>struct point2D {\n    double x; // coordinata x\n    double y; // coordinata y\n}  pA={0, 0}, pB={1, 5};</pre>\nQuale delle seguenti assegnazioni è corretta?",
@@ -657,7 +686,8 @@
     "image": "",
     "code": "",
     "explanation": "In C, le strutture possono essere assegnate direttamente con l'operatore =, che esegue una copia membro a membro. L'operatore -> si usa solo con puntatori a struttura, mentre &pB restituisce un puntatore incompatibile con il tipo struct point2D di pA.",
-    "hint": "Distingui tra l'accesso ai campi tramite variabile struttura (operatore punto) e tramite puntatore (operatore freccia)."
+    "hint": "Distingui tra l'accesso ai campi tramite variabile struttura (operatore punto) e tramite puntatore (operatore freccia).",
+    "id": "fb800c58-4496-4914-8597-b393e1e53f61"
   },
   {
     "question": "31. Si consideri il seguente ciclo for\n<pre>int scoreCount, a;\nfor(scoreCount=0; scanf(\"%d\",&a)==1; scoreCount++);</pre>\nCosa produrebbe come risultato, se eseguito?",
@@ -679,7 +709,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione scanf restituisce il numero di elementi letti con successo, che è 1 quando legge un intero, ma restituisce 0 quando l'input non corrisponde al specificatore di formato (ad esempio un carattere al posto di %d), causando la terminazione del ciclo.",
-    "hint": "Ricorda quale valore restituisce scanf quando incontra un input che non corrisponde al formato atteso rispetto a quando legge correttamente."
+    "hint": "Ricorda quale valore restituisce scanf quando incontra un input che non corrisponde al formato atteso rispetto a quando legge correttamente.",
+    "id": "2c7fdb3b-192c-430f-af09-dde13c6cd0be"
   },
   {
     "question": "32. Consideri  il seguente frammento  di codice\n<pre>int *ptr = malloc(sizeof(int));\nptr = ptr+1;</pre>\nassumendo la malloc assegni a ptr la locazione di memoria 0x55c2b1268420 cosa contiene ptr dopo l’incremento?",
@@ -701,7 +732,8 @@
     "image": "",
     "code": "",
     "explanation": "In C, l'aritmetica dei puntatori scala in base alla dimensione del tipo di dato puntato. Poiché ptr è un int* e gli interi tipicamente occupano 4 byte, incrementare il puntatore di 1 aggiunge 4 all'indirizzo di memoria (0x55c2b1268420 + 4 = 0x55c2b1268424).",
-    "hint": "Ricorda che aggiungere un intero a un puntatore lo sposta di quel numero di elementi, non di byte."
+    "hint": "Ricorda che aggiungere un intero a un puntatore lo sposta di quel numero di elementi, non di byte.",
+    "id": "6e0720f8-2559-4682-834b-3038fcb77811"
   },
   {
     "question": "33. Cosa  stampa su stdout la seguente chiamata a printf? \n<code>printf(\"aaaaa\\nbbbbb\\f\\rccccc\\r\\fddddd\\reeeee\\n\");</code>",
@@ -723,7 +755,8 @@
     "image": "",
     "code": "",
     "explanation": "Il carriage return (\\r) sposta il cursore all'inizio della riga corrente senza andare a capo, facendo sovrascrivere i caratteri successivi a quelli precedenti sulla stessa riga. La sequenza \\r\\f passa a una nuova riga dopo essere tornati all'inizio, e il \\r finale fa sì che eeeee sovrascriva ddddd.",
-    "hint": "Considera l'effetto di \\r (carriage return) rispetto a \\n (newline), in particolare come influisce sulla posizione del cursore e sull'output successivo."
+    "hint": "Considera l'effetto di \\r (carriage return) rispetto a \\n (newline), in particolare come influisce sulla posizione del cursore e sull'output successivo.",
+    "id": "96a4bda9-7dee-4483-a6eb-b94da25decfe"
   },
   {
     "question": "34. Si consideri il seguente frammento di codice\n<pre>char **mptr, **mptr1, *ptr1;\nint i;\nmptr = calloc(10,sizeof(char *));\nmptr1 = mptr;\nfor(i=0;i<10;i++){\n    mptr[i]=(char *)malloc(10);    \n}</pre>\nPer de-allocare tutta la memoria allocata, quale delle seguenti opzioni è coretta?",
@@ -745,7 +778,8 @@
     "image": "",
     "code": "",
     "explanation": "Poiché la memoria è stata allocata in due fasi (prima l'array di puntatori con calloc, poi ogni stringa con malloc), la deallocazione richiede di liberare prima ogni singola stringa, poi l'array di puntatori. L'opzione A perde l'array di puntatori, mentre la C perde le stringhe.",
-    "hint": "Quando deallochi strutture annidate, lavora dall'interno verso l'esterno: libera i contenuti prima del contenitore."
+    "hint": "Quando deallochi strutture annidate, lavora dall'interno verso l'esterno: libera i contenuti prima del contenitore.",
+    "id": "967d57af-ee64-4f53-8590-18553f9cb25b"
   },
   {
     "question": "35. Si consideri il seguente frammento di codice\n<pre>char **mptr, *ptr1;\nint i;\nmptr = calloc(10,sizeof(char *));\nfor(i=0;i<10;i++){\n    mptr[i]=(char *)malloc(10);    \n}</pre>\nQuale delle seguenti strategie di de-allocazione crea un memory leakage?",
@@ -767,7 +801,8 @@
     "image": "",
     "code": "",
     "explanation": "La strategia A perde i 10 blocchi di memoria allocati individualmente (10 byte ciascuno) perché liberare solo l'array di puntatori rende quegli indirizzi irraggiungibili. La strategia B perde l'array di puntatori stesso (allocato con calloc). Entrambe falliscono nel rilasciare tutta la memoria allocata.",
-    "hint": "Pensa a quale memoria rimane allocata se liberi solo la struttura esterna rispetto a se liberi solo gli elementi interni."
+    "hint": "Pensa a quale memoria rimane allocata se liberi solo la struttura esterna rispetto a se liberi solo gli elementi interni.",
+    "id": "c2e0e874-5324-4092-b794-0830d757d129"
   },
   {
     "question": "36. Si consideri un file contenente un programma in linguaggio C. Si assuma che è stata inserita la direttiva #include \"stdio.h\" . perché la compilazione potrebbe generare errori?",
@@ -789,7 +824,8 @@
     "image": "",
     "code": "",
     "explanation": "In C, la direttiva #include \"file\" cerca il header prima nella directory corrente del sorgente, mentre #include <file> cerca nelle directory di sistema standard. Usare le virgolette per stdio.h potrebbe far fallire la ricerca se il file non è presente localmente, generando errori di compilazione.",
-    "hint": "Ricorda la differenza tra le doppie virgolette e le parentesi angolari nel preprocessing C."
+    "hint": "Ricorda la differenza tra le doppie virgolette e le parentesi angolari nel preprocessing C.",
+    "id": "3a9a4531-9b4a-4253-9ab3-a4270023b3f0"
   },
   {
     "question": "37. Quale delle seguenti dichiarazioni di variabile inizializza una stringa?",
@@ -811,7 +847,8 @@
     "image": "",
     "code": "",
     "explanation": "Le doppie virgolette inizializzano una stringa C aggiungendo automaticamente il terminatore nullo '\\0', mentre gli apici singoli creano singoli caratteri senza garantire il terminatore. Solo l'opzione B forma una stringa valida utilizzabile con le funzioni di libreria standard.",
-    "hint": "Una stringa C richiede il terminatore nullo che viene aggiunto automaticamente solo con le doppie virgolette."
+    "hint": "Una stringa C richiede il terminatore nullo che viene aggiunto automaticamente solo con le doppie virgolette.",
+    "id": "9738c5b1-d520-4b18-bd4b-b9fed8b32a33"
   },
   {
     "question": "39. Si consideri il seguente frammento di codice\n<pre>\nFILE * pFile;\npFile = open(\"myfile.txt\",\"rw+\");\nfprintf(pFile, \"%f %s\", 3.1416, \"PI\");\n</pre>\nAssumendo che myfile.txt non esiste, quale delle seguenti affermazioni è vera?",
@@ -833,7 +870,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione open() è una system call POSIX che restituisce un file descriptor (int), non un FILE* richiesto da fprintf. Inoltre la modalità \"rw+\" non è valida per open(). L'incompatibilità di tipi causa un errore in esecuzione o un crash.",
-    "hint": "fprintf richiede un FILE* ottenuto con fopen, non un file descriptor da open."
+    "hint": "fprintf richiede un FILE* ottenuto con fopen, non un file descriptor da open.",
+    "id": "94fea5b2-ca05-48e3-a69e-dad33ccf893a"
   },
   {
     "question": "40. Cosa fa il seguente segmento di codice se eseguito?\n<pre>scanf(“%d\",&num); \ndo; {\nprintf(“%d\\n\",num); \nscanf(“%d\",&num);\n}  while(num!=0);</pre>",
@@ -859,7 +897,8 @@
     "image": "",
     "code": "",
     "explanation": "Il punto e virgola dopo `do` (`do; {`) viola la sintassi del costrutto do-while, che richiede immediatamente la parentesi graffa o il blocco di istruzioni. Questo errore sintattico viene rilevato dal compilatore.",
-    "hint": "Controlla attentamente la sintassi del costrutto do-while e la posizione del punto e virgola."
+    "hint": "Controlla attentamente la sintassi del costrutto do-while e la posizione del punto e virgola.",
+    "id": "db5ed04c-1c7f-455b-a36e-f27ba8f820ed"
   },
   {
     "question": "41. Si consideri il frammento di codice\n<pre>i=0; c=0; p=1;\nwhile (i++ < 10)\nc=c+1;\np--;</pre>\nche valore conterrà p al termine dell'esecuzione del frammento di codice?",
@@ -881,7 +920,8 @@
     "image": "",
     "code": "",
     "explanation": "L'istruzione `p--;` è fuori dal ciclo while perché non racchiusa tra graffe, quindi viene eseguita solo una volta dopo le 10 iterazioni. Partendo da p=1, decrementa una sola volta arrivando a 0.",
-    "hint": "Verifica quali istruzioni sono incluse nel corpo del ciclo notando l'assenza di parentesi graffe."
+    "hint": "Verifica quali istruzioni sono incluse nel corpo del ciclo notando l'assenza di parentesi graffe.",
+    "id": "9db9e7fa-f0b8-4bce-a856-ba70b970eba7"
   },
   {
     "question": "42. Supponiamo di eseguire  separatamente i seguenti frammenti di codice\n<b>Frammento_1</b>\n<pre>close(2);\nif (fopen(\".\",\"r\")) {\n           perror(\"main\");\n}</pre>\n<b>Frammento_2</b>\n<pre>close(2);\nif (fopen(\".\",\"r\")) {\n               printf(\"main: %s \\n\", strerror(errno));\n}</pre>\nQuale delle seguenti affermazioni è falsa?",
@@ -903,7 +943,8 @@
     "image": "",
     "code": "",
     "explanation": "Dopo close(2), il descrittore 2 viene riutilizzato da fopen se l'apertura ha successo. perror scrive su stderr (ora potenzialmente associato a un file), mentre printf scrive su stdout. Inoltre, i formati differiscono: perror aggiunge automaticamente \": \" e newline, mentre il formato di printf è personalizzato. Pertanto non producono stringhe identiche sul terminale.",
-    "hint": "Considera cosa succede al descrittore 2 dopo la chiusura e dove scrivono effettivamente perror e printf."
+    "hint": "Considera cosa succede al descrittore 2 dopo la chiusura e dove scrivono effettivamente perror e printf.",
+    "id": "aa584eb5-90a1-43dc-af3d-127721746733"
   },
   {
     "question": "43. Consideriamo queste due line di codice\n1. <code>printf(\"main:%s\\n\",strerror(errno));</code>\n2. <code>perror(\"main\");</code>\nQuali delle seguenti affermazioni è corretta?\n<code>\n(NOTA BENE: la risposta 1 viene data come corretta all'esame, anche se in realtà differiscono di uno spazio)\n</code>",
@@ -925,7 +966,8 @@
     "image": "",
     "code": "",
     "explanation": "perror() scrive su stderr aggiungendo automaticamente \": \", il messaggio di errore corrispondente a errno e un newline, mentre printf() con strerror() scrive su stdout seguendo il formato specificato (che qui manca dello spazio dopo \"main:\"). Quindi le stringhe differiscono e i flussi di output sono diversi.",
-    "hint": "Confronta attentamente la formattazione delle stringhe (inclusi spazi e newline) e i file descriptor utilizzati dalle due funzioni."
+    "hint": "Confronta attentamente la formattazione delle stringhe (inclusi spazi e newline) e i file descriptor utilizzati dalle due funzioni.",
+    "id": "db906d4b-5248-46ba-bf39-381fac346487"
   },
   {
     "question": "44. Quale delle seguenti funzioni di libreria alloca memoria nello stack?",
@@ -947,7 +989,8 @@
     "image": "",
     "code": "",
     "explanation": "alloca() alloca memoria nello stack del processo estendendo il frame della funzione corrente; tale memoria viene liberata automaticamente al ritorno della funzione, a differenza di malloc/calloc che allocano nell'heap richiedendo free().",
-    "hint": "Pensa a quale funzione non richiede una chiamata esplicita a free() perché la memoria viene rilasciata automaticamente all'uscita della funzione."
+    "hint": "Pensa a quale funzione non richiede una chiamata esplicita a free() perché la memoria viene rilasciata automaticamente all'uscita della funzione.",
+    "id": "9cb080bc-7d94-4be9-a66d-d755c02cc1d6"
   },
   {
     "question": "45. Un processo può allocare memoria nello stack?",
@@ -969,7 +1012,8 @@
     "image": "",
     "code": "",
     "explanation": "Oltre all'allocazione automatica delle variabili locali, un processo può allocare dinamicamente memoria nello stack usando la funzione di libreria alloca(3), che modifica il puntatore dello stack per riservare spazio aggiuntivo nel frame corrente.",
-    "hint": "Ricorda che esistono funzioni non standard ma supportate per l'allocazione dinamica sullo stack."
+    "hint": "Ricorda che esistono funzioni non standard ma supportate per l'allocazione dinamica sullo stack.",
+    "id": "dc989517-92a0-4495-97a1-fce26d9f7f0b"
   },
   {
     "question": "46. Quale è la differenza tra la system call _exit(2) e la funzione di libreria exit(3)? (uscita 2 volte) ",
@@ -991,7 +1035,8 @@
     "image": "",
     "code": "",
     "explanation": "exit(3) è una funzione di libreria che esegue operazioni di pulizia (flush dei buffer, chiusura degli stream) e invoca i gestori registrati con atexit() e on_exit() prima di chiamare _exit(2). La system call _exit(2) termina invece immediatamente il processo senza eseguire questi handler.",
-    "hint": "Distingui tra la terminazione \"pulita\" della libreria C e la terminazione immediata del kernel."
+    "hint": "Distingui tra la terminazione \"pulita\" della libreria C e la terminazione immediata del kernel.",
+    "id": "991ce032-844b-419d-884d-4cd5b094ff62"
   },
   {
     "question": "47. Quale attributi di un processo sono ereditati dal processo figlio?",
@@ -1013,7 +1058,8 @@
     "image": "",
     "code": "",
     "explanation": "Quando si invoca fork(), il processo figlio eredita una copia del contesto del padre, inclusi i descrittori dei file aperti, la working directory corrente e le aree di memoria condivisa. Al contrario, attributi come timer, lock e contatori risorse sono specifici del processo in esecuzione e non vengono ereditati.",
-    "hint": "Pensa a cosa viene duplicato durante una fork() e cosa invece è legato allo stato di esecuzione specifico del processo padre."
+    "hint": "Pensa a cosa viene duplicato durante una fork() e cosa invece è legato allo stato di esecuzione specifico del processo padre.",
+    "id": "da3cb54d-b848-4300-bae5-247491668605"
   },
   {
     "question": "48. Si consideri il seguente frammento di codice\n<pre>pid_t pID = fork();\nif (pID == 0) {\n    Blocco_1\n} else if (pID < 0) {\n    Blocco_2\n} else {\n  Blocco_3\n}</pre>\nQuale blocco di codice (tra Bloccco_1,  Blocco_2 e  Blocco_3) verrà eseguito dal processo figlio?",
@@ -1035,7 +1081,8 @@
     "image": "",
     "code": "",
     "explanation": "La system call fork() restituisce il valore 0 al processo figlio, il PID del figlio (valore positivo) al processo padre, e un valore negativo in caso di errore. Pertanto, il processo figlio entra nel ramo if (pID == 0) eseguendo Blocco_1.",
-    "hint": "Ricorda il valore di ritorno specifico di fork() per il processo figlio rispetto al padre."
+    "hint": "Ricorda il valore di ritorno specifico di fork() per il processo figlio rispetto al padre.",
+    "id": "f09dde93-59a5-4c3e-9e3f-248afc8bd7a7"
   },
   {
     "question": "49. Si consideri il seguente frammento di codice\n<pre>pid_t pID = fork();\nif (pID == 0) {\n    Blocco_1\n} else if (pID < 0) {\n    Blocco_2\n} else {\n  Blocco_3\n}</pre>\nQuale blocco di codice (tra Bloccco_1,  Blocco_2 e  Blocco_3) verrà eseguito dal processo padre?",
@@ -1057,7 +1104,8 @@
     "image": "",
     "code": "",
     "explanation": "La fork() restituisce al processo padre il PID del processo figlio, che è un intero positivo. Quindi il padre esegue il ramo else (pID > 0) corrispondente a Blocco_3, mentre Blocco_2 viene eseguito solo in caso di errore (pID < 0).",
-    "hint": "Il padre riceve un valore positivo diverso da zero; quale ramo del costrutto if-else gestisce questa condizione?"
+    "hint": "Il padre riceve un valore positivo diverso da zero; quale ramo del costrutto if-else gestisce questa condizione?",
+    "id": "ece35bb6-b64c-4432-897b-76fade5b9e0d"
   },
   {
     "question": "50. Supponiamo che la system call\n<code>pid_t waitpid(pid_t pid, int *status, int options);</code>\nsia invocata con valore di pid uguale a 0. Quale è il suo comportamento?\nScegli un'alternativa:",
@@ -1079,7 +1127,8 @@
     "image": "",
     "code": "",
     "explanation": "Secondo la semantica POSIX, waitpid() con pid = 0 attende la terminazione di qualsiasi processo figlio appartenente allo stesso process group ID del processo chiamante. Con pid = -1 attende qualsiasi figlio, mentre con pid > 0 attende quel specifico PID.",
-    "hint": "Ricorda la differenza tra i valori speciali di pid: -1 attende qualsiasi figlio, 0 attende figli dello stesso gruppo."
+    "hint": "Ricorda la differenza tra i valori speciali di pid: -1 attende qualsiasi figlio, 0 attende figli dello stesso gruppo.",
+    "id": "9ddf0362-1c12-4f9d-bfda-a8030782f5fc"
   },
   {
     "question": "51. Si consideri  il seguente frammento  di codice  (i numeri a lato sono i numeri di riga delle istruzioni)(uscita 2 volte)\n<pre>1.    Pthread_t tid;\n2.    pthread_create(&tid, ... )\n3.    pthread_create(&tid, ...)\n4.    pthread_join(tid, ...);\n5.    printf(\"joined\");</pre>\nquale  delle seguenti affermazioni è falsa?",
@@ -1101,7 +1150,8 @@
     "image": "",
     "code": "",
     "explanation": "La variabile tid viene sovrascritta dalla seconda pthread_create(), quindi pthread_join() attende solo la terminazione del thread creato alla riga 3. Il primo thread creato alla riga 2 non viene joinato, quindi la stampa avviene quando termina solo il secondo thread, non necessariamente entrambi.",
-    "hint": "Cosa succede al valore di tid quando viene assegnato due volte consecutive prima della chiamata a join?"
+    "hint": "Cosa succede al valore di tid quando viene assegnato due volte consecutive prima della chiamata a join?",
+    "id": "a014ae79-4935-4e0c-8d34-3cd5835701bf"
   },
   {
     "question": "52. Si considerino i seguenti frammenti di codice  (R1 e R2)\n<pre>R1: strPtr=(char *) calloc(SIZE_OF_ARRAY, sizeof(char) );\nR2: strPtr=(char *) malloc(SIZE_OF_ARRAY);\n    memset(strPtr, ´\\0´, SIZE_OF_ARRAY);</pre>",
@@ -1123,7 +1173,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione calloc alloca memoria nell'heap e la inizializza automaticamente a zero, mentre malloc alloca memoria non inizializzata. L'uso di memset con '\\0' in R2 produce quindi lo stesso risultato di R1: un blocco di memoria azzerato. Entrambe allocano nell'heap, non nello stack.",
-    "hint": "Ricorda che calloc combina allocazione e inizializzazione a zero, mentre memset può replicare questo comportamento su memoria allocata con malloc."
+    "hint": "Ricorda che calloc combina allocazione e inizializzazione a zero, mentre memset può replicare questo comportamento su memoria allocata con malloc.",
+    "id": "57e31c19-6727-484f-a89c-df2f66e04a26"
   },
   {
     "question": "53. Consideriamo la seguente invocazione della funzione realloc\n<code>strptr1=(char *) realloc(strptr, 10 * SIZE_OF_ARRAY);</code>\nstrptr1 può essere diverso da strptr?",
@@ -1145,7 +1196,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione realloc tenta di espandere il blocco esistente, ma se lo spazio contiguo è insufficiente alloca un nuovo blocco in un'altra locazione, copia i dati e restituisce il nuovo indirizzo. Pertanto strptr1 può differire da strptr quando la memoria deve essere spostata.",
-    "hint": "Considera cosa succede quando l'area di memoria originale è circondata da altre allocazioni."
+    "hint": "Considera cosa succede quando l'area di memoria originale è circondata da altre allocazioni.",
+    "id": "2d7d5197-0638-4a13-9f3b-7bfdb4f1399b"
   },
   {
     "question": "54. Supponiamo di voler modificare il comportamento di default di un processo quando esso riceve un segnale. Ovvero  vogliamo modificare il gestore (handler) di un segnale.\nQuale, tra  le system call, o combinazione di system call di seguito riportate è possibile utilizzare?",
@@ -1167,7 +1219,8 @@
     "image": "",
     "code": "",
     "explanation": "La system call sigaction permette di specificare in modo portabile e dettagliato il gestore per un segnale, sostituendo il comportamento di default del processo corrente. Non è necessaria alcuna fork per installare l'handler.",
-    "hint": "La fork crea un nuovo processo, ma la modifica dell'handler deve avvenire nel processo corrente."
+    "hint": "La fork crea un nuovo processo, ma la modifica dell'handler deve avvenire nel processo corrente.",
+    "id": "bb04583b-d333-45a5-9869-52e7d5204011"
   },
   {
     "question": "55. Assumiamo di voler settare i permessi di accesso 0600 al file filename mediante l'uso della system call open(2). Quale delle seguenti chiamate è corretta?",
@@ -1189,7 +1242,8 @@
     "image": "",
     "code": "",
     "explanation": "Quando si utilizza O_CREAT, open richiede un terzo argomento per i permessi. I permessi 0600 si ottengono combinando con OR bit a bit S_IRUSR (0400) e S_IWUSR (0200), non con AND.",
-    "hint": "Controlla sia il numero di argomenti che l'operatore bit utilizzato per combinare i permessi."
+    "hint": "Controlla sia il numero di argomenti che l'operatore bit utilizzato per combinare i permessi.",
+    "id": "7969cbb0-2d0f-42d2-9931-573d7524e221"
   },
   {
     "question": "56. Si consideri la system call\n<pre>int open(const char *pathname, int flags);\nnel caso venga invocata con il flag impostato a\nO_CREAT | O_EXCL | O_RDONLY</pre>\nQuale è il comportamento atteso?",
@@ -1211,7 +1265,8 @@
     "image": "",
     "code": "",
     "explanation": "Il flag O_EXCL, usato insieme a O_CREAT, fa sì che open fallisca se il file esiste già, prevenendo la sovrascrittura. Se il file non esiste, viene creato e aperto in lettura come specificato da O_RDONLY.",
-    "hint": "Ricorda che O_EXCL ha effetto solo quando combinato con O_CREAT e impedisce l'apertura di file esistenti."
+    "hint": "Ricorda che O_EXCL ha effetto solo quando combinato con O_CREAT e impedisce l'apertura di file esistenti.",
+    "id": "143767e0-bb1a-45ce-803c-bd8f6e64edfe"
   },
   {
     "question": "57. Si consideri il seguente frammento di codice\n<pre>char* file = argv[1];\nint fd;\nstruct flock lock;\nfd = open (file, O_WRONLY);\nmemset (&lock, 0, sizeof(lock));\nlock.l_type = F_WRLCK;\nfcntl (fd, F_SETLKW, &lock);\n....</pre>\nQuale è il suo comportamento?",
@@ -1233,7 +1288,8 @@
     "image": "",
     "code": "",
     "explanation": "La costante F_SETLKW richiede un lock bloccante (wait), sospendendo il processo finché il lock non è acquisibile, a differenza di F_SETLK che sarebbe non bloccante. Il tipo F_WRLCK specifica un lock in scrittura.",
-    "hint": "Cosa indica la lettera 'W' nel comando F_SETLKW?"
+    "hint": "Cosa indica la lettera 'W' nel comando F_SETLKW?",
+    "id": "0176e897-d442-4d58-9d48-61a323bf152c"
   },
   {
     "question": "58. Quale è la differenza tra i seguenti frammenti di codice?\n<pre>C1: int fd, fd1;\n    fd=open(“filename\", O_RDWR);\n    fd1=fd;\n</pre>\n<pre>C2: int fd,fd1;\n    fd=open(“filename\", O_RDWR);\n    fd1=dup(fd);</pre>",
@@ -1255,7 +1311,8 @@
     "image": "",
     "code": "",
     "explanation": "L'assegnazione semplice copia solo il valore numerico del descrittore, mentre dup() alloca un nuovo slot nella tabella dei file descriptor del processo, assegnandogli il numero più piccolo disponibile.",
-    "hint": "dup() crea un nuovo file descriptor che referenzia la stessa open file description."
+    "hint": "dup() crea un nuovo file descriptor che referenzia la stessa open file description.",
+    "id": "e79fe778-3364-4cdc-ad4c-18dd1b643f0b"
   },
   {
     "question": "59. Si consideri  il  seguente frammento di codice\n<pre>int fd,fd1;\nstruct stat buf,\nbuf1;\nfd=open(“filename\", O_RDWR);\nfd1=dup(fd); \nfstat(fd,&buf);\nfstat(fd1,&buf1);</pre>",
@@ -1277,7 +1334,8 @@
     "image": "",
     "code": "",
     "explanation": "Poiché dup() crea un alias che punta alla stessa open file description, entrambi i descrittori referenziano lo stesso file fisico e quindi lo stesso inode; fstat() restituirà identici metadati.",
-    "hint": "I file descriptor duplicati condividono lo stesso offset e puntano allo stesso inode."
+    "hint": "I file descriptor duplicati condividono lo stesso offset e puntano allo stesso inode.",
+    "id": "90b83ada-27e2-4e52-b5ad-2a2efb11bf9c"
   },
   {
     "question": "60. Supponiamo di avere il seguente  frammento di codice\n<pre>struct dirent *dentry; //directory stream\n    char *filename;\n    DIR *dstr=opendir(“mydir\");\n    while ((dentry=readdir(dstr)) != NULL) {\n        /* Memorizzai nome file nella  directory  in filename  */\n         }</pre>\nQuale delle seguenti istruzioni deve  essere  posta all’interno  del  ciclo while per  memorizzare in filename  il nome dei file  contenuti all’interno della directory mydir ?",
@@ -1299,7 +1357,8 @@
     "image": "",
     "code": "",
     "explanation": "La struttura dirent contiene il campo d_name per il nome del file; essendo dentry un puntatore, l'accesso avviene tramite l'operatore -> (freccia).",
-    "hint": "Consulta la definizione di struct dirent in <dirent.h>."
+    "hint": "Consulta la definizione di struct dirent in <dirent.h>.",
+    "id": "0cb8d3e1-873f-45b3-b2ac-a64bef575fe7"
   },
   {
     "question": "61. Quali attributi di processo sono preservati dalla system call execve(2)?",
@@ -1321,7 +1380,8 @@
     "image": "",
     "code": "",
     "explanation": "execve preserva l'umask del processo chiamante perché riguarda i permessi di creazione file ereditati dal nuovo programma, mentre memory locks e timer vengono rimossi durante l'esecuzione.",
-    "hint": "L'umask è un attributo del processo che sopravvive alla sostituzione del programma in esecuzione."
+    "hint": "L'umask è un attributo del processo che sopravvive alla sostituzione del programma in esecuzione.",
+    "id": "8f07945f-b64c-4d2d-a326-ac99b93e11ca"
   },
   {
     "question": "62. Si consideri la system call execve(2). Quale delle seguenti affermazioni è corretta?",
@@ -1343,7 +1403,8 @@
     "image": "",
     "code": "",
     "explanation": "La system call execve() sostituisce l'immagine del processo chiamante con quella di un nuovo programma caricato dal file specificato, preservando il PID ma trasformando completamente lo spazio di indirizzamento, il codice e i dati. Non crea un nuovo processo (non è una fork), ma ricicla il processo esistente per eseguire un programma diverso.",
-    "hint": "Rifletti sul fatto che execve crea un nuovo processo o trasforma quello esistente."
+    "hint": "Rifletti sul fatto che execve crea un nuovo processo o trasforma quello esistente.",
+    "id": "212a1856-9533-49d0-9557-dfbd532796c2"
   },
   {
     "question": "64. Supponiamo di aver mappato un file in memoria con la system call mmap(2). A cosa serve invocare la msync(2)?",
@@ -1365,7 +1426,8 @@
     "image": "",
     "code": "",
     "explanation": "La msync() forza la scrittura su disco delle modifiche apportate a un file mappato in memoria con MAP_SHARED, garantendo la persistenza dei dati prima di unmunmap() o della chiusura del file descriptor. Sebbene il kernel alla fine sincronizzi le pagine sporche automaticamente, msync() offre controllo esplicito sul momento della flush.",
-    "hint": "Considera quando le pagine modificate in memoria vengono garantite su disco rispetto alla chiusura del mapping."
+    "hint": "Considera quando le pagine modificate in memoria vengono garantite su disco rispetto alla chiusura del mapping.",
+    "id": "f7e8a787-88d3-4c28-a52c-208566972d9a"
   },
   {
     "question": "65. Quale delle seguenti affermazioni sui processi Linux è falsa?",
@@ -1391,7 +1453,8 @@
     "image": "",
     "code": "",
     "explanation": "I PID in Linux sono numeri interi univoci in ogni istante, ma non crescono indefinitamente: quando si raggiunge il limite massimo (tipicamente 32767 o /proc/sys/kernel/pid_max), il kernel ricomincia a riassegnare i numeri bassi disponibili. Questo meccanismo di wrap-around rende falsa l'affermazione che crescono sempre.",
-    "hint": "Cosa accade quando il sistema esaurisce i numeri PID disponibili?"
+    "hint": "Cosa accade quando il sistema esaurisce i numeri PID disponibili?",
+    "id": "0a17703c-bc17-4afb-94ca-d560758220c6"
   },
   {
     "question": "66. Quale delle seguenti affermazioni sui processi Linux è vera?",
@@ -1417,7 +1480,8 @@
     "image": "",
     "code": "",
     "explanation": "In Linux, ogni processo (eccetto init, PID 1, creato dal kernel all'avvio) viene generato tramite la system call fork(), che duplica il processo chiamante. Il processo figlio può poi sostituire la sua immagine con exec(), ma la creazione iniziale avviene sempre tramite fork.",
-    "hint": "Ricorda come viene creato il primo processo del sistema rispetto a tutti gli altri."
+    "hint": "Ricorda come viene creato il primo processo del sistema rispetto a tutti gli altri.",
+    "id": "6fab55de-9f80-45b9-a64e-7bbfa2b59afc"
   },
   {
     "question": "67. Quale delle seguenti affermazioni sui processi Linux è falsa?",
@@ -1443,7 +1507,8 @@
     "image": "",
     "code": "",
     "explanation": "I comandi built-in della shell (come cd, echo o pwd) vengono eseguiti direttamente dal processo shell senza creare un nuovo processo figlio. Solo i comandi esterni richiedono la creazione di un nuovo processo tramite fork() ed exec().",
-    "hint": "Distingui tra comandi interni della shell ed eseguibili esterni."
+    "hint": "Distingui tra comandi interni della shell ed eseguibili esterni.",
+    "id": "ab36aaa2-c24b-43d2-8476-cd0356bc2438"
   },
   {
     "question": "68. Quale delle seguenti affermazioni sui processi Linux è vera?",
@@ -1469,7 +1534,8 @@
     "image": "",
     "code": "",
     "explanation": "Ogni esecuzione di un programma crea un nuovo processo con un proprio PID (Process ID) univoco, anche se si tratta dello stesso file eseguibile. Questo è fondamentale nel modello a processi dei sistemi Unix-like, dove i processi sono istanze indipendenti di esecuzione.",
-    "hint": "Considera che ogni esecuzione crea un'istanza indipendente con un proprio identificativo univoco nel sistema."
+    "hint": "Considera che ogni esecuzione crea un'istanza indipendente con un proprio identificativo univoco nel sistema.",
+    "id": "a8f71147-53dc-4f22-8bef-7b99e0ff56d7"
   },
   {
     "question": "69. Un programma scritto in linguaggio C:",
@@ -1495,7 +1561,8 @@
     "image": "",
     "code": "",
     "explanation": "In C, le stringhe sono convenzionalmente rappresentate come array di caratteri terminati dal carattere nullo '\\0' (valore ASCII 0), che marca la fine della stringa. Questo è uno standard del linguaggio C, diverso dal newline '\\n' o dal carattere '0'.",
-    "hint": "Ricorda il carattere terminale che ha valore ASCII zero e differenzialo dal carattere '0' o dal newline."
+    "hint": "Ricorda il carattere terminale che ha valore ASCII zero e differenzialo dal carattere '0' o dal newline.",
+    "id": "b2fda333-8303-4de0-8bca-20d325aefe59"
   },
   {
     "question": "70. Quale delle seguenti affermazioni è vera?",
@@ -1521,7 +1588,8 @@
     "image": "",
     "code": "",
     "explanation": "Richard Stallman ha creato la GNU General Public License (GPL) nel 1989 come parte del progetto GNU. Linus Torvalds ha sviluppato il kernel Linux nel 1991 (non all'inizio degli anni '80), mentre i pacchetti GNU sono stati scritti dal progetto GNU, non da Torvalds.",
-    "hint": "Verifica le date e gli autori del kernel Linux rispetto alla licenza copyleft del progetto GNU."
+    "hint": "Verifica le date e gli autori del kernel Linux rispetto alla licenza copyleft del progetto GNU.",
+    "id": "ea7f3718-ad06-4d99-bb54-8c7a85c07cd4"
   },
   {
     "question": "71. Quali delle seguenti affermazioni è vera?",
@@ -1547,7 +1615,8 @@
     "image": "",
     "code": "",
     "explanation": "/etc/mtab (o /proc/mounts nei sistemi moderni) tiene traccia dei filesystem attualmente montati nel sistema. Quando un filesystem viene montato con il comando mount, viene registrato in mtab, quindi tale file elenca i filesystem che sono stati montati. Al contrario, /etc/fstab contiene le entry per il mount automatico all'avvio, ma non è obbligatorio per montare manualmente un filesystem.",
-    "hint": "Ricorda che fstab serve per il mount automatico, mentre mtab elenca i filesystem già montati."
+    "hint": "Ricorda che fstab serve per il mount automatico, mentre mtab elenca i filesystem già montati.",
+    "id": "bb674b12-0be7-42f1-883d-a65e8f02cb1d"
   },
   {
     "question": "72. Si supponga di avere il seguente frammento di codice:\n<code>FILE *stream = fopen(NOMEFILE, \"w\");</code>\nQuale dei seguenti frammenti di codice ha lo stesso effetto?",
@@ -1573,7 +1642,8 @@
     "image": "",
     "code": "",
     "explanation": "La modalità \"w\" di fopen() crea un nuovo file o tronca uno esistente a lunghezza zero per la scrittura. Questo corrisponde alla open() con i flag O_WRONLY (scrittura), O_CREAT (creazione se non esiste) e O_TRUNC (troncamento se esiste), con permessi 0666 mascherati dalla umask.",
-    "hint": "Considera quali flag sono necessari per creare un nuovo file o svuotare uno esistente in scrittura."
+    "hint": "Considera quali flag sono necessari per creare un nuovo file o svuotare uno esistente in scrittura.",
+    "id": "461a47e1-629f-4f3b-8235-c56c310f4b2e"
   },
   {
     "question": "73. 10. (questa domanda ha una crisi d'identità) Quale delle seguenti affermazioni sulle syscall di Linux che riguardano i files è falsa?",
@@ -1599,7 +1669,8 @@
     "image": "",
     "code": "",
     "explanation": "I lock su file in Linux vengono gestiti tramite la syscall fcntl() (per i lock advisory) o flock(), mentre ioctl() è utilizzata per operazioni di controllo specifiche dei dispositivi. La select permette il monitoraggio I/O multiplexing con modalità bloccante o non bloccante tramite il parametro timeout.",
-    "hint": "Ricorda quale syscall è specificamente dedicata al 'controllo dei file' e supporta operazioni di locking."
+    "hint": "Ricorda quale syscall è specificamente dedicata al 'controllo dei file' e supporta operazioni di locking.",
+    "id": "fe20df49-1231-4d9b-9124-3a97b98e71c1"
   },
   {
     "question": "74. 11. Quale delle seguenti affermazioni sui segnali Linux è vera?",
@@ -1625,7 +1696,8 @@
     "image": "",
     "code": "",
     "explanation": "In Linux, un processo può inviare segnali ad altri processi appartenenti allo stesso utente (o con capability adeguata). Tuttavia, segnali come SIGKILL e SIGSTOP non possono essere catturati o ignorati, e non tutti i segnali causano terminazione (es. SIGCONT).",
-    "hint": "Considera quali segnali sono immutabili e quali permessi sono necessari per inviare segnali."
+    "hint": "Considera quali segnali sono immutabili e quali permessi sono necessari per inviare segnali.",
+    "id": "cef998a9-a6f8-46f7-9b83-765b897b08eb"
   },
   {
     "question": "75. 12. Quale delle seguenti affermazioni sugli errori delle syscall di Linux è vera?",
@@ -1651,7 +1723,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione strerror(errno) converte il codice di errore in una stringa descrittiva che può essere stampata su stdout con printf. Al contrario, perror() stampa automaticamente su stderr e non accetta stringhe di formato con variabili.",
-    "hint": "Distingui tra la funzione che restituisce una stringa e quella che stampa direttamente su stderr."
+    "hint": "Distingui tra la funzione che restituisce una stringa e quella che stampa direttamente su stderr.",
+    "id": "501fca07-f4a4-4143-970f-bcbb7489bbc8"
   },
   {
     "question": "76. Si supponga di avere il seguente frammento di codice:\nFILE *stream = fopen(\"file_esistente.txt\", \"r\");\nfseek(stream, -100, SEEK_END);\nlong pos = ftell(stream);\nQuale dei seguenti frammenti di codice ha lo stesso effetto?\na.<pre>\nint fd = open(\"file_esistente.txt\", O_RDONLY);\nlseek(fd, -100, SEEK_END);\nlong pos = lseek(fd, 0, SEEK_END);\n</pre>\nb.<pre>\nint fd = open(\"file_esistente.txt\", O_RDONLY);\nlseek(fd, -100, SEEK_END);\nlong pos = lseek(fd, 0, SEEK_CUR);\n</pre>\nc.<pre>\nint fd = open(\"file_esistente.txt\", O_RDONLY);\nlseek(fd, -100, SEEK_END);\nlong pos = lseek(fd, -100, SEEK_END);\n</pre>\nd.<pre>\nint fd = open(\"file_esistente.txt\", O_RDONLY);\nlseek(fd, -100, SEEK_END);\nlong pos = ltell(fd);\n</pre>",
@@ -1677,7 +1750,8 @@
     "image": "",
     "code": "",
     "explanation": "Dopo aver posizionato l'offset a -100 byte dalla fine del file, ftell() restituisce la posizione corrente senza modificarla. L'equivalente a basso livello utilizza lseek() con SEEK_CUR e offset 0 per ottenere la posizione corrente.",
-    "hint": "Cerca l'operazione lseek che permette di conoscere la posizione corrente senza spostare il cursore."
+    "hint": "Cerca l'operazione lseek che permette di conoscere la posizione corrente senza spostare il cursore.",
+    "id": "69126b50-512a-462e-9ab2-a910d915fae7"
   },
   {
     "question": "76. Si consideri la seguente funzione <code>f</code>\n<pre>\nchar *f(char *dest, const char *src, size_t n) {\n    size_t i;\n    for (i = 0; i < n && src[i] != '\\0'; i++)\n        dest[i] = src[i];\nfor ( ; i < n; i++)\ndest[i] = '\\0';\nreturn dest;\n}\n</pre>\nCosa produce come risultato quando eseguita?",
@@ -1699,7 +1773,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione implementa una copia limitata di stringa simile a strncpy: copia fino a n caratteri da src a dest, riempiendo eventuali byte rimanenti con '\\0' e restituendo il puntatore a dest.",
-    "hint": "Analizza i due cicli: il primo copia i caratteri, il secondo garantisce il padding con null."
+    "hint": "Analizza i due cicli: il primo copia i caratteri, il secondo garantisce il padding con null.",
+    "id": "da3e7c25-658e-4a8c-a466-c5b3539ba042"
   },
   {
     "question": "77. Si consideri il seguente frammento di codice\n<pre>\nsigset_t set, oset, pset;\n...\nsigemptyset( &set );\nsigaddset( &set, SIGINT );\nsigaddset( &set, SIGUSR1 );\nsigprocmask( SIG_BLOCK, &set, &oset );\n...\n</pre>",
@@ -1721,7 +1796,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione sigprocmask con SIG_BLOCK impedisce la consegna dei segnali specificati (SIGINT e SIGUSR1) al processo, impedendo che interrompano l'esecuzione. Questo meccanismo è standard per proteggere sezioni critiche da interruzioni asincrone.",
-    "hint": "Pensa a cosa significa 'bloccare' un segnale rispetto alla consegna al processo."
+    "hint": "Pensa a cosa significa 'bloccare' un segnale rispetto alla consegna al processo.",
+    "id": "0a25b44f-3b94-4693-ba4e-f9392d4f2efa"
   },
   {
     "question": "78. Sia mylink un hard link al file myfile (<code>ln myfile mylink</code>).\nQuale di queste afferrmazioni è vera?",
@@ -1743,7 +1819,8 @@
     "image": "",
     "code": "",
     "explanation": "Un hard link è semplicemente un nuovo nome di directory che punta allo stesso inode esistente. Entrambi i nomi sono entry di directory che referenziano identici metadati e blocchi dati su disco.",
-    "hint": "Considera che i hard link condividono la stessa identità fisica del file nel filesystem."
+    "hint": "Considera che i hard link condividono la stessa identità fisica del file nel filesystem.",
+    "id": "a4eaa485-d301-4abc-afcf-797c5aa24f5a"
   },
   {
     "question": "79. Supponendo di essere \"loggato\" in una shell come utente1.\nQuali dei seguenti è un path assoluto?",
@@ -1761,7 +1838,8 @@
     "image": "",
     "code": "",
     "explanation": "Un path assoluto inizia sempre dalla directory root (/) o dalla home directory (~), che viene espansa dal shell nel percorso completo assoluto. I path relativi non iniziano con questi prefissi.",
-    "hint": "Un path assoluto deve avere un punto di partenza fisso nel filesystem, come la root o la home."
+    "hint": "Un path assoluto deve avere un punto di partenza fisso nel filesystem, come la root o la home.",
+    "id": "7e8ea76e-1b0c-4592-95e3-d4c0f6092bd1"
   },
   {
     "question": "80. Si supponga che nel sistema esiste un gruppo \"studente\".\nSi supponga di voler creare \"utente1\" e di volerlo aggiungere al gruppo studente.\nQuale dei seguenti comandi è corrretto?",
@@ -1783,7 +1861,8 @@
     "image": "",
     "code": "",
     "explanation": "È necessario prima creare l'utente nel sistema con adduser, poi associarlo al gruppo esistente. Il comando adduser utente1 studente aggiunge l'utente già creato al gruppo specificato.",
-    "hint": "L'ordine logico richiede che l'utente esista prima di poterne modificare l'appartenenza ai gruppi."
+    "hint": "L'ordine logico richiede che l'utente esista prima di poterne modificare l'appartenenza ai gruppi.",
+    "id": "6b51ce12-ee46-4fb4-bf6f-f37326f162c0"
   },
   {
     "question": "81. Si considerino le seguenti dichiarazioni di variabili:\n<pre>\nint vect[10];\nint *ptr = NULL;\n</pre>\nQuale delle seguneti assegnazioni è corretta per far sì che ptr contanga il puntatore al vettore vect?",
@@ -1805,7 +1884,8 @@
     "image": "",
     "code": "",
     "explanation": "In C, il nome di un array senza indici decays (converte implicitamente) al puntatore al suo primo elemento (&vect[0]). ptr = &vect sarebbe errato perché darebbe un puntatore a array (int (*)[10]), incompatibile con int*.",
-    "hint": "Ricorda la regola di decay degli array: il nome dell'array diventa il puntatore al primo elemento."
+    "hint": "Ricorda la regola di decay degli array: il nome dell'array diventa il puntatore al primo elemento.",
+    "id": "5846f0e1-a4de-46a1-9abe-c093b57a9e83"
   },
   {
     "question": "82. Si supponda di avere 2 file hw1.c e hw2.c contenenti il seguente codice\n<pre>\nhw1.c:\n#include <stdio.h>\n#include \"hw.2.c\"\nint f(int argc, char *args[]) {\nprintf(\"Hello World!\\n\");\nreturn 256;\n}\n</pre>\n<pre>\nhw2.c:\nint f(int argc, char *args[]);\nint main(int argc, char *args[]) {\nreturn f(argc, args);\n}\n</pre>\nQuale dei seguneti comandi di compilazione non genera errore?",
@@ -1823,7 +1903,8 @@
     "image": "",
     "code": "",
     "explanation": "Il preprocessore inserisce il contenuto di hw2.c in hw1.c tramite la direttiva #include, quindi compilare solo hw1.c (secondo comando in A) include automaticamente sia la funzione f() che il main(), generando un eseguibile valido. L'opzione B fallisce perché compilando solo hw2.c manca la definizione di f(), causando un errore di linker.",
-    "hint": "Considera l'effetto della direttiva #include nel file hw1.c e cosa succede durante la compilazione."
+    "hint": "Considera l'effetto della direttiva #include nel file hw1.c e cosa succede durante la compilazione.",
+    "id": "bdc29891-0cbb-410b-b7ef-cb93f9d45249"
   },
   {
     "question": "83. Si consideri il seguente frammento di codice\n<pre>\npid_t pID = fork();\nif (pID == 0) {\n    Blocco_1\n} else if (pID < 0) {\n    Blocco_2\n} else {\n    Blocco_3\n}\n</pre>\nQuale blocco di codice (tra Bloccco_1, Blocco_2 e Blocco_3) verrà eseguito nel caso in cui la fork non vada a buon fine?",
@@ -1845,7 +1926,8 @@
     "image": "",
     "code": "",
     "explanation": "La system call fork() restituisce -1 al processo chiamante in caso di fallimento (es. per mancanza di risorse), 0 al processo figlio, e il PID del figlio al processo padre. Pertanto, la condizione pID < 0 identifica specificamente l'errore.",
-    "hint": "Ricorda i tre possibili valori di ritorno di fork() e cosa rappresentano."
+    "hint": "Ricorda i tre possibili valori di ritorno di fork() e cosa rappresentano.",
+    "id": "0774c734-4264-4644-a295-478064611dc3"
   },
   {
     "question": "84. Si consideri il seguente frammento di codice\n<pre>\nfor (i=0;((i<n1)&&(i<n2));i++)\n    m2[i]=m1[i];\n</pre>\nquando termina il ciclo for?",
@@ -1867,7 +1949,8 @@
     "image": "",
     "code": "",
     "explanation": "La condizione di continuazione del ciclo richiede che entrambe le disuguaglianze siano vere contemporaneamente (operatore &&). Il ciclo termina non appena i raggiunge il valore del più piccolo tra n1 e n2, rendendo falsa la prima condizione incontrata.",
-    "hint": "Analizza quando l'operatore logico AND diventa falso."
+    "hint": "Analizza quando l'operatore logico AND diventa falso.",
+    "id": "346eadbb-659c-4cee-b911-b03de240e05a"
   },
   {
     "question": "85. A seguito di una chiamata a fork(2), quale dei seguenti attributi del processo padre non è ereditato dal processo figlio?",
@@ -1889,7 +1972,8 @@
     "image": "",
     "code": "",
     "explanation": "Dopo una fork(), il processo figlio eredita una copia dei descrittori di file del padre (condividendo gli stessi offset) e mantiene lo stesso group ID, ma la coda dei segnali pendenti (signal queue) viene svuotata e non ereditata per evitare che il figlio riceva segnali destinati al padre.",
-    "hint": "Ricorda quali attributi vengono resettati nel figlio per evitare confusione tra i segnali pendenti."
+    "hint": "Ricorda quali attributi vengono resettati nel figlio per evitare confusione tra i segnali pendenti.",
+    "id": "abf50080-3077-4240-8e5e-4fdc3c269554"
   },
   {
     "question": "86. Si consideri il seguente frammento di codice\n<pre>\nstruct stat *s;\nfd=open(“filename\");\nfchmod(fd,00744);\nfstat(fd,s);\n</pre>\nPer visualizzare su sdtout i permessi di accesso a \"filename\", quale tra le seguenti opzioni è la più appropriata?",
@@ -1911,7 +1995,8 @@
     "image": "",
     "code": "",
     "explanation": "Il campo st_mode della struct stat memorizza i permessi di accesso in formato ottale (bitmask). Per visualizzarli correttamente in base 8, tipica dei permessi Unix (es. 755), si utilizza il specificatore %o di printf.",
-    "hint": "Ricorda in quale base numerica sono tradizionalmente espressi i permessi Unix."
+    "hint": "Ricorda in quale base numerica sono tradizionalmente espressi i permessi Unix.",
+    "id": "929aeec4-c220-4825-aa31-41c6fc4a2e5d"
   },
   {
     "question": "87. Si consideri il seguente frammento di codice\n<pre>\nint n=2;\nint r=2 * (n++);\n</pre>\n<pre>\nint n=2;\nint r1=2 * (++n);\n</pre>\nQuale valori assumeranno le variabili r e r1 dopo l'esecuzione?",
@@ -1933,7 +2018,8 @@
     "image": "",
     "code": "",
     "explanation": "L'operatore post-incremento (n++) restituisce il valore corrente di n prima di incrementarlo, mentre l'operatore pre-incremento (++n) incrementa n prima di restituire il nuovo valore. Pertanto, nel primo caso 2*2=4, nel secondo 2*3=6.",
-    "hint": "Considera se l'incremento avviene prima o dopo l'uso del valore nella moltiplicazione."
+    "hint": "Considera se l'incremento avviene prima o dopo l'uso del valore nella moltiplicazione.",
+    "id": "74c0be8a-d1fb-47a8-8cb0-fb17db379383"
   },
   {
     "question": "88. Supponiamo di avere la seguenti variabili\n<code>int x=1, y=7;</code>\nQuale delle seguneti espressioni è falsa?",
@@ -1955,7 +2041,8 @@
     "image": "",
     "code": "",
     "explanation": "L'AND bit a bit tra 1 (001) e 7 (111) produce 1 (001), non 7. Le altre espressioni sono vere perché l'OR bit a bit produce 7 e il confronto logico corrisponde al risultato bit a bit.",
-    "hint": "Converti i numeri in binario e distingui tra operatori bit a bit e logici."
+    "hint": "Converti i numeri in binario e distingui tra operatori bit a bit e logici.",
+    "id": "4cc395ef-b68f-41f1-8215-e1bb1f6186df"
   },
   {
     "question": "89. Per visualizzare l’atime di un file quale dei seguenti comandi è corretto?",
@@ -1977,7 +2064,8 @@
     "image": "",
     "code": "",
     "explanation": "L'opzione -u di ls mostra e ordina per tempo di accesso (atime), mentre -c si riferisce al tempo di cambiamento dei metadati (ctime) e -a elenca i file nascosti.",
-    "hint": "Ricorda che 'u' sta per il momento in cui il file è stato 'usato' (accessed)."
+    "hint": "Ricorda che 'u' sta per il momento in cui il file è stato 'usato' (accessed).",
+    "id": "7915a2c6-02fc-4af7-bedc-d8984f4d17e0"
   },
   {
     "question": "90. Quali attributi del processo sono preservati dalla funzione di libreria execve()?",
@@ -1999,7 +2087,8 @@
     "image": "",
     "code": "",
     "explanation": "L'umask viene preservato attraverso execve() perché è un attributo dell'ambiente del processo relativo ai permessi di creazione file, mentre i lock di memoria e i timer vengono cancellati essendo specifici dell'immagine del processo sostituita.",
-    "hint": "Pensa agli attributi legati all'identità del processo versus quelli legati all'immagine in esecuzione."
+    "hint": "Pensa agli attributi legati all'identità del processo versus quelli legati all'immagine in esecuzione.",
+    "id": "4c3559b4-ecac-4423-8285-d8a4148dcf2c"
   },
   {
     "question": "91. I permessi di accesso del file eseguibile <code>/usr/bin/passwd</code> sono <code>4755/-rwsr-xr-x</code>\nCosa significa?",
@@ -2021,7 +2110,8 @@
     "image": "",
     "code": "",
     "explanation": "La presenza della 's' al posto della 'x' nel permesso di esecuzione del proprietario e la cifra 4 iniziale nella notazione numerica indicano che il bit SetUID è attivo, permettendo l'esecuzione con i privilegi del proprietario del file.",
-    "hint": "Osserva il primo digit della notazione ottale o il bit di esecuzione del proprietario nella notazione simbolica."
+    "hint": "Osserva il primo digit della notazione ottale o il bit di esecuzione del proprietario nella notazione simbolica.",
+    "id": "f1997bf3-91a7-4135-99fd-c2d3ebd5068a"
   },
   {
     "question": "92. Si assuma di avere due shell aperte, etichettate come shell_1 e shell_2 e si consideri la seguente sequenza di comandi\n(shell_i:cmd indica che cmd è eseguitto nella  shell i, i=1,2).\n<pre>\nshell_1: xterm\nshell_2: ps -C xterm\n#restituisce xtermPID\nshell_2: kill -s SIGINT xtermPID\n</pre>\nQuale è il loro effetto?",
@@ -2043,7 +2133,8 @@
     "image": "",
     "code": "",
     "explanation": "Il segnale SIGINT (interruzione da tastiera, tipicamente Ctrl+C) ha come comportamento predefinito la terminazione del processo. Non lo mette in stato stopped (che richiederebbe SIGSTOP o SIGTSTP) né lo mette in background.",
-    "hint": "Ricorda quale segnale viene inviato premendo Ctrl+C in un terminale e qual è il suo effetto predefinito su un processo."
+    "hint": "Ricorda quale segnale viene inviato premendo Ctrl+C in un terminale e qual è il suo effetto predefinito su un processo.",
+    "id": "6a2ffe7d-f7a6-4d48-895f-9d4a4794e010"
   },
   {
     "question": "93. Supponiamo di aver dichiarato ed inizializzato le seguenti variabili\n<code>int x = 1, y = 7;</code>\nQuale delle seguenti espressioni è vera (true)?",
@@ -2065,7 +2156,8 @@
     "image": "",
     "code": "",
     "explanation": "L'operatore & bit a bit tra 1 (001) e 7 (111) restituisce 1 (001), mentre l'operatore && logico restituisce 1 (vero) quando entrambi gli operandi sono non-zero. Quindi entrambe le espressioni valgono 1.",
-    "hint": "Confronta il risultato dell'AND bit a bit con quello dell'AND logico in C, ricordando che il valore booleano vero è rappresentato come 1."
+    "hint": "Confronta il risultato dell'AND bit a bit con quello dell'AND logico in C, ricordando che il valore booleano vero è rappresentato come 1.",
+    "id": "79ee5000-eafa-492f-98d2-4884c7608e83"
   },
   {
     "question": "94. Si consideri la seguente funzione fa\n<pre>\nchar *f(char *dest, const char *src, size_t n) {\n    size_t dest_len = strlen(dest);\n    size_t i;\n    for (i = 0; i < n && src[i] != '\\0'; i++)\n        dest[dest_len + i] = src[i];\n    dest[dest_len + i] = '\\0';\nreturn dest;\n}\n</pre>",
@@ -2087,7 +2179,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione calcola la lunghezza di dest per posizionarsi alla fine della stringa, quindi copia i caratteri di src a partire da quella posizione, realizzando una concatenazione (come strncat), non una semplice copia.",
-    "hint": "Osserva dove inizia la scrittura nella stringa dest: all'inizio o alla fine della stringa esistente?"
+    "hint": "Osserva dove inizia la scrittura nella stringa dest: all'inizio o alla fine della stringa esistente?",
+    "id": "33948ac2-7c5d-4b9f-8bc7-3baba96e79b6"
   },
   {
     "question": "95. Si supponga di avere un file di testo (filein) e di voler copiare in un altro file (fileout) 100 caratteri a partire dal decimo.\nQuale di questi comandi è corretto?",
@@ -2109,7 +2202,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando dd con bs=1 imposta la dimensione del blocco a 1 byte, skip=10 salta i primi 10 byte e count=100 copia esattamente 100 byte successivi, soddisfando la richiesta di estrarre 100 caratteri da una posizione specifica.",
-    "hint": "Ricorda che dd lavora a blocchi: per copiare caratteri singoli devi impostare la dimensione del blocco a 1 byte."
+    "hint": "Ricorda che dd lavora a blocchi: per copiare caratteri singoli devi impostare la dimensione del blocco a 1 byte.",
+    "id": "d4b13fc6-552d-44a1-ab4f-a049e5969ae3"
   },
   {
     "question": "96. Sia mylink un soft link al file myfile (<code>ln -s myfile mylink</code>).\nQuale di queste affermazioni è vera?",
@@ -2131,7 +2225,8 @@
     "image": "",
     "code": "",
     "explanation": "Un soft link (collegamento simbolico) è un file speciale che contiene un riferimento al percorso di un altro file, pertanto ha un proprio inode distinto da quello del file target. I hard link condividono invece lo stesso inode.",
-    "hint": "Pensa alla differenza fondamentale tra un collegamento simbolico e un collegamento fisico (hard link) riguardo alla tabella degli inode."
+    "hint": "Pensa alla differenza fondamentale tra un collegamento simbolico e un collegamento fisico (hard link) riguardo alla tabella degli inode.",
+    "id": "fe5fb56d-313b-42d1-bc79-68788bf50002"
   },
   {
     "question": "97. Si consideri il codice\n<pre>\nstruct stat *s;\nfd = open(\"filename\");\nfstat(fs, s);\n</pre>\nCome faccio a sapere se il file \"filename\" è un link?",
@@ -2153,7 +2248,8 @@
     "image": "",
     "code": "",
     "explanation": "La macro S_ISLINK (o S_ISLNK in POSIX) verifica il campo st_mode della struttura stat per determinare se il tipo di file è un link simbolico. Queste macro analizzano i bit di tipo di file codificati nella modalità dell'inode restituita da fstat.",
-    "hint": "Esamina le macro che interpretano il campo st_mode per identificare la natura del file system object."
+    "hint": "Esamina le macro che interpretano il campo st_mode per identificare la natura del file system object.",
+    "id": "6af4c101-a454-4b34-bce8-d14ec6b158e7"
   },
   {
     "question": "98. Quale tra i seguenti comandi è il modo più corretto per verificare a quali gruppi appartiene un utente?",
@@ -2171,7 +2267,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando `groups` consulta direttamente i database di sistema per elencare tutti i gruppi dell'utente in modo affidabile. Il percorso /etc/groups non esiste (il file corretto è /etc/group), rendendo l'opzione B sintatticamente errata.",
-    "hint": "Considera quale comando è specificatamente progettato per interrogare l'appartenenza ai gruppi."
+    "hint": "Considera quale comando è specificatamente progettato per interrogare l'appartenenza ai gruppi.",
+    "id": "c4169839-fc7a-4910-8f01-6f0163e0b2a5"
   },
   {
     "question": "99. Cosa fa sto ciclo?\n<code>for(scoreCount = 0; scanf(\"%d\", &a) == 1; scoreCount++);</code>",
@@ -2193,7 +2290,8 @@
     "image": "",
     "code": "",
     "explanation": "Il ciclo continua fintanto che scanf restituisce 1, valore che indica la lettura corretta di un intero, incrementando il contatore ad ogni iterazione valida. Questo permette di leggere sequenze di numeri interi da stdin fino a EOF o input non valido.",
-    "hint": "Presta attenzione al valore di ritorno di scanf quando legge correttamente un intero."
+    "hint": "Presta attenzione al valore di ritorno di scanf quando legge correttamente un intero.",
+    "id": "434ba223-d323-41c1-ae03-d44d8f7a70b9"
   },
   {
     "question": "100. Quale delle seguenti funzioni di libreria non alloca nell'heap?",
@@ -2215,7 +2313,8 @@
     "image": "",
     "code": "",
     "explanation": "alloca alloca memoria nello stack frame della funzione corrente anziché nell'heap, deallocandola automaticamente al ritorno della funzione. Al contrario, malloc e calloc richiedono esplicita deallocazione con free.",
-    "hint": "Rifletti su quale regione di memoria utilizza ciascuna funzione e quale viene pulita automaticamente all'uscita della funzione."
+    "hint": "Rifletti su quale regione di memoria utilizza ciascuna funzione e quale viene pulita automaticamente all'uscita della funzione.",
+    "id": "88cc5d8a-df30-4f92-98ed-90425ad4cc7f"
   },
   {
     "question": "101. Si consideri il seguente frammento di codice\n<pre>\nsigset_t set, oset, pset;\n...\nsigemptyset( &set );\nsigaddset( &set, SIGINT );\nsigaddset( &set, SIGUSR1 );\nsigprocmask( SIG_BLOCK, &set, &oset );\n...\n</pre>",
@@ -2237,7 +2336,8 @@
     "image": "",
     "code": "",
     "explanation": "sigprocmask con l'operazione SIG_BLOCK aggiunge i segnali specificati nel set (SIGINT e SIGUSR1) alla maschera dei segnali bloccati del processo. Questo impedisce la consegna e la gestione di tali segnali fino a quando non vengono esplicitamente sbloccati.",
-    "hint": "SIG_BLOCK aggiunge segnali alla maschera dei bloccati, impedendone la ricezione dal processo."
+    "hint": "SIG_BLOCK aggiunge segnali alla maschera dei bloccati, impedendone la ricezione dal processo.",
+    "id": "8324fcd3-2c94-4aa9-99d3-df17793945b9"
   },
   {
     "question": "102. Per visualizzare contemporaneamente l'access time e status change time di un file, quale dei seguenti comandi è corretto?",
@@ -2259,7 +2359,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando `stat` visualizza tutti i timestamp del file, inclusi access time (atime) e change time (ctime), insieme ad altri metadati dettagliati, mentre le opzioni di `ls` mostrano solo selezioni specifiche di date.",
-    "hint": "Identifica lo strumento che fornisce un report completo sullo stato del file nel file system."
+    "hint": "Identifica lo strumento che fornisce un report completo sullo stato del file nel file system.",
+    "id": "f8815dfb-183c-46d1-857c-78424df2209a"
   },
   {
     "question": "103. Consideri  il seguente frammento  di codice\n<pre>int *ptr = malloc(sizeof(int));\nptr = ptr+1;</pre>\nassumendo la malloc assegni a ptr la locazione di memoria 0x55c2b1268420 cosa contiene ptr dopo l’incremento?",
@@ -2281,7 +2382,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'aritmetica dei puntatori C, l'incremento scala secondo la dimensione del tipo: poiché un `int` occupa tipicamente 4 byte, `ptr+1` aggiunge 4 all'indirizzo base 0x...20, risultando in 0x...24.",
-    "hint": "Considera che il compilatore moltiplica l'offset per la dimensione del tipo puntato."
+    "hint": "Considera che il compilatore moltiplica l'offset per la dimensione del tipo puntato.",
+    "id": "eef2066f-7146-4bf1-9b87-96c4322f30ae"
   },
   {
     "question": "104. Che cosa si intende per sudoer nel gergo Linux?",
@@ -2303,7 +2405,8 @@
     "image": "",
     "code": "",
     "explanation": "Un sudoer è un utente specifico autorizzato ad usare `sudo`, configurato nel file `/etc/sudoers` o appartenente al gruppo sudo, distinto quindi dal gruppo stesso o da comandi di aggiunta.",
-    "hint": "Il termine indica un soggetto (utente) con privilegi specifici, non un'entità di gruppo."
+    "hint": "Il termine indica un soggetto (utente) con privilegi specifici, non un'entità di gruppo.",
+    "id": "d3f3aa02-f7a4-4990-8ce9-f2ece30fa25a"
   },
   {
     "question": "105. Assumiamo che quando viene creata una directory i suoi permessi di accesso sono 0644.\nQuale sarà la umask?",
@@ -2325,7 +2428,8 @@
     "image": "",
     "code": "",
     "explanation": "La umask si ottiene sottraendo i permessi effettivi (0644) dai permessi base massimi per directory (0777): 0777 - 0644 = 0133 in notazione ottale.",
-    "hint": "Calcola la differenza tra i permessi massimi predefiniti per directory e quelli osservati."
+    "hint": "Calcola la differenza tra i permessi massimi predefiniti per directory e quelli osservati.",
+    "id": "5f120e40-1120-4e6c-8d6a-855712322791"
   },
   {
     "question": "106. Se una directory ha i permessi di accesso settati come 0222, quali operazioni è possibile fare su di essa?",
@@ -2347,7 +2451,8 @@
     "image": "",
     "code": "",
     "explanation": "I permessi 0222 concedono solo scrittura, ma per accedere a una directory, crearvi file o elencarne il contenuto è indispensabile il permesso di esecuzione (x), che qui manca completamente.",
-    "hint": "Verifica quale permesso è strettamente necessario per attraversare una directory indipendentemente dalla scrittura."
+    "hint": "Verifica quale permesso è strettamente necessario per attraversare una directory indipendentemente dalla scrittura.",
+    "id": "ed714d31-1bb9-468b-9b39-789d59c9cdb9"
   },
   {
     "question": "107. Assumete di voler visualizzare il numero di inode di un file, quale dei seguenti comandi è più corretto usare?",
@@ -2369,7 +2474,8 @@
     "image": "",
     "code": "",
     "explanation": "L'opzione -i di ls mostra l'inode number di ogni file. L'opzione -1 (numero uno) forza l'output su una singola colonna, ma è il flag -i che visualizza l'identificativo dell'inode.",
-    "hint": "Cerca il flag che specificamente mostra l'identificativo del nodo indice nei file system Unix."
+    "hint": "Cerca il flag che specificamente mostra l'identificativo del nodo indice nei file system Unix.",
+    "id": "bba41385-1f7c-4704-a79e-b1d7ba0da837"
   },
   {
     "question": "108. Quando si esegue il comando ls -l viene mostrato, come prima informazione, il totale (vedi figura, ma non sul bot :p)\nQuale è il significato di questo campo?",
@@ -2391,7 +2497,8 @@
     "image": "",
     "code": "",
     "explanation": "Il valore 'total' mostrato da ls -l rappresenta il numero totale di blocchi disco (tipicamente da 1024 byte) occupati dai file elencati nella directory, non il numero di file o sottodirectory.",
-    "hint": "Rifletti su quale unità di misura il filesystem utilizza per allocare lo spazio fisico su disco."
+    "hint": "Rifletti su quale unità di misura il filesystem utilizza per allocare lo spazio fisico su disco.",
+    "id": "fb9f372c-88ef-47df-a227-da630e550c0c"
   },
   {
     "question": "109. Si consideri il seguente frammento di codice:\n<pre>\nint num = 5;\nint *numPtr;\nnumPtr = &num;\n*numPtr = 10;\n</pre>\nDopo la sua esecuzione, quale sara' il valore contenuto il num ?",
@@ -2413,7 +2520,8 @@
     "image": "",
     "code": "",
     "explanation": "Il puntatore numPtr punta alla variabile num, e l'operazione *numPtr = 10 dereferenzia il puntatore scrivendo il valore 10 nella memoria puntata, sovrascrivendo il valore precedente 5.",
-    "hint": "Segui le operazioni del puntatore passo dopo passo: cosa succede quando dereferenzi e assegni un nuovo valore?"
+    "hint": "Segui le operazioni del puntatore passo dopo passo: cosa succede quando dereferenzi e assegni un nuovo valore?",
+    "id": "ed734e1b-f7ea-4279-bfe2-b92f267a144a"
   },
   {
     "question": "110. Si consideri il seguente frammento di codice:\n<pre>\nint n= 2;\nint r= 2*(n++); // r = 2 * 2, n = 3\nint r1= 2*(++n); // n = 3 + 1, r1 = 2 * 4\n</pre>\nQuale delle seguenti espressioni sarà vera (true) una volta eseguito il codice?",
@@ -2435,7 +2543,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'espressione con n++ (post-incremento), n viene usato (valore 2) e poi incrementato a 3, quindi r=4. Con ++n (pre-incremento), n passa da 3 a 4 e poi viene usato, quindi r1=8. Di conseguenza r < r1.",
-    "hint": "Ricorda la differenza tra quando avviene l'incremento nell'operatore post-incremento rispetto al pre-incremento."
+    "hint": "Ricorda la differenza tra quando avviene l'incremento nell'operatore post-incremento rispetto al pre-incremento.",
+    "id": "3f1fde15-4b46-43ce-9649-1c648715eb66"
   },
   {
     "question": "112. Si consideri il comando\n<code>gcc -c file.c -o file.o</code>\nQuali delle seguenti affermazioni perché falsa?",
@@ -2457,7 +2566,8 @@
     "image": "",
     "code": "",
     "explanation": "Il flag -c di gcc indica di compilare e assemblare il codice sorgente in un file oggetto (.o) senza eseguire il linking. Per produrre un eseguibile è necessario il passaggio di linking che unisce i file oggetto e le librerie.",
-    "hint": "A quale fase della compilazione si ferma il flag -c?"
+    "hint": "A quale fase della compilazione si ferma il flag -c?",
+    "id": "e51b5aae-bf3c-4075-8d57-83193156fd64"
   },
   {
     "question": "113. Cosa produce il seguente comando?\n<code>gcc file.o file2.o file3.o</code>",
@@ -2479,7 +2589,8 @@
     "image": "",
     "code": "",
     "explanation": "Quando gcc riceve file oggetto (.o) senza l'opzione -c, esegue la fase di linking. Se non viene specificato il nome dell'output con -o, l'eseguibile prende il nome predefinito storico \"a.out\".",
-    "hint": "Ricorda il nome predefinito dell'eseguibile quando non si usa l'opzione -o."
+    "hint": "Ricorda il nome predefinito dell'eseguibile quando non si usa l'opzione -o.",
+    "id": "00d9f882-8484-4dff-83af-92cda0d6124f"
   },
   {
     "question": "114. Si consideri il seguente frammento di codice. Cosa fa una volta eseguito?\n<pre>\nscanf(\"%d\",&num);\nwhile(num!=0); {\n    printf(\"%d\\n\",num);\n    scanf(\"%d\",&num);\n}\n</pre>",
@@ -2501,7 +2612,8 @@
     "image": "",
     "code": "",
     "explanation": "Il punto e virgola dopo la condizione while crea un ciclo con corpo vuoto; se num è diverso da zero, la condizione rimane sempre vera causando un loop infinito, mentre il blocco successivo non viene mai eseguito.",
-    "hint": "Attenzione alla presenza del punto e virgola subito dopo la condizione del while: cosa diventa il corpo del ciclo?"
+    "hint": "Attenzione alla presenza del punto e virgola subito dopo la condizione del while: cosa diventa il corpo del ciclo?",
+    "id": "45ebcdd9-fccf-488c-a21a-7534573550dc"
   },
   {
     "question": "115. Cosa produce il seguente comando come risultato?\n<code>cat /etc/group | grep nomeutente</code>",
@@ -2523,7 +2635,8 @@
     "image": "",
     "code": "",
     "explanation": "Il file /etc/group associa utenti ai gruppi nel formato nome:password:GID:elenco_utenti; grep filtra le righe contenenti la stringa, mostrando sia il gruppo omonimo (se esiste) sia i gruppi in cui l'utente è elencato come membro.",
-    "hint": "In quali campi del file /etc/group può apparire il nome di un utente?"
+    "hint": "In quali campi del file /etc/group può apparire il nome di un utente?",
+    "id": "67c0b712-2026-42f7-a3be-4d639c41346f"
   },
   {
     "question": "116. Nel caso in cui la system call <code>pid_t waitpid(pid_t pid, int *status, int options);</code>\nsia invocata con valore di pid uguale a -1. Quale è il suo comportamento?",
@@ -2545,7 +2658,8 @@
     "image": "",
     "code": "",
     "explanation": "Il valore -1 per il parametro pid in waitpid è un valore speciale che indica al sistema di attendere la terminazione di qualsiasi processo figlio, senza distinzioni di gruppo o PID specifico.",
-    "hint": "Il valore -1 funge da \"jolly\" per indicare \"qualunque\" processo figlio."
+    "hint": "Il valore -1 funge da \"jolly\" per indicare \"qualunque\" processo figlio.",
+    "id": "18f4fdf4-a916-4743-8130-90a6f6b9fd96"
   },
   {
     "question": "117. Quali dei seguenti comandi permette di creare un intero path di directory?",
@@ -2567,7 +2681,8 @@
     "image": "",
     "code": "",
     "explanation": "L'opzione -p (o --parents) istruisce mkdir a creare automaticamente tutte le directory intermedie necessarie nel percorso specificato, anche se non esistono ancora.",
-    "hint": "Quale opzione permette di creare ricorsivamente le directory padre mancanti in un percorso annidato?"
+    "hint": "Quale opzione permette di creare ricorsivamente le directory padre mancanti in un percorso annidato?",
+    "id": "1929c727-fd8d-4bfb-a580-c1d892a6248b"
   },
   {
     "question": "118. Supponiamo di avere un file di nome filename e di creare un link a filename con il comando\n<code>ln filename link1</code>\nquale delle seguenti affermazioni è vera?",
@@ -2589,7 +2704,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando ln senza opzioni crea un hard link, che consiste in una nuova directory entry che punta allo stesso inode del file originale. Entrambi i nomi di file condividono quindi lo stesso inode e occupano gli stessi blocchi fisici su disco.",
-    "hint": "Pensa alla differenza tra hard link e symbolic link a livello di inode."
+    "hint": "Pensa alla differenza tra hard link e symbolic link a livello di inode.",
+    "id": "129cf89d-e58b-41e1-ab23-cb11159bb659"
   },
   {
     "question": "119. Quali dei seguenti comandi change dir usa un path assoluto? (# indica il prompt di sistema)",
@@ -2611,7 +2727,8 @@
     "image": "",
     "code": "",
     "explanation": "Il carattere ~ (tilde) viene espanso dalla shell nel percorso assoluto della home directory dell'utente, rendendo il path assoluto. Le opzioni A e B utilizzano invece path relativi che dipendono dalla directory corrente.",
-    "hint": "Un path assoluto inizia sempre dalla root / o da una variabile che la shell espande in un path assoluto."
+    "hint": "Un path assoluto inizia sempre dalla root / o da una variabile che la shell espande in un path assoluto.",
+    "id": "961f3df3-110d-4224-9e3a-360700b18ade"
   },
   {
     "question": "120. Quali sono i permessi MINIMI che devono essere assegnati ad una directory affinchperché sia possibile:\n- leggere il contenuto della directory inclusi gli attributi dei file;\n- impostare la directory come cwd;\n- attraversare la directory.",
@@ -2633,7 +2750,8 @@
     "image": "",
     "code": "",
     "explanation": "Il permesso 'r' consente di leggere il contenuto della directory (ls), mentre 'x' consente di attraversarla e di impostarla come directory di lavoro corrente (cd). Il permesso 'w' non è necessario per queste operazioni specifiche.",
-    "hint": "Ricorda che per 'entrare' in una directory serve il permesso di esecuzione, non solo quello di lettura."
+    "hint": "Ricorda che per 'entrare' in una directory serve il permesso di esecuzione, non solo quello di lettura.",
+    "id": "e5d6a32a-66ca-451f-a6ec-0878ddf76ad1"
   },
   {
     "question": "121. Supponiamo di avere il seguente makefile (memorizzato in un file di nome makefile):\n<pre>\nmerge_sorted_lists: merge_sorted_lists.c\n        gcc -Wall -Wextra -O3 merge_sorted_lists.c \\\n        -o merge_sorted_lists\nsort_file_int: sort_file_int.c\n        gcc -Wall -Wextra -O3 sort_file_int.c \\\n        -o sort_file_int\n.PHONY: clean\nclean:\n        rm -f *.o merge_sorted_lists\n</pre>\nIn quali condizioni viene eseguito il target sort_file_int? ",
@@ -2655,7 +2773,8 @@
     "image": "",
     "code": "",
     "explanation": "Make confronta i timestamp tra il target (sort_file_int) e le sue dipendenze (sort_file_int.c). Il target viene ricompilato solo se il file sorgente è più recente dell'eseguibile esistente, seguendo la logica di build incrementale.",
-    "hint": "Make esegue i comandi solo quando le dipendenze sono più recenti del target da generare."
+    "hint": "Make esegue i comandi solo quando le dipendenze sono più recenti del target da generare.",
+    "id": "a826a429-178c-42b3-b4eb-e2db1ec398e8"
   },
   {
     "question": "122. SI consideri il seguente frammento di codice:\n<pre>\nint x, y, nread;\nfloat xx, yy;\nnread=scanf(\"%d %d\",&x, &y);\nprintf(\"x=%d, y=%d, nread=%d \\n\",x,y,nread);\nprintf(\"xx=%f, yy=%f, nread=%d \\n\",xx,yy,nread);\nnread=scanf(\"%f %f\",&xx, &yy);\n</pre>\nAssumiamo che, in fase di esecuzione, la prima scanf legge su stdin la sequenza\n<b>1 w</b>\nQuale sara' il valore di nread dopo l'esecuzione della seconda scanf?",
@@ -2677,7 +2796,8 @@
     "image": "",
     "code": "",
     "explanation": "Dopo la prima scanf, il carattere 'w' rimane nel buffer di input non consumato. La seconda scanf tenta di leggere un float ma incontra 'w', che non è un formato valido per %f, causando il fallimento immediato della funzione con ritorno 0.",
-    "hint": "Considera cosa rimane nel buffer di input dopo che la prima scanf si ferma sul carattere non valido 'w'."
+    "hint": "Considera cosa rimane nel buffer di input dopo che la prima scanf si ferma sul carattere non valido 'w'.",
+    "id": "26447e9e-99b9-4ada-9e57-d5c7ba272762"
   },
   {
     "question": "123. Si consideri il seguente frammento di codice\n<pre>\n 1: #include <stdio.h>\n 2:  ....\n 3: \n 4:  char str [80];\n 5:  float f;\n 6:  FILE * pFile;\n 7:\n 8:  pFile = fopen (\"myfile.txt\",\"w+\");\n 9:  fprintf (pFile, \"%f %s\\n\", 3.1416, \"PI\");\n 10: close(pFile);\n 11: rewind (pFile);\n 12: fscanf (pFile, \"%f\", &f);\n 13: fscanf (pFile, \"%s\", str);\n</pre>\nLe chiamate di funzione a riga 10, 11, 12 e 13 vengono eseguite tutte?",
@@ -2699,7 +2819,8 @@
     "image": "",
     "code": "",
     "explanation": "Il codice apre correttamente il file con fopen in modalità w+ (lettura e scrittura), scrive con fprintf, chiude con close, riavvolge con rewind e legge con le due fscanf. La chiamata a close(pFile) invece di fclose(pFile) è tecnicamente scorretta in C standard, ma in molti compilatori funziona comunque, permettendo l'esecuzione di tutte le righe successive.",
-    "hint": "Attenzione alla differenza tra close() e fclose() in C: la prima è per file descriptor (syscall), la seconda per FILE* (libreria stdio)."
+    "hint": "Attenzione alla differenza tra close() e fclose() in C: la prima è per file descriptor (syscall), la seconda per FILE* (libreria stdio).",
+    "id": "98208d41-a387-44ed-813c-fdfbc5a1640f"
   },
   {
     "question": "124. Cosa fa il seguente segmento di codice?\n<pre>\nscanf(“%d”,&num); \ndo {\nprintf(“%d\\n”,num); \nscanf(“%d”,&num);\n} while(num!=0);\n</pre>",
@@ -2721,7 +2842,8 @@
     "image": "",
     "code": "",
     "explanation": "Il ciclo do-while esegue il corpo almeno una volta prima di verificare la condizione, quindi il primo valore di num viene stampato indipendentemente dal suo valore.",
-    "hint": "Ricorda che in un do-while la condizione viene valutata dopo l'esecuzione del blocco, non prima."
+    "hint": "Ricorda che in un do-while la condizione viene valutata dopo l'esecuzione del blocco, non prima.",
+    "id": "53cc7254-635f-48f4-860b-139a6e0e4d34"
   },
   {
     "question": "125. Supponiamo di aver inizializzato un puntatore ad una variabile intera in questo modo\n<pre>\nint num=5, *ptrnum;\nptrnum=&num;\n</pre>",
@@ -2743,7 +2865,8 @@
     "image": "",
     "code": "",
     "explanation": "L'operatore * dereferenzia il puntatore, permettendo di modificare il valore della variabile puntata (num). Le altre opzioni tentano di assegnare un indirizzo numerico al puntatore stesso.",
-    "hint": "Distingui tra modificare l'indirizzo contenuto nel puntatore (ptrnum) e modificare il valore della cella di memoria puntata (*ptrnum)."
+    "hint": "Distingui tra modificare l'indirizzo contenuto nel puntatore (ptrnum) e modificare il valore della cella di memoria puntata (*ptrnum).",
+    "id": "4ba73135-8f80-4207-983d-bed3d1a306f6"
   },
   {
     "question": "126. Quale dei seguenti dichiarazioni di variabile perché non valida, generando quindi un errore di compilazione?",
@@ -2765,7 +2888,8 @@
     "image": "",
     "code": "",
     "explanation": "`goto` è una parola chiave riservata del linguaggio C per il salto incondizionato, quindi non può essere utilizzata come nome di variabile. C è case-sensitive, quindi `goTo` è valido.",
-    "hint": "Verifica se l'identificatore coincide con parole chiave riservate del linguaggio, ricordando che C distingue tra maiuscole e minuscole."
+    "hint": "Verifica se l'identificatore coincide con parole chiave riservate del linguaggio, ricordando che C distingue tra maiuscole e minuscole.",
+    "id": "dd2c0032-2e06-4c10-a8be-62bcb4391527"
   },
   {
     "question": "127. Si consideri il seguente frammento di codice\n<pre>\nint scoreCount, a;        \nfor(scoreCount=0; scanf(\"%d\",&a)==1; scoreCount++);\n</pre>\nSe la sequenza letta in input dall scanf è\n<pre>\n1 3 7 2 12 w\n</pre>\nQuale valore assumerà scoreCount al termine del ciclo?",
@@ -2787,7 +2911,8 @@
     "image": "",
     "code": "",
     "explanation": "La scanf restituisce il numero di elementi letti con successo (1 per ogni intero valido) e termina con 0 quando incontra 'w'. Il ciclo for incrementa scoreCount ad ogni lettura valida, quindi dopo 5 interi il valore è 5.",
-    "hint": "Conta quanti interi vengono letti prima che scanf incontri un carattere non numerico e ricorda cosa restituisce scanf in caso di mismatch."
+    "hint": "Conta quanti interi vengono letti prima che scanf incontri un carattere non numerico e ricorda cosa restituisce scanf in caso di mismatch.",
+    "id": "b0e81c79-e488-4873-8a8d-957120c57434"
   },
   {
     "question": "128. Si consideri il frammento di codice\n<pre>\n  int K=10, c=0, p=1;\n  while (++K > 10)\n    c=c+1;\n  p--;\n</pre>\nche valore conterrà la variabile K al termine dell'esecuzione del frammento di codice?",
@@ -2809,7 +2934,8 @@
     "image": "",
     "code": "",
     "explanation": "L'operatore ++K incrementa K prima del confronto. Partendo da 10, diventa 11 (vero), poi 12 (vero) e così via all'infinito poiché non c'è istruzione di uscita nel corpo del while (p-- è fuori dal ciclo per mancanza di parentesi graffe).",
-    "hint": "Attenzione all'operatore di pre-incremento e verifica quali istruzioni sono effettivamente incluse nel corpo del while."
+    "hint": "Attenzione all'operatore di pre-incremento e verifica quali istruzioni sono effettivamente incluse nel corpo del while.",
+    "id": "a1d169f1-f7ae-4732-9bc3-95ef6ca91051"
   },
   {
     "question": "129. In quale situazione le system call dup(2) e dup2(2) hanno lo stesso comportamento?",
@@ -2831,7 +2957,8 @@
     "image": "",
     "code": "",
     "explanation": "dup() duplica un file descriptor assegnando automaticamente il numero più piccolo disponibile. dup2() permette di specificare il target, ma se si sceglie esplicitamente il descrittore libero col numero minimo, il comportamento equivale a dup().",
-    "hint": "Confronta il comportamento di dup() (scelta automatica del minimo disponibile) con dup2() quando il nuovo descrittore specificato coincide con quel minimo."
+    "hint": "Confronta il comportamento di dup() (scelta automatica del minimo disponibile) con dup2() quando il nuovo descrittore specificato coincide con quel minimo.",
+    "id": "1ba23ddd-3e51-404c-a37a-071eb5e16aa6"
   },
   {
     "question": "130. Quali dei seguenti attributi di un processo non perché preservato a seguito di una chiamata alla funzione di libreria execve()?",
@@ -2853,7 +2980,8 @@
     "image": "",
     "code": "",
     "explanation": "execve() sostituisce l'immagine del processo, distruggendo lo spazio degli indirizzi virtuale e quindi i memory mapping precedenti, mentre mantiene attributi come i group ID e i file lock (record lock).",
-    "hint": "Pensa a cosa succede allo spazio di indirizzamento del processo quando viene caricato un nuovo programma."
+    "hint": "Pensa a cosa succede allo spazio di indirizzamento del processo quando viene caricato un nuovo programma.",
+    "id": "69bc85ec-b430-40b9-a57e-a8c25af86c35"
   },
   {
     "question": "131. Quale attributi di un processo non sono ereditati dal processo figlio?",
@@ -2875,7 +3003,8 @@
     "image": "",
     "code": "",
     "explanation": "Dopo una fork(), il figlio eredita descrittori file, directory di lavoro e ID utente, ma non eredita timer, lock su file o memoria, né i contatori di utilizzo risorse che vengono azzerati.",
-    "hint": "Distingui tra attributi legati all'ambiente di esecuzione (eredita) e contatori/stati specifici del processo padre (non eredita)."
+    "hint": "Distingui tra attributi legati all'ambiente di esecuzione (eredita) e contatori/stati specifici del processo padre (non eredita).",
+    "id": "03d1bc92-11bf-4f34-be4b-f3374100d98b"
   },
   {
     "question": "132. Si consideri il seguente frammento di codice\n<pre>\nchar* file = argv[1];\n int fd;\n struct flock lock;\n fd = open (file, O_WRONLY);\n memset (&lock, 0, sizeof(lock));\n lock.l_type = F_WRLCK; \n fcntl (fd, F_GETLK, &lock);\n</pre>\nQuale è il comportamento della system call fcntl?",
@@ -2897,7 +3026,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando F_GETLK di fcntl verifica se il lock richiesto (F_WRLCK) è in conflitto con lock esistenti. Se nessun processo detiene un lock che bloccherebbe la richiesta, la struttura viene modificata impostando l_type a F_UNLCK (o F_UNLOCK nel contesto della domanda), indicando che il file è effettivamente sbloccato per quel tipo di accesso.",
-    "hint": "Distingui tra F_GETLK (verifica stato) e F_SETLK (applicazione effettiva del lock)."
+    "hint": "Distingui tra F_GETLK (verifica stato) e F_SETLK (applicazione effettiva del lock).",
+    "id": "1307a8fd-b71c-422d-9121-38c3704964a7"
   },
   {
     "question": "133. Un processo puo' allocare memoria solo nell'heap?",
@@ -2919,7 +3049,8 @@
     "image": "",
     "code": "",
     "explanation": "Oltre all'heap tramite malloc/calloc, un processo può allocare memoria nello stack usando alloca(3), che riserva spazio nello stack frame corrente. Questa memoria viene automaticamente rilasciata al ritorno della funzione, a differenza dell'heap che richiede deallocazione esplicita.",
-    "hint": "Considera dove risiede fisicamente la memoria allocata da alloca rispetto a quella di malloc."
+    "hint": "Considera dove risiede fisicamente la memoria allocata da alloca rispetto a quella di malloc.",
+    "id": "2fd2d95b-fad0-4766-9b4d-036629dd26f1"
   },
   {
     "question": "134. Supponiamo di aver utilizzato, nella nostra funzione C, la funzione di libreria alloca(3) per allocare un'area di memoria.\nÈ necessario liberare tale area di memoria mediante una free(3) prima della terminazione della funzione?",
@@ -2941,7 +3072,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione alloca(3) alloca memoria direttamente nello stack frame della funzione chiamante, non nell'heap. Quando la funzione termina, lo stack frame viene rimosso automaticamente dal sistema, liberando la memoria senza necessità di chiamare free(3), che è invece specifica per la gestione dell'heap.",
-    "hint": "Ricorda il ciclo di vita automatico dello stack rispetto alla gestione manuale dell'heap."
+    "hint": "Ricorda il ciclo di vita automatico dello stack rispetto alla gestione manuale dell'heap.",
+    "id": "cf5cb763-5def-4655-9b6c-394aa6f6bd7d"
   },
   {
     "question": "135. Si consideri la variabile globale errno.\nSe una system call termina con successo, e immediatamente dopo la sua terminazione ispezioniamo il contenuto di errno, cosa otteniamo?",
@@ -2963,7 +3095,8 @@
     "image": "",
     "code": "",
     "explanation": "La variabile errno non viene azzerata dalle system call che terminano con successo; essa conserva il valore dell'ultimo errore verificatosi in precedenza. Pertanto, ispezionarla dopo una chiamata riuscita restituisce il codice di errore di una precedente operazione fallita, non zero.",
-    "hint": "Pensa a errno come a un indicatore di errore persistente, non come valore di ritorno della chiamata corrente."
+    "hint": "Pensa a errno come a un indicatore di errore persistente, non come valore di ritorno della chiamata corrente.",
+    "id": "88c9d46c-f90f-49a6-babd-072de4dc7357"
   },
   {
     "question": "136. Si consideri la system call\n<code>\nint open(const char *pathname, int flags);\n</code>\nnel caso venga invocata con il flag impostato a\n<code>\nO_CREAT | O_EXCL | O_WRONLY\n</code>\nQuale è il comportamento atteso?",
@@ -2985,7 +3118,8 @@
     "image": "",
     "code": "",
     "explanation": "La combinazione O_CREAT | O_EXCL garantisce la creazione atomica del file: se il file esiste già, open fallisce con errore EEXIST, prevenendo race condition. O_WRONLY limita l'accesso alla sola scrittura, realizzando il pattern 'crea se non esiste, altrimenti errore'.",
-    "hint": "Considera il significato di 'EXCL' (esclusivo) nel contesto della creazione di file."
+    "hint": "Considera il significato di 'EXCL' (esclusivo) nel contesto della creazione di file.",
+    "id": "bbd60c15-995c-4a39-8f08-646dd95771f4"
   },
   {
     "question": "137. Assumete di voler visualizzare il numero di inode di un file, quale dei seguenti comandi non produce l'output desiderato?",
@@ -3007,7 +3141,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando `stat -f` visualizza le statistiche del filesystem (tipo, blocchi liberi, inode totali) anziché i metadati del file specificato. Per ottenere il numero di inode di un singolo file è necessario utilizzare `stat` senza flag o `ls -i`, che leggono gli attributi dell'inode del file.",
-    "hint": "Considera la differenza tra le informazioni di un filesystem e quelle di un singolo file nel contesto del comando stat."
+    "hint": "Considera la differenza tra le informazioni di un filesystem e quelle di un singolo file nel contesto del comando stat.",
+    "id": "5c4c533e-b058-43f1-a118-4bbb22258c80"
   },
   {
     "question": "138. Supponiamo di avere un file nomefile memorizzato nel nostro filesystem.\nQuale perché il risultato del comando touch nomefile?",
@@ -3029,7 +3164,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando touch, quando il file esiste già, aggiorna solamente i timestamp di ultimo accesso (atime) e ultima modifica (mtime) all'istante corrente senza alterarne il contenuto. Non sostituisce il file e non ne modifica il nome.",
-    "hint": "Ricorda che touch serve principalmente per manipolare i timestamp, non per creare o sovrascrivere file esistenti."
+    "hint": "Ricorda che touch serve principalmente per manipolare i timestamp, non per creare o sovrascrivere file esistenti.",
+    "id": "d9048a2e-e67f-45bd-8ccb-9f2c30bf5657"
   },
   {
     "question": "139. Si consideri un file contenente un programma in linguaggio C. Si assuma che è stata inserita la direttiva #include \"stdio.h\" . perché la compilazione potrebbe generare errori?",
@@ -3051,7 +3187,8 @@
     "image": "",
     "code": "",
     "explanation": "La direttiva #include con doppi apici (\"\") istruisce il preprocessore a cercare il file prima nella directory corrente, mentre le parentesi angolari (<>) cercano direttamente nelle directory di sistema. Poiché stdio.h risiede tipicamente in /usr/include, l'uso delle virgolette potrebbe fallire se non viene trovato un file locale omonimo.",
-    "hint": "Pensa alla differenza tra il percorso di ricerca per include con virgolette e quello con parentesi angolari."
+    "hint": "Pensa alla differenza tra il percorso di ricerca per include con virgolette e quello con parentesi angolari.",
+    "id": "21644fee-28a9-431b-9bb1-a2bede137379"
   },
   {
     "question": "140. Dopo aver esegguito il comando\n<code>cpp helloworld.c > hw\n</code>\ncosa conterrà il file hw?",
@@ -3073,7 +3210,8 @@
     "image": "",
     "code": "",
     "explanation": "Il comando cpp (C PreProcessor) esegue la fase di pre-elaborazione, espandendo le direttive #include, #define e le macro. L'output è il codice sorgente espanso (translation unit), privo di direttive preprocessor, che costituisce l'input per la fase di compilazione vera e propria.",
-    "hint": "Ricorda che cpp è il preprocessore C e considera quale sia il suo output rispetto al codice sorgente originale."
+    "hint": "Ricorda che cpp è il preprocessore C e considera quale sia il suo output rispetto al codice sorgente originale.",
+    "id": "85d72237-dab9-49a3-b8fe-a4c3a7ab75d9"
   },
   {
     "question": "141. Quale perché il modo corretto per controllare che due stringhe str1 e str2 sono uguali?",
@@ -3095,7 +3233,8 @@
     "image": "",
     "code": "",
     "explanation": "In C, le stringhe sono array di caratteri accessibili tramite puntatori; l'operatore == confronta gli indirizzi di memoria anziché il contenuto. La funzione strcmp() confronta lessicograficamente le stringhe e restituisce 0 esattamente quando sono identiche, valori positivi o negativi altrimenti.",
-    "hint": "Ricorda che strcmp restituisce 0 quando le stringhe sono uguali, non un valore booleano vero/falso intuitivo."
+    "hint": "Ricorda che strcmp restituisce 0 quando le stringhe sono uguali, non un valore booleano vero/falso intuitivo.",
+    "id": "aeb73b24-9d9c-4455-8ee2-b221b993b3ea"
   },
   {
     "question": "142. Si consideri il seguente frammento di codice\n<pre>\nint i, n1=10, n2=100;\t\nfor (i=0;((i<n1)&&(i<n2));i++)\n    m2[i]=m1[i];\n</pre>\nquando termina il ciclo for?",
@@ -3117,7 +3256,8 @@
     "image": "",
     "code": "",
     "explanation": "La condizione del ciclo utilizza l'operatore logico AND (&&), che richiede che entrambe le condizioni siano vere. Poiché n1 (10) è minore di n2 (100), la condizione (i<n1) diventa falsa per prima quando i raggiunge 10, causando l'uscita dal ciclo.",
-    "hint": "Considera quale delle due condizioni diventa falsa prima quando i incrementa, dato che n1 è minore di n2."
+    "hint": "Considera quale delle due condizioni diventa falsa prima quando i incrementa, dato che n1 è minore di n2.",
+    "id": "ba98d909-e442-40aa-8809-51d8dd52fb2e"
   },
   {
     "question": "143. Supponiamo di eseguire  separatamente i seguenti frammenti di codice\n<b>Frammento_1</b>\n<pre>close(2);\nif (fopen(\".\",\"r\")) {\n           perror(\"main\");\n}</pre>\n<b>Frammento_2</b>\n<pre>close(2);\nif (fopen(\".\",\"r\")) {\n               printf(\"main: %s \\n\", strerror(errno));\n}</pre>\nQuale delle seguenti affermazioni è vera?",
@@ -3139,7 +3279,8 @@
     "image": "",
     "code": "",
     "explanation": "La funzione `perror` scrive sullo standard error (stderr, fd 2), che è stato chiuso da `close(2)`. Pertanto Frammento_1 non può produrre output, mentre Frammento_2 usa `printf` che scrive su stdout (fd 1) e funziona correttamente.",
-    "hint": "Ricorda quale file descriptor è associato allo stderr e quale funzione lo utilizza per l'output."
+    "hint": "Ricorda quale file descriptor è associato allo stderr e quale funzione lo utilizza per l'output.",
+    "id": "2f36f339-8a45-47fb-a678-5fa26839b2a0"
   },
   {
     "question": "51. Si consideri  il seguente frammento  di codice  (i numeri a lato sono i numeri di riga delle istruzioni)(uscita 2 volte)\n<pre>1.    Pthread_t tid;\n2.    pthread_create(&tid, ... )\n3.    pthread_create(&tid, ...)\n4.    pthread_join(tid, ...);\n5.    printf(\"joined\");</pre>\nquale  delle seguenti affermazioni è vera?",
@@ -3161,7 +3302,8 @@
     "image": "",
     "code": "",
     "explanation": "La variabile `tid` viene sovrascritta dalla seconda chiamata `pthread_create`, quindi `pthread_join` attende solo il thread creato alla riga 3. Il primo thread non viene joinato e la sua terminazione non influisce sulla stampa.",
-    "hint": "Osserva attentamente cosa succede alla variabile `tid` tra la prima e la seconda chiamata di creazione."
+    "hint": "Osserva attentamente cosa succede alla variabile `tid` tra la prima e la seconda chiamata di creazione.",
+    "id": "002d1645-be74-418e-9978-16f89688c8d5"
   },
   {
     "question": "144. Supponiamo di avere una directory\n<code>/home/dir</code>\ncreate da root con diritti di accesso\n<code>1777/drwxrwxrwt</code>\ned al suo interno il file filename, creato da root, con diritti di accesso\n<code>0770/-rwxrwx---</code>\nSupponiamo quindi di eseguire il comando\n<code>rm /home/dir/filename</code>\neseguito come utente normale (non root). Quale delle seguneti affermazioni è corretta?\n\n Scegli un'alternativa:",
@@ -3183,7 +3325,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo sticky bit (1xxx) su una directory restringe la cancellazione dei file al solo proprietario del file, proprietario della directory o root. Nonostante i permessi 777 sulla directory, un utente normale non può cancellare un file di root quando lo sticky bit è attivo.",
-    "hint": "Ricorda il comportamento speciale dello sticky bit quando applicato alle directory."
+    "hint": "Ricorda il comportamento speciale dello sticky bit quando applicato alle directory.",
+    "id": "6c0bbe89-9567-4b7b-912f-3f8f52bf4284"
   },
   {
     "question": "145. Si supponga di avere un file di testo (filein) contenente 1000 caratteri e di voler copiare in un altro file (fileout) 100 caratteri a partire dal decimo. Quale di questi comandi non produce il risultato atteso?",
@@ -3205,7 +3348,8 @@
     "image": "",
     "code": "",
     "explanation": "Il parametro `seek` si applica al file di output (of), posizionando il puntatore di scrittura, mentre `skip` si applica al file di input (if). Per saltare i primi 10 caratteri dell'input deve essere usato `skip`, non `seek`.",
-    "hint": "Distingui tra il parametro che agisce sul file di input e quello che agisce sul file di output nel comando dd."
+    "hint": "Distingui tra il parametro che agisce sul file di input e quello che agisce sul file di output nel comando dd.",
+    "id": "e3160ec5-195c-4b14-bf2a-4e22bb3a9e99"
   },
   {
     "question": "146. Supponendo di essere “loggato” in una shell come utente1. Quali dei seguenti è un path assoluto?",
@@ -3227,7 +3371,8 @@
     "image": "",
     "code": "",
     "explanation": "Un path assoluto inizia dalla directory root (/). La tilde (~) viene espansa dalla shell nella home directory dell'utente corrente (utente1), trasformando ~/dir1 in un path assoluto come /home/utente1/dir1. L'opzione A è invece un path relativo alla directory corrente.",
-    "hint": "Pensa a come la shell interpreta il simbolo ~ rispetto alla directory root."
+    "hint": "Pensa a come la shell interpreta il simbolo ~ rispetto alla directory root.",
+    "id": "f6856ac0-c122-4d06-8587-6fe3f79d5e7f"
   },
   {
     "question": "147. Assumiamo di avere un file eseguibile il cui proprietario e' l'utente root ad esempio\n<code>-rwxr-xr-x 1 root root 60296 feb 22 2017 /bin/chmod</code>\n Affinche l'effective UID del processo cambi quando eseguito da un utente senza privilegi di root cosa bisogna fare?",
@@ -3253,7 +3398,8 @@
     "image": "",
     "code": "",
     "explanation": "Il bit Setuid (Set User ID) permette a un processo di assumere l'UID del proprietario del file eseguibile (root) piuttosto che quello dell'utente che lo lancia, modificando l'effective UID. Senza questo bit, il processo mantenerebbe i privilegi dell'utente chiamante.",
-    "hint": "Quale permesso speciale permette a un programma di 'prestare' la propria identità all'esecutore?"
+    "hint": "Quale permesso speciale permette a un programma di 'prestare' la propria identità all'esecutore?",
+    "id": "c0e16657-ef87-41a6-b3c8-246bdf320edb"
   },
   {
     "question": "148. Si supponga di eseguire, come utente sudoer, i seguenti comandi\n \n C1) sudo ls  /home\n C2) sudo su -c’ls /home’\n Quale affermazione e' corretta?",
@@ -3275,7 +3421,8 @@
     "image": "",
     "code": "",
     "explanation": "Entrambi i comandi producono lo stesso risultato: eseguono ls /home con privilegi di root. In C1, sudo esegue direttamente ls; in C2, sudo esegue su che a sua volta esegue ls, ma entrambi operano come root.",
-    "hint": "Analizza chi esegue effettivamente il comando ls in entrambi i casi e con quali privilegi."
+    "hint": "Analizza chi esegue effettivamente il comando ls in entrambi i casi e con quali privilegi.",
+    "id": "fe7d1569-f0c0-4567-aeb2-5165ff381e1a"
   },
   {
     "question": "149. Che cosa stampa il seguente frammento di codice: <code>\n \n void func1() {\n extern int myvar;\n void nestfunc1() {\n myvar = 0;\n }\n nestfunc1();\n myvar = 1;\n }\n \n \n int myvar = 8;\n void main(void) {\n func1();\n printf(\"myvar = %d\n\", myvar);\n }\n</code> ",
@@ -3297,7 +3444,8 @@
     "image": "",
     "code": "",
     "explanation": "La parola chiave extern dichiara che myvar si riferisce alla variabile globale definita fuori dalle funzioni. Durante l'esecuzione di func1, la variabile globale viene modificata prima a 0 (da nestfunc1) e poi a 1, quindi main() stampa 1.",
-    "hint": "La dichiarazione extern collega la variabile alla definizione globale; segui le modifiche al valore."
+    "hint": "La dichiarazione extern collega la variabile alla definizione globale; segui le modifiche al valore.",
+    "id": "90c06e26-6ddf-40fd-a6ea-4130671fd74b"
   },
   {
     "question": "150. Come si dichiara un puntatore a funzione myptr per una funzione che ritorna un int e richiede un int?",
@@ -3319,7 +3467,8 @@
     "image": "",
     "code": "",
     "explanation": "La sintassi int (*myptr)(int) dichiara myptr come puntatore a una funzione che accetta un argomento int e restituisce int. Le parentesi attorno a *myptr sono essenziali per distinguere il puntatore a funzione da una funzione che restituisce un puntatore.",
-    "hint": "Ricorda che l'asterisco deve essere raggruppato con il nome della variabile tra parentesi per definire correttamente il puntatore."
+    "hint": "Ricorda che l'asterisco deve essere raggruppato con il nome della variabile tra parentesi per definire correttamente il puntatore.",
+    "id": "29241661-3d6e-4679-9e47-888dd3d50a09"
   },
   {
     "question": "151. Che cosa stampa il seguente frammento di codice: \n <code> static int myvar;\n void func1() {\n myvar++;\n }\n void main(void) {\n func1();\n printf(\"myvar = %d\n\", myvar);\n }\n </code>",
@@ -3341,6 +3490,7 @@
     "image": "",
     "code": "",
     "explanation": "In C, le variabili globali dichiarate con static hanno linkage interno ma sono inizializzate a 0 di default se non specificato diversamente. Poiché func1() viene chiamata una sola volta in main(), myvar viene incrementata da 0 a 1 prima della printf.",
-    "hint": "Considera il valore di inizializzazione di default delle variabili globali statiche e quante volte viene eseguito l'incremento."
+    "hint": "Considera il valore di inizializzazione di default delle variabili globali statiche e quante volte viene eseguito l'incremento.",
+    "id": "8a12d9c7-3aa8-440b-959d-b1964431edff"
   }
 ]

@@ -5,6 +5,11 @@
   "items": {
     "type": "object",
     "properties": {
+      "id": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Identificatore pubblico immutabile della domanda."
+      },
       "question": {
         "type": "string",
         "description": "Il testo della domanda."
@@ -46,6 +51,6 @@
         "description": "Categoria o sezione tematica opzionale della domanda."
       }
     },
-    "required": ["question", "options", "correctIndex", "image", "code", "explanation", "hint"]
+    "required": ["id", "question", "options", "correctIndex", "image", "code", "explanation", "hint"]
   }
 }

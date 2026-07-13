@@ -23,7 +23,8 @@
     "image": "",
     "code": "",
     "explanation": "L'interaction framework di一类 definisce il ciclo interattivo che comprende: formulazione, esecuzione, valutazione, e articolazione-presentazione. L'articolazione riguarda come l'utente esprime le proprie intenzioni, mentre la presentazione riguarda come il sistema mostra i risultati.",
-    "hint": "Ricorda il ciclo completo: formulazione → esecuzione → valutazione → articolazione/presentazione."
+    "hint": "Ricorda il ciclo completo: formulazione → esecuzione → valutazione → articolazione/presentazione.",
+    "id": "e7cbde4a-ce36-4144-897e-851051aa3885"
   },
   {
     "question": "2) Qual èil significato dell’euristica visibilità dello stato del sistema?",
@@ -49,7 +50,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica di visibilità dello stato del sistema è la seconda delle 10 euristiche di Nielsen. Il sistema deve sempre comunicare all'utente cosa sta accadono, attraverso feedback appropriato entro un tempo ragionevole.",
-    "hint": "Pensa a cosa significa 'essere informati' in tempo reale durante un'operazione."
+    "hint": "Pensa a cosa significa 'essere informati' in tempo reale durante un'operazione.",
+    "id": "1316313a-e6c0-49a2-9f1e-4219f81ab3e1"
   },
   {
     "question": "3) Nell’ambito dell’informatica pervasiva si intende per ambient display:",
@@ -71,7 +73,8 @@
     "image": "",
     "code": "",
     "explanation": "L'ambient display è un concetto chiave dell'informatica pervasiva che sfrutta l'ambiente circostante (non solo schermi) per visualizzare informazioni digitali, integrando il mondo fisico con quello digitale.",
-    "hint": "Immagina informazioni proiettate o riflesse nell'ambiente, non solo su uno schermo."
+    "hint": "Immagina informazioni proiettate o riflesse nell'ambiente, non solo su uno schermo.",
+    "id": "f477b3ee-5656-4f8b-8913-86b47fa5a08c"
   },
   {
     "question": "4) Il paradigma a manipolazione diretta è caratterizzato da:",
@@ -97,7 +100,8 @@
     "image": "",
     "code": "",
     "explanation": "La reversibilità delle azioni è una caratteristica fondamentale del paradigma a manipolazione diretta: l'utente può facilmente annullare le azioni (come undo), rendendo l'interazione più sicura e fluida.",
-    "hint": "Quale caratteristica rende meno 'pericoloso' sperimentare con le azioni?"
+    "hint": "Quale caratteristica rende meno 'pericoloso' sperimentare con le azioni?",
+    "id": "0c8dfdba-217f-409c-8b31-0738b8b888f2"
   },
   {
     "question": "5) Nell’ambito dell’informatica pervasiva, che cosa si intende per principio di intelligenza appropriata?",
@@ -123,7 +127,8 @@
     "image": "",
     "code": "",
     "explanation": "Il principio di intelligenza appropriata, proposto da Weiser, riguarda la capacità del sistema di fare previsioni utili ma non invasive, cercando di massimizzare la correttezza senza risultare fastidiosi.",
-    "hint": "Si tratta di un bilanciamento tra utilità e 'invadenza' del sistema."
+    "hint": "Si tratta di un bilanciamento tra utilità e 'invadenza' del sistema.",
+    "id": "be37cc5e-565e-4b14-b94c-d1e5d37e2a06"
   },
   {
     "question": "6) Il termine mixed realityintrodotto da Milgrim e Kishino si riferisce a:",
@@ -149,7 +154,8 @@
     "image": "",
     "code": "",
     "explanation": "Il termine mixed reality, introdotto da Milgrim e Kishino nel loro continuum realtà-virtualità, si riferisce all'intera gamma di combinazioni possibili tra ambienti reali e virtuali, dal completamente reale al completamente virtuale.",
-    "hint": "Considera che 'mixed' indica lo spettro completo, non solo presentazione sequenziale o simultanea."
+    "hint": "Considera che 'mixed' indica lo spettro completo, non solo presentazione sequenziale o simultanea.",
+    "id": "fd075869-a1b4-456b-a465-fdd80f83807b"
   },
   {
     "question": "7) In uno degli articoli proposti nella bibliografia del corso (Comparative Feedback in the Street: Exposing Residential Energy Consumption on House Façades) gli autori descrivono uno studio sull’impatto sui comportamenti dovuti alla condivisione dei dati dei consumi energetici sulle facciate esternedelle abitazioni, e concludono che:",
@@ -175,7 +181,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo studio ha concluso che mostrare dati sui consumi a lungo termine (come trend e confronti temporali) è più efficace per indurre cambiamenti comportamentali rispetto ai dettagli in tempo reale.",
-    "hint": "Rifletti su quale tipo di dati aiuta a comprendere i pattern nel tempo."
+    "hint": "Rifletti su quale tipo di dati aiuta a comprendere i pattern nel tempo.",
+    "id": "4fe4cb0c-6453-4d3f-93b7-d26090b0eff4"
   },
   {
     "question": "8) Nell’ambito delle tecniche di prototipazione di un’interfaccia, che si intende perbranching storyboard?",
@@ -201,7 +208,8 @@
     "image": "",
     "code": "",
     "explanation": "Una branching storyboard descrive in modo completo tutti gli stati possibili dell'interazione e le relazioni tra questi, permettendo di visualizzare i diversi percorsi dell'utente.",
-    "hint": "Il termine 'branching' indica la presenza di molteplici percorsi e connessioni tra stati."
+    "hint": "Il termine 'branching' indica la presenza di molteplici percorsi e connessioni tra stati.",
+    "id": "fd267c92-bb0c-46b3-88a4-1981741b877e"
   },
   {
     "question": "9) Le interfacce per l’eco-feedbacksi caratterizzano per:",
@@ -223,7 +231,8 @@
     "image": "",
     "code": "",
     "explanation": "Le interfacce eco-feedback forniscono agli utenti informazioni sulle conseguenze ambientali del loro comportamento, aiutandoli a comprendere l'impatto ecologico delle loro azioni.",
-    "hint": "Il prefisso 'eco' si riferisce all'ambiente e all'ecologia."
+    "hint": "Il prefisso 'eco' si riferisce all'ambiente e all'ecologia.",
+    "id": "2f77640b-14da-4d97-a544-a690ef0110c9"
   },
   {
     "question": "10) Nell’ambito dell’informatica pervasiva, che cosa si intende per prossemica (proxemics)?",
@@ -249,7 +258,8 @@
     "image": "",
     "code": "",
     "explanation": "La prossemica, termine derivato dall'antropologia, studia le distanze interpersonali e come le persone percepiscono e usano lo spazio nelle interazioni sociali, concetto applicato anche nell'informatica pervasiva.",
-    "hint": "Questo termine proviene dagli studi antropologici sulle relazioni umane e l'uso dello spazio."
+    "hint": "Questo termine proviene dagli studi antropologici sulle relazioni umane e l'uso dello spazio.",
+    "id": "bcecdcfb-4281-43c6-9b38-e9871bfe018e"
   },
   {
     "question": "11) Tra le caratteristiche positive dei nuovi stili di interazione gestuale pensati per tablet e smartphone possiamo indicare:",
@@ -275,7 +285,8 @@
     "image": "",
     "code": "",
     "explanation": "I gesti multitouch (pinch, swipe, rotazione) permettono di impartire comandi complessi con movimenti naturali delle dita, rendendo l'interazione molto più espressiva rispetto a mouse o tastiera.",
-    "hint": "Pensate a quanti gesti diversi si possono fare con le dita su uno schermo touch."
+    "hint": "Pensate a quanti gesti diversi si possono fare con le dita su uno schermo touch.",
+    "id": "fa1e3388-b1c7-4e8b-817a-8ed3c9e3657c"
   },
   {
     "question": "12) Nell’ambito del modello di interazione proposto da Don Norman (ciclo di esecuzione e di valutazione) il golfo di valutazione indica:",
@@ -301,7 +312,8 @@
     "image": "",
     "code": "",
     "explanation": "Il golfo di valutazione descrive la distanza tra lo stato attuale del sistema (come viene presentato all'utente) e la comprensione che l'utente ha di tale stato rispetto ai suoi obiettivi.",
-    "hint": "Il 'gulf of evaluation' riguarda come l'utente interpreta lo stato corrente del sistema."
+    "hint": "Il 'gulf of evaluation' riguarda come l'utente interpreta lo stato corrente del sistema.",
+    "id": "959e666a-61a7-45ac-91a8-346356208f94"
   },
   {
     "question": "13) In uno degli articoli proposti nella bibliografia del corso (Comparative Feedback in the Street: Exposing Residential Energy Consumption on House Façades) gli autori descrivono uno studio sull’impattosui comportamenti dovuti alla condivisione dei dati dei consumi energetici sulle facciate esternedelle abitazioni, e concludono che:",
@@ -327,7 +339,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo studio ha concluso che il feedback sui consumi a lungo termine (mensili, annuali) è più efficace nel modificare i comportamenti rispetto ai dati in tempo reale, perché permette di vedere pattern e trend.",
-    "hint": "Lo studio ha confrontato feedback in tempo reale con quello a lungo termine."
+    "hint": "Lo studio ha confrontato feedback in tempo reale con quello a lungo termine.",
+    "id": "485062d8-40b3-4a64-a9a0-71d2ee27846f"
   },
   {
     "question": "14) Nell’ambito dell’informatica pervasiva per input implicito si intende:",
@@ -353,7 +366,8 @@
     "image": "",
     "code": "",
     "explanation": "L'input implicito si basa su azioni che l'utente compie naturalmente senza essere consapevole di interagire con un sistema informatico, ma che vengono rilevate e interpretate dai sensori ambientali.",
-    "hint": "L'utente non è consapevole di star interagendo con un sistema."
+    "hint": "L'utente non è consapevole di star interagendo con un sistema.",
+    "id": "a23aea73-53de-4cfd-9fcd-47b267e22f5a"
   },
   {
     "question": "15) Il termine mixed reality introdotto da Milgrim e Kishino si riferisce a:",
@@ -379,7 +393,8 @@
     "image": "",
     "code": "",
     "explanation": "Il continuum di mixed reality di Milgrim e Kishino rappresenta tutto lo spettro che va dalla realtà pura alla virtualità completa, includendo realtà aumentata e virtualità aumentata.",
-    "hint": "Pensate a un asse che va dalla realtà alla virtualità con vari livelli intermedi."
+    "hint": "Pensate a un asse che va dalla realtà alla virtualità con vari livelli intermedi.",
+    "id": "34a92209-9e4a-4db7-9a53-94cd6fc062cd"
   },
   {
     "question": "16) Nell’ambito delle tecniche di prototipazione di un’interfaccia, che si intende per narrative storyboard?",
@@ -405,7 +420,8 @@
     "image": "",
     "code": "",
     "explanation": "Il narrative storyboard si distingue per l'inclusione del contesto situazionale dell'interazione ( ambiente, obiettivi dell'utente, condizioni d'uso), distinguendosi dalle storyboard puramente sequenziali o non ordinate.",
-    "hint": "Il termine 'narrativa' implica raccontare una storia completa, non solo mostrare schermate."
+    "hint": "Il termine 'narrativa' implica raccontare una storia completa, non solo mostrare schermate.",
+    "id": "60ffa71a-6b04-4462-9c58-e93afa466e6d"
   },
   {
     "question": "17) Qual è il significato dell’euristica ‘Controllo dell’utente e libertà?",
@@ -431,7 +447,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica di Nielsen enfatizza la necessità di offrire 'uscite di emergenza' (escape routes) che permettano all'utente di annullare azioni involontarie senza conseguenze.",
-    "hint": "Pensa a cosa significa avere 'libertà' in un sistema - poter tornare indietro quando si sbaglia."
+    "hint": "Pensa a cosa significa avere 'libertà' in un sistema - poter tornare indietro quando si sbaglia.",
+    "id": "5fa54da3-b891-4e1a-9206-b6fefd70cef5"
   },
   {
     "question": "18) I punti di forza delle interfacce tangibili (TUI) includono:",
@@ -453,7 +470,8 @@
     "image": "",
     "code": "",
     "explanation": "Le TUI sfruttano le affordances (inviti all'uso percepibili dagli oggetti fisici) e permettono il 'pensiero tangibile', ovvero la manipolazione fisica come mezzo per ragionare.",
-    "hint": "Le interfacce tangibili sfruttano il mondo reale - gli oggetti fisici comunicano come usarli."
+    "hint": "Le interfacce tangibili sfruttano il mondo reale - gli oggetti fisici comunicano come usarli.",
+    "id": "dd5bfb88-ca13-40fd-8c3e-c0b7b9b1b062"
   },
   {
     "question": "19) I parametri che definiscono l’engagement dell’utente comprendono:",
@@ -475,7 +493,8 @@
     "image": "",
     "code": "",
     "explanation": "L'engagement utente è definito quantitativamente dall'attenzione focalizzata (quanto l'utente è assorto) e dalla durabilità (per quanto tempo mantiene l'attenzione).",
-    "hint": "L'engagement misura due aspetti: quanto si è concentrati e per quanto tempo."
+    "hint": "L'engagement misura due aspetti: quanto si è concentrati e per quanto tempo.",
+    "id": "94a47985-c7ef-482c-b453-b4e823d3f0db"
   },
   {
     "question": "20) Il cosiddetto affective computing denota:",
@@ -501,7 +520,8 @@
     "image": "",
     "code": "",
     "explanation": "L'affective computing è il campo che studia come i sistemi informatici possono riconoscere, interpretare e influenzare le emozioni umane.",
-    "hint": "Il termine deriva da 'affect' (emozione) - riguarda il rapporto tra calcolo e sentimenti."
+    "hint": "Il termine deriva da 'affect' (emozione) - riguarda il rapporto tra calcolo e sentimenti.",
+    "id": "ed360645-95ba-4784-bef3-132756a65e6c"
   },
   {
     "question": "21) Le nuove interfacce gestuali da un certo punto di vista rappresentano un passo indietro dal punto di vista dell’usabilità, a causa:",
@@ -527,7 +547,8 @@
     "image": "",
     "code": "",
     "explanation": "Le interfacce gestuali sono una tecnologia relativamente recente che non ha ancora sviluppato standard e convenzioni consolidate, a differenza delle interfacce WIMP tradizionali. Questa mancanza di linee guida riconosciute crea confusione negli utenti e rappresenta un problema di usabilità.",
-    "hint": "Il problema non è la tecnologia in sé, ma l'assenza di standard consolidati come esiste per le interfacce tradizionali."
+    "hint": "Il problema non è la tecnologia in sé, ma l'assenza di standard consolidati come esiste per le interfacce tradizionali.",
+    "id": "3c5bb754-2e39-42fb-93fc-72a9bc40b661"
   },
   {
     "question": "22) Nell’ambito delle attività di prototipazione la tecnica del mago di Oz denota:",
@@ -553,7 +574,8 @@
     "image": "",
     "code": "",
     "explanation": "La tecnica del 'mago di Oz' nella prototipazione consiste nel simulare il funzionamento di un sistema non ancora implementato, facendo intervenire un operatore umano (il 'mago') che risponde alle azioni dell'utente come se fosse il sistema reale.",
-    "hint": "Il nome deriva dal romanzo di L. Frank Baum dove il 'mago' dietro le quinte non è ciò che sembra."
+    "hint": "Il nome deriva dal romanzo di L. Frank Baum dove il 'mago' dietro le quinte non è ciò che sembra.",
+    "id": "01ca8e6f-8388-4eaf-b19c-ab303eb0df1b"
   },
   {
     "question": "23) Tra le caratteristiche dei nuovi stili di interazione gestuale pensati per tablet e smartphone possiamo indicare:",
@@ -579,7 +601,8 @@
     "image": "",
     "code": "",
     "explanation": "I gesti per tablet e smartphone non seguono convenzioni uniformi tra diversi produttori e sistemi operativi. Questa eterogeneità crea difficoltà agli utenti che devono apprendere gesti diversi per ogni piattaforma.",
-    "hint": "È lo stesso problema della domanda 21, ma visto dalla prospettiva degli utenti che si muovono tra dispositivi diversi."
+    "hint": "È lo stesso problema della domanda 21, ma visto dalla prospettiva degli utenti che si muovono tra dispositivi diversi.",
+    "id": "c61d7279-07c8-4c07-bf46-1c4274f542b2"
   },
   {
     "question": "24) Nell'ambito delle interfacce WIMP le cosiddette finestre modalisi caratterizzano per:",
@@ -601,7 +624,8 @@
     "image": "",
     "code": "",
     "explanation": "Una finestra modale (o dialog box) blocca l'interazione con il resto dell'applicazione fino a quando l'utente non compie un'azione obbligatoria (OK, Annulla, Chiudi), costringendo l'attenzione su un task specifico.",
-    "hint": "Il termine 'modale' indica che l'utente è confinato in una 'modalità' particolare fino a quando non conclude."
+    "hint": "Il termine 'modale' indica che l'utente è confinato in una 'modalità' particolare fino a quando non conclude.",
+    "id": "05ba4e36-91b8-4aa8-a537-79565b8cc005"
   },
   {
     "question": "25) L'euristica Consistenza e Standard indica che:",
@@ -627,7 +651,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica 'Consistenza e Standard' di Nielsen afferma che l'interfaccia non deve far perdere tempo all'utente cercando di capire se termini o azioni diverse significano la stessa cosa, mantenendo coerenza tra sistemi e convenzioni della piattaforma.",
-    "hint": "Pensa a come frustrante sarebbe se lo stesso gesto significasse cose diverse in contesti diversi."
+    "hint": "Pensa a come frustrante sarebbe se lo stesso gesto significasse cose diverse in contesti diversi.",
+    "id": "290be006-7e8a-4580-bb53-da7f07700c8e"
   },
   {
     "question": "26) Nell’ambito delle tecniche di prototipazione di un’interfaccia, la cosiddetta narrative storyboardsi differenzia dalla sequential storyboard:",
@@ -653,7 +678,8 @@
     "image": "",
     "code": "",
     "explanation": "La narrative storyboard si focalizza sul contesto d'uso e sulle situazioni in cui l'utente interagirà con il sistema, descrivendo lo scenario completo. La sequential storyboard invece si concentra sulla sequenza ordinata di schermate senza necessariamente contestualizzare l'interazione.",
-    "hint": "Ricorda che 'narrativa' implica raccontare una storia, quindi deve includere il contesto."
+    "hint": "Ricorda che 'narrativa' implica raccontare una storia, quindi deve includere il contesto.",
+    "id": "9f5d5ac1-9342-4696-8694-5989bce4c648"
   },
   {
     "question": "27) Nell’ambito della percezione uditiva, che cosa si intende per effetto mascheramento?",
@@ -679,7 +705,8 @@
     "image": "",
     "code": "",
     "explanation": "L'effetto mascheramento uditivo descrive quando un suono (mascherante) rende impercettibile o difficile da distinguere un altro suono (mascherato) che è vicino nel tempo. È un fenomeno percettivo legato alle proprietà temporali del sistema uditivo.",
-    "hint": "Pensa a cosa succede quando parli con qualcuno in un ambiente molto rumoroso."
+    "hint": "Pensa a cosa succede quando parli con qualcuno in un ambiente molto rumoroso.",
+    "id": "0251a7ce-fed8-4b56-9e34-ee0d5b9ff620"
   },
   {
     "question": "28) La tastiera Michela è un particolare tipo di dispositivo per l’input del testo:",
@@ -705,7 +732,8 @@
     "image": "",
     "code": "",
     "explanation": "La tastiera Michela è un dispositivo progettato per scomporre il testo in sillabe, dove ogni sillaba corrisponde a una combinazione di tasti. È un approccio alternativo alla digitazione tradizionale basato sulla fonetica.",
-    "hint": "Il nome 'Michela' deriva dalla metodica di insegnamento della sillabazione."
+    "hint": "Il nome 'Michela' deriva dalla metodica di insegnamento della sillabazione.",
+    "id": "f11312a3-16f8-467e-9be2-c88a35346440"
   },
   {
     "question": "29)Nell’ambito del modello definito come Interaction Framework, che cosa succede durante la fase di articolazione?",
@@ -731,7 +759,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'Interaction Framework di Norman, la fase di articolazione è quella in cui l'utente traduce i propri obiettivi (task language) in azioni concrete (input language). È il primo passo del ciclo interattivo.",
-    "hint": "L'articolazione riguarda la traduzione di ciò che l'utente vuole fare in come lo farà."
+    "hint": "L'articolazione riguarda la traduzione di ciò che l'utente vuole fare in come lo farà.",
+    "id": "293384ba-6ab2-4e1e-940a-1658094dfed4"
   },
   {
     "question": "30) E’ corretto dire che, nella progettazione di dispositivi fisici, l’applicazione del concetto di affordance dovrebbe portare a:",
@@ -757,7 +786,8 @@
     "image": "",
     "code": "",
     "explanation": "L'affordance si riferisce alle qualità percettive di un oggetto che suggeriscono immediatamente come utilizzarlo. In progettazione, applicare questo concetto significa creare forme che comunichino intuitivamente la loro funzione.",
-    "hint": "Pensa a come una maniglia rotonda o a leva suggerisce automaticamente come aprirsi."
+    "hint": "Pensa a come una maniglia rotonda o a leva suggerisce automaticamente come aprirsi.",
+    "id": "0ee930f9-d5df-4622-a727-67ef840465fb"
   },
   {
     "question": "31) Che cosa si intende per scheumorfismo?",
@@ -783,7 +813,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo skeuomorphism è un principio di design che utilizza elementi decorativi sugli oggetti digitali per richiamare le sembianze e le qualità tattili di oggetti fisici reali (es. pulsanti che sembrano tridimensionali o calendari che imitano blocchi note).",
-    "hint": "Pensare a come gli oggetti digitali possono 'imitare' aspetti del mondo reale."
+    "hint": "Pensare a come gli oggetti digitali possono 'imitare' aspetti del mondo reale.",
+    "id": "b11c498c-0a7d-424e-b34f-0f85f8960d69"
   },
   {
     "question": "32) E’ corretto dire, secondo gli studi di O’Brien, che i sei parametri che definiscono l’engagement:",
@@ -809,7 +840,8 @@
     "image": "",
     "code": "",
     "explanation": "Secondo gli studi di O'Brien sull'engagement, i sei parametri non sono indipendenti ma si influenzano reciprocamente, creando un sistema interdipendente.",
-    "hint": "Considerare se parametri come usabilità, coinvolgimento e durabilità possano esistere isolati gli uni dagli altri."
+    "hint": "Considerare se parametri come usabilità, coinvolgimento e durabilità possano esistere isolati gli uni dagli altri.",
+    "id": "49314701-3f8a-4cf4-afec-fcd5766be8a2"
   },
   {
     "question": "33) Con il termine interazione a manipolazione diretta:",
@@ -835,7 +867,8 @@
     "image": "",
     "code": "",
     "explanation": "La manipolazione diretta è un paradigma di interazione che si basa sull'acronimo WIMP (Windows, Icons, Menus, Pointer), permettendo agli utenti di manipolare direttamente gli oggetti sullo schermo.",
-    "hint": "Ricordare cosa rappresenta l'acronimo WIMP nel contesto delle interfacce utente."
+    "hint": "Ricordare cosa rappresenta l'acronimo WIMP nel contesto delle interfacce utente.",
+    "id": "e2ddd019-8823-4187-b6ab-c2cc5054c055"
   },
   {
     "question": "34) Nell'ambito delle tecniche di progettazionedi interfacce, è corretto dire che una storyboard sequenziale è assimilabile a:",
@@ -861,7 +894,8 @@
     "image": "",
     "code": "",
     "explanation": "Uno storyboard sequenziale rappresenta una serie ordinata di schermate o frame che descrivono il flusso delle azioni dell'utente, simile alla struttura narrativa di uno scenario.",
-    "hint": "Distinguere tra rappresentazione sequenziale (storia) e struttura funzionale (prototipo)."
+    "hint": "Distinguere tra rappresentazione sequenziale (storia) e struttura funzionale (prototipo).",
+    "id": "c27313b1-22f2-4159-8982-b1333b0f15b9"
   },
   {
     "question": "35) E’ corretto dire che, nell’ambito delle interfacce olfattive,la diffusione di sistemi di output per la riproduzione di una grande varietà di odori è correntemente limitata:",
@@ -883,7 +917,8 @@
     "image": "",
     "code": "",
     "explanation": "Attualmente non è possibile riprodurre un'ampia varietà di odori complessi combinando pochi odori base, poiché la chimica degli aromi richiede componenti specifici e non è linearmente combinabile.",
-    "hint": "Pensare alla complessità della percezione olfattiva rispetto a quella visiva o uditiva."
+    "hint": "Pensare alla complessità della percezione olfattiva rispetto a quella visiva o uditiva.",
+    "id": "1ff579c5-d213-4faa-824d-6bc8eb027585"
   },
   {
     "question": "36) Tra le caratteristiche dei nuovi stili di interazione gestuale pensati per tablet e smartphone possiamo indicare:",
@@ -909,7 +944,8 @@
     "image": "",
     "code": "",
     "explanation": "Gli stili di interazione gestuale su tablet e smartphone non hanno ancora standard consolidati: ogni piattaforma (iOS, Android) e ogni produttore definisce i propri gesti, creando inconsistenza.",
-    "hint": "Pensa a come lo stesso gesto (es. swipe) può avere significati diversi su diversi dispositivi."
+    "hint": "Pensa a come lo stesso gesto (es. swipe) può avere significati diversi su diversi dispositivi.",
+    "id": "3e079f13-d549-4aca-9cde-4d4f7fcd8b06"
   },
   {
     "question": "37) Il layout del tastierino numerico delle tastiere di computer deriva:",
@@ -935,7 +971,8 @@
     "image": "",
     "code": "",
     "explanation": "Il layout del tastierino numerico del computer (7-8-9 in alto) deriva dai calcolatori meccanici degli anni '60-70, ed è diverso da quello telefonico (1-2-3 in alto).",
-    "hint": "Confronta la disposizione dei numeri su una tastiera numerica con quella di un telefono."
+    "hint": "Confronta la disposizione dei numeri su una tastiera numerica con quella di un telefono.",
+    "id": "5a75ad26-7fd8-41f7-8f72-d3f8e3e1e9c4"
   },
   {
     "question": "38) E’corretto dire che, nella progettazione di dispositivi fisici, l’applicazione del concetto di affordance dovrebbe portare a:",
@@ -961,7 +998,8 @@
     "image": "",
     "code": "",
     "explanation": "L'affordance indica che la forma fisica di un oggetto deve suggerire intuitivamente come utilizzarlo, comunicando le possibilità d'azione attraverso le sue caratteristiche percettive.",
-    "hint": "Pensa a un pulsante fisico che 'invita' alla pressione per la sua forma sporgente."
+    "hint": "Pensa a un pulsante fisico che 'invita' alla pressione per la sua forma sporgente.",
+    "id": "e1e16186-97a0-4e1c-9f6d-9c3b84f9cec9"
   },
   {
     "question": "39) L'euristica Consistenza e Standard indica che:",
@@ -987,7 +1025,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica Consistenza e Standard richiede che parole, situazioni e azioni simili significhino la stessa cosa, evitando che l'utente debba dedurre significati diversi.",
-    "hint": "Evita di usare lo stesso termine per azioni diverse o termini diversi per la stessa azione."
+    "hint": "Evita di usare lo stesso termine per azioni diverse o termini diversi per la stessa azione.",
+    "id": "8735c1eb-c9c4-4551-ad14-bb6a9b083dbb"
   },
   {
     "question": "40) Che cosa si intende per scheumorfismo?",
@@ -1013,7 +1052,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo skeuomorfismo è un principio di design che aggiunge elementi decorativi (texture, ombre, forme) per richiamare l'aspetto di oggetti fisici reali, facilitando il riconoscimento.",
-    "hint": "Pensa a un'app di note che sembra un vero blocco notes con rilegatura."
+    "hint": "Pensa a un'app di note che sembra un vero blocco notes con rilegatura.",
+    "id": "530fc431-d69c-437c-a7d1-4a6bc5585249"
   },
   {
     "question": "41) Definire la relazione tra usabilità ed engagement:",
@@ -1039,7 +1079,8 @@
     "image": "",
     "code": "",
     "explanation": "Secondo il modello di O'Brien, l'engagement include la percezione di usabilità come componente fondamentale: l'utente si sente coinvolto quando percepisce il sistema come facile da usare.",
-    "hint": "Ricorda che O'Brien integra l'usabilità percepita dentro l'engagement, non viceversa."
+    "hint": "Ricorda che O'Brien integra l'usabilità percepita dentro l'engagement, non viceversa.",
+    "id": "207e50c3-2cc2-46b4-a639-6cba172bf0d2"
   },
   {
     "question": "42) Nell’ambito del modello definito come Interaction Framework, che cosa succede durante la fase di prestazione?",
@@ -1065,7 +1106,8 @@
     "image": "",
     "code": "",
     "explanation": "Nella fase di prestazione (execution) dell'Interaction Framework, l'input dell'utente viene tradotto nel linguaggio interno del sistema per eseguire l'azione richiesta.",
-    "hint": "Cerca di ricordare il flusso: dall'input utente alla traduzione per il sistema."
+    "hint": "Cerca di ricordare il flusso: dall'input utente alla traduzione per il sistema.",
+    "id": "2c3e3139-4e53-4803-91ef-602fb8de5d93"
   },
   {
     "question": "43) Un’interfaccia tangibile",
@@ -1087,7 +1129,8 @@
     "image": "",
     "code": "",
     "explanation": "Un'interfaccia tangibile permette di interagire con dati digitali attraverso oggetti fisici del mondo reale, quindi l'input avviene tramite manipolazione di oggetti tangibili.",
-    "hint": "La parola 'tangibile' suggerisce oggetti fisici che controllano il digitale."
+    "hint": "La parola 'tangibile' suggerisce oggetti fisici che controllano il digitale.",
+    "id": "f66cfbd8-944a-4175-bfbc-cb634a5c05be"
   },
   {
     "question": "44) I menu pull-down si differenziano rispetto ai menu fall-down perché",
@@ -1109,7 +1152,8 @@
     "image": "",
     "code": "",
     "explanation": "I menu pull-down richiedono un'azione esplicita (click) per aprirsi, mentre i menu fall-down si attivano automaticamente al passaggio del mouse sui titoli.",
-    "hint": "La differenza sta nel fatto che 'pull' richiede uno sforzo attivo dell'utente."
+    "hint": "La differenza sta nel fatto che 'pull' richiede uno sforzo attivo dell'utente.",
+    "id": "a1c8020f-63e1-49d5-8129-23c756072de1"
   },
   {
     "question": "45) Un campoX3D",
@@ -1131,7 +1175,8 @@
     "image": "",
     "code": "",
     "explanation": "In X3D, i campi sono entità di secondo livello che appartengono ai nodi e ne definiscono lo stato e le proprietà.",
-    "hint": "I nodi contengono campi che ne descrivono le caratteristiche."
+    "hint": "I nodi contengono campi che ne descrivono le caratteristiche.",
+    "id": "f412eaa1-26dc-4f6c-a295-23f181edfb68"
   },
   {
     "question": "46) In un prototipo verticale di un'interfaccia",
@@ -1153,7 +1198,8 @@
     "image": "",
     "code": "",
     "explanation": "Il prototipo verticale si concentra su un numero ridotto di funzionalità selezionate, ma le implementa completamente e in profondità, a differenza del prototipo orizzontale che riduce il livello di implementazione su tutte le funzionalità.",
-    "hint": "Verticale significa 'in profondità', non 'ridotto'."
+    "hint": "Verticale significa 'in profondità', non 'ridotto'.",
+    "id": "14542f5c-99f4-4fa5-8b67-372c8bae1182"
   },
   {
     "question": "47) Le interfacce industriali si distinguono dalle interfacce a manipolazione diretta perché",
@@ -1175,7 +1221,8 @@
     "image": "",
     "code": "",
     "explanation": "Nelle interfacce industriali l'utente riceve feedback sia dall'interfaccia stessa (es. display, spie) sia dal sistema fisico controllato (es. macchinario che esegue l'operazione), quindi un doppio output.",
-    "hint": "In un'interfaccia industriale c'è sia il pannello che la macchina fisica."
+    "hint": "In un'interfaccia industriale c'è sia il pannello che la macchina fisica.",
+    "id": "de8ee5e7-0d7e-4883-b7b8-a4169b9f2ee9"
   },
   {
     "question": "48) Il ciclo di esecuzione e di valutazione di Norman",
@@ -1197,7 +1244,8 @@
     "image": "",
     "code": "",
     "explanation": "Il ciclo di esecuzione e valutazione di Norman descrive 7 fasi dell'interazione utente-sistema: formazione dell'obiettivo, formulazione dell'intenzione, specifica dell'azione, esecuzione, percezione, interpretazione e valutazione.",
-    "hint": "Norman è noto per il 'ciclo delle 7 fasi'."
+    "hint": "Norman è noto per il 'ciclo delle 7 fasi'.",
+    "id": "ff141ef4-ad29-450a-b41e-c083eabb40b1"
   },
   {
     "question": "49) Comparando i sistemi interattivi basati sull’uso del mouse e quelli basati sull’utilizzo delle gestures,è generalmente corretto affermare che:",
@@ -1219,7 +1267,8 @@
     "image": "",
     "code": "",
     "explanation": "Le interfacce basate su mouse hanno standard consolidati (come le convenzioni WIMP), mentre le interfacce gestures presentano maggiori variazioni e mancanza di standard comuni tra diversi sistemi.",
-    "hint": "I mouse hanno decenni di convenzioni standard, le gestures sono più recenti e variabili."
+    "hint": "I mouse hanno decenni di convenzioni standard, le gestures sono più recenti e variabili.",
+    "id": "80eb18c9-8ba1-40f5-a61d-d996ec85876b"
   },
   {
     "question": "50) Le applicazioni context-aware vengono utilizzate in molti domini applicativi, e per scopi diversi, tra i quali",
@@ -1241,7 +1290,8 @@
     "image": "",
     "code": "",
     "explanation": "Le applicazioni context-aware adaptano le informazioni e le funzionalità in base al contesto (posizione, tempo, attività), mostrando all'utente solo ciò che è rilevante e riducendo la quantità di elaborazione mentale necessaria.",
-    "hint": "Il sistema 'capisce' il contesto per mostrare informazioni mirate, senza che l'utente debba cercare."
+    "hint": "Il sistema 'capisce' il contesto per mostrare informazioni mirate, senza che l'utente debba cercare.",
+    "id": "072469c9-d8c6-40c9-a868-f969534f411f"
   },
   {
     "question": "51) Nell’ambito dell’informatica pervasiva, sono utilizzati studi teorici a supporto della progettazione e della valutazione dell’esperienza. Tra i vari studi, èconsiderata la teoria delle attività, nella quale:",
@@ -1263,7 +1313,8 @@
     "image": "",
     "code": "",
     "explanation": "La teoria delle attività si basa su una struttura gerarchica dove le azioni sono guidate da obiettivi (scopi) pre-pianificati, in contrasto con approcci che enfatizzano l'improvvisazione o il comportamento reattivo.",
-    "hint": "Ricorda la distinzione tra azioni orientate a obiettivi e comportamenti spontanei."
+    "hint": "Ricorda la distinzione tra azioni orientate a obiettivi e comportamenti spontanei.",
+    "id": "5e59fc94-438d-46dc-bf43-487bd38c0ca5"
   },
   {
     "question": "52) Nell’ambito della descrizione delparadigma a manipolazione direttasi fa riferimento alla metafora mondo modello, per la quale:",
@@ -1285,7 +1336,8 @@
     "image": "",
     "code": "",
     "explanation": "Nella metafora mondo modello del paradigma a manipolazione diretta, l'interfaccia diventa 'trasparente': l'utente percepisce di interagire direttamente col sistema, non con una mediazione tra utente e macchina.",
-    "hint": "Pensa al concetto di 'assenza' dell'interfaccia come mediazione."
+    "hint": "Pensa al concetto di 'assenza' dell'interfaccia come mediazione.",
+    "id": "0220be9d-a198-428c-9ab9-09f350cfbe7c"
   },
   {
     "question": "53) La tastiera DVORAK",
@@ -1307,7 +1359,8 @@
     "image": "",
     "code": "",
     "explanation": "La tastiera DVORAK utilizza la stessa meccanica e disposizione fisica dei tasti della QWERTY, cambia solo la disposizione logica dei caratteri per ottimizzare la digitazione.",
-    "hint": "Il cambiamento è nella 'mappatura' dei caratteri, non nell'hardware."
+    "hint": "Il cambiamento è nella 'mappatura' dei caratteri, non nell'hardware.",
+    "id": "c3def996-d0d6-4f4b-bbdd-60c033c593ee"
   },
   {
     "question": "54) I punti di forza di un’interfaccia tangibile includono:",
@@ -1333,7 +1386,8 @@
     "image": "",
     "code": "",
     "explanation": "Il parallelismo spaziale è un punto di forza delle interfacce tangibili perché permettono all'utente di manipolare simultaneamente più elementi nello spazio fisico, sfruttando la naturale capacità umana di interagire con oggetti tridimensionali.",
-    "hint": "Considera come le interfacce tangibili sfruttano lo spazio fisico per l'interazione parallela."
+    "hint": "Considera come le interfacce tangibili sfruttano lo spazio fisico per l'interazione parallela.",
+    "id": "2b90fea4-c858-4ff2-8383-25f6ec5b76d2"
   },
   {
     "question": "55) Una finestra di dialogo modale",
@@ -1355,7 +1409,8 @@
     "image": "",
     "code": "",
     "explanation": "Una finestra di dialogo modale 'blocca' il resto dell'applicazione: l'utente deve obbligatoriamente interagire con essa (confermare, annullare o scegliere un'opzione) prima di poter tornare alla normale interazione.",
-    "hint": "Il termine 'modale' indica che l'interazione è limitata a quella specifica finestra."
+    "hint": "Il termine 'modale' indica che l'interazione è limitata a quella specifica finestra.",
+    "id": "a576a448-251a-47c9-82ad-e265a6c4a75d"
   },
   {
     "question": "56) La mixed reality",
@@ -1377,7 +1432,8 @@
     "image": "",
     "code": "",
     "explanation": "La mixed reality rappresenta l'intero spettro che va dalla realtà pura (reale) alla virtualità pura, includendo sia la realtà aumentata che la virtualità aumentata come punti intermedi del continuum.",
-    "hint": "Il termine 'mixed' sta per 'misto' - pensa a quante tecnologie diverse possono rientrare in questo spettro."
+    "hint": "Il termine 'mixed' sta per 'misto' - pensa a quante tecnologie diverse possono rientrare in questo spettro.",
+    "id": "43a4ca34-364b-4b74-9b87-b63af3929775"
   },
   {
     "question": "57) L’affordance di un oggetto consiste",
@@ -1399,7 +1455,8 @@
     "image": "",
     "code": "",
     "explanation": "L'affordance, concetto introdotto da Donald Norman, è la proprietà di un oggetto che comunica visivamente le sue possibilità d'uso attraverso caratteristiche fisiche come forma, colore o texture.",
-    "hint": "Deriva dal verbo inglese 'to afford' (permettere, offrire) - cosa 'permette' di fare un oggetto guardandolo?"
+    "hint": "Deriva dal verbo inglese 'to afford' (permettere, offrire) - cosa 'permette' di fare un oggetto guardandolo?",
+    "id": "d0bf1cfd-77da-43cb-8c57-d7a684ec1377"
   },
   {
     "question": "58) Qual è il significato dell’euristica ‘Riconoscimento anziché ricordo’?",
@@ -1421,7 +1478,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica 'Riconoscimento anziché ricordo' di Nielsen suggerisce di rendere visibili oggetti, azioni e opzioni per permettere all'utente di riconoscerle, riducendo il carico di memoria.",
-    "hint": "È più facile ricordare qualcosa che si ha davanti agli occhi piuttosto che informazioni nascoste."
+    "hint": "È più facile ricordare qualcosa che si ha davanti agli occhi piuttosto che informazioni nascoste.",
+    "id": "f09c37d5-4dac-45ff-98f0-07d893e2ca58"
   },
   {
     "question": "59) La legge di Fitts afferma che è vantaggioso per l’interazione:",
@@ -1447,7 +1505,8 @@
     "image": "",
     "code": "",
     "explanation": "La legge di Fitts stabilisce che il tempo per raggiungere un bersaglio è inversamente proporzionale alla dimensione e direttamente proporzionale alla distanza: target più grandi e più vicini richiedono meno tempo per essere raggiunti.",
-    "hint": "Pensaci come quando cerchi di toccare un oggetto: è più facile prendere qualcosa di grande e vicino."
+    "hint": "Pensaci come quando cerchi di toccare un oggetto: è più facile prendere qualcosa di grande e vicino.",
+    "id": "c565d2e7-a172-476d-a90c-59b70e15d4bb"
   },
   {
     "question": "60) Il meccanismo di routing per i mondi X3D serve a:",
@@ -1469,7 +1528,8 @@
     "image": "",
     "code": "",
     "explanation": "Il meccanismo di routing in X3D permette di connettere nodi diversi per trasmettere eventi e dati tra di essi, creando una rete di comunicazione tra gli elementi del mondo virtuale.",
-    "hint": "Il termine 'routing' suggerisce un percorso - i dati viaggiano da un nodo all'altro."
+    "hint": "Il termine 'routing' suggerisce un percorso - i dati viaggiano da un nodo all'altro.",
+    "id": "41c66f5e-a332-496c-b2b8-b1b03c1d9835"
   },
   {
     "question": "61)Qual è il significato dell’euristica ‘Consistenza e standard’?",
@@ -1491,7 +1551,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica di consistenza e standard si riferisce al principio per cui l'interfaccia dovrebbe aderire alle convenzioni della piattaforma su cui opera, riducendo la curva di apprendimento poiché gli utenti possono trasferire conoscenze pregresse.",
-    "hint": "Pensa a come utenti esperti si aspettano che funzionino le interfacce su sistemi diversi."
+    "hint": "Pensa a come utenti esperti si aspettano che funzionino le interfacce su sistemi diversi.",
+    "id": "ea6eb221-a01e-4092-93c3-354799f02646"
   },
   {
     "question": "62)I punti di forza delle interfacce tangibili (TUI) includono",
@@ -1513,7 +1574,8 @@
     "image": "",
     "code": "",
     "explanation": "Le TUI sfruttano le proprietà fisiche degli oggetti reali (affordances) per comunicare le possibilità di interazione, e sono progettate per integrarsi con il contesto fisico d'uso.",
-    "hint": "Considera come gli oggetti fisici comunicano spontaneamente il loro utilizzo."
+    "hint": "Considera come gli oggetti fisici comunicano spontaneamente il loro utilizzo.",
+    "id": "3f81912f-4e25-4cd0-b2bc-cbd6960b624e"
   },
   {
     "question": "63)La realtà aumentata",
@@ -1535,7 +1597,8 @@
     "image": "",
     "code": "",
     "explanation": "Nella realtà aumentata gli oggetti virtuali vengono sovrapposti al mondo reale e la sincronizzazione può avvenire con dispositivi (es. smartphone) la cui telecamera non coincide con il punto di vista dell'utente.",
-    "hint": "Ricorda che AR e VR hanno caratteristiche diverse di visualizzazione."
+    "hint": "Ricorda che AR e VR hanno caratteristiche diverse di visualizzazione.",
+    "id": "810a40b8-aed3-4db4-bb9e-a0cff71ba2fc"
   },
   {
     "question": "64)La definizione di golfo dell’esecuzione nel ciclo di esecuzione di Norman (uno dei modelli di interazione uomo calcolatore più famosi) indica",
@@ -1557,7 +1620,8 @@
     "image": "",
     "code": "",
     "explanation": "Il golfo dell'esecuzione descrive il divario tra l'intenzione dell'utente (cosa vuole fare) e le azioni che il sistema permette di eseguire, ovvero la traduzione dell'obiettivo in azioni concrete.",
-    "hint": "Distingui tra golfo dell'esecuzione e golfo della valutazione."
+    "hint": "Distingui tra golfo dell'esecuzione e golfo della valutazione.",
+    "id": "59bfc5d5-fba2-403c-9524-51dbed378e2c"
   },
   {
     "question": "65)In un’interfaccia WIMP i menu linearisono preferibili ai menu a tortaperché",
@@ -1583,7 +1647,8 @@
     "image": "",
     "code": "",
     "explanation": "Studi comparativi hanno mostrato che i menu lineari (a tendina) offrono una leggera vantaggio in termini di velocità e efficienza rispetto ai menu a torta nelle interfacce WIMP tradizionali.",
-    "hint": "Considera i risultati delle ricerche sperimentali sull'efficienza dei widget."
+    "hint": "Considera i risultati delle ricerche sperimentali sull'efficienza dei widget.",
+    "id": "3717bcbe-d0be-4432-8700-d7f26c7d7936"
   },
   {
     "question": "66)In un prototipo orizzontaledi un'interfaccia",
@@ -1605,7 +1670,8 @@
     "image": "",
     "code": "",
     "explanation": "Nei prototipi orizzontali si riduce la profondità funzionale (il livello di completamento delle feature), mantenendo l'ampiezza (copertura delle funzionalità).",
-    "hint": "Pensa alla differenza tra 'orizzontale' (estensione in larghezza) e 'verticale' (approfondimento in altezza)."
+    "hint": "Pensa alla differenza tra 'orizzontale' (estensione in larghezza) e 'verticale' (approfondimento in altezza).",
+    "id": "ce977bfb-8a8f-47db-bf4d-8e9b572e3600"
   },
   {
     "question": "67) Nell’ambito delle interfacce per Apple Watch con il termine complicazione ci si riferisce a:",
@@ -1627,7 +1693,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel contesto di Apple Watch, il termine 'complication' indica i widget visualizzati sulla watch face che mostrano informazioni aggiuntive come meteo, attività fisica o impegni del calendario.",
-    "hint": "Guarda la schermata di un Apple Watch e nota gli elementi attorno all'orologio."
+    "hint": "Guarda la schermata di un Apple Watch e nota gli elementi attorno all'orologio.",
+    "id": "cd32ead6-b8e6-4811-908d-c48220f3267f"
   },
   {
     "question": "68) Nell'ambito della definizione di engagement, la durabilità esprime:",
@@ -1653,7 +1720,8 @@
     "image": "",
     "code": "",
     "explanation": "La durabilità è una delle dimensioni dell'engagement e si riferisce alla volontà dell'utente di ripetere l'esperienza nel tempo.",
-    "hint": "Il termine 'durabilità' deriva da 'durare' - cosa indica questa proprietà in termini di comportamento futuro?"
+    "hint": "Il termine 'durabilità' deriva da 'durare' - cosa indica questa proprietà in termini di comportamento futuro?",
+    "id": "d8ae7f71-14d0-4178-8710-8b8242e1ac44"
   },
   {
     "question": "69) Nell’ambito dell’informatica pervasiva si intende per ambient display:",
@@ -1675,7 +1743,8 @@
     "image": "",
     "code": "",
     "explanation": "L'ambient display è un paradigma dell'informatica pervasiva in cui l'ambiente fisico circostante viene utilizzato come mezzo per comunicare informazioni digitali.",
-    "hint": "Immagina che l'ambiente stesso diventi uno schermo o un'interfaccia."
+    "hint": "Immagina che l'ambiente stesso diventi uno schermo o un'interfaccia.",
+    "id": "4e60aeb7-9bf5-47ef-99ba-20c31ebccf81"
   },
   {
     "question": "70) La tastiera DVORAK si differenzia dalla tastiera MICHELA per:",
@@ -1701,7 +1770,8 @@
     "image": "",
     "code": "",
     "explanation": "La tastiera DVORAK, nonostante fosse progettata per essere più efficiente, non ha dimostrato velocità superiori rispetto alla QWERTY (probabilmente riferita come MICHELA).",
-    "hint": "Considera se le teorie di progettazione ergonomica si sono tradotte in risultati pratici misurabili."
+    "hint": "Considera se le teorie di progettazione ergonomica si sono tradotte in risultati pratici misurabili.",
+    "id": "5e160cb7-5d22-407b-b8aa-3310c15324b1"
   },
   {
     "question": "71) I punti di forza di un’interfaccia tangibile includono:",
@@ -1727,7 +1797,8 @@
     "image": "",
     "code": "",
     "explanation": "Il parallelismo spaziale è un punto di forza delle interfacce tangibili perché permettono agli utenti di interagire simultaneamente con più oggetti fisici disposti nello spazio, sfruttando la percezione naturale del mondo fisico e la capacità umana di manipolare più elementi contemporaneamente.",
-    "hint": "Le interfacce tangibili sfruttano le proprietà fisiche degli oggetti nel mondo reale."
+    "hint": "Le interfacce tangibili sfruttano le proprietà fisiche degli oggetti nel mondo reale.",
+    "id": "bf8fa34c-0df7-4a37-8c50-bac87aa9d772"
   },
   {
     "question": "72) Nell’ambito delle tecniche di prototipazione di un’interfaccia, che cosa si intende per branching storyboard?",
@@ -1749,7 +1820,8 @@
     "image": "",
     "code": "",
     "explanation": "Il branching storyboard utilizza uno schema non-lineare perché rappresenta le diverse possibili traiettorie di interazione, mostrando come l'interfaccia può cambiare stato in base alle scelte o azioni dell'utente, permettendo di visualizzare scenari alternativi.",
-    "hint": "Il termine 'branching' suggerisce ramificazioni, ovvero percorsi multipli."
+    "hint": "Il termine 'branching' suggerisce ramificazioni, ovvero percorsi multipli.",
+    "id": "d85d5d14-0160-4fcf-b32b-595e3716d947"
   },
   {
     "question": "73) Per quanto riguarda i tempi di risposta ad uno stimolo sensoriale, è corretto affermare che:",
@@ -1771,7 +1843,8 @@
     "image": "",
     "code": "",
     "explanation": "Il tempo motorio (il tempo che intercorre tra la percezione di uno stimolo e la risposta motoria) dipende dalle caratteristiche individuali come l'età e lo stato di salute, che influenzano la velocità di elaborazione e la risposta neuromuscolare.",
-    "hint": "I tempi di risposta variano da persona a persona in base a fattori personali."
+    "hint": "I tempi di risposta variano da persona a persona in base a fattori personali.",
+    "id": "16ed7d95-2941-458a-adb8-14bd8f4871cd"
   },
   {
     "question": "74) Nell’ambito della progettazione ergonomica, si indica come keyhole effect (effetto buco della serratura):",
@@ -1793,7 +1866,8 @@
     "image": "",
     "code": "",
     "explanation": "Il keyhole effect (effetto buco della serratura) descrive la limitata visibilità che un operatore ha del sistema complessivo quando più persone lavorano insieme, creando una visione parziale e frammentata simile a guardare attraverso un buco della serratura.",
-    "hint": "Deriva dall'analogia con guardare attraverso una serratura, vedendo solo una piccola parte."
+    "hint": "Deriva dall'analogia con guardare attraverso una serratura, vedendo solo una piccola parte.",
+    "id": "1d9d1e6b-5a24-49fc-8803-f55e202eacd1"
   },
   {
     "question": "75) Nell’ambito del modello definito come Interaction Framework, la fase di articolazione indica:",
@@ -1819,7 +1893,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'Interaction Framework, la fase di articolazione è quella in cui l'utente traduce il proprio obiettivo (linguaggio del compito) in azioni concrete che il sistema può interpretare (linguaggio di input).",
-    "hint": "L'articolazione riguarda come l'utente esprime le proprie intenzioni al sistema."
+    "hint": "L'articolazione riguarda come l'utente esprime le proprie intenzioni al sistema.",
+    "id": "2c8231fb-3dac-441b-a85c-4d48263f4b03"
   },
   {
     "question": "76) Nell'ambito delle tecniche di prototipazione, che cosa caratterizza la tecnica del Mago di Oz?",
@@ -1845,7 +1920,8 @@
     "image": "",
     "code": "",
     "explanation": "La tecnica Wizard of Oz prevede che un operatore umano ('il mago') simuli manualmente funzionalità del sistema che sarebbero automate nel prodotto finale, permettendo di testare interazioni complesse senza doverle ancora programmare.",
-    "hint": "Pensa alla trama del romanzo: chi c'era veramente dietro la cortina?"
+    "hint": "Pensa alla trama del romanzo: chi c'era veramente dietro la cortina?",
+    "id": "c587dfa0-f8f2-43c4-9070-b7b2fa213e64"
   },
   {
     "question": "77) Indicare quale delle seguenti affermazioni contrasta con le 10 euristiche di usabilità di Nielsen:",
@@ -1871,7 +1947,8 @@
     "image": "",
     "code": "",
     "explanation": "L'ottava euristica di Nielsen afferma che la documentazione e l'aiuto devono essere focalizzati sui compiti dell'utente, quindi l'affermazione D che dice il contrario contrasta con questa linea guida.",
-    "hint": "La documentazione efficace deve guidare l'utente verso i suoi obiettivi, non allontanarli."
+    "hint": "La documentazione efficace deve guidare l'utente verso i suoi obiettivi, non allontanarli.",
+    "id": "b4bb2aee-3272-43c2-8d12-242cb33f9d14"
   },
   {
     "question": "78) Nell’ambito delle tecniche di prototipazione di un’interfaccia, la cosiddettanarrative storyboardsi differenzia dallasequentialstoryboard:",
@@ -1897,7 +1974,8 @@
     "image": "",
     "code": "",
     "explanation": "La narrative storyboard aggiunge elementi contestuali (ambienti, situazioni d'uso, attori) alla rappresentazione dell'interfaccia, differenziandosi dalla sequential che mostra solo la sequenza di schermate.",
-    "hint": "Non è questione di ordine o linearità, ma di ambiente e situazione."
+    "hint": "Non è questione di ordine o linearità, ma di ambiente e situazione.",
+    "id": "8a3a818b-9780-4643-b895-f1c2c4d89e10"
   },
   {
     "question": "79) Nell’ambito del modello definito come Interaction Framework, che cosa succede durante lafase di prestazione?",
@@ -1923,7 +2001,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'Interaction Framework di Norman, la fase di prestazione (performance) traduce l'input dell'utente in un formato comprensibile al sistema per avviare l'esecuzione del comando.",
-    "hint": "È il ponte tra ciò che l'utente fa e ciò che il sistema può capire."
+    "hint": "È il ponte tra ciò che l'utente fa e ciò che il sistema può capire.",
+    "id": "a3629be7-4349-49fa-86b2-af2a235d2aab"
   },
   {
     "question": "80) Nell’ambito dell’informatica pervasiva si considera il concetto di engagement, che tra i parametri che lo definiscono comprende:",
@@ -1949,7 +2028,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'informatica pervasiva, l'engagement è definito dal coinvolgimento percepito dall'utente e dall'attenzione focalizzata sul sistema/interazione in quel momento.",
-    "hint": "È una misura di quanto l'utente è 'dentro' l'esperienza, non quanto è 'bello' l'oggetto."
+    "hint": "È una misura di quanto l'utente è 'dentro' l'esperienza, non quanto è 'bello' l'oggetto.",
+    "id": "1b0c8c72-a747-47c6-9c92-0f509e143e07"
   },
   {
     "question": "81) Nell’ambito della risposta sensoriale ad uno stimolo esterno, è corretto affermare che il tempo di reazione:\ndiminuisce quando lo stimolo avviene su un canale misto (es. uditivo e visivo)",
@@ -1971,7 +2051,8 @@
     "image": "",
     "code": "",
     "explanation": "Il tempo di reazione misura la latenza tra stimolo e risposta motoria, e dipende principalmente dall'intensità e complessità dello stimolo stesso, non dal canale sensoriale attraverso cui viene rilevato.",
-    "hint": "Pensa a cosa influenza maggiormente la velocità della risposta: il tipo di canale o le caratteristiche dello stimolo?"
+    "hint": "Pensa a cosa influenza maggiormente la velocità della risposta: il tipo di canale o le caratteristiche dello stimolo?",
+    "id": "64a38b7c-35b8-49e4-abea-595f5710331d"
   },
   {
     "question": "82) Le interfaccea manipolazione diretta si caratterizzano per:",
@@ -1997,7 +2078,8 @@
     "image": "",
     "code": "",
     "explanation": "Nelle interfacce a manipolazione diretta l'utente agisce direttamente sugli oggetti visuali, senza usare comandi testuali, quindi ogni azione è automaticamente sintatticamente corretta.",
-    "hint": "Considera la differenza tra agire su oggetti grafici e scrivere comandi testuali."
+    "hint": "Considera la differenza tra agire su oggetti grafici e scrivere comandi testuali.",
+    "id": "e860ce1f-787d-406d-b659-5b97e84444c6"
   },
   {
     "question": "84) Il concetto di affordanceesprime:",
@@ -2019,7 +2101,8 @@
     "image": "",
     "code": "",
     "explanation": "L'affordance, concetto introdotto da Gibson e sviluppato da Norman in design, indica la proprietà di un oggetto di suggerire intuitivamente il proprio uso attraverso caratteristiche percettive come forma, colore o texture.",
-    "hint": "L'affordance si basa su proprietà fisiche intrinseche, non su elementi aggiuntivi come etichette."
+    "hint": "L'affordance si basa su proprietà fisiche intrinseche, non su elementi aggiuntivi come etichette.",
+    "id": "4a9b75ba-ad1f-4f3a-a8ed-aedaacd339c1"
   },
   {
     "question": "85) Nell’ambito delle attività di valutazione dell’usabilità dell’interfaccia le tecniche di ispezione:",
@@ -2045,7 +2128,8 @@
     "image": "",
     "code": "",
     "explanation": "Le tecniche di ispezione (come il walkthrough cognitivo) prevedono che esperti di usabilità valutino l'interfaccia analizzandola direttamente, senza coinvolgere utenti reali.",
-    "hint": "Distingui tra metodi che usano specialisti e quelli che coinvolgono gli utenti finali."
+    "hint": "Distingui tra metodi che usano specialisti e quelli che coinvolgono gli utenti finali.",
+    "id": "7daff4ba-437b-4689-ad86-fb29fe9b9d6f"
   },
   {
     "question": "86) Lo studio “Why don’t Families Get along with Eco-Feedback Technologies?” analizza le tecnologie di eco-feedback in un contesto familiare.Quali delle seguenti affermazioni corrisponde a indicazioni che si possono derivare dallo studio?",
@@ -2071,7 +2155,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo studio citato ha evidenziato che una vista aggregata dei consumi familiari aiuta la famiglia a comprendere l'impatto collettivo e a sviluppare strategie condivise di risparmio energetico.",
-    "hint": "Lo studio si concentra su come la famiglia può gestire insieme i consumi, non sui singoli individui."
+    "hint": "Lo studio si concentra su come la famiglia può gestire insieme i consumi, non sui singoli individui.",
+    "id": "c31b9e8e-87e3-4a8b-bc32-6b34ab3cf6d9"
   },
   {
     "question": "87) Indicare quale delle seguenti affermazioni, relative all'informatica pervasiva e all'informatica interattiva, è vera.",
@@ -2097,7 +2182,8 @@
     "image": "",
     "code": "",
     "explanation": "L'informatica pervasiva (o ubiqua) si caratterizza per l'integrazione discreta della tecnologia nell'ambiente, dove il sistema può fornire output impliciti senza richiedere interazione esplicita dell'utente (es. sensori che accendono luci automaticamente).",
-    "hint": "La pervasiva si differenzia dall'interattiva perché l'utente non deve necessariamente comunicare qualcosa al sistema."
+    "hint": "La pervasiva si differenzia dall'interattiva perché l'utente non deve necessariamente comunicare qualcosa al sistema.",
+    "id": "1f39ef0f-0d76-4150-bdb1-51aaf808f1be"
   },
   {
     "question": "88) Indicare quale delle seguenti affermazioni, relative ai concetti di usabilità ed engagement, è vera.",
@@ -2123,7 +2209,8 @@
     "image": "",
     "code": "",
     "explanation": "Secondo il modello di O'Brien, l'engagement è un concetto più ampio che include l'usabilità come componente necessaria ma non sufficiente, insieme ad altri fattori emotivi e situazionali.",
-    "hint": "L'engagement secondo O'Brien comprende l'usabilità, non il contrario."
+    "hint": "L'engagement secondo O'Brien comprende l'usabilità, non il contrario.",
+    "id": "09c29ec7-7ff9-4a19-861f-470798f96084"
   },
   {
     "question": "89) Indicare quale delle seguenti affermazioni contrasta con una delle 10 euristiche di usabilità di Nielsen:",
@@ -2149,7 +2236,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica 2 di Nielsen afferma che l'interfaccia deve seguire le convenzioni del mondo reale (match between system and the real world), quindi affermare il contrario è falso.",
-    "hint": "Ricorda l'euristica che riguarda la corrispondenza con il mondo reale."
+    "hint": "Ricorda l'euristica che riguarda la corrispondenza con il mondo reale.",
+    "id": "e881ccd8-84cb-47af-90d7-76c040c644f1"
   },
   {
     "question": "90) Nell’ambito delle tecniche di prototipazione di un’interfaccia, una narrative storyboard si distingue per:",
@@ -2175,7 +2263,8 @@
     "image": "",
     "code": "",
     "explanation": "La narrative storyboard utilizza uno schema lineare (sequenziale) per mostrare come l'interfaccia cambia stato attraverso le azioni dell'utente, descrivendo lo scenario narrativamente.",
-    "hint": "La storyboard narrativa ha una struttura sequenziale, non ramificata."
+    "hint": "La storyboard narrativa ha una struttura sequenziale, non ramificata.",
+    "id": "258b5f2b-8563-4960-8ac4-8336ca91ac7b"
   },
   {
     "question": "91) Le interfacce industriali si distinguono dalle interfacce a manipolazione diretta:",
@@ -2201,7 +2290,8 @@
     "image": "",
     "code": "",
     "explanation": "Nelle interfacce industriali l'operatore riceve feedback anche dall'osservazione diretta del processo fisico (mondo reale), non solo dall'interfaccia grafica di output.",
-    "hint": "Il feedback industriale deriva anche dall'ambiente fisico, non solo dallo schermo."
+    "hint": "Il feedback industriale deriva anche dall'ambiente fisico, non solo dallo schermo.",
+    "id": "7142694f-f78c-4ad9-85d6-50bb7c0ea9e0"
   },
   {
     "question": "92) Il paradigma a manipolazione diretta si distingue dal paradigma linguistico:",
@@ -2227,7 +2317,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel paradigma a manipolazione diretta l'utente interagisce direttamente con gli oggetti visuali, quindi non può compiere azioni 'sintatticamente errate' - ogni azione possibile è per costruzione corretta, a differenza dei comandi testuali che possono essere scritti in modo errato.",
-    "hint": "Pensa alla differenza tra cliccare su un'icona e scrivere un comando testuale: cosa può andare storto in ciascun caso?"
+    "hint": "Pensa alla differenza tra cliccare su un'icona e scrivere un comando testuale: cosa può andare storto in ciascun caso?",
+    "id": "b1e22781-9d0e-4d99-a9ec-162d652d62b7"
   },
   {
     "question": "93) Il layout del tastierino numerico usato in telefonia e basato su una matrice rettangolare nella quale i numeri 1 2 3 stanno nella riga superiore deriva:",
@@ -2253,7 +2344,8 @@
     "image": "",
     "code": "",
     "explanation": "Il layout del tastierino telefonico (1-2-3 in alto) derivò da uno studio effettuato dai Bell Labs che evidenziò come gli utenti preferissero questa disposizione rispetto a quella delle calcolatrici (7-8-9 in alto).",
-    "hint": "Il layout telefonico non è lo stesso delle calcolatrici - ricorda che le prime calcolatrici meccaniche avevano i numeri alti in alto."
+    "hint": "Il layout telefonico non è lo stesso delle calcolatrici - ricorda che le prime calcolatrici meccaniche avevano i numeri alti in alto.",
+    "id": "b4767d7b-9241-4e17-8507-67740495254c"
   },
   {
     "question": "94) Il concetto di eco-feedback:",
@@ -2275,7 +2367,8 @@
     "image": "",
     "code": "",
     "explanation": "L'eco-feedback è un concetto dell'interazione uomo-computer che riguarda la possibilità di mostrare agli utenti l'impatto ambientale delle loro azioni, per incentivare comportamenti sostenibili.",
-    "hint": "Il prefisso 'eco' deriva dal greco 'oikos' (casa, ambiente). Di cosa devono ricevere informazioni gli utenti?"
+    "hint": "Il prefisso 'eco' deriva dal greco 'oikos' (casa, ambiente). Di cosa devono ricevere informazioni gli utenti?",
+    "id": "2ba5615f-f35d-46c8-bddd-58abf8d93c21"
   },
   {
     "question": "95) Nell’ambito del modello definito come Interaction Framework, il mapping tra il linguaggio del compito e il linguaggio di input dell'interfaccia viene svolto nella fase di:",
@@ -2301,7 +2394,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'Interaction Framework di Abowd e Beale, la fase di 'articolazione' è quella in cui si traduce il linguaggio del compito (cosa l'utente vuole fare) nel linguaggio di input dell'interfaccia.",
-    "hint": "Il framework ha 4 fasi: articolazione, presentazione, prestazione, osservazione. Quale corrisponde al 'mapping' tra task e input?"
+    "hint": "Il framework ha 4 fasi: articolazione, presentazione, prestazione, osservazione. Quale corrisponde al 'mapping' tra task e input?",
+    "id": "d9fc64ba-aa3f-4b26-b975-02cc8820f22e"
   },
   {
     "question": "96) In uno degli articoli proposti nella bibliografia del corso (Comparative Feedback in the Street: Exposing Residential Energy Consumption on House Façades) gli autori descrivono uno studio sull’impatto sui comportamenti dovuti alla condivisione dei dati dei consumi energetici sulle facciate esterne delle abitazioni, e concludono che:",
@@ -2323,7 +2417,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo studio ha concluso che per modificare i comportamenti non bastano i dati sui consumi, ma serve fornire indicazioni concrete su come agire per ridurli.",
-    "hint": "Lo studio ha mostrato che non basta 'misurare' o 'comparare', ma serve qualcosa di più pratico per l'utente."
+    "hint": "Lo studio ha mostrato che non basta 'misurare' o 'comparare', ma serve qualcosa di più pratico per l'utente.",
+    "id": "1f08dc5a-2f54-415b-9038-13befd481459"
   },
   {
     "question": "97) Nell'ambito dell'informatica pervasiva il principio di intelligenza appropriata:",
@@ -2349,7 +2444,8 @@
     "image": "",
     "code": "",
     "explanation": "Il principio di intelligenza appropriata nell'informatica pervasiva riguarda la capacità del sistema di tollerare fallimenti nelle previsioni senza causare conseguenze negative, garantendo robustezza anche quando l'intelligenza artificiale commette errori.",
-    "hint": "Pensa a cosa significa 'appropriata' in termini di gestione degli errori in sistemi autonomi."
+    "hint": "Pensa a cosa significa 'appropriata' in termini di gestione degli errori in sistemi autonomi.",
+    "id": "e6ace901-458a-4eae-b54e-a02a67672692"
   },
   {
     "question": "98) Nell’ambito del modello definito come Interaction Framework, il mapping tra il linguaggio di base e il linguaggio di output dell'interfaccia viene svolto nella fase di:",
@@ -2375,7 +2471,8 @@
     "image": "",
     "code": "",
     "explanation": "Nel modello Interaction Framework, la fase di presentazione si occupa specificamente di trasformare il linguaggio di base del sistema nel linguaggio di output visivo e interattivo percepibile dall'utente.",
-    "hint": "Quale fase gestisce la 'traduzione' verso l'utente?"
+    "hint": "Quale fase gestisce la 'traduzione' verso l'utente?",
+    "id": "326adab4-f67b-49b5-ab40-c05ad0c432d0"
   },
   {
     "question": "99) Definire quale dei seguenti parametri non viene considerato nella definizione di engagement secondo O'Brien:",
@@ -2401,7 +2498,8 @@
     "image": "",
     "code": "",
     "explanation": "Secondo il modello di O'Brien, l'engagement è definito da tre parametri: coinvolgimento percepito, durabilità e attenzione focalizzata. Il costo economico non è parte di questa definizione teorica.",
-    "hint": "Quale di questi parametri non relate all'esperienza soggettiva di coinvolgimento?"
+    "hint": "Quale di questi parametri non relate all'esperienza soggettiva di coinvolgimento?",
+    "id": "a51a9a27-bba1-4c26-8126-060d3f8b72a3"
   },
   {
     "question": "100) Nell’ambito delle tecniche di prototipazione di un’interfaccia, una branching storyboard si distingue per:",
@@ -2427,7 +2525,8 @@
     "image": "",
     "code": "",
     "explanation": "La branching storyboard utilizza uno schema non lineare che permette di mostrare diversi percorsi di interazione, inclusi quelli attivati da cambiamenti nelle variabili di contesto (es. sensori, ambiente).",
-    "hint": "Cosa differenzia una storyboard 'ramificata' da una lineare?"
+    "hint": "Cosa differenzia una storyboard 'ramificata' da una lineare?",
+    "id": "51122132-5cc3-4fc3-90c0-7cf330883e5c"
   },
   {
     "question": "101) Correntemente le interfacce basate sullo stile di interazione WIMP si distinguono da quelle basate sullo stile di interazione touch-based per:",
@@ -2453,7 +2552,8 @@
     "image": "",
     "code": "",
     "explanation": "Le interfacce WIMP (Windows, Icons, Menus, Pointer) offrono maggiore consistenza grazie a convenzioni standardizzate e prevedibili, mentre le touch-based variano maggiormente tra applicazioni.",
-    "hint": "Confronta la standardizzazione degli elementi grafici tra i due stili."
+    "hint": "Confronta la standardizzazione degli elementi grafici tra i due stili.",
+    "id": "300fc9bc-6064-4807-a93f-1b9547dba2d0"
   },
   {
     "question": "102) Nell’ambito dei sistemi di input, la motivazione per la quale tuttora la tastiera QWERTY è la più utilizzata è:",
@@ -2479,7 +2579,8 @@
     "image": "",
     "code": "",
     "explanation": "La risposta D è corretta perché il layout QWERTY, originariamente progettato per le macchine da scrivere meccaniche per evitare inceppamenti dei tasti, è rimasto lo standard dominante per semplice inerzia tecnologica: una volta consolidato come riferimento, produttori e utenti hanno continuato ad adottarlo anche con tecnologie moderne dove altre disposizioni potrebbero essere più efficienti.",
-    "hint": "Pensate a quante tecnologie rimangono standard solo perché erano le prime ad essere adottate."
+    "hint": "Pensate a quante tecnologie rimangono standard solo perché erano le prime ad essere adottate.",
+    "id": "0337dd8d-ee55-407c-ad03-a479c030c2b0"
   },
   {
     "question": "103) Le interfacce industriali si distinguono dalle interfacce a manipolazione diretta:",
@@ -2505,7 +2606,8 @@
     "image": "",
     "code": "",
     "explanation": "La risposta B è corretta perché nelle interfacce industriali (es. controllo di processi chimici o meccanici) l'operatore riceve feedback sia dall'interfaccia di output sia dall'osservazione diretta del processo fisico reale, a differenza delle interfacce a manipolazione diretta dove il feedback è esclusivamente virtuale.",
-    "hint": "In un impianto industriale reale, l'operatore guarda anche le macchine fisiche, non solo lo schermo."
+    "hint": "In un impianto industriale reale, l'operatore guarda anche le macchine fisiche, non solo lo schermo.",
+    "id": "1800bb7f-f5c9-43d8-b176-b49fdd8a213f"
   },
   {
     "question": "104) In uno degli articoli proposti nella bibliografia del corso (SINAIS from Fanal) gli autori descrivono la progettazione e la valutazione di un sistema di eco-feedback giungendo alla conclusione che:",
@@ -2527,7 +2629,8 @@
     "image": "",
     "code": "",
     "explanation": "La risposta C è corretta perché lo studio SINAIS ha concluso che le rappresentazioni artistiche da sole non sono sufficienti: devono essere accoppiate con dati numerici dettagliati per mantenere l'attenzione e fornire informazioni utilizzabili.",
-    "hint": "Gli utenti hanno bisogno sia dell'appeal emotivo che dei dati concreti."
+    "hint": "Gli utenti hanno bisogno sia dell'appeal emotivo che dei dati concreti.",
+    "id": "3daf8f2e-f5cb-46ef-8ec4-27b66b90bcea"
   },
   {
     "question": "105) E' corretto affermare che il numero di colori a cui viene assegnato un nome :",
@@ -2553,7 +2656,8 @@
     "image": "",
     "code": "",
     "explanation": "La risposta A è corretta perché studi di linguistica e antropologia (come quelli di Berlin e Kay sui colori base) hanno dimostrato che diverse culture categorizzano i colori in modo diverso: alcune hanno pochi termini per i colori, altre ne hanno molti, e i confini tra le categorie variano culturalmente.",
-    "hint": "Pensate a quante parole per i colori ha la lingua giapponese rispetto all'italiano."
+    "hint": "Pensate a quante parole per i colori ha la lingua giapponese rispetto all'italiano.",
+    "id": "41c0ff34-4605-4517-8272-1edb271fa8a7"
   },
   {
     "question": "106) E' corretto dire che il software Graffiti per il riconoscimento della scrittura:",
@@ -2579,7 +2683,8 @@
     "image": "",
     "code": "",
     "explanation": "La risposta C è corretta perché Graffiti utilizza un insieme limitato di gesti standardizzati che semplificano i caratteri: l'utente deve imparare questi pattern predefiniti, non può scrivere nel proprio stile naturale.",
-    "hint": "Non è il riconoscimento della calligrafia personale, ma una serie di movimenti codificati."
+    "hint": "Non è il riconoscimento della calligrafia personale, ma una serie di movimenti codificati.",
+    "id": "e9299032-a034-43dc-90e8-8d99c20e072c"
   },
   {
     "question": "107) Nell’ambito dell’informatica pervasiva si considera il concetto di engagement, che tra i parametri che lo definiscono comprende:",
@@ -2605,7 +2710,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'informatica pervasiva, l'engagement si riferisce al coinvolgimento dell'utente con il sistema. I parametri che lo definiscono includono l'estetica (design visivo gradevole e attraente) e l'attenzione focalizzata (capacità di catturare e mantenere l'attenzione dell'utente). Le altre opzioni si riferiscono a concetti diversi come persistenza degli oggetti, usabilità o qualità del software.",
-    "hint": "L'engagement riguarda il coinvolgimento emotivo e cognitivo dell'utente, non aspetti tecnici o di persistenza."
+    "hint": "L'engagement riguarda il coinvolgimento emotivo e cognitivo dell'utente, non aspetti tecnici o di persistenza.",
+    "id": "5a38a2a9-f9a6-4b55-a1bd-851080c8b5d0"
   },
   {
     "question": "108) Indicare quale delle seguenti affermazioni contrasta con le 10 euristiche di usabilità di Nielsen:",
@@ -2631,7 +2737,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica #8 di Nielsen afferma 'Match between system and the real world' (Corrispondenza tra sistema e mondo reale), ovvero il sistema dovrebbe usare linguaggio, concetti e immagini familiari all'utente. L'affermazione che 'il sistema non dovrebbe corrispondere al mondo reale' contrasta direttamente con questa euristica.",
-    "hint": "Ricorda l'euristica che favorisce l'uso di linguaggio e metafore familiari all'utente."
+    "hint": "Ricorda l'euristica che favorisce l'uso di linguaggio e metafore familiari all'utente.",
+    "id": "2da9d905-0b1c-4973-91c4-674008c0f7d7"
   },
   {
     "question": "109) Lo studio “Why don’t Families Get along with Eco-Feedback Technologies?” analizza le tecnologie di eco-feedback in un contesto familiare. Quali delle seguenti affermazioni corrisponde a indicazioni che si possono derivare dallo studio?\nconsapevolezza dei consumi individuali",
@@ -2657,7 +2764,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo studio evidenzia che in un contesto familiare è importante fornire una visione d'insieme (vista a volo d'uccello) dei consumi totali della famiglia, per promuovere la consapevolezza collettiva e facilitare il dialogo sulle abitudini energetiche.",
-    "hint": "Lo studio sottolinea l'importanza della consapevolezza condivisa a livello familiare."
+    "hint": "Lo studio sottolinea l'importanza della consapevolezza condivisa a livello familiare.",
+    "id": "61ea7b80-2af3-4226-84b0-db71ea61629b"
   },
   {
     "question": "110) Nell’ambito dell’informatica pervasiva si considera il concetto di engagement, che tra i parametri che lo definiscono comprende",
@@ -2683,7 +2791,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'informatica pervasiva, l'engagement si riferisce al coinvolgimento dell'utente con il sistema. I parametri che lo definiscono includono l'estetica (design visivo gradevole e attraente) e l'attenzione focalizzata (capacità di catturare e mantenere l'attenzione dell'utente). Le altre opzioni si riferiscono a concetti diversi come persistenza degli oggetti, usabilità o qualità del software.",
-    "hint": "L'engagement riguarda il coinvolgimento emotivo e cognitivo dell'utente, non aspetti tecnici o di persistenza."
+    "hint": "L'engagement riguarda il coinvolgimento emotivo e cognitivo dell'utente, non aspetti tecnici o di persistenza.",
+    "id": "b6f73eea-f61a-42a2-922c-5dd57bc8c4db"
   },
   {
     "question": "111) Indicare quale delle seguenti affermazioni contrasta con le 10 euristiche di usabilità di Nielsen:",
@@ -2709,7 +2818,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica #8 di Nielsen afferma 'Match between system and the real world' (Corrispondenza tra sistema e mondo reale), ovvero il sistema dovrebbe usare linguaggio, concetti e immagini familiari all'utente. L'affermazione che 'il sistema non dovrebbe corrispondere al mondo reale' contrasta direttamente con questa euristica.",
-    "hint": "Ricorda l'euristica che favorisce l'uso di linguaggio e metafore familiari all'utente."
+    "hint": "Ricorda l'euristica che favorisce l'uso di linguaggio e metafore familiari all'utente.",
+    "id": "47a74bb3-41f0-4648-888f-7fe0a4ca9b0d"
   },
   {
     "question": "112) Lo studio “Why don’t Families Get along with Eco-Feedback Technologies?” analizza le tecnologie di eco-feedback in un contesto familiare. Quali delle seguenti affermazioni corrisponde a indicazioni che si possono derivare dallo studio?\nconsapevolezza dei consumi individuali",
@@ -2735,7 +2845,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo studio ha evidenziato che per essere efficace in un contesto familiare, il sistema di eco-feedback deve fornire una vista aggregata dei consumi familiari (vista a volo d'uccello), permettendo a tutti i membri di avere una visione condivisa delle abitudini energetiche e promuovere comportamenti sostenibili collettivi.",
-    "hint": "In un contesto familiare, pensare a quali informazioni sono più utili per promuovere comportamenti sostenibili condivisi."
+    "hint": "In un contesto familiare, pensare a quali informazioni sono più utili per promuovere comportamenti sostenibili condivisi.",
+    "id": "1e48ae52-da97-4207-a55d-1d63ec45e1da"
   },
   {
     "question": "113) Nell’ambito delle tecniche di prototipazione di un’interfaccia, la cosiddetta narrative storyboard si differenzia dalla branching storyboard:",
@@ -2761,7 +2872,8 @@
     "image": "",
     "code": "",
     "explanation": "La narrative storyboard si differenzia dalla branching storyboard perché si concentra sulla descrizione del contesto situazionale in cui avviene l'interazione, raccontando una storia con scenario e personaggi, piuttosto che mappare solo i percorsi di navigazione.",
-    "hint": "Pensare a cosa differenzia una storia descrittiva con contesto da un diagramma di flusso."
+    "hint": "Pensare a cosa differenzia una storia descrittiva con contesto da un diagramma di flusso.",
+    "id": "203e4b92-31bb-4c4a-8fc0-ad86a0b9caf1"
   },
   {
     "question": "114) Nell’ambito della risposta sensoriale ad uno stimolo esterno, è corretto affermare che il tempo motorio:",
@@ -2787,7 +2899,8 @@
     "image": "",
     "code": "",
     "explanation": "Il tempo motorio (tempo di risposta motoria) dipende dalle condizioni fisiche e di salute del soggetto, inclusi fattori come i riflessi, la coordinazione neuromuscolare e eventuali patologie che possono rallentare la risposta motoria.",
-    "hint": "Considerare quali fattori biologici individuali influenzano la velocità di risposta motoria."
+    "hint": "Considerare quali fattori biologici individuali influenzano la velocità di risposta motoria.",
+    "id": "370b6cd3-a9d5-4ba9-819f-744474c36987"
   },
   {
     "question": "115) Nell’ambito del modello definito come Interaction Framework, che cosa succede durante la fase di presentazione?",
@@ -2813,7 +2926,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'Interaction Framework, la fase di presentazione è quella in cui dopo l'esecuzione del comando, il sistema cambia stato e presenta i risultati all'utente attraverso il linguaggio di output, comunicando l'esito dell'operazione.",
-    "hint": "Nella sequenza input-azione-output, identificare cosa accade dopo l'esecuzione del sistema."
+    "hint": "Nella sequenza input-azione-output, identificare cosa accade dopo l'esecuzione del sistema.",
+    "id": "95797930-81dc-44fc-9f67-96966800a320"
   },
   {
     "question": "116) Nell’ambito delle attività di valutazione dell’usabilità dell’interfaccia le tecniche di ispezione:",
@@ -2839,7 +2953,8 @@
     "image": "",
     "code": "",
     "explanation": "Le tecniche di ispezione (come il walkthrough cognitivo o la valutazione euristica) prevedono che un numero limitato di specialisti di usabilità esaminino e valutino sistematicamente gli aspetti di usabilità di un prodotto, senza coinvolgere utenti reali.",
-    "hint": "Distinguere tra valutazione con esperti e test con utenti reali."
+    "hint": "Distinguere tra valutazione con esperti e test con utenti reali.",
+    "id": "f26c1f90-42d0-40ec-b6d3-d5833235165b"
   },
   {
     "question": "117) Le interfacce a righe di comando si distinguono per:",
@@ -2865,7 +2980,8 @@
     "image": "",
     "code": "",
     "explanation": "Le CLI permettono l'elaborazione batch di più oggetti contemporaneamente attraverso caratteri jolly (*, ?), pipe o argomenti multipli, a differenza delle GUI dove si opera su oggetti singoli.",
-    "hint": "Pensa a come puoi applicare un comando a più file o cartelle contemporaneamente."
+    "hint": "Pensa a come puoi applicare un comando a più file o cartelle contemporaneamente.",
+    "id": "c9d266d3-631a-44f4-ae05-a9926bbc84d4"
   },
   {
     "question": "118) Nell’ambito dell’informatica pervasiva, per iHCI si intende:\nnel corso del quale il sistema pervasivo acquisisce anche input implicito",
@@ -2887,7 +3003,8 @@
     "image": "",
     "code": "",
     "explanation": "L'informatica pervasiva integra sistemi computazionali nell'ambiente quotidiano; iHCI descrive l'interazione tra l'uomo, il suo ambiente fisico e gli artefatti tecnologici intelligenti inseriti in esso.",
-    "hint": "Non si tratta solo di dispositivi singoli, ma dell'intero ambiente che circonda l'utente."
+    "hint": "Non si tratta solo di dispositivi singoli, ma dell'intero ambiente che circonda l'utente.",
+    "id": "ba0aee6a-1f69-42be-9009-7b5991d82631"
   },
   {
     "question": "119) Per quanto riguarda le capacità percettive del nostro apparato uditivo, che cosa si intende per effetto cocktail?",
@@ -2909,7 +3026,8 @@
     "image": "",
     "code": "",
     "explanation": "L'effetto cocktail è la capacità del sistema uditivo centrale di separare e focalizzarsi su una sorgente sonora specifica (es. una conversazione) ignorando i suoni di fondo, grazie al processamento uditivo precoce.",
-    "hint": "È ciò che ti permette di seguire una conversazione in un locale affollato."
+    "hint": "È ciò che ti permette di seguire una conversazione in un locale affollato.",
+    "id": "07ff87ac-6493-43ff-8bca-d5f1b63919ac"
   },
   {
     "question": "120) Nell’ambito della risposta sensoriale ad uno stimolo esterno, è corretto affermare che il tempo motorio:",
@@ -2935,7 +3053,8 @@
     "image": "",
     "code": "",
     "explanation": "Il tempo motorio, ovvero il tempo tra stimolo e risposta motoria, dipende dalle condizioni fisiche e neuromotorie del soggetto, che influenzano la velocità di elaborazione e risposta.",
-    "hint": "Non dipende dal canale sensoriale né dall'età in modo diretto, ma dalle condizioni complessive del soggetto."
+    "hint": "Non dipende dal canale sensoriale né dall'età in modo diretto, ma dalle condizioni complessive del soggetto.",
+    "id": "d3edac1b-c34e-4250-9ca2-ad8810f57736"
   },
   {
     "question": "121) Nell’ambito delle tecniche di prototipazione di un’interfaccia, la cosiddetta narrative storyboard si differenzia dalla branching storyboard:",
@@ -2961,7 +3080,8 @@
     "image": "",
     "code": "",
     "explanation": "La narrative storyboard si focalizza sulla descrizione del contesto d'uso (dove, quando, perché avviene l'interazione), mentre la branching storyboard descrive i percorsi e le transizioni tra stati dell'interfaccia.",
-    "hint": "Una descrive il 'dove e quando', l'altra i 'come' dell'interazione."
+    "hint": "Una descrive il 'dove e quando', l'altra i 'come' dell'interazione.",
+    "id": "7537945b-f017-43d6-b439-b6e06e4dad14"
   },
   {
     "question": "122) Nell’ambito del modello definito come Interaction Framework, che cosa succede durante la fase di presentazione?",
@@ -2987,7 +3107,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'Interaction Framework, la fase di presentazione riguarda come il sistema comunica i risultati all'utente dopo aver eseguito un'operazione, mostrando come lo stato del sistema è cambiato.",
-    "hint": "Ricorda che la 'presentazione' nel framework riguarda l'output del sistema verso l'utente, non l'input."
+    "hint": "Ricorda che la 'presentazione' nel framework riguarda l'output del sistema verso l'utente, non l'input.",
+    "id": "3da41ace-f467-40d0-9e28-5e7bd1c5c1c9"
   },
   {
     "question": "123) Nell’ambito delle attività di valutazione dell’usabilità dell’interfaccia le tecniche di ispezione:",
@@ -3013,7 +3134,8 @@
     "image": "",
     "code": "",
     "explanation": "Le tecniche di ispezione (come il walkthrough cognitivo) sono condotte da esperti di usabilità che valutano l'interfaccia senza coinvolgere utenti reali, a differenza dei test con utenti.",
-    "hint": "Distingui tra 'ispezione' (esperti) e 'test' (utenti reali)."
+    "hint": "Distingui tra 'ispezione' (esperti) e 'test' (utenti reali).",
+    "id": "fab8f161-0ebd-48e8-a071-a7e7c6d60b07"
   },
   {
     "question": "124) Le interfacce a righe di comando si distinguono per:",
@@ -3039,7 +3161,8 @@
     "image": "",
     "code": "",
     "explanation": "Le CLI permettono di applicare comandi a più file/oggetti contemporaneamente tramite wildcard (*, ?) o piping, cosa che le distingue dalle interfacce grafiche dove si opera su un oggetto alla volta.",
-    "hint": "Pensa alla differenza tra selezionare più oggetti con Ctrl+click e usare i caratteri jolly."
+    "hint": "Pensa alla differenza tra selezionare più oggetti con Ctrl+click e usare i caratteri jolly.",
+    "id": "2df6f909-8249-4b72-9d2f-5702aa5178c8"
   },
   {
     "question": "125) Nell’ambito dell’informatica pervasiva, per iHCI si intende:\nnel corso del quale il sistema pervasivo acquisisce anche input implicito",
@@ -3061,7 +3184,8 @@
     "image": "",
     "code": "",
     "explanation": "iHCI (pervasive Human-Computer Interaction) si riferisce all'interazione dell'utente con l'ambiente circostante e con tutti i dispositivi pervasivi integrati in esso, non solo con un singolo dispositivo.",
-    "hint": "L'accento è su 'ambiente' e 'artefatti' distribuiti, non su un'app specifica."
+    "hint": "L'accento è su 'ambiente' e 'artefatti' distribuiti, non su un'app specifica.",
+    "id": "b6dc7cc9-7c90-40e9-92b5-721fba0b59a5"
   },
   {
     "question": "126) Per quanto riguarda le capacità percettive del nostro apparato uditivo, che cosa si intende per effetto cocktail?",
@@ -3083,7 +3207,8 @@
     "image": "",
     "code": "",
     "explanation": "L'effetto cocktail è la capacità del sistema uditivo umano di focalizzarsi su una sorgente sonora specifica (es. una conversazione) ignorando il rumore di fondo, grazie al processo di attenzione selettiva.",
-    "hint": "È una capacità, non un'incapacità - la risposta C dice il contrario."
+    "hint": "È una capacità, non un'incapacità - la risposta C dice il contrario.",
+    "id": "7897a256-a364-4d59-b89f-74d505252f20"
   },
   {
     "question": "127) L’interaction framework descrive 4 fasi del ciclo interattivo, tra le quali troviamo:",
@@ -3109,7 +3234,8 @@
     "image": "",
     "code": "",
     "explanation": "L'interaction framework di Norman descrive il ciclo interattivo in due fasi principali: esecuzione (prestazione dell'azione da parte dell'utente) e valutazione (osservazione del risultato). L'utente prima agisce sul sistema e poi ne osserva gli effetti.",
-    "hint": "Pensa al ciclo azione-osservazione-valutazione tipico dell'interazione uomo-computer."
+    "hint": "Pensa al ciclo azione-osservazione-valutazione tipico dell'interazione uomo-computer.",
+    "id": "5778bf81-ddab-4eed-ab5f-8bae7d1e39d6"
   },
   {
     "question": "128) Qual è il significato dell’euristica controllo dell’utente e libertà?",
@@ -3135,7 +3261,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica di Nielsen 'Controllo dell'utente e libertà' enfatizza la necessità di offrire agli utenti 'uscite di emergenza' per tornare a stati precedenti, come le funzioni undo/redo, permettendo il recupero da errori.",
-    "hint": "L'euristica riguarda la possibilità di tornare indietro dopo un'azione."
+    "hint": "L'euristica riguarda la possibilità di tornare indietro dopo un'azione.",
+    "id": "bfabbd3a-07e4-4b77-9d71-24a08a39c5bf"
   },
   {
     "question": "129) Nell’ambito degli studi legati alla percezione umana, per effetto mascheramentosi intende:",
@@ -3161,7 +3288,8 @@
     "image": "",
     "code": "",
     "explanation": "Il mascheramento uditivo è un fenomeno percettivo per cui un suono rende difficile o impossibile percepire un altro suono quando sono vicini in frequenza e intensità.",
-    "hint": "È un fenomeno del sistema uditivo, non di quello visivo."
+    "hint": "È un fenomeno del sistema uditivo, non di quello visivo.",
+    "id": "c47ec5a8-ce94-4f56-915a-33c98210f2df"
   },
   {
     "question": "130) In uno degli articoli proposti nella bibliografia del corso (Why don’t families get along with eco-feedback Technologies) gli autori affrontano con uno studio il tema dell’assorbimento dell’informazione data dal sistema di eco-feedback (incorporation), e notano che:",
@@ -3187,7 +3315,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo studio ha mostrato che con un basso livello di dettaglio nell'informazione, gli utenti facevano fatica a tradurre il feedback in azioni concrete, mentre con informazioni più dettagliate l'incorporation era più efficace.",
-    "hint": "La relazione tra dettaglio dell'informazione e capacità di agire."
+    "hint": "La relazione tra dettaglio dell'informazione e capacità di agire.",
+    "id": "7dbede7f-8ca2-4093-a190-c9b25d93d663"
   },
   {
     "question": "131) Nell’ambito dell’informatica pervasiva, i concetti di informatica quotidianae interazione continuasi riferiscono:",
@@ -3213,7 +3342,8 @@
     "image": "",
     "code": "",
     "explanation": "L'informatica quotidiana (ubicomp) si riferisce all'integrazione naturale della tecnologia nelle attività di tutti i giorni, promuovendo interazioni informali e non strutturate piuttosto che task formali.",
-    "hint": "Contrappone attività naturali/informali a quelle formali/strutturate."
+    "hint": "Contrappone attività naturali/informali a quelle formali/strutturate.",
+    "id": "04157633-b1c8-4004-abb2-b3b5be841296"
   },
   {
     "question": "132) Nell’ambito dell’ergonomia, che cosa si intende per keyhole effect (effetto buco della serratura)?",
@@ -3239,7 +3369,8 @@
     "image": "",
     "code": "",
     "explanation": "Il keyhole effect (effetto buco della serratura) descrive la limitazione percettiva che si verifica quando l'utente può visualizzare solo una porzione ridotta dell'interfaccia o delle informazioni disponibili, analogamente a guardare attraverso un buco della serratura.",
-    "hint": "Il nome stesso suggerisce una limitazione nella visibilità, come guardare attraverso uno spazio stretto."
+    "hint": "Il nome stesso suggerisce una limitazione nella visibilità, come guardare attraverso uno spazio stretto.",
+    "id": "541f3000-4600-46a1-932e-b5436f125b53"
   },
   {
     "question": "133) Il paradigma a manipolazione direttaè caratterizzato da:",
@@ -3265,7 +3396,8 @@
     "image": "",
     "code": "",
     "explanation": "Nella manipolazione diretta, i widget (come bottoni, slider, icone) fungono sia da oggetti di input (su cui l'utente interviene) sia da display di output (che mostrano lo stato corrente), permettendo interazione diretta e continua.",
-    "hint": "I widget permettono di vedere e manipolare gli oggetti contemporaneamente."
+    "hint": "I widget permettono di vedere e manipolare gli oggetti contemporaneamente.",
+    "id": "f97e8c1b-6f1c-4938-8ad7-6eaf14267bbc"
   },
   {
     "question": "134) Secondo la ricerca scientifica, le attuali interfacce basate sull’uso di gestures sono caratterizzate da:",
@@ -3291,7 +3423,8 @@
     "image": "",
     "code": "",
     "explanation": "Le interfacce gesture attuali propongono nuove convenzioni di interazione che spesso ignorano o contraddicono le convenzioni stabilite per dispositivi tradizionali, mancando di standard riconosciuti.",
-    "hint": "Mancano ancora standard condivisi per le gesture, ognuno inventa le proprie."
+    "hint": "Mancano ancora standard condivisi per le gesture, ognuno inventa le proprie.",
+    "id": "f2dcb98e-74df-44dd-a14f-e8f64714c8c9"
   },
   {
     "question": "135) L’interaction framework descrive 4 fasi del ciclo interattivo, tra le quali troviamo:",
@@ -3317,7 +3450,8 @@
     "image": "",
     "code": "",
     "explanation": "L'interaction framework (ciclo interattivo di Hook) descrive 4 fasi: presentazione (form), prestazione (execution), osservazione (evaluation) e feedback; 'presentazione e prestazione' rappresentano le prime due fasi.",
-    "hint": "Ricorda i termini inglesi: form e execution."
+    "hint": "Ricorda i termini inglesi: form e execution.",
+    "id": "9028ab6e-0d25-46b3-8b79-0299b6fec2cc"
   },
   {
     "question": "136) Qual è il significato dell’euristica riconoscimento anziché ricordo?",
@@ -3343,7 +3477,8 @@
     "image": "",
     "code": "",
     "explanation": "L'euristica 'riconoscimento anziché ricordo' di Nielsen stabilisce che gli oggetti, le opzioni e le azioni disponibili nell'interfaccia devono essere sempre visibili, così l'utente può riconoscerli anziché ricordarli a memoria.",
-    "hint": "L'utente deve poter 'vedere' le opzioni, non 'ricordare' cosa c'è."
+    "hint": "L'utente deve poter 'vedere' le opzioni, non 'ricordare' cosa c'è.",
+    "id": "a0f3366b-0bca-4491-a04f-a424b9561f28"
   },
   {
     "question": "137) Nell’ambito dell’ergonomia, che cosa si intende per keyhole effect(effetto buco della serratura)?",
@@ -3369,7 +3504,8 @@
     "image": "",
     "code": "",
     "explanation": "Il keyhole effect (effetto buco della serratura) descrive una limitazione visiva dove l'utente può accedere solo a porzioni ridotte dell'interfaccia o dei dati disponibili, come guardare attraverso una serratura.",
-    "hint": "Il nome stesso richiama l'idea di guardare attraverso uno spazio ristretto."
+    "hint": "Il nome stesso richiama l'idea di guardare attraverso uno spazio ristretto.",
+    "id": "e0a927d9-27fd-46de-ae93-0ec814e401ff"
   },
   {
     "question": "138) Nell’ambito degli studi legati alla percezione umana, per effetto cocktailsi intende:",
@@ -3395,7 +3531,8 @@
     "image": "",
     "code": "",
     "explanation": "Il cocktail party effect è la capacità del sistema uditivo di selezionare e concentrarsi su uno stimolo sonoro specifico (una voce o conversazione) ignorando gli altri rumori di fondo in un ambiente rumoroso.",
-    "hint": "È ciò che accade quando riesci a seguire una conversazione in mezzo a confusione."
+    "hint": "È ciò che accade quando riesci a seguire una conversazione in mezzo a confusione.",
+    "id": "28c3b035-df92-443f-b86c-7dee02b3a0f3"
   },
   {
     "question": "139) Secondo la ricerca scientifica, le attuali interfacce basate sull’uso di gestures sono caratterizzate da:",
@@ -3421,7 +3558,8 @@
     "image": "",
     "code": "",
     "explanation": "Le attuali interfacce gesture sono spesso sperimentali e propongono convenzioni nuove senza seguire linee guida o standard precedentemente consolidati nell'HCI.",
-    "hint": "Manca ancora uno standard riconosciuto per le gesture."
+    "hint": "Manca ancora uno standard riconosciuto per le gesture.",
+    "id": "b12813a3-3452-4e70-aac9-ba3d4aa5998c"
   },
   {
     "question": "140) In uno degli articoli proposti nella bibliografia del corso (Why don’t families get along with eco-feedback Technologies) gli autori affrontano con uno studio il tema dell’assorbimento dell’informazione data dal sistema di eco-feedback (incorporation), e notanoche:",
@@ -3447,7 +3585,8 @@
     "image": "",
     "code": "",
     "explanation": "Lo studio ha evidenziato che gli utenti faticano ad agire quando le informazioni fornite dal sistema eco-feedback sono troppo generiche o prive di dettagli concreti, mentre con informazioni dettagliate l'azione è più facile.",
-    "hint": "Il problema è legato alla quantità di dettaglio fornita."
+    "hint": "Il problema è legato alla quantità di dettaglio fornita.",
+    "id": "8cfc08f5-c3ae-4e82-99ed-41ef801113da"
   },
   {
     "question": "141) Nell’ambito dell’informatica pervasiva, è corretto dire che:",
@@ -3473,7 +3612,8 @@
     "image": "",
     "code": "",
     "explanation": "Nell'informatica pervasiva, l'input implicito (dati raccolti automaticamente dal sistema) può coesistere e affiancare l'input esplicito (azioni consapevoli dell'utente), arricchendo l'interazione.",
-    "hint": "Si tratta della coesistenza di due tipi di input diversi."
+    "hint": "Si tratta della coesistenza di due tipi di input diversi.",
+    "id": "f77f5ae9-ee88-432a-83c4-984b0836fe96"
   },
   {
     "question": "142) Ilparadigma a manipolazione diretta è caratterizzato da:",
@@ -3499,6 +3639,7 @@
     "image": "",
     "code": "",
     "explanation": "Nel paradigma a manipolazione diretta l'utente opera direttamente sugli oggetti visibili sullo schermo mediante azioni fisiche (clic, trascinamento, ecc.). Poiché l'utente non digita comandi testuali ma interagisce con oggetti concreti, il sistema può garantire la correttezza sintattica di tutte le azioni possibili, eliminando errori di sintassi.",
-    "hint": "Il paradigma a manipolazione diretta elimina la possibilità di commettere errori di sintassi perché l'utente agisce su oggetti concreti, non su comandi testuali."
+    "hint": "Il paradigma a manipolazione diretta elimina la possibilità di commettere errori di sintassi perché l'utente agisce su oggetti concreti, non su comandi testuali.",
+    "id": "661c7a0b-7990-4c9a-ae69-286590521514"
   }
 ]
