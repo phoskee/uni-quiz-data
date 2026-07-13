@@ -126,6 +126,12 @@ Restituisci ESCLUSIVAMENTE un array JSON valido, senza testo aggiuntivo, comment
         return None
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Converte PDF in JSON usando Gemini.")
+    parser.add_argument("--pdf", help="Nome o path parziale del PDF da elaborare")
+    parser.add_argument("--model", help="Modello Gemini da utilizzare")
+    args = parser.parse_args()
+
     quizzes_root = Path("quizzes")
     pdf_files = list(quizzes_root.glob("**/_docs/*.pdf"))
     
@@ -133,22 +139,38 @@ def main():
         print("❌ Nessun PDF trovato.")
         return
 
-    print("\n--- SELEZIONE DOCUMENTO ---")
-    for i, f in enumerate(pdf_files):
-        print(f"[{i+1}] {f.relative_to(quizzes_root)}")
-    try:
-        sel_f = int(input("\nScegli il file: ")) - 1
-        selected_file = pdf_files[sel_f]
-    except: return
+    selected_file = None
+    if args.pdf:
+        for f in pdf_files:
+            if args.pdf in str(f) or args.pdf in f.name:
+                selected_file = f
+                break
+        if not selected_file:
+            print(f"❌ PDF non trovato corrispondente a: {args.pdf}")
+            return
+    else:
+        print("\n--- SELEZIONE DOCUMENTO ---")
+        for i, f in enumerate(pdf_files):
+            print(f"[{i+1}] {f.relative_to(quizzes_root)}")
+        try:
+            sel_f = int(input("\nScegli il file: ")) - 1
+            selected_file = pdf_files[sel_f]
+        except: return
 
     models = get_available_models()
-    print("\n--- SELEZIONE MODELLO ---")
-    for i, m in enumerate(models):
-        print(f"[{i+1}] {m}")
-    try:
-        sel_m = int(input(f"\nScegli il modello [1-{len(models)}]: ") or "1") - 1
-        model_name = models[sel_m]
-    except: model_name = "gemini-2.0-flash"
+    model_name = None
+    if args.model:
+        model_name = args.model
+        if model_name not in models:
+            print(f"⚠️ Modello '{model_name}' non raccomandato, procedo comunque.")
+    else:
+        print("\n--- SELEZIONE MODELLO ---")
+        for i, m in enumerate(models):
+            print(f"[{i+1}] {m}")
+        try:
+            sel_m = int(input(f"\nScegli il modello [1-{len(models)}]: ") or "1") - 1
+            model_name = models[sel_m]
+        except: model_name = "gemini-2.0-flash"
 
     text_content = extract_text_with_colors(selected_file)
     quiz_data = generate_quiz(text_content, model_name)

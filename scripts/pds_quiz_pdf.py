@@ -97,7 +97,8 @@ def parse_questions(
         # split() returns [question, label, answer, label, answer, ...].
         labels = option_parts[1::2]
         answers = option_parts[2::2]
-        if tuple(labels) != EXPECTED_OPTIONS or len(answers) != len(EXPECTED_OPTIONS):
+        tuple_labels = tuple(labels)
+        if tuple_labels not in [("A", "B", "C", "D"), ("A", "B", "C", "D", "E")]:
             issues.append(
                 f"pagina {page_number}, domanda {number}: opzioni non riconosciute "
                 f"(trovate: {', '.join(labels) or 'nessuna'})"
