@@ -3,3 +3,4 @@ pymupdf
 pillow
 python-dotenv
 requests
+duckduckgo-search

@@ -1,0 +1,7 @@
+{
+  "name": "uni-quiz-tui",
+  "version": "1.0.0",
+  "scripts": {
+    "script": "bun scripts/tui.ts"
+  }
+}

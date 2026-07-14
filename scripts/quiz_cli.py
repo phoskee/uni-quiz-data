@@ -35,6 +35,17 @@ COMMANDS = [
         ],
     },
     {
+        "key": "gemini-enrich",
+        "label": "Arricchisci quiz (Gemini)",
+        "script": "gemini_enrich_quiz.py",
+        "args_hint": "--quiz <path> --model <name> --plan-only --force --retries N --delay SEC",
+        "examples": [
+            "--help",
+            "--quiz sapienza/informatica/uniquizzes/so1.json --plan-only",
+            "--quiz sapienza/informatica/uniquizzes/so1.json --model gemini-3.5-flash",
+        ],
+    },
+    {
         "key": "validate",
         "label": "Valida JSON quiz",
         "script": "validate.py",
