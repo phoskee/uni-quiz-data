@@ -86,5 +86,9 @@ python3 scripts/validate.py
 3. Verifica il file con lo script di validazione.
 4. Invia una Pull Request.
 
+## Risorsa integrativa
+
+- [The Concise TypeScript Book](https://gibbok.github.io/typescript-book/it-it/) - Guida gratuita e open source per approfondire TypeScript nello studio dello sviluppo web.
+
 ---
 *L'obiettivo è rendere il materiale didattico più accessibile e organizzato attraverso la condivisione.*
